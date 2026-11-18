@@ -31,6 +31,8 @@ const app = document.querySelector("#app");
 const notice = document.querySelector("#notice");
 const resetDialog = document.querySelector("#reset-dialog");
 const key = "asd-guide-mockup-v1";
+const notesPrefix = `${key}-notes/`;
+const noteDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "medium", timeStyle: "short" });
 const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
 const genders = ["女孩", "男孩", "其他", "不透露"];
@@ -104,6 +106,55 @@ function notify(message) {
   notice.textContent = message;
   notice.classList.add("is-visible");
   noticeTimer = setTimeout(() => notice.classList.remove("is-visible"), 2800);
+}
+
+function readNotes(articleId) {
+  if (demoState) return demoState.notes.get(articleId) || [];
+  try {
+    const notes = JSON.parse(localStorage.getItem(notesPrefix + articleId));
+    return Array.isArray(notes) ? notes.filter(note => note && typeof note.text === "string" &&
+      typeof note.id === "string" && /^[a-z0-9-]+$/.test(note.id) && Number.isFinite(Date.parse(note.createdAt))) : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeNotes(articleId, notes) {
+  if (demoState) {
+    demoState.notes.set(articleId, notes);
+    return true;
+  }
+  try {
+    if (notes.length) localStorage.setItem(notesPrefix + articleId, JSON.stringify(notes));
+    else localStorage.removeItem(notesPrefix + articleId);
+    return true;
+  } catch {
+    notify("筆記未儲存，請檢查瀏覽器的儲存空間或權限");
+    return false;
+  }
+}
+
+function notesSection(articleId) {
+  const notes = readNotes(articleId);
+  return `<section class="article-section notes-section" aria-labelledby="notes-title">
+    <h2 id="notes-title" tabindex="-1">我的筆記</h2>
+    <p>${demoState ? "示範筆記保留在這次預覽。" : "筆記只存在這個瀏覽器。"}</p>
+    <form class="note-form" data-article="${articleId}">
+      <label for="note-text" class="sr-only">筆記內容</label>
+      <textarea id="note-text" name="note" rows="4" maxlength="2000" required placeholder="當時發生什麼？你試了什麼？孩子怎麼回應？"></textarea>
+      <div class="note-actions"><button type="submit" class="button primary">儲存筆記</button><button type="button" class="button secondary" data-action="cancel-note" hidden>取消編輯</button></div>
+    </form>
+    ${notes.length ? `<ol class="note-list">${notes.map(note => `<li data-note-id="${note.id}">
+      <time datetime="${new Date(note.createdAt).toISOString()}">${noteDate.format(new Date(note.createdAt))}</time>
+      <p>${note.text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>
+      <div class="note-actions"><button class="text-button" data-action="edit-note">編輯</button><button class="text-button" data-action="delete-note">刪除</button></div>
+    </li>`).join("")}</ol>` : "<p class=\"notes-empty\">這篇還沒有筆記。</p>"}
+  </section>`;
+}
+
+function refreshNotes(articleId) {
+  app.querySelector(".notes-section").outerHTML = notesSection(articleId);
+  app.querySelector("#notes-title").focus({ preventScroll: true });
 }
 
 function route() {
@@ -352,7 +403,7 @@ function refreshLibrary() {
   const matches = articles.filter(article => {
     const category = categoryById[article.category];
     const tags = article.situations.map(id => situationById[id]);
-    const content = [article.title, article.summary, article.when, category.label, ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe].join(" ").toLowerCase();
+    const content = [article.title, article.summary, article.when, category.label, ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe, article.example, article.adjust].join(" ").toLowerCase();
     return (libraryFilter === "all" || libraryFilter === article.category) && terms.every(term => content.includes(term));
   });
   document.querySelector("#result-count").textContent = `共 ${matches.length} 篇資源`;
@@ -380,6 +431,7 @@ function articlePage(article) {
       <div class="article-actions">
         ${bookmarkButton(article, true)}
         <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示"}</button>
+        <button class="button plain" data-action="open-notes">我的筆記</button>
       </div>
     </header>
     <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p></section>
@@ -387,6 +439,9 @@ function articlePage(article) {
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
     </section>
     ${article.observe ? `<section class="article-section"><h2>可以觀察什麼</h2><p>${article.observe}</p></section>` : ""}
+    ${article.example ? `<section class="article-section"><h2>生活中的例子</h2><p>${article.example}</p></section>` : ""}
+    ${article.adjust ? `<section class="article-section"><h2>如果這次行不通</h2><p>${article.adjust}</p></section>` : ""}
+    ${notesSection(article.id)}
     <section class="source-panel">
       <h2>${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
       ${article.status === "demo" ? "<p>上方的做法是用於測試閱讀流程的原創情境示範。</p>" : ""}
@@ -413,7 +468,7 @@ function settings() {
         ${profile ? '<a class="button secondary" href="#edit" data-action="edit">編輯偏好</a>' : '<button class="button primary" data-action="start">開始設定</button>'}</div>
         ${profile ? profileSummary(profile) : '<p>完成簡單設定，首頁就會依情境推薦內容。</p>'}</section>
       <section class="settings-card"><h2>${icon("lock")} 這個瀏覽器的資料</h2>
-        <p>${demoState ? "目前正在使用示範資料，操作只保留在這次預覽。" : storageAvailable ? "孩子資料、偏好和收藏儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料，操作只保留在目前的頁面。"}</p>
+        <p>${demoState ? "目前正在使用示範資料，操作只保留在這次預覽。" : storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
         <button class="button secondary danger-text" data-action="${demoState ? "leave-demo" : "ask-reset"}">${demoState ? "離開示範" : "清除本機資料"}</button></section>
       <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
         <p>同行日常是 ASD 育兒支持手冊的互動原型。</p>
@@ -445,7 +500,7 @@ function sourcesPage() {
 function render(focus = false) {
   if (location.hash === "#demo" && !demoState) {
     recommendationIndex = 0;
-    demoState = { ...emptyState(), profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory"] } };
+    demoState = { ...emptyState(), notes: new Map(), profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory"] } };
   }
 
   const page = route();
@@ -484,6 +539,31 @@ document.addEventListener("input", event => {
   if (event.target.id !== "search-box") return;
   searchQuery = event.target.value;
   refreshLibrary();
+});
+
+document.addEventListener("submit", event => {
+  const form = event.target;
+  if (!form.matches(".note-form")) return;
+  event.preventDefault();
+  const articleId = form.dataset.article;
+  const text = form.elements.note.value.trim();
+  if (!text) {
+    form.elements.note.focus();
+    notify("先寫一點內容再儲存");
+    return;
+  }
+  const notes = readNotes(articleId);
+  const editing = form.dataset.noteId;
+  if (editing && !notes.some(note => note.id === editing)) {
+    notify("這則筆記已刪除，可取消編輯後重新新增");
+    return;
+  }
+  const updated = editing ? notes.map(note => note.id === editing ? { ...note, text } : note) :
+    [{ id: crypto.randomUUID(), createdAt: new Date().toISOString(), text }, ...notes];
+  if (writeNotes(articleId, updated)) {
+    refreshNotes(articleId);
+    notify("筆記已儲存");
+  }
 });
 
 document.addEventListener("click", event => {
@@ -526,6 +606,38 @@ document.addEventListener("click", event => {
   }
 
   switch (control.dataset.action) {
+    case "open-notes":
+      app.querySelector("#notes-title").focus();
+      break;
+    case "edit-note": {
+      const form = app.querySelector(".note-form");
+      const id = control.closest("[data-note-id]").dataset.noteId;
+      const note = readNotes(form.dataset.article).find(entry => entry.id === id);
+      if (!note) break;
+      form.dataset.noteId = id;
+      form.elements.note.value = note.text;
+      form.querySelector('[data-action="cancel-note"]').hidden = false;
+      form.elements.note.focus();
+      break;
+    }
+    case "cancel-note": {
+      const form = control.closest("form");
+      delete form.dataset.noteId;
+      form.reset();
+      control.hidden = true;
+      form.elements.note.focus();
+      break;
+    }
+    case "delete-note": {
+      if (!window.confirm("刪除這則筆記？")) break;
+      const articleId = app.querySelector(".note-form").dataset.article;
+      const id = control.closest("[data-note-id]").dataset.noteId;
+      if (writeNotes(articleId, readNotes(articleId).filter(note => note.id !== id))) {
+        refreshNotes(articleId);
+        notify("已刪除筆記");
+      }
+      break;
+    }
     case "next-recommendation":
       recommendationIndex += 1;
       render();
@@ -581,6 +693,9 @@ document.addEventListener("click", event => {
     case "reset":
       try {
         localStorage.removeItem(key);
+        for (const storageKey of Object.keys(localStorage)) {
+          if (storageKey.startsWith(notesPrefix)) localStorage.removeItem(storageKey);
+        }
       } catch {
         storageAvailable = false;
       }

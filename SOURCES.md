@@ -1,4 +1,4 @@
-# 同行日常｜第一批來源盤點
+# 同行日常｜來源盤點
 
 查核日期為 2026-11-18。第一批試讀涵蓋活動轉換、溝通與互動、感官與環境，每個主題兩篇。生活例子以繁體中文撰寫。文章內附原文、實際參考段落及授權。
 
@@ -13,6 +13,17 @@
 
 Positive Partnerships 的網站條款說明署名方式及第三方素材、照片、標誌等例外。已使用的兩份文件在文件內各自標示授權。試讀頁附署名、改寫說明和原文，授權連結可在網站的「資料來源」頁查閱。[Positive Partnerships 網站條款](https://www.positivepartnerships.com.au/terms-of-use)
 
+## 第二批補充
+
+查核日期為 2026-11-19。本批新增 9 篇，原本 12 篇補上居家例子和試不順時的調整方式。其中 5 篇原型示範已改為附來源的試讀稿。每篇使用的段落見文章頁。
+
+| 新增來源 | 參考範圍和授權 |
+| --- | --- |
+| [Positive Partnerships，家長與照顧者工作手冊](https://www.positivepartnerships.com.au/uploads/2-Day-PC-Participant-Workbook.pdf) | 第 48、122–124 頁的環境調整與陪伴做法。原文標示 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，居家例子另行撰寫。 |
+| [Positive Partnerships，親師共同規劃工具](https://www.positivepartnerships.com.au/uploads/Planning_Tool_field_Formatted_A3_V.1_Dec_21.pdf) | 參考觀察、孩子的感受或影響與可行調整等欄位。原文標示 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)；網站文章使用原創親師對話情境。 |
+| [國民健康署，兒童發展聯合評估中心名單](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1602&pid=548) | 依縣市查找院所的原文入口。頁面列出資料更新日期；網站採[政府資料開放授權](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)。 |
+| [衛生福利部，全國家照據點與共融據點](https://1966.gov.tw/LTC/cp-6455-86147-207.html) | 以官方服務頁面確認諮詢及轉介資訊，原型提供自行聯絡時可準備的問題。[網站資料開放宣告](https://1966.gov.tw/LTC/cp-6476-70761-207.html) |
+
 ## 後續候選
 
 | 來源 | 可對應的主題 | 目前用途 |
@@ -23,4 +34,4 @@ Positive Partnerships 的網站條款說明署名方式及第三方素材、照�
 | [Positive Partnerships，繁中視覺支持課程](https://www.positivepartnerships.com.au/news/new-module-visual-supports-in-action) | 圖卡、家庭及學校日常 | 原文候選。課程內的個別案例、圖片和影片逐件查核。 |
 | 工作區《那些有關星兒的事》五冊 | 生活情境、在家照顧與親職經驗 | 已抽查封面及前言。前言提及歡迎分享，公開轉載與改作的授權範圍待確認。 |
 
-六篇繁中內容皆為試讀稿，適齡標籤用於排序。正式上架前仍需由熟悉自閉症支持的專業人士與有生活經驗的家長或自閉症者試讀。
+生活策略以繁中試讀稿呈現，適齡標籤用於排序。正式版內容仍待熟悉自閉症支持的專業人士、家長及自閉症者試讀。
