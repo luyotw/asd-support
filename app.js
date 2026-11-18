@@ -42,7 +42,7 @@ const categoryById = Object.fromEntries(categories.map(category => [category.id,
 const situationById = Object.fromEntries(situations.map(situation => [situation.id, situation]));
 const articleById = Object.fromEntries(articles.map(article => [article.id, article]));
 const emptyProfile = () => ({ age: "", gender: "", situations: [] });
-const emptyState = () => ({ version: storageVersion, profile: null, saved: [] });
+const emptyState = () => ({ version: storageVersion, profile: null, saved: [], dismissed: [] });
 
 let state = loadState();
 let demoState = null;
@@ -79,6 +79,7 @@ function loadState() {
         situations: knownSituations,
       } : null,
       saved: Array.isArray(savedState.saved) ? savedState.saved.filter(id => Object.hasOwn(articleById, id)) : [],
+      dismissed: Array.isArray(savedState.dismissed) ? savedState.dismissed.filter(id => Object.hasOwn(articleById, id)) : [],
     };
   } catch {
     return emptyState();
@@ -270,8 +271,9 @@ function matchingSituations(article, profile) {
 }
 
 function rankedArticles(profile) {
+  const { dismissed } = currentState();
   const score = article => matchingSituations(article, profile).length * 10 + (article.ages.includes(profile.age) ? 1 : 0);
-  return [...articles].sort((left, right) => score(right) - score(left));
+  return articles.filter(article => !dismissed.includes(article.id)).sort((left, right) => score(right) - score(left));
 }
 
 function recommendationReason(article, profile) {
@@ -281,15 +283,31 @@ function recommendationReason(article, profile) {
   return "從日常的小步驟開始";
 }
 
+function recommendationCard(article, hasMore) {
+  const group = categoryById[article.category];
+  return `<article class="feature-card">
+    <div class="feature-copy">
+      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span><span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
+      <h3 id="featured-article-title">${article.title}</h3>
+      <p>${article.summary}</p>
+      <div class="feature-actions">
+        <a class="button primary" href="#article/${article.id}" data-origin="home">看看做法 ${icon("arrow")}</a>
+        ${hasMore ? '<button class="button secondary" data-action="next-recommendation" aria-describedby="featured-article-title">下一則</button>' : ""}
+      </div>
+    </div>
+    ${article.id === "next" ? photo("feature-photo") : `<div class="feature-scene ${group.color}">${icon(group.icon)}</div>`}
+  </article>`;
+}
+
 function home() {
   const profile = currentState().profile;
   if (!profile) return shell("home", `<div class="page-heading"><h1>我的首頁</h1><p>選幾個你想先了解的照顧情境，首頁就會顯示相關主題。</p></div>
     <div class="empty">${icon("leaf")}<h2>從一個生活情境開始</h2><button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button><a class="button plain" href="#library">瀏覽資源目錄</a></div>`);
 
   const ranked = rankedArticles(profile);
+  recommendationIndex %= ranked.length || 1;
   const featured = ranked[recommendationIndex];
   const more = ranked.filter(article => article !== featured);
-  const group = categoryById[featured.category];
   return shell("home", `<section class="home-heading">
     <div><p class="kicker">${icon("sun")} ${demoState ? "示範首頁" : "我的育兒手冊"}</p>
       <h1>今天，從一件小事開始。</h1>
@@ -299,25 +317,14 @@ function home() {
   <section class="feature-section" aria-labelledby="feature-title">
     <div class="section-heading">
       <h2 id="feature-title">為你推薦</h2>
-      <span>${recommendationReason(featured, profile)}</span>
+      ${featured ? `<span>${recommendationReason(featured, profile)}</span>` : ""}
     </div>
-    <article class="feature-card">
-      <div class="feature-copy">
-        <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span><span class="reading-time">${icon("clock")} ${featured.time} 分鐘</span></div>
-        <h3 id="featured-article-title">${featured.title}</h3>
-        <p>${featured.summary}</p>
-        <div class="feature-actions">
-          <a class="button primary" href="#article/${featured.id}" data-origin="home">看看做法 ${icon("arrow")}</a>
-          <button class="button secondary" data-action="next-recommendation" aria-describedby="featured-article-title">下一則</button>
-        </div>
-      </div>
-      ${featured.id === "next" ? photo("feature-photo") : `<div class="feature-scene ${group.color}">${icon(group.icon)}</div>`}
-    </article>
+    ${featured ? recommendationCard(featured, more.length > 0) : `<div class="empty">${icon("book")}<p>目前沒有可推薦的文章。</p><a class="button primary" href="#library" data-action="open-library">瀏覽完整目錄 ${icon("arrow")}</a></div>`}
   </section>
-  <section class="more-section" aria-labelledby="more-title">
+  ${more.length ? `<section class="more-section" aria-labelledby="more-title">
     <div class="section-heading"><h2 id="more-title">也可以看看</h2><a class="text-button" href="#library" data-action="open-library">瀏覽完整目錄 ${icon("arrow")}</a></div>
     <div class="card-grid">${more.slice(0, 3).map(article => articleCard(article, "home")).join("")}</div>
-  </section>
+  </section>` : ""}
   <section class="browse-section" aria-labelledby="browse-title">
     <div class="section-heading"><h2 id="browse-title">依分類找資源</h2></div>
     <div class="category-grid">${categories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<strong>${category.label}</strong>${icon("chevron")}</a>`).join("")}</div>
@@ -362,6 +369,7 @@ function articlePage(article) {
   const category = categoryById[article.category];
   const source = sources[article.related];
   const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
+  const dismissed = currentState().dismissed.includes(article.id);
   const originLabel = { home: "回首頁", library: "回資源目錄", saved: "回收藏" }[articleOrigin];
   return shell(articleOrigin, `<div class="article-page">
     <a class="text-button back-link" href="#${articleOrigin}">${icon("back")} ${originLabel}</a>
@@ -369,7 +377,10 @@ function articlePage(article) {
       <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span><span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
       <h1>${article.title}</h1>
       <p>${article.summary}</p>
-      ${bookmarkButton(article, true)}
+      <div class="article-actions">
+        ${bookmarkButton(article, true)}
+        <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示"}</button>
+      </div>
     </header>
     <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p></section>
     <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
@@ -434,7 +445,7 @@ function sourcesPage() {
 function render(focus = false) {
   if (location.hash === "#demo" && !demoState) {
     recommendationIndex = 0;
-    demoState = { profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory"] }, saved: [] };
+    demoState = { ...emptyState(), profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory"] } };
   }
 
   const page = route();
@@ -516,10 +527,20 @@ document.addEventListener("click", event => {
 
   switch (control.dataset.action) {
     case "next-recommendation":
-      recommendationIndex = (recommendationIndex + 1) % articles.length;
+      recommendationIndex += 1;
       render();
       app.querySelector('[data-action="next-recommendation"]').focus({ preventScroll: true });
       break;
+    case "toggle-recommendation": {
+      const id = control.dataset.article;
+      const active = currentState();
+      const restore = active.dismissed.includes(id);
+      active.dismissed = restore ? active.dismissed.filter(articleId => articleId !== id) : [...active.dismissed, id];
+      saveState();
+      control.textContent = restore ? "不再顯示" : "恢復推薦";
+      notify(restore ? "已恢復推薦" : "已從首頁推薦移除");
+      break;
+    }
     case "start":
       draft = structuredClone(currentState().profile || emptyProfile());
       go("setup/1");
