@@ -307,13 +307,21 @@ function categoryIcon(category) {
   return `<span class="category-icon ${category.color}">${icon(category.icon)}</span>`;
 }
 
+function articleAge(article) {
+  const bands = article.ages;
+  const start = ages.indexOf(bands[0]);
+  const contiguous = bands.length > 1 && bands.every((band, offset) => band === ages[start + offset]);
+  const range = contiguous ? `${bands[0].split("–")[0]}–${bands.at(-1).split("–")[1]}` : bands.join("、");
+  return `<span class="article-age">建議年齡 ${article.ageLabel || range}</span>`;
+}
+
 function articleCard(article, origin) {
   const category = categoryById[article.category];
   return `<article class="resource-card">
     <div class="card-top">${categoryIcon(category)}<span>${category.label}</span>${origin === "saved" ? bookmarkButton(article) : ""}</div>
     <h3><a href="#article/${article.id}" data-origin="${origin}">${article.title}</a></h3>
     <p>${article.summary}</p>
-    <div class="card-meta">${icon("clock")} ${article.time} 分鐘 <a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
+    <div class="card-meta"><div class="card-details">${articleAge(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div><a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
   </article>`;
 }
 
@@ -338,7 +346,7 @@ function recommendationCard(article, hasMore) {
   const group = categoryById[article.category];
   return `<article class="feature-card">
     <div class="feature-copy">
-      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span><span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
+      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span>${articleAge(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
       <h3 id="featured-article-title">${article.title}</h3>
       <p>${article.summary}</p>
       <div class="feature-actions">
@@ -425,7 +433,7 @@ function articlePage(article) {
   return shell(articleOrigin, `<div class="article-page">
     <a class="text-button back-link" href="#${articleOrigin}">${icon("back")} ${originLabel}</a>
     <header class="article-heading">
-      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span><span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
+      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
       <h1>${article.title}</h1>
       <p>${article.summary}</p>
       <div class="article-actions">

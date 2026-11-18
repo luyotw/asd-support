@@ -98,6 +98,7 @@ img { display: block; max-width: 100%; }
 .pill .icon { width: 15px; height: 15px; }
 .reading-time { color: var(--muted); display: inline-flex; align-items: center; gap: 5px; font-size: .75rem; font-weight: 600; }
 .reading-time .icon { width: 15px; height: 15px; }
+.article-age { color: var(--ink); font-size: .78rem; font-weight: 650; }
 .feature-copy h3 { font: 800 clamp(1.7rem, 2.65vw, 2.6rem)/1.23 var(--heading); letter-spacing: -.055em; margin: 13px 0 8px; }
 .feature-copy p { color: #43584a; max-width: 34ch; }
 .feature-actions { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; margin-top: 18px; }
@@ -122,6 +123,7 @@ img { display: block; max-width: 100%; }
 .resource-card h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .resource-card p { flex: 1; margin-top: 5px; color: var(--muted); font-size: .87rem; line-height: 1.6; }
 .card-meta { display: flex; align-items: center; gap: 5px; margin-top: 7px; color: var(--muted); font-size: .73rem; font-weight: 600; }
+.card-details { display: flex; flex-wrap: wrap; gap: 3px 10px; }
 .card-meta .icon { width: 15px; height: 15px; }
 .card-meta a { min-width: 44px; min-height: 44px; margin-left: auto; display: grid; place-items: center; color: var(--green); border-radius: 10px; }
 .card-meta a:hover { background: #eef2e9; }

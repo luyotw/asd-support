@@ -347,7 +347,12 @@ const { categories, situations, sources, articles } = {
       "id": "pause",
       "category": "feelings",
       "title": "情緒很滿，先一起停一下",
-      "ages": [],
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
       "time": 4,
       "summary": "從陪伴和觀察開始，想想孩子想要的是安靜、空間，還是有人在旁邊。",
       "when": "孩子遇到意外改變或挫折，家長也需要時間緩一緩。",
@@ -415,7 +420,12 @@ const { categories, situations, sources, articles } = {
       "id": "table",
       "category": "routines",
       "title": "從熟悉的餐桌開始",
-      "ages": [],
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
       "time": 4,
       "summary": "觀察位置、餐具與周遭聲音，找出孩子在餐桌上感到自在的條件。",
       "when": "孩子在某些餐桌座位或環境裡顯得不舒服。",
@@ -485,6 +495,7 @@ const { categories, situations, sources, articles } = {
       "id": "local",
       "category": "caregiver",
       "title": "認識台灣兒童發展資源",
+      "ageLabel": "未滿 7 歲",
       "ages": [
         "0–1 歲",
         "2–5 歲",
@@ -520,7 +531,13 @@ const { categories, situations, sources, articles } = {
       "id": "rest",
       "category": "caregiver",
       "title": "把「幫我一下」說具體一點",
-      "ages": [],
+      "ages": [
+        "0–1 歲",
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
       "time": 4,
       "summary": "選一件可以交接的小事，讓家人知道什麼時候、怎麼幫得上忙。",
       "when": "照顧忙到很難空出自己的時間，希望邀請信任的人一起分擔。",
@@ -968,6 +985,7 @@ const { categories, situations, sources, articles } = {
       ],
       "title": "照顧快撐不住時，先找一個支援窗口",
       "ages": [
+        "0–1 歲",
         "2–5 歲",
         "6–8 歲",
         "9–12 歲",

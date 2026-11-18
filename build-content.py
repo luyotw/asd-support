@@ -12,6 +12,9 @@ def main():
 
     folder = Path(__file__).resolve().parent
     catalog = json.loads((folder / "catalog.json").read_text(encoding="utf-8"))
+    for article in catalog["articles"]:
+        if not article.get("ages"):
+            parser.error(f"{article['id']} must have at least one age group in catalog.json.")
     path = folder / "guide.js"
     content = (
         "// Generated from catalog.json by build-content.py.\n"
