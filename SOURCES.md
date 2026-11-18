@@ -24,6 +24,19 @@ Positive Partnerships 的網站條款說明署名方式及第三方素材、照�
 | [國民健康署，兒童發展聯合評估中心名單](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1602&pid=548) | 依縣市查找院所的原文入口。頁面列出資料更新日期；網站採[政府資料開放授權](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)。 |
 | [衛生福利部，全國家照據點與共融據點](https://1966.gov.tw/LTC/cp-6455-86147-207.html) | 以官方服務頁面確認諮詢及轉介資訊，原型提供自行聯絡時可準備的問題。[網站資料開放宣告](https://1966.gov.tw/LTC/cp-6476-70761-207.html) |
 
+## 3C 與性別主題
+
+查核日期為 2026-11-19。新增 3 篇 3C 與 4 篇性別相關試讀文章，家庭對話與生活案例由同行日常撰寫。
+
+| 來源 | 參考範圍與使用方式 |
+| --- | --- |
+| [eSafety Commissioner，認識線上遊戲功能](https://www.esafety.gov.au/parents/issues-and-advice/gaming/understanding-online-gaming-features) | 即時對戰的暫停限制。網站文字適用 [CC BY 4.0 及所列例外](https://www.esafety.gov.au/about-us/corporate-documents/disclaimer-copyright)。 |
+| [eSafety Commissioner，陪孩子選擇較安全的遊戲](https://www.esafety.gov.au/parents/issues-and-advice/gaming/how-to-set-up-and-choose-games-safely) | 家庭約定、睡前使用、聊天與隱私設定。網站文字適用 [CC BY 4.0 及所列例外](https://www.esafety.gov.au/about-us/corporate-documents/disclaimer-copyright)。 |
+| [國健署，心智障礙者性健康教育家長手冊](https://health99.hpa.gov.tw/storage/pdf/materials/22174.pdf) | 單元 4 的青春期健康與月經知識。提供原文連結。 |
+| [香港衞生署學生健康服務，聲線一百分](https://www.studenthealth.gov.hk/tc_chi/health/health_ehs/health_ehs_ar.html) | 青春期聲音變化的生理背景。提供原文連結。 |
+| [國健署，守護身體界線](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=18825) | 身體自主與尊重接觸意願。國健署網站適用[政府資料開放授權](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)。 |
+| [教育部，性別平等教育問與答](https://www.gender.edu.tw/web/index.php/m1/m1_03_03_c?sid=20) | 尊重不同性別、性別特質與性別認同。提供原文連結。 |
+
 ## 後續候選
 
 | 來源 | 可對應的主題 | 目前用途 |

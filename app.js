@@ -35,6 +35,7 @@ const notesPrefix = `${key}-notes/`;
 const noteDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "medium", timeStyle: "short" });
 const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
+const topicLabels = { "3c": "3C", gender: "性別" };
 const genders = ["女孩", "男孩", "其他", "不透露"];
 const navItems = [
   ["home", "home", "首頁"], ["library", "book", "資源目錄"],
@@ -315,13 +316,19 @@ function articleAge(article) {
   return `<span class="article-age">建議年齡 ${article.ageLabel || range}</span>`;
 }
 
+function articleTags(article) {
+  if (!article.topic) return "";
+  const tags = [topicLabels[article.topic], ...(article.genderTags || [])];
+  return `<span class="article-tags" role="group" aria-label="文章標籤">${tags.map(label => `<span class="article-tag">${label}</span>`).join("")}</span>`;
+}
+
 function articleCard(article, origin) {
   const category = categoryById[article.category];
   return `<article class="resource-card">
     <div class="card-top">${categoryIcon(category)}<span>${category.label}</span>${origin === "saved" ? bookmarkButton(article) : ""}</div>
     <h3><a href="#article/${article.id}" data-origin="${origin}">${article.title}</a></h3>
     <p>${article.summary}</p>
-    <div class="card-meta"><div class="card-details">${articleAge(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div><a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
+    <div class="card-meta"><div class="card-details">${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div><a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
   </article>`;
 }
 
@@ -346,7 +353,7 @@ function recommendationCard(article, hasMore) {
   const group = categoryById[article.category];
   return `<article class="feature-card">
     <div class="feature-copy">
-      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span>${articleAge(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
+      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
       <h3 id="featured-article-title">${article.title}</h3>
       <p>${article.summary}</p>
       <div class="feature-actions">
@@ -395,10 +402,10 @@ function filterButton(id, label) {
 }
 
 function library() {
-  return shell("library", `<div class="page-heading"><h1>資源目錄</h1><p>依分類瀏覽，或搜尋你遇到的生活情境。</p></div>
+  return shell("library", `<div class="page-heading"><h1>資源目錄</h1><p>依分類或主題瀏覽，或搜尋你遇到的生活情境。</p></div>
     <div class="filter-area">
-      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋圖卡、聲音、睡前⋯⋯" autocomplete="off"></label>
-      <div class="filter-chips" role="group" aria-label="依分類篩選">${filterButton("all", "全部資源")}${categories.map(category => filterButton(category.id, category.label)).join("")}</div>
+      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋圖卡、3C、性別⋯⋯" autocomplete="off"></label>
+      <div class="filter-chips" role="group" aria-label="依分類或主題篩選">${filterButton("all", "全部資源")}${categories.map(category => filterButton(category.id, category.label)).join("")}${Object.entries(topicLabels).map(([id, label]) => filterButton(id, label)).join("")}</div>
     </div>
     <p id="result-count" class="result-count" aria-live="polite"></p>
     <div id="results"></div>
@@ -411,8 +418,12 @@ function refreshLibrary() {
   const matches = articles.filter(article => {
     const category = categoryById[article.category];
     const tags = article.situations.map(id => situationById[id]);
-    const content = [article.title, article.summary, article.when, category.label, ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe, article.example, article.adjust].join(" ").toLowerCase();
-    return (libraryFilter === "all" || libraryFilter === article.category) && terms.every(term => content.includes(term));
+    const content = [article.title, article.summary, article.when, category.label, topicLabels[article.topic], ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe, article.example, article.adjust].join(" ").toLowerCase();
+    const matchesFilter = libraryFilter === "all" || libraryFilter === article.category || libraryFilter === article.topic;
+    return matchesFilter && terms.every(term => {
+      if (term === "男" || term === "女") return article.genderTags?.includes(term);
+      return content.includes(term);
+    });
   });
   document.querySelector("#result-count").textContent = `共 ${matches.length} 篇資源`;
   for (const chip of document.querySelectorAll("[data-filter]")) {
@@ -433,7 +444,7 @@ function articlePage(article) {
   return shell(articleOrigin, `<div class="article-page">
     <a class="text-button back-link" href="#${articleOrigin}">${icon("back")} ${originLabel}</a>
     <header class="article-heading">
-      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
+      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
       <h1>${article.title}</h1>
       <p>${article.summary}</p>
       <div class="article-actions">

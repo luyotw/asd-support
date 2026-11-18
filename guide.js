@@ -231,6 +231,68 @@ const { categories, situations, sources, articles } = {
       "licenseName": "政府資料開放授權宣告",
       "license": "https://1966.gov.tw/LTC/cp-6476-70761-207.html",
       "rights": "網站採政府資料開放授權條款第 1 版。本文使用頁面服務資訊，並註明出處。"
+    },
+    "esafety-game-features": {
+      "name": "eSafety Commissioner｜認識線上遊戲功能",
+      "originalTitle": "Understanding online gaming features",
+      "publisher": "eSafety Commissioner",
+      "url": "https://www.esafety.gov.au/parents/issues-and-advice/gaming/understanding-online-gaming-features",
+      "description": "說明即時多人遊戲的暫停限制，以及文字和語音等互動功能。",
+      "rights": "網站文字依 CC BY 4.0 提供，適用網站條款所列例外。本文使用原創家庭情境。",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseName": "CC BY 4.0",
+      "attribution": "© Commonwealth of Australia（eSafety Commissioner）。同行日常以繁中整理並另寫居家例子。",
+      "checked": "2026-11-19"
+    },
+    "esafety-game-settings": {
+      "name": "eSafety Commissioner｜陪孩子選擇較安全的遊戲",
+      "originalTitle": "How to choose safe games for your kids",
+      "publisher": "eSafety Commissioner",
+      "url": "https://www.esafety.gov.au/parents/issues-and-advice/gaming/how-to-set-up-and-choose-games-safely",
+      "description": "涵蓋家庭遊戲約定、睡前時段、聊天及隱私設定。",
+      "rights": "網站文字依 CC BY 4.0 提供，適用網站條款所列例外。本文使用原創家庭情境。",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseName": "CC BY 4.0",
+      "attribution": "© Commonwealth of Australia（eSafety Commissioner）。同行日常以繁中整理並另寫居家例子。",
+      "checked": "2026-11-19"
+    },
+    "hpa-puberty-family": {
+      "name": "國民健康署｜心智障礙者性健康教育家長手冊",
+      "originalTitle": "特別的愛，給特別的你",
+      "publisher": "衛生福利部國民健康署",
+      "url": "https://health99.hpa.gov.tw/storage/pdf/materials/22174.pdf",
+      "description": "單元 4 說明青春期身體變化與月經保健。",
+      "rights": "提供手冊原文連結。家庭情境與步驟為原創。",
+      "checked": "2026-11-19"
+    },
+    "hk-puberty-parents": {
+      "name": "香港衞生署學生健康服務｜聲線一百分",
+      "originalTitle": "聲線一百分",
+      "publisher": "香港衞生署學生健康服務",
+      "url": "https://www.studenthealth.gov.hk/tc_chi/health/health_ehs/health_ehs_ar.html",
+      "description": "說明青春期喉部發育及聲線變化。",
+      "rights": "提供原文連結作為生理知識參考，家庭對話與步驟為原創。",
+      "checked": "2026-11-19"
+    },
+    "hpa-body-boundaries": {
+      "name": "國民健康署｜守護身體界線",
+      "originalTitle": "4招守護身體界線 在感情中做自己的主人",
+      "publisher": "衛生福利部國民健康署",
+      "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=18825",
+      "description": "說明身體自主和尊重對方是否願意接觸。",
+      "rights": "國健署網站適用政府資料開放授權條款第 1 版及其例外。",
+      "license": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208",
+      "licenseName": "政府資料開放授權宣告",
+      "checked": "2026-11-19"
+    },
+    "moe-gender-education": {
+      "name": "教育部｜性別平等教育問與答",
+      "originalTitle": "性別平等教育中為何納入多元之性別概念？",
+      "publisher": "教育部性別平等教育全球資訊網",
+      "url": "https://www.gender.edu.tw/web/index.php/m1/m1_03_03_c?sid=20",
+      "description": "說明尊重不同性別、性別特質和性別認同的教育目的。",
+      "rights": "提供教育部原文連結；家庭對話和生活例子為原創。",
+      "checked": "2026-11-19"
     }
   },
   "articles": [
@@ -1014,6 +1076,281 @@ const { categories, situations, sources, articles } = {
       "observe": "每次諮詢後，記下單位、回覆內容和下一個可行的聯絡方式。",
       "example": "家長發現每週三固定只有自己照顧三個小時。向窗口描述這段空窗，先問能否連結符合孩子需求的在地資源。",
       "adjust": "如果目前找到的據點主要支持另一類家庭，可請對方轉介地方社會局、早療或身障家庭支持窗口。"
+    },
+    {
+      "id": "screen-stop",
+      "category": "routines",
+      "situations": [
+        "transitions"
+      ],
+      "topic": "3c",
+      "title": "平板時間到了，先約好停在哪裡",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "esafety-game-features",
+      "sourceSection": "參考線上遊戲可能無法即時暫停的說明。家庭收尾方式由同行日常撰寫。",
+      "summary": "一起確認遊戲能暫停的地方，讓收尾和接下來的活動都可以預期。",
+      "when": "平板、手機或遊戲一到約定時間就容易卡住，孩子可能還在一場無法暫停的對戰。",
+      "steps": [
+        [
+          "開始前先看活動怎麼結束",
+          "和孩子分清楚這是看一段影片、能存檔的遊戲，還是要跟別人打完一場。"
+        ],
+        [
+          "一起選一個收尾點",
+          "例如「打完這場就存檔」。快到了提醒一次，並告訴孩子下一步是充電、吃飯或休息。"
+        ],
+        [
+          "把例外也先說好",
+          "如果剩下的時間不夠開一場，讓孩子先選能隨時收尾的活動。遇到臨時變動，說清楚什麼時候能繼續。"
+        ]
+      ],
+      "observe": "孩子卡住的是中斷遊戲、還沒存檔，還是想知道什麼時候能再玩？記下哪種提醒最聽得懂。",
+      "example": "晚餐快準備好時，孩子說這場不能暫停。家長請他指給自己看還有多久，兩人同意打完這場就到餐桌，下次吃飯前改玩能存檔的模式。",
+      "adjust": "如果倒數反而讓孩子更緊張，可以改成看得到的事件提醒，例如「這一集結束，就把平板放在桌上」。"
+    },
+    {
+      "id": "bedtime-phone",
+      "category": "routines",
+      "situations": [
+        "routines",
+        "transitions"
+      ],
+      "topic": "3c",
+      "title": "睡前還在刷影片，怎麼一起把手機收尾",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "esafety-game-settings",
+      "sourceSection": "參考家庭遊戲約定中的睡前使用建議。手機用途與居家試法為原創例子。",
+      "summary": "先找出孩子睡前用手機的原因，再約一個可試的結束方式。",
+      "when": "孩子睡前常繼續看影片、回訊息或打遊戲，原本的睡前流程被拖到很晚。",
+      "steps": [
+        [
+          "問睡前最想用手機做什麼",
+          "有人想和朋友道晚安，有人需要一點安靜或熟悉的聲音。先把需求說出來。"
+        ],
+        [
+          "和孩子挑一個能做的改變",
+          "例如看完選好的一段影片後把娛樂用手機放到客廳充電，睡前改聽熟悉的音樂。"
+        ],
+        [
+          "全家演練一次",
+          "一起試好鬧鐘、音樂或約好的替代活動。也問孩子哪個地方要保留手機，例如必要聯絡或輔助溝通。"
+        ]
+      ],
+      "observe": "一週記錄幾次就夠了。看孩子能否自己找到替代方式，以及從收尾到上床哪個步驟還會卡住。",
+      "example": "孩子原本用手機聽故事，家長先跟孩子一起挑好故事，只關掉自動播放，試著把「再看一支」換成「聽完這段就睡」。",
+      "adjust": "如果一次改太多讓睡前更難，先從改掉一個容易延長時間的設定開始，例如自動播放或遊戲通知。"
+    },
+    {
+      "id": "game-chat",
+      "category": "communication",
+      "situations": [
+        "communication"
+      ],
+      "topic": "3c",
+      "title": "線上遊戲有人加好友，怎麼練習求助",
+      "ages": [
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "esafety-game-settings",
+      "sourceSection": "參考遊戲平台的聊天、好友限制、靜音、封鎖與回報功能說明。",
+      "summary": "和孩子看一次實際的聊天設定，再用一個短情境練習拒絕和求助。",
+      "when": "孩子開始玩可聊天的線上遊戲，或收到不認識的人私訊、好友邀請及禮物。",
+      "steps": [
+        [
+          "一起看誰可以聯絡孩子",
+          "打開遊戲設定，看目前誰可以傳訊或邀請。依孩子的使用經驗，討論是否先只留已認識的好友。"
+        ],
+        [
+          "一起練一句短回覆",
+          "有人問真名、學校、地址或照片時，可以只說「我不分享這個」，或直接退出對話。"
+        ],
+        [
+          "在熟悉的介面找出求助方法",
+          "讓孩子指給你看哪裡可以靜音、封鎖或回報。也約定遇到不舒服的訊息，可以先拿給哪位大人看。"
+        ]
+      ],
+      "observe": "換了一個遊戲，孩子能不能重新找到這些設定？如果他害怕告訴你，先問怎麼做會讓求助更容易。",
+      "example": "遊戲裡有人送禮物後要求加私人通訊軟體。孩子把畫面給家長看，家長先謝謝他來求助，再一起決定是否封鎖與回報。",
+      "adjust": "介面太多選項時，可以用一張三步小卡記下「停回覆、離開、找人」。每次換遊戲，再一起找一遍按鈕。"
+    },
+    {
+      "id": "first-period",
+      "category": "routines",
+      "situations": [
+        "sensory",
+        "communication"
+      ],
+      "topic": "gender",
+      "title": "第一次月經前，一起準備經期用品",
+      "ages": [
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "hpa-puberty-family",
+      "sourceSection": "國健署手冊單元 4 的青春期月經與衛生保健。用品準備流程與家庭對話為原創。",
+      "summary": "在孩子方便的時候認識經期用品、選舒服的選項，並先想好在學校可以找誰。",
+      "when": "孩子開始想知道月經是什麼，或家長想先陪可能來月經的孩子準備。",
+      "steps": [
+        [
+          "用孩子懂的話說明",
+          "可以說「身體長大後，有時內褲會沾到經血。我們可以用經期用品，覺得不舒服也可以跟我說」。"
+        ],
+        [
+          "先在家看一次用品怎麼用",
+          "讓孩子自己決定要不要打開、摸一摸或看示範，看看衛生棉的觸感和氣味是否舒服。"
+        ],
+        [
+          "把上學需要的東西放在固定位置",
+          "可以一起裝小袋，放經期用品和備用內褲，再約好孩子在學校可向誰求助、怎麼開口。"
+        ]
+      ],
+      "observe": "確認孩子能找得到用品，知道需要更換、弄髒衣物或有明顯不適時能找誰。可讓孩子自己決定哪些紀錄要留。",
+      "example": "孩子不喜歡撕包裝的聲音。家長先在安靜的房間讓孩子看一次，再一起試另一種包裝，最後由孩子選想放進書包的用品。",
+      "adjust": "若孩子暫時不想談，先留一張看得懂的用品與求助卡。疼痛或出血讓孩子難以正常活動時，可以和醫療人員討論。",
+      "genderTags": [
+        "女"
+      ]
+    },
+    {
+      "id": "voice-changing",
+      "category": "communication",
+      "situations": [
+        "communication",
+        "feelings"
+      ],
+      "topic": "gender",
+      "title": "男孩進入變聲期，怎麼說明聲音的變化",
+      "ages": [
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "hk-puberty-parents",
+      "sourceSection": "參考青春期喉部與聲音變化的生理說明，親子對話和校園例子為原創。",
+      "summary": "用具體的話說明聲音可能忽高忽低，讓孩子選擇怎麼問、怎麼回應別人。",
+      "when": "孩子注意到自己的聲音時高時低，或被家人同學評論後不太想開口。",
+      "steps": [
+        [
+          "先確認孩子擔心什麼",
+          "問他想知道聲音為什麼變了、怕別人聽到，還是覺得開口不舒服。"
+        ],
+        [
+          "用平常的語氣說發生了什麼",
+          "可以說「青春期喉部會成長，聲音有時會忽高忽低」。孩子想問的部分先說一件就好。"
+        ],
+        [
+          "一起練習面對評論",
+          "如果孩子願意，可以練「我不想聊我的聲音」，或想一個能請老師協助的方式。"
+        ]
+      ],
+      "observe": "孩子在家、學校或語音通話中的擔心是不是不同？用孩子願意分享的內容決定下一步。",
+      "example": "孩子讀課文時聲音突然變高，回家問是不是出了問題。家長先說明發育中的聲音可能變動，問孩子要不要先和老師約定被笑時怎麼求助。",
+      "adjust": "孩子若暫時不想開口，可以用寫的。若有持續沙啞或說話明顯不舒服，可以向醫療人員諮詢。",
+      "genderTags": [
+        "男"
+      ]
+    },
+    {
+      "id": "body-boundaries",
+      "category": "communication",
+      "situations": [
+        "communication",
+        "school"
+      ],
+      "topic": "gender",
+      "title": "有人想抱我，怎麼說可以或不要",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "hpa-body-boundaries",
+      "sourceSection": "參考國健署身體自主與尊重同意的原則，改用親友打招呼的原創例子。",
+      "summary": "從打招呼開始練習身體界線，讓孩子能用說話、手勢或圖卡表示意願。",
+      "when": "親友常問能不能擁抱或牽手，孩子想表達喜歡、不喜歡或需要先等一下。",
+      "steps": [
+        [
+          "在平常的互動先示範",
+          "家長問「我可以抱你嗎？」等孩子回答。孩子沒答應時，留在原處，讓他選擇要不要有接觸。"
+        ],
+        [
+          "一起找用得上的說法",
+          "例如「先不要」或把手掌朝外。也可以選揮手或點頭作為打招呼方式。"
+        ],
+        [
+          "說清楚遇到不舒服時可以找誰",
+          "和孩子確認家裡、學校各有誰能幫忙。孩子事後才想說，也可以和信任的大人談。"
+        ]
+      ],
+      "observe": "孩子能不能用自己熟悉的方式表達意願？大人收到拒絕後，有沒有直接停下來？",
+      "example": "親戚張開手要抱，孩子往後退。家長先請親戚停一下，再讓孩子選揮手或點頭，親戚也接受了這個選擇。",
+      "adjust": "如果孩子看到太多人會緊張，可以家長先代為表達，等孩子願意時再讓他選擇如何打招呼。",
+      "genderTags": [
+        "男",
+        "女"
+      ]
+    },
+    {
+      "id": "gender-expression",
+      "category": "school",
+      "situations": [
+        "school",
+        "communication"
+      ],
+      "topic": "gender",
+      "title": "有人說「男生不能穿這個」，怎麼和孩子聊",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 4,
+      "status": "trial",
+      "related": "moe-gender-education",
+      "sourceSection": "參考教育部尊重多元性別特質的教育說明。家庭與校園例子為原創。",
+      "summary": "從孩子喜歡的衣服、顏色或遊戲開始，練習回應對性別的刻板說法。",
+      "when": "孩子因為顏色、衣物、髮型或喜歡的活動被說「不符合男生或女生的樣子」。",
+      "steps": [
+        [
+          "先問孩子是怎麼想的",
+          "他可能在意被笑、規則說不清楚，或只是想確認到底能不能選自己喜歡的東西。"
+        ],
+        [
+          "用具體的生活例子說明",
+          "可以說「任何人都可以喜歡粉紅色」。若情境中有安全或活動服裝規定，再說清楚規定是為了什麼。"
+        ],
+        [
+          "一起想一個可用的回應",
+          "孩子可以說「我就是喜歡」，也可以離開、請老師協助，或先請家長一起討論。"
+        ]
+      ],
+      "observe": "孩子希望大人幫忙到什麼程度？和老師談前可以先問哪些事可以分享、哪些想先留在家裡談。",
+      "example": "孩子帶了粉紅色水壺被說不像男生。家長先聽孩子怎麼想，再陪他練一句「我喜歡這個顏色」，也讓他選要不要和老師說。",
+      "adjust": "如果同樣的評論一直發生，先記下實際時間、地點和說法，和老師討論孩子想要的支持。",
+      "genderTags": [
+        "男",
+        "女"
+      ]
     }
   ]
 };
