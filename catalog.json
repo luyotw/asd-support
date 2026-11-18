@@ -1,0 +1,578 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "routines",
+      "label": "日常生活與活動轉換",
+      "icon": "repeat",
+      "color": "mint"
+    },
+    {
+      "id": "communication",
+      "label": "溝通與互動",
+      "icon": "message",
+      "color": "lavender"
+    },
+    {
+      "id": "sensory",
+      "label": "感官與環境",
+      "icon": "sparkles",
+      "color": "sand"
+    },
+    {
+      "id": "feelings",
+      "label": "情緒與壓力",
+      "icon": "heart",
+      "color": "rose"
+    },
+    {
+      "id": "school",
+      "label": "上學與親師合作",
+      "icon": "book",
+      "color": "blue"
+    },
+    {
+      "id": "caregiver",
+      "label": "照顧者支持與在地資源",
+      "icon": "hands",
+      "color": "mint"
+    }
+  ],
+  "situations": [
+    {
+      "id": "transitions",
+      "label": "收玩具或換活動",
+      "prompt": "要收玩具時，孩子還想繼續玩",
+      "icon": "repeat",
+      "color": "mint"
+    },
+    {
+      "id": "changes",
+      "label": "行程變動",
+      "prompt": "原本說好的行程臨時變了",
+      "icon": "repeat",
+      "color": "mint"
+    },
+    {
+      "id": "meals",
+      "label": "用餐",
+      "prompt": "準備吃飯時，孩子還沒準備好到餐桌",
+      "icon": "meal",
+      "color": "orange"
+    },
+    {
+      "id": "routines",
+      "label": "睡前準備",
+      "prompt": "睡前有好幾件事，孩子想知道接下來要做什麼",
+      "icon": "moon",
+      "color": "blue"
+    },
+    {
+      "id": "communication",
+      "label": "表達需要",
+      "prompt": "孩子想要或拒絕某樣東西，我還沒理解",
+      "icon": "message",
+      "color": "lavender"
+    },
+    {
+      "id": "sensory",
+      "label": "聲音、光線或觸感",
+      "prompt": "聲音太吵、光太亮，或孩子覺得衣服刺刺的",
+      "icon": "sparkles",
+      "color": "sand"
+    },
+    {
+      "id": "feelings",
+      "label": "挫折或緊張",
+      "prompt": "孩子很挫折，我想知道怎麼陪伴",
+      "icon": "heart",
+      "color": "rose"
+    },
+    {
+      "id": "school",
+      "label": "跟老師討論",
+      "prompt": "我想和老師討論孩子在學校需要的支持",
+      "icon": "book",
+      "color": "blue"
+    },
+    {
+      "id": "caregiver",
+      "label": "找人一起分擔",
+      "prompt": "我想休息一下，需要找人一起分擔照顧",
+      "icon": "hands",
+      "color": "mint"
+    },
+    {
+      "id": "local-support",
+      "label": "查找在地資源",
+      "prompt": "我想了解附近有哪些兒童發展服務",
+      "icon": "book",
+      "color": "blue"
+    }
+  ],
+  "sources": {
+    "who": {
+      "name": "WHO｜照顧者技巧訓練",
+      "description": "供家庭與照顧者了解日常互動、溝通及生活參與的訓練資源。",
+      "rights": "原版參與者指南為 CC BY-NC-SA 3.0 IGO。原型提供原文連結。",
+      "url": "https://iris.who.int/bitstream/handle/10665/353582/9789240048911-eng.pdf",
+      "publisher": "World Health Organization",
+      "version": "2022",
+      "checked": "2026-11-18",
+      "licenseName": "CC BY-NC-SA 3.0 IGO",
+      "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"
+    },
+    "crc": {
+      "name": "Autism CRC｜兒童支持指引",
+      "description": "澳洲自閉症兒童參與、學習及福祉指引，包含家庭與教育情境。",
+      "rights": "原型提供指引入口。轉載或改作前逐件確認條款。",
+      "url": "https://www.autismcrc.com.au/best-practice/supporting-children",
+      "publisher": "Autism CRC",
+      "version": "2022",
+      "checked": "2026-11-18"
+    },
+    "hpa": {
+      "name": "國民健康署｜兒童發展篩檢與聯合評估",
+      "description": "台灣兒童發展篩檢與後續聯合評估的官方資訊。",
+      "rights": "網站採政府資料開放授權條款第 1 版，使用時標明出處並留意例外。",
+      "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=19041",
+      "license": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208",
+      "publisher": "衛生福利部國民健康署",
+      "version": "2025-04-24",
+      "checked": "2026-11-18",
+      "licenseName": "政府資料開放授權宣告"
+    },
+    "pp-visual": {
+      "name": "Positive Partnerships｜視覺支持入門",
+      "originalTitle": "An Introduction to Visual Supports",
+      "publisher": "Positive Partnerships",
+      "version": "2020-06",
+      "checked": "2026-11-18",
+      "description": "如何依孩子的理解和偏好選擇圖像、實物或文字。參考第 1–2 頁的主文。",
+      "rights": "原文標示 CC BY 4.0。改寫範圍含原作者主文，排除第三方引文、圖片和標誌。",
+      "attribution": "澳洲政府教育部版權（2008 年起，另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-18，並由同行日常改寫為繁中與居家範例。",
+      "url": "https://www.positivepartnerships.com.au/uploads/Visual-supports_21.03.22.pdf",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "pp-transitions": {
+      "name": "Positive Partnerships｜為活動轉換與變動做準備",
+      "originalTitle": "Transitions and Planning for Change",
+      "publisher": "Positive Partnerships",
+      "version": "2023-07",
+      "checked": "2026-11-18",
+      "description": "如何和孩子一起為生活安排變動做準備。參考第 2 頁的規劃提示。",
+      "rights": "原文標示 CC BY 4.0。改寫範圍含原作者主文，排除第三方引文、圖片和標誌。",
+      "attribution": "澳洲政府教育部版權（2008 年起，另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-18，並由同行日常改寫為繁中與居家範例。",
+      "url": "https://www.positivepartnerships.com.au/uploads/Transitions_and_Planning_for_Change_GL_RSCE_0014.pdf",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "rr": {
+      "name": "Daniel、Laurie 與 Delafield-Butt｜互動節奏與感官環境",
+      "originalTitle": "A handbook for Rhythmic Relating in autism: supporting social timing in play, learning and therapy",
+      "publisher": "Frontiers in Psychology",
+      "version": "2024-09-18",
+      "checked": "2026-11-18",
+      "description": "作者手冊描述聽覺與視覺環境調整、清楚用語及保留回應時間。參考表 3 與正文互動實務。",
+      "rights": "原文標示 CC BY 4.0。同行日常改寫為繁中與居家範例。",
+      "attribution": "© 2024 Daniel、Laurie 與 Delafield-Butt。Frontiers in Psychology 15:1384068。",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "articles": [
+    {
+      "id": "next",
+      "category": "routines",
+      "title": "讓下一步，看得見",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲"
+      ],
+      "time": 3,
+      "summary": "從收玩具到準備吃飯，用孩子看得懂的方式，把「現在」和「接下來」並排放著。",
+      "when": "孩子玩得正投入，接下來要用餐或出門。你想讓孩子在換活動前，能回頭確認接下來會做什麼。",
+      "steps": [
+        [
+          "一起挑兩個孩子認得的提示",
+          "可以用自己拍的積木和餐墊照片，或請孩子選實物、手繪圖或文字。"
+        ],
+        [
+          "在換活動前指給孩子看",
+          "把提示並排，說「現在玩積木，等一下去餐桌」。放在孩子可以自己回來看的位置。"
+        ],
+        [
+          "等孩子回應再一起調整",
+          "如果孩子表示還想玩，可以一起討論怎麼收尾，再更新下一步的提示。"
+        ]
+      ],
+      "related": "pp-visual",
+      "situations": [
+        "transitions",
+        "meals"
+      ],
+      "status": "trial",
+      "sourceSection": "第 1–2 頁。視覺提示的排法、孩子的參與和實物／照片的選擇。",
+      "observe": "孩子會不會自己回來看提示，或指出想調整的順序？如果圖片讓孩子困惑，可以試孩子更熟悉的實物或文字。"
+    },
+    {
+      "id": "needs",
+      "category": "communication",
+      "title": "當孩子想表達「我需要」",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲",
+        "6–8 歲"
+      ],
+      "time": 4,
+      "summary": "從孩子熟悉的手勢、聲音或圖片開始，確認你有沒有聽懂孩子的意思。",
+      "when": "孩子指向某處、推開東西或拉著你的手，你還不確定他想要什麼。",
+      "steps": [
+        [
+          "先看孩子正在注意什麼",
+          "留意孩子指的方向、手上拿的東西或表情。可以問「你想要這個嗎？」"
+        ],
+        [
+          "用孩子理解的方式確認",
+          "可以拿起實物，或指孩子已經在用的照片、圖卡或溝通工具。等孩子用自己的方式表示想要、拒絕或有別的意思。"
+        ],
+        [
+          "把已經用得上的提示留在手邊",
+          "如果孩子願意使用某張圖，可以放在孩子自己找得到的位置，讓他在需要時取用。"
+        ]
+      ],
+      "related": "pp-visual",
+      "situations": [
+        "communication"
+      ],
+      "status": "trial",
+      "sourceSection": "第 1–2 頁。用孩子理解的實物、照片或文字支持溝通。",
+      "observe": "留意孩子在哪個情境會主動拿圖、指物或用別的方式表達。孩子推開或轉身時，可以先停下來，看看他是在拒絕什麼。"
+    },
+    {
+      "id": "sound",
+      "category": "sensory",
+      "title": "聲音太多的時候",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 3,
+      "summary": "先辨認讓孩子不舒服的聲音，再一起找一個可以休息的地方。",
+      "when": "家裡的電視、餐具聲或聚會的人聲讓孩子摀耳、離開，或表示想安靜一下。",
+      "steps": [
+        [
+          "一次調一個聲音來源",
+          "在家可以先問孩子要不要關掉背景電視，或移到離聲音遠一點的座位。"
+        ],
+        [
+          "把休息點說清楚",
+          "外出時可以一起選一個方便去、聲音比較少的位置，也可以約好用哪個手勢或句子表達「我想出去一下」。"
+        ],
+        [
+          "依孩子回饋調整",
+          "孩子想去休息時，可以陪他過去，再由他表達要不要回到原來的活動。"
+        ]
+      ],
+      "related": "rr",
+      "situations": [
+        "sensory"
+      ],
+      "status": "trial",
+      "sourceSection": "表 3 的聽覺環境建議。居家和外出例子由同行日常撰寫。",
+      "observe": "孩子在哪個位置覺得聲音比較容易接受？留意他是想離開某一種聲音，還是想離開整個活動。"
+    },
+    {
+      "id": "pause",
+      "category": "feelings",
+      "title": "情緒很滿，先一起停一下",
+      "ages": [],
+      "time": 4,
+      "summary": "從陪伴和觀察開始，想想孩子想要的是安靜、空間，還是有人在旁邊。",
+      "when": "孩子遇到意外改變或挫折，家長也需要時間緩一緩。",
+      "steps": [
+        [
+          "讓當下簡單一些",
+          "可以先暫停對話，看看周圍有沒有讓孩子更不舒服的聲音、燈光或人群。"
+        ],
+        [
+          "用孩子熟悉的方式問",
+          "例如「我在旁邊可以嗎？」並留意孩子的表情、動作或回應。"
+        ],
+        [
+          "等到雙方都準備好",
+          "可以一起回想剛才哪個地方最難，記下孩子願意嘗試的調整。"
+        ]
+      ],
+      "related": "crc",
+      "situations": [
+        "feelings",
+        "sensory"
+      ],
+      "status": "demo"
+    },
+    {
+      "id": "bedtime",
+      "category": "routines",
+      "title": "把睡前流程排成三步",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲"
+      ],
+      "time": 4,
+      "summary": "從孩子熟悉的步驟挑幾件事，一起把睡前安排畫下來。",
+      "when": "睡前有很多小事情要做，孩子想知道還剩下哪幾件。",
+      "steps": [
+        [
+          "一起挑三件熟悉的事",
+          "例如穿睡衣、刷牙、選一本書。先從你們平常就在做的流程開始。"
+        ],
+        [
+          "把順序畫出來",
+          "用紙畫一排圖案，放在孩子看得到的位置。"
+        ],
+        [
+          "問問哪個步驟想調整",
+          "隔天可以一起回顧，有沒有想交換的順序或想拿掉的事情。"
+        ]
+      ],
+      "related": "who",
+      "situations": [
+        "routines"
+      ],
+      "status": "demo"
+    },
+    {
+      "id": "table",
+      "category": "routines",
+      "title": "從熟悉的餐桌開始",
+      "ages": [],
+      "time": 3,
+      "summary": "觀察位置、餐具與周遭聲音，找出孩子在餐桌上感到自在的條件。",
+      "when": "孩子在某些餐桌座位或環境裡顯得不舒服。",
+      "steps": [
+        [
+          "留意環境的細節",
+          "例如人坐在哪裡、餐具碰撞聲，或座位旁會不會一直有人經過。"
+        ],
+        [
+          "一起選一個小調整",
+          "可以換一個位置，或使用孩子熟悉的餐具。"
+        ],
+        [
+          "留意哪裡變輕鬆了",
+          "把孩子說的話或表現出來的偏好記下來，方便和一起照顧的人討論。"
+        ]
+      ],
+      "related": "crc",
+      "situations": [
+        "meals",
+        "sensory"
+      ],
+      "status": "demo"
+    },
+    {
+      "id": "school-day",
+      "category": "school",
+      "title": "把孩子的日常帶進親師對話",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "用一個具體情境和孩子喜歡的支持方式，開啟與老師的對話。",
+      "when": "想和老師分享孩子在家或在學校遇到的某個具體時刻。",
+      "steps": [
+        [
+          "選一件想討論的事",
+          "例如放學前的教室比較吵，孩子變得很想早點離開。"
+        ],
+        [
+          "問孩子希望分享什麼",
+          "可以一起決定要讓老師知道的事，以及孩子同意嘗試的安排。"
+        ],
+        [
+          "和老師約一個回顧時間",
+          "請老師分享觀察，討論一個可以試的小調整，再詢問孩子的感受。"
+        ]
+      ],
+      "related": "crc",
+      "situations": [
+        "school",
+        "sensory"
+      ],
+      "status": "demo"
+    },
+    {
+      "id": "local",
+      "category": "caregiver",
+      "title": "認識台灣兒童發展資源",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲",
+        "6–8 歲"
+      ],
+      "time": 3,
+      "summary": "從國民健康署查找兒童發展篩檢與聯合評估的官方資訊。",
+      "when": "想了解台灣的兒童發展服務，或有日常觀察想和醫師討論。",
+      "steps": [
+        [
+          "看官方服務說明",
+          "國民健康署說明未滿 7 歲兒童的發展篩檢，以及後續評估的銜接。"
+        ],
+        [
+          "準備想分享的觀察",
+          "就診時可帶上兒童健康手冊和想詢問的具體例子。"
+        ],
+        [
+          "查詢聯合評估資訊",
+          "原文列出聯合評估服務的說明，可依居住地向醫療院所確認安排。"
+        ]
+      ],
+      "related": "hpa",
+      "situations": [
+        "local-support"
+      ],
+      "status": "official"
+    },
+    {
+      "id": "rest",
+      "category": "caregiver",
+      "title": "把「幫我一下」說具體一點",
+      "ages": [],
+      "time": 3,
+      "summary": "選一件可以交接的小事，讓家人知道什麼時候、怎麼幫得上忙。",
+      "when": "照顧忙到很難空出自己的時間，希望邀請信任的人一起分擔。",
+      "steps": [
+        [
+          "想一件可以交接的事",
+          "例如一起整理明天的書包，或在你洗澡時陪孩子看一本書。"
+        ],
+        [
+          "講清楚時間和孩子的偏好",
+          "例如「你可以飯後陪他看書十分鐘嗎？他喜歡自己選書。」"
+        ],
+        [
+          "約定怎麼交接回來",
+          "說好你什麼時候會回來，對方有需要時可以如何聯絡你。"
+        ]
+      ],
+      "related": "who",
+      "situations": [
+        "caregiver"
+      ],
+      "status": "demo"
+    },
+    {
+      "id": "plan-change",
+      "category": "routines",
+      "situations": [
+        "changes",
+        "transitions"
+      ],
+      "title": "行程改了，先把變動說清楚",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 3,
+      "status": "trial",
+      "related": "pp-transitions",
+      "sourceSection": "第 2 頁。參考與孩子討論、準備視覺提示，以及依有用的做法調整規劃。",
+      "summary": "把原來的安排和新的安排說具體，和孩子一起決定需要怎麼準備。",
+      "when": "你知道原本約好的行程要改，例如週末的公園活動碰到下雨。",
+      "steps": [
+        [
+          "說清楚哪件事改了",
+          "可以說「下午公園改到明天，今天下午會在家」。如果時間還沒確定，就告訴孩子什麼時候會再確認。"
+        ],
+        [
+          "在原本的提示上更新",
+          "如果孩子平常看日曆、紙條或圖片，就一起改同一份，讓他可以回頭看。"
+        ],
+        [
+          "問問以前什麼有幫助",
+          "有些孩子想先知道誰會在、有些想選替代活動。依孩子想知道的事補上一項。"
+        ]
+      ],
+      "observe": "孩子想反覆確認的是時間、地點、人物，還是原本期待的活動？下次可以先把那項資訊說清楚。"
+    },
+    {
+      "id": "wait-for-answer",
+      "category": "communication",
+      "situations": [
+        "communication"
+      ],
+      "title": "問完一句，留一點回應時間",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 3,
+      "status": "trial",
+      "related": "rr",
+      "sourceSection": "正文談到使用清楚簡單的語句，給對方回應的時間。生活例子由同行日常撰寫。",
+      "summary": "一次問一件事，停一下，讓孩子有空間用自己熟悉的方式回答。",
+      "when": "你常忍不住重複問，或在孩子正在想的時候又換了一種說法。",
+      "steps": [
+        [
+          "把問題說得具體",
+          "例如拿出兩本書，問「你想看哪一本？」也給孩子保留都不想看的選擇。"
+        ],
+        [
+          "問完先等一下",
+          "把注意力放在孩子的反應，讓他有時間用說話、指物、手勢或原本的溝通工具回應。"
+        ],
+        [
+          "跟著孩子的回答走",
+          "用簡短的句子確認你理解的意思。孩子想晚點決定時，可以讓選擇先擱著。"
+        ]
+      ],
+      "observe": "孩子在問題比較短、沒有接連被追問時，有沒有更容易用自己的方式回答？等待時間可以依孩子的反應調整。"
+    },
+    {
+      "id": "lighting",
+      "category": "sensory",
+      "situations": [
+        "sensory"
+      ],
+      "title": "燈光刺眼時，和孩子一起換個位置",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 3,
+      "status": "trial",
+      "related": "rr",
+      "sourceSection": "表 3 的視覺環境建議。居家調整範例由同行日常撰寫。",
+      "summary": "留意直射、眩光或閃動，一次試一個孩子願意的調整。",
+      "when": "孩子在某張桌子前會瞇眼、遮住眼睛、換位置，或直接說燈太亮。",
+      "steps": [
+        [
+          "從孩子的位置看看",
+          "坐到孩子的視線高度，看看有沒有直射的燈、窗戶反光，或顯眼的閃動。"
+        ],
+        [
+          "請孩子挑一個小變動",
+          "例如轉一下椅子，或換到光線較柔和而且仍能看清楚的地方。"
+        ],
+        [
+          "保留孩子可以調整的空間",
+          "問孩子喜歡哪個位置。白天和晚上可以有不同的安排。"
+        ]
+      ],
+      "observe": "哪種光線或位置讓孩子覺得比較自在？請孩子用自己的方式表示喜歡、拒絕或想再換一次。"
+    }
+  ]
+}

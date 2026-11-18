@@ -1,0 +1,579 @@
+const iconPaths = {
+  leaf: '<path d="M20.7 3.3C11.6 3 5 6.2 5 13a6 6 0 0 0 6 6c6.8 0 10-6.6 9.7-15.7Z"/><path d="M3.5 20.5 14 10"/>',
+  home: '<path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21v-7h6v7"/>',
+  book: '<path d="M12 6a6 6 0 0 0-5-2H3v15h4a6 6 0 0 1 5 2 6 6 0 0 1 5-2h4V4h-4a6 6 0 0 0-5 2v15"/>',
+  bookmark: '<path d="M6 5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16l-6-4-6 4z"/>',
+  user: '<circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2"/>',
+  arrow: '<path d="M4 12h15m-6-6 6 6-6 6"/>',
+  back: '<path d="M20 12H5m6-6-6 6 6 6"/>',
+  chevron: '<path d="m9 6 6 6-6 6"/>',
+  external: '<path d="M13 5h6v6m0-6-8 8m7 0v6H5V6h6"/>',
+  lock: '<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  repeat: '<path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/>',
+  message: '<path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l1.4-3.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 11h8m-8 4h5"/>',
+  sparkles: '<path d="M12 2c0 6-2 8-8 8 6 0 8 2 8 8 0-6 2-8 8-8-6 0-8-2-8-8Zm7 13v6m-3-3h6M4 3v4M2 5h4"/>',
+  heart: '<path d="M20.8 8a4.8 4.8 0 0 0-8.8-2.5A4.8 4.8 0 0 0 3.2 8c0 5 8.8 10.5 8.8 10.5S20.8 13 20.8 8Z"/>',
+  moon: '<path d="M20.8 13.5A9 9 0 0 1 10.5 3.2 9 9 0 1 0 20.8 13.5Z"/>',
+  meal: '<path d="M4 3v6a3 3 0 0 0 6 0V3M7 3v18m12-18c-3 2-4 6-4 10h4m0-10v18"/>',
+  hands: '<path d="M4 10v6l4 4h7l5-5a2 2 0 0 0-3-2l-3 2h-4m-6-5a2 2 0 0 1 4 0v2l2 2h4a2 2 0 0 1 0 4"/>',
+  check: '<path d="m5 12 4 4 10-10"/>',
+  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  sliders: '<path d="M4 7h4m4 0h8M4 17h8m4 0h4"/><circle cx="10" cy="7" r="2"/><circle cx="14" cy="17" r="2"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>',
+};
+
+function icon(name, className = "") {
+  return `<svg class="icon ${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name]}</svg>`;
+}
+
+const app = document.querySelector("#app");
+const notice = document.querySelector("#notice");
+const resetDialog = document.querySelector("#reset-dialog");
+const key = "asd-guide-mockup-v1";
+const storageVersion = 2;
+const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
+const genders = ["女孩", "男孩", "其他", "不透露"];
+const navItems = [
+  ["home", "home", "首頁"], ["library", "book", "資源目錄"],
+  ["saved", "bookmark", "收藏"], ["settings", "user", "我的設定"],
+];
+const categoryById = Object.fromEntries(categories.map(category => [category.id, category]));
+const situationById = Object.fromEntries(situations.map(situation => [situation.id, situation]));
+const articleById = Object.fromEntries(articles.map(article => [article.id, article]));
+const emptyProfile = () => ({ age: "", gender: "", situations: [] });
+const emptyState = () => ({ version: storageVersion, profile: null, saved: [] });
+
+let state = loadState();
+let demoState = null;
+let draft = emptyProfile();
+let libraryFilter = "all";
+let searchQuery = "";
+let articleOrigin = "library";
+let recommendationIndex = 0;
+let noticeTimer;
+let storageAvailable = true;
+try {
+  localStorage.setItem(`${key}-test`, "true");
+  localStorage.removeItem(`${key}-test`);
+} catch {
+  storageAvailable = false;
+}
+
+function loadState() {
+  try {
+    const savedState = JSON.parse(localStorage.getItem(key));
+    if (!savedState) return emptyState();
+    const savedSituations = savedState.profile?.situations;
+    const knownSituations = Array.isArray(savedSituations)
+      ? savedSituations.filter(id => Object.hasOwn(situationById, id)) : [];
+    // The original school choice also covered finding local services.
+    if (!savedState.version && knownSituations.includes("school") && !knownSituations.includes("local-support")) {
+      knownSituations.push("local-support");
+    }
+    return {
+      version: storageVersion,
+      profile: savedState.profile ? {
+        age: ages.includes(savedState.profile.age) ? savedState.profile.age : "",
+        gender: genders.includes(savedState.profile.gender) ? savedState.profile.gender : "",
+        situations: knownSituations,
+      } : null,
+      saved: Array.isArray(savedState.saved) ? savedState.saved.filter(id => Object.hasOwn(articleById, id)) : [],
+    };
+  } catch {
+    return emptyState();
+  }
+}
+
+function currentState() {
+  return demoState || state;
+}
+
+function saveState() {
+  if (demoState) return;
+  try {
+    localStorage.setItem(key, JSON.stringify(state));
+  } catch {
+    storageAvailable = false;
+  }
+}
+
+function notify(message) {
+  clearTimeout(noticeTimer);
+  notice.textContent = message;
+  notice.classList.add("is-visible");
+  noticeTimer = setTimeout(() => notice.classList.remove("is-visible"), 2800);
+}
+
+function route() {
+  const page = location.hash.slice(1);
+  if (page.startsWith("article/") && Object.hasOwn(articleById, page.slice(8))) return page;
+  if (["library", "saved", "settings", "edit", "sources", "setup/1", "setup/2", "setup/3"].includes(page)) return page;
+  if (page === "home" || page === "demo") return "home";
+  return state.profile ? "home" : "welcome";
+}
+
+function go(page) {
+  const hash = page === "welcome" ? "" : `#${page}`;
+  if (location.hash === hash) {
+    render(true);
+  } else {
+    location.hash = hash;
+  }
+}
+
+function brand() {
+  return `<a class="brand" href="${currentState().profile ? "#home" : "#"}" aria-label="同行日常首頁">
+    <span class="brand-mark">${icon("leaf")}</span>
+    <span><strong>同行日常</strong><small>ASD 育兒支持手冊</small></span>
+  </a>`;
+}
+
+function photo(className = "") {
+  return `<img class="${className}" src="assets/together.webp" alt="家長與孩子一起坐在地毯上看圖卡" width="960" height="640">`;
+}
+
+function navLink([id, symbol, title], active) {
+  return `<a class="nav-link ${id === active ? "active" : ""}" href="#${id}" ${id === "library" ? 'data-action="open-library"' : ""} ${id === active ? 'aria-current="page"' : ""}>${icon(symbol)}<span>${title}</span></a>`;
+}
+
+function shell(active, content) {
+  return `<div class="shell">
+    <aside class="sidebar">
+      ${brand()}
+      <nav class="desktop-nav" aria-label="主要導覽">${navItems.map(item => navLink(item, active)).join("")}</nav>
+      <div class="side-note"><span class="side-icon">${icon("lock")}</span><div><strong>資料留在你的裝置</strong><a href="#settings">管理本機資料 ${icon("chevron")}</a></div></div>
+    </aside>
+    <div class="body">
+      <header class="topbar">
+        <div class="mobile-brand">${brand()}</div>
+        <span class="breadcrumb">${active === "home" ? "我的育兒手冊" : navItems.find(item => item[0] === active)?.[2] || "我的育兒手冊"}</span>
+        <div class="top-actions">
+          ${demoState ? '<button class="text-button" data-action="leave-demo">離開示範</button>' : ""}
+          <a class="icon-button top-search" href="#library" aria-label="搜尋資源" data-action="start-search">${icon("search")}</a>
+          <a class="avatar" href="#settings" aria-label="我的設定">${icon("user")}</a>
+        </div>
+      </header>
+      <main id="main" tabindex="-1" class="container">${content}</main>
+    </div>
+    <nav class="mobile-nav" aria-label="主要導覽">${navItems.map(item => navLink(item, active)).join("")}</nav>
+  </div>`;
+}
+
+function welcome() {
+  return `<div class="onboarding">
+    <header class="onboarding-top">${brand()}<a class="button plain" href="#library" data-action="open-library">先逛資源 ${icon("arrow")}</a></header>
+    <main id="main" tabindex="-1" class="welcome">
+      <div class="welcome-copy">
+        <p class="kicker"><span></span> 給自閉症（ASD）孩子的照顧者</p>
+        <h1>從今天的日常，<br>找到一點支持。</h1>
+        <p class="intro">從出門準備、溝通到睡前，挑出你想先處理的生活情境，找到適合一起試試的小步驟。</p>
+        <div class="welcome-actions">
+          <button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button>
+          <a class="button secondary" href="#demo">看看示範首頁</a>
+        </div>
+        <p class="privacy-line">${icon("lock")} ${storageAvailable ? "免登入，資料儲存在這個瀏覽器。" : "免登入，目前瀏覽器只會暫時保留資料。"} </p>
+      </div>
+      <div class="welcome-visual">${photo("welcome-photo")}</div>
+    </main>
+  </div>`;
+}
+
+function selectOptions(options, selected) {
+  return `<option value="">暫不提供</option>` + options.map(option =>
+    `<option ${option === selected ? "selected" : ""}>${option}</option>`
+  ).join("");
+}
+
+function basics() {
+  return `<div class="form-fields">
+    <label>年齡區間 <span>選填</span>
+      <select data-profile="age">${selectOptions(ages, draft.age)}</select>
+    </label>
+    <label>性別 <span>選填</span>
+      <select data-profile="gender">${selectOptions(genders, draft.gender)}</select>
+      <small>性別與推薦排序無關。</small>
+    </label>
+  </div>`;
+}
+
+function situationOptions() {
+  return `<fieldset class="situation-grid"><legend class="sr-only">可複選的照顧情境</legend>
+    ${situations.map(situation => `<label class="situation">
+      <input type="checkbox" value="${situation.id}" ${draft.situations.includes(situation.id) ? "checked" : ""}>
+      <span class="category-icon ${situation.color}">${icon(situation.icon)}</span>
+      <span><strong>${situation.prompt}</strong></span>
+      <i aria-hidden="true">${icon("check")}</i>
+    </label>`).join("")}
+  </fieldset>`;
+}
+
+function profileSummary(profile) {
+  return `<dl class="profile-summary">
+    <div><dt>年齡區間</dt><dd>${profile.age || "暫不提供"}</dd></div>
+    <div><dt>性別</dt><dd>${profile.gender || "暫不提供"}</dd></div>
+    <div><dt>想優先看的情境</dt><dd>${profile.situations.length ? profile.situations.map(id => situationById[id].label).join("、") : "先看入門主題"}</dd></div>
+  </dl>`;
+}
+
+function onboarding(step) {
+  const titles = ["先認識你照顧的孩子", '哪些時刻，<wbr><span class="nowrap">你想多一點支持？</span>', "看看你的設定"];
+  const descriptions = [
+    "年齡區間能幫你找到較接近孩子生活階段的主題。每個欄位都可以略過。",
+    "選幾個你想先了解的日常情境，之後隨時可以調整。",
+    "首頁會優先顯示你選的情境。完整目錄隨時都能瀏覽。",
+  ];
+  const steps = ["孩子資料", "照顧情境", "確認設定"];
+  return `<div class="onboarding">
+    <header class="onboarding-top">${brand()}<a class="button plain" href="#library" data-action="open-library">先逛資源 ${icon("arrow")}</a></header>
+    <main id="main" tabindex="-1" class="setup">
+      <ol class="progress" aria-label="設定進度">${steps.map((label, index) =>
+        `<li ${step === index + 1 ? 'aria-current="step"' : ""} class="${step >= index + 1 ? "reached" : ""}"><span>${step > index + 1 ? icon("check") : index + 1}</span>${label}</li>`
+      ).join("")}</ol>
+      <section class="setup-card">
+        <h1>${titles[step - 1]}</h1>
+        <p class="muted">${descriptions[step - 1]}</p>
+        ${[basics, situationOptions, () => profileSummary(draft)][step - 1]()}
+        <div class="setup-actions">
+          <a class="button secondary" href="${step > 1 ? `#setup/${step - 1}` : "#"}">${icon("back")} 上一步</a>
+          ${step === 3 ? `<button class="button primary" data-action="finish">看看我的首頁 ${icon("arrow")}</button>` : `<a class="button primary" href="#setup/${step + 1}">下一步 ${icon("arrow")}</a>`}
+        </div>
+      </section>
+      <p class="privacy-line">${icon("lock")} ${storageAvailable ? "偏好只儲存在這個瀏覽器。" : "目前瀏覽器無法儲存偏好，關閉頁面後會清空。"} </p>
+    </main>
+  </div>`;
+}
+
+function bookmarkButton(article, expanded = false) {
+  const saved = currentState().saved.includes(article.id);
+  return `<button class="${expanded ? "button secondary" : "icon-button"} save-button ${saved ? "is-saved" : ""}" data-save="${article.id}" ${expanded ? "data-expanded" : ""} aria-pressed="${saved}" aria-label="${saved ? "取消收藏" : "收藏"}〈${article.title}〉">
+    ${icon("bookmark")}${expanded ? (saved ? " 已收藏" : " 收藏這篇") : ""}
+  </button>`;
+}
+
+function categoryIcon(category) {
+  return `<span class="category-icon ${category.color}">${icon(category.icon)}</span>`;
+}
+
+function articleCard(article, origin) {
+  const category = categoryById[article.category];
+  return `<article class="resource-card">
+    <div class="card-top">${categoryIcon(category)}<span>${category.label}</span>${origin === "saved" ? bookmarkButton(article) : ""}</div>
+    <h3><a href="#article/${article.id}" data-origin="${origin}">${article.title}</a></h3>
+    <p>${article.summary}</p>
+    <div class="card-meta">${icon("clock")} ${article.time} 分鐘 <a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
+  </article>`;
+}
+
+function matchingSituations(article, profile) {
+  return profile.situations.filter(id => article.situations.includes(id));
+}
+
+function rankedArticles(profile) {
+  const score = article => matchingSituations(article, profile).length * 10 + (article.ages.includes(profile.age) ? 1 : 0);
+  return [...articles].sort((left, right) => score(right) - score(left));
+}
+
+function recommendationReason(article, profile) {
+  const [match] = matchingSituations(article, profile);
+  if (match) return `因為你選了「${situationById[match].label}」`;
+  if (article.ages.includes(profile.age)) return `依據你選的年齡區間「${profile.age}」`;
+  return "從日常的小步驟開始";
+}
+
+function home() {
+  const profile = currentState().profile;
+  if (!profile) return shell("home", `<div class="page-heading"><h1>我的首頁</h1><p>選幾個你想先了解的照顧情境，首頁就會顯示相關主題。</p></div>
+    <div class="empty">${icon("leaf")}<h2>從一個生活情境開始</h2><button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button><a class="button plain" href="#library">瀏覽資源目錄</a></div>`);
+
+  const ranked = rankedArticles(profile);
+  const featured = ranked[recommendationIndex];
+  const more = ranked.filter(article => article !== featured);
+  const group = categoryById[featured.category];
+  return shell("home", `<section class="home-heading">
+    <div><p class="kicker">${icon("sun")} ${demoState ? "示範首頁" : "我的育兒手冊"}</p>
+      <h1>今天，從一件小事開始。</h1>
+      <p>挑一個你和孩子常遇到的情境，找到可以一起試的做法。</p></div>
+    <a class="button secondary" href="#edit" data-action="edit">${icon("sliders")} 調整偏好</a>
+  </section>
+  <section class="feature-section" aria-labelledby="feature-title">
+    <div class="section-heading">
+      <h2 id="feature-title">為你推薦</h2>
+      <span>${recommendationReason(featured, profile)}</span>
+    </div>
+    <article class="feature-card">
+      <div class="feature-copy">
+        <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span><span class="reading-time">${icon("clock")} ${featured.time} 分鐘</span></div>
+        <h3 id="featured-article-title">${featured.title}</h3>
+        <p>${featured.summary}</p>
+        <div class="feature-actions">
+          <a class="button primary" href="#article/${featured.id}" data-origin="home">看看做法 ${icon("arrow")}</a>
+          <button class="button secondary" data-action="next-recommendation" aria-describedby="featured-article-title">下一則</button>
+        </div>
+      </div>
+      ${featured.id === "next" ? photo("feature-photo") : `<div class="feature-scene ${group.color}">${icon(group.icon)}</div>`}
+    </article>
+  </section>
+  <section class="more-section" aria-labelledby="more-title">
+    <div class="section-heading"><h2 id="more-title">也可以看看</h2><a class="text-button" href="#library" data-action="open-library">瀏覽完整目錄 ${icon("arrow")}</a></div>
+    <div class="card-grid">${more.slice(0, 3).map(article => articleCard(article, "home")).join("")}</div>
+  </section>
+  <section class="browse-section" aria-labelledby="browse-title">
+    <div class="section-heading"><h2 id="browse-title">依分類找資源</h2></div>
+    <div class="category-grid">${categories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<strong>${category.label}</strong>${icon("chevron")}</a>`).join("")}</div>
+  </section>`);
+}
+
+function filterButton(id, label) {
+  return `<button class="filter-chip" data-filter="${id}" aria-pressed="${libraryFilter === id}">${label}</button>`;
+}
+
+function library() {
+  return shell("library", `<div class="page-heading"><h1>資源目錄</h1><p>依分類瀏覽，或搜尋你遇到的生活情境。</p></div>
+    <div class="filter-area">
+      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋圖卡、聲音、睡前⋯⋯" autocomplete="off"></label>
+      <div class="filter-chips" role="group" aria-label="依分類篩選">${filterButton("all", "全部資源")}${categories.map(category => filterButton(category.id, category.label)).join("")}</div>
+    </div>
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <div id="results"></div>
+    <div class="library-foot"><a class="text-button" href="#sources">${icon("book")} 查看資料來源 ${icon("arrow")}</a></div>`);
+}
+
+function refreshLibrary() {
+  const search = document.querySelector("#search-box");
+  const terms = searchQuery.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const matches = articles.filter(article => {
+    const category = categoryById[article.category];
+    const tags = article.situations.map(id => situationById[id]);
+    const content = [article.title, article.summary, article.when, category.label, ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe].join(" ").toLowerCase();
+    return (libraryFilter === "all" || libraryFilter === article.category) && terms.every(term => content.includes(term));
+  });
+  document.querySelector("#result-count").textContent = `共 ${matches.length} 篇資源`;
+  for (const chip of document.querySelectorAll("[data-filter]")) {
+    chip.setAttribute("aria-pressed", chip.dataset.filter === libraryFilter);
+  }
+  document.querySelector("#results").innerHTML = matches.length
+    ? `<div class="card-grid">${matches.map(article => articleCard(article, "library")).join("")}</div>`
+    : `<div class="empty">${icon("search")}<h2>目前找不到符合的資源</h2><p>試試其他關鍵字，或回到全部資源。</p><button class="button secondary" data-action="clear-search">清除篩選</button></div>`;
+  if (search.value !== searchQuery) search.value = searchQuery;
+}
+
+function articlePage(article) {
+  const category = categoryById[article.category];
+  const source = sources[article.related];
+  const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
+  const originLabel = { home: "回首頁", library: "回資源目錄", saved: "回收藏" }[articleOrigin];
+  return shell(articleOrigin, `<div class="article-page">
+    <a class="text-button back-link" href="#${articleOrigin}">${icon("back")} ${originLabel}</a>
+    <header class="article-heading">
+      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span><span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
+      <h1>${article.title}</h1>
+      <p>${article.summary}</p>
+      ${bookmarkButton(article, true)}
+    </header>
+    <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p></section>
+    <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
+      <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
+    </section>
+    ${article.observe ? `<section class="article-section"><h2>可以觀察什麼</h2><p>${article.observe}</p></section>` : ""}
+    <section class="source-panel">
+      <h2>${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
+      ${article.status === "demo" ? "<p>上方的做法是用於測試閱讀流程的原創情境示範。</p>" : ""}
+      <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
+      ${article.sourceSection ? `<p>${article.sourceSection}</p>` : ""}
+      <small>${source.rights}</small>
+      ${source.attribution ? `<small>${source.attribution}</small>` : ""}
+      ${source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}
+    </section>
+  </div>`);
+}
+
+function savedPage() {
+  const items = currentState().saved.map(id => articleById[id]);
+  return shell("saved", `<div class="page-heading"><h1>我的收藏</h1><p>把想留著的做法放在這裡，下次需要時容易找到。</p></div>
+    ${items.length ? `<div class="card-grid">${items.map(article => articleCard(article, "saved")).join("")}</div>`
+    : `<div class="empty">${icon("bookmark")}<h2>目前還沒有收藏</h2><p>在文章裡點「收藏這篇」，就會出現在這裡。</p><a class="button primary" href="#library">去逛資源目錄 ${icon("arrow")}</a></div>`}`);
+}
+
+function settings() {
+  const profile = currentState().profile;
+  return shell("settings", `<div class="page-heading"><h1>我的設定</h1><p>管理孩子的基本資料、照顧情境和本機資料。</p></div>
+    <div class="settings-list">
+      <section class="settings-card"><div class="section-heading"><h2>孩子資料與照顧偏好</h2>
+        ${profile ? '<a class="button secondary" href="#edit" data-action="edit">編輯偏好</a>' : '<button class="button primary" data-action="start">開始設定</button>'}</div>
+        ${profile ? profileSummary(profile) : '<p>完成簡單設定，首頁就會依情境推薦內容。</p>'}</section>
+      <section class="settings-card"><h2>${icon("lock")} 這個瀏覽器的資料</h2>
+        <p>${demoState ? "目前正在使用示範資料，操作只保留在這次預覽。" : storageAvailable ? "孩子資料、偏好和收藏儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料，操作只保留在目前的頁面。"}</p>
+        <button class="button secondary danger-text" data-action="${demoState ? "leave-demo" : "ask-reset"}">${demoState ? "離開示範" : "清除本機資料"}</button></section>
+      <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
+        <p>同行日常是 ASD 育兒支持手冊的互動原型。</p>
+        <a class="text-button" href="#sources">資料來源與使用方式 ${icon("arrow")}</a></section>
+    </div>`);
+}
+
+function edit() {
+  return shell("settings", `<div class="page-heading"><a class="text-button back-link" href="#settings">${icon("back")} 我的設定</a>
+    <h1>調整照顧偏好</h1><p>更新孩子的生活階段，或換幾個你目前想了解的情境。</p></div>
+    <div class="settings-list">
+      <section class="settings-card"><h2>孩子基本資料</h2>${basics()}</section>
+      <section class="settings-card"><h2>想優先看的照顧情境</h2>${situationOptions()}</section>
+      <div class="setup-actions"><a href="#settings" class="button secondary">取消</a><button class="button primary" data-action="save-edit">儲存設定 ${icon("check")}</button></div>
+    </div>`);
+}
+
+function sourcesPage() {
+  return shell("library", `<div class="page-heading"><a class="text-button back-link" href="#library">${icon("back")} 資源目錄</a>
+    <h1>資料來源</h1><p>查找原文、出處與使用條件。示範情境在文章內另行標示。</p></div>
+    <div class="settings-list">${Object.values(sources).map(source => `<article class="settings-card">
+      <h2>${source.name}</h2><p>${source.description}</p><p>${source.rights}</p>
+      <div class="source-links"><a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
+      ${source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}</div>
+    </article>`).join("")}</div>`);
+}
+
+function render(focus = false) {
+  if (location.hash === "#demo" && !demoState) {
+    recommendationIndex = 0;
+    demoState = { profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory"] }, saved: [] };
+  }
+
+  const page = route();
+  if (page === "welcome") app.innerHTML = welcome();
+  if (page.startsWith("setup/")) app.innerHTML = onboarding(Number(page.slice(-1)));
+  if (page === "home") app.innerHTML = home();
+  if (page === "library") {
+    app.innerHTML = library();
+    refreshLibrary();
+  }
+  if (page.startsWith("article/")) app.innerHTML = articlePage(articleById[page.slice(8)]);
+  if (page === "saved") app.innerHTML = savedPage();
+  if (page === "settings") app.innerHTML = settings();
+  if (page === "edit") {
+    draft = structuredClone(currentState().profile || emptyProfile());
+    app.innerHTML = edit();
+  }
+  if (page === "sources") app.innerHTML = sourcesPage();
+  const heading = app.querySelector("h1");
+  document.title = heading ? `${heading.textContent} · 同行日常` : "同行日常 · ASD 育兒支持手冊";
+  if (focus) {
+    window.scrollTo(0, 0);
+    app.querySelector("main").focus({ preventScroll: true });
+  }
+}
+
+document.addEventListener("change", event => {
+  const field = event.target;
+  if (field.matches("[data-profile]")) draft[field.dataset.profile] = field.value;
+  if (field.matches(".situation input")) {
+    draft.situations = [...app.querySelectorAll(".situation input:checked")].map(input => input.value);
+  }
+});
+
+document.addEventListener("input", event => {
+  if (event.target.id !== "search-box") return;
+  searchQuery = event.target.value;
+  refreshLibrary();
+});
+
+document.addEventListener("click", event => {
+  const control = event.target.closest("a,button");
+  if (!control) return;
+
+  if (control.classList.contains("skip-link")) {
+    event.preventDefault();
+    app.querySelector("main").focus();
+    return;
+  }
+  if (control.dataset.origin) articleOrigin = control.dataset.origin;
+  if (control.dataset.category) {
+    libraryFilter = control.dataset.category;
+    searchQuery = "";
+  }
+  if (control.dataset.filter) {
+    libraryFilter = control.dataset.filter;
+    refreshLibrary();
+  }
+
+  const article = articleById[control.dataset.save];
+  if (article) {
+    const active = currentState();
+    const wasSaved = active.saved.includes(article.id);
+    active.saved = wasSaved ? active.saved.filter(id => id !== article.id) : [...active.saved, article.id];
+    saveState();
+    if (route() === "saved" && wasSaved) {
+      const buttons = [...app.querySelectorAll("[data-save]")];
+      const priorIndex = buttons.indexOf(control);
+      render();
+      const remaining = [...app.querySelectorAll("[data-save]")];
+      (remaining[Math.min(priorIndex, remaining.length - 1)] || app.querySelector(".empty a")).focus();
+    } else {
+      control.outerHTML = bookmarkButton(article, control.hasAttribute("data-expanded"));
+      app.querySelector(`[data-save="${article.id}"]`).focus();
+    }
+    notify(wasSaved ? "已取消收藏" : "已加入收藏");
+    return;
+  }
+
+  switch (control.dataset.action) {
+    case "next-recommendation":
+      recommendationIndex = (recommendationIndex + 1) % articles.length;
+      render();
+      app.querySelector('[data-action="next-recommendation"]').focus({ preventScroll: true });
+      break;
+    case "start":
+      draft = structuredClone(currentState().profile || emptyProfile());
+      go("setup/1");
+      break;
+    case "finish":
+    case "save-edit":
+      recommendationIndex = 0;
+      currentState().profile = structuredClone(draft);
+      saveState();
+      go("home");
+      if (control.dataset.action === "save-edit") notify("偏好已更新");
+      break;
+    case "open-library":
+    case "clear-search":
+      searchQuery = "";
+      libraryFilter = "all";
+      if (route() === "library") {
+        refreshLibrary();
+        if (control.dataset.action === "clear-search") app.querySelector("#search-box").focus();
+      }
+      break;
+    case "start-search":
+      if (route() === "library") {
+        event.preventDefault();
+        app.querySelector("#search-box").focus();
+      } else {
+        window.addEventListener("hashchange", () => app.querySelector("#search-box")?.focus(), { once: true });
+      }
+      break;
+    case "leave-demo":
+      demoState = null;
+      recommendationIndex = 0;
+      go(state.profile ? "home" : "welcome");
+      break;
+    case "ask-reset":
+      resetDialog.showModal();
+      break;
+    case "reset":
+      try {
+        localStorage.removeItem(key);
+      } catch {
+        storageAvailable = false;
+      }
+      state = emptyState();
+      recommendationIndex = 0;
+      draft = emptyProfile();
+      libraryFilter = "all";
+      searchQuery = "";
+      resetDialog.close();
+      go("welcome");
+      notify("已清除本機資料");
+      break;
+  }
+});
+
+window.addEventListener("hashchange", () => render(true));
+render();
