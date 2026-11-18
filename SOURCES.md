@@ -11,7 +11,7 @@
 | [Daniel、Laurie 與 Delafield-Butt，互動節奏與感官環境](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full) | 2024-09-18。聲音、光線、回應時間 | 原文採 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。依表 3 的環境調整及正文的互動實務改寫。將作者提出的做法轉為可由家長觀察與調整的居家例子。 | 〈聲音太多的時候〉、〈燈光刺眼時，和孩子一起換個位置〉、〈問完一句，留一點回應時間〉 |
 | [國民健康署，兒童發展篩檢與聯合評估說明](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=19041) | 2025-04-24。台灣在地資源 | 保留官方資訊的導引。網站採[政府資料開放授權條款第 1 版](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)，並列有第三方素材等例外。 | 〈認識台灣兒童發展資源〉 |
 
-Positive Partnerships 的[網站條款](https://www.positivepartnerships.com.au/terms-of-use)說明署名方式及第三方素材、照片、標誌等例外。已使用的兩份文件在文件內各自標示授權。試讀頁附署名、改寫說明、原文和授權連結。
+Positive Partnerships 的網站條款說明署名方式及第三方素材、照片、標誌等例外。已使用的兩份文件在文件內各自標示授權。試讀頁附署名、改寫說明和原文，授權連結可在網站的「資料來源」頁查閱。[Positive Partnerships 網站條款](https://www.positivepartnerships.com.au/terms-of-use)
 
 ## 後續候選
 

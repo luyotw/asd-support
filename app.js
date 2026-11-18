@@ -336,7 +336,7 @@ function library() {
     </div>
     <p id="result-count" class="result-count" aria-live="polite"></p>
     <div id="results"></div>
-    <div class="library-foot"><a class="text-button" href="#sources">${icon("book")} 查看資料來源 ${icon("arrow")}</a></div>`);
+    <div class="library-foot"><a class="text-button" href="#sources">${icon("book")} 查看資料來源與授權 ${icon("arrow")}</a></div>`);
 }
 
 function refreshLibrary() {
@@ -383,7 +383,6 @@ function articlePage(article) {
       ${article.sourceSection ? `<p>${article.sourceSection}</p>` : ""}
       <small>${source.rights}</small>
       ${source.attribution ? `<small>${source.attribution}</small>` : ""}
-      ${source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}
     </section>
   </div>`);
 }
@@ -426,6 +425,7 @@ function sourcesPage() {
     <h1>資料來源</h1><p>查找原文、出處與使用條件。示範情境在文章內另行標示。</p></div>
     <div class="settings-list">${Object.values(sources).map(source => `<article class="settings-card">
       <h2>${source.name}</h2><p>${source.description}</p><p>${source.rights}</p>
+      ${source.attribution ? `<p>${source.attribution}</p>` : ""}
       <div class="source-links"><a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
       ${source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}</div>
     </article>`).join("")}</div>`);
