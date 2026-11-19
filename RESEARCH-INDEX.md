@@ -4,11 +4,11 @@
 
 ## 如何讀這份索引
 
-- P01–P05 對應現行網站來源 ID；S01–S28、E01–E03 沿用收集票編號。B01–B05 補編早期無編號紀錄，A01 是先前已用於交叉核對的來源。
-- 共 **42 筆索引紀錄**，包含課程入口、附件組及五冊集合紀錄，不能解讀為42篇已讀完或通過審核的文章。附件不重複灌入來源數。
+- P01–P05 對應現行網站來源 ID；S01–S28、E01–E03 沿用收集票編號，S29為本輪補查。B01–B05 補編早期無編號紀錄，A01 是先前已用於交叉核對的來源。
+- 共 **43 筆索引紀錄**，包含課程入口、附件組及五冊集合紀錄，不能解讀為43篇已讀完或通過審核的文章。附件不重複灌入來源數。
 - ASD範圍、時效、授權及觀點差異分開管理。「時效可用」只限已查的段落，不代表全文、圖片及每個做法都可發布。
 - 「時效尚未完成」是查核進度，不是第四種時效結論；後續使用前仍須按 SOURCES.md 完成判定。既有網站17篇的逐篇時效複查另列待辦，這次整理不等於重新審核全部文章。
-- 觀點不同本身不構成排除或判定過時的理由。差異如何呈現見 [編輯原則](SOURCES.md#來源觀點有差異時的呈現)；按題目閱讀見 [題目整理與觀點對照](TOPIC-BRIEFS.md)。
+- 觀點不同本身不構成排除或判定過時的理由。差異如何呈現見 [編輯原則](SOURCES.md#來源觀點有差異時的呈現)；按題目閱讀見 [題目整理與觀點對照](TOPIC-BRIEFS.md)，本輪具體查核見 [3C複查紀錄](MEDIA-REVIEW.md)。
 
 ## 已被現行網站引用的5筆來源
 
@@ -22,7 +22,7 @@
 
 現行17篇的文章與來源對應保留在 catalog.json；本索引沒有改動網站文章或使用者筆記。
 
-## 可續審的28筆資料
+## 可續審的29筆資料
 
 以下通過ASD範圍的初步辨識；仍按每列的時效、適齡與授權狀態處理。
 
@@ -32,9 +32,9 @@
 | [S07](https://github.com/luyotw/asd-support/issues/1#issuecomment-6997272396) | [Interest Based Learning — Positive Partnerships](https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/interest-based-learning) | 自閉症孩子／學生；數字待核 | 優勢／興趣提問及工具 | 未確認 | 尚未完成專項複查 | 網站自有文字CC BY 4.0；附件個別標記待核 |
 | [S10](https://github.com/luyotw/asd-support/issues/1#issuecomment-6997298753) | [Better sleep for autistic children 3–11 years — Raising Children Network](https://raisingchildren.net.au/autism/health-wellbeing/sleep/sleep-for-children-with-asd) | 3–11歲 ASD | 睡前流程／睡眠環境 | 未確認 | 尚未完成專項複查 | 保留權利；原文導引 |
 | [S11](https://github.com/luyotw/asd-support/issues/1#issuecomment-6997298753) | [Autistic children: learning about bodies and personal boundaries — Raising Children Network](https://raisingchildren.net.au/autism/development/physical-development/bodies-boundaries) | 3–9歲 ASD | 表達接觸意願／非口語支持 | 2026-10-09審閱 | 可用（限範圍）：2026-10-09審閱；限表達意願與溝通 | 保留權利；原文導引 |
-| [S12](https://github.com/luyotw/asd-support/issues/1#issuecomment-7001169349) | [Healthy video gaming: Supporting Autistic young people／Gaming beyond the basics — Amaze](https://www.amaze.org.au/support/resources/healthy-video-gaming-supporting-autistic-young-people/) | ASD兒童／青少年；數字待核 | 遊戲手冊5–10頁；轉換及休息 | 未確認 | 尚未完成專項複查 | Amaze保留權利；附件改作待核 |
-| [S13](https://github.com/luyotw/asd-support/issues/1#issuecomment-7001169349) | [Autism: A Guide for Whānau — Autism New Zealand](https://autismnz.org.nz/wp-content/uploads/2024/07/Whanau-Guide.pdf) | ASD家庭；數字待核 | 印刷頁21 Technology；17–19頁情緒背景 | 未確認 | 尚未完成專項複查；版本日期未核，見D01–D02 | 公開改作許可待核 |
-| [S14](https://github.com/luyotw/asd-support/issues/1#issuecomment-7001169349) | [How should I handle my child’s media use if they have autism spectrum disorder? — HealthyChildren.org／American Academy of Pediatrics](https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-should-I-handle-my-child%E2%80%99s-media-use-autism-spectrum-disorder.aspx) | ASD孩子家長；數字待核 | More media use tips，觀點差異D01–D03 | 2023-03-29更新 | 尚未完成專項複查；分歧已定位，見D01–D03 | AAP保留權利；原文導引 |
+| [S12](MEDIA-REVIEW.md#s12-使用權更正) | [Amaze｜Gaming beyond the basics](https://www.amaze.org.au/wp-content/uploads/2023/03/Amaze-Gaming-Beyond-The-Basics.pdf) | ASD兒童／年輕玩家；數字未明列 | 手冊3、5–7、9、19–20頁 | 發布日未確認；2023版權年與內部時間不代替發布日 | 待複查；2026-11-19已核官方檔與末頁，具體策略及適齡仍待查 | 署名後准完整重製；翻譯／節錄改寫未明示，第三方圖卡另核 |
+| [S13](MEDIA-REVIEW.md#s13-檔名與版本核對) | [Autism NZ｜Whānau Guide現行入口](https://autismnz.org.nz/resources/whanau-guide-to-autism/) | 新診斷ASD孩子的家庭；數字未明列 | 印刷頁21 Technology；情緒背景 | 發布／審閱日未確認；本輪兩個網址檔案相同 | 待複查；2026-11-19已核現行入口與檔案，時效仍未通過 | 條款讀取遇驗證頁；公開改作權待核，維持原文導引 |
+| [S14](MEDIA-REVIEW.md#s14-新文件與使用限制) | [Radesky醫師｜ASD媒體問答](https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-should-I-handle-my-child%E2%80%99s-media-use-autism-spectrum-disorder.aspx) | ASD孩子家長；數字未明列 | D01–D03比對歷史；不作新網站稿素材 | 2023-03-29更新 | 待複查；2026-11-19未取得逐段被取代依據 | AAP保留權利，條款對AI處理有額外限制；未取得許可，僅原文導引 |
 | [S15](https://github.com/luyotw/asd-support/issues/1#issuecomment-7001169349) | [School refusal: autistic children and teenagers — Raising Children Network](https://raisingchildren.net.au/autism/school-play-work/school/school-refusal-autistic-children-and-teenagers) | ASD學齡兒童／青少年；數字待核 | 理解上學困難／家校合作 | 未確認 | 尚未完成專項複查 | 保留權利；原文導引 |
 | [S16](https://github.com/luyotw/asd-support/issues/1#issuecomment-7001169349) | [Stress and stress management in families with autistic children and teenagers — Raising Children Network](https://raisingchildren.net.au/autism/communicating-relationships/family-relationships/family-stress-asd) | ASD兒少家庭；數字待核 | 家庭壓力、支持與喘息 | 未確認 | 尚未完成專項複查 | 保留權利；原文導引 |
 | [S17](https://github.com/luyotw/asd-support/issues/1#issuecomment-7001169349) | [My School Experiences: A toolkit ... for School Can’t for Autistic students and their families — Amaze](https://www.amaze.org.au/wp-content/uploads/2025/09/2507-DOE-SCHOOL-CANT-TOOLKIT-A4-FINAL.pdf) | 自閉症中小學生 | 23頁工具包，先讀第2–3頁 | 未確認 | 尚未完成專項複查 | 附件／工作紙重用待核 |
@@ -49,6 +49,7 @@
 | [S26](https://github.com/luyotw/asd-support/issues/1#issuecomment-7002934586) | [Toilet training your autistic child: visual guide for parents — Raising Children Network](https://raisingchildren.net.au/autism/health-wellbeing/toileting-hygiene/toilet-training-children-with-asd) | 2–12歲 ASD | 視覺版個別化、感官準備及求助 | 視覺版2026-07-24審閱；配套詳文日期未核 | 可用（限範圍）：2026-07-24視覺版審閱；限指定範圍 | 保留權利；圖像／程序另審 |
 | [S27](https://github.com/luyotw/asd-support/issues/1#issuecomment-7002934586) | [Puberty and autism in boys — Sheffield Children’s NHS Foundation Trust](https://library.sheffieldchildrens.nhs.uk/puberty-and-autism-in-boys/) | ASD青春期前後／男；數字待核 | 索引的身體變化／清潔／私密場合，正文未核完整 | 未確認 | 待複查（已有待查事項） | 文字／圖卡條款待核 |
 | [S28](https://github.com/luyotw/asd-support/issues/1#issuecomment-7002934586) | [Puberty and autism in girls — Sheffield Children’s NHS Foundation Trust](https://library.sheffieldchildrens.nhs.uk/puberty-and-autism-in-girls/) | ASD青春期前後／女；數字待核 | Communication／private-public／界線 | 未確認 | 待複查（已有待查事項） | 自有文字待核；Widgit圖像為第三方權利 |
+| [S29](MEDIA-REVIEW.md#s29-asd-數位公民指引研究) | [Mayer等｜ASD數位公民指引研究](https://journals.sagepub.com/doi/10.1177/13623613231192870) | 附錄3：2–18歲；排除AAC／純溝通用途 | 研究過程與未達共識紀錄；詳見複查文件 | 2023-08-24先行；2024-04期刊版 | 可用僅限已核研究背景；各實務建議另審 | CC BY-NC 4.0；需署名及標改寫，商業使用另確認 |
 | [E01](https://github.com/luyotw/asd-support/issues/1#issuecomment-6997298753) | [Puberty and autism: when and how to prepare your autistic child — Raising Children Network](https://raisingchildren.net.au/autism/development/physical-development/preparing-for-puberty-asd) | 9–15歲 ASD | 青春期溝通與感官準備 | 未確認 | 尚未完成專項複查 | 保留權利；原文導引 |
 | [E02](https://github.com/luyotw/asd-support/issues/1#issuecomment-6997298753) | [Periods and autism: helping your autistic child understand and manage them — Raising Children Network](https://raisingchildren.net.au/autism/development/physical-development/periods-and-autism) | 9–15歲 ASD／女 | 用品、例行照護及學校求助 | 未確認 | 尚未完成專項複查 | 保留權利；原文導引 |
 | [E03](https://github.com/luyotw/asd-support/issues/1#issuecomment-6997298753) | [Sex education – a guide for parents — National Autistic Society](https://www.autism.org.uk/advice-and-guidance/family-life-and-relationships/sex-education/parents-and-carers) | ASD孩子家長；數字待核 | 公開／私人、清潔及關係 | 2020-08-12審閱；更新待查 | 尚未完成專項複查 | 重製需許可；原文導引 |
@@ -84,7 +85,7 @@
 
 ## 目前需要處理的工作
 
-1. 先核對TOPIC-BRIEFS.md的D01–D03，再完成所涉段落的時效與授權查核；不能以觀點差異直接刪除S14或S13。
+1. D01–D03第一輪複查已記在MEDIA-REVIEW.md；S12–S14仍有待查條件。依已核使用權決定原文導引或撰稿來源，不以意見差異淘汰。S29只通過研究背景範圍，不自動發布整套指引。
 2. 現行17篇依實際引用段落補做時效與觀點差異複查，逐篇記結果；這次不把整批標成已完成。
 3. 先處理B01家庭支持、S11身體界線、S24情境觀察三項缺口，再決定原文導引或可改寫內容。
 4. S18、S27、S28完成版本／全文及第三方素材查核前不發布。S25先釐清原文年齡標示差異。

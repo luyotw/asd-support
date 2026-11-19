@@ -1,6 +1,6 @@
 # ASD 題目整理與觀點對照
 
-整理／比對日期：2026-11-19。來源編號與完整查核狀態見[資料索引](RESEARCH-INDEX.md)，編輯規則見[來源觀點有差異時的呈現](SOURCES.md#來源觀點有差異時的呈現)。
+整理／比對日期：2026-11-19。來源編號與完整查核狀態見[資料索引](RESEARCH-INDEX.md)，編輯規則見[來源觀點有差異時的呈現](SOURCES.md#來源觀點有差異時的呈現)。本輪更新見[3C複查紀錄](MEDIA-REVIEW.md)。
 
 這份文件是撰稿工作底稿，未新增或重寫網站文章。現行 17 篇只是對應既有題目，不因出現在下表就視為重新通過時效審核。新題目仍需核對實際章節、適齡、證據與使用權；未查完不發布。表內的來源配對也不是各來源對同一做法已達成共識。
 
@@ -11,7 +11,7 @@
 | 題目 | 主分類 | 核心來源 | 對應年齡／階段 | 既有內容或新增方向；使用前待辦 |
 | --- | --- | --- | --- | --- |
 | T01 看懂接下來的活動，面對日常變動 | 日常作息與轉換 | P01、P02、P03 | 各來源數字適齡待核，依理解與感官需要 | 現有 next、morning-exit、plan-change、table；逐篇回查引用。用餐的感官情境不能只靠轉換資料說明。 |
-| T02 裝置在孩子生活中的角色，與使用收尾 | 日常作息與轉換 | S12、S13、S14 | ASD 兒童／青少年；數字待核 | 新題目群。先整理 D01–D03；裝置用途、收尾與線上互動可拆成小題。已下架 screen-stop、bedtime-phone、game-chat 不自動恢復。 |
+| T02 裝置在孩子生活中的角色，與使用收尾 | 日常作息與轉換 | S12、S13、S29 | S29：2–18歲；其餘數字未明列 | 新題目群。D01–D03保留差異；S14僅原文導引與歷史比對，不作新網站稿素材。已下架 screen-stop、bedtime-phone、game-chat 不自動恢復。 |
 | T03 睡前準備與睡眠困難 | 日常作息與轉換 | P01、S10 | S10：3–11 歲；P01 數字待核 | 現有 bedtime 是流程支持；新增睡眠內容不能把視覺流程當成所有睡眠困難的處理方式。S10 時效與原文導引範圍待核。 |
 | T04 廁所環境、感官準備與如廁溝通 | 日常作息與轉換 | S26、P01 | S26：2–12 歲；依身體狀況與支持需要 | 新題目。S26 已查範圍限個別化、感官準備及求助；具體訓練程序與圖像另審，非整篇已獲准改寫。 |
 | T05 表達需要，留出理解與回應時間 | 溝通與人際互動 | P01、P03 | 數字待核；依溝通方式與處理時間 | 現有 needs、ask-for-break、wait-for-answer；區分視覺溝通與互動節奏依據，P03 不是療效確立證明。 |
@@ -31,17 +31,17 @@ S22、S23 等尚未配成獨立題目的材料留在來源索引供補查；表�
 
 ## 已定位的觀點差異
 
-下列三項來自 T02 的同題比較。這是初步定位，並非已完成文獻整合或證據分級；作者沒有直接互相辯論。尚未完成所涉建議的時效專項複查，因此先保留為未上架草稿。
+下列三項來自 T02 的同題比較。這是初步定位，並非已完成文獻整合或證據分級；作者沒有直接互相辯論。第一輪複查已完成，S12–S14仍有適齡、版本或使用權待查；本輪新增S29補充。以下保留為未上架研究草稿，不能直接貼進網站。
 
 ### 比對來源與可追溯範圍
 
 | ID | 作者／資料性質 | 原始日期 | 本輪已讀範圍 | 待查事項 |
 | --- | --- | --- | --- | --- |
-| S12 | Amaze，給自閉症年輕玩家家長的實務手冊 | 未確認，路徑2023/03不當出版日 | [Gaming beyond the basics](https://www.amaze.org.au/wp-content/uploads/2023/03/Amaze-Gaming-Beyond-The-Basics.pdf)，印刷頁3、5–7、9 | 數字適齡、版本與現行證據、公開使用範圍；不重製工作表。 |
-| S13 | Autism New Zealand，家庭手冊 | 未確認，路徑2024/07不當出版日 | [Autism: A Guide for Whānau](https://autismnz.org.nz/wp-content/uploads/2024/07/Whanau-Guide.pdf)，印刷頁21 Technology，及19頁情緒恢復背景 | 版本／日期、適齡、時效與重用條件。 |
-| S14 | Jenny Radesky, MD, FAAP；HealthyChildren 上的家長問答 | 最後更新2023-03-29 | [ASD 與媒體使用問答](https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-should-I-handle-my-child%E2%80%99s-media-use-autism-spectrum-disorder.aspx)，More media use tips 下三個小節 | 是否有更新、更完整依據與條件；AAP 保留權利。這篇不代表 AAP 全部正式政策。 |
+| S12 | Amaze，給自閉症年輕玩家家長的實務手冊 | 發布日未確認；末頁2023為版權年 | [Gaming beyond the basics](https://www.amaze.org.au/wp-content/uploads/2023/03/Amaze-Gaming-Beyond-The-Basics.pdf)，印刷頁3、5–7、9 | 署名後允許完整重製；翻譯／節錄未明示，數字適齡與策略依據仍待查。 |
+| S13 | Autism New Zealand，家庭手冊 | 未確認，路徑2024/07不當出版日 | [Autism: A Guide for Whānau](https://autismnz.org.nz/wp-content/uploads/2024/07/Whanau-Guide.pdf)，印刷頁21 Technology，及19頁情緒恢復背景 | 現行入口與舊檔相同；日期、數字適齡與改作權仍待查。 |
+| S14 | Jenny Radesky, MD, FAAP；HealthyChildren 上的家長問答 | 最後更新2023-03-29 | [ASD 與媒體使用問答](https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-should-I-handle-my-child%E2%80%99s-media-use-autism-spectrum-disorder.aspx)，More media use tips 下三個小節 | 未取得被新版逐段取代的依據；使用條款另限制AI處理，僅留原文導引。此篇非AAP全部正式政策。 |
 
-三者以醫師解說／實務手冊為主，這次比對不足以判定哪個策略效果較好。數字適齡未確認前，不由編輯自行補成所有年齡都適用。
+原先三者以醫師解說／實務手冊為主；S29補充研究背景，詳見[研究範圍與限制](MEDIA-REVIEW.md#s29-asd-數位公民指引研究)。這次比對不足以判定哪個策略效果較好。各來源的適齡分開記錄，不相互套用。
 
 ### D01 裝置是平靜工具，還是達成目標的獎勵？
 
@@ -49,6 +49,8 @@ S22、S23 等尚未配成獨立題目的材料留在來源索引供補查；表�
 
 - S14 的 Rewarding experience 傾向安排媒體作為行為目標的獎勵，而非在家中緊張時用來安撫；同篇也承認裝置的溝通與組織用途。[原文](https://www.healthychildren.org/English/tips-tools/ask-the-pediatrician/Pages/How-should-I-handle-my-child%E2%80%99s-media-use-autism-spectrum-disorder.aspx)
 - S13 的 Technology 說明裝置可承擔感官與情緒調節，移除可能造成難受；也討論如何設定可理解的使用限制。[原文，印刷頁21](https://autismnz.org.nz/wp-content/uploads/2024/07/Whanau-Guide.pdf)
+
+**本輪補充：** S29也留下未達共識的紀錄，見[複查結果](MEDIA-REVIEW.md#s29-asd-數位公民指引研究)；不能把未達共識寫成效果已被否定。
 
 **差異判讀（編輯解讀）：** 對裝置角色與優先策略有實質差別。尚不能確定兩篇所指的「安撫」情境、活動與孩子支持需求是否相同；不能把它們合併成「專家一致建議用獎勵」，或推成「裝置不能設限」。
 
@@ -85,7 +87,7 @@ S22、S23 等尚未配成獨立題目的材料留在來源索引供補查；表�
 
 ## 從草稿到文章
 
-1. 每題確認原文實際段落、年齡與支持需求，補齊日期；涉及分歧時保留上述比對，不以文章新舊排序決定誰正確。
+1. 依MEDIA-REVIEW.md已核結果繼續補齊段落、年齡與支持需求；保留分歧，不以文章新舊排序決定誰正確。S14先維持原文導引。
 2. 完成時效與使用權查核，記錄哪些可獨立整理、哪些只作原文導引。不能整篇翻譯或把限制重用的圖像搬入 App。
 3. 有重要分歧的題目，在相關做法附近加入「不同來源怎麼說」。使用者看到的是具名說法、條件與未知之處；資料 ID 與查核待辦留在編輯文件。
 4. 逐篇回查正文、例子與推薦摘要，避免比較段承認有分歧，其他段落卻把某一方寫成唯一結論。
