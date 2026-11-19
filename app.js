@@ -35,7 +35,6 @@ const notesPrefix = `${key}-notes/`;
 const noteDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "medium", timeStyle: "short" });
 const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
-const topicLabels = { "3c": "3C", gender: "性別" };
 const genders = ["女孩", "男孩", "其他", "不透露"];
 const navItems = [
   ["home", "home", "首頁"], ["library", "book", "資源目錄"],
@@ -317,8 +316,8 @@ function articleAge(article) {
 }
 
 function articleTags(article) {
-  if (!article.topic) return "";
-  const tags = [topicLabels[article.topic], ...(article.genderTags || [])];
+  const tags = article.genderTags || [];
+  if (!tags.length) return "";
   return `<span class="article-tags" role="group" aria-label="文章標籤">${tags.map(label => `<span class="article-tag">${label}</span>`).join("")}</span>`;
 }
 
@@ -393,7 +392,7 @@ function home() {
   </section>` : ""}
   <section class="browse-section" aria-labelledby="browse-title">
     <div class="section-heading"><h2 id="browse-title">依分類找資源</h2></div>
-    <div class="category-grid">${categories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<strong>${category.label}</strong>${icon("chevron")}</a>`).join("")}</div>
+    <div class="category-grid">${categories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<span><strong>${category.label}</strong><small>${category.description}</small></span>${icon("chevron")}</a>`).join("")}</div>
   </section>`);
 }
 
@@ -402,10 +401,10 @@ function filterButton(id, label) {
 }
 
 function library() {
-  return shell("library", `<div class="page-heading"><h1>資源目錄</h1><p>依分類或主題瀏覽，或搜尋你遇到的生活情境。</p></div>
+  return shell("library", `<div class="page-heading"><h1>資源目錄</h1><p>依分類瀏覽，或搜尋你遇到的生活情境。</p></div>
     <div class="filter-area">
-      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋圖卡、3C、性別⋯⋯" autocomplete="off"></label>
-      <div class="filter-chips" role="group" aria-label="依分類或主題篩選">${filterButton("all", "全部資源")}${categories.map(category => filterButton(category.id, category.label)).join("")}${Object.entries(topicLabels).map(([id, label]) => filterButton(id, label)).join("")}</div>
+      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋收玩具、3C、月經⋯⋯" autocomplete="off"></label>
+      <div class="filter-chips" role="group" aria-label="依分類篩選">${filterButton("all", "全部資源")}${categories.map(category => filterButton(category.id, category.label)).join("")}</div>
     </div>
     <p id="result-count" class="result-count" aria-live="polite"></p>
     <div id="results"></div>
@@ -418,8 +417,8 @@ function refreshLibrary() {
   const matches = articles.filter(article => {
     const category = categoryById[article.category];
     const tags = article.situations.map(id => situationById[id]);
-    const content = [article.title, article.summary, article.when, category.label, topicLabels[article.topic], ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe, article.example, article.adjust].join(" ").toLowerCase();
-    const matchesFilter = libraryFilter === "all" || libraryFilter === article.category || libraryFilter === article.topic;
+    const content = [article.title, article.summary, article.when, category.label, ...(article.keywords || []), ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe, article.example, article.adjust].join(" ").toLowerCase();
+    const matchesFilter = libraryFilter === "all" || libraryFilter === article.category;
     return matchesFilter && terms.every(term => {
       if (term === "男" || term === "女") return article.genderTags?.includes(term);
       return content.includes(term);

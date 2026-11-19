@@ -4,39 +4,52 @@ const { categories, situations, sources, articles } = {
   "categories": [
     {
       "id": "routines",
-      "label": "日常生活與活動轉換",
+      "label": "日常作息與轉換",
       "icon": "repeat",
-      "color": "mint"
+      "color": "mint",
+      "description": "出門、用餐、睡前與結束活動"
     },
     {
       "id": "communication",
-      "label": "溝通與互動",
+      "label": "溝通與人際互動",
       "icon": "message",
-      "color": "lavender"
+      "color": "lavender",
+      "description": "表達需要、拒絕與互動求助"
     },
     {
       "id": "sensory",
       "label": "感官與環境",
       "icon": "sparkles",
-      "color": "sand"
+      "color": "sand",
+      "description": "聲音、燈光與衣物觸感"
     },
     {
       "id": "feelings",
       "label": "情緒與壓力",
       "icon": "heart",
-      "color": "rose"
+      "color": "rose",
+      "description": "陪伴情緒、察覺壓力與事後回顧"
+    },
+    {
+      "id": "body",
+      "label": "身體成長與界線",
+      "icon": "user",
+      "color": "orange",
+      "description": "初經、變聲與身體自主"
     },
     {
       "id": "school",
-      "label": "上學與親師合作",
+      "label": "學校生活與親師合作",
       "icon": "book",
-      "color": "blue"
+      "color": "blue",
+      "description": "換班適應、和老師討論支持"
     },
     {
       "id": "caregiver",
-      "label": "照顧者支持與在地資源",
+      "label": "照顧者支持與找資源",
       "icon": "hands",
-      "color": "mint"
+      "color": "mint",
+      "description": "照顧分工、評估與在地服務"
     }
   ],
   "situations": [
@@ -1083,7 +1096,6 @@ const { categories, situations, sources, articles } = {
       "situations": [
         "transitions"
       ],
-      "topic": "3c",
       "title": "平板時間到了，先約好停在哪裡",
       "ages": [
         "6–8 歲",
@@ -1112,7 +1124,13 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子卡住的是中斷遊戲、還沒存檔，還是想知道什麼時候能再玩？記下哪種提醒最聽得懂。",
       "example": "晚餐快準備好時，孩子說這場不能暫停。家長請他指給自己看還有多久，兩人同意打完這場就到餐桌，下次吃飯前改玩能存檔的模式。",
-      "adjust": "如果倒數反而讓孩子更緊張，可以改成看得到的事件提醒，例如「這一集結束，就把平板放在桌上」。"
+      "adjust": "如果倒數反而讓孩子更緊張，可以改成看得到的事件提醒，例如「這一集結束，就把平板放在桌上」。",
+      "keywords": [
+        "3C",
+        "螢幕",
+        "平板",
+        "活動轉換"
+      ]
     },
     {
       "id": "bedtime-phone",
@@ -1121,7 +1139,6 @@ const { categories, situations, sources, articles } = {
         "routines",
         "transitions"
       ],
-      "topic": "3c",
       "title": "睡前還在刷影片，怎麼一起把手機收尾",
       "ages": [
         "6–8 歲",
@@ -1150,7 +1167,13 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "一週記錄幾次就夠了。看孩子能否自己找到替代方式，以及從收尾到上床哪個步驟還會卡住。",
       "example": "孩子原本用手機聽故事，家長先跟孩子一起挑好故事，只關掉自動播放，試著把「再看一支」換成「聽完這段就睡」。",
-      "adjust": "如果一次改太多讓睡前更難，先從改掉一個容易延長時間的設定開始，例如自動播放或遊戲通知。"
+      "adjust": "如果一次改太多讓睡前更難，先從改掉一個容易延長時間的設定開始，例如自動播放或遊戲通知。",
+      "keywords": [
+        "3C",
+        "螢幕",
+        "手機",
+        "睡前"
+      ]
     },
     {
       "id": "game-chat",
@@ -1158,7 +1181,6 @@ const { categories, situations, sources, articles } = {
       "situations": [
         "communication"
       ],
-      "topic": "3c",
       "title": "線上遊戲有人加好友，怎麼練習求助",
       "ages": [
         "9–12 歲",
@@ -1186,16 +1208,22 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "換了一個遊戲，孩子能不能重新找到這些設定？如果他害怕告訴你，先問怎麼做會讓求助更容易。",
       "example": "遊戲裡有人送禮物後要求加私人通訊軟體。孩子把畫面給家長看，家長先謝謝他來求助，再一起決定是否封鎖與回報。",
-      "adjust": "介面太多選項時，可以用一張三步小卡記下「停回覆、離開、找人」。每次換遊戲，再一起找一遍按鈕。"
+      "adjust": "介面太多選項時，可以用一張三步小卡記下「停回覆、離開、找人」。每次換遊戲，再一起找一遍按鈕。",
+      "keywords": [
+        "3C",
+        "遊戲",
+        "聊天",
+        "網路安全",
+        "求助"
+      ]
     },
     {
       "id": "first-period",
-      "category": "routines",
+      "category": "body",
       "situations": [
         "sensory",
         "communication"
       ],
-      "topic": "gender",
       "title": "第一次月經前，一起準備經期用品",
       "ages": [
         "9–12 歲",
@@ -1226,16 +1254,22 @@ const { categories, situations, sources, articles } = {
       "adjust": "若孩子暫時不想談，先留一張看得懂的用品與求助卡。疼痛或出血讓孩子難以正常活動時，可以和醫療人員討論。",
       "genderTags": [
         "女"
+      ],
+      "keywords": [
+        "月經",
+        "初經",
+        "經期用品",
+        "青春期",
+        "性別"
       ]
     },
     {
       "id": "voice-changing",
-      "category": "communication",
+      "category": "body",
       "situations": [
         "communication",
         "feelings"
       ],
-      "topic": "gender",
       "title": "男孩進入變聲期，怎麼說明聲音的變化",
       "ages": [
         "9–12 歲",
@@ -1266,16 +1300,20 @@ const { categories, situations, sources, articles } = {
       "adjust": "孩子若暫時不想開口，可以用寫的。若有持續沙啞或說話明顯不舒服，可以向醫療人員諮詢。",
       "genderTags": [
         "男"
+      ],
+      "keywords": [
+        "青春期",
+        "變聲",
+        "性別"
       ]
     },
     {
       "id": "body-boundaries",
-      "category": "communication",
+      "category": "body",
       "situations": [
         "communication",
         "school"
       ],
-      "topic": "gender",
       "title": "有人想抱我，怎麼說可以或不要",
       "ages": [
         "6–8 歲",
@@ -1308,6 +1346,12 @@ const { categories, situations, sources, articles } = {
       "genderTags": [
         "男",
         "女"
+      ],
+      "keywords": [
+        "身體自主",
+        "同意",
+        "界線",
+        "性別"
       ]
     },
     {
@@ -1317,7 +1361,6 @@ const { categories, situations, sources, articles } = {
         "school",
         "communication"
       ],
-      "topic": "gender",
       "title": "有人說「男生不能穿這個」，怎麼和孩子聊",
       "ages": [
         "6–8 歲",
@@ -1350,6 +1393,12 @@ const { categories, situations, sources, articles } = {
       "genderTags": [
         "男",
         "女"
+      ],
+      "keywords": [
+        "性別",
+        "刻板印象",
+        "顏色",
+        "穿著"
       ]
     }
   ]

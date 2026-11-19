@@ -133,6 +133,7 @@ img { display: block; max-width: 100%; }
 .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .category-grid a { display: flex; align-items: center; gap: 9px; padding: 10px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); font-size: .83rem; }
 .category-grid a:hover { border-color: #a8bda6; }
+.category-grid a small { display: block; margin-top: 3px; color: var(--muted); font-size: .73rem; line-height: 1.4; }
 .category-grid a > .icon { width: 15px; height: 15px; margin-left: auto; color: var(--muted); }
 
 .page-heading { margin: 2px 0 26px; }
