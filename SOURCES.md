@@ -1,50 +1,48 @@
 # 同行日常｜來源盤點
 
-查核日期為 2026-11-18。第一批試讀涵蓋活動轉換、溝通與互動、感官與環境，每個主題兩篇。生活例子以繁體中文撰寫。文章內附原文、實際參考段落及授權。
+查核日期為 2026-11-19。現行文章 17 篇，僅引用下列 5 筆有明確 ASD 範圍的來源。
 
-## 已用於試讀或資源導引
+## 收錄門檻
 
-| 來源 | 版本與對應主題 | 使用範圍與授權 | 原型中的文章 |
-| --- | --- | --- | --- |
-| [Positive Partnerships，視覺支持入門](https://www.positivepartnerships.com.au/uploads/Visual-supports_21.03.22.pdf) | 2020-06。活動轉換、溝通 | 文件標示 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。依第 1–2 頁作者主文改寫。第三方引文、照片、插畫和標誌未使用。 | 〈讓下一步，看得見〉、〈當孩子想表達「我需要」〉 |
-| [Positive Partnerships，為活動轉換與變動做準備](https://www.positivepartnerships.com.au/uploads/Transitions_and_Planning_for_Change_GL_RSCE_0014.pdf) | 2023-07。活動轉換、生活安排變動 | 文件標示 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。依第 2 頁規劃提示改寫。第三方引文、圖片和標誌未使用。 | 〈行程改了，先把變動說清楚〉 |
-| [Daniel、Laurie 與 Delafield-Butt，互動節奏與感官環境](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full) | 2024-09-18。聲音、光線、回應時間 | 原文採 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。依表 3 的環境調整及正文的互動實務改寫。將作者提出的做法轉為可由家長觀察與調整的居家例子。 | 〈聲音太多的時候〉、〈燈光刺眼時，和孩子一起換個位置〉、〈問完一句，留一點回應時間〉 |
-| [國民健康署，兒童發展篩檢與聯合評估說明](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=19041) | 2025-04-24。台灣在地資源 | 保留官方資訊的導引。網站採[政府資料開放授權條款第 1 版](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)，並列有第三方素材等例外。 | 〈認識台灣兒童發展資源〉 |
+- 原文或實際參考章節明確針對 ASD；機構名稱、政府資助或一般神經多樣性受眾本身不足以通過。
+- 每篇需說明自閉症孩子的實際支持需求，並可追溯到參考範圍。
+- ASD 適用性和著作重用條件分別查核。未確認範圍者暫不收錄；已確認 ASD 但授權未明的材料，只留原文導引候選。
+- 居家案例是編輯改寫，不代表原文已驗證該案例的效果。
 
-Positive Partnerships 的網站條款說明署名方式及第三方素材、照片、標誌等例外。已使用的兩份文件在文件內各自標示授權。試讀頁附署名、改寫說明和原文，授權連結可在網站的「資料來源」頁查閱。[Positive Partnerships 網站條款](https://www.positivepartnerships.com.au/terms-of-use)
+## 現行來源
 
-## 第二批補充
-
-查核日期為 2026-11-19。本批新增 9 篇，原本 12 篇補上居家例子和試不順時的調整方式。其中 5 篇原型示範已改為附來源的試讀稿。每篇使用的段落見文章頁。
-
-| 新增來源 | 參考範圍和授權 |
-| --- | --- |
-| [Positive Partnerships，家長與照顧者工作手冊](https://www.positivepartnerships.com.au/uploads/2-Day-PC-Participant-Workbook.pdf) | 第 48、122–124 頁的環境調整與陪伴做法。原文標示 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，居家例子另行撰寫。 |
-| [Positive Partnerships，親師共同規劃工具](https://www.positivepartnerships.com.au/uploads/Planning_Tool_field_Formatted_A3_V.1_Dec_21.pdf) | 參考觀察、孩子的感受或影響與可行調整等欄位。原文標示 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)；網站文章使用原創親師對話情境。 |
-| [國民健康署，兒童發展聯合評估中心名單](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1602&pid=548) | 依縣市查找院所的原文入口。頁面列出資料更新日期；網站採[政府資料開放授權](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)。 |
-| [衛生福利部，全國家照據點與共融據點](https://1966.gov.tw/LTC/cp-6455-86147-207.html) | 以官方服務頁面確認諮詢及轉介資訊，原型提供自行聯絡時可準備的問題。[網站資料開放宣告](https://1966.gov.tw/LTC/cp-6476-70761-207.html) |
-
-## 3C 與性別主題
-
-查核日期為 2026-11-19。新增 3 篇 3C 與 4 篇性別相關試讀文章，家庭對話與生活案例由同行日常撰寫。
-
-| 來源 | 參考範圍與使用方式 |
-| --- | --- |
-| [eSafety Commissioner，認識線上遊戲功能](https://www.esafety.gov.au/parents/issues-and-advice/gaming/understanding-online-gaming-features) | 即時對戰的暫停限制。網站文字適用 [CC BY 4.0 及所列例外](https://www.esafety.gov.au/about-us/corporate-documents/disclaimer-copyright)。 |
-| [eSafety Commissioner，陪孩子選擇較安全的遊戲](https://www.esafety.gov.au/parents/issues-and-advice/gaming/how-to-set-up-and-choose-games-safely) | 家庭約定、睡前使用、聊天與隱私設定。網站文字適用 [CC BY 4.0 及所列例外](https://www.esafety.gov.au/about-us/corporate-documents/disclaimer-copyright)。 |
-| [國健署，心智障礙者性健康教育家長手冊](https://health99.hpa.gov.tw/storage/pdf/materials/22174.pdf) | 單元 4 的青春期健康與月經知識。提供原文連結。 |
-| [香港衞生署學生健康服務，聲線一百分](https://www.studenthealth.gov.hk/tc_chi/health/health_ehs/health_ehs_ar.html) | 青春期聲音變化的生理背景。提供原文連結。 |
-| [國健署，守護身體界線](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=18825) | 身體自主與尊重接觸意願。國健署網站適用[政府資料開放授權](https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208)。 |
-| [教育部，性別平等教育問與答](https://www.gender.edu.tw/web/index.php/m1/m1_03_03_c?sid=20) | 尊重不同性別、性別特質與性別認同。提供原文連結。 |
-
-## 後續候選
-
-| 來源 | 可對應的主題 | 目前用途 |
+| 來源 | ASD 範圍依據 | 使用範圍與授權 |
 | --- | --- | --- |
-| [WHO 照顧者技巧訓練參與者手冊](https://iris.who.int/bitstream/handle/10665/353582/9789240048911-eng.pdf) | 溝通、參與、生活作息 | 提供原文。文件採 CC BY-NC-SA 3.0 IGO，改作有非商業、相同方式分享等條件。 |
-| [Autism CRC 兒童支持指引](https://www.autismcrc.com.au/best-practice/supporting-children) | 感官環境、學校與家庭支持 | 提供原文。第三方資料和個別附件另行查核。 |
-| [NICE 自閉症兒少支持指引](https://www.nice.org.uk/guidance/cg170/chapter/recommendations) | 家庭支持、環境調整、學校轉銜 | 原文候選。文件標示保留權利。 |
-| [Positive Partnerships，繁中視覺支持課程](https://www.positivepartnerships.com.au/news/new-module-visual-supports-in-action) | 圖卡、家庭及學校日常 | 原文候選。課程內的個別案例、圖片和影片逐件查核。 |
-| 工作區《那些有關星兒的事》五冊 | 生活情境、在家照顧與親職經驗 | 已抽查封面及前言。前言提及歡迎分享，公開轉載與改作的授權範圍待確認。 |
+| [Positive Partnerships｜視覺支持入門](https://www.positivepartnerships.com.au/uploads/Visual-supports_21.03.22.pdf) | 第 1 頁明確說明視覺支持如何依自閉症者的理解與需要個別化。 | 原文標示 CC BY 4.0。改寫範圍含原作者主文，排除第三方引文、圖片和標誌。 |
+| [Positive Partnerships｜為活動轉換與變動做準備](https://www.positivepartnerships.com.au/uploads/Transitions_and_Planning_for_Change_GL_RSCE_0014.pdf) | 第 1–2 頁明確討論自閉症年輕人的活動轉換、變動與支持計畫。 | 原文標示 CC BY 4.0。改寫範圍含原作者主文，排除第三方引文、圖片和標誌。 |
+| [Daniel、Laurie 與 Delafield-Butt｜互動節奏與感官環境](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full) | 標題與正文明確聚焦自閉症互動支持，表 3 討論感官環境調整。 | 原文標示 CC BY 4.0。同行日常改寫為繁中與居家範例。 |
+| [Positive Partnerships｜家長與照顧者工作手冊](https://www.positivepartnerships.com.au/uploads/2-Day-PC-Participant-Workbook.pdf) | 封面明列支持自閉症學齡學生，正文包含感官、行為理解及家庭與學校合作。 | 原文標示 CC BY 4.0。改寫範圍為作者正文，第三方引文、照片和標誌除外。 |
+| [Positive Partnerships｜親師共同規劃工具](https://www.positivepartnerships.com.au/uploads/Planning_Tool_field_Formatted_A3_V.1_Dec_21.pdf) | 此工具屬 Helping Children with Autism 計畫，官方介紹將工具用於自閉症孩子的個別支持規劃。 | 原文標示 CC BY 4.0。改寫範圍為作者正文，第三方引文、照片和標誌除外。 |
 
-生活策略以繁中試讀稿呈現，適齡標籤用於排序。正式版內容仍待熟悉自閉症支持的專業人士、家長及自閉症者試讀。
+Positive Partnerships 的[網站條款](https://www.positivepartnerships.com.au/terms-of-use)列出 CC BY 4.0 的署名格式及照片、第三方素材、標誌、外部影片等例外。文章保留各自的署名和改寫範圍。
+
+Rhythmic Relating 原文屬 Hypothesis and Theory 類型的手冊文章。此處只參考溝通與環境調整，不將其當作特定療法效果已獲確立的證明。
+
+## 2026-11-19 追溯下架紀錄
+
+以下文章只以一般性資料為依據，已移出公開目錄、推薦及來源頁。找到明確針對 ASD 的資料後，再另外審核是否重寫收錄。
+
+| 文章 ID | 題目 | 本次排除原因 |
+| --- | --- | --- |
+| local | 認識台灣兒童發展資源 | 一般兒童發展服務，未建立 ASD 專屬導引依據。 |
+| rest | 把「幫我一下」說具體一點 | 一般家庭照顧者服務，未確認 ASD 兒少適用的服務範圍。 |
+| find-evaluation-center | 收到轉介後，怎麼找兒童發展聯合評估中心 | 一般兒童發展服務，未建立 ASD 專屬導引依據。 |
+| find-caregiver-support | 照顧快撐不住時，先找一個支援窗口 | 一般家庭照顧者服務，未確認 ASD 兒少適用的服務範圍。 |
+| screen-stop | 平板時間到了，先約好停在哪裡 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 |
+| bedtime-phone | 睡前還在刷影片，怎麼一起把手機收尾 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 |
+| game-chat | 線上遊戲有人加好友，怎麼練習求助 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 |
+| first-period | 第一次月經前，一起準備經期用品 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
+| voice-changing | 男孩進入變聲期，怎麼說明聲音的變化 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
+| body-boundaries | 有人想抱我，怎麼說可以或不要 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
+| gender-expression | 有人說「男生不能穿這個」，怎麼和孩子聊 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
+
+## 後續資料收集
+
+[GitHub issue #1](https://github.com/luyotw/asd-support/issues/1)依相同門檻更新。廣義神經多樣性、一般育兒或障礙材料移至暫不收錄紀錄；保留來源歷史不代表納入內容候選。WHO CST 廣泛服務發展遲緩／障礙家庭，未定位到明確 ASD 章節前暫不收錄。
+
+ASD 資料仍需核對年齡、實際支持需求、版本及重用條件；正式內容待熟悉自閉症支持的專業人士、家長與自閉症者試讀。

@@ -43,6 +43,8 @@ const navItems = [
 const categoryById = Object.fromEntries(categories.map(category => [category.id, category]));
 const situationById = Object.fromEntries(situations.map(situation => [situation.id, situation]));
 const articleById = Object.fromEntries(articles.map(article => [article.id, article]));
+const withdrawnById = Object.fromEntries(withdrawnArticles.map(article => [article.id, article]));
+const visibleCategories = categories.filter(category => articles.some(article => article.category === category.id));
 const emptyProfile = () => ({ age: "", gender: "", situations: [] });
 const emptyState = () => ({ version: storageVersion, profile: null, saved: [], dismissed: [] });
 
@@ -80,8 +82,8 @@ function loadState() {
         gender: genders.includes(savedState.profile.gender) ? savedState.profile.gender : "",
         situations: knownSituations,
       } : null,
-      saved: Array.isArray(savedState.saved) ? savedState.saved.filter(id => Object.hasOwn(articleById, id)) : [],
-      dismissed: Array.isArray(savedState.dismissed) ? savedState.dismissed.filter(id => Object.hasOwn(articleById, id)) : [],
+      saved: Array.isArray(savedState.saved) ? savedState.saved.filter(id => Object.hasOwn(articleById, id) || Object.hasOwn(withdrawnById, id)) : [],
+      dismissed: Array.isArray(savedState.dismissed) ? savedState.dismissed.filter(id => Object.hasOwn(articleById, id) || Object.hasOwn(withdrawnById, id)) : [],
     };
   } catch {
     return emptyState();
@@ -159,7 +161,7 @@ function refreshNotes(articleId) {
 
 function route() {
   const page = location.hash.slice(1);
-  if (page.startsWith("article/") && Object.hasOwn(articleById, page.slice(8))) return page;
+  if (page.startsWith("article/") && (Object.hasOwn(articleById, page.slice(8)) || Object.hasOwn(withdrawnById, page.slice(8)))) return page;
   if (["library", "saved", "settings", "edit", "sources", "setup/1", "setup/2", "setup/3"].includes(page)) return page;
   if (page === "home" || page === "demo") return "home";
   return state.profile ? "home" : "welcome";
@@ -392,7 +394,7 @@ function home() {
   </section>` : ""}
   <section class="browse-section" aria-labelledby="browse-title">
     <div class="section-heading"><h2 id="browse-title">依分類找資源</h2></div>
-    <div class="category-grid">${categories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<span><strong>${category.label}</strong><small>${category.description}</small></span>${icon("chevron")}</a>`).join("")}</div>
+    <div class="category-grid">${visibleCategories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<span><strong>${category.label}</strong><small>${category.description}</small></span>${icon("chevron")}</a>`).join("")}</div>
   </section>`);
 }
 
@@ -403,8 +405,8 @@ function filterButton(id, label) {
 function library() {
   return shell("library", `<div class="page-heading"><h1>資源目錄</h1><p>依分類瀏覽，或搜尋你遇到的生活情境。</p></div>
     <div class="filter-area">
-      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋收玩具、3C、月經⋯⋯" autocomplete="off"></label>
-      <div class="filter-chips" role="group" aria-label="依分類篩選">${filterButton("all", "全部資源")}${categories.map(category => filterButton(category.id, category.label)).join("")}</div>
+      <label class="search-box">${icon("search")}<span class="sr-only">搜尋資源</span><input type="search" id="search-box" placeholder="搜尋收玩具、聲音、親師溝通⋯⋯" autocomplete="off"></label>
+      <div class="filter-chips" role="group" aria-label="依分類篩選">${filterButton("all", "全部資源")}${visibleCategories.map(category => filterButton(category.id, category.label)).join("")}</div>
     </div>
     <p id="result-count" class="result-count" aria-live="polite"></p>
     <div id="results"></div>
@@ -452,7 +454,7 @@ function articlePage(article) {
         <button class="button plain" data-action="open-notes">我的筆記</button>
       </div>
     </header>
-    <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p></section>
+    <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p><p>${article.asdFocus}</p></section>
     <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
     </section>
@@ -472,10 +474,20 @@ function articlePage(article) {
 }
 
 function savedPage() {
-  const items = currentState().saved.map(id => articleById[id]);
+  const items = currentState().saved.map(id => articleById[id]).filter(Boolean);
+  const personalRecords = withdrawnArticles.filter(article => currentState().saved.includes(article.id) || readNotes(article.id).length);
   return shell("saved", `<div class="page-heading"><h1>我的收藏</h1><p>把想留著的做法放在這裡，下次需要時容易找到。</p></div>
     ${items.length ? `<div class="card-grid">${items.map(article => articleCard(article, "saved")).join("")}</div>`
-    : `<div class="empty">${icon("bookmark")}<h2>目前還沒有收藏</h2><p>在文章裡點「收藏這篇」，就會出現在這裡。</p><a class="button primary" href="#library">去逛資源目錄 ${icon("arrow")}</a></div>`}`);
+    : `<div class="empty">${icon("bookmark")}<h2>目前沒有已收錄文章的收藏</h2><p>在文章裡點「收藏這篇」，就會出現在這裡。</p><a class="button primary" href="#library">去逛資源目錄 ${icon("arrow")}</a></div>`}
+    ${personalRecords.length ? `<section class="article-section"><h2>已暫停收錄的個人紀錄</h2><p>原文內容已下架，你的收藏紀錄與筆記仍保留在這個瀏覽器。</p><ul>${personalRecords.map(article => `<li><a href="#article/${article.id}">${article.title} · 查看筆記</a></li>`).join("")}</ul></section>` : ""}`);
+}
+
+function withdrawnArticlePage(article) {
+  return shell("saved", `<div class="article-page">
+    <a class="text-button back-link" href="#saved">${icon("back")} 回個人紀錄</a>
+    <header class="article-heading"><h1>${article.title}</h1><p>這篇內容已暫停收錄，因為目前缺少針對 ASD 的資料依據。你先前的筆記仍可在下方查看和編輯。</p></header>
+    ${notesSection(article.id)}
+  </div>`);
 }
 
 function settings() {
@@ -529,7 +541,10 @@ function render(focus = false) {
     app.innerHTML = library();
     refreshLibrary();
   }
-  if (page.startsWith("article/")) app.innerHTML = articlePage(articleById[page.slice(8)]);
+  if (page.startsWith("article/")) {
+    const id = page.slice(8);
+    app.innerHTML = articleById[id] ? articlePage(articleById[id]) : withdrawnArticlePage(withdrawnById[id]);
+  }
   if (page === "saved") app.innerHTML = savedPage();
   if (page === "settings") app.innerHTML = settings();
   if (page === "edit") {

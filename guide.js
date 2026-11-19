@@ -1,5 +1,5 @@
 // Generated from catalog.json by build-content.py.
-const { categories, situations, sources, articles } = {
+const { categories, situations, sources, articles, withdrawnArticles } = {
   "version": 1,
   "categories": [
     {
@@ -125,37 +125,6 @@ const { categories, situations, sources, articles } = {
     }
   ],
   "sources": {
-    "who": {
-      "name": "WHO｜照顧者技巧訓練",
-      "description": "供家庭與照顧者了解日常互動、溝通及生活參與的訓練資源。",
-      "rights": "原版參與者指南為 CC BY-NC-SA 3.0 IGO。原型提供原文連結。",
-      "url": "https://iris.who.int/bitstream/handle/10665/353582/9789240048911-eng.pdf",
-      "publisher": "World Health Organization",
-      "version": "2022",
-      "checked": "2026-11-18",
-      "licenseName": "CC BY-NC-SA 3.0 IGO",
-      "license": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/"
-    },
-    "crc": {
-      "name": "Autism CRC｜兒童支持指引",
-      "description": "澳洲自閉症兒童參與、學習及福祉指引，包含家庭與教育情境。",
-      "rights": "原型提供指引入口。轉載或改作前逐件確認條款。",
-      "url": "https://www.autismcrc.com.au/best-practice/supporting-children",
-      "publisher": "Autism CRC",
-      "version": "2022",
-      "checked": "2026-11-18"
-    },
-    "hpa": {
-      "name": "國民健康署｜兒童發展篩檢與聯合評估",
-      "description": "台灣兒童發展篩檢與後續聯合評估的官方資訊。",
-      "rights": "網站採政府資料開放授權條款第 1 版，使用時標明出處並留意例外。",
-      "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=19041",
-      "license": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208",
-      "publisher": "衛生福利部國民健康署",
-      "version": "2025-04-24",
-      "checked": "2026-11-18",
-      "licenseName": "政府資料開放授權宣告"
-    },
     "pp-visual": {
       "name": "Positive Partnerships｜視覺支持入門",
       "originalTitle": "An Introduction to Visual Supports",
@@ -167,7 +136,10 @@ const { categories, situations, sources, articles } = {
       "attribution": "澳洲政府教育部版權（2008 年起，另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-18，並由同行日常改寫為繁中與居家範例。",
       "url": "https://www.positivepartnerships.com.au/uploads/Visual-supports_21.03.22.pdf",
       "licenseName": "CC BY 4.0",
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "第 1 頁明確說明視覺支持如何依自閉症者的理解與需要個別化。",
+      "scopeChecked": "2026-11-19"
     },
     "pp-transitions": {
       "name": "Positive Partnerships｜為活動轉換與變動做準備",
@@ -180,7 +152,10 @@ const { categories, situations, sources, articles } = {
       "attribution": "澳洲政府教育部版權（2008 年起，另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-18，並由同行日常改寫為繁中與居家範例。",
       "url": "https://www.positivepartnerships.com.au/uploads/Transitions_and_Planning_for_Change_GL_RSCE_0014.pdf",
       "licenseName": "CC BY 4.0",
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "第 1–2 頁明確討論自閉症年輕人的活動轉換、變動與支持計畫。",
+      "scopeChecked": "2026-11-19"
     },
     "rr": {
       "name": "Daniel、Laurie 與 Delafield-Butt｜互動節奏與感官環境",
@@ -193,7 +168,10 @@ const { categories, situations, sources, articles } = {
       "attribution": "© 2024 Daniel、Laurie 與 Delafield-Butt。Frontiers in Psychology 15:1384068。",
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full",
       "licenseName": "CC BY 4.0",
-      "license": "https://creativecommons.org/licenses/by/4.0/"
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "標題與正文明確聚焦自閉症互動支持，表 3 討論感官環境調整。",
+      "scopeChecked": "2026-11-19"
     },
     "pp-workbook": {
       "name": "Positive Partnerships｜家長與照顧者工作手冊",
@@ -206,7 +184,10 @@ const { categories, situations, sources, articles } = {
       "licenseName": "CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "rights": "原文標示 CC BY 4.0。改寫範圍為作者正文，第三方引文、照片和標誌除外。",
-      "attribution": "澳洲政府教育部版權（另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-19，由同行日常改寫為繁中生活範例。"
+      "attribution": "澳洲政府教育部版權（另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-19，由同行日常改寫為繁中生活範例。",
+      "scope": "asd",
+      "scopeEvidence": "封面明列支持自閉症學齡學生，正文包含感官、行為理解及家庭與學校合作。",
+      "scopeChecked": "2026-11-19"
     },
     "pp-planning": {
       "name": "Positive Partnerships｜親師共同規劃工具",
@@ -219,93 +200,10 @@ const { categories, situations, sources, articles } = {
       "licenseName": "CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "rights": "原文標示 CC BY 4.0。改寫範圍為作者正文，第三方引文、照片和標誌除外。",
-      "attribution": "澳洲政府教育部版權（另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-19，由同行日常改寫為繁中生活範例。"
-    },
-    "hpa-centers": {
-      "name": "國民健康署｜兒童發展聯合評估中心名單",
-      "originalTitle": "兒童發展聯合評估中心名單",
-      "publisher": "衛生福利部國民健康署",
-      "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=1602&pid=548",
-      "version": "2026-08-03",
-      "checked": "2026-11-19",
-      "description": "依縣市查找聯合評估中心與聯絡方式。",
-      "licenseName": "政府資料開放授權宣告",
-      "license": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208",
-      "rights": "網站採政府資料開放授權條款第 1 版。本文提供查找導引，並註明出處。"
-    },
-    "ltc-carers": {
-      "name": "衛生福利部｜全國家照據點與共融據點",
-      "originalTitle": "全國家照據點、共融據點分布情形",
-      "publisher": "衛生福利部長期照顧司",
-      "url": "https://1966.gov.tw/LTC/cp-6455-86147-207.html",
-      "version": "2026-11-19 查閱版",
-      "checked": "2026-11-19",
-      "description": "照顧安排與情緒支持的諮詢，以及各地家庭照顧者支持據點入口。",
-      "licenseName": "政府資料開放授權宣告",
-      "license": "https://1966.gov.tw/LTC/cp-6476-70761-207.html",
-      "rights": "網站採政府資料開放授權條款第 1 版。本文使用頁面服務資訊，並註明出處。"
-    },
-    "esafety-game-features": {
-      "name": "eSafety Commissioner｜認識線上遊戲功能",
-      "originalTitle": "Understanding online gaming features",
-      "publisher": "eSafety Commissioner",
-      "url": "https://www.esafety.gov.au/parents/issues-and-advice/gaming/understanding-online-gaming-features",
-      "description": "說明即時多人遊戲的暫停限制，以及文字和語音等互動功能。",
-      "rights": "網站文字依 CC BY 4.0 提供，適用網站條款所列例外。本文使用原創家庭情境。",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "licenseName": "CC BY 4.0",
-      "attribution": "© Commonwealth of Australia（eSafety Commissioner）。同行日常以繁中整理並另寫居家例子。",
-      "checked": "2026-11-19"
-    },
-    "esafety-game-settings": {
-      "name": "eSafety Commissioner｜陪孩子選擇較安全的遊戲",
-      "originalTitle": "How to choose safe games for your kids",
-      "publisher": "eSafety Commissioner",
-      "url": "https://www.esafety.gov.au/parents/issues-and-advice/gaming/how-to-set-up-and-choose-games-safely",
-      "description": "涵蓋家庭遊戲約定、睡前時段、聊天及隱私設定。",
-      "rights": "網站文字依 CC BY 4.0 提供，適用網站條款所列例外。本文使用原創家庭情境。",
-      "license": "https://creativecommons.org/licenses/by/4.0/",
-      "licenseName": "CC BY 4.0",
-      "attribution": "© Commonwealth of Australia（eSafety Commissioner）。同行日常以繁中整理並另寫居家例子。",
-      "checked": "2026-11-19"
-    },
-    "hpa-puberty-family": {
-      "name": "國民健康署｜心智障礙者性健康教育家長手冊",
-      "originalTitle": "特別的愛，給特別的你",
-      "publisher": "衛生福利部國民健康署",
-      "url": "https://health99.hpa.gov.tw/storage/pdf/materials/22174.pdf",
-      "description": "單元 4 說明青春期身體變化與月經保健。",
-      "rights": "提供手冊原文連結。家庭情境與步驟為原創。",
-      "checked": "2026-11-19"
-    },
-    "hk-puberty-parents": {
-      "name": "香港衞生署學生健康服務｜聲線一百分",
-      "originalTitle": "聲線一百分",
-      "publisher": "香港衞生署學生健康服務",
-      "url": "https://www.studenthealth.gov.hk/tc_chi/health/health_ehs/health_ehs_ar.html",
-      "description": "說明青春期喉部發育及聲線變化。",
-      "rights": "提供原文連結作為生理知識參考，家庭對話與步驟為原創。",
-      "checked": "2026-11-19"
-    },
-    "hpa-body-boundaries": {
-      "name": "國民健康署｜守護身體界線",
-      "originalTitle": "4招守護身體界線 在感情中做自己的主人",
-      "publisher": "衛生福利部國民健康署",
-      "url": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&pid=18825",
-      "description": "說明身體自主和尊重對方是否願意接觸。",
-      "rights": "國健署網站適用政府資料開放授權條款第 1 版及其例外。",
-      "license": "https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=92&pid=5141&sid=11208",
-      "licenseName": "政府資料開放授權宣告",
-      "checked": "2026-11-19"
-    },
-    "moe-gender-education": {
-      "name": "教育部｜性別平等教育問與答",
-      "originalTitle": "性別平等教育中為何納入多元之性別概念？",
-      "publisher": "教育部性別平等教育全球資訊網",
-      "url": "https://www.gender.edu.tw/web/index.php/m1/m1_03_03_c?sid=20",
-      "description": "說明尊重不同性別、性別特質和性別認同的教育目的。",
-      "rights": "提供教育部原文連結；家庭對話和生活例子為原創。",
-      "checked": "2026-11-19"
+      "attribution": "澳洲政府教育部版權（另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-19，由同行日常改寫為繁中生活範例。",
+      "scope": "asd",
+      "scopeEvidence": "此工具屬 Helping Children with Autism 計畫，官方介紹將工具用於自閉症孩子的個別支持規劃。",
+      "scopeChecked": "2026-11-19"
     }
   },
   "articles": [
@@ -343,7 +241,8 @@ const { categories, situations, sources, articles } = {
       "sourceSection": "第 1–2 頁。視覺提示的排法、孩子的參與和實物／照片的選擇。",
       "observe": "孩子會不會自己回來看提示，或指出想調整的順序？如果圖片讓孩子困惑，可以試孩子更熟悉的實物或文字。",
       "example": "晚餐前孩子還在蓋車站。家長拿出積木與餐桌兩張照片，說「車站留在這裡，等一下到餐桌」。孩子要求再放一塊積木，兩人約好放完把作品留到飯後，讓孩子可以確認原本的活動會怎麼收尾。",
-      "adjust": "如果孩子把餐桌照片理解成「現在立刻去」，先試只在準備換活動時出示，或搭配孩子熟悉的口頭／手勢提醒。比較兩種提醒下，孩子有沒有出現不同的疑問。"
+      "adjust": "如果孩子把餐桌照片理解成「現在立刻去」，先試只在準備換活動時出示，或搭配孩子熟悉的口頭／手勢提醒。比較兩種提醒下，孩子有沒有出現不同的疑問。",
+      "asdFocus": "適合在活動轉換時，需要以實物、圖片或文字確認順序的自閉症孩子；提示形式依孩子的理解與偏好選擇。"
     },
     {
       "id": "needs",
@@ -379,7 +278,8 @@ const { categories, situations, sources, articles } = {
       "sourceSection": "第 1–2 頁。用孩子理解的實物、照片或文字支持溝通。",
       "observe": "留意孩子在哪個情境會主動拿圖、指物或用別的方式表達。孩子推開或轉身時，可以先停下來，看看他是在拒絕什麼。",
       "example": "孩子推開家長遞來的杯子，卻一直指向桌面。家長把杯子放回去，指著水壺和紙巾各確認一次。孩子指了紙巾，家長先把紙巾拿近，再看孩子接下來的動作。",
-      "adjust": "猜錯時可以說「我還沒懂，你可以再告訴我」。先讓孩子回到習慣的表達方式。若家裡和學校都在猜同一個手勢，記下它出現的情境，下次和孩子或老師一起確認。"
+      "adjust": "猜錯時可以說「我還沒懂，你可以再告訴我」。先讓孩子回到習慣的表達方式。若家裡和學校都在猜同一個手勢，記下它出現的情境，下次和孩子或老師一起確認。",
+      "asdFocus": "適合透過手勢、聲音、實物或圖像表達需要的自閉症孩子；先確認孩子的溝通方式，再選擇他看得懂的提示。"
     },
     {
       "id": "sound",
@@ -416,7 +316,8 @@ const { categories, situations, sources, articles } = {
       "sourceSection": "表 3 的聽覺環境建議。居家和外出例子由同行日常撰寫。",
       "observe": "孩子在哪個位置覺得聲音比較容易接受？留意他是想離開某一種聲音，還是想離開整個活動。",
       "example": "家族聚餐時，孩子在廚房開始備菜後頻頻摀耳。家長先帶孩子去離廚房較遠的位置坐一下，問他希望留在那裡或先到門外。下一次聚會可以提早確認靠門的座位。",
-      "adjust": "如果換位後依然不舒服，可以一起離開現場。等孩子想談時，再問是某一種聲音、有太多聲音同時出現，還是想結束活動，方便下次提早規劃。"
+      "adjust": "如果換位後依然不舒服，可以一起離開現場。等孩子想談時，再問是某一種聲音、有太多聲音同時出現，還是想結束活動，方便下次提早規劃。",
+      "asdFocus": "適合對聲音有感官不適的自閉症孩子；以孩子對聲音與位置的回饋調整環境及休息安排。"
     },
     {
       "id": "pause",
@@ -454,7 +355,8 @@ const { categories, situations, sources, articles } = {
       "example": "積木倒了，孩子大聲說「不要」，家長先把桌上的東西放穩，暫停收拾，坐到孩子能看見的位置。家長只說「我在這裡」，並等孩子表示想被陪著還是想自己待一下。",
       "adjust": "如果一靠近孩子就退開，先拉開距離、減少提問。等彼此情緒和安全都穩定，再回顧。若反覆出現會受傷的情況，可以和熟悉孩子的專業人員一起訂安全計畫。",
       "sourceSection": "第 48、122–124 頁，參考環境調整和依孩子反應陪伴的文字。",
-      "observe": "在減少聲音、提問或靠近後，孩子會希望你坐近、想換地方，或想留一點空間？用可看見或孩子自己說出的訊息記錄。"
+      "observe": "在減少聲音、提問或靠近後，孩子會希望你坐近、想換地方，或想留一點空間？用可看見或孩子自己說出的訊息記錄。",
+      "asdFocus": "適合因感官環境或情境要求而感到負荷過大的自閉症孩子；先減少負荷，再依孩子接受的方式陪伴。"
     },
     {
       "id": "bedtime",
@@ -489,7 +391,8 @@ const { categories, situations, sources, articles } = {
       "example": "孩子問了好幾次還能不能看書。家長和孩子畫了三張卡：換睡衣、刷牙、選一本書。完成哪件就翻過哪一張。孩子想先選書時，兩人一起移動卡片，再照新順序做。",
       "adjust": "如果孩子一看圖就覺得事情好多，可以先留下一件「接下來」。如果原本順序常常變，讓孩子參與更新卡片，比要求每天照同一順序更貼近家庭的現況。",
       "sourceSection": "第 1–2 頁，參考孩子參與、有意義的視覺提示與提示形式。",
-      "observe": "注意孩子會不會回看順序，或想自己挪動某張卡。可以記下哪一段還需要大人提示。"
+      "observe": "注意孩子會不會回看順序，或想自己挪動某張卡。可以記下哪一段還需要大人提示。",
+      "asdFocus": "適合需要可回看提示來理解睡前順序的自閉症孩子；圖像、實物或文字都應與孩子實際理解的方式一致。"
     },
     {
       "id": "table",
@@ -527,7 +430,8 @@ const { categories, situations, sources, articles } = {
       "example": "吃飯時孩子坐一下就起身。家長注意到座位貼著走道，還聽得到廚房的抽風機。第二天只試換到靠牆的位置，讓孩子自己比較兩個座位的感覺。",
       "adjust": "如果換位沒差，下一次只試另一個項目，例如讓孩子選熟悉的餐具。若主要困擾是吞嚥、疼痛或飲食量明顯改變，可以把觀察帶給兒科或相關專業人員。",
       "sourceSection": "表 3 的聲音、觸感與位置調整，餐桌例子為原創。",
-      "observe": "孩子是否更願意留在他選的位置？也可以直接請孩子指出哪個聲音或觸感讓他想換位置。"
+      "observe": "孩子是否更願意留在他選的位置？也可以直接請孩子指出哪個聲音或觸感讓他想換位置。",
+      "asdFocus": "適合因餐桌聲音、觸感或位置而難以參與用餐的自閉症孩子；先找出環境中讓他不舒服的因素。"
     },
     {
       "id": "school-day",
@@ -564,81 +468,8 @@ const { categories, situations, sources, articles } = {
       "example": "家長和老師發現孩子放學前會摀耳。孩子說廣播最吵，願意試坐離喇叭遠的位置。雙方約好先試一週，記下在哪幾天有效，下次一起問孩子座位是否更舒服。",
       "adjust": "如果老師目前難以更換座位，可先問能調整哪一小段流程或哪一個位置。談話重複卡在不同看法時，先把一件雙方都觀察到的事寫下來，從這件事試起。",
       "sourceSection": "參考工具中觀察、影響與調整三欄。家校對話為原創例子。",
-      "observe": "一週後問孩子這個調整有沒有幫助，再跟老師核對哪個時段最有效。"
-    },
-    {
-      "id": "local",
-      "category": "caregiver",
-      "title": "認識台灣兒童發展資源",
-      "ageLabel": "未滿 7 歲",
-      "ages": [
-        "0–1 歲",
-        "2–5 歲",
-        "6–8 歲"
-      ],
-      "time": 4,
-      "summary": "從國民健康署查找兒童發展篩檢與聯合評估的官方資訊。",
-      "when": "想了解台灣的兒童發展服務，或有日常觀察想和醫師討論。",
-      "steps": [
-        [
-          "看官方服務說明",
-          "國民健康署說明未滿 7 歲兒童的發展篩檢，以及後續評估的銜接。"
-        ],
-        [
-          "準備想分享的觀察",
-          "就診時可帶上兒童健康手冊和想詢問的具體例子。"
-        ],
-        [
-          "查詢聯合評估資訊",
-          "原文列出聯合評估服務的說明，可依居住地向醫療院所確認安排。"
-        ]
-      ],
-      "related": "hpa",
-      "situations": [
-        "local-support"
-      ],
-      "status": "official",
-      "observe": "記下孩子在哪個情境做了什麼、哪些提示有幫助。看診後也記下醫師建議的下一步和原因，方便下次對照。",
-      "example": "家長注意到孩子在熟悉的家裡會用手勢溝通，到了新環境通常不回應。就診前各記一個實例，寫下孩子當時怎麼表達、哪些提示有用，再帶著手冊和問題去問。",
-      "adjust": "如果還不清楚要找哪個單位，可以先問原就診院所：下一步是再觀察、安排評估，還是轉介？離開前記下聯絡窗口和建議回問的時間。"
-    },
-    {
-      "id": "rest",
-      "category": "caregiver",
-      "title": "把「幫我一下」說具體一點",
-      "ages": [
-        "0–1 歲",
-        "2–5 歲",
-        "6–8 歲",
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "summary": "選一件可以交接的小事，讓家人知道什麼時候、怎麼幫得上忙。",
-      "when": "照顧忙到很難空出自己的時間，希望邀請信任的人一起分擔。",
-      "steps": [
-        [
-          "想一件可以交接的事",
-          "例如一起整理明天的書包，或在你洗澡時陪孩子看一本書。"
-        ],
-        [
-          "講清楚時間和孩子的偏好",
-          "例如「你可以飯後陪他看書十分鐘嗎？他喜歡自己選書。」"
-        ],
-        [
-          "約定怎麼交接回來",
-          "說好你什麼時候會回來，對方有需要時可以如何聯絡你。"
-        ]
-      ],
-      "related": "ltc-carers",
-      "situations": [
-        "caregiver"
-      ],
-      "status": "trial",
-      "example": "把「我需要休息」改成可接手的一件事：「週三晚餐後你可以陪他拼圖二十分鐘嗎？他會自己選圖，我在旁邊房間。」兩人一起跟孩子說明接下來誰會陪他。",
-      "adjust": "對方如果只能幫十分鐘，可以先試十分鐘。請別人負責備餐、接送或買菜，也能分擔照顧。家裡一時找不到能接手的人，可以詢問在地家庭照顧者資源。",
-      "sourceSection": "參考家照據點的照顧安排諮詢資訊。交接步驟和居家例子由同行日常撰寫。",
-      "observe": "休息時間是否真的能交給對方？孩子和接手的人是否都知道遇到需要幫忙時可以怎麼做？"
+      "observe": "一週後問孩子這個調整有沒有幫助，再跟老師核對哪個時段最有效。",
+      "asdFocus": "適合為自閉症孩子討論家校支持；共同記錄孩子的溝通、感官與日常參與需求，並納入孩子自己的表達。"
     },
     {
       "id": "plan-change",
@@ -676,7 +507,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子想反覆確認的是時間、地點、人物，還是原本期待的活動？下次可以先把那項資訊說清楚。",
       "example": "原本週六要去圖書館，遇到臨時休館。家長打開孩子平常看的日曆，只改那一格，說下午會在家，晚餐和睡前照原來安排。孩子最想知道借書會改到哪一天，兩人把待確認的時間註記在旁邊。",
-      "adjust": "有些孩子會因為一直倒數更緊張，可以改成一張寫著「已確定／還要問」的紙條，或請孩子自行決定何時再看。"
+      "adjust": "有些孩子會因為一直倒數更緊張，可以改成一張寫著「已確定／還要問」的紙條，或請孩子自行決定何時再看。",
+      "asdFocus": "適合在預期改變時需要額外準備的自閉症孩子；先確認孩子在意的變動，再提供可理解、能回看的提示。"
     },
     {
       "id": "wait-for-answer",
@@ -713,7 +545,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子在問題比較短、沒有接連被追問時，有沒有更容易用自己的方式回答？等待時間可以依孩子的反應調整。",
       "example": "家長問要看哪一本書。孩子先伸手又停住，家長把兩本都放下、安靜等他看。孩子後來把兩本推開，家長確認「你現在不想選」，先繼續原本的活動。",
-      "adjust": "如果孩子遲遲沒回應，可能需要換個問法或換個時機。先確認他有看到選項，有沒有方式說「都不要」或「等一下」，再決定是否重問。"
+      "adjust": "如果孩子遲遲沒回應，可能需要換個問法或換個時機。先確認他有看到選項，有沒有方式說「都不要」或「等一下」，再決定是否重問。",
+      "asdFocus": "適合需要更多時間處理語句或以不同方式回應的自閉症孩子；等待時留意手勢、動作等表達，避免連續追問。"
     },
     {
       "id": "lighting",
@@ -750,7 +583,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "哪種光線或位置讓孩子覺得比較自在？請孩子用自己的方式表示喜歡、拒絕或想再換一次。",
       "example": "孩子畫圖時坐靠窗的桌子會瞇眼。兩人先把椅子轉一點，讓白紙不再正對窗戶。孩子自行比較原來位置和新位置，最後選了看得清楚、也比較舒服的位置。",
-      "adjust": "如果改座位沒幫助，可以在其他時段再觀察光從哪裡來，或讓孩子選另一個區域。一次改一件事，比較方便知道哪個變化有幫助。"
+      "adjust": "如果改座位沒幫助，可以在其他時段再觀察光從哪裡來，或讓孩子選另一個區域。一次改一件事，比較方便知道哪個變化有幫助。",
+      "asdFocus": "適合對光線感到不適的自閉症孩子；用孩子對亮度、位置與反光的回饋決定要調整什麼。"
     },
     {
       "id": "morning-exit",
@@ -787,7 +621,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "觀察一個具體的差異，例如孩子能自行拿到襪子，或能告訴大人還有什麼事沒做完。",
       "example": "孩子穿好鞋後才發現水壺沒裝。兩人前一天把「水壺」畫在玄關紙條的最前面，早上看得到就能先確認。",
-      "adjust": "如果紙條完全沒被注意，可以改放在要拿的東西旁邊，或請孩子選一句慣用的提醒。"
+      "adjust": "如果紙條完全沒被注意，可以改放在要拿的東西旁邊，或請孩子選一句慣用的提醒。",
+      "asdFocus": "適合需要將出門步驟外顯化的自閉症孩子；依孩子的理解能力選擇實物、照片或文字，找出卡住的環節。"
     },
     {
       "id": "ask-for-break",
@@ -825,7 +660,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子在哪裡、跟誰比較容易表達想休息？大人能不能在第一次收到訊息時就給出回應？",
       "example": "桌遊進行到一半，孩子把「休息」紙條放在桌上，家長先暫停計分，問要去旁邊坐一下還是就此結束。",
-      "adjust": "如果當下拿不到圖卡，可以改成容易做的手勢，並和常一起照顧的人說好如何回應。"
+      "adjust": "如果當下拿不到圖卡，可以改成容易做的手勢，並和常一起照顧的人說好如何回應。",
+      "asdFocus": "適合在負荷增加時，需要以圖卡、手勢或短句表達休息需求的自閉症孩子；先確認孩子願意且能使用的表達方式。"
     },
     {
       "id": "clothing-texture",
@@ -863,7 +699,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子說是某個位置刺、太緊，還是活動或流汗後變得不舒服？順便記下舒適的那一件有什麼特徵。",
       "example": "孩子不喜歡制服領口。試了兩件內搭後選了一件能遮住接縫、又不會覺得太熱的，先在家穿一小段時間比較。",
-      "adjust": "如果試穿本身就讓孩子不舒服，可以直接請孩子從已習慣的衣服挑，等有空再一起比對材質。"
+      "adjust": "如果試穿本身就讓孩子不舒服，可以直接請孩子從已習慣的衣服挑，等有空再一起比對材質。",
+      "asdFocus": "適合對衣物材質、接縫或標籤感到不適的自閉症孩子；讓孩子指出感覺與選擇舒服的穿著。"
     },
     {
       "id": "early-pressure",
@@ -901,7 +738,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "哪個訊號最早被家長或孩子察覺？當你依約先停止追問，孩子接下來有沒有表達自己想去哪裡？",
       "example": "在商場的音樂區，孩子先放慢腳步、後來拉住家長。兩人回到戶外才談，孩子說第一次拉手就想換路線，下次可以先用這個提示。",
-      "adjust": "單一動作可能有不同意思。若孩子說自己只是想多看一下，採用他的說法，再找真正用得上的提示。"
+      "adjust": "單一動作可能有不同意思。若孩子說自己只是想多看一下，採用他的說法，再找真正用得上的提示。",
+      "asdFocus": "適合為自閉症孩子辨認個別壓力訊號；結合當時的感官環境、活動與溝通需求觀察，避免只憑單一動作下結論。"
     },
     {
       "id": "after-hard-moment",
@@ -939,7 +777,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子願不願意使用你們約好的調整？下次遇到類似情境後，再問有哪一點需要重改。",
       "example": "聚會隔天，孩子用圖指出他最不舒服的是有人突然碰他。家長先確認下次可以由孩子決定要不要打招呼握手。",
-      "adjust": "如果孩子暫時不想聊，家長可以先在筆記記下看見的事和自己可以改的一件事，讓孩子日後自行補充。"
+      "adjust": "如果孩子暫時不想聊，家長可以先在筆記記下看見的事和自己可以改的一件事，讓孩子日後自行補充。",
+      "asdFocus": "適合在自閉症孩子準備好後，用他熟悉的方式回顧負荷過大的情境；一起辨認環境與支持可以如何調整。"
     },
     {
       "id": "school-transition",
@@ -976,7 +815,8 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "試走之後有哪個問題還沒回答？新的安排是否需要讓孩子再走一次，或由老師提供更清楚的資訊？",
       "example": "孩子從小教室換到大樓另一樓，最擔心上廁所後找不到班級。老師約好先讓他走一趟，並確認回教室的地標。",
-      "adjust": "如果還無法先參觀，可先描述已確定的行程，由學校回覆哪些細節能再確認，以及何時會有答案。"
+      "adjust": "如果還無法先參觀，可先描述已確定的行程，由學校回覆哪些細節能再確認，以及何時會有答案。",
+      "asdFocus": "適合面對換老師、教室或學校的自閉症孩子；依孩子的感官、溝通與可預期性需求安排準備。"
     },
     {
       "id": "school-adjustment",
@@ -1013,393 +853,54 @@ const { categories, situations, sources, articles } = {
       ],
       "observe": "孩子有沒有覺得變得舒服，或更容易參與想做的事？同一種做法不同天可能有不同結果。",
       "example": "孩子說餐廳入口太擠。老師先試讓孩子和一位同學晚兩分鐘走，家長週五問孩子有沒有想換回平常的方式。",
-      "adjust": "若維持原班級流程有困難，請學校一起找做得到的相近安排，並問孩子是否願意試。"
+      "adjust": "若維持原班級流程有困難，請學校一起找做得到的相近安排，並問孩子是否願意試。",
+      "asdFocus": "適合為自閉症孩子規劃個別學校支持；用可觀察的溝通、感官或參與需求，與老師討論調整及回看方式。"
+    }
+  ],
+  "withdrawnArticles": [
+    {
+      "id": "local",
+      "title": "認識台灣兒童發展資源"
+    },
+    {
+      "id": "rest",
+      "title": "把「幫我一下」說具體一點"
     },
     {
       "id": "find-evaluation-center",
-      "category": "caregiver",
-      "situations": [
-        "local-support"
-      ],
-      "title": "收到轉介後，怎麼找兒童發展聯合評估中心",
-      "ages": [
-        "0–1 歲",
-        "2–5 歲",
-        "6–8 歲"
-      ],
-      "time": 4,
-      "status": "official",
-      "related": "hpa-centers",
-      "sourceSection": "依國健署公布的聯合評估中心名單整理查詢方式。預約細節請向院所確認。",
-      "summary": "查官方名單，先問預約流程，再準備一兩個想和評估團隊討論的生活例子。",
-      "when": "篩檢或就醫後，醫療人員建議進一步做兒童發展評估，你想確認接下來從哪裡著手。",
-      "steps": [
-        [
-          "從官方名單找院所",
-          "依縣市和交通選一兩間，先確認該院所的兒童發展聯合評估窗口。"
-        ],
-        [
-          "先問預約要準備什麼",
-          "詢問候診時間、掛哪一科、需要轉介單或既有報告嗎，以及評估當天的安排。"
-        ],
-        [
-          "記一下你最想問的事",
-          "選一兩個家裡或學校的實例，整理孩子常用的表達方式，以及哪些環境會讓他比較自在。"
-        ]
-      ],
-      "observe": "記下院所回覆的日期、窗口和接下來要做的事。若同時問了多家，可以在筆記區分開記錄。",
-      "example": "家長先請原診所確認轉介單上有幾個選項，再從官方名單選離家近的中心，打電話問要先門診還是可直接排評估。",
-      "adjust": "如果等候較久，可詢問原轉介單位目前還能取得什麼支持，以及是否適合改洽其他中心。"
+      "title": "收到轉介後，怎麼找兒童發展聯合評估中心"
     },
     {
       "id": "find-caregiver-support",
-      "category": "caregiver",
-      "situations": [
-        "caregiver",
-        "local-support"
-      ],
-      "title": "照顧快撐不住時，先找一個支援窗口",
-      "ages": [
-        "0–1 歲",
-        "2–5 歲",
-        "6–8 歲",
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "official",
-      "related": "ltc-carers",
-      "sourceSection": "引用衛福部家照據點頁面所列的諮詢及轉介資訊。",
-      "summary": "從目前最重的一件事開始問，確認附近有哪些家庭照顧者支持。",
-      "when": "家裡暫時找不到人分擔，想問照顧安排、支持團體或能否找到在地服務。",
-      "steps": [
-        [
-          "先寫下目前最需要的支持",
-          "例如平日晚上的休息時間、遇到照顧空窗時能問誰，或想找有相近經驗的照顧者。"
-        ],
-        [
-          "查衛福部家照據點頁面",
-          "衛福部列有家庭照顧者關懷專線 0800-50-7272，可依實際需求詢問據點與服務。"
-        ],
-        [
-          "針對孩子的年齡與需求確認",
-          "說明你照顧的是孩子、住在哪個縣市、最難的是哪個時段。請接線人員確認適合你家的窗口與使用條件。"
-        ]
-      ],
-      "observe": "每次諮詢後，記下單位、回覆內容和下一個可行的聯絡方式。",
-      "example": "家長發現每週三固定只有自己照顧三個小時。向窗口描述這段空窗，先問能否連結符合孩子需求的在地資源。",
-      "adjust": "如果目前找到的據點主要支持另一類家庭，可請對方轉介地方社會局、早療或身障家庭支持窗口。"
+      "title": "照顧快撐不住時，先找一個支援窗口"
     },
     {
       "id": "screen-stop",
-      "category": "routines",
-      "situations": [
-        "transitions"
-      ],
-      "title": "平板時間到了，先約好停在哪裡",
-      "ages": [
-        "6–8 歲",
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "esafety-game-features",
-      "sourceSection": "參考線上遊戲可能無法即時暫停的說明。家庭收尾方式由同行日常撰寫。",
-      "summary": "一起確認遊戲能暫停的地方，讓收尾和接下來的活動都可以預期。",
-      "when": "平板、手機或遊戲一到約定時間就容易卡住，孩子可能還在一場無法暫停的對戰。",
-      "steps": [
-        [
-          "開始前先看活動怎麼結束",
-          "和孩子分清楚這是看一段影片、能存檔的遊戲，還是要跟別人打完一場。"
-        ],
-        [
-          "一起選一個收尾點",
-          "例如「打完這場就存檔」。快到了提醒一次，並告訴孩子下一步是充電、吃飯或休息。"
-        ],
-        [
-          "把例外也先說好",
-          "如果剩下的時間不夠開一場，讓孩子先選能隨時收尾的活動。遇到臨時變動，說清楚什麼時候能繼續。"
-        ]
-      ],
-      "observe": "孩子卡住的是中斷遊戲、還沒存檔，還是想知道什麼時候能再玩？記下哪種提醒最聽得懂。",
-      "example": "晚餐快準備好時，孩子說這場不能暫停。家長請他指給自己看還有多久，兩人同意打完這場就到餐桌，下次吃飯前改玩能存檔的模式。",
-      "adjust": "如果倒數反而讓孩子更緊張，可以改成看得到的事件提醒，例如「這一集結束，就把平板放在桌上」。",
-      "keywords": [
-        "3C",
-        "螢幕",
-        "平板",
-        "活動轉換"
-      ]
+      "title": "平板時間到了，先約好停在哪裡"
     },
     {
       "id": "bedtime-phone",
-      "category": "routines",
-      "situations": [
-        "routines",
-        "transitions"
-      ],
-      "title": "睡前還在刷影片，怎麼一起把手機收尾",
-      "ages": [
-        "6–8 歲",
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "esafety-game-settings",
-      "sourceSection": "參考家庭遊戲約定中的睡前使用建議。手機用途與居家試法為原創例子。",
-      "summary": "先找出孩子睡前用手機的原因，再約一個可試的結束方式。",
-      "when": "孩子睡前常繼續看影片、回訊息或打遊戲，原本的睡前流程被拖到很晚。",
-      "steps": [
-        [
-          "問睡前最想用手機做什麼",
-          "有人想和朋友道晚安，有人需要一點安靜或熟悉的聲音。先把需求說出來。"
-        ],
-        [
-          "和孩子挑一個能做的改變",
-          "例如看完選好的一段影片後把娛樂用手機放到客廳充電，睡前改聽熟悉的音樂。"
-        ],
-        [
-          "全家演練一次",
-          "一起試好鬧鐘、音樂或約好的替代活動。也問孩子哪個地方要保留手機，例如必要聯絡或輔助溝通。"
-        ]
-      ],
-      "observe": "一週記錄幾次就夠了。看孩子能否自己找到替代方式，以及從收尾到上床哪個步驟還會卡住。",
-      "example": "孩子原本用手機聽故事，家長先跟孩子一起挑好故事，只關掉自動播放，試著把「再看一支」換成「聽完這段就睡」。",
-      "adjust": "如果一次改太多讓睡前更難，先從改掉一個容易延長時間的設定開始，例如自動播放或遊戲通知。",
-      "keywords": [
-        "3C",
-        "螢幕",
-        "手機",
-        "睡前"
-      ]
+      "title": "睡前還在刷影片，怎麼一起把手機收尾"
     },
     {
       "id": "game-chat",
-      "category": "communication",
-      "situations": [
-        "communication"
-      ],
-      "title": "線上遊戲有人加好友，怎麼練習求助",
-      "ages": [
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "esafety-game-settings",
-      "sourceSection": "參考遊戲平台的聊天、好友限制、靜音、封鎖與回報功能說明。",
-      "summary": "和孩子看一次實際的聊天設定，再用一個短情境練習拒絕和求助。",
-      "when": "孩子開始玩可聊天的線上遊戲，或收到不認識的人私訊、好友邀請及禮物。",
-      "steps": [
-        [
-          "一起看誰可以聯絡孩子",
-          "打開遊戲設定，看目前誰可以傳訊或邀請。依孩子的使用經驗，討論是否先只留已認識的好友。"
-        ],
-        [
-          "一起練一句短回覆",
-          "有人問真名、學校、地址或照片時，可以只說「我不分享這個」，或直接退出對話。"
-        ],
-        [
-          "在熟悉的介面找出求助方法",
-          "讓孩子指給你看哪裡可以靜音、封鎖或回報。也約定遇到不舒服的訊息，可以先拿給哪位大人看。"
-        ]
-      ],
-      "observe": "換了一個遊戲，孩子能不能重新找到這些設定？如果他害怕告訴你，先問怎麼做會讓求助更容易。",
-      "example": "遊戲裡有人送禮物後要求加私人通訊軟體。孩子把畫面給家長看，家長先謝謝他來求助，再一起決定是否封鎖與回報。",
-      "adjust": "介面太多選項時，可以用一張三步小卡記下「停回覆、離開、找人」。每次換遊戲，再一起找一遍按鈕。",
-      "keywords": [
-        "3C",
-        "遊戲",
-        "聊天",
-        "網路安全",
-        "求助"
-      ]
+      "title": "線上遊戲有人加好友，怎麼練習求助"
     },
     {
       "id": "first-period",
-      "category": "body",
-      "situations": [
-        "sensory",
-        "communication"
-      ],
-      "title": "第一次月經前，一起準備經期用品",
-      "ages": [
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "hpa-puberty-family",
-      "sourceSection": "國健署手冊單元 4 的青春期月經與衛生保健。用品準備流程與家庭對話為原創。",
-      "summary": "在孩子方便的時候認識經期用品、選舒服的選項，並先想好在學校可以找誰。",
-      "when": "孩子開始想知道月經是什麼，或家長想先陪可能來月經的孩子準備。",
-      "steps": [
-        [
-          "用孩子懂的話說明",
-          "可以說「身體長大後，有時內褲會沾到經血。我們可以用經期用品，覺得不舒服也可以跟我說」。"
-        ],
-        [
-          "先在家看一次用品怎麼用",
-          "讓孩子自己決定要不要打開、摸一摸或看示範，看看衛生棉的觸感和氣味是否舒服。"
-        ],
-        [
-          "把上學需要的東西放在固定位置",
-          "可以一起裝小袋，放經期用品和備用內褲，再約好孩子在學校可向誰求助、怎麼開口。"
-        ]
-      ],
-      "observe": "確認孩子能找得到用品，知道需要更換、弄髒衣物或有明顯不適時能找誰。可讓孩子自己決定哪些紀錄要留。",
-      "example": "孩子不喜歡撕包裝的聲音。家長先在安靜的房間讓孩子看一次，再一起試另一種包裝，最後由孩子選想放進書包的用品。",
-      "adjust": "若孩子暫時不想談，先留一張看得懂的用品與求助卡。疼痛或出血讓孩子難以正常活動時，可以和醫療人員討論。",
-      "genderTags": [
-        "女"
-      ],
-      "keywords": [
-        "月經",
-        "初經",
-        "經期用品",
-        "青春期",
-        "性別"
-      ]
+      "title": "第一次月經前，一起準備經期用品"
     },
     {
       "id": "voice-changing",
-      "category": "body",
-      "situations": [
-        "communication",
-        "feelings"
-      ],
-      "title": "男孩進入變聲期，怎麼說明聲音的變化",
-      "ages": [
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "hk-puberty-parents",
-      "sourceSection": "參考青春期喉部與聲音變化的生理說明，親子對話和校園例子為原創。",
-      "summary": "用具體的話說明聲音可能忽高忽低，讓孩子選擇怎麼問、怎麼回應別人。",
-      "when": "孩子注意到自己的聲音時高時低，或被家人同學評論後不太想開口。",
-      "steps": [
-        [
-          "先確認孩子擔心什麼",
-          "問他想知道聲音為什麼變了、怕別人聽到，還是覺得開口不舒服。"
-        ],
-        [
-          "用平常的語氣說發生了什麼",
-          "可以說「青春期喉部會成長，聲音有時會忽高忽低」。孩子想問的部分先說一件就好。"
-        ],
-        [
-          "一起練習面對評論",
-          "如果孩子願意，可以練「我不想聊我的聲音」，或想一個能請老師協助的方式。"
-        ]
-      ],
-      "observe": "孩子在家、學校或語音通話中的擔心是不是不同？用孩子願意分享的內容決定下一步。",
-      "example": "孩子讀課文時聲音突然變高，回家問是不是出了問題。家長先說明發育中的聲音可能變動，問孩子要不要先和老師約定被笑時怎麼求助。",
-      "adjust": "孩子若暫時不想開口，可以用寫的。若有持續沙啞或說話明顯不舒服，可以向醫療人員諮詢。",
-      "genderTags": [
-        "男"
-      ],
-      "keywords": [
-        "青春期",
-        "變聲",
-        "性別"
-      ]
+      "title": "男孩進入變聲期，怎麼說明聲音的變化"
     },
     {
       "id": "body-boundaries",
-      "category": "body",
-      "situations": [
-        "communication",
-        "school"
-      ],
-      "title": "有人想抱我，怎麼說可以或不要",
-      "ages": [
-        "6–8 歲",
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "hpa-body-boundaries",
-      "sourceSection": "參考國健署身體自主與尊重同意的原則，改用親友打招呼的原創例子。",
-      "summary": "從打招呼開始練習身體界線，讓孩子能用說話、手勢或圖卡表示意願。",
-      "when": "親友常問能不能擁抱或牽手，孩子想表達喜歡、不喜歡或需要先等一下。",
-      "steps": [
-        [
-          "在平常的互動先示範",
-          "家長問「我可以抱你嗎？」等孩子回答。孩子沒答應時，留在原處，讓他選擇要不要有接觸。"
-        ],
-        [
-          "一起找用得上的說法",
-          "例如「先不要」或把手掌朝外。也可以選揮手或點頭作為打招呼方式。"
-        ],
-        [
-          "說清楚遇到不舒服時可以找誰",
-          "和孩子確認家裡、學校各有誰能幫忙。孩子事後才想說，也可以和信任的大人談。"
-        ]
-      ],
-      "observe": "孩子能不能用自己熟悉的方式表達意願？大人收到拒絕後，有沒有直接停下來？",
-      "example": "親戚張開手要抱，孩子往後退。家長先請親戚停一下，再讓孩子選揮手或點頭，親戚也接受了這個選擇。",
-      "adjust": "如果孩子看到太多人會緊張，可以家長先代為表達，等孩子願意時再讓他選擇如何打招呼。",
-      "genderTags": [
-        "男",
-        "女"
-      ],
-      "keywords": [
-        "身體自主",
-        "同意",
-        "界線",
-        "性別"
-      ]
+      "title": "有人想抱我，怎麼說可以或不要"
     },
     {
       "id": "gender-expression",
-      "category": "school",
-      "situations": [
-        "school",
-        "communication"
-      ],
-      "title": "有人說「男生不能穿這個」，怎麼和孩子聊",
-      "ages": [
-        "6–8 歲",
-        "9–12 歲",
-        "13–17 歲"
-      ],
-      "time": 4,
-      "status": "trial",
-      "related": "moe-gender-education",
-      "sourceSection": "參考教育部尊重多元性別特質的教育說明。家庭與校園例子為原創。",
-      "summary": "從孩子喜歡的衣服、顏色或遊戲開始，練習回應對性別的刻板說法。",
-      "when": "孩子因為顏色、衣物、髮型或喜歡的活動被說「不符合男生或女生的樣子」。",
-      "steps": [
-        [
-          "先問孩子是怎麼想的",
-          "他可能在意被笑、規則說不清楚，或只是想確認到底能不能選自己喜歡的東西。"
-        ],
-        [
-          "用具體的生活例子說明",
-          "可以說「任何人都可以喜歡粉紅色」。若情境中有安全或活動服裝規定，再說清楚規定是為了什麼。"
-        ],
-        [
-          "一起想一個可用的回應",
-          "孩子可以說「我就是喜歡」，也可以離開、請老師協助，或先請家長一起討論。"
-        ]
-      ],
-      "observe": "孩子希望大人幫忙到什麼程度？和老師談前可以先問哪些事可以分享、哪些想先留在家裡談。",
-      "example": "孩子帶了粉紅色水壺被說不像男生。家長先聽孩子怎麼想，再陪他練一句「我喜歡這個顏色」，也讓他選要不要和老師說。",
-      "adjust": "如果同樣的評論一直發生，先記下實際時間、地點和說法，和老師討論孩子想要的支持。",
-      "genderTags": [
-        "男",
-        "女"
-      ],
-      "keywords": [
-        "性別",
-        "刻板印象",
-        "顏色",
-        "穿著"
-      ]
+      "title": "有人說「男生不能穿這個」，怎麼和孩子聊"
     }
   ]
 };

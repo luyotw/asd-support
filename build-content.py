@@ -12,13 +12,18 @@ def main():
 
     folder = Path(__file__).resolve().parent
     catalog = json.loads((folder / "catalog.json").read_text(encoding="utf-8"))
+    for source_id, source in catalog["sources"].items():
+        if source.get("scope") != "asd" or not source.get("scopeEvidence"):
+            parser.error(f"{source_id} needs verified ASD-specific scope evidence.")
     for article in catalog["articles"]:
         if not article.get("ages"):
             parser.error(f"{article['id']} must have at least one age group in catalog.json.")
+        if article.get("related") not in catalog["sources"] or not article.get("asdFocus"):
+            parser.error(f"{article['id']} needs an ASD-specific source and support focus.")
     path = folder / "guide.js"
     content = (
         "// Generated from catalog.json by build-content.py.\n"
-        "const { categories, situations, sources, articles } = "
+        "const { categories, situations, sources, articles, withdrawnArticles } = "
         + json.dumps(catalog, ensure_ascii=False, indent=2)
         + ";\n"
     )
