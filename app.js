@@ -314,7 +314,7 @@ function articleAge(article) {
   const start = ages.indexOf(bands[0]);
   const contiguous = bands.length > 1 && bands.every((band, offset) => band === ages[start + offset]);
   const range = contiguous ? `${bands[0].split("–")[0]}–${bands.at(-1).split("–")[1]}` : bands.join("、");
-  return `<span class="article-age">建議年齡 ${article.ageLabel || range}</span>`;
+  return `<span class="article-age">參考年齡 ${article.ageLabel || range}</span>`;
 }
 
 function articleTags(article) {
@@ -454,7 +454,7 @@ function articlePage(article) {
         <button class="button plain" data-action="open-notes">我的筆記</button>
       </div>
     </header>
-    <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p><p>${article.asdFocus}</p></section>
+    <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p><p>${article.asdFocus}</p>${article.ageNote ? `<p class="muted">${article.ageNote.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>` : ""}</section>
     <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
     </section>

@@ -12,12 +12,26 @@ def main():
 
     folder = Path(__file__).resolve().parent
     catalog = json.loads((folder / "catalog.json").read_text(encoding="utf-8"))
+    audit = json.loads((folder / "source-audit.json").read_text(encoding="utf-8"))
+    approved = {item["id"]: item for item in audit["sources"]}
     for source_id, source in catalog["sources"].items():
         if source.get("scope") != "asd" or not source.get("scopeEvidence"):
             parser.error(f"{source_id} needs verified ASD-specific scope evidence.")
+        reviewed = approved.get(source.get("auditId"), {})
+        if (reviewed.get("decision") != "adapt"
+                or source.get("reuseStatus") != "adaptation-permitted"
+                or not source.get("permissionEvidence")
+                or source.get("url") != reviewed.get("url")):
+            parser.error(f"{source_id} needs a verified adaptation licence for this exact source.")
+        if (source.get("currencyStatus") != "usable"
+                or not source.get("reviewScope")
+                or not source.get("reviewChecked")):
+            parser.error(f"{source_id} needs a completed review for the cited scope.")
     for article in catalog["articles"]:
         if not article.get("ages"):
             parser.error(f"{article['id']} must have at least one age group in catalog.json.")
+        if not article.get("ageBasis") or not article.get("ageNote"):
+            parser.error(f"{article['id']} needs an explicit basis for its age labels.")
         if article.get("related") not in catalog["sources"] or not article.get("asdFocus"):
             parser.error(f"{article['id']} needs an ASD-specific source and support focus.")
     path = folder / "guide.js"

@@ -130,7 +130,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "originalTitle": "An Introduction to Visual Supports",
       "publisher": "Positive Partnerships",
       "version": "2020-06",
-      "checked": "2026-11-18",
+      "checked": "2026-11-19",
       "description": "如何依孩子的理解和偏好選擇圖像、實物或文字。參考第 1–2 頁的主文。",
       "rights": "原文標示 CC BY 4.0。改寫範圍含原作者主文，排除第三方引文、圖片和標誌。",
       "attribution": "澳洲政府教育部版權（2008 年起，另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-18，並由同行日常改寫為繁中與居家範例。",
@@ -139,14 +139,22 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "scope": "asd",
       "scopeEvidence": "第 1 頁明確說明視覺支持如何依自閉症者的理解與需要個別化。",
-      "scopeChecked": "2026-11-19"
+      "scopeChecked": "2026-11-19",
+      "auditId": "P01",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.positivepartnerships.com.au/terms-of-use",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "第1–2頁作者主文；不取Wong引文／照片／標誌",
+      "currencyStatus": "usable",
+      "currencyEvidence": "原檔與現有主文逐項比對；以2025工作手冊的視覺／溝通及個別化原則交叉核對。",
+      "sourceAudience": "學齡ASD孩子；未訂數字適齡"
     },
     "pp-transitions": {
       "name": "Positive Partnerships｜為活動轉換與變動做準備",
       "originalTitle": "Transitions and Planning for Change",
       "publisher": "Positive Partnerships",
       "version": "2023-07",
-      "checked": "2026-11-18",
+      "checked": "2026-11-19",
       "description": "如何和孩子一起為生活安排變動做準備。參考第 2 頁的規劃提示。",
       "rights": "原文標示 CC BY 4.0。改寫範圍含原作者主文，排除第三方引文、圖片和標誌。",
       "attribution": "澳洲政府教育部版權（2008 年起，另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-18，並由同行日常改寫為繁中與居家範例。",
@@ -155,30 +163,46 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "scope": "asd",
       "scopeEvidence": "第 1–2 頁明確討論自閉症年輕人的活動轉換、變動與支持計畫。",
-      "scopeChecked": "2026-11-19"
+      "scopeChecked": "2026-11-19",
+      "auditId": "P02",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.positivepartnerships.com.au/terms-of-use",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "第1–2頁作者主文，排除Hayley Moss引文",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已核官方現行轉換入口與原檔；保留「倒數須有安定作用」條件。",
+      "sourceAudience": "ASD兒童／年輕人，含學前與學校轉銜；未訂數字適齡"
     },
     "rr": {
       "name": "Daniel、Laurie 與 Delafield-Butt｜互動節奏與感官環境",
       "originalTitle": "A handbook for Rhythmic Relating in autism: supporting social timing in play, learning and therapy",
       "publisher": "Frontiers in Psychology",
       "version": "2024-09-18",
-      "checked": "2026-11-18",
-      "description": "作者手冊描述聽覺與視覺環境調整、清楚用語及保留回應時間。參考表 3 與正文互動實務。",
-      "rights": "原文標示 CC BY 4.0。同行日常改寫為繁中與居家範例。",
+      "checked": "2026-11-19",
+      "description": "僅參考作者正文的清楚語句與留出回應時間；不沿用另經許可轉載的表3／4。",
+      "rights": "作者正文標示 CC BY 4.0。本專案只改寫清楚語句與等待回應段，排除另行署名的轉載表格與圖像。",
       "attribution": "© 2024 Daniel、Laurie 與 Delafield-Butt。Frontiers in Psychology 15:1384068。",
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full",
       "licenseName": "CC BY 4.0",
       "license": "https://creativecommons.org/licenses/by/4.0/",
       "scope": "asd",
-      "scopeEvidence": "標題與正文明確聚焦自閉症互動支持，表 3 討論感官環境調整。",
-      "scopeChecked": "2026-11-19"
+      "scopeEvidence": "標題及作者正文聚焦自閉症互動支持，本案限清楚語句與等待回應段，不採用轉載表格。",
+      "scopeChecked": "2026-11-19",
+      "auditId": "P03",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1384068/full",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "作者正文的簡單語句與等待回應段；不沿用經許可轉載的表3／4",
+      "currencyStatus": "usable",
+      "currencyEvidence": "以2026同研究脈絡文章4.3節交叉核對；只作溝通支持背景，不當療效證明。",
+      "sourceAudience": "年幼ASD孩子、不同溝通方式及額外學習需要者；未訂數字"
     },
     "pp-workbook": {
       "name": "Positive Partnerships｜家長與照顧者工作手冊",
       "originalTitle": "2 Day Parent Carer Participant Workbook",
       "publisher": "Positive Partnerships",
       "url": "https://www.positivepartnerships.com.au/uploads/2-Day-PC-Participant-Workbook.pdf",
-      "version": "2026-11-19 查閱版",
+      "version": "原文未列發布版次（2026-11-19取用檔）",
       "checked": "2026-11-19",
       "description": "參考第 48 頁及第 5、6 節有關感官、情緒陪伴與親師合作的文字。",
       "licenseName": "CC BY 4.0",
@@ -187,7 +211,15 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "attribution": "澳洲政府教育部版權（另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-19，由同行日常改寫為繁中生活範例。",
       "scope": "asd",
       "scopeEvidence": "封面明列支持自閉症學齡學生，正文包含感官、行為理解及家庭與學校合作。",
-      "scopeChecked": "2026-11-19"
+      "scopeChecked": "2026-11-19",
+      "auditId": "P04",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.positivepartnerships.com.au/terms-of-use",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "印刷頁48、122、124作者主文；排除照片、第三方引文、神經機制及固定練習頻率說法",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已取得158頁現行檔；逐項核對情緒、負荷與共同調節段，再以AIFS 2025的個別需求原則交叉核對。",
+      "sourceAudience": "ASD學齡學生及家長；未訂數字適齡"
     },
     "pp-planning": {
       "name": "Positive Partnerships｜親師共同規劃工具",
@@ -203,7 +235,39 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "attribution": "澳洲政府教育部版權（另有標示者依原文）。資料取自 Positive Partnerships，查閱於 2026-11-19，由同行日常改寫為繁中生活範例。",
       "scope": "asd",
       "scopeEvidence": "此工具屬 Helping Children with Autism 計畫，官方介紹將工具用於自閉症孩子的個別支持規劃。",
-      "scopeChecked": "2026-11-19"
+      "scopeChecked": "2026-11-19",
+      "auditId": "P05",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.positivepartnerships.com.au/terms-of-use",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "單頁作者規劃欄位；排除標誌",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已核官方現行規劃入口與欄位，僅用觀察、影響、調整及孩子參與；不含服務資格。",
+      "sourceAudience": "ASD學生／支持團隊；未訂數字適齡"
+    },
+    "rr-sensory": {
+      "name": "Daniel等｜感官環境與個別支持",
+      "originalTitle": "Sensory-processing informed autism practice for child-centred therapists",
+      "publisher": "Research in Neurodiversity",
+      "url": "https://strathprints.strath.ac.uk/95516/7/Daniel-etal-RN-2026-Sensory-processing-informed-autism-practice-for-child-centred-therapists.pdf",
+      "version": "2026-02-03",
+      "checked": "2026-11-19",
+      "description": "參考第3節及表3的感官環境文字。居家情境由同行日常撰寫，不作治療操作程序。",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "rights": "原文第1頁標示 CC BY 4.0。此處改寫作者的感官環境文字，生活例子由同行日常撰寫。",
+      "attribution": "© 2026 Stuart Daniel等。Research in Neurodiversity 2:100015，doi:10.1016/j.rin.2026.100015。同行日常改寫為繁中與原創居家例子。",
+      "scope": "asd",
+      "scopeEvidence": "標題及第1頁明列自閉症兒童；第3節與表3說明個別化感官環境。",
+      "scopeChecked": "2026-11-19",
+      "auditId": "S30",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://strathprints.strath.ac.uk/95516/7/Daniel-etal-RN-2026-Sensory-processing-informed-autism-practice-for-child-centred-therapists.pdf",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "第3節及表3（期刊頁8）的作者環境文字；不含第三方圖、療程、加重用品與觸碰操作",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已查正式出版版及CC BY 4.0；只用環境理解與個別化背景，居家例子為編輯原創，非療法成效宣告。",
+      "sourceAudience": "ASD兒童的專業治療情境；未訂數字適齡"
     }
   },
   "articles": [
@@ -212,7 +276,6 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "category": "routines",
       "title": "讓下一步，看得見",
       "ages": [
-        "2–5 歲",
         "6–8 歲"
       ],
       "time": 4,
@@ -242,15 +305,17 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子會不會自己回來看提示，或指出想調整的順序？如果圖片讓孩子困惑，可以試孩子更熟悉的實物或文字。",
       "example": "晚餐前孩子還在蓋車站。家長拿出積木與餐桌兩張照片，說「車站留在這裡，等一下到餐桌」。孩子要求再放一塊積木，兩人約好放完把作品留到飯後，讓孩子可以確認原本的活動會怎麼收尾。",
       "adjust": "如果孩子把餐桌照片理解成「現在立刻去」，先試只在準備換活動時出示，或搭配孩子熟悉的口頭／手勢提醒。比較兩種提醒下，孩子有沒有出現不同的疑問。",
-      "asdFocus": "適合在活動轉換時，需要以實物、圖片或文字確認順序的自閉症孩子；提示形式依孩子的理解與偏好選擇。"
+      "asdFocus": "適合在活動轉換時，需要以實物、圖片或文字確認順序的自閉症孩子；提示形式依孩子的理解與偏好選擇。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "needs",
       "category": "communication",
       "title": "當孩子想表達「我需要」",
       "ages": [
-        "0–1 歲",
-        "2–5 歲",
         "6–8 歲"
       ],
       "time": 4,
@@ -279,7 +344,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "留意孩子在哪個情境會主動拿圖、指物或用別的方式表達。孩子推開或轉身時，可以先停下來，看看他是在拒絕什麼。",
       "example": "孩子推開家長遞來的杯子，卻一直指向桌面。家長把杯子放回去，指著水壺和紙巾各確認一次。孩子指了紙巾，家長先把紙巾拿近，再看孩子接下來的動作。",
       "adjust": "猜錯時可以說「我還沒懂，你可以再告訴我」。先讓孩子回到習慣的表達方式。若家裡和學校都在猜同一個手勢，記下它出現的情境，下次和孩子或老師一起確認。",
-      "asdFocus": "適合透過手勢、聲音、實物或圖像表達需要的自閉症孩子；先確認孩子的溝通方式，再選擇他看得懂的提示。"
+      "asdFocus": "適合透過手勢、聲音、實物或圖像表達需要的自閉症孩子；先確認孩子的溝通方式，再選擇他看得懂的提示。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "sound",
@@ -308,23 +377,26 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           "孩子想去休息時，可以陪他過去，再由他表達要不要回到原來的活動。"
         ]
       ],
-      "related": "rr",
+      "related": "rr-sensory",
       "situations": [
         "sensory"
       ],
       "status": "trial",
-      "sourceSection": "表 3 的聽覺環境建議。居家和外出例子由同行日常撰寫。",
+      "sourceSection": "第3節及表3（期刊第8頁）的個別感官環境文字。原文是專業治療情境；此處僅作環境理解，生活例子為同行日常原創，不代表療效已驗證。",
       "observe": "孩子在哪個位置覺得聲音比較容易接受？留意他是想離開某一種聲音，還是想離開整個活動。",
       "example": "家族聚餐時，孩子在廚房開始備菜後頻頻摀耳。家長先帶孩子去離廚房較遠的位置坐一下，問他希望留在那裡或先到門外。下一次聚會可以提早確認靠門的座位。",
       "adjust": "如果換位後依然不舒服，可以一起離開現場。等孩子想談時，再問是某一種聲音、有太多聲音同時出現，還是想結束活動，方便下次提早規劃。",
-      "asdFocus": "適合對聲音有感官不適的自閉症孩子；以孩子對聲音與位置的回饋調整環境及休息安排。"
+      "asdFocus": "適合對聲音有感官不適的自閉症孩子；以孩子對聲音與位置的回饋調整環境及休息安排。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "pause",
       "category": "feelings",
       "title": "情緒很滿，先一起停一下",
       "ages": [
-        "2–5 歲",
         "6–8 歲",
         "9–12 歲",
         "13–17 歲"
@@ -354,16 +426,19 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "example": "積木倒了，孩子大聲說「不要」，家長先把桌上的東西放穩，暫停收拾，坐到孩子能看見的位置。家長只說「我在這裡」，並等孩子表示想被陪著還是想自己待一下。",
       "adjust": "如果一靠近孩子就退開，先拉開距離、減少提問。等彼此情緒和安全都穩定，再回顧。若反覆出現會受傷的情況，可以和熟悉孩子的專業人員一起訂安全計畫。",
-      "sourceSection": "第 48、122–124 頁，參考環境調整和依孩子反應陪伴的文字。",
+      "sourceSection": "第 48、122、124 頁，參考環境調整和依孩子反應陪伴的文字。",
       "observe": "在減少聲音、提問或靠近後，孩子會希望你坐近、想換地方，或想留一點空間？用可看見或孩子自己說出的訊息記錄。",
-      "asdFocus": "適合因感官環境或情境要求而感到負荷過大的自閉症孩子；先減少負荷，再依孩子接受的方式陪伴。"
+      "asdFocus": "適合因感官環境或情境要求而感到負荷過大的自閉症孩子；先減少負荷，再依孩子接受的方式陪伴。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "bedtime",
       "category": "routines",
       "title": "把睡前流程排成三步",
       "ages": [
-        "2–5 歲",
         "6–8 歲"
       ],
       "time": 4,
@@ -392,7 +467,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "adjust": "如果孩子一看圖就覺得事情好多，可以先留下一件「接下來」。如果原本順序常常變，讓孩子參與更新卡片，比要求每天照同一順序更貼近家庭的現況。",
       "sourceSection": "第 1–2 頁，參考孩子參與、有意義的視覺提示與提示形式。",
       "observe": "注意孩子會不會回看順序，或想自己挪動某張卡。可以記下哪一段還需要大人提示。",
-      "asdFocus": "適合需要可回看提示來理解睡前順序的自閉症孩子；圖像、實物或文字都應與孩子實際理解的方式一致。"
+      "asdFocus": "適合需要可回看提示來理解睡前順序的自閉症孩子；圖像、實物或文字都應與孩子實際理解的方式一致。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "table",
@@ -421,7 +500,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           "把孩子說的話或表現出來的偏好記下來，方便和一起照顧的人討論。"
         ]
       ],
-      "related": "rr",
+      "related": "rr-sensory",
       "situations": [
         "meals",
         "sensory"
@@ -429,9 +508,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "example": "吃飯時孩子坐一下就起身。家長注意到座位貼著走道，還聽得到廚房的抽風機。第二天只試換到靠牆的位置，讓孩子自己比較兩個座位的感覺。",
       "adjust": "如果換位沒差，下一次只試另一個項目，例如讓孩子選熟悉的餐具。若主要困擾是吞嚥、疼痛或飲食量明顯改變，可以把觀察帶給兒科或相關專業人員。",
-      "sourceSection": "表 3 的聲音、觸感與位置調整，餐桌例子為原創。",
+      "sourceSection": "第3節及表3（期刊第8頁）的個別感官環境文字。原文是專業治療情境；此處僅作環境理解，生活例子為同行日常原創，不代表療效已驗證。",
       "observe": "孩子是否更願意留在他選的位置？也可以直接請孩子指出哪個聲音或觸感讓他想換位置。",
-      "asdFocus": "適合因餐桌聲音、觸感或位置而難以參與用餐的自閉症孩子；先找出環境中讓他不舒服的因素。"
+      "asdFocus": "適合因餐桌聲音、觸感或位置而難以參與用餐的自閉症孩子；先找出環境中讓他不舒服的因素。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "school-day",
@@ -469,7 +552,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "adjust": "如果老師目前難以更換座位，可先問能調整哪一小段流程或哪一個位置。談話重複卡在不同看法時，先把一件雙方都觀察到的事寫下來，從這件事試起。",
       "sourceSection": "參考工具中觀察、影響與調整三欄。家校對話為原創例子。",
       "observe": "一週後問孩子這個調整有沒有幫助，再跟老師核對哪個時段最有效。",
-      "asdFocus": "適合為自閉症孩子討論家校支持；共同記錄孩子的溝通、感官與日常參與需求，並納入孩子自己的表達。"
+      "asdFocus": "適合為自閉症孩子討論家校支持；共同記錄孩子的溝通、感官與日常參與需求，並納入孩子自己的表達。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "plan-change",
@@ -508,7 +595,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子想反覆確認的是時間、地點、人物，還是原本期待的活動？下次可以先把那項資訊說清楚。",
       "example": "原本週六要去圖書館，遇到臨時休館。家長打開孩子平常看的日曆，只改那一格，說下午會在家，晚餐和睡前照原來安排。孩子最想知道借書會改到哪一天，兩人把待確認的時間註記在旁邊。",
       "adjust": "有些孩子會因為一直倒數更緊張，可以改成一張寫著「已確定／還要問」的紙條，或請孩子自行決定何時再看。",
-      "asdFocus": "適合在預期改變時需要額外準備的自閉症孩子；先確認孩子在意的變動，再提供可理解、能回看的提示。"
+      "asdFocus": "適合在預期改變時需要額外準備的自閉症孩子；先確認孩子在意的變動，再提供可理解、能回看的提示。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "wait-for-answer",
@@ -546,7 +637,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子在問題比較短、沒有接連被追問時，有沒有更容易用自己的方式回答？等待時間可以依孩子的反應調整。",
       "example": "家長問要看哪一本書。孩子先伸手又停住，家長把兩本都放下、安靜等他看。孩子後來把兩本推開，家長確認「你現在不想選」，先繼續原本的活動。",
       "adjust": "如果孩子遲遲沒回應，可能需要換個問法或換個時機。先確認他有看到選項，有沒有方式說「都不要」或「等一下」，再決定是否重問。",
-      "asdFocus": "適合需要更多時間處理語句或以不同方式回應的自閉症孩子；等待時留意手勢、動作等表達，避免連續追問。"
+      "asdFocus": "適合需要更多時間處理語句或以不同方式回應的自閉症孩子；等待時留意手勢、動作等表達，避免連續追問。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "lighting",
@@ -563,8 +658,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "time": 4,
       "status": "trial",
-      "related": "rr",
-      "sourceSection": "表 3 的視覺環境建議。居家調整範例由同行日常撰寫。",
+      "related": "rr-sensory",
+      "sourceSection": "第3節及表3（期刊第8頁）的個別感官環境文字。原文是專業治療情境；此處僅作環境理解，生活例子為同行日常原創，不代表療效已驗證。",
       "summary": "留意直射、眩光或閃動，一次試一個孩子願意的調整。",
       "when": "孩子在某張桌子前會瞇眼、遮住眼睛、換位置，或直接說燈太亮。",
       "steps": [
@@ -584,7 +679,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "哪種光線或位置讓孩子覺得比較自在？請孩子用自己的方式表示喜歡、拒絕或想再換一次。",
       "example": "孩子畫圖時坐靠窗的桌子會瞇眼。兩人先把椅子轉一點，讓白紙不再正對窗戶。孩子自行比較原來位置和新位置，最後選了看得清楚、也比較舒服的位置。",
       "adjust": "如果改座位沒幫助，可以在其他時段再觀察光從哪裡來，或讓孩子選另一個區域。一次改一件事，比較方便知道哪個變化有幫助。",
-      "asdFocus": "適合對光線感到不適的自閉症孩子；用孩子對亮度、位置與反光的回饋決定要調整什麼。"
+      "asdFocus": "適合對光線感到不適的自閉症孩子；用孩子對亮度、位置與反光的回饋決定要調整什麼。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "morning-exit",
@@ -594,7 +693,6 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "title": "早上出門總卡住，先找出哪一步",
       "ages": [
-        "2–5 歲",
         "6–8 歲",
         "9–12 歲",
         "13–17 歲"
@@ -622,7 +720,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "觀察一個具體的差異，例如孩子能自行拿到襪子，或能告訴大人還有什麼事沒做完。",
       "example": "孩子穿好鞋後才發現水壺沒裝。兩人前一天把「水壺」畫在玄關紙條的最前面，早上看得到就能先確認。",
       "adjust": "如果紙條完全沒被注意，可以改放在要拿的東西旁邊，或請孩子選一句慣用的提醒。",
-      "asdFocus": "適合需要將出門步驟外顯化的自閉症孩子；依孩子的理解能力選擇實物、照片或文字，找出卡住的環節。"
+      "asdFocus": "適合需要將出門步驟外顯化的自閉症孩子；依孩子的理解能力選擇實物、照片或文字，找出卡住的環節。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "ask-for-break",
@@ -633,7 +735,6 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "title": "讓「我想暫停」有一種說法",
       "ages": [
-        "2–5 歲",
         "6–8 歲",
         "9–12 歲",
         "13–17 歲"
@@ -661,7 +762,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子在哪裡、跟誰比較容易表達想休息？大人能不能在第一次收到訊息時就給出回應？",
       "example": "桌遊進行到一半，孩子把「休息」紙條放在桌上，家長先暫停計分，問要去旁邊坐一下還是就此結束。",
       "adjust": "如果當下拿不到圖卡，可以改成容易做的手勢，並和常一起照顧的人說好如何回應。",
-      "asdFocus": "適合在負荷增加時，需要以圖卡、手勢或短句表達休息需求的自閉症孩子；先確認孩子願意且能使用的表達方式。"
+      "asdFocus": "適合在負荷增加時，需要以圖卡、手勢或短句表達休息需求的自閉症孩子；先確認孩子願意且能使用的表達方式。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "clothing-texture",
@@ -679,8 +784,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "time": 4,
       "status": "trial",
-      "related": "rr",
-      "sourceSection": "表 3 的觸覺環境建議，著重尊重個別觸感偏好。衣服情境為居家例子。",
+      "related": "rr-sensory",
+      "sourceSection": "第3節及表3（期刊第8頁）的個別感官環境文字。原文是專業治療情境；此處僅作環境理解，生活例子為同行日常原創，不代表療效已驗證。",
       "summary": "從孩子指出的不舒服處開始，比較衣領、縫線、材質或鬆緊。",
       "when": "孩子常拉衣領、一直扯袖口，或換掉某件衣服才願意出門。",
       "steps": [
@@ -700,7 +805,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子說是某個位置刺、太緊，還是活動或流汗後變得不舒服？順便記下舒適的那一件有什麼特徵。",
       "example": "孩子不喜歡制服領口。試了兩件內搭後選了一件能遮住接縫、又不會覺得太熱的，先在家穿一小段時間比較。",
       "adjust": "如果試穿本身就讓孩子不舒服，可以直接請孩子從已習慣的衣服挑，等有空再一起比對材質。",
-      "asdFocus": "適合對衣物材質、接縫或標籤感到不適的自閉症孩子；讓孩子指出感覺與選擇舒服的穿著。"
+      "asdFocus": "適合對衣物材質、接縫或標籤感到不適的自閉症孩子；讓孩子指出感覺與選擇舒服的穿著。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "early-pressure",
@@ -711,7 +820,6 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "title": "在壓力變大前，看見孩子的訊號",
       "ages": [
-        "2–5 歲",
         "6–8 歲",
         "9–12 歲",
         "13–17 歲"
@@ -719,7 +827,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "time": 4,
       "status": "trial",
       "related": "pp-workbook",
-      "sourceSection": "第 48、122–124 頁，參考陪伴、辨認感受和調整環境的文字。",
+      "sourceSection": "第 48、122、124 頁，參考陪伴、辨認感受和調整環境的文字。",
       "summary": "把注意到的變化、當時環境和孩子想要的支持放在一起看。",
       "when": "家長常在孩子已經很不舒服時才發現，想早一點分辨何時適合停一下。",
       "steps": [
@@ -739,7 +847,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "哪個訊號最早被家長或孩子察覺？當你依約先停止追問，孩子接下來有沒有表達自己想去哪裡？",
       "example": "在商場的音樂區，孩子先放慢腳步、後來拉住家長。兩人回到戶外才談，孩子說第一次拉手就想換路線，下次可以先用這個提示。",
       "adjust": "單一動作可能有不同意思。若孩子說自己只是想多看一下，採用他的說法，再找真正用得上的提示。",
-      "asdFocus": "適合為自閉症孩子辨認個別壓力訊號；結合當時的感官環境、活動與溝通需求觀察，避免只憑單一動作下結論。"
+      "asdFocus": "適合為自閉症孩子辨認個別壓力訊號；結合當時的感官環境、活動與溝通需求觀察，避免只憑單一動作下結論。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "after-hard-moment",
@@ -750,7 +862,6 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "title": "難熬的事過後，怎麼一起回顧",
       "ages": [
-        "2–5 歲",
         "6–8 歲",
         "9–12 歲",
         "13–17 歲"
@@ -758,7 +869,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "time": 4,
       "status": "trial",
       "related": "pp-workbook",
-      "sourceSection": "第 122–124 頁，參考環境調整與依孩子、情境變動調整陪伴方式。",
+      "sourceSection": "第 122、124 頁，參考環境調整與依孩子、情境變動調整陪伴方式。",
       "summary": "等孩子願意再談，只問一個問題，和孩子一起決定下一次可以改哪裡。",
       "when": "一次很累的出門、聚會或換活動已經過去，家長想找出下次更合適的安排。",
       "steps": [
@@ -778,7 +889,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子願不願意使用你們約好的調整？下次遇到類似情境後，再問有哪一點需要重改。",
       "example": "聚會隔天，孩子用圖指出他最不舒服的是有人突然碰他。家長先確認下次可以由孩子決定要不要打招呼握手。",
       "adjust": "如果孩子暫時不想聊，家長可以先在筆記記下看見的事和自己可以改的一件事，讓孩子日後自行補充。",
-      "asdFocus": "適合在自閉症孩子準備好後，用他熟悉的方式回顧負荷過大的情境；一起辨認環境與支持可以如何調整。"
+      "asdFocus": "適合在自閉症孩子準備好後，用他熟悉的方式回顧負荷過大的情境；一起辨認環境與支持可以如何調整。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "school-transition",
@@ -816,7 +931,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "試走之後有哪個問題還沒回答？新的安排是否需要讓孩子再走一次，或由老師提供更清楚的資訊？",
       "example": "孩子從小教室換到大樓另一樓，最擔心上廁所後找不到班級。老師約好先讓他走一趟，並確認回教室的地標。",
       "adjust": "如果還無法先參觀，可先描述已確定的行程，由學校回覆哪些細節能再確認，以及何時會有答案。",
-      "asdFocus": "適合面對換老師、教室或學校的自閉症孩子；依孩子的感官、溝通與可預期性需求安排準備。"
+      "asdFocus": "適合面對換老師、教室或學校的自閉症孩子；依孩子的感官、溝通與可預期性需求安排準備。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     },
     {
       "id": "school-adjustment",
@@ -854,7 +973,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "孩子有沒有覺得變得舒服，或更容易參與想做的事？同一種做法不同天可能有不同結果。",
       "example": "孩子說餐廳入口太擠。老師先試讓孩子和一位同學晚兩分鐘走，家長週五問孩子有沒有想換回平常的方式。",
       "adjust": "若維持原班級流程有困難，請學校一起找做得到的相近安排，並問孩子是否願意試。",
-      "asdFocus": "適合為自閉症孩子規劃個別學校支持；用可觀察的溝通、感官或參與需求，與老師討論調整及回看方式。"
+      "asdFocus": "適合為自閉症孩子規劃個別學校支持；用可觀察的溝通、感官或參與需求，與老師討論調整及回看方式。",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-19",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
     }
   ],
   "withdrawnArticles": [
