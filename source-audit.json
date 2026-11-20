@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19",
+  "checked": "2026-11-21",
   "purpose": "公開網站／App的繁體中文整理與改寫。原文連結只保留為內部排除與稽核紀錄，不作繞過授權門檻的收錄候選。",
   "decisions": {
     "adapt": "可改寫指定範圍",
@@ -676,6 +676,247 @@
       "sections": "第3節及表3（期刊頁8）的作者環境文字；不含第三方圖、療程、加重用品與觸碰操作",
       "reason": "已查正式出版版及CC BY 4.0；只用環境理解與個別化背景，居家例子為編輯原創，非療法成效宣告。",
       "sha256": "9bdad6a4a46203f6729f687d059e6da09f52d1214a8dd099ffa3045757eeeef0"
+    },
+    {
+      "id": "S31",
+      "title": "Focus on puberty — Module 3, Years 5–6｜Education Services Australia",
+      "url": "https://studentwellbeinghub.edu.au/media/ahfpz25t/mod-3-yr-5-6-puberty.pdf",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://studentwellbeinghub.edu.au/media/ahfpz25t/mod-3-yr-5-6-puberty.pdf",
+      "audience": "ASD學生的主流學校教師；澳洲五、六年級，不是五、六歲；未訂數字適齡",
+      "date": "PDF版權2020，未標其他發布／修訂日；本輪現行官方入口仍供下載",
+      "currency": "可用（限已核範圍）",
+      "sections": "PDF頁3–5、9、15–17、20–22的指定自有文字：明確詞彙／AAC、青春期變化、身體界線／同意及個別感官需要。排除外連教材、圖片、影片、澳洲法律／服務及12小時用品穿戴說法。",
+      "reason": "已讀29頁可抽取文字，視覺確認末頁明列CC BY 4.0。可供身體成長題目之教育背景；不是介入成效研究。原2020教材的具體用品建議不直接沿用。",
+      "topics": [
+        "T12",
+        "T13",
+        "T14"
+      ],
+      "genderTags": [
+        "男",
+        "女"
+      ],
+      "permissionSection": "PDF第29頁",
+      "readScope": "全檔文字；限核准教育段落，不整本放行",
+      "sha256": "350ce1647333c6c7440399c36e9c5d82989442cf7a1567694ca475f76236714f"
+    },
+    {
+      "id": "S32",
+      "title": "Ebrahim等｜Striving to provide conditional access: strategies parents use to mediate the screentime of their children with autism spectrum disorder",
+      "url": "https://www.frontiersin.org/journals/child-and-adolescent-psychiatry/articles/10.3389/frcha.2025.1540147/full",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://www.frontiersin.org/journals/child-and-adolescent-psychiatry/articles/10.3389/frcha.2025.1540147/full",
+      "audience": "南非開普敦7位ASD孩子家長（6母1父）；納入8歲以下，實際孩子2歲10月–7歲11月",
+      "date": "2025-08-20出版；疫情相關經驗，不作現行平台操作指南",
+      "currency": "可用（限已核範圍）",
+      "sections": "Methods／Table 1、Results Theme 3、Discussion及Limitations中的作者研究敘述；只用內容管理、收尾準備及家長感受背景，不取逐字訪談、圖表或外引療效。",
+      "reason": "已讀方法、結果及限制；質性訪談不是策略效果試驗，不能推出統一螢幕時數、獎勵措施有效或3C造成ASD。保留家長同時感受到效益與困難的觀點。",
+      "topics": [
+        "T02"
+      ],
+      "evidenceType": "質性描述研究",
+      "readScope": "方法、樣本表、研究主題、討論、限制及版權段",
+      "permissionSection": "Copyright段連至CC BY 4.0"
+    },
+    {
+      "id": "S33",
+      "title": "Nordin等｜School absenteeism in autistic children and adolescents: A scoping review",
+      "url": "https://journals.sagepub.com/doi/10.1177/13623613231217409",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/13623613231217409",
+      "audience": "自閉症小學／中學學生；納入研究年齡各異，不設單一數字適齡；混合樣本僅收ASD可分開資料",
+      "date": "2023-12-30線上出版；2024-07卷期；檢索截至2023-06-09",
+      "currency": "可用（限已核範圍）",
+      "sections": "Method、Results的作者綜整與Discussion／Limitations；只作上學困難種類、學校情境與證據缺口背景，排除他方量表／操作療程。",
+      "reason": "46篇報告、42項獨立研究。作者明示目的非實務決策、未作研究品質評讀；定義與介入異質，不能把範疇回顧當返校處方或因果排名。",
+      "topics": [
+        "T09"
+      ],
+      "evidenceType": "範疇回顧",
+      "readScope": "方法、研究數量、學校情境綜整、討論與限制、權利段",
+      "permissionSection": "Rights and permissions"
+    },
+    {
+      "id": "S34",
+      "title": "Chang等｜The hidden struggle: Caregivers’ commitment, hope, and support needs in toilet training autistic children in Malaysia and Morocco",
+      "url": "https://research-portal.uu.nl/en/publications/the-hidden-struggle-caregivers-commitment-hope-and-support-needs-/",
+      "checked": "2026-11-21",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "CC BY 4.0已核；未完成正文查核，使用決定仍排除",
+      "permissionEvidence": "https://research-portal.uu.nl/en/publications/the-hidden-struggle-caregivers-commitment-hope-and-support-needs-/",
+      "audience": "馬來西亞與摩洛哥ASD孩子家長；摘要未列孩子數字年齡，本輪未核實",
+      "date": "2025-04-16線上；2025-06卷期",
+      "currency": "本次不作內容來源；排除不代表內容已過時",
+      "sections": "僅核原機構摘要／書目及授權資訊，未取得可供完整查核的正文，不核准育兒改寫。",
+      "reason": "機構及搜尋可見PDF首頁標CC BY 4.0，但原機構PDF與出版站全文均未成功取得。本輪不用；不是缺授權，也不是判定研究錯誤。未把摘要的七個焦點團體擴充成如廁程序。",
+      "topics": [
+        "T04"
+      ],
+      "readScope": "機構摘要、書目與權利；PDF正文取得失敗",
+      "fullText": "https://research-portal.uu.nl/files/274317639/1-s2.0-S3050656525000720-main.pdf"
+    },
+    {
+      "id": "S35",
+      "title": "Skommer與Gunesh｜Autism, menstruation and mental health—a scoping review and a call to action",
+      "url": "https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1531934/full",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1531934/full",
+      "audience": "有月經／初經經驗的自閉症者，跨青少年與成人至更年期；非單一兒少年齡；含正式診斷與自我認同樣本",
+      "date": "2025-06-25出版；檢索截至2025-05",
+      "currency": "可用（限已核範圍）",
+      "sections": "Methods、Results、Discussion與Limitations中作者對經期經驗差異、感官及支持缺口的綜整；只用初經／青少年相關背景，不含更年期推論、激素／藥物或醫療診斷程序。",
+      "reason": "45項研究，樣本與方法差異大；可呈現經驗不一致及感官需要，不把成人或更年期資料套到孩子，也不將風險描述寫成每位ASD孩子必然遭遇。",
+      "topics": [
+        "T13"
+      ],
+      "genderTags": [
+        "女"
+      ],
+      "audienceNote": "經期索引以實際是否有月經及支持需求為準；「女」標籤不排除跨性別／非二元有同樣需要者。",
+      "evidenceType": "範疇回顧",
+      "readScope": "方法、45項研究綜整、討論及限制、版權段",
+      "permissionSection": "Copyright段CC BY"
+    },
+    {
+      "id": "S36",
+      "title": "Li等｜Immediate Caregiving Environment of Young Children with Autism: Findings from the U.S. National Survey of Children’s Health",
+      "url": "https://www.mdpi.com/1660-4601/21/1/12",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://www.mdpi.com/1660-4601/21/1/12",
+      "audience": "美國3–5歲ASD孩子家長；ASD組243人，診斷／程度由家長回報，未由研究臨床核驗",
+      "date": "2023-12-21線上出版；2024-01卷期；資料2019–2020",
+      "currency": "可用（限已核範圍）",
+      "sections": "第3節方法、第4節結果與第5.4節限制中作者對情緒支持來源的敘述；不搬用族群盛行率、醫保制度、診斷預測或訓練程序。",
+      "reason": "橫斷二手資料可作討論照顧者向誰求助的背景，不能證明某種支持減壓有效、反推ASD成因或外推台灣服務資格。現行版仍呈現原研究；舊調查年份保留。",
+      "topics": [
+        "T15"
+      ],
+      "evidenceType": "橫斷面調查二次分析",
+      "readScope": "研究目的、樣本、方法、支持來源結果、限制及版權段",
+      "permissionSection": "文章末尾©2023作者／CC BY 4.0"
+    },
+    {
+      "id": "S37",
+      "title": "Ellis等｜Menstruation and Autism: A Qualitative Systematic Review（作者接受稿）",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/178192/1/Kathryn%20Williams%20AAM.pdf",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY（Swansea作者接受稿權利保留聲明；入口未明列版號）；須署名與標明改寫，不套用出版排版或第三方作品",
+      "permissionEvidence": "https://cronfa.swan.ac.uk/Record/cronfa69327",
+      "audience": "自閉症有月經經驗者及家長／支持者；跨年齡，原摘要指人口資料不足，未訂數字適齡",
+      "date": "2025-04-17線上初版；2026-10-01卷期；檢索2023-02；不能把2026卷期當2026資料更新",
+      "currency": "可用（限已核範圍）",
+      "sections": "作者接受稿PDF第3頁摘要中12份來源、不同角色優先需要及人口資料限制的自有綜整；僅此段，不放行整篇或最終出版排版。",
+      "reason": "取得Cardiff接受稿摘要／前言並核對Swansea同題作者接受稿權利保留聲明。12份來源（8學術、4灰色）；家長／專業與當事人關注重點不同。只核摘要指定範圍，未聲稱完成全文或新版差異核對。",
+      "topics": [
+        "T13"
+      ],
+      "genderTags": [
+        "女"
+      ],
+      "audienceNote": "依是否有月經及支持需要適用，不用性別身分篩除。",
+      "evidenceType": "質性系統性回顧之接受稿摘要",
+      "readScope": "Cardiff作者接受稿摘要／前言；Swansea權利聲明與出版社日期／卷期。其餘正文未放行。",
+      "permissionSection": "Swansea入口Accepted Manuscript／CC-BY rights retention",
+      "rightsVersion": "作者接受稿；最終出版版本不在本次授權判定範圍"
+    },
+    {
+      "id": "S38",
+      "title": "Gray、Hill與Pellicano｜“He’s shouting so loud but nobody’s hearing him”: A multi-informant study of autistic pupils’ experiences of school non-attendance and exclusion",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10179255/1/gray-et-al-2023-he-s-shouting-so-loud-but-nobody-s-hearing-him-a-multi-informant-study-of-autistic-pupils-experiences.pdf",
+      "checked": "2026-11-21",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://discovery.ucl.ac.uk/id/eprint/10179255/1/gray-et-al-2023-he-s-shouting-so-loud-but-nobody-s-hearing-him-a-multi-informant-study-of-autistic-pupils-experiences.pdf",
+      "audience": "英格蘭單一地方政府兩個替代教育機構；12名青少年（10男2女），表1為13–17歲，正文稱13–16歲有不一致；11名臨床診斷，1名未正式診斷但達SCQ門檻",
+      "date": "2023-10-18出版；訪談2017-06至2018-02",
+      "currency": "可用（限已核範圍）",
+      "sections": "第3–4頁Method／Table 1對象說明、第5–11頁作者Results主題解釋與第12–13頁限制；排除逐字訪談、量表題目及英國法律／行政資訊。",
+      "reason": "39名受訪者：12學生、10家長、8現任教師、9地方專業人員。可呈現學生／家庭與學校情境；未訪原排除學校教職員，不能宣稱呈現所有學校立場或證明調整的成效。原文年齡不一致如實保留，引用以表1實際13–17歲為界。",
+      "topics": [
+        "T09"
+      ],
+      "evidenceType": "多方質性訪談",
+      "readScope": "樣本、方法、作者主題、限制及版權頁；未將逐字引文或問卷改寫為工具",
+      "permissionSection": "PDF第1頁CC BY 4.0",
+      "sha256": "b918ab76da89d69893ad097216f1a7d347670adbbd7a88d462486edb0450832a"
+    },
+    {
+      "id": "S39",
+      "title": "Shields等｜REACH-ASD trial成本效益分析（2025）",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12572786/",
+      "checked": "2026-11-21",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "CC BY-NC-ND 4.0；禁止散布改作",
+      "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12572786/",
+      "audience": "近期確診ASD孩子的主要照顧者；本輪僅查摘要／權利，未核數字年齡",
+      "date": "2025-09-12線上；2025-10卷期",
+      "currency": "本次不作內容來源；排除不代表內容已過時",
+      "sections": "只記書目與使用限制；不核准內容改寫。",
+      "reason": "全文明列CC BY-NC-ND 4.0；ND不符合本專案公開改寫用途，因此不用。不是單純標非商業就可以改寫。",
+      "topics": [
+        "T15"
+      ],
+      "readScope": "摘要、文章資訊及Copyright and License information"
+    },
+    {
+      "id": "S40",
+      "title": "Simon等｜Toilet training interventions for children with autism spectrum disorder: A systematic review",
+      "url": "https://researchportal.northumbria.ac.uk/en/publications/toilet-training-interventions-for-children-with-autism-spectrum-d/",
+      "checked": "2026-11-21",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "CC BY-NC-ND（本輪未核版號）；禁止散布改作",
+      "permissionEvidence": "https://researchportal.northumbria.ac.uk/en/publications/toilet-training-interventions-for-children-with-autism-spectrum-d/",
+      "audience": "ASD兒童；本輪未讀接受稿、不自行補年齡",
+      "date": "2022-10-18線上；2022-11-01卷期",
+      "currency": "本次不作內容來源；排除不代表內容已過時",
+      "sections": "只記機構書目、摘要及授權；不核准改寫接受稿。",
+      "reason": "Northumbria原機構將接受稿標為CC BY-NC-ND；ND不符改寫用途。不能因可免費下載就採用。",
+      "topics": [
+        "T04"
+      ],
+      "readScope": "機構書目、摘要及附件授權"
+    },
+    {
+      "id": "S41",
+      "title": "Guo等｜Resilience interventions for the family with autistic children: a systematic review",
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1760817/full",
+      "checked": "2026-11-21",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "CC BY 4.0；指定作者自有文字，須署名、標明改寫並保留授權；不含另署第三方素材",
+      "permissionEvidence": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1760817/full",
+      "audience": "ASD孩子家長／照顧者，參與者多為母親；未訂單一孩子年齡",
+      "date": "2026-03-25出版；聲稱檢索截至2025-07",
+      "currency": "本次不作內容來源；排除不代表內容已過時",
+      "sections": "只記書目、授權及方法問題；不採用成效結論或介入安排。",
+      "reason": "授權清楚但方法數字不一致：2.3稱抽查100份全文，3.1卻記僅10份全文審查。本輪品質門檻不通過，未聯絡作者；有更正後才重啟查核。",
+      "topics": [
+        "T15"
+      ],
+      "readScope": "Methods 2.3、Results 3.1／Table 1、Limitations及Copyright",
+      "exclusionType": "quality"
     }
   ]
 }

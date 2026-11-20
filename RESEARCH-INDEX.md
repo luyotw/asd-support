@@ -1,21 +1,41 @@
 # ASD 資料整理索引
 
-本輪查核結案日：2026-11-19。原43筆逐筆處理，另補入查明轉載表來源所需的S30，現在共 **44筆索引紀錄**。課程入口、五冊集合及附件組仍是紀錄單位，不代表44篇已通讀文章。
+最新查核日：2026-11-21。原44筆另加本輪S31–S41共11筆，現在共 **55筆索引紀錄**。附件組、課程入口與五冊集合仍是紀錄單位，不代表55篇已通讀文章。
 
-## 本輪結論
+## 目前結論
 
 | 結果 | 筆數 | 用途 |
 | --- | --- | --- |
-| 可改寫指定範圍 | 10 | 已有明確改作授權，僅使用下列核准段落。 |
-| 只限非商業 | 1 | S29；授權條件已確定，不能作一般商業內容使用。 |
-| 本專案不能用 | 24 | 無適用改作授權、僅准原樣重製、地域限制，或未讀課程等原因。 |
-| ASD範圍排除 | 9 | 含本輪重查後排除S07；開放授權不能替代ASD適用性。 |
+| 可改寫指定範圍 | 17 | 只採用各筆已讀、核准且有明確授權的自有文字。 |
+| 只限非商業 | 1 | S29；未進網站，授權條件仍保留。 |
+| 本專案不能用 | 28 | 含授權不符、正文未取得、未核課程或本輪方法報告問題。 |
+| ASD範圍排除 | 9 | 範圍不符，不因開放授權就補入。 |
+
+## 2026-11-21新增11筆
+
+7筆可改寫指定範圍、4筆不用。每筆閱讀範圍、原文日期、適齡、段落與授權證據見[本輪詳細紀錄](RESEARCH-2026-11-21.md)。網站仍為21篇；新增來源沒有直接變成育兒處方。
+
+| ID | 來源 | 使用決定與邊界 |
+| --- | --- | --- |
+| S31 | [Focus on puberty — Module 3, Years 5–6｜Education Services Australia](https://studentwellbeinghub.edu.au/media/ahfpz25t/mod-3-yr-5-6-puberty.pdf) | 可用：五、六年級ASD青春期教師教材；核准自有教育文字，排除外連教材／用品時數。 |
+| S32 | [Ebrahim等｜Striving to provide conditional access: strategies parents use to mediate the screentime of their children with autism spectrum disorder](https://www.frontiersin.org/journals/child-and-adolescent-psychiatry/articles/10.3389/frcha.2025.1540147/full) | 可用：7位家長的3C內容管理與收尾經驗；孩子實際2歲10月–7歲11月，非效果試驗。 |
+| S33 | [Nordin等｜School absenteeism in autistic children and adolescents: A scoping review](https://journals.sagepub.com/doi/10.1177/13623613231217409) | 可用：ASD上學缺席的42項研究概覽；作者明示非實務決策依據。 |
+| S34 | [Chang等｜The hidden struggle: Caregivers’ commitment, hope, and support needs in toilet training autistic children in Malaysia and Morocco](https://research-portal.uu.nl/en/publications/the-hidden-struggle-caregivers-commitment-hope-and-support-needs-/) | 不用：CC BY已核，但正文未取得；只讀摘要不補成如廁程序。 |
+| S35 | [Skommer與Gunesh｜Autism, menstruation and mental health—a scoping review and a call to action](https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1531934/full) | 可用：月經經驗與支持缺口背景；跨年齡研究，未成年人／成人段落分開。 |
+| S36 | [Li等｜Immediate Caregiving Environment of Young Children with Autism: Findings from the U.S. National Survey of Children’s Health](https://www.mdpi.com/1660-4601/21/1/12) | 可用：3–5歲ASD孩子家長情緒支持背景；2019–2020橫斷資料不證因果。 |
+| S37 | [Ellis等｜Menstruation and Autism: A Qualitative Systematic Review（作者接受稿）](https://orca.cardiff.ac.uk/id/eprint/178192/1/Kathryn%20Williams%20AAM.pdf) | 可用：CC BY作者接受稿的指定摘要；不同角色的經期關注差異，不含最終出版排版。 |
+| S38 | [Gray、Hill與Pellicano｜“He’s shouting so loud but nobody’s hearing him”: A multi-informant study of autistic pupils’ experiences of school non-attendance and exclusion](https://discovery.ucl.ac.uk/id/eprint/10179255/1/gray-et-al-2023-he-s-shouting-so-loud-but-nobody-s-hearing-him-a-multi-informant-study-of-autistic-pupils-experiences.pdf) | 可用：學生與支持者的上學困難訪談；表1實際13–17歲，正文年齡不一致已記錄。 |
+| S39 | [Shields等｜REACH-ASD trial成本效益分析（2025）](https://pmc.ncbi.nlm.nih.gov/articles/PMC12572786/) | 不用：CC BY-NC-ND 4.0不允許本案公開改寫。 |
+| S40 | [Simon等｜Toilet training interventions for children with autism spectrum disorder: A systematic review](https://researchportal.northumbria.ac.uk/en/publications/toilet-training-interventions-for-children-with-autism-spectrum-d/) | 不用：接受稿CC BY-NC-ND不允許公開改寫。 |
+| S41 | [Guo等｜Resilience interventions for the family with autistic children: a systematic review](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1760817/full) | 不用：授權清楚，但方法稱抽查100份全文、流程僅10份全文，本輪品質未通過。 |
+
+## 共通收錄規則
 
 依使用者新規則，**查不到符合公開繁中整理／改寫用途的明確授權，就不能用**。不再把這類資料留成「原文導引候選」。下列排除項目的連結僅供編輯稽核，不進網站目錄、推薦或文章改寫。未聯絡原作者索取許可。
 
 「原文未標」或「未能核實」是本輪查核結果，不能硬補日期／數字年齡。使用權已排除的來源，不再進行育兒建議的時效放行。可用來源亦只限已核範圍，不代表整份手冊、療效、圖片或所有數字程序都獲核准。逐筆機器可讀欄位見[source-audit.json](source-audit.json)。
 
-## 可改寫指定範圍的10筆
+## 2026-11-19批次：可改寫指定範圍的10筆
 
 全部排除照片、標誌、另行標示的第三方素材及未授權影音；署名並標示改寫。
 
@@ -32,13 +52,13 @@
 | S24 | [Understanding why some Autistic children use potentially harmful behaviours — Australian Institute of Family Studies](https://aifs.gov.au/resources/practice-guides/understanding-why-some-autistic-children-use-potentially-harmful) | 主要供專業人員；本文ASD範圍為幼兒至青春期初期，未訂數字；服務背景至18歲非操作適齡；2025-12-10發布；PDF標December 2025 | 可用（限已核範圍）：Overview、需求辨識及Nature of the evidence；不複製照片／他方素材或危機處理程序 | [CC BY 4.0；僅指定自有文字，依原條件署名並標明改寫](https://aifs.gov.au/resources/practice-guides/understanding-why-some-autistic-children-use-potentially-harmful) |
 | S30 | [Daniel等｜Sensory-processing informed autism practice for child-centred therapists](https://strathprints.strath.ac.uk/95516/7/Daniel-etal-RN-2026-Sensory-processing-informed-autism-practice-for-child-centred-therapists.pdf) | ASD兒童的專業治療情境；未訂數字適齡；2026-02-03線上出版 | 可用（限已核範圍）：第3節及表3（期刊頁8）的作者環境文字；不含第三方圖、療程、加重用品與觸碰操作 | [CC BY 4.0；僅指定自有文字，依原條件署名並標明改寫](https://strathprints.strath.ac.uk/95516/7/Daniel-etal-RN-2026-Sensory-processing-informed-autism-practice-for-child-centred-therapists.pdf) |
 
-## 只限非商業的1筆
+## 2026-11-19批次：只限非商業的1筆
 
 | ID | 原文 | 範圍與條件 |
 | --- | --- | --- |
 | S29 | [Mayer等｜ASD數位公民指引研究](https://journals.sagepub.com/doi/10.1177/13623613231192870) | 附錄3：2–18歲ASD；排除AAC與純溝通用途；CC BY-NC 4.0：僅非商業；需署名與標明改寫。商業使用不能用。 只核研究過程與分歧紀錄，未核准整套指引。 |
 
-## 本專案不能用的24筆
+## 2026-11-19批次：本專案不能用的24筆
 
 本表已結案為不採用；不是仍等著補件的可用來源。年齡／日期的已知資訊保留於JSON，缺資料不冒充已確認。
 
@@ -69,7 +89,7 @@
 | S27 | [Puberty and autism in boys — Sheffield Children’s NHS Foundation Trust](https://library.sheffieldchildrens.nhs.uk/puberty-and-autism-in-boys/) | 條款限個人用途，公開重製需明確書面許可；不能用（[依據](https://www.sheffieldchildrens.nhs.uk/terms-and-conditions/)） |
 | S28 | [Puberty and autism in girls — Sheffield Children’s NHS Foundation Trust](https://library.sheffieldchildrens.nhs.uk/puberty-and-autism-in-girls/) | 條款限個人用途，公開重製需明確書面許可；不能用（[依據](https://www.sheffieldchildrens.nhs.uk/terms-and-conditions/)） |
 
-## ASD範圍排除的9筆
+## 2026-11-19批次：ASD範圍排除的9筆
 
 | ID | 紀錄 | 結論 |
 | --- | --- | --- |
@@ -98,4 +118,4 @@
 
 2026-11-20完成本批內容整理後，現行21篇引用10筆來源：P01–P05、S05、S18、S19、S24及S30。新增友誼（含線上互動）、感官情境記錄、事後需求理解及閱讀理解研究背景四題；僅使用本輪核准範圍，並保留證據限制。S29未加入現行網站。逐篇結果、年齡修正和引用範圍見[SOURCES.md](SOURCES.md#現行文章逐篇查核)。個人筆記、收藏及固定文章ID保留。七分類不變；未取得合格素材的題目明確列缺口，不拿被排除資料湊入文章。
 
-這輪已處理所有原有查核進度欄位，沒有把未取得的授權留作候選。未來只有取得新的明確授權、原站改版、撤回或新的重要證據時才重新開啟對應查核。歷史發現保留於[收集票](https://github.com/luyotw/asd-support/issues/1)，目前決定以本索引及JSON為準。
+2026-11-19批次已處理原有查核進度欄位；2026-11-21新增項目亦逐筆給出使用決定，沒有把未取得的授權留作候選。未來只有取得新的明確授權、原站改版、撤回或新的重要證據時才重新開啟對應查核。歷史發現保留於[收集票](https://github.com/luyotw/asd-support/issues/1)，目前決定以本索引及JSON為準。
