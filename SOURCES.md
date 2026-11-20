@@ -1,6 +1,6 @@
 # 同行日常｜來源盤點
 
-查核日期為 2026-11-19。現行17篇已逐篇核對引用範圍，目前引用6筆有明確ASD依據與改作授權的來源；查核僅涵蓋列明主文與用途。
+更新日期為2026-11-20。原17篇已逐篇核對引用範圍，本次再整理四篇新文章；現行共21篇，引用10筆有明確ASD依據與改作授權的來源。查核僅涵蓋列明主文與用途。
 
 全部收集紀錄集中在[資料整理索引](RESEARCH-INDEX.md)；依需求配對來源、適齡與觀點差異見[題目整理與觀點對照](TOPIC-BRIEFS.md)。索引已逐筆給出使用結論；不採用項目僅保留稽核歷史，不供網站發布。
 
@@ -91,6 +91,10 @@
 | [Positive Partnerships｜家長與照顧者工作手冊](https://www.positivepartnerships.com.au/uploads/2-Day-PC-Participant-Workbook.pdf) | 封面明列支持自閉症學齡學生，正文包含感官、行為理解及家庭與學校合作。 | 原文標示 CC BY 4.0。改寫範圍為作者正文，第三方引文、照片和標誌除外。 |
 | [Positive Partnerships｜親師共同規劃工具](https://www.positivepartnerships.com.au/uploads/Planning_Tool_field_Formatted_A3_V.1_Dec_21.pdf) | 此工具屬 Helping Children with Autism 計畫，官方介紹將工具用於自閉症孩子的個別支持規劃。 | 原文標示 CC BY 4.0。改寫範圍為作者正文，第三方引文、照片和標誌除外。 |
 | [Daniel等｜感官環境與個別支持](https://doi.org/10.1016/j.rin.2026.100015) | 第3節及表3明確討論自閉症兒童的個別感官環境，原文供專業治療情境。 | 正式出版PDF第1頁明列CC BY 4.0；只參考作者環境文字，居家例子為編輯原創，不重製他方圖或治療操作。 |
+| [Positive Partnerships｜舒服的友誼](https://www.positivepartnerships.com.au/uploads/Web_friendships-2022.pdf) | 第1頁的互動偏好與第2頁Making Friends／Keeping Friends自有主文。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
+| [Positive Partnerships｜感官情境記錄](https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/sensory-resources) | Sensory Tool全頁自有欄位及現行入口；工具明列支持自閉症學齡學生。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
+| [AIFS｜理解行為背後的需要](https://aifs.gov.au/resources/practice-guides/understanding-why-some-autistic-children-use-potentially-harmful) | Overview、需求辨識及Nature of the evidence；不含危機處理、自傷議題或操作程序。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
+| [昆士蘭教育部｜ASD閱讀理解研究線索](https://autismhub.education.qld.gov.au/resource/Documents/review-autism-reading-comp-factsheet.pdf) | 單頁開頭的研究方法、13項研究與需進一步驗證之限制；不作訓練處方。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
 
 Positive Partnerships 的[網站條款](https://www.positivepartnerships.com.au/terms-of-use)列出 CC BY 4.0 的署名格式及照片、第三方素材、標誌、外部影片等例外。文章保留各自的署名和改寫範圍。
 
@@ -98,7 +102,7 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 
 ## 現行文章逐篇查核
 
-2026-11-19已核對正文所引段落、原創例子與年齡分組。年齡是本指南的閱讀情境分組，原來源未訂一致數字範圍，不能冒稱為原作者驗證的適齡。P01與P04的學齡資料已移除0–1／2–5標籤；六筆來源的日期、適用對象及改作證據寫入catalog.json。
+2026-11-19已核對正文所引段落、原創例子與年齡分組。年齡是本指南的閱讀情境分組，原來源未訂一致數字範圍，不能冒稱為原作者驗證的適齡。P01與P04的學齡資料已移除0–1／2–5標籤；當時六筆來源的日期、適用對象及改作證據寫入catalog.json。2026-11-20新增下表後四篇及四筆來源，重新核對實際上架段落與署名。
 
 | 文章ID | 現在引用 | 本輪結果 |
 | --- | --- | --- |
@@ -119,6 +123,10 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 | after-hard-moment | P04 | 可保留：只用印刷頁48／122／124相關主文；限學齡分組。 |
 | school-transition | P02 | 可保留：核對作者正文，案例為編輯原創。 |
 | school-adjustment | P05 | 可保留：核對作者正文，案例為編輯原創。 |
+| comfortable-friendships | S18 | 2026-11-20新增：兩頁自有主文的社交偏好／健康關係觀點；線上友誼不擴張為平台安全指引。 |
+| sensory-context-notes | S05 | 2026-11-20新增：單頁感官觀察架構；提問與記錄例子是編輯整理，不作診斷。 |
+| understanding-unmet-needs | S24 | 2026-11-20新增：Overview／需求辨識／證據限制；只做事後討論背景，不含危機處理或自傷議題。 |
+| reading-comprehension-context | S19 | 2026-11-20新增：13項研究回顧的背景與限制；親師提問為編輯整理，未上架訓練清單。 |
 
 來源為可改寫不表示所有建議已被效果試驗驗證。下次出現新版、撤回、明確修正或使用範圍變更才重開相應查核。資料產生器會拒絕未列入核准範圍或沒有改作證據的來源。
 

@@ -458,6 +458,7 @@ function articlePage(article) {
     <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
     </section>
+    ${article.evidence ? `<section class="article-section"><h2>這份資料的範圍</h2><p>${article.evidence.summary}</p><p>${article.evidence.limit}</p></section>` : ""}
     ${article.observe ? `<section class="article-section"><h2>可以觀察什麼</h2><p>${article.observe}</p></section>` : ""}
     ${article.example ? `<section class="article-section"><h2>生活中的例子</h2><p>${article.example}</p></section>` : ""}
     ${article.adjust ? `<section class="article-section"><h2>如果這次行不通</h2><p>${article.adjust}</p></section>` : ""}

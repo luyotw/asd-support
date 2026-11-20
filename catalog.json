@@ -267,6 +267,102 @@
       "currencyStatus": "usable",
       "currencyEvidence": "已查正式出版版及CC BY 4.0；只用環境理解與個別化背景，居家例子為編輯原創，非療法成效宣告。",
       "sourceAudience": "ASD兒童的專業治療情境；未訂數字適齡"
+    },
+    "pp-friendships": {
+      "name": "Positive Partnerships｜舒服的友誼",
+      "originalTitle": "Friendships",
+      "publisher": "Positive Partnerships",
+      "version": "2020-08",
+      "checked": "2026-11-20",
+      "description": "談自閉症兒童與年輕人的社交偏好、共同興趣與線上／實體友誼。",
+      "rights": "自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。",
+      "attribution": "澳洲政府教育部版權（2008年起，另有標示者依原文）。取自Positive Partnerships，版本August 2020；同行日常改寫為繁中，另撰生活例子。",
+      "url": "https://www.positivepartnerships.com.au/uploads/Web_friendships-2022.pdf",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "第1頁的互動偏好與第2頁Making Friends／Keeping Friends自有主文。",
+      "scopeChecked": "2026-11-20",
+      "auditId": "S18",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.positivepartnerships.com.au/terms-of-use",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "兩頁作者主文；不取照片、標誌及另行署名素材",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已補讀第二頁及CC標記，與現行2025工作手冊印刷頁40比對尊重社交偏好的原則。",
+      "sourceAudience": "ASD兒童／年輕人；未訂數字適齡"
+    },
+    "pp-sensory-tool": {
+      "name": "Positive Partnerships｜感官情境記錄",
+      "originalTitle": "Sensory Tool",
+      "publisher": "Positive Partnerships",
+      "version": "原文未標發布日",
+      "checked": "2026-11-20",
+      "description": "提供感官觀察的整理欄位，用來記下具體情境，並和孩子及支持者討論。",
+      "rights": "自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。",
+      "attribution": "澳洲政府教育部版權（2008年起，另有標示者依原文）。取自Positive Partnerships之Sensory Tool；同行日常改寫為繁中，記錄例子由編輯撰寫。",
+      "url": "https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/sensory-resources",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "Sensory Tool全頁自有欄位及現行入口；工具明列支持自閉症學齡學生。",
+      "scopeChecked": "2026-11-20",
+      "auditId": "S05",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.positivepartnerships.com.au/terms-of-use",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "單頁Sensory Tool的自有欄位文字及入口ASD段；不含圖片、投影片與外連素材",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已讀工具全頁及現行入口；可作感官觀察架構，不據此宣稱任何特定策略有效。",
+      "sourceAudience": "ASD學齡學生；未訂數字適齡"
+    },
+    "qld-reading": {
+      "name": "昆士蘭教育部｜ASD閱讀理解研究線索",
+      "originalTitle": "Review of autism and reading comprehension",
+      "publisher": "Queensland Department of Education, Autism Hub",
+      "version": "原文未標發布／審閱日",
+      "checked": "2026-11-20",
+      "description": "介紹一份ASD閱讀理解研究回顧的範圍與限制，供親師討論背景。",
+      "rights": "自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。",
+      "attribution": "© State of Queensland (Department of Education)，原文未標發布年。同行日常改寫研究背景為繁中，親師討論例子由編輯撰寫。",
+      "url": "https://autismhub.education.qld.gov.au/resource/Documents/review-autism-reading-comp-factsheet.pdf",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "單頁開頭的研究方法、13項研究與需進一步驗證之限制；不作訓練處方。",
+      "scopeChecked": "2026-11-20",
+      "auditId": "S19",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://qed.qld.gov.au/copyright-statement",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "單頁研究線索與限制的自有文字，不重製圖示／標誌",
+      "currencyStatus": "usable",
+      "currencyEvidence": "現行官方讀寫入口仍連此單張；只可描述其研究背景及限制，不作最新療效排名或通用訓練處方。",
+      "sourceAudience": "ASD學生，依閱讀／語言能力；未訂數字適齡"
+    },
+    "aifs-needs": {
+      "name": "AIFS｜理解行為背後的需要",
+      "originalTitle": "Understanding why some Autistic children use potentially harmful behaviours",
+      "publisher": "Australian Institute of Family Studies",
+      "version": "2025-12-10",
+      "checked": "2026-11-20",
+      "description": "整理自閉症幼兒至青春期初期的需求辨識觀點及證據限制，供事後與專業人員討論。",
+      "rights": "自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。",
+      "attribution": "© Commonwealth of Australia 2025。Butler, K., Helprin, H., MacDonald, J. B., & Tamiakis, L.；Australian Institute of Family Studies。同行日常改寫為繁中，另撰居家記錄例子。",
+      "url": "https://aifs.gov.au/resources/practice-guides/understanding-why-some-autistic-children-use-potentially-harmful",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "Overview、需求辨識及Nature of the evidence；不含危機處理、自傷議題或操作程序。",
+      "scopeChecked": "2026-11-20",
+      "auditId": "S24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://aifs.gov.au/resources/practice-guides/understanding-why-some-autistic-children-use-potentially-harmful",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "Overview、需求辨識及Nature of the evidence；不複製照片／他方素材或危機處理程序",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已核官方頁與PDF授權頁，限需求理解及觀察背景；支持做法多來自實務經驗，不當效果試驗。",
+      "sourceAudience": "主要供專業人員；本文ASD範圍為幼兒至青春期初期，未訂數字；服務背景至18歲非操作適齡"
     }
   },
   "articles": [
@@ -977,6 +1073,223 @@
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
       "reviewChecked": "2026-11-19",
       "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+    },
+    {
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
+      "id": "comfortable-friendships",
+      "category": "communication",
+      "title": "找到孩子覺得舒服的友誼",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "從孩子喜歡的活動和互動方式出發，也把線上聊天、一起玩和想獨處的時刻放進討論。",
+      "when": "你想幫孩子交朋友，但孩子在聊天、團體活動或聚會後常覺得累；也可能和網友聊得投入，卻不喜歡面對面聚會。",
+      "asdFocus": "自閉症孩子對友誼的期待與社交負荷各不相同。先了解孩子想和誰、以什麼方式互動，再安排支持。",
+      "steps": [
+        [
+          "先問孩子喜歡哪一種相處",
+          "下面是編輯提供的討論起點：可以問「你喜歡一起做事、傳訊息，還是先各玩各的？」也可讓孩子用圖片、手勢或實際選擇表達。"
+        ],
+        [
+          "從一個共同興趣開始",
+          "和孩子選一個願意分享的活動，例如畫地圖或聊同一部作品。事前確認對方也想參與，並讓孩子能表示想結束。"
+        ],
+        [
+          "一起確認相處是否舒服",
+          "事後聊聊「對方有聽你說嗎？你想停時能停嗎？下次還想一起做嗎？」把孩子想再見面或想休息的選擇記下來。"
+        ]
+      ],
+      "related": "pp-friendships",
+      "situations": [
+        "communication"
+      ],
+      "keywords": [
+        "友誼",
+        "朋友",
+        "3C",
+        "線上互動",
+        "傳訊息",
+        "共同興趣",
+        "社交疲勞"
+      ],
+      "sourceSection": "第1–2頁自有主文，聚焦舒服的互動、共同活動、尊重獨處偏好與健康關係。下列生活安排及問題為編輯整理。",
+      "evidence": {
+        "summary": "Positive Partnerships提醒，部分自閉症孩子喜歡聊天或文字互動，部分喜歡共同活動；也有人偏好獨處。支持應尊重個人的選擇。",
+        "limit": "這份家長資料介紹友誼支持觀點，沒有比較各方法的效果。提到線上友誼不代表任何平台、遊戲或陌生人互動都適合孩子。"
+      },
+      "observe": "留意孩子是否主動想再聯絡、能表達不同意見，以及互動後需要多少休息。朋友數量不適合作為這篇記錄的唯一目標。",
+      "example": "原創例子：孩子不想去熱鬧的生日會，卻願意和同學傳自己畫的公車路線。家長先聽孩子說喜歡這種交流的原因，再和孩子討論是否想安排一次一起畫圖的活動。",
+      "adjust": "若孩子不想參加，先記下是對活動、地點、對象還是時間有顧慮，讓孩子選擇是否再試。若互動讓孩子感到被貶低或不被尊重，和孩子討論需要什麼協助。"
+    },
+    {
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
+      "id": "sensory-context-notes",
+      "category": "sensory",
+      "title": "把感官不舒服的情境記清楚",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "把「孩子不喜歡這裡」拆成看得到的情境、孩子的表達，以及試過什麼調整，方便下次回看。",
+      "when": "同一個地方有時能待、有時很難待，你想和孩子或老師一起釐清當天發生了什麼。",
+      "asdFocus": "這份工具原為自閉症學齡學生的感官觀察而設。孩子對聲音、光線、觸感等的經驗要個別了解。",
+      "steps": [
+        [
+          "先挑一個發生過的情境",
+          "以下記錄格式是編輯的簡化例子：寫日期、地點、活動，以及當時的聲音、光線或碰觸。先從孩子願意談的一次經驗開始。"
+        ],
+        [
+          "把觀察和猜測分開寫",
+          "例如「吹風機啟動後，孩子摀耳並說要出去」是觀察；「可能不喜歡聲音」先記成待和孩子確認的想法。"
+        ],
+        [
+          "留下調整後的回應",
+          "記下孩子提出什麼、當時改了什麼，以及孩子怎麼回應。下次翻到這題，就能在下方筆記接續同一個情境。"
+        ]
+      ],
+      "related": "pp-sensory-tool",
+      "situations": [
+        "sensory",
+        "school"
+      ],
+      "keywords": [
+        "感官記錄",
+        "聲音",
+        "觸感",
+        "光線",
+        "觀察",
+        "筆記"
+      ],
+      "sourceSection": "Sensory Tool單頁的觀察／可能策略欄位。觀察與猜測的寫法、時間地點及居家例子由編輯另行整理；不重製原表圖樣。",
+      "evidence": {
+        "summary": "Positive Partnerships的Sensory Tool把不同感官的觀察和可能策略分欄，提供與支持者討論的架構。",
+        "limit": "空白工具本身沒有驗證特定調整的效果。這裡的筆記用於整理經驗，不能據此判定感官診斷或推算療程。"
+      },
+      "observe": "同一情境裡，孩子的表達、周圍條件及調整後反應是否不同？尚未確認的項目可以直接寫「不知道」，保留孩子自己的說法。",
+      "example": "原創例子：週六在公廁，烘手機啟動後孩子捂住耳朵走向門口。家長記下當時設備很多台同時運轉，孩子說「太大聲」，離開後願意改用紙巾。這一筆只描述當次經驗。",
+      "adjust": "孩子不想重談時，先保存大人的觀察並標明尚未向孩子確認。不要為了補齊筆記，刻意重現讓孩子不舒服的刺激；需要進一步釐清時，把紀錄帶給熟悉孩子的專業人員。"
+    },
+    {
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
+      "id": "understanding-unmet-needs",
+      "category": "feelings",
+      "title": "孩子推人或丟東西後，怎麼整理情境",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲"
+      ],
+      "time": 5,
+      "summary": "在大家恢復安全、能夠回顧之後，記下事情的前後與孩子的表達，讓後續求助有具體線索。",
+      "when": "事件已經結束，你想整理發生經過，和孩子、老師或專業人員討論。這篇聚焦事後理解，不提供當下危機處理程序。",
+      "asdFocus": "AIFS這份資料聚焦自閉症幼兒至青春期初期，從個別需要與環境理解可能傷及他人的行為；本文選用幼兒至12歲的生活情境。",
+      "steps": [
+        [
+          "先寫當時發生什麼",
+          "以下為編輯整理的討論提綱：活動是什麼？事情之前有哪些變動？寫具體經過，例如「排隊時後方同學碰到肩膀」，先保留原因未知。"
+        ],
+        [
+          "補上孩子自己的說法",
+          "在孩子願意、能夠表達時，了解他當時想要什麼或想避開什麼。說話、手勢或指圖都能留下線索，也可以暫時不回答。"
+        ],
+        [
+          "把不確定的部分帶去討論",
+          "記下大人試了什麼、後來如何，以及仍不明白的問題。若反覆發生或造成受傷，和熟悉孩子的醫療、心理或教育支持人員討論個別評估與安全安排。"
+        ]
+      ],
+      "related": "aifs-needs",
+      "situations": [
+        "feelings",
+        "communication",
+        "school"
+      ],
+      "keywords": [
+        "推人",
+        "丟東西",
+        "未滿足需要",
+        "行為",
+        "事後記錄",
+        "情境"
+      ],
+      "sourceSection": "Overview、需求辨識及Nature of the evidence。只整理理解需要的背景；記錄提綱與例子由編輯撰寫，不涵蓋危機處理或自傷評估。",
+      "evidence": {
+        "summary": "AIFS作者主張把可能傷及他人的行為放回孩子的需要和較廣的生活情境理解，並重視孩子與周圍人的影響。",
+        "limit": "原文研究的對象、測量與方法不同，多依家長或教師回報；支持策略主要來自實務經驗，未由該回顧驗證效果。單次筆記不能確定行為原因。"
+      },
+      "observe": "哪些是目擊事實，哪些是孩子的說法，哪些仍是大人的推測？也記下家中或學校是否有近期變動，避免只看事件最後一刻。",
+      "example": "原創例子：孩子在排隊時推了同學。事後家長把老師目擊的前後經過記下來，孩子用圖指出後方太擠。家長把「擁擠可能有關」留成討論線索，和老師約好再了解不同排隊情況。",
+      "adjust": "若孩子的說法與大人觀察不同，分開保留兩者，讓支持團隊一起釐清。若仍有立即受傷風險，先尋求現場與緊急醫療協助，這份事後筆記不能代替當下安全處置。"
+    },
+    {
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
+      "reviewChecked": "2026-11-20",
+      "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
+      "id": "reading-comprehension-context",
+      "category": "school",
+      "title": "讀得出字卻不懂意思，先和老師談什麼",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "認識一份ASD閱讀理解資料的研究限制，再帶著孩子實際卡住的段落，和老師討論下一步。",
+      "when": "孩子能讀出課文，但難以說出發生了什麼，或回答文章中的問題。你想把情況說清楚，而不只用「閱讀不好」描述。",
+      "asdFocus": "昆士蘭教育部的資料整理ASD學生閱讀理解研究。個別討論仍需看孩子的語言、閱讀及表達方式，不能只依年齡選方法。",
+      "steps": [
+        [
+          "準備一個具體片段",
+          "以下是編輯提供的親師討論問題：哪一段能讀、哪個問題卡住？保留孩子原本的回答，讓老師看見實際情境。"
+        ],
+        [
+          "請老師協助釐清困難",
+          "討論可能與詞意、前後關係、理解問題或表達答案的方式有關嗎？先把不確定處列出來，讓老師依孩子的學習情況了解。"
+        ],
+        [
+          "約好怎麼看後續變化",
+          "若老師提出調整，問清楚想支持哪一項能力、孩子可以怎麼回應，以及何時一起回看。把約定記在這篇筆記，方便下次談同一件事。"
+        ]
+      ],
+      "related": "qld-reading",
+      "situations": [
+        "school",
+        "communication"
+      ],
+      "keywords": [
+        "閱讀理解",
+        "識字",
+        "課文",
+        "學習",
+        "讀寫",
+        "親師"
+      ],
+      "sourceSection": "單頁開頭的13項研究回顧、單一個案研究設計及驗證限制。未把單張中的策略圖改寫為訓練清單；親師問題為編輯整理。",
+      "evidence": {
+        "summary": "昆士蘭教育部這份單張介紹13項ASD閱讀理解研究，指出所述方法值得繼續研究，仍需要更多重複與較大樣本的研究。",
+        "limit": "單張未標發布日期，研究背景參照2021年的回顧，不能代表截至目前的全部證據，也沒有建立適用所有ASD學生的方法排名。這篇提供討論背景。"
+      },
+      "observe": "回看孩子在同一類文章、相近問題下的實際回答，以及用了哪些提示。若回答方式改變，也一起記下，避免只看答對題數。",
+      "example": "原創例子：孩子能逐句讀出故事，卻在「他為什麼回家？」停住。家長帶著那一段和孩子的原話詢問老師，請老師協助了解卡在詞意、情節關係，還是回答問題的方式。",
+      "adjust": "若討論仍很籠統，可以先選一份近期作業作為共同例子。需要進一步評估時，請老師協助安排合適的學習支持，依孩子的實際能力決定方向。"
     }
   ],
   "withdrawnArticles": [
