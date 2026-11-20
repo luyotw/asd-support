@@ -917,6 +917,244 @@
       ],
       "readScope": "Methods 2.3、Results 3.1／Table 1、Limitations及Copyright",
       "exclusionType": "quality"
+    },
+    {
+      "id": "S42",
+      "title": "Vanaken等｜Getting the timing right. Autistic adolescents reflect on the value of an early diagnosis",
+      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1735842/full",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；限核准作者自有文字，須署名、附授權並標示改寫；第三方素材另計",
+      "permissionEvidence": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1735842/full",
+      "audience": "比利時18名16–18歲自閉症青少年；排除IQ低於60或正式語言障礙者，不能代表所有溝通／認知需要",
+      "date": "2026-05-14出版",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "Methods、作者Results三主題、Discussion及Strengths and limitations；不取逐字訪談、個資或量表題目。",
+      "reason": "可整理青少年如何理解標籤、自我認同及告知時機的看法。訪談為回顧經驗，不證明某個固定告知年齡最佳；18歲與未成年者分開，沒有把16–18歲觀點當幼兒處方。",
+      "topics": [
+        "T16"
+      ],
+      "readScope": "已讀方法、樣本表、作者主題說明、討論、限制與Copyright",
+      "evidenceType": "青少年質性訪談"
+    },
+    {
+      "id": "S43",
+      "title": "Sato等｜Disclosing a diagnosis of autism spectrum disorder without intellectual disability to pediatric patients in Japan in early diagnostic stages and associated factors: a cross-sectional study",
+      "url": "https://link.springer.com/article/10.1186/s13030-022-00247-0",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；限核准作者自有文字，須署名、附授權並標示改寫；第三方素材另計",
+      "permissionEvidence": "https://link.springer.com/article/10.1186/s13030-022-00247-0",
+      "audience": "日本診治18歲以下ASD患者的醫師；主要分析無智能障礙患者的初期告知，非孩子自己回報",
+      "date": "2022-08-20出版；問卷2015年，患者回顧期2014-11至2015-10",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "Methods、Results、Discussion與Limitations中醫師重視準備程度的歷史研究敘述；不重製問卷或作當前臨床標準。",
+      "reason": "463位醫師符合納入；部分分析另有排除，不能混用分母。可呈現當時醫師重視家庭理解與關係的觀點；低回收率、回憶偏差及資料年代限制已記。不能把家長準備度當孩子得知診斷的強制門檻，也不稱2026日本現況。",
+      "topics": [
+        "T16"
+      ],
+      "readScope": "方法、樣本流程、告知結果、討論、限制與Rights and permissions",
+      "evidenceType": "歷史醫師橫斷問卷"
+    },
+    {
+      "id": "S44",
+      "title": "Li等｜The Role of Extended Family Members in the Lives of Autistic Individuals and Their Parents: A Systematic Review and Meta-Synthesis",
+      "url": "https://link.springer.com/article/10.1007/s10567-025-00525-7",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；限核准作者自有文字，須署名、附授權並標示改寫；第三方素材另計",
+      "permissionEvidence": "https://link.springer.com/article/10.1007/s10567-025-00525-7",
+      "audience": "自閉症者及其家長／親友，跨兒童成人；42研究中27篇限18歲以下、11混齡、1成人、3未標年齡；部分原研究有其他障礙混合樣本",
+      "date": "2025-05-20出版；2025-06卷期；不能以卷期當額外更新",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "方法與作者自有主題綜整：情緒／實際支援、無幫助的支援及家庭互動；僅明確ASD兒少情境，不取逐字引文、量表或混合障礙未分開的結果。",
+      "reason": "42篇（40質性、2混合方法），多由家長／祖父母發聲，自閉症當事人觀點不足。可談支援的好壞與界線，不能宣稱親戚越介入越好、所有文化家庭相同或介入效果已驗證。",
+      "topics": [
+        "T15"
+      ],
+      "readScope": "方法、樣本構成、作者三主題、限制與Rights and permissions",
+      "evidenceType": "質性系統性回顧／統合"
+    },
+    {
+      "id": "S45",
+      "title": "Gao與Drani｜Social Support Experiences in Parents of Children With ASD: A Qualitative Systematic Review",
+      "url": "https://journals.sagepub.com/doi/10.1177/21582440251336174",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；限核准作者自有文字，須署名、附授權並標示改寫；第三方素材另計",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/21582440251336174",
+      "audience": "ASD孩子家長；各原研究年齡不同，未設定一致數字適齡；母親265名、父親57名，男性觀點較少",
+      "date": "2025-05-17出版；2025第二季卷期；納入2013–2023原研究，檢索更新日期原文以11/5/2024表示，不自行判定月日",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "Methods、作者Results與Limitations對支援、污名、同儕支持品質的綜整；不取第三方逐字引文、量表及服務制度。",
+      "reason": "18項英語質性研究；可記同儕支持有實際幫助也可能有負面回饋或不一致。不能把支持群組當一定有效的減壓治療，也不把社會／家庭壓力歸罪家長。",
+      "topics": [
+        "T15"
+      ],
+      "readScope": "摘要、方法、研究篩選、主題、討論、限制及權利段",
+      "evidenceType": "質性系統性回顧"
+    },
+    {
+      "id": "S46",
+      "title": "Clarke等｜Telehealth-Delivered Supports for Daily Living Skills for Autistic Children: a Systematic Review",
+      "url": "https://link.springer.com/article/10.1007/s40489-023-00389-z",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；限核准作者自有文字，須署名、附授權並標示改寫；第三方素材另計",
+      "permissionEvidence": "https://link.springer.com/article/10.1007/s40489-023-00389-z",
+      "audience": "17項研究共536人，ASD511人；實際年齡16個月至19歲，家長媒介ASD395人16個月至14歲；混合樣本結果未分ASD者不取",
+      "date": "2023-07-20線上；2025-06卷期；檢索更新2023-06，不是2025新檢索",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "Method、ASD可辨識的作者Results與Discussion限制：遠距提供生活技能支持、專業教練及研究品質背景；不複製療程、量表或如廁／飲食／睡眠操作。",
+      "reason": "17項中2強、12適當、3弱，9項先導／可行性；多領域研究常未分開報告成果，與面對面比較結果也不一致。可補如廁／生活技能求助研究背景，不能直接當在家照做的訓練清單或宣稱遠距等同實體。",
+      "topics": [
+        "T03",
+        "T04",
+        "T12",
+        "T15"
+      ],
+      "readScope": "方法、參與者及研究設計、作者結果綜整、討論／限制、權利段",
+      "evidenceType": "系統性回顧"
+    },
+    {
+      "id": "S47",
+      "title": "Leadbitter等｜Clinical effectiveness of an online psychoeducational and psychotherapeutic programme for caregivers of children newly diagnosed as autistic（REACH-ASD）",
+      "url": "https://kclpure.kcl.ac.uk/portal/en/publications/clinical-effectiveness-of-an-online-psychoeducational-and-psychot/",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "CC BY 4.0；限核准作者自有文字，須署名、附授權並標示改寫；第三方素材另計",
+      "permissionEvidence": "https://kclpure.kcl.ac.uk/portal/en/publications/clinical-effectiveness-of-an-online-psychoeducational-and-psychot/",
+      "audience": "英國近期12個月內確診ASD孩子的家長／主要照顧者；摘要納入孩子2–15歲，結果描述實際2–16歲；照顧者多為女性及白人英國人",
+      "date": "2025-03-11線上；2025-04卷期",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "僅核KCL所收錄的作者完整摘要：研究目的、對照、樣本、主要結果及限制；不放行正文、治療課程、手冊或量表。",
+      "reason": "379位照顧者隨機分派，摘要主要可用資料分析319人；可描述此特定團體方案的研究背景，不能把數字當任何線上群組都有效。原站PDF未取得，不聲稱通讀全文；與S39成本效益論文為不同作品，S39仍不用。",
+      "topics": [
+        "T15"
+      ],
+      "readScope": "KCL作者完整摘要與書目版權欄位；出版社PDF取得失敗，其餘正文未核",
+      "evidenceType": "RCT之作者摘要",
+      "permissionSection": "KCL書目note明列原論文CC BY 4.0",
+      "relatedAuditIds": [
+        "S39"
+      ]
+    },
+    {
+      "id": "S48",
+      "title": "Bertolotto等｜Toilet training for children with Autism Spectrum Disorder: experiences, difficulties and supporting strategies",
+      "url": "https://www.scielosp.org/pdf/physis/2024.v34/e34083/en",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "本輪未核實原文完整授權與例外；不能用",
+      "permissionEvidence": "https://www.scielosp.org/pdf/physis/2024.v34/e34083/en",
+      "audience": "摘要記7位ASD孩子照顧者，孩子2–6歲；未完成正文查核",
+      "date": "2024年文章；本輪未核精確發布日",
+      "currency": "本輪不採用；不等於判定過時",
+      "sections": "只記原文書目／摘要線索，不核准如廁建議或程序。",
+      "reason": "原期刊PDF／HTML均未成功取得，無法逐段確認條款例外與正文。第三方索引的CC BY標記不作本輪放行依據，直接不用，不留待確認候選。",
+      "topics": [
+        "T04"
+      ],
+      "readScope": "搜尋可見原文摘要與書目；原期刊正文未取得"
+    },
+    {
+      "id": "S49",
+      "title": "Michigan Medicine｜Toilet Training Tips for Autism Spectrum Disorder",
+      "url": "https://med.umich.edu/1libr/Pediatrics/ToiletTrainingTipsASD.pdf",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "未取得原檔完整授權，不用",
+      "permissionEvidence": "https://med.umich.edu/1libr/Pediatrics/ToiletTrainingTipsASD.pdf",
+      "audience": "標題明列ASD；數字年齡及正文未核",
+      "date": "原文日期未核；本輪入口已導向Patient Education Portal歡迎頁",
+      "currency": "本輪不採用；不等於判定過時",
+      "sections": "只記失效／轉址及授權查核結果，不採用搜尋摘要作引導。",
+      "reason": "舊PDF網址目前導向入口頁，未取得原檔與完整授權。搜尋片段的Creative Commons Attribution-不足以辨明NC、ND等條件，按規則不能用；未登入或要求帳戶。",
+      "topics": [
+        "T04"
+      ],
+      "readScope": "PDF舊入口轉址與現行歡迎頁",
+      "redirectTarget": "https://patiented.uofmhealth.org/Portal/Default/en-US/custom/welcome"
+    },
+    {
+      "id": "S50",
+      "title": "Crane等｜Autistic parents’ views and experiences of talking about autism with their autistic children",
+      "url": "https://pure-oai.bham.ac.uk/ws/portalfiles/portal/217346196/crane-et-al-2021-autistic-parents-views-and-experiences-of-talking-about-autism-with-their-autistic-children.pdf",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "noncommercial",
+      "scope": "asd",
+      "permission": "CC BY-NC（原機構明列；本輪未另核版號）；限非商業、署名並標明改寫",
+      "permissionEvidence": "https://pure-oai.bham.ac.uk/ws/portalfiles/portal/217346196/crane-et-al-2021-autistic-parents-views-and-experiences-of-talking-about-autism-with-their-autistic-children.pdf",
+      "audience": "英國34位自閉症家長，孩子3–18歲；部分家長／孩子自我認同，未全部正式診斷；30名母親、2男性、2非二元家長",
+      "date": "2021年25(4)卷期；版權2020；調查2019-05至06；下載日期不是發表日",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "PDF方法／表1與作者Results／Discussion的經驗綜整；只限非商業，不取逐字親子引文及調查題目。",
+      "reason": "小型機會抽樣，多數已告知孩子，偏向正面經驗與個別化對話；不能代表所有自閉症家長不需要專業協助或所有孩子都無負面感受。與醫師、青少年樣本的差異需保留。未進網站。",
+      "topics": [
+        "T16"
+      ],
+      "readScope": "原機構封面權利、原論文摘要、方法、樣本表、作者結果與討論",
+      "evidenceType": "家長問卷與開放題分析"
+    },
+    {
+      "id": "S51",
+      "title": "Haberland與Rogow｜iMatter: Teaching about Puberty, Gender, and Fairness",
+      "url": "https://knowledgecommons.popcouncil.org/departments_sbsr-pgy/649/",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "scope-excluded",
+      "scope": "general",
+      "permission": "CC BY-NC-SA 4.0；本案先因ASD範圍不符排除",
+      "permissionEvidence": "https://knowledgecommons.popcouncil.org/departments_sbsr-pgy/649/",
+      "audience": "一般較年幼青少年；入口未明確針對ASD，男、女小冊均不推定適用ASD",
+      "date": "入口2017；建議引用2015，不自行裁定修訂年",
+      "currency": "本輪不採用；不等於判定過時",
+      "sections": "僅核入口受眾、書目及權利；不採用小冊正文。",
+      "reason": "雖入口明列CC BY-NC-SA 4.0並有男孩青春期材料，未建立ASD專屬段落依據。依ASD門檻排除，不能用開放授權填補男孩青春期題目。",
+      "topics": [
+        "T12"
+      ],
+      "readScope": "原發布機構入口、摘要及CC標記"
+    },
+    {
+      "id": "S52",
+      "title": "Little等｜A Telehealth Delivered Toilet Training Intervention for Children with Autism",
+      "url": "https://journals.sagepub.com/doi/10.1177/15394492231159903",
+      "checked": "2026-11-21",
+      "researchRound": "2026-11-21-02",
+      "decision": "noncommercial",
+      "scope": "asd",
+      "permission": "CC BY-NC 4.0；只限非商業指定研究敘述，需署名及標示改寫",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/15394492231159903",
+      "audience": "34個ASD孩子家庭；摘要2–8歲，內文目的2.5–8歲，數字差異保留，不自行放寬；各孩子起始如廁能力不同",
+      "date": "2023-03-21線上；2023-07卷期",
+      "currency": "可用（限本筆研究背景／已核段落，不代表現行臨床指引）",
+      "sections": "Methods、作者Results、Future Directions and Limitations的研究背景；非商業限定，不取原方案教材、問卷、10–12週療程程序。",
+      "reason": "無真正對照組的初步成效研究，不能確定觀察改善由方案造成。中止者的改變可能和出席、方案是否合適、已有進步等多種情況有關，不能責怪家長不配合。缺乏長期維持驗證。未進網站。",
+      "topics": [
+        "T04",
+        "T15"
+      ],
+      "readScope": "摘要、研究目的、方法、作者結果、討論與限制、權利段",
+      "evidenceType": "無對照前後初步研究"
     }
-  ]
+  ],
+  "lastResearchRound": "2026-11-21-02"
 }

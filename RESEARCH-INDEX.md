@@ -1,17 +1,35 @@
 # ASD 資料整理索引
 
-最新查核日：2026-11-21。原44筆另加本輪S31–S41共11筆，現在共 **55筆索引紀錄**。附件組、課程入口與五冊集合仍是紀錄單位，不代表55篇已通讀文章。
+最新查核日：2026-11-21第二輪。原55筆另加S42–S52共11筆，現在共 **66筆索引紀錄**。附件組、課程入口與五冊集合仍是紀錄單位，不代表66篇已通讀文章。
 
 ## 目前結論
 
 | 結果 | 筆數 | 用途 |
 | --- | --- | --- |
-| 可改寫指定範圍 | 17 | 只採用各筆已讀、核准且有明確授權的自有文字。 |
-| 只限非商業 | 1 | S29；未進網站，授權條件仍保留。 |
-| 本專案不能用 | 28 | 含授權不符、正文未取得、未核課程或本輪方法報告問題。 |
-| ASD範圍排除 | 9 | 範圍不符，不因開放授權就補入。 |
+| 可改寫指定範圍 | 23 | 只採用各筆已讀、核准且有明確授權的自有文字。 |
+| 只限非商業 | 3 | S29、S50、S52；未進網站，授權條件保留。 |
+| 本專案不能用 | 30 | 含授權不符、正文未取得、未核課程或本輪方法報告問題。 |
+| ASD範圍排除 | 10 | 範圍不符，不因開放授權就補入。 |
 
-## 2026-11-21新增11筆
+## 2026-11-21第二輪新增11筆
+
+6筆可改寫指定範圍、2筆限非商業、2筆不用、1筆ASD範圍排除。逐筆閱讀、年齡及授權依據見[本輪紀錄](RESEARCH-2026-11-21-02.md)。本輪只收集，網站維持21篇。
+
+| ID | 來源 | 使用決定與邊界 |
+| --- | --- | --- |
+| S42 | [Vanaken等｜Getting the timing right. Autistic adolescents reflect on the value of an early diagnosis](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1735842/full) | 可用：16–18歲青少年的診斷／告知經驗，非固定年齡處方。 |
+| S43 | [Sato等｜Disclosing a diagnosis of autism spectrum disorder without intellectual disability to pediatric patients in Japan in early diagnostic stages and associated factors: a cross-sectional study](https://link.springer.com/article/10.1186/s13030-022-00247-0) | 可用：2015年日本醫師的歷史告知觀點，不稱2026現行標準。 |
+| S44 | [Li等｜The Role of Extended Family Members in the Lives of Autistic Individuals and Their Parents: A Systematic Review and Meta-Synthesis](https://link.springer.com/article/10.1007/s10567-025-00525-7) | 可用：ASD兒少親友支援的作者綜整；混合障礙未分ASD者排除。 |
+| S45 | [Gao與Drani｜Social Support Experiences in Parents of Children With ASD: A Qualitative Systematic Review](https://journals.sagepub.com/doi/10.1177/21582440251336174) | 可用：ASD家長社會／同儕支持經驗，含不良回饋與限制。 |
+| S46 | [Clarke等｜Telehealth-Delivered Supports for Daily Living Skills for Autistic Children: a Systematic Review](https://link.springer.com/article/10.1007/s40489-023-00389-z) | 可用：遠距生活技能研究背景；分清ASD與混合樣本、不同技能成果。 |
+| S47 | [Leadbitter等｜Clinical effectiveness of an online psychoeducational and psychotherapeutic programme for caregivers of children newly diagnosed as autistic（REACH-ASD）](https://kclpure.kcl.ac.uk/portal/en/publications/clinical-effectiveness-of-an-online-psychoeducational-and-psychot/) | 可用：CC BY臨床效果論文的作者摘要；不含正文、課程或手冊，S39仍不用。 |
+| S48 | [Bertolotto等｜Toilet training for children with Autism Spectrum Disorder: experiences, difficulties and supporting strategies](https://www.scielosp.org/pdf/physis/2024.v34/e34083/en) | 不用：原期刊正文與完整條款未取得，不用第三方CC標記放行。 |
+| S49 | [Michigan Medicine｜Toilet Training Tips for Autism Spectrum Disorder](https://med.umich.edu/1libr/Pediatrics/ToiletTrainingTipsASD.pdf) | 不用：原PDF已導向入口，原檔與完整授權無法核實。 |
+| S50 | [Crane等｜Autistic parents’ views and experiences of talking about autism with their autistic children](https://pure-oai.bham.ac.uk/ws/portalfiles/portal/217346196/crane-et-al-2021-autistic-parents-views-and-experiences-of-talking-about-autism-with-their-autistic-children.pdf) | 限非商業：34位自閉症家長談診斷；孩子3–18歲，未進網站。 |
+| S51 | [Haberland與Rogow｜iMatter: Teaching about Puberty, Gender, and Fairness](https://knowledgecommons.popcouncil.org/departments_sbsr-pgy/649/) | ASD範圍排除：一般青春期教材，男孩小冊與開放授權不足以通過ASD門檻。 |
+| S52 | [Little等｜A Telehealth Delivered Toilet Training Intervention for Children with Autism](https://journals.sagepub.com/doi/10.1177/15394492231159903) | 限非商業：34家庭遠距如廁初步研究，無對照組；未進網站。 |
+
+## 2026-11-21第一輪新增11筆
 
 7筆可改寫指定範圍、4筆不用。每筆閱讀範圍、原文日期、適齡、段落與授權證據見[本輪詳細紀錄](RESEARCH-2026-11-21.md)。網站仍為21篇；新增來源沒有直接變成育兒處方。
 
