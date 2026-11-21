@@ -126,7 +126,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
   ],
   "sources": {
     "pp-visual": {
-      "name": "Positive Partnerships｜視覺支持入門",
+      "name": "視覺支持入門",
       "originalTitle": "An Introduction to Visual Supports",
       "publisher": "Positive Partnerships",
       "version": "2020-06",
@@ -150,7 +150,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "學齡ASD孩子；未訂數字適齡"
     },
     "pp-transitions": {
-      "name": "Positive Partnerships｜為活動轉換與變動做準備",
+      "name": "為活動轉換與變動做準備",
       "originalTitle": "Transitions and Planning for Change",
       "publisher": "Positive Partnerships",
       "version": "2023-07",
@@ -174,7 +174,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD兒童／年輕人，含學前與學校轉銜；未訂數字適齡"
     },
     "rr": {
-      "name": "Daniel、Laurie 與 Delafield-Butt｜互動節奏與感官環境",
+      "name": "互動節奏與感官環境",
+      "authors": "Stuart Daniel、Matthew Laurie、Jonathan Delafield-Butt",
       "originalTitle": "A handbook for Rhythmic Relating in autism: supporting social timing in play, learning and therapy",
       "publisher": "Frontiers in Psychology",
       "version": "2024-09-18",
@@ -198,7 +199,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "年幼ASD孩子、不同溝通方式及額外學習需要者；未訂數字"
     },
     "pp-workbook": {
-      "name": "Positive Partnerships｜家長與照顧者工作手冊",
+      "name": "家長與照顧者工作手冊",
       "originalTitle": "2 Day Parent Carer Participant Workbook",
       "publisher": "Positive Partnerships",
       "url": "https://www.positivepartnerships.com.au/uploads/2-Day-PC-Participant-Workbook.pdf",
@@ -222,7 +223,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD學齡學生及家長；未訂數字適齡"
     },
     "pp-planning": {
-      "name": "Positive Partnerships｜親師共同規劃工具",
+      "name": "親師共同規劃工具",
       "originalTitle": "Planning Tool",
       "publisher": "Positive Partnerships",
       "url": "https://www.positivepartnerships.com.au/uploads/Planning_Tool_field_Formatted_A3_V.1_Dec_21.pdf",
@@ -246,7 +247,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD學生／支持團隊；未訂數字適齡"
     },
     "rr-sensory": {
-      "name": "Daniel等｜感官環境與個別支持",
+      "name": "感官環境與個別支持",
+      "authors": "Stuart Daniel、Kelly Mahler、Dee C. Ray、Kade Sharp、Kim Clairy、Sean M. Inderbitzen、Amy C. Laurent、Jacquelyn H. Fede、Jonathan T. Delafield-Butt",
       "originalTitle": "Sensory-processing informed autism practice for child-centred therapists",
       "publisher": "Research in Neurodiversity",
       "url": "https://strathprints.strath.ac.uk/95516/7/Daniel-etal-RN-2026-Sensory-processing-informed-autism-practice-for-child-centred-therapists.pdf",
@@ -270,7 +272,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD兒童的專業治療情境；未訂數字適齡"
     },
     "pp-friendships": {
-      "name": "Positive Partnerships｜舒服的友誼",
+      "name": "舒服的友誼",
       "originalTitle": "Friendships",
       "publisher": "Positive Partnerships",
       "version": "2020-08",
@@ -294,7 +296,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD兒童／年輕人；未訂數字適齡"
     },
     "pp-sensory-tool": {
-      "name": "Positive Partnerships｜感官情境記錄",
+      "name": "感官情境記錄",
       "originalTitle": "Sensory Tool",
       "publisher": "Positive Partnerships",
       "version": "原文未標發布日",
@@ -318,7 +320,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD學齡學生；未訂數字適齡"
     },
     "qld-reading": {
-      "name": "昆士蘭教育部｜ASD閱讀理解研究線索",
+      "name": "ASD閱讀理解研究線索",
       "originalTitle": "Review of autism and reading comprehension",
       "publisher": "Queensland Department of Education, Autism Hub",
       "version": "原文未標發布／審閱日",
@@ -342,7 +344,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD學生，依閱讀／語言能力；未訂數字適齡"
     },
     "aifs-needs": {
-      "name": "AIFS｜理解行為背後的需要",
+      "name": "理解行為背後的需要",
+      "authors": "Kylie Butler、Holly Helprin、Jasmine B. MacDonald、Lisa Tamiakis",
       "originalTitle": "Understanding why some Autistic children use potentially harmful behaviours",
       "publisher": "Australian Institute of Family Studies",
       "version": "2025-12-10",
@@ -366,7 +369,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "主要供專業人員；本文ASD範圍為幼兒至青春期初期，未訂數字；服務背景至18歲非操作適齡"
     },
     "esa-puberty": {
-      "name": "Education Services Australia｜自閉症學生的青春期教材",
+      "name": "自閉症學生的青春期教材",
       "originalTitle": "Focus on puberty — Module 3, Years 5–6",
       "publisher": "Education Services Australia / Student Wellbeing Hub",
       "version": "PDF版權2020，未標其他發布／修訂日；本輪現行官方入口仍供下載",
@@ -390,7 +393,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD學生的主流學校教師；澳洲五、六年級，不是五、六歲；未訂數字適齡"
     },
     "ebrahim-screen": {
-      "name": "Ebrahim 等｜自閉症孩子的螢幕使用與家長經驗",
+      "name": "自閉症孩子的螢幕使用與家長經驗",
+      "authors": "Faatima Ebrahim、Pamela Gretschel、Iesrafeel Abbas",
       "originalTitle": "Striving to provide conditional access: strategies parents use to mediate the screentime of their children with autism spectrum disorder",
       "publisher": "Frontiers in Child and Adolescent Psychiatry",
       "version": "2025-08-20出版；疫情相關經驗，不作現行平台操作指南",
@@ -439,7 +443,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "自閉症小學／中學學生；納入研究年齡各異，不設單一數字適齡；混合樣本僅收ASD可分開資料"
     },
     "skommer-periods": {
-      "name": "Skommer 與 Gunesh｜自閉症者的經期經驗與支持",
+      "name": "自閉症者的經期經驗與支持",
+      "authors": "Joanna Skommer、Krish Gunesh",
       "originalTitle": "Autism, menstruation and mental health—a scoping review and a call to action",
       "publisher": "Frontiers in Global Women’s Health",
       "version": "2025-06-25出版；檢索截至2025-05",
@@ -463,7 +468,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "有月經／初經經驗的自閉症者，跨青少年與成人至更年期；非單一兒少年齡；含正式診斷與自我認同樣本"
     },
     "ellis-periods": {
-      "name": "Ellis 等｜自閉症者、家長與專業人員的經期觀點",
+      "name": "自閉症者、家長與專業人員的經期觀點",
+      "authors": "Rebecca Ellis、Gemma Williams、Selena Caemawr、Monique Craine、Willow Holloway、Kathryn Williams、Sebastian C. K. Shaw、Aimee Grant",
       "originalTitle": "Menstruation and Autism: A Qualitative Systematic Review",
       "publisher": "Autism in Adulthood（作者接受稿）",
       "version": "2025-04-17線上初版；2026-10-01卷期；檢索2023-02；不能把2026卷期當2026資料更新",
@@ -487,7 +493,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "自閉症有月經經驗者及家長／支持者；跨年齡，原摘要指人口資料不足，未訂數字適齡"
     },
     "gray-attendance": {
-      "name": "Gray 等｜自閉症學生與支持者的上學困難經驗",
+      "name": "自閉症學生與支持者的上學困難經驗",
+      "authors": "Laura Gray、Vivian Hill、Elizabeth Pellicano",
       "originalTitle": "“He’s shouting so loud but nobody’s hearing him”: A multi-informant study of autistic pupils’ experiences of school non-attendance and exclusion",
       "publisher": "Autism & Developmental Language Impairments / SAGE",
       "version": "2023-10-18出版；訪談2017-06至2018-02",
@@ -511,7 +518,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "英格蘭單一地方政府兩個替代教育機構；12名青少年（10男2女），表1為13–17歲，正文稱13–16歲有不一致；11名臨床診斷，1名未正式診斷但達SCQ門檻"
     },
     "vanaken-diagnosis": {
-      "name": "Vanaken 等｜自閉症青少年回看診斷與告知時機",
+      "name": "自閉症青少年回看診斷與告知時機",
+      "authors": "Gert-Jan Vanaken、Ilse Noens、Jean Steyaert、Kristien Hens",
       "originalTitle": "Getting the timing right. Autistic adolescents reflect on the value of an early diagnosis",
       "publisher": "Frontiers in Psychiatry",
       "version": "2026-05-14出版",
@@ -535,7 +543,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "比利時18名16–18歲自閉症青少年；排除IQ低於60或正式語言障礙者，不能代表所有溝通／認知需要"
     },
     "sato-diagnosis": {
-      "name": "Sato 等｜日本醫師如何考量診斷告知",
+      "name": "日本醫師如何考量診斷告知",
+      "authors": "Hiroyuki Sato、Misao Fujita、Atsushi Tsuchiya、Taichi Hatta、Katsumi Mori、Eisuke Nakazawa、Yoshiyuki Takimoto、Akira Akabayashi",
       "originalTitle": "Disclosing a diagnosis of autism spectrum disorder without intellectual disability to pediatric patients in Japan in early diagnostic stages and associated factors: a cross-sectional study",
       "publisher": "BioPsychoSocial Medicine / Springer Nature",
       "version": "2022-08-20出版；問卷2015年，患者回顧期2014-11至2015-10",
@@ -559,7 +568,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "日本診治18歲以下ASD患者的醫師；主要分析無智能障礙患者的初期告知，非孩子自己回報"
     },
     "li-family": {
-      "name": "Li 等｜自閉症家庭的親友支援經驗",
+      "name": "自閉症家庭的親友支援經驗",
+      "authors": "Jia-Ling Li、Melissa Washington-Nortey、Tsegereda Haile Kifle、Francesca Cotier、Rosa A. Hoekstra",
       "originalTitle": "The Role of Extended Family Members in the Lives of Autistic Individuals and Their Parents: A Systematic Review and Meta-Synthesis",
       "publisher": "Clinical Child and Family Psychology Review / Springer Nature",
       "version": "2025-05-20出版；2025-06卷期；不能以卷期當額外更新",
@@ -583,7 +593,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "自閉症者及其家長／親友，跨兒童成人；42研究中27篇限18歲以下、11混齡、1成人、3未標年齡；部分原研究有其他障礙混合樣本"
     },
     "gao-peer-support": {
-      "name": "Gao 與 Drani｜自閉症孩子家長的支持經驗",
+      "name": "自閉症孩子家長的支持經驗",
+      "authors": "Xin Gao、Syazwani Drani",
       "originalTitle": "Social Support Experiences in Parents of Children With ASD: A Qualitative Systematic Review",
       "publisher": "SAGE Open",
       "version": "2025-05-17出版；2025第二季卷期；納入2013–2023原研究，檢索更新日期原文以11/5/2024表示，不自行判定月日",
@@ -607,7 +618,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "ASD孩子家長；各原研究年齡不同，未設定一致數字適齡；母親265名、父親57名，男性觀點較少"
     },
     "clarke-daily-living": {
-      "name": "Clarke 等｜自閉症兒少的遠距生活技能支持",
+      "name": "自閉症兒少的遠距生活技能支持",
+      "authors": "Monique Clarke、Laurie McLay、Karyn France、Neville Blampied、Jenna van Deurs",
       "originalTitle": "Telehealth-Delivered Supports for Daily Living Skills for Autistic Children: a Systematic Review",
       "publisher": "Review Journal of Autism and Developmental Disorders / Springer Nature",
       "version": "2023-07-20線上；2025-06卷期；檢索更新2023-06，不是2025新檢索",
@@ -631,7 +643,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceAudience": "17項研究共536人，ASD511人；實際年齡16個月至19歲，家長媒介ASD395人16個月至14歲；混合樣本結果未分ASD者不取"
     },
     "reach-asd-summary": {
-      "name": "Leadbitter 等｜確診後照顧者支持方案的研究摘要",
+      "name": "確診後照顧者支持方案的研究摘要",
+      "authors": "Kathy Leadbitter、Sophie Langhorne、Richard Smallman、Petrina Chu、Ceri Ellis、Louisa Harrison、Tessa Hutton、Charlotte Butter、Caitlin Goldie、Kirsty James、Latha Hackett、Alison Dunkerley、Penny Bee、Gemma Shields、Linda Davies、Richard Emsley、Jonathan Green、REACH-ASD Team",
       "originalTitle": "Clinical effectiveness of an online psychoeducational and psychotherapeutic programme for caregivers of children newly diagnosed as autistic (REACH-ASD)",
       "publisher": "The Lancet Psychiatry（King’s College London 機構書目）",
       "version": "2025-03-11線上；2025-04卷期",

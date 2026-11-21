@@ -456,7 +456,7 @@ function articlePage(article) {
           const source = sources[id];
           return `<li>
             <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
-            ${source.authors ? `<small class="source-authors">${source.authors}</small>` : ""}
+            <small class="source-authors">${source.authors || source.publisher}</small>
           </li>`;
         }).join("")}
       </ul>
@@ -538,7 +538,7 @@ function sourcesPage() {
     <h1>資料來源</h1><p>查找原文、出處與使用條件。示範情境在文章內另行標示。</p></div>
     <div class="settings-list">${Object.values(sources).map(source => `<article class="settings-card">
       <h2>${source.name}</h2>
-      ${source.authors ? `<small class="source-authors">${source.authors}</small>` : ""}
+      <small class="source-authors">${source.authors || source.publisher}</small>
       <p>${source.description}</p>
       <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
       <details class="source-details">
