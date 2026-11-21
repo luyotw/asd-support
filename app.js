@@ -410,7 +410,7 @@ function library() {
     </div>
     <p id="result-count" class="result-count" aria-live="polite"></p>
     <div id="results"></div>
-    <div class="library-foot"><a class="text-button" href="#sources">${icon("book")} 查看資料來源與授權 ${icon("arrow")}</a></div>`);
+    <div class="library-foot"><a class="text-button" href="#sources">${icon("book")} 查看所有資料來源 ${icon("arrow")}</a></div>`);
 }
 
 function refreshLibrary() {
@@ -534,10 +534,14 @@ function sourcesPage() {
   return shell("library", `<div class="page-heading"><a class="text-button back-link" href="#library">${icon("back")} 資源目錄</a>
     <h1>資料來源</h1><p>查找原文、出處與使用條件。示範情境在文章內另行標示。</p></div>
     <div class="settings-list">${Object.values(sources).map(source => `<article class="settings-card">
-      <h2>${source.name}</h2><p>${source.description}</p><p>${source.rights}</p>
-      ${source.attribution ? `<p>${source.attribution}</p>` : ""}
-      <div class="source-links"><a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
-      ${source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}</div>
+      <h2>${source.name}</h2><p>${source.description}</p>
+      <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
+      <details class="source-details">
+        <summary>授權資訊</summary>
+        <p>${source.rights}</p>
+        ${source.attribution ? `<p>${source.attribution}</p>` : ""}
+        ${source.licenseName === "CC BY 4.0" ? `<small class="source-license-url">${source.license}</small>` : source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}
+      </details>
     </article>`).join("")}</div>`);
 }
 

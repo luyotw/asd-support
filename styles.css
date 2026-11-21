@@ -192,7 +192,7 @@ img { display: block; max-width: 100%; }
 .settings-card p { margin: 7px 0 10px; color: var(--muted); }
 .settings-card h2 .icon { margin-right: 5px; }
 .settings-card .form-fields, .settings-card .situation-grid { margin-bottom: 0; }
-.source-links { display: flex; flex-wrap: wrap; gap: 6px 20px; }
+.source-license-url { overflow-wrap: anywhere; }
 
 .onboarding { max-width: 1280px; padding: 0 clamp(19px,5.25vw,70px); margin: auto; }
 .onboarding-top { display: flex; justify-content: space-between; align-items: center; gap: 6px; min-height: 83px; border-bottom: 1px solid var(--soft-line); }
