@@ -482,7 +482,7 @@ function articlePage(article) {
     ${notesSection(article.id)}
     <footer class="article-actions">
       ${bookmarkButton(article, true)}
-      <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示"}</button>
+      <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示於推薦"}</button>
     </footer>
   </div>`);
 }
@@ -693,7 +693,7 @@ document.addEventListener("click", event => {
       const restore = active.dismissed.includes(id);
       active.dismissed = restore ? active.dismissed.filter(articleId => articleId !== id) : [...active.dismissed, id];
       saveState();
-      control.textContent = restore ? "不再顯示" : "恢復推薦";
+      control.textContent = restore ? "不再顯示於推薦" : "恢復推薦";
       notify(restore ? "已恢復推薦" : "已從首頁推薦移除");
       break;
     }
