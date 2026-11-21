@@ -440,6 +440,7 @@ function articlePage(article) {
   const category = categoryById[article.category];
   const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
   const dismissed = currentState().dismissed.includes(article.id);
+  const references = [{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])];
   const originLabel = { home: "回首頁", library: "回資源目錄", saved: "回收藏" }[articleOrigin];
   return shell(articleOrigin, `<div class="article-page">
     <a class="text-button back-link" href="#${articleOrigin}">${icon("back")} ${originLabel}</a>
@@ -447,12 +448,29 @@ function articlePage(article) {
       <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
       <h1>${article.title}</h1>
       <p>${article.summary}</p>
-      <div class="article-actions">
-        ${bookmarkButton(article, true)}
-        <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示"}</button>
-        <button class="button plain" data-action="open-notes">我的筆記</button>
-      </div>
     </header>
+    <section class="source-panel" aria-labelledby="article-sources-title">
+      <h2 id="article-sources-title">${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
+      <ul class="article-source-links">
+        ${references.map(({ id }) => {
+          const source = sources[id];
+          return `<li><a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a></li>`;
+        }).join("")}
+      </ul>
+      <details class="source-details">
+        <summary>引用說明與署名</summary>
+        ${article.status === "demo" ? "<p>文中的做法是用於測試閱讀流程的原創情境示範。</p>" : ""}
+        ${references.map(({ id, section }) => {
+          const source = sources[id];
+          return `<div class="article-source">
+            ${references.length > 1 ? `<strong>${source.name}</strong>` : ""}
+            ${section ? `<p>${section}</p>` : ""}
+            <small>${source.rights}</small>
+            ${source.attribution ? `<small>${source.attribution}</small>` : ""}
+          </div>`;
+        }).join("")}
+      </details>
+    </section>
     <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p><p>${article.asdFocus}</p>${article.ageNote ? `<p class="muted">${article.ageNote.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>` : ""}</section>
     <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
@@ -462,19 +480,10 @@ function articlePage(article) {
     ${article.example ? `<section class="article-section"><h2>生活中的例子</h2><p>${article.example}</p></section>` : ""}
     ${article.adjust ? `<section class="article-section"><h2>如果這次行不通</h2><p>${article.adjust}</p></section>` : ""}
     ${notesSection(article.id)}
-    <section class="source-panel">
-      <h2>${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
-      ${article.status === "demo" ? "<p>上方的做法是用於測試閱讀流程的原創情境示範。</p>" : ""}
-      ${[{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])].map(({ id, section }) => {
-        const source = sources[id];
-        return `<div class="article-source">
-          <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
-          ${section ? `<p>${section}</p>` : ""}
-          <small>${source.rights}</small>
-          ${source.attribution ? `<small>${source.attribution}</small>` : ""}
-        </div>`;
-      }).join("")}
-    </section>
+    <footer class="article-actions">
+      ${bookmarkButton(article, true)}
+      <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示"}</button>
+    </footer>
   </div>`);
 }
 
@@ -644,9 +653,6 @@ document.addEventListener("click", event => {
   }
 
   switch (control.dataset.action) {
-    case "open-notes":
-      app.querySelector("#notes-title").focus();
-      break;
     case "edit-note": {
       const form = app.querySelector(".note-form");
       const id = control.closest("[data-note-id]").dataset.noteId;

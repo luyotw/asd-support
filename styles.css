@@ -156,11 +156,11 @@ img { display: block; max-width: 100%; }
 .back-link { margin-bottom: 13px; }
 .article-heading { padding: clamp(20px,5vw,43px); border-radius: 20px; background: #ebefe2; }
 .article-heading h1 { margin: 10px 0 9px; }
-.article-heading p { color: var(--muted); margin-bottom: 17px; max-width: 42ch; }
+.article-heading p { color: var(--muted); max-width: 42ch; }
 .article-actions { display: flex; flex-wrap: wrap; gap: 7px; }
 .demo-label { font-size: .76rem; font-weight: 700; color: #6a503d; }
 .article-section { margin: 27px 0; }
-.article-section h2, .source-panel h2 { margin-bottom: 9px; }
+.article-section h2 { margin-bottom: 9px; }
 .article-section p, .source-panel p { color: var(--muted); }
 .notes-section { padding: clamp(15px, 4vw, 24px); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
 .note-form { margin-top: 12px; }
@@ -176,9 +176,17 @@ img { display: block; max-width: 100%; }
 .article-steps li { counter-increment: steps; display: flex; gap: 12px; align-items: flex-start; padding: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
 .article-steps li::before { content: counter(steps); display: grid; place-items: center; width: 29px; height: 29px; flex: none; border-radius: 50%; background: var(--selected); color: var(--green); font-weight: 750; }
 .article-steps p { margin: 4px 0 0; }
-.source-panel { background: #eef0e8; padding: 19px; border-radius: 15px; }
-.source-panel small { display: block; color: var(--muted); }
-.article-source + .article-source { margin-top: 16px; }
+.source-panel { margin-top: 14px; background: #eef0e8; padding: 13px 17px; border-radius: 15px; }
+.source-panel h2 { font-size: 1rem; margin-bottom: 4px; }
+.article-source-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+.article-source-links .text-button { font-size: .9rem; text-align: left; }
+.article-source-links .icon { flex-shrink: 0; }
+.source-details { font-size: .85rem; margin-top: 4px; }
+.source-details summary { width: fit-content; padding: 5px 0; color: var(--green); cursor: pointer; }
+.source-details summary:hover { text-decoration: underline; }
+.source-details small { display: block; color: var(--muted); font-size: inherit; }
+.article-source { padding-top: 8px; }
+.article-source + .article-source { margin-top: 8px; border-top: 1px solid var(--line); }
 .settings-list { display: grid; gap: 14px; }
 .settings-card { padding: clamp(16px,3vw,28px); background: var(--surface); border: 1px solid var(--line); border-radius: 17px; }
 .settings-card p { margin: 7px 0 10px; color: var(--muted); }
