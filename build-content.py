@@ -34,6 +34,12 @@ def main():
             parser.error(f"{article['id']} needs an explicit basis for its age labels.")
         if article.get("related") not in catalog["sources"] or not article.get("asdFocus"):
             parser.error(f"{article['id']} needs an ASD-specific source and support focus.")
+        cited = {article["related"]}
+        for reference in article.get("additionalSources", []):
+            source_id = reference.get("id")
+            if source_id not in catalog["sources"] or source_id in cited or not reference.get("section"):
+                parser.error(f"{article['id']} needs a distinct approved source and citation scope for each additional reference.")
+            cited.add(source_id)
     path = folder / "guide.js"
     content = (
         "// Generated from catalog.json by build-content.py.\n"

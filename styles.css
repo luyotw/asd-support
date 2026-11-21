@@ -178,6 +178,7 @@ img { display: block; max-width: 100%; }
 .article-steps p { margin: 4px 0 0; }
 .source-panel { background: #eef0e8; padding: 19px; border-radius: 15px; }
 .source-panel small { display: block; color: var(--muted); }
+.article-source + .article-source { margin-top: 16px; }
 .settings-list { display: grid; gap: 14px; }
 .settings-card { padding: clamp(16px,3vw,28px); background: var(--surface); border: 1px solid var(--line); border-radius: 17px; }
 .settings-card p { margin: 7px 0 10px; color: var(--muted); }

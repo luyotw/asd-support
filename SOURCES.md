@@ -43,7 +43,7 @@
 
 - 來源標題、網址、版本、原文發布／更新／審閱日期；查過仍未取得者記明「原文未標」或取得失敗的範圍，不編造日期。授權無法確認直接不用。
 - 實際引用的章節、頁碼、建議或服務資訊。
-- 查閱日期與本次時效查核日期，分別記錄。
+- 查閱日期與本次時效更新日期為2026-11-21。現行30篇引用22筆通過ASD及改作授權查核的來源。今日發布9篇，採各筆核准範圍，多來源文章逐一列出各自的用途。
 - 時效狀態、判定理由及可核對的公告、新版或指引連結。
 - 需要替換或暫停的內容，以及下一次複查的觸發條件。
 
@@ -81,17 +81,9 @@
 
 首批比對草稿見 [D01–D03](TOPIC-BRIEFS.md#已定位的觀點差異)，首輪結果見[3C複查紀錄](MEDIA-REVIEW.md)。其中使用權未通過的原始比較已停止作為上架底稿。授權排除不代表觀點被證偽；仍可用的研究背景只按核准範圍忠實呈現。
 
-## 2026-11-21新增收集紀錄
+## 2026-11-21收集與發布紀錄
 
-本輪新增11筆，7筆可用指定範圍、4筆排除；截至第一輪55筆的決定見[總索引](RESEARCH-INDEX.md)及[本輪閱讀／權利紀錄](RESEARCH-2026-11-21.md)。S31、S32、S33、S35、S36、S37、S38尚未改寫為網站文章；其中S37只核作者接受稿指定摘要，不把機構收錄等同全文核准。來源種類及限制保留，不因有開放授權就推定品質或效果。
-
-網站目前仍為21篇、10筆實際引用來源，以下兩表只列已上架內容。新增收集不恢復先前下架文章，也不產生新的家長療程或平台時數規則。
-
-## 2026-11-21第二輪收集紀錄
-
-另增11筆，6筆可用指定範圍、2筆限非商業、2筆不用、1筆ASD範圍排除，總數66筆。詳見[第二輪逐筆紀錄](RESEARCH-2026-11-21-02.md)。S42–S47未改寫成網站文章，S47只核作者摘要；S50與S52限非商業，不自動進目前成品。S48、S49未取得正文／完整條款直接不用；S51為一般青春期教材，因ASD範圍不符排除。
-
-S47與S39為同一試驗的不同論文，權利各自成立；前者摘要的CC BY不放行後者ND論文或療程材料。現行仍為21篇／10筆實際引用來源。
+兩輪收集共22筆，逐筆閱讀與授權依據見[第一輪](RESEARCH-2026-11-21.md)及[第二輪](RESEARCH-2026-11-21-02.md)。發布時引用其中12筆。S37限定作者接受稿摘要，S47限定機構收錄的臨床效果論文摘要。S47與S39是同一試驗的不同論文，各自適用其授權。
 
 ## 現行來源
 
@@ -107,6 +99,18 @@ S47與S39為同一試驗的不同論文，權利各自成立；前者摘要的CC
 | [Positive Partnerships｜感官情境記錄](https://www.positivepartnerships.com.au/resources/practical-tools-information-sheets/sensory-resources) | Sensory Tool全頁自有欄位及現行入口；工具明列支持自閉症學齡學生。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
 | [AIFS｜理解行為背後的需要](https://aifs.gov.au/resources/practice-guides/understanding-why-some-autistic-children-use-potentially-harmful) | Overview、需求辨識及Nature of the evidence；不含危機處理、自傷議題或操作程序。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
 | [昆士蘭教育部｜ASD閱讀理解研究線索](https://autismhub.education.qld.gov.au/resource/Documents/review-autism-reading-comp-factsheet.pdf) | 單頁開頭的研究方法、13項研究與需進一步驗證之限制；不作訓練處方。 | 自有文字採CC BY 4.0。此處為繁中改寫與編輯例子，排除照片、標誌及另署第三方素材。 |
+| [Education Services Australia｜自閉症學生的青春期教材](https://studentwellbeinghub.edu.au/media/ahfpz25t/mod-3-yr-5-6-puberty.pdf) | 五、六年級自閉症學生的青春期詞彙、隱私、身體界線與經期教育。 | PDF頁3–5、9、15–17、20–22的指定自有文字：明確詞彙／AAC、青春期變化、身體界線／同意及個別感官需要。排除外連教材、圖片、影片、澳洲法律／服務及12小時用品穿戴說法。。CC BY 4.0。 |
+| [Ebrahim 等｜自閉症孩子的螢幕使用與家長經驗](https://www.frontiersin.org/journals/child-and-adolescent-psychiatry/articles/10.3389/frcha.2025.1540147/full) | 開普敦七位家長如何管理幼兒及低年級自閉症孩子的螢幕內容與收尾。 | Methods／Table 1、Results Theme 3、Discussion及Limitations中的作者研究敘述；只用內容管理、收尾準備及家長感受背景，不取逐字訪談、圖表或外引療效。。CC BY 4.0。 |
+| [Nordin 等｜自閉症兒少上學缺席研究回顧](https://journals.sagepub.com/doi/10.1177/13623613231217409) | 回顧小學和中學自閉症學生的缺席情境及研究缺口。 | Method、Results的作者綜整與Discussion／Limitations；只作上學困難種類、學校情境與證據缺口背景，排除他方量表／操作療程。。CC BY 4.0。 |
+| [Skommer 與 Gunesh｜自閉症者的經期經驗與支持](https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1531934/full) | 經期經驗的差異，以及初經和青少年情境中的感官與支持需求。 | Methods、Results、Discussion與Limitations中作者對經期經驗差異、感官及支持缺口的綜整；只用初經／青少年相關背景，不含更年期推論、激素／藥物或醫療診斷程序。。CC BY 4.0。 |
+| [Ellis 等｜自閉症者、家長與專業人員的經期觀點](https://orca.cardiff.ac.uk/id/eprint/178192/1/Kathryn%20Williams%20AAM.pdf) | 作者接受稿摘要比較自閉症當事人與支持者在經期準備上的重點。 | 作者接受稿PDF第3頁摘要中12份來源、不同角色優先需要及人口資料限制的自有綜整；僅此段，不放行整篇或最終出版排版。。CC BY（作者接受稿）。 |
+| [Gray 等｜自閉症學生與支持者的上學困難經驗](https://discovery.ucl.ac.uk/id/eprint/10179255/1/gray-et-al-2023-he-s-shouting-so-loud-but-nobody-s-hearing-him-a-multi-informant-study-of-autistic-pupils-experiences.pdf) | 英格蘭青少年、家長、現任教師與地方專業人員對上學困難的訪談。 | 第3–4頁Method／Table 1對象說明、第5–11頁作者Results主題解釋與第12–13頁限制；排除逐字訪談、量表題目及英國法律／行政資訊。。CC BY 4.0。 |
+| [Vanaken 等｜自閉症青少年回看診斷與告知時機](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1735842/full) | 比利時自閉症青少年回顧何時知道診斷、自我理解與得到支持的經驗。 | Methods、作者Results三主題、Discussion及Strengths and limitations；不取逐字訪談、個資或量表題目。。CC BY 4.0。 |
+| [Sato 等｜日本醫師如何考量診斷告知](https://link.springer.com/article/10.1186/s13030-022-00247-0) | 2015 年醫師問卷中，告知自閉症診斷時對家庭理解與醫病關係的考量。 | Methods、Results、Discussion與Limitations中醫師重視準備程度的歷史研究敘述；不重製問卷或作當前臨床標準。。CC BY 4.0。 |
+| [Li 等｜自閉症家庭的親友支援經驗](https://link.springer.com/article/10.1007/s10567-025-00525-7) | 自閉症兒少家庭從祖父母與其他親友得到的實際或情緒支援，以及相處中出現的困難。 | 方法與作者自有主題綜整：情緒／實際支援、無幫助的支援及家庭互動；僅明確ASD兒少情境，不取逐字引文、量表或混合障礙未分開的結果。。CC BY 4.0。 |
+| [Gao 與 Drani｜自閉症孩子家長的支持經驗](https://journals.sagepub.com/doi/10.1177/21582440251336174) | 整理自閉症孩子家長對同儕、家人與專業支持的看法與遇到的困難。 | Methods、作者Results與Limitations對支援、污名、同儕支持品質的綜整；不取第三方逐字引文、量表及服務制度。。CC BY 4.0。 |
+| [Clarke 等｜自閉症兒少的遠距生活技能支持](https://link.springer.com/article/10.1007/s40489-023-00389-z) | 遠距專業支持的系統性回顧，涵蓋如廁等不同生活技能。 | Method、ASD可辨識的作者Results與Discussion限制：遠距提供生活技能支持、專業教練及研究品質背景；不複製療程、量表或如廁／飲食／睡眠操作。。CC BY 4.0。 |
+| [Leadbitter 等｜確診後照顧者支持方案的研究摘要](https://kclpure.kcl.ac.uk/portal/en/publications/clinical-effectiveness-of-an-online-psychoeducational-and-psychot/) | 比較一項線上專業團體方案與一般照護的試驗摘要，研究對象是近期確診自閉症孩子的照顧者。 | 僅核KCL所收錄的作者完整摘要：研究目的、對照、樣本、主要結果及限制；不放行正文、治療課程、手冊或量表。。CC BY 4.0。 |
 
 Positive Partnerships 的[網站條款](https://www.positivepartnerships.com.au/terms-of-use)列出 CC BY 4.0 的署名格式及照片、第三方素材、標誌、外部影片等例外。文章保留各自的署名和改寫範圍。
 
@@ -114,7 +118,7 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 
 ## 現行文章逐篇查核
 
-2026-11-19已核對正文所引段落、原創例子與年齡分組。年齡是本指南的閱讀情境分組，原來源未訂一致數字範圍，不能冒稱為原作者驗證的適齡。P01與P04的學齡資料已移除0–1／2–5標籤；當時六筆來源的日期、適用對象及改作證據寫入catalog.json。2026-11-20新增下表後四篇及四筆來源，重新核對實際上架段落與署名。
+2026-11-19已核對正文所引段落、原創例子與年齡分組。年齡是本指南的閱讀情境分組，原來源未訂一致數字範圍，不能冒稱為原作者驗證的適齡。P01與P04的學齡資料已移除0–1／2–5標籤；當時六筆來源的日期、適用對象及改作證據寫入catalog.json。2026-11-20新增下表後四篇及四筆來源，重新核對實際上架段落與署名。2026-11-21新增表末九篇，四個原有題目經重新查核後改寫，沿用原網址讓同一篇的本機紀錄可繼續使用。
 
 | 文章ID | 現在引用 | 本輪結果 |
 | --- | --- | --- |
@@ -139,6 +143,15 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 | sensory-context-notes | S05 | 2026-11-20新增：單頁感官觀察架構；提問與記錄例子是編輯整理，不作診斷。 |
 | understanding-unmet-needs | S24 | 2026-11-20新增：Overview／需求辨識／證據限制；只做事後討論背景，不含危機處理或自傷議題。 |
 | reading-comprehension-context | S19 | 2026-11-20新增：13項研究回顧的背景與限制；親師提問為編輯整理，未上架訓練清單。 |
+| talk-about-autism | S42、S43 | 2026-11-21上架。並列青少年訪談與2015年醫師問卷。目錄收錄於青少年生活情境。 |
+| rest | S44 | 2026-11-21上架。限ASD兒少的親友支援經驗。重寫後沿用原網址。 |
+| choose-parent-support | S45、S47 | 2026-11-21上架。並列同儕經驗與特定專業方案研究。S47只用摘要。 |
+| toilet-support-visit | S46 | 2026-11-21上架。遠距研究背景與原創求助提問。 |
+| boys-puberty-privacy | S31 | 2026-11-21上架。五、六年級教師教材，聚焦身體用詞、變化與隱私。標籤「男」。 |
+| first-period | S31、S37、S35 | 2026-11-21上架。教師教材與兩份研究的適用段落。標籤「女」，重寫後沿用原網址。 |
+| body-boundaries | S31 | 2026-11-21上架。使用教材關於同意與照顧協助的自有文字。重寫後沿用原網址。 |
+| screen-stop | S32、P02 | 2026-11-21上架。家長訪談與轉換提示。重寫後沿用原網址。 |
+| school-attendance-talk | S33、S38 | 2026-11-21上架。並列範疇回顧與青少年訪談，聚焦親師討論。 |
 
 來源為可改寫不表示所有建議已被效果試驗驗證。下次出現新版、撤回、明確修正或使用範圍變更才重開相應查核。資料產生器會拒絕未列入核准範圍或沒有改作證據的來源。
 
@@ -149,15 +162,15 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 | 文章 ID | 題目 | 本次排除原因 |
 | --- | --- | --- |
 | local | 認識台灣兒童發展資源 | 一般兒童發展服務，未建立 ASD 專屬導引依據。 |
-| rest | 把「幫我一下」說具體一點 | 一般家庭照顧者服務，未確認 ASD 兒少適用的服務範圍。 |
+| rest | 把「幫我一下」說具體一點 | 一般家庭照顧者服務，未確認 ASD 兒少適用的服務範圍。 2026-11-21已以新的ASD來源重寫上架。 |
 | find-evaluation-center | 收到轉介後，怎麼找兒童發展聯合評估中心 | 一般兒童發展服務，未建立 ASD 專屬導引依據。 |
 | find-caregiver-support | 照顧快撐不住時，先找一個支援窗口 | 一般家庭照顧者服務，未確認 ASD 兒少適用的服務範圍。 |
-| screen-stop | 平板時間到了，先約好停在哪裡 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 |
+| screen-stop | 平板時間到了，先約好停在哪裡 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 2026-11-21已以新的ASD來源重寫上架。 |
 | bedtime-phone | 睡前還在刷影片，怎麼一起把手機收尾 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 |
 | game-chat | 線上遊戲有人加好友，怎麼練習求助 | 一般網路安全與遊戲資料，缺少 ASD 情境的直接依據。 |
-| first-period | 第一次月經前，一起準備經期用品 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
+| first-period | 第一次月經前，一起準備經期用品 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 2026-11-21已以新的ASD來源重寫上架。 |
 | voice-changing | 男孩進入變聲期，怎麼說明聲音的變化 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
-| body-boundaries | 有人想抱我，怎麼說可以或不要 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
+| body-boundaries | 有人想抱我，怎麼說可以或不要 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 2026-11-21已以新的ASD來源重寫上架。 |
 | gender-expression | 有人說「男生不能穿這個」，怎麼和孩子聊 | 一般或心智障礙性健康／性別教育，未確認實際章節明確針對 ASD。 |
 
 ## 後續資料收集

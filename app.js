@@ -438,7 +438,6 @@ function refreshLibrary() {
 
 function articlePage(article) {
   const category = categoryById[article.category];
-  const source = sources[article.related];
   const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
   const dismissed = currentState().dismissed.includes(article.id);
   const originLabel = { home: "回首頁", library: "回資源目錄", saved: "回收藏" }[articleOrigin];
@@ -458,7 +457,7 @@ function articlePage(article) {
     <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
     </section>
-    ${article.evidence ? `<section class="article-section"><h2>這份資料的範圍</h2><p>${article.evidence.summary}</p><p>${article.evidence.limit}</p></section>` : ""}
+    ${article.evidence ? `<section class="article-section"><h2>${article.evidence.contrast ? "不同來源怎麼說" : "這份資料的範圍"}</h2><p>${article.evidence.summary}</p>${article.evidence.contrast ? `<p>${article.evidence.contrast}</p>` : ""}<p>${article.evidence.limit}</p></section>` : ""}
     ${article.observe ? `<section class="article-section"><h2>可以觀察什麼</h2><p>${article.observe}</p></section>` : ""}
     ${article.example ? `<section class="article-section"><h2>生活中的例子</h2><p>${article.example}</p></section>` : ""}
     ${article.adjust ? `<section class="article-section"><h2>如果這次行不通</h2><p>${article.adjust}</p></section>` : ""}
@@ -466,10 +465,15 @@ function articlePage(article) {
     <section class="source-panel">
       <h2>${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
       ${article.status === "demo" ? "<p>上方的做法是用於測試閱讀流程的原創情境示範。</p>" : ""}
-      <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
-      ${article.sourceSection ? `<p>${article.sourceSection}</p>` : ""}
-      <small>${source.rights}</small>
-      ${source.attribution ? `<small>${source.attribution}</small>` : ""}
+      ${[{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])].map(({ id, section }) => {
+        const source = sources[id];
+        return `<div class="article-source">
+          <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
+          ${section ? `<p>${section}</p>` : ""}
+          <small>${source.rights}</small>
+          ${source.attribution ? `<small>${source.attribution}</small>` : ""}
+        </div>`;
+      }).join("")}
     </section>
   </div>`);
 }

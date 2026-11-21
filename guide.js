@@ -364,6 +364,294 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "currencyStatus": "usable",
       "currencyEvidence": "已核官方頁與PDF授權頁，限需求理解及觀察背景；支持做法多來自實務經驗，不當效果試驗。",
       "sourceAudience": "主要供專業人員；本文ASD範圍為幼兒至青春期初期，未訂數字；服務背景至18歲非操作適齡"
+    },
+    "esa-puberty": {
+      "name": "Education Services Australia｜自閉症學生的青春期教材",
+      "originalTitle": "Focus on puberty — Module 3, Years 5–6",
+      "publisher": "Education Services Australia / Student Wellbeing Hub",
+      "version": "PDF版權2020，未標其他發布／修訂日；本輪現行官方入口仍供下載",
+      "checked": "2026-11-21",
+      "description": "五、六年級自閉症學生的青春期詞彙、隱私、身體界線與經期教育。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2020 Commonwealth of Australia or Education Services Australia Ltd.",
+      "url": "https://studentwellbeinghub.edu.au/media/ahfpz25t/mod-3-yr-5-6-puberty.pdf",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "ASD學生的主流學校教師；澳洲五、六年級，不是五、六歲；未訂數字適齡",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S31",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://studentwellbeinghub.edu.au/media/ahfpz25t/mod-3-yr-5-6-puberty.pdf",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "PDF頁3–5、9、15–17、20–22的指定自有文字：明確詞彙／AAC、青春期變化、身體界線／同意及個別感官需要。排除外連教材、圖片、影片、澳洲法律／服務及12小時用品穿戴說法。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已讀29頁可抽取文字，視覺確認末頁明列CC BY 4.0。可供身體成長題目之教育背景；不是介入成效研究。原2020教材的具體用品建議不直接沿用。",
+      "sourceAudience": "ASD學生的主流學校教師；澳洲五、六年級，不是五、六歲；未訂數字適齡"
+    },
+    "ebrahim-screen": {
+      "name": "Ebrahim 等｜自閉症孩子的螢幕使用與家長經驗",
+      "originalTitle": "Striving to provide conditional access: strategies parents use to mediate the screentime of their children with autism spectrum disorder",
+      "publisher": "Frontiers in Child and Adolescent Psychiatry",
+      "version": "2025-08-20出版；疫情相關經驗，不作現行平台操作指南",
+      "checked": "2026-11-21",
+      "description": "開普敦七位家長如何管理幼兒及低年級自閉症孩子的螢幕內容與收尾。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2025 Faatima Ebrahim、Pamela Gretschel、Iesrafeel Abbas。DOI 10.3389/frcha.2025.1540147。",
+      "url": "https://www.frontiersin.org/journals/child-and-adolescent-psychiatry/articles/10.3389/frcha.2025.1540147/full",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "南非開普敦7位ASD孩子家長（6母1父）；納入8歲以下，實際孩子2歲10月–7歲11月",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S32",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.frontiersin.org/journals/child-and-adolescent-psychiatry/articles/10.3389/frcha.2025.1540147/full",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Methods／Table 1、Results Theme 3、Discussion及Limitations中的作者研究敘述；只用內容管理、收尾準備及家長感受背景，不取逐字訪談、圖表或外引療效。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "已讀方法、結果及限制；質性訪談不是策略效果試驗，不能推出統一螢幕時數、獎勵措施有效或3C造成ASD。保留家長同時感受到效益與困難的觀點。",
+      "sourceAudience": "南非開普敦7位ASD孩子家長（6母1父）；納入8歲以下，實際孩子2歲10月–7歲11月"
+    },
+    "nordin-attendance": {
+      "name": "Nordin 等｜自閉症兒少上學缺席研究回顧",
+      "originalTitle": "School absenteeism in autistic children and adolescents: A scoping review",
+      "publisher": "Autism / SAGE",
+      "version": "2023-12-30線上出版；2024-07卷期；檢索截至2023-06-09",
+      "checked": "2026-11-21",
+      "description": "回顧小學和中學自閉症學生的缺席情境及研究缺口。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2023 Viviann Nordin、Maud Palmgren、Anna Lindbladh、Sven Bölte、Ulf Jonsson。DOI 10.1177/13623613231217409。",
+      "url": "https://journals.sagepub.com/doi/10.1177/13623613231217409",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "自閉症小學／中學學生；納入研究年齡各異，不設單一數字適齡；混合樣本僅收ASD可分開資料",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S33",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/13623613231217409",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Method、Results的作者綜整與Discussion／Limitations；只作上學困難種類、學校情境與證據缺口背景，排除他方量表／操作療程。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "46篇報告、42項獨立研究。作者明示目的非實務決策、未作研究品質評讀；定義與介入異質，不能把範疇回顧當返校處方或因果排名。",
+      "sourceAudience": "自閉症小學／中學學生；納入研究年齡各異，不設單一數字適齡；混合樣本僅收ASD可分開資料"
+    },
+    "skommer-periods": {
+      "name": "Skommer 與 Gunesh｜自閉症者的經期經驗與支持",
+      "originalTitle": "Autism, menstruation and mental health—a scoping review and a call to action",
+      "publisher": "Frontiers in Global Women’s Health",
+      "version": "2025-06-25出版；檢索截至2025-05",
+      "checked": "2026-11-21",
+      "description": "經期經驗的差異，以及初經和青少年情境中的感官與支持需求。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2025 Joanna Skommer、Krish Gunesh。DOI 10.3389/fgwh.2025.1531934。",
+      "url": "https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1531934/full",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "有月經／初經經驗的自閉症者，跨青少年與成人至更年期；非單一兒少年齡；含正式診斷與自我認同樣本",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S35",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.frontiersin.org/journals/global-womens-health/articles/10.3389/fgwh.2025.1531934/full",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Methods、Results、Discussion與Limitations中作者對經期經驗差異、感官及支持缺口的綜整；只用初經／青少年相關背景，不含更年期推論、激素／藥物或醫療診斷程序。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "45項研究，樣本與方法差異大；可呈現經驗不一致及感官需要，不把成人或更年期資料套到孩子，也不將風險描述寫成每位ASD孩子必然遭遇。",
+      "sourceAudience": "有月經／初經經驗的自閉症者，跨青少年與成人至更年期；非單一兒少年齡；含正式診斷與自我認同樣本"
+    },
+    "ellis-periods": {
+      "name": "Ellis 等｜自閉症者、家長與專業人員的經期觀點",
+      "originalTitle": "Menstruation and Autism: A Qualitative Systematic Review",
+      "publisher": "Autism in Adulthood（作者接受稿）",
+      "version": "2025-04-17線上初版；2026-10-01卷期；檢索2023-02；不能把2026卷期當2026資料更新",
+      "checked": "2026-11-21",
+      "description": "作者接受稿摘要比較自閉症當事人與支持者在經期準備上的重點。",
+      "rights": "CC BY（作者接受稿）。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "Rebecca Ellis、Gemma Williams、Selena Caemawr、Monique Craine、Willow Holloway、Kathryn Williams、Sebastian C. K. Shaw、Aimee Grant。DOI 10.1089/aut.2024.0307。",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/178192/1/Kathryn%20Williams%20AAM.pdf",
+      "licenseName": "CC BY（作者接受稿）",
+      "license": "https://cronfa.swan.ac.uk/Record/cronfa69327",
+      "scope": "asd",
+      "scopeEvidence": "自閉症有月經經驗者及家長／支持者；跨年齡，原摘要指人口資料不足，未訂數字適齡",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S37",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://cronfa.swan.ac.uk/Record/cronfa69327",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "作者接受稿PDF第3頁摘要中12份來源、不同角色優先需要及人口資料限制的自有綜整；僅此段，不放行整篇或最終出版排版。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "取得Cardiff接受稿摘要／前言並核對Swansea同題作者接受稿權利保留聲明。12份來源（8學術、4灰色）；家長／專業與當事人關注重點不同。只核摘要指定範圍，未聲稱完成全文或新版差異核對。",
+      "sourceAudience": "自閉症有月經經驗者及家長／支持者；跨年齡，原摘要指人口資料不足，未訂數字適齡"
+    },
+    "gray-attendance": {
+      "name": "Gray 等｜自閉症學生與支持者的上學困難經驗",
+      "originalTitle": "“He’s shouting so loud but nobody’s hearing him”: A multi-informant study of autistic pupils’ experiences of school non-attendance and exclusion",
+      "publisher": "Autism & Developmental Language Impairments / SAGE",
+      "version": "2023-10-18出版；訪談2017-06至2018-02",
+      "checked": "2026-11-21",
+      "description": "英格蘭青少年、家長、現任教師與地方專業人員對上學困難的訪談。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2023 Laura Gray、Vivian Hill、Elizabeth Pellicano。DOI 10.1177/23969415231207816。",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10179255/1/gray-et-al-2023-he-s-shouting-so-loud-but-nobody-s-hearing-him-a-multi-informant-study-of-autistic-pupils-experiences.pdf",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "英格蘭單一地方政府兩個替代教育機構；12名青少年（10男2女），表1為13–17歲，正文稱13–16歲有不一致；11名臨床診斷，1名未正式診斷但達SCQ門檻",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S38",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://discovery.ucl.ac.uk/id/eprint/10179255/1/gray-et-al-2023-he-s-shouting-so-loud-but-nobody-s-hearing-him-a-multi-informant-study-of-autistic-pupils-experiences.pdf",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "第3–4頁Method／Table 1對象說明、第5–11頁作者Results主題解釋與第12–13頁限制；排除逐字訪談、量表題目及英國法律／行政資訊。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "39名受訪者：12學生、10家長、8現任教師、9地方專業人員。可呈現學生／家庭與學校情境；未訪原排除學校教職員，不能宣稱呈現所有學校立場或證明調整的成效。原文年齡不一致如實保留，引用以表1實際13–17歲為界。",
+      "sourceAudience": "英格蘭單一地方政府兩個替代教育機構；12名青少年（10男2女），表1為13–17歲，正文稱13–16歲有不一致；11名臨床診斷，1名未正式診斷但達SCQ門檻"
+    },
+    "vanaken-diagnosis": {
+      "name": "Vanaken 等｜自閉症青少年回看診斷與告知時機",
+      "originalTitle": "Getting the timing right. Autistic adolescents reflect on the value of an early diagnosis",
+      "publisher": "Frontiers in Psychiatry",
+      "version": "2026-05-14出版",
+      "checked": "2026-11-21",
+      "description": "比利時自閉症青少年回顧何時知道診斷、自我理解與得到支持的經驗。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2026 Gert-Jan Vanaken、Ilse Noens、Jean Steyaert、Kristien Hens。DOI 10.3389/fpsyt.2026.1735842。",
+      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1735842/full",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "比利時18名16–18歲自閉症青少年；排除IQ低於60或正式語言障礙者，不能代表所有溝通／認知需要",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S42",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2026.1735842/full",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Methods、作者Results三主題、Discussion及Strengths and limitations；不取逐字訪談、個資或量表題目。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "可整理青少年如何理解標籤、自我認同及告知時機的看法。訪談為回顧經驗，不證明某個固定告知年齡最佳；18歲與未成年者分開，沒有把16–18歲觀點當幼兒處方。",
+      "sourceAudience": "比利時18名16–18歲自閉症青少年；排除IQ低於60或正式語言障礙者，不能代表所有溝通／認知需要"
+    },
+    "sato-diagnosis": {
+      "name": "Sato 等｜日本醫師如何考量診斷告知",
+      "originalTitle": "Disclosing a diagnosis of autism spectrum disorder without intellectual disability to pediatric patients in Japan in early diagnostic stages and associated factors: a cross-sectional study",
+      "publisher": "BioPsychoSocial Medicine / Springer Nature",
+      "version": "2022-08-20出版；問卷2015年，患者回顧期2014-11至2015-10",
+      "checked": "2026-11-21",
+      "description": "2015 年醫師問卷中，告知自閉症診斷時對家庭理解與醫病關係的考量。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2022 Hiroyuki Sato、Misao Fujita、Atsushi Tsuchiya、Taichi Hatta、Katsumi Mori、Eisuke Nakazawa、Yoshiyuki Takimoto、Akira Akabayashi。DOI 10.1186/s13030-022-00247-0。",
+      "url": "https://link.springer.com/article/10.1186/s13030-022-00247-0",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "日本診治18歲以下ASD患者的醫師；主要分析無智能障礙患者的初期告知，非孩子自己回報",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S43",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://link.springer.com/article/10.1186/s13030-022-00247-0",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Methods、Results、Discussion與Limitations中醫師重視準備程度的歷史研究敘述；不重製問卷或作當前臨床標準。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "463位醫師符合納入；部分分析另有排除，不能混用分母。可呈現當時醫師重視家庭理解與關係的觀點；低回收率、回憶偏差及資料年代限制已記。不能把家長準備度當孩子得知診斷的強制門檻，也不稱2026日本現況。",
+      "sourceAudience": "日本診治18歲以下ASD患者的醫師；主要分析無智能障礙患者的初期告知，非孩子自己回報"
+    },
+    "li-family": {
+      "name": "Li 等｜自閉症家庭的親友支援經驗",
+      "originalTitle": "The Role of Extended Family Members in the Lives of Autistic Individuals and Their Parents: A Systematic Review and Meta-Synthesis",
+      "publisher": "Clinical Child and Family Psychology Review / Springer Nature",
+      "version": "2025-05-20出版；2025-06卷期；不能以卷期當額外更新",
+      "checked": "2026-11-21",
+      "description": "自閉症兒少家庭從祖父母與其他親友得到的實際或情緒支援，以及相處中出現的困難。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2025 Jia-Ling Li、Melissa Washington-Nortey、Tsegereda Haile Kifle、Francesca Cotier、Rosa A. Hoekstra。DOI 10.1007/s10567-025-00525-7。",
+      "url": "https://link.springer.com/article/10.1007/s10567-025-00525-7",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "自閉症者及其家長／親友，跨兒童成人；42研究中27篇限18歲以下、11混齡、1成人、3未標年齡；部分原研究有其他障礙混合樣本",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S44",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://link.springer.com/article/10.1007/s10567-025-00525-7",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "方法與作者自有主題綜整：情緒／實際支援、無幫助的支援及家庭互動；僅明確ASD兒少情境，不取逐字引文、量表或混合障礙未分開的結果。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "42篇（40質性、2混合方法），多由家長／祖父母發聲，自閉症當事人觀點不足。可談支援的好壞與界線，不能宣稱親戚越介入越好、所有文化家庭相同或介入效果已驗證。",
+      "sourceAudience": "自閉症者及其家長／親友，跨兒童成人；42研究中27篇限18歲以下、11混齡、1成人、3未標年齡；部分原研究有其他障礙混合樣本"
+    },
+    "gao-peer-support": {
+      "name": "Gao 與 Drani｜自閉症孩子家長的支持經驗",
+      "originalTitle": "Social Support Experiences in Parents of Children With ASD: A Qualitative Systematic Review",
+      "publisher": "SAGE Open",
+      "version": "2025-05-17出版；2025第二季卷期；納入2013–2023原研究，檢索更新日期原文以11/5/2024表示，不自行判定月日",
+      "checked": "2026-11-21",
+      "description": "整理自閉症孩子家長對同儕、家人與專業支持的看法與遇到的困難。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2025 Xin Gao、Syazwani Drani。DOI 10.1177/21582440251336174。",
+      "url": "https://journals.sagepub.com/doi/10.1177/21582440251336174",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "ASD孩子家長；各原研究年齡不同，未設定一致數字適齡；母親265名、父親57名，男性觀點較少",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S45",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/21582440251336174",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Methods、作者Results與Limitations對支援、污名、同儕支持品質的綜整；不取第三方逐字引文、量表及服務制度。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "18項英語質性研究；可記同儕支持有實際幫助也可能有負面回饋或不一致。不能把支持群組當一定有效的減壓治療，也不把社會／家庭壓力歸罪家長。",
+      "sourceAudience": "ASD孩子家長；各原研究年齡不同，未設定一致數字適齡；母親265名、父親57名，男性觀點較少"
+    },
+    "clarke-daily-living": {
+      "name": "Clarke 等｜自閉症兒少的遠距生活技能支持",
+      "originalTitle": "Telehealth-Delivered Supports for Daily Living Skills for Autistic Children: a Systematic Review",
+      "publisher": "Review Journal of Autism and Developmental Disorders / Springer Nature",
+      "version": "2023-07-20線上；2025-06卷期；檢索更新2023-06，不是2025新檢索",
+      "checked": "2026-11-21",
+      "description": "遠距專業支持的系統性回顧，涵蓋如廁等不同生活技能。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2023 Clarke、McLay、France 等。DOI 10.1007/s40489-023-00389-z。",
+      "url": "https://link.springer.com/article/10.1007/s40489-023-00389-z",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "17項研究共536人，ASD511人；實際年齡16個月至19歲，家長媒介ASD395人16個月至14歲；混合樣本結果未分ASD者不取",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S46",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://link.springer.com/article/10.1007/s40489-023-00389-z",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "Method、ASD可辨識的作者Results與Discussion限制：遠距提供生活技能支持、專業教練及研究品質背景；不複製療程、量表或如廁／飲食／睡眠操作。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "17項中2強、12適當、3弱，9項先導／可行性；多領域研究常未分開報告成果，與面對面比較結果也不一致。可補如廁／生活技能求助研究背景，不能直接當在家照做的訓練清單或宣稱遠距等同實體。",
+      "sourceAudience": "17項研究共536人，ASD511人；實際年齡16個月至19歲，家長媒介ASD395人16個月至14歲；混合樣本結果未分ASD者不取"
+    },
+    "reach-asd-summary": {
+      "name": "Leadbitter 等｜確診後照顧者支持方案的研究摘要",
+      "originalTitle": "Clinical effectiveness of an online psychoeducational and psychotherapeutic programme for caregivers of children newly diagnosed as autistic (REACH-ASD)",
+      "publisher": "The Lancet Psychiatry（King’s College London 機構書目）",
+      "version": "2025-03-11線上；2025-04卷期",
+      "checked": "2026-11-21",
+      "description": "比較一項線上專業團體方案與一般照護的試驗摘要，研究對象是近期確診自閉症孩子的照顧者。",
+      "rights": "CC BY 4.0。同行日常將指定段落改寫為繁體中文，生活例子與提問為編輯原創。",
+      "attribution": "© 2025 Kathy Leadbitter 等及 REACH-ASD Team。DOI 10.1016/S2215-0366(25)00036-7。",
+      "url": "https://kclpure.kcl.ac.uk/portal/en/publications/clinical-effectiveness-of-an-online-psychoeducational-and-psychot/",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scope": "asd",
+      "scopeEvidence": "英國近期12個月內確診ASD孩子的家長／主要照顧者；摘要納入孩子2–15歲，結果描述實際2–16歲；照顧者多為女性及白人英國人",
+      "scopeChecked": "2026-11-21",
+      "auditId": "S47",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://kclpure.kcl.ac.uk/portal/en/publications/clinical-effectiveness-of-an-online-psychoeducational-and-psychot/",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "僅核KCL所收錄的作者完整摘要：研究目的、對照、樣本、主要結果及限制；不放行正文、治療課程、手冊或量表。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "379位照顧者隨機分派，摘要主要可用資料分析319人；可描述此特定團體方案的研究背景，不能把數字當任何線上群組都有效。原站PDF未取得，不聲稱通讀全文；與S39成本效益論文為不同作品，S39仍不用。",
+      "sourceAudience": "英國近期12個月內確診ASD孩子的家長／主要照顧者；摘要納入孩子2–15歲，結果描述實際2–16歲；照顧者多為女性及白人英國人"
     }
   },
   "articles": [
@@ -1291,16 +1579,543 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observe": "回看孩子在同一類文章、相近問題下的實際回答，以及用了哪些提示。若回答方式改變，也一起記下，避免只看答對題數。",
       "example": "原創例子：孩子能逐句讀出故事，卻在「他為什麼回家？」停住。家長帶著那一段和孩子的原話詢問老師，請老師協助了解卡在詞意、情節關係，還是回答問題的方式。",
       "adjust": "若討論仍很籠統，可以先選一份近期作業作為共同例子。需要進一步評估時，請老師協助安排合適的學習支持，依孩子的實際能力決定方向。"
+    },
+    {
+      "id": "talk-about-autism",
+      "category": "caregiver",
+      "title": "怎麼和孩子談自閉症診斷",
+      "ages": [
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "從孩子已經想了解的生活經驗開口，約好哪些問題可以再談，以及哪些資訊要和別人分享。",
+      "when": "孩子問「為什麼我需要不同的安排？」或你想和孩子一起讀評估結果，卻不知道怎麼開口。",
+      "asdFocus": "同一個自閉症診斷，對孩子可能有好幾種意義。孩子可以用說話、寫字、指圖或原本常用的溝通方式，說出想知道的事。",
+      "steps": [
+        [
+          "問孩子已經知道什麼",
+          "先挑一件孩子自己提過的事，例如教室很吵或臨時換教室很累。問孩子想先聊那件事，還是想知道評估為什麼做。"
+        ],
+        [
+          "用生活例子解釋，留一點空間",
+          "可以說「評估結果用了『自閉症』這個詞。我們可以一起看看，哪些地方和你的經驗很像，哪些地方你有不同看法。」停下來問孩子下一個想知道的問題。"
+        ],
+        [
+          "把告知與對外分享分開談",
+          "和孩子確認想讓誰知道、分享哪些資訊，以及分享後希望得到什麼支持。若準備和學校溝通，先一起想一句孩子願意讓老師知道的需求。"
+        ]
+      ],
+      "related": "vanaken-diagnosis",
+      "situations": [
+        "communication",
+        "caregiver"
+      ],
+      "keywords": [
+        "診斷",
+        "告知",
+        "確診",
+        "自我理解",
+        "認同",
+        "揭露"
+      ],
+      "sourceSection": "訪談研究的結果與限制，聚焦較早知道診斷、自我理解與支持。",
+      "evidence": {
+        "summary": "Vanaken 等訪談 18 位比利時自閉症青少年。多數回顧時偏好較早知道診斷，以便理解自己及獲得合適的支持。也有人對時機感受不同，或擔心別人知道後會改變對待自己的方式。",
+        "limit": "兩份研究分別是青少年訪談與醫師問卷。前者的招募條件限制了代表性，後者反映 2015 年日本醫療情境。這些結果適合用來準備對話，孩子需要的支持可以在對話過程中持續提供。",
+        "contrast": "Sato 等記錄日本醫師的觀點。受訪醫師在考量告知時機時，常重視家庭對診斷的理解、醫師和家庭的關係，以及是否有足夠時間解釋。"
+      },
+      "observe": "孩子最在意名稱、生活上能怎麼得到幫助，還是誰會知道？隔一段時間留意，孩子有沒有帶著新的問題回來。",
+      "example": "孩子第一次聽到自閉症時，只想知道能不能在午休借安靜的座位。家長就和他先談這項支持，約好由誰開口，評估報告留待孩子想看時再一起翻。",
+      "adjust": "如果孩子想停，可以先問他希望怎麼回來談，例如用紙條留言或和熟悉的專業人員一起看。若大人對資訊要怎麼說有不同想法，可以請診斷團隊協助準備孩子容易理解的說法。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "這篇以青少年談自身診斷的情境編入 13–17 歲。訪談者當時 16–18 歲，回顧自己過去的經驗。目錄年齡是閱讀情境，告知時機仍要看孩子的問題與溝通方式。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "sato-diagnosis",
+          "section": "以 2015 年問卷及研究限制呈現醫師的告知考量。"
+        }
+      ]
+    },
+    {
+      "id": "rest",
+      "category": "caregiver",
+      "title": "想請親友分擔照顧，怎麼把需求說具體",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "把「能不能幫我一下」換成一件親友接得住、孩子也安心的工作。",
+      "when": "有人願意幫忙，但你常要從頭解釋。孩子可能也擔心換了人，原本熟悉的安排會跟著改變。",
+      "asdFocus": "親友接手時，孩子可能需要知道誰會來、原本的行程怎麼走，以及想停或求助時可以怎麼表達。",
+      "steps": [
+        [
+          "先挑一件可以交接的事",
+          "寫下事情、時間和結束點，例如週三幫忙接孩子回家，由你負責晚餐。也可先請親友處理採買或家務，替照顧者空出時間。"
+        ],
+        [
+          "把孩子最在意的事一起交代",
+          "讓孩子知道負責的人和安排。和親友說清楚孩子常用的溝通方式、哪些變動先問孩子，以及遇到困難可以聯絡誰。"
+        ],
+        [
+          "和孩子及親友一起回看",
+          "問孩子哪些地方舒服、哪裡想改。也問親友做起來是否可負擔，記下下回要延續或調整的安排。"
+        ]
+      ],
+      "related": "li-family",
+      "situations": [
+        "caregiver"
+      ],
+      "keywords": [
+        "親友",
+        "祖父母",
+        "分工",
+        "照顧者",
+        "喘息",
+        "交接"
+      ],
+      "sourceSection": "使用回顧中可辨識為自閉症兒少情境的支援與家庭互動主題。",
+      "evidence": {
+        "summary": "Li 等的回顧收錄家庭從親友得到接送、照顧分擔與情緒支持的經驗，也記載親友誤解孩子或家長時，原本想幫忙的互動可能變成負擔。",
+        "limit": "回顧中的觀點多由家長或祖父母提供。孩子對這次交接的感受，仍要用孩子能表達的方式直接了解。"
+      },
+      "observe": "你得到的休息、孩子對安排的感受，以及親友實際能做的範圍，哪一項需要調整？",
+      "example": "阿姨想在週六帶孩子出門。孩子選擇留在熟悉的家，和阿姨畫圖。家長交代孩子怎麼說想休息，並約好午餐前回家接手。",
+      "adjust": "如果交接仍讓孩子或大人很累，可以請親友先做一件周邊工作，例如代買用品或準備餐點。若親友開始批評孩子，要先確認孩子可以退出，並把可接受的做法說清楚。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "這篇用目錄的 2–17 歲涵蓋幼兒到青少年的家庭分工情境。引用限於可辨識的自閉症兒少經驗，分工依孩子和照顧者的實際需要安排。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。"
+    },
+    {
+      "id": "choose-parent-support",
+      "category": "caregiver",
+      "title": "找家長支持團體前，可以先問什麼",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "先想清楚自己需要被聽見、交換經驗，還是需要專業協助，再問團體怎麼運作。",
+      "when": "剛收到自閉症診斷，或照顧很久後想認識其他家長，卻不確定群組、家長聚會和專業方案差在哪裡。",
+      "asdFocus": "有些家庭想交換自閉症孩子的溝通與學校經驗，有些想談照顧壓力。挑團體時，可以一併考量議題、互動方式和家人的隱私。",
+      "steps": [
+        [
+          "先寫一個你想帶去的問題",
+          "是想有人聽你說，想知道其他家長如何和老師溝通，還是想談自己的睡眠或情緒？你可以先帶著一個需求去問。"
+        ],
+        [
+          "問清楚誰帶領、怎麼分享",
+          "可以問：這裡主要是家長交流，還是由專業人員帶領？可不可以先旁聽？發言和紀錄會不會流到團體外？遇到不適合的建議時，主持人會怎麼處理？"
+        ],
+        [
+          "試著參加一次，再決定要不要繼續",
+          "依你能負擔的時間和方式選擇。離開時想想，你得到的是被理解、可用的資訊，還是更多壓力。涉及個別健康和教育決定時，可把問題帶給合適的專業人員。"
+        ]
+      ],
+      "related": "gao-peer-support",
+      "situations": [
+        "caregiver",
+        "local-support"
+      ],
+      "keywords": [
+        "家長團體",
+        "支持團體",
+        "同儕",
+        "照顧者",
+        "心理支持",
+        "社會支持"
+      ],
+      "sourceSection": "質性回顧的作者綜整與限制，聚焦家長同儕支持。",
+      "evidence": {
+        "summary": "Gao 與 Drani 的回顧發現，家長從同儕得到理解和經驗交流，也有人遇到負面回饋或彼此說法不一致。",
+        "limit": "前者描述家長的生活經驗，後者評估一項特定方案。試驗摘要的主要分析採可用資料，有缺漏，參與者來自英國特定招募地區。選擇團體時，以帶領方式、參與條件和自己的需要來判斷。",
+        "contrast": "Leadbitter 等的英國試驗摘要報告，一項為近期確診孩子照顧者設計的專業線上團體方案，在 52 週評估時，照顧者的心理健康量表結果優於對照組。"
+      },
+      "observe": "團體是否尊重你和孩子的做法與資料？遇到不同觀點時，是否能討論適用的情境？",
+      "example": "家長想聽同樣在處理換班的家庭怎麼準備。他先詢問能否只聽不說、會不會有錄影，參加一次後再決定是否要長期加入。",
+      "adjust": "如果第一次參加讓你壓力更大，可以先離開，改找有清楚主持規則的團體。如果此刻需要的是自己的心理支持，可直接詢問專業服務提供哪些選項。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "這篇以 2–17 歲孩子的照顧者為目錄受眾。支持團體的參與條件由各團體訂定，研究也各有自己的納入年齡。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "reach-asd-summary",
+          "section": "僅用機構所收錄的作者摘要，介紹特定方案的研究設計、主要結果和限制。"
+        }
+      ]
+    },
+    {
+      "id": "toilet-support-visit",
+      "category": "routines",
+      "title": "孩子如廁卡關，怎麼向專業人員描述",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲"
+      ],
+      "time": 5,
+      "summary": "用一兩次具體情境說清楚孩子卡在哪裡，帶著問題和兒科或熟悉孩子的專業人員討論。",
+      "when": "孩子只願意在某個地方上廁所，或能到廁所門口，卻在坐下、衣物或沖水時停住。你想讓專業人員看見實際情況。",
+      "asdFocus": "如廁牽涉身體感受、環境、溝通與一連串動作。孩子能告訴你什麼、在哪一步需要協助，比單說「還不會」更容易一起討論。",
+      "steps": [
+        [
+          "寫一次實際經過",
+          "簡記時間和地點、孩子當時做了什麼、卡住的那一步，以及大人提供了什麼協助。先從自然發生的情境記起。"
+        ],
+        [
+          "分開寫孩子的說法和你的猜測",
+          "例如「孩子捂耳，說不沖水」和「我猜沖水聲可能太大」分兩行。若能用指圖、文字或手勢補充，也可以照孩子原本的方式記下來。"
+        ],
+        [
+          "把最想釐清的事帶去問",
+          "可以先問是否需要評估身體不適、適合從哪個環境或溝通需求了解，以及後續支持能否配合家庭和學校。若孩子提到疼痛或排便、排尿出現明顯變化，優先讓醫療人員知道。"
+        ]
+      ],
+      "related": "clarke-daily-living",
+      "situations": [
+        "sensory",
+        "communication"
+      ],
+      "keywords": [
+        "如廁",
+        "廁所",
+        "尿布",
+        "排便",
+        "排尿",
+        "職能治療",
+        "求助"
+      ],
+      "sourceSection": "使用作者對遠距生活技能支持的研究背景及成果分領域的限制。記錄問題是編輯示範。",
+      "evidence": {
+        "summary": "Clarke 等回顧了包含如廁在內的遠距生活技能支持研究。有些研究把多種生活技能合併計算，讓個別如廁成果難以判讀。",
+        "limit": "可把這篇當作準備諮詢的提問單。具體如廁訓練、身體不適和支持方式，宜按孩子的情況與專業人員討論。"
+      },
+      "observe": "孩子在哪些地方、哪些步驟比較自在？把跨場合的差異、孩子能自己完成的步驟，以及最常需要協助的地方一起記下。",
+      "example": "孩子在家能進廁所，在學校一靠近烘手機就轉身。家長把兩種環境及孩子捂耳的反應寫下，和老師、專業人員一起釐清聲音、房間位置與溝通方式。",
+      "adjust": "記不清全部也可以。先帶一個孩子願意討論的情境與一個問題，再請專業人員告訴你下次最需要補記什麼。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "本篇的記錄例子以 2–12 歲生活情境整理。回顧涵蓋的年齡與技能各異，請依孩子目前的如廁方式與支持需求使用。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。"
+    },
+    {
+      "id": "boys-puberty-privacy",
+      "category": "body",
+      "title": "男孩進入青春期，怎麼談身體變化與隱私",
+      "ages": [
+        "9–12 歲"
+      ],
+      "time": 5,
+      "summary": "用孩子聽得懂的詞談正在發生的身體變化，事先約好可以在哪裡、向誰開口。",
+      "when": "孩子提到身體和以前不同，或有些問題只敢在家問。你想在孩子自在的時候開始談。",
+      "asdFocus": "自閉症學生可能更容易理解明確的詞與具體場合。家中、學校可以用孩子熟悉的詞、文字或輔助溝通方式談同一件事。 請依孩子實際經歷的身體變化與需要選用。",
+      "steps": [
+        [
+          "一次談一個孩子注意到的變化",
+          "選孩子正在問的那一件事，用清楚的身體詞彙。有人會在青春期遇到勃起，可能和原本的活動無關。孩子可以私下問，不必當眾解釋自己。"
+        ],
+        [
+          "一起約好隱私怎麼做",
+          "讓孩子選希望在哪個地方聊，也說清楚更衣、如廁或需要照顧協助時可以怎麼要求關門、暫停或換一個人幫忙。"
+        ],
+        [
+          "練習一種私下求助的方式",
+          "可以讓孩子選一句話、一張卡或一段訊息，例如「我有身體的問題想私下問」。在家和學校各確認一位他願意找的大人。"
+        ]
+      ],
+      "related": "esa-puberty",
+      "situations": [
+        "communication"
+      ],
+      "keywords": [
+        "男孩",
+        "男生",
+        "男性",
+        "青春期",
+        "身體變化",
+        "勃起",
+        "隱私",
+        "清潔"
+      ],
+      "sourceSection": "第 3–5、9、15–17、22 頁自有教育文字，聚焦用詞、青春期身體變化與隱私。",
+      "evidence": {
+        "summary": "澳洲 Student Wellbeing Hub 的自閉症學生教材建議使用清楚的身體詞彙，並配合學生的發展階段和溝通方式談隱私。",
+        "limit": "教材供教師規劃課堂，可作家庭對話的起點。孩子實際在意哪些身體變化、希望誰幫忙，仍需一起確認。"
+      },
+      "observe": "孩子比較願意用什麼詞、用說還是用寫？突然出現身體變化時，他知道自己可以在哪裡求助嗎？",
+      "example": "孩子用訊息問「身體有時突然有變化怎麼辦」。家長先在孩子選的地方回答，和他約好在學校可以用同一句求助話，讓老師知道需要私下談。",
+      "adjust": "如果孩子不想聊，可以口頭說明隨時可以回來問，也可以讓孩子先用卡片或訊息提出一個問題。若照顧上需要看或碰觸，先說明目的和選項，再確認孩子需要的幫忙。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "9–12 歲是目錄的年齡分組。教材面向澳洲五、六年級，實際以孩子目前的身體變化、理解方式與生活情境為準。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "genderTags": [
+        "男"
+      ]
+    },
+    {
+      "id": "first-period",
+      "category": "body",
+      "title": "初經前，一起準備用品和求助方式",
+      "ages": [
+        "9–12 歲"
+      ],
+      "time": 5,
+      "summary": "陪孩子認識月經用品、找出感覺能接受的選項，並約好在學校需要幫忙時怎麼說。",
+      "when": "孩子開始問月經，或你想在第一次月經來之前讓用品和求助方式變得熟悉。",
+      "asdFocus": "自閉症孩子對用品的觸感、氣味、外觀和廁所環境可能有不同感受。可先從孩子想知道、願意接觸的部分開始。 任何有月經準備需要的孩子都可以參考。",
+      "steps": [
+        [
+          "把名字、位置和用途說清楚",
+          "和孩子一起看一個乾淨的經期用品，說出它叫什麼、放在哪裡、需要時怎麼拿。孩子可以看你示範，也可以選擇用文字或圖來了解。"
+        ],
+        [
+          "一起準備能自己拿到的用品",
+          "讓孩子表示希望怎麼收納、比較能接受哪些材質。帶去學校時，一起確認哪裡能更換、丟棄或暫放，以及誰能提供協助。"
+        ],
+        [
+          "約好怎麼說不舒服",
+          "用孩子平常會用的方式試說「我需要用品」「我不舒服」或「我想換一種」。議定哪些事要私下談，讓孩子知道還可以再問。"
+        ]
+      ],
+      "related": "esa-puberty",
+      "situations": [
+        "sensory",
+        "communication"
+      ],
+      "keywords": [
+        "女",
+        "女孩",
+        "初經",
+        "月經",
+        "經期",
+        "衛生棉",
+        "經痛",
+        "求助"
+      ],
+      "sourceSection": "第 3–5、20–22 頁指定自有文字，用於明確溝通、個別感官需要與經期準備。",
+      "evidence": {
+        "summary": "Ellis 等在質性回顧摘要裡指出，自閉症當事人較重視初經前能先知道會發生什麼、可以怎麼應對。家長和專業人員較常著眼於清潔和能不能獨立處理。",
+        "limit": "這些研究納入不同年齡與支持需要。可以同時問孩子感覺如何、需要什麼幫忙，再討論想自己做到哪一步。",
+        "contrast": "Skommer 與 Gunesh 的回顧也記錄經期經驗的差異。感官與情緒不適是部分自閉症者提到的需求，可留意孩子自己的描述。"
+      },
+      "observe": "孩子困擾的是用品的感覺、看到血、找不到合適的廁所，還是不好意思開口？記下孩子想調整的是哪一項。",
+      "example": "孩子願意把衛生棉放在書包裡，但不喜歡有香味的包裝。家長和孩子先找出能接受的用品，再一起選一句可以用訊息傳給保健室的求助話。",
+      "adjust": "若目前只想知道會發生什麼，可以先到這裡。之後用孩子願意的方式補談用品和求助。若疼痛或不適影響日常，可把孩子的表達與生活影響帶給醫療人員討論。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "9–12 歲是目錄的年齡分組。教材面向澳洲五、六年級，實際以孩子目前的身體變化、理解方式與生活情境為準。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "ellis-periods",
+          "section": "只採作者接受稿 PDF 第 3 頁摘要，呈現不同角色的經期支持優先事項。"
+        },
+        {
+          "id": "skommer-periods",
+          "section": "作者對初經及青少年相關經期經驗差異的整理。"
+        }
+      ],
+      "genderTags": [
+        "女"
+      ]
+    },
+    {
+      "id": "body-boundaries",
+      "category": "body",
+      "title": "有人想牽手或擁抱，怎麼說可以或不要",
+      "ages": [
+        "9–12 歲"
+      ],
+      "time": 5,
+      "summary": "用日常打招呼的情境練習先問、能拒絕、也能改變主意。",
+      "when": "碰上家人想抱孩子，或孩子想牽同學的手，你想讓「先問一下」變成大家都懂的做法。",
+      "asdFocus": "孩子可以用語言、手勢、指圖或輔助溝通表達願意、拒絕或想停。大人可以示範等到對方回答再行動。",
+      "steps": [
+        [
+          "先問，再把等待留出來",
+          "例如問「我可以抱你嗎？」讓孩子知道除了抱抱，也可以揮手、擊掌或不碰。孩子想碰別人時，同樣先問。"
+        ],
+        [
+          "回應「不要」和「停」",
+          "平常在孩子願意練習時，示範聽到「停」就停。遇到沒回答、閃躲或出現不確定的反應，可以先留出空間。已經答應的人也可以改變主意。"
+        ],
+        [
+          "把日常問候和照顧需求分開說",
+          "如廁、洗澡或就醫需要幫忙時，先說原因、會怎麼做，讓孩子知道可提出不舒服、希望暫停或換誰幫忙。遇到立即危險時，先保護安全，之後再向孩子說明。"
+        ]
+      ],
+      "related": "esa-puberty",
+      "situations": [
+        "communication",
+        "school"
+      ],
+      "keywords": [
+        "身體界線",
+        "同意",
+        "牽手",
+        "抱抱",
+        "擁抱",
+        "拒絕",
+        "隱私"
+      ],
+      "sourceSection": "第 15–17、20 頁自有正文，聚焦私人界線、照顧協助與身體接觸的同意。",
+      "evidence": {
+        "summary": "澳洲自閉症學生教師教材用牽手等例子談雙方的同意，也把需要照顧協助或有立即危險的情況另外說明。",
+        "limit": "家庭練習可以從熟悉的小事開始。孩子需要求助時，讓他知道哪位信任的大人能聽他說，並尊重他想用什麼方式表達。"
+      },
+      "observe": "孩子會不會只在練習時說「不要」？下一次有親友在場時，大人有沒有真的接受他的選擇？",
+      "example": "外婆問「可以抱你嗎？」孩子把手放在身後。家長先請大家留一點距離，再讓孩子從揮手、擊掌或不接觸三種方式自己選。",
+      "adjust": "孩子尚未找到容易表達的方式時，先讓大人負責停止接觸。若孩子提到曾發生讓他不舒服的碰觸，先聽他說並保護安全，再向可信賴的專業人員求助。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "9–12 歲是目錄的年齡分組。教材面向澳洲五、六年級，實際以孩子目前的身體變化、理解方式與生活情境為準。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。"
+    },
+    {
+      "id": "screen-stop",
+      "category": "routines",
+      "title": "螢幕活動要結束，先讓孩子知道停在哪裡",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲"
+      ],
+      "time": 5,
+      "summary": "一起選一個看得懂的結束點，說清楚停下來後會去哪裡、下次何時能繼續。",
+      "when": "孩子正在看影片或玩平板，接下來要吃飯或出門。你想減少突然被打斷的感覺。",
+      "asdFocus": "活動轉換對部分自閉症孩子來說需要預告或視覺提示。能看見活動在哪裡結束，以及接下來是什麼，有助於一起確認約定。",
+      "steps": [
+        [
+          "先確認孩子正在做什麼",
+          "是看一段影片、完成某個遊戲步驟，還是用裝置溝通？先約定要收尾的是哪一個活動。若同一台裝置也用於溝通，先確認孩子仍可使用原本的溝通方式。"
+        ],
+        [
+          "挑一個看得懂的結束點",
+          "例如這一段播完、作品存好。開始前用孩子熟悉的圖、字或話說清楚，好讓孩子知道什麼時候可以自己停下。"
+        ],
+        [
+          "說清楚下一步，留意提示有沒有幫助",
+          "和孩子確認停下後是去餐桌、穿鞋，還是先休息。如果倒數讓孩子一直盯著時間、變得更緊張，可以改用畫面結束或作品存好的提示。"
+        ]
+      ],
+      "related": "ebrahim-screen",
+      "situations": [
+        "transitions"
+      ],
+      "keywords": [
+        "3C",
+        "螢幕",
+        "平板",
+        "手機",
+        "影片",
+        "遊戲",
+        "倒數",
+        "活動轉換"
+      ],
+      "sourceSection": "開普敦家長訪談的內容管理、收尾準備與研究限制。",
+      "evidence": {
+        "summary": "Ebrahim 等訪談七位家長，家長描述過事先提醒結束、管理可以看的內容等不同做法。",
+        "limit": "訪談提供家庭經驗，轉換手冊則提供按孩子反應調整提示的做法。可用這些資訊選擇收尾方式，研究沒有比較所有方式的成效。",
+        "contrast": "Positive Partnerships 的轉換資料提醒，倒數或計時提示是否合適，要看孩子是更安心還是更焦慮。"
+      },
+      "observe": "孩子卡在提醒看不懂、想先存好進度，還是停下後不知道接下來做什麼？記下哪一種提示讓孩子更容易跟你確認。",
+      "example": "晚餐前孩子在平板上畫圖。家長先說「這張圖存好就到餐桌」，給孩子自己按下儲存的機會，再指一下餐桌的圖卡。",
+      "adjust": "若選的結束點每次都太遠或不清楚，可以在開始前和孩子挑一段比較容易告一段落的活動。若孩子已經很緊張，先把提醒縮短，晚點再一起回顧。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "訪談中的孩子實際為 2 歲 10 個月至 7 歲 11 個月。目錄以 2–5 和 6–8 歲兩個年齡帶標示，請依孩子理解提示的方式選用例子。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "pp-transitions",
+          "section": "採用個別化提示與倒數視孩子反應調整的轉換建議。"
+        }
+      ]
+    },
+    {
+      "id": "school-attendance-talk",
+      "category": "school",
+      "title": "孩子上學變困難，怎麼和老師談",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "把孩子、家庭和老師看到的情境帶到同一場對話，確認哪裡需要支持。",
+      "when": "孩子說很難去學校、常在出門前不舒服，或能到校卻難以進入特定課堂。你想和老師談清楚最近的變化。",
+      "asdFocus": "自閉症學生在家與學校表達壓力的方式可能不同。噪音、作息、課業、同儕互動和身體感受，都可以按實際情境了解。",
+      "steps": [
+        [
+          "先聽孩子說哪一段最難",
+          "用孩子方便的方式問上學一整天中，哪個時間、地方或活動最難。也問哪一段比較自在，有沒有一位願意找的老師。"
+        ],
+        [
+          "把家裡和學校看到的事情放在一起",
+          "分享孩子願意讓老師知道的重點、開始變困難的時間和近期變動。問老師在孩子到校前後看到了什麼，以及是否有同儕或安全問題需要先處理。"
+        ],
+        [
+          "談一個具體的支持和回看日期",
+          "一起確認誰接應、需要怎麼聯絡，以及用哪些觀察判斷孩子是否比較能安心參與。若長期缺席或有明顯不適，可以請校內外熟悉自閉症的專業人員加入討論。"
+        ]
+      ],
+      "related": "nordin-attendance",
+      "situations": [
+        "school",
+        "feelings",
+        "changes"
+      ],
+      "keywords": [
+        "上學困難",
+        "拒學",
+        "缺席",
+        "返校",
+        "霸凌",
+        "親師合作",
+        "校園"
+      ],
+      "sourceSection": "小學與中學缺席研究的種類、環境情境及限制，供親師討論背景。",
+      "evidence": {
+        "summary": "Nordin 等的範疇回顧把多種上學缺席情境分開整理，並指出各研究的定義與介入差異大，適合用來理解有哪些問題要再釐清。",
+        "limit": "範疇回顧沒有評讀各研究品質。訪談呈現特定地區和受訪者的經驗，未包含原排除學校的教職員。回到孩子目前的安全、壓力和支持需求，與學校共議下一步。",
+        "contrast": "Gray 等的訪談補上部分英格蘭青少年感受到的感官、人際與課業壓力，以及家長和支持者注意到的環境與支援問題。"
+      },
+      "observe": "不同時間和場合有什麼差異？孩子和老師對同一個安排的感受是否一致？除了有沒有到校，也可以看孩子能否安心進入活動或求助。",
+      "example": "孩子在出門前常說不想去。問過後發現，他特別怕排隊進教室時的聲音。老師說明了當時的人流，大家約好先試一個孩子同意的接應方法，再一起回看。",
+      "adjust": "若孩子說不出完整經過，可以先讓他發訊息、圈選課表或挑一張照片指給你看。若孩子提到霸凌、受傷或安全疑慮，先請學校瞭解並處理安全。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "範疇回顧涵蓋小學與中學，目錄以 6–17 歲整理親師情境。青少年訪談的例子限於表列 13–17 歲受訪者的背景。",
+      "reviewChecked": "2026-11-21",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "gray-attendance",
+          "section": "訪談樣本、校園情境和研究限制。青少年年齡依表 1 採 13–17 歲，正文敘述的年齡範圍與表列不一致。"
+        }
+      ]
     }
   ],
   "withdrawnArticles": [
     {
       "id": "local",
       "title": "認識台灣兒童發展資源"
-    },
-    {
-      "id": "rest",
-      "title": "把「幫我一下」說具體一點"
     },
     {
       "id": "find-evaluation-center",
@@ -1311,10 +2126,6 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "title": "照顧快撐不住時，先找一個支援窗口"
     },
     {
-      "id": "screen-stop",
-      "title": "平板時間到了，先約好停在哪裡"
-    },
-    {
       "id": "bedtime-phone",
       "title": "睡前還在刷影片，怎麼一起把手機收尾"
     },
@@ -1323,16 +2134,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "title": "線上遊戲有人加好友，怎麼練習求助"
     },
     {
-      "id": "first-period",
-      "title": "第一次月經前，一起準備經期用品"
-    },
-    {
       "id": "voice-changing",
       "title": "男孩進入變聲期，怎麼說明聲音的變化"
-    },
-    {
-      "id": "body-boundaries",
-      "title": "有人想抱我，怎麼說可以或不要"
     },
     {
       "id": "gender-expression",
