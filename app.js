@@ -454,7 +454,10 @@ function articlePage(article) {
       <ul class="article-source-links">
         ${references.map(({ id }) => {
           const source = sources[id];
-          return `<li><a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a></li>`;
+          return `<li>
+            <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
+            ${source.authors ? `<small class="source-authors">${source.authors}</small>` : ""}
+          </li>`;
         }).join("")}
       </ul>
       <details class="source-details">
@@ -534,7 +537,9 @@ function sourcesPage() {
   return shell("library", `<div class="page-heading"><a class="text-button back-link" href="#library">${icon("back")} 資源目錄</a>
     <h1>資料來源</h1><p>查找原文、出處與使用條件。示範情境在文章內另行標示。</p></div>
     <div class="settings-list">${Object.values(sources).map(source => `<article class="settings-card">
-      <h2>${source.name}</h2><p>${source.description}</p>
+      <h2>${source.name}</h2>
+      ${source.authors ? `<small class="source-authors">${source.authors}</small>` : ""}
+      <p>${source.description}</p>
       <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
       <details class="source-details">
         <summary>授權資訊</summary>

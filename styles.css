@@ -181,6 +181,7 @@ img { display: block; max-width: 100%; }
 .article-source-links { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
 .article-source-links .text-button { font-size: .9rem; text-align: left; }
 .article-source-links .icon { flex-shrink: 0; }
+.source-authors { display: block; margin-top: 2px; color: var(--muted); font-size: .8rem; }
 .source-details { font-size: .85rem; margin-top: 4px; }
 .source-details summary { width: fit-content; padding: 5px 0; color: var(--green); cursor: pointer; }
 .source-details summary:hover { text-decoration: underline; }
