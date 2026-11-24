@@ -3849,8 +3849,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           "既有保單的保障看原契約條款。新投保、加保或變更是否需要核保，可向保險公司確認。健康告知以要保書上的書面問題及所列期間為準。"
         ],
         [
-          "口頭勸退與正式未承保的處理方式",
-          "如果業務員口頭表示不能承保，可向保險公司確認案件是否送審。身心障礙者的案件若經正式核保後未承保，保險公司應以書面通知理由。對處理有疑問，可先向保險公司申訴，再依程序向<a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>申請評議。"
+          "聽到「不能保」時，怎麼確認下一步？",
+          "<strong>只問過業務員，還沒交申請資料</strong><br>如果仍想申請，可以直接問保險公司客服：「我想正式申請這個商品，請問可以透過哪個管道送件？」<br><br><strong>已把申請資料交給業務員</strong><br>若只收到口頭回覆，可以請保險公司查是否收到申請、是否已有核保結果。身心障礙者的申請若經正式核保後未承保，保險公司應以書面通知理由。"
         ]
       ],
       "related": "taiwan-insurance-underwriting",
@@ -3868,7 +3868,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "加保",
         "保單"
       ],
-      "sourceSection": "第 7 條第 1 項第 11 款。訂約的健康告知另參考 <a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&amp;flno=64\" target=\"_blank\" rel=\"noopener noreferrer\">《保險法》第 64 條</a>。 要保書把領證和健康問項分開，見<a href=\"https://law.fsc.gov.tw/LawContent.aspx?id=FL006767\" target=\"_blank\" rel=\"noopener noreferrer\">金管會《人身保險要保書示範內容及注意事項》第二、四點</a>。",
+      "sourceSection": "第 7 條第 1 項第 11 款。訂約的健康告知另參考 <a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&amp;flno=64\" target=\"_blank\" rel=\"noopener noreferrer\">《保險法》第 64 條</a>。 要保書把領證和健康問項分開，見<a href=\"https://law.fsc.gov.tw/LawContent.aspx?id=FL006767\" target=\"_blank\" rel=\"noopener noreferrer\">金管會《人身保險要保書示範內容及注意事項》第二、四點</a>。 拒絕受理或協助送件的申訴管道，見<a href=\"https://www.ey.gov.tw/Page/88F151FFCE5C741E/296bf31e-f0ef-4eed-8d0e-67a399eee315\" target=\"_blank\" rel=\"noopener noreferrer\">金管會的身心障礙者投保權益說明</a>。",
       "evidence": {
         "heading": "核保規定與實務案例",
         "summary": "<strong>金管會規定</strong>　保險業須依風險評估，不能僅因身心障礙身分給予不公平待遇。",
@@ -3877,7 +3877,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       },
       "observe": "<strong>問社會局或公所</strong><br>「孩子目前需要○○。申請這項服務要有身障證明嗎？還有哪些條件？」<br><br><strong>問保險公司</strong><br>「我想替孩子現有的保單加保○○。需要重新核保嗎？可以先給我要保書的書面問項嗎？」",
       "example": "例如，孩子已有自閉症評估紀錄，家庭同時在查照顧者支持和醫療險加保。服務資格由社會局或公所確認，加保條件則由保險公司依商品與個案說明。",
-      "adjust": "若只有業務員口頭回覆，保險公司客服是查詢是否已送件、核保結果及申訴流程的窗口。詢問時可提供聯絡日期及往來紀錄。",
+      "adjust": "若業務員拒絕受理或協助送件，可向保險公司申訴，並提供接洽日期、商品名稱及往來紀錄。若對申訴結果不服，或保險公司逾期未處理，可依規定向<a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>申請評議。",
       "additionalSources": [
         {
           "id": "taiwan-ombudsman-autism-insurance",
