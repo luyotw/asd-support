@@ -1,4 +1,10 @@
 const iconPaths = {
+  brand: `<path fill="currentColor" stroke="none" d="M14.98 3.5
+    c.14-.49.83-.49.97 0 .94 3.39 1.45 3.91 4.84 4.85
+    .49.13.49.83 0 .96-3.39.94-3.9 1.46-4.84 4.85
+    -.14.49-.83.49-.97 0-.94-3.39-1.45-3.91-4.84-4.85
+    -.49-.13-.49-.83 0-.96 3.39-.94 3.9-1.46 4.84-4.85Z"/>
+    <path d="M1.65 16.05C5.9 15.72 9.48 18.9 14.6 19.02c3.16.07 5.75-1.18 7.8-2.08"/>`,
   leaf: '<path d="M20.7 3.3C11.6 3 5 6.2 5 13a6 6 0 0 0 6 6c6.8 0 10-6.6 9.7-15.7Z"/><path d="M3.5 20.5 14 10"/>',
   home: '<path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21v-7h6v7"/>',
   book: '<path d="M12 6a6 6 0 0 0-5-2H3v15h4a6 6 0 0 1 5 2 6 6 0 0 1 5-2h4V4h-4a6 6 0 0 0-5 2v15"/>',
@@ -178,7 +184,7 @@ function go(page) {
 
 function brand() {
   return `<a class="brand" href="${currentState().profile ? "#home" : "#"}" aria-label="星泊首頁">
-    <span class="brand-mark">${icon("leaf")}</span>
+    <span class="brand-mark">${icon("brand")}</span>
     <span><strong>星泊</strong><small>ASD 育兒支持手冊</small></span>
   </a>`;
 }
