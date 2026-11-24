@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-21",
+  "checked": "2026-11-24",
   "purpose": "公開網站／App的繁體中文整理與改寫。原文連結只保留為內部排除與稽核紀錄，不作繞過授權門檻的收錄候選。",
   "decisions": {
     "adapt": "可改寫指定範圍",
@@ -1154,7 +1154,156 @@
       ],
       "readScope": "摘要、研究目的、方法、作者結果、討論與限制、權利段",
       "evidenceType": "無對照前後初步研究"
+    },
+    {
+      "id": "S53",
+      "title": "兒童發展聯合評估醫院",
+      "url": "https://www.kmuh.gov.tw/cp.aspx?n=68AF3B64ECE864A9",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "依高雄市立聯合醫院資料開放宣告，在註明出處下可改作及公開傳輸。僅整理院方自有的服務說明文字。",
+      "permissionEvidence": "https://www.kmuh.gov.tw/cp.aspx?n=968CEA1212042C2C",
+      "audience": "疑似或已確認有發展遲緩的學齡前兒童，本文只處理疑似或確診自閉症情境。原頁未訂數字年齡。",
+      "date": "2024-07-02 頁面修訂",
+      "currency": "可用（限核准範圍）",
+      "sections": "限院方聯評簡介、依個別狀況安排跨專業評估、結果說明及後續轉介。本次使用的流程明列自閉症相關就診。",
+      "reason": "核對院方現行頁面及開放宣告。僅使用服務架構，院內時段、名額、電話、聯絡人及附件均不轉載，也不將院內前置流程套用到其他醫院。",
+      "topics": [
+        "T17",
+        "T18"
+      ],
+      "readScope": "限院方聯評簡介、依個別狀況安排跨專業評估、結果說明及後續轉介。本次使用的流程明列自閉症相關就診。",
+      "evidenceType": "公立醫院服務說明"
+    },
+    {
+      "id": "S54",
+      "title": "特殊教育學生及幼兒鑑定辦法",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009187",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "audience": "包含有特殊教育需求的自閉症幼兒與學生，本文限學前情境。",
+      "date": "2026-04-01 修正，2026-08-01 施行",
+      "currency": "可用（限核准範圍）",
+      "sections": "限第 2、12、23、24、26 條：多元評量、自閉症鑑定、教育需求評估、安置與服務建議及施行日期。",
+      "reason": "主管機關頁面登載 2026-04-01 修正版，第 26 條載明該次修正 2026-08-01 施行。僅整理現行法令正文。",
+      "topics": [
+        "T19"
+      ],
+      "readScope": "限第 2、12、23、24、26 條：多元評量、自閉症鑑定、教育需求評估、安置與服務建議及施行日期。",
+      "evidenceType": "政府法令正文"
+    },
+    {
+      "id": "S55",
+      "title": "特殊教育法",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009136",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "audience": "包含有特殊教育需求的自閉症孩子與照顧者，本案限學前特教、入學轉銜的適用類別及家長參與。",
+      "date": "2023-06-21 修正公布",
+      "currency": "可用（限核准範圍）",
+      "sections": "限第 3 條第 10 款及第 6、19、20、26、31 條：自閉症類別、鑑定安置、學前特教的開始年齡、個別化教育計畫與照顧者參與。",
+      "reason": "主管機關現行原文登載 2023-06-21 修正公布；第 26 條載明學前特教自 2 歲開始。縣市申請細節另依當期公告。",
+      "topics": [
+        "T19",
+        "T23"
+      ],
+      "readScope": "限第 3 條第 10 款及第 6、19、20、26、31 條：自閉症類別、鑑定安置、學前特教的開始年齡、個別化教育計畫與照顧者參與。",
+      "evidenceType": "政府法令正文"
+    },
+    {
+      "id": "S56",
+      "title": "臺南市政府社會局發展遲緩兒童早期療育費用補助",
+      "url": "https://sab.tainan.gov.tw/News_Content.aspx?n=21346&s=4378108",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "依臺南市政府社會局網站資料開放宣告，機關自有文字註明出處可改作及公開傳輸。",
+      "permissionEvidence": "https://sab.tainan.gov.tw/cp.aspx?n=21801&s=7586",
+      "audience": "臺南市早期療育補助的申請家庭，本案只整理自閉症孩子申請時的查核事項。",
+      "date": "2026-01-30 入口修訂，併讀同頁區公所問答",
+      "currency": "可用（限核准範圍）",
+      "sections": "公告第五至八項及附錄區公所問答第一節第 9 題、第三節第 1 題，限資格、文件、療育單位、交通與療育費的查找。排除表單、補助金額及療育項目推薦。",
+      "reason": "核對臺南市社會局現行公告、附件及資料開放宣告。作為縣市查找示例，金額、效期和送件期限均請以當期公告為準。",
+      "topics": [
+        "T20"
+      ],
+      "readScope": "公告第五至八項及附錄區公所問答第一節第 9 題、第三節第 1 題，限資格、文件、療育單位、交通與療育費的查找。排除表單、補助金額及療育項目推薦。",
+      "evidenceType": "地方政府服務說明"
+    },
+    {
+      "id": "S57",
+      "title": "“It Seems Much More Enjoyable Now”: Parental Perception of Relational Change from Participating in Paediatric Autism Communication Therapy (PACT)",
+      "url": "https://www.mdpi.com/2227-9067/11/7/838",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "作者正文採 CC BY 4.0。此處為指定段落的繁中摘要及星泊原創生活例子。",
+      "permissionEvidence": "https://www.mdpi.com/2227-9067/11/7/838",
+      "audience": "丹麥有自閉症孩子、且已參與 PACT 的家庭，10 個家庭共 13 位受訪家長。",
+      "date": "2024-07-10 正式出版",
+      "currency": "可用（限核准範圍）",
+      "sections": "第 2.3 節的樣本、第 3.1 和 3.2 節的作者主題綜整及討論限制。排除訪談引文、圖表、量表、頻率與療程操作。",
+      "reason": "出版者原文標明 CC BY 4.0。這是已參與特定療育的家長訪談，保留家庭可行性與取樣限制。",
+      "topics": [
+        "T21"
+      ],
+      "readScope": "第 2.3 節的樣本、第 3.1 和 3.2 節的作者主題綜整及討論限制。排除訪談引文、圖表、量表、頻率與療程操作。",
+      "evidenceType": "質性訪談"
+    },
+    {
+      "id": "S58",
+      "title": "Multimodal Communication Outcomes for Hispanic Autistic Preschoolers Following Coached Student Clinician and Caregiver-Led NDBIs",
+      "url": "https://www.mdpi.com/2076-328X/15/10/1425",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "作者正文採 CC BY 4.0。此處為指定段落的繁中摘要及星泊原創生活例子。",
+      "permissionEvidence": "https://www.mdpi.com/2076-328X/15/10/1425",
+      "audience": "五名約 2 歲半至未滿 5 歲的西語裔學前兒童，在英語或西語家庭生活，已診斷自閉症或候診且符合研究的自閉特質評估條件。",
+      "date": "2025-10-20 正式出版",
+      "currency": "可用（限核准範圍）",
+      "sections": "第 2.1 節及第 4.1、4.2、5 節作者自有敘述，限多元表達、個別化與共同規劃。排除第三方量表、圖表、提示階層及療育操作。",
+      "reason": "出版者原文標明 CC BY 4.0。樣本五名，限特定教練支持及語言環境，保留研究可推廣範圍的限制。",
+      "topics": [
+        "T22"
+      ],
+      "readScope": "第 2.1 節及第 4.1、4.2、5 節作者自有敘述，限多元表達、個別化與共同規劃。排除第三方量表、圖表、提示階層及療育操作。",
+      "evidenceType": "小樣本單一個案實驗"
+    },
+    {
+      "id": "S59",
+      "title": "各教育階段身心障礙學生與幼兒轉銜輔導及服務辦法",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=GL000431",
+      "checked": "2026-11-24",
+      "researchRound": "2026-11-24",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "audience": "進入國小的身心障礙特教幼兒；本案依特殊教育法第 3 條限自閉症類別。",
+      "date": "2023-12-19 修正",
+      "currency": "可用（限核准範圍）",
+      "sections": "第 2 至 4 條及第 6 條，限轉銜計畫、需求紀錄、照顧者參與、入小學及安置學校後續支持。",
+      "reason": "主管機關現行頁登載 2023-12-19 修正版本。適用《特殊教育法》身心障礙類別，地方時程依當地教育主管機關公告。",
+      "topics": [
+        "T23"
+      ],
+      "readScope": "第 2 至 4 條及第 6 條，限轉銜計畫、需求紀錄、照顧者參與、入小學及安置學校後續支持。",
+      "evidenceType": "政府法令正文"
     }
   ],
-  "lastResearchRound": "2026-11-21-02"
+  "lastResearchRound": "2026-11-24"
 }

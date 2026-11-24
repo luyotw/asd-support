@@ -666,6 +666,174 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "currencyStatus": "usable",
       "currencyEvidence": "379位照顧者隨機分派，摘要主要可用資料分析319人；可描述此特定團體方案的研究背景，不能把數字當任何線上群組都有效。原站PDF未取得，不聲稱通讀全文；與S39成本效益論文為不同作品，S39仍不用。",
       "sourceAudience": "英國近期12個月內確診ASD孩子的家長／主要照顧者；摘要納入孩子2–15歲，結果描述實際2–16歲；照顧者多為女性及白人英國人"
+    },
+    "kaohsiung-asd-development-assessment": {
+      "name": "兒童發展聯合評估服務與流程",
+      "originalTitle": "兒童發展聯合評估醫院",
+      "publisher": "高雄市立聯合醫院",
+      "version": "2024-07-02 頁面修訂",
+      "description": "說明學齡前兒童的聯合評估、結果解說及轉介，並列出自閉症個案的院內就診途徑。",
+      "rights": "依高雄市立聯合醫院資料開放宣告，在註明出處下可改作及公開傳輸。僅整理院方自有的服務說明文字。",
+      "attribution": "資料取自高雄市立聯合醫院《兒童發展聯合評估醫院》，由星泊整理。",
+      "url": "https://www.kmuh.gov.tw/cp.aspx?n=68AF3B64ECE864A9",
+      "licenseName": "高雄市立聯合醫院資料開放宣告",
+      "license": "https://www.kmuh.gov.tw/cp.aspx?n=968CEA1212042C2C",
+      "scopeEvidence": "頁面「服務流程說明」第 5 點明列自閉症個案，結合同頁學齡前適用範圍及個別評估、結果說明和轉介。",
+      "auditId": "S53",
+      "reviewScope": "限院方聯評簡介、依個別狀況安排跨專業評估、結果說明及後續轉介。本次使用的流程明列自閉症相關就診。",
+      "currencyEvidence": "核對院方現行頁面及開放宣告。僅使用服務架構，院內時段、名額、電話、聯絡人及附件均不轉載，也不將院內前置流程套用到其他醫院。",
+      "sourceAudience": "疑似或已確認有發展遲緩的學齡前兒童，本文只處理疑似或確診自閉症情境。原頁未訂數字年齡。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.kmuh.gov.tw/cp.aspx?n=968CEA1212042C2C",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-special-education-assessment": {
+      "name": "特殊教育學生及幼兒鑑定辦法",
+      "publisher": "教育部",
+      "version": "2026-04-01 修正，2026-08-01 施行",
+      "description": "說明自閉症類別的教育鑑定，以及蒐集個別資料、評估教育需求和提出安置與服務建議的方式。",
+      "rights": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
+      "attribution": "教育部臺教學（四）字第 1152801201A 號令。星泊整理指定條文。",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009187",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "第 12 條明定自閉症類別特教鑑定，併讀第 2、23、24 條的評量與教育需求程序。",
+      "auditId": "S54",
+      "reviewScope": "限第 2、12、23、24、26 條：多元評量、自閉症鑑定、教育需求評估、安置與服務建議及施行日期。",
+      "currencyEvidence": "主管機關頁面登載 2026-04-01 修正版，第 26 條載明該次修正 2026-08-01 施行。僅整理現行法令正文。",
+      "sourceAudience": "包含有特殊教育需求的自閉症幼兒與學生，本文限學前情境。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-special-education-act": {
+      "name": "特殊教育法",
+      "publisher": "教育部主管法規查詢系統",
+      "version": "2023-06-21 修正公布",
+      "description": "自閉症納入特殊教育法身心障礙類別，相關條文規範鑑定安置、學前特教及照顧者參與。",
+      "rights": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
+      "attribution": "《特殊教育法》，華總一義字第 11200052781 號令修正公布。星泊整理指定條文。",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009136",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "第 3 條第 10 款明列自閉症。第 6、19、20、26、31 條的鑑定安置及教育支持包含符合適用條件的自閉症幼兒。",
+      "auditId": "S55",
+      "reviewScope": "限第 3 條第 10 款及第 6、19、20、26、31 條：自閉症類別、鑑定安置、學前特教的開始年齡、個別化教育計畫與照顧者參與。",
+      "currencyEvidence": "主管機關現行原文登載 2023-06-21 修正公布；第 26 條載明學前特教自 2 歲開始。縣市申請細節另依當期公告。",
+      "sourceAudience": "包含有特殊教育需求的自閉症孩子與照顧者，本案限學前特教、入學轉銜的適用類別及家長參與。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "tainan-early-intervention-subsidy": {
+      "name": "臺南市早療費用補助與申請問答",
+      "originalTitle": "臺南市政府社會局發展遲緩兒童早期療育費用補助",
+      "publisher": "臺南市政府社會局",
+      "version": "2026-01-30 入口修訂，併讀同頁區公所問答",
+      "description": "說明臺南市早療費用及交通費的申請條件、送件方式與文件，附有自閉症診斷家庭的常見問題。",
+      "rights": "依臺南市政府社會局網站資料開放宣告，機關自有文字註明出處可改作及公開傳輸。",
+      "attribution": "資料取自臺南市政府社會局早療費用補助公告及同頁區公所問答，由星泊整理。",
+      "url": "https://sab.tainan.gov.tw/News_Content.aspx?n=21346&s=4378108",
+      "licenseName": "臺南市政府社會局網站資料開放宣告",
+      "license": "https://sab.tainan.gov.tw/cp.aspx?n=21801&s=7586",
+      "scopeEvidence": "公告所附《早療補助區公所常見退件原因問與答》第一節第 9 題明列自閉症與發展遲緩診斷文件的差異。",
+      "auditId": "S56",
+      "reviewScope": "公告第五至八項及附錄區公所問答第一節第 9 題、第三節第 1 題，限資格、文件、療育單位、交通與療育費的查找。排除表單、補助金額及療育項目推薦。",
+      "currencyEvidence": "核對臺南市社會局現行公告、附件及資料開放宣告。作為縣市查找示例，金額、效期和送件期限均請以當期公告為準。",
+      "sourceAudience": "臺南市早期療育補助的申請家庭，本案只整理自閉症孩子申請時的查核事項。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://sab.tainan.gov.tw/cp.aspx?n=21801&s=7586",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "conrad-pact-family-experience": {
+      "name": "家長把自閉症溝通療育帶進日常的經驗",
+      "originalTitle": "“It Seems Much More Enjoyable Now”: Parental Perception of Relational Change from Participating in Paediatric Autism Communication Therapy (PACT)",
+      "publisher": "Children",
+      "authors": "Charlotte Engberg Conrad、Rikke Jørgensen、Cecilie Amstrup、Tine Ellitsgaard Gottschau、Per Hove Thomsen、Marlene Briciet Lauritsen",
+      "version": "2024-07-10 正式出版",
+      "description": "訪談丹麥 10 個自閉症家庭，了解家長如何把一項溝通療育融入日常，以及他們觀察到的互動變化。",
+      "rights": "作者正文採 CC BY 4.0。此處為指定段落的繁中摘要及星泊原創生活例子。",
+      "attribution": "Conrad、Jørgensen、Amstrup、Gottschau、Thomsen 與 Lauritsen（2024），Children 11(7), 838。星泊繁中改寫。",
+      "url": "https://www.mdpi.com/2227-9067/11/7/838",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scopeEvidence": "第 2.1 至 2.3 節交代自閉症診斷及招募條件，第 3.1、3.2 節整理家長的實作與互動經驗。",
+      "auditId": "S57",
+      "reviewScope": "第 2.3 節的樣本、第 3.1 和 3.2 節的作者主題綜整及討論限制。排除訪談引文、圖表、量表、頻率與療程操作。",
+      "currencyEvidence": "出版者原文標明 CC BY 4.0。這是已參與特定療育的家長訪談，保留家庭可行性與取樣限制。",
+      "sourceAudience": "丹麥有自閉症孩子、且已參與 PACT 的家庭，10 個家庭共 13 位受訪家長。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.mdpi.com/2227-9067/11/7/838",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "gevarter-preschool-multimodal-communication": {
+      "name": "少用口語的學前自閉症孩子如何多元溝通",
+      "originalTitle": "Multimodal Communication Outcomes for Hispanic Autistic Preschoolers Following Coached Student Clinician and Caregiver-Led NDBIs",
+      "publisher": "Behavioral Sciences",
+      "authors": "Cindy Gevarter、Jaime Branaman、Jessica Nico、Erin Gallegos、Richelle McGuire",
+      "version": "2025-10-20 正式出版",
+      "description": "以五名很少或不使用口語的學前兒童為對象，觀察手勢、手語、輔助工具及口語等溝通方式。",
+      "rights": "作者正文採 CC BY 4.0。此處為指定段落的繁中摘要及星泊原創生活例子。",
+      "attribution": "Gevarter、Branaman、Nico、Gallegos 與 McGuire（2025），Behavioral Sciences 15(10), 1425。星泊繁中改寫。",
+      "url": "https://www.mdpi.com/2076-328X/15/10/1425",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scopeEvidence": "第 2.1 節明列學前自閉症研究條件，第 4.1、4.2 節討論不同溝通方式、照顧者共同規劃及研究限制。",
+      "auditId": "S58",
+      "reviewScope": "第 2.1 節及第 4.1、4.2、5 節作者自有敘述，限多元表達、個別化與共同規劃。排除第三方量表、圖表、提示階層及療育操作。",
+      "currencyEvidence": "出版者原文標明 CC BY 4.0。樣本五名，限特定教練支持及語言環境，保留研究可推廣範圍的限制。",
+      "sourceAudience": "五名約 2 歲半至未滿 5 歲的西語裔學前兒童，在英語或西語家庭生活，已診斷自閉症或候診且符合研究的自閉特質評估條件。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.mdpi.com/2076-328X/15/10/1425",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-special-education-school-transition": {
+      "name": "各教育階段身心障礙學生與幼兒轉銜輔導及服務辦法",
+      "originalTitle": "各教育階段身心障礙學生與幼兒轉銜輔導及服務辦法",
+      "publisher": "教育部",
+      "version": "2023-12-19 修正",
+      "description": "規範升入國小的特教轉銜會議、支持需求交接及安置學校後續工作。",
+      "rights": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
+      "attribution": "教育部臺教學（四）字第 1122806413A 號令。星泊整理指定條文。",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=GL000431",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "本辦法依《特殊教育法》訂定，併讀該法第 3 條第 10 款的自閉症類別。本案限自閉症幼兒升小一適用之條文。",
+      "auditId": "S59",
+      "reviewScope": "第 2 至 4 條及第 6 條，限轉銜計畫、需求紀錄、照顧者參與、入小學及安置學校後續支持。",
+      "currencyEvidence": "主管機關現行頁登載 2023-12-19 修正版本。適用《特殊教育法》身心障礙類別，地方時程依當地教育主管機關公告。",
+      "sourceAudience": "進入國小的身心障礙特教幼兒；本案依特殊教育法第 3 條限自閉症類別。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
     }
   },
   "articles": [
@@ -2124,6 +2292,402 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           "section": "訪談樣本、校園情境和研究限制。青少年年齡依表 1 採 13–17 歲，正文敘述的年齡範圍與表列不一致。"
         }
       ]
+    },
+    {
+      "id": "early-intervention-first-steps",
+      "category": "caregiver",
+      "title": "懷疑孩子有自閉特質，早療第一步怎麼走？",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲"
+      ],
+      "time": 4,
+      "summary": "分清發展篩檢、聯合評估、自閉症診斷和資源轉介，先找到可以一起釐清疑問的窗口。",
+      "when": "你或托育人員對孩子的互動、溝通或適應變動有疑問，想先找專業人員討論。",
+      "asdFocus": "自閉症相關疑問可以從日常說起。記下孩子如何分享興趣、表達拒絕或求助，以及在哪些環境裡比較自在，供專業團隊了解孩子目前需要的支持。",
+      "steps": [
+        [
+          "帶一兩個具體情境去談",
+          "挑最近真的發生的一件事，記下當時在做什麼、孩子用了什麼方式表達、你怎麼回應。也帶一個比較順利的情境。有兒童健康手冊或既有評估資料，就一起帶上。"
+        ],
+        [
+          "先問平常看診的醫師",
+          "把最在意的觀察告訴醫師，詢問能否先做兒童發展篩檢，以及是否需要再安排聯合評估或自閉症相關診察。篩檢先協助辨認需要進一步了解的地方。聯合評估可由不同專業了解孩子的發展和支持需求，自閉症診斷由醫療專業判斷。"
+        ],
+        [
+          "確認下一個窗口和聯絡方式",
+          "若醫師建議聯評，問清楚是由原門診轉介，還是要先聯絡聯評中心。若想了解附近的療育或家庭支持，問院方個管師能否轉介，或請他指引所在地的早療通報轉介窗口。"
+        ]
+      ],
+      "related": "kaohsiung-asd-development-assessment",
+      "situations": [
+        "local-support"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "發展篩檢",
+        "聯合評估",
+        "聯評",
+        "自閉症評估",
+        "通報轉介",
+        "疑似自閉症"
+      ],
+      "sourceSection": "院方聯評簡介及服務流程，限多專業評估、結果解說、後續療育與資源轉介。",
+      "evidence": {
+        "summary": "高雄市立聯合醫院的說明呈現一個院方例子。團隊按孩子狀況安排評估，再說明結果與後續方向。",
+        "limit": "實際掛號、轉介與候評方式請向準備就診的院所確認。本文的觀察問題和示例由星泊整理。"
+      },
+      "observe": "孩子想請你幫忙時會做什麼？在熟悉、安靜或有準備時間的情況下，表達方式有沒有變化？這些對照可以和醫師一起看。",
+      "example": "家長發現孩子在托育處需要幫忙時常拉著老師走，在家卻會直接把打不開的盒子拿給大人。家長把兩個情境記在手機上，回診時請醫師一起了解差異。",
+      "adjust": "等待下一次聯絡時，可以先問轉介單位是否已收到資料、要補什麼，以及等待期間能先向哪裡詢問家庭支持。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "學前早療查找情境的參考分組。院方未訂數字適齡，實際服務對象與安排請向院方確認。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。"
+    },
+    {
+      "id": "early-intervention-assessment-report",
+      "category": "caregiver",
+      "title": "拿到聯合評估報告，接下來要問什麼？",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲"
+      ],
+      "time": 4,
+      "summary": "把聯評報告帶回結果說明門診，和團隊對照家裡的真實情境，確認一個先做的目標和下一個聯絡窗口。",
+      "when": "孩子做完兒童發展聯合評估，你收到綜合報告書或回診通知，想知道怎麼把評估建議接到生活裡。",
+      "asdFocus": "自閉症孩子在家、托育處和評估現場的表達與參與可能不一樣。把孩子在熟悉環境如何求助、哪些做法已經有用，一起帶給評估團隊。",
+      "steps": [
+        [
+          "請團隊用一個生活情境說明結果",
+          "把最不確定的地方圈起來，問「這一項在日常裡可能看起來是什麼？」「評估時看見孩子有哪些已經會用的方式？」需要確認診斷或追蹤安排時，請原評估醫師說明。"
+        ],
+        [
+          "把眼前最需要的支持說具體",
+          "描述孩子遇到的困難，也說明你們最想先改善哪件事。可以問「孩子想請人幫忙時，家裡和托育處要怎麼回應才接得上？」「我們能用什麼觀察知道這個做法有沒有幫助？」"
+        ],
+        [
+          "記下接下來找誰，以及何時回看",
+          "離開前確認建議的門診、療育或社區資源是什麼，院方是否會轉介，哪一份資料需要帶。和團隊約好何時回看，再把待辦和聯絡方式記下來。"
+        ]
+      ],
+      "related": "kaohsiung-asd-development-assessment",
+      "situations": [
+        "local-support",
+        "communication"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "聯合評估",
+        "聯評報告",
+        "綜合報告書",
+        "評估結果",
+        "療育目標",
+        "回診"
+      ],
+      "sourceSection": "院方聯評簡介及服務流程第 3–5 點，作為評估後回診解說與後續安排的服務背景。會前問題與例子由星泊整理。",
+      "evidence": {
+        "summary": "院方聯評流程包括依個別需要安排評估、由不同專業討論，以及回診說明結果與後續資源。",
+        "limit": "每個孩子的報告內容、診斷與療育建議都由原評估團隊說明。本文提供的是準備對話的提問。"
+      },
+      "observe": "先挑一個想改善的日常情境。記下孩子怎麼表達、誰聽得懂，以及大人改變做法後有什麼不同。",
+      "example": "家長看完報告仍不知道怎麼幫孩子在托育處求助。回診時，家長描述孩子在家常用動作示意，和團隊討論能不能先讓所有大人都認得同一個求助手勢。",
+      "adjust": "如果一次談不完，可以請團隊先說明最需要掌握的一件事，再確認下一次能向哪位專業人員問其餘問題。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "學前早療查找情境的參考分組。院方未訂數字適齡，實際服務對象與安排請向院方確認。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。"
+    },
+    {
+      "id": "early-intervention-subsidy",
+      "category": "caregiver",
+      "title": "有自閉症診斷，怎麼查早療費用與交通補助？",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲"
+      ],
+      "time": 5,
+      "summary": "從孩子戶籍地的正式公告查起，確認手上的證明、療育單位、費用項目與送件期限。",
+      "when": "孩子已有自閉症診斷或聯評資料，你在安排學前早療，想知道哪些支出可以申請補助。",
+      "asdFocus": "手上的自閉症診斷或聯評報告是和承辦討論的起點。各方案對發展遲緩證明、聯評報告或身心障礙證明的採認不同，先確認孩子適用哪一種資格。",
+      "steps": [
+        [
+          "查孩子戶籍地的當期公告",
+          "用「縣市名＋早期療育費用補助」搜尋社會局處公告。先看適用年齡、戶籍、是否要完成通報，以及應該找區公所或其他受理窗口。若療育在外縣市，順便問那間院所是否符合規定。"
+        ],
+        [
+          "把手上的文件逐一報給承辦",
+          "說出文件名稱、開立單位、日期及效期。可以問「我們有自閉症診斷和聯評報告，哪一份可以用？需要醫院另外開證明，或是已有的身心障礙證明就能送件嗎？」"
+        ],
+        [
+          "分開核對要付的費用，再記下截止日",
+          "問療育費和交通費各自的適用條件、健保與自費項目的差別，以及要留哪些收據和紀錄。確認期限從哪一天開始算、能否補件，再把承辦回覆和送件日期寫下來。"
+        ]
+      ],
+      "related": "tainan-early-intervention-subsidy",
+      "situations": [
+        "local-support"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "早療補助",
+        "療育費",
+        "交通費",
+        "交通補助",
+        "戶籍地",
+        "自費療育"
+      ],
+      "sourceSection": "公告第五至八項，以及同頁「區公所常見退件原因問與答」第一節第 9 題及第三節第 1 題。",
+      "evidence": {
+        "summary": "以臺南為例，公告列出可採認的文件，附件另有一題說明自閉症家庭以診斷證明書或聯評報告申請時如何查文件。已有身心障礙證明的家庭也可向窗口確認對應資格。",
+        "limit": "臺南公告只用來示範查找方式。實際請看孩子戶籍地當期公告，向承辦確認資格、補助項目、金額與期限。"
+      },
+      "observe": "翻出現有的文件與收據，記下孩子的戶籍地、早療單位、每筆款項是療育費還是交通費，以及文件效期。",
+      "example": "孩子在外縣市做語言治療。家長把院所全名、服務項目和報告日期告訴戶籍地承辦，先問院所是否在認可範圍，再問去哪裡送件。",
+      "adjust": "如果窗口認為文件不齊，請對方說明缺的是哪項資格資料、去哪裡補，以及補件和原送件是否有不同期限。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "0–1 歲、2–5 歲為學前家庭適讀分組，實際補助的年齡條件請查各地方案。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "臺南示例與自閉症專屬問答按核准範圍整理。其他縣市段落僅為查找方式及原創詢問示例。"
+    },
+    {
+      "id": "early-intervention-try-at-home",
+      "category": "communication",
+      "title": "治療師示範的做法，回家怎麼試？",
+      "ages": [
+        "2–5 歲"
+      ],
+      "time": 4,
+      "summary": "選一段孩子喜歡、家裡排得進去的活動，跟治療師確認最值得試的一步和下次要回報的觀察。",
+      "when": "早療的治療師示範了一個溝通做法，但回家後孩子的反應不同，或你很難在平常作息中找到空檔。",
+      "asdFocus": "自閉症孩子在治療室和家裡可能用不同方式參與。同一個孩子在安靜的遊戲裡願意靠近，累了或被打斷時，可能用離開或把東西推開來表示想停。",
+      "steps": [
+        [
+          "請治療師一起挑一小段日常活動",
+          "想一個孩子已有興趣、你也有餘力的時間。帶去問「可以用他喜歡的車子或翻書來試嗎？我這週只想試一件事，哪一步最適合？」"
+        ],
+        [
+          "先看孩子怎麼接，再決定要不要繼續",
+          "照你們討論好的方式試一小段。留意孩子是否自己靠近、邀你加入、把玩具交給你，或明顯轉開、退後。孩子表示想停，就讓活動回到原本的玩法或先休息。"
+        ],
+        [
+          "下次回報一個容易的情境和一個卡住的情境",
+          "可以記「當時玩什麼」「大人做了什麼」「孩子怎麼表示」。請治療師和你一起看，試過的做法要不要換成更容易做的版本。找不到時間也可以直接說，這會影響安排。"
+        ]
+      ],
+      "related": "conrad-pact-family-experience",
+      "situations": [
+        "communication"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "居家練習",
+        "家長參與",
+        "治療師",
+        "回家練習",
+        "PACT",
+        "親子遊戲"
+      ],
+      "sourceSection": "第 2.3 節樣本及第 3.1、3.2 節作者對時間安排、個別化及遊戲互動經驗的綜整。",
+      "evidence": {
+        "summary": "丹麥訪談中的部分家長覺得，把活動放進家庭日常後更能享受親子互動。同一項研究中，家長也提到時間難找，甚至有人仍覺得有些做法很難持續。",
+        "limit": "這些是 10 個已參與 PACT 的家庭所回報的經驗。你的居家做法可依孩子、家庭和治療師共同討論的目標調整。"
+      },
+      "observe": "孩子什麼時候發起互動？你做了什麼，他是接著玩、改了玩法，還是想停？記兩三句就夠了。",
+      "example": "治療師和家長約好，孩子玩車時先看他怎麼邀人一起玩。一次孩子把車推給家長，他們就輪流玩了一下。另一次孩子把車收走，家長就停下來，下次把這兩個情況都帶去談。",
+      "adjust": "如果伸手加入反而常打斷孩子，可以問治療師能不能改成先在旁邊觀察，等孩子示意再加入。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–5 歲為本文採用的居家遊戲情境分組。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "以質性訪談整理家長經驗及實作困難。提問與例子為原創，未重製 PACT 課程或訪談內容。"
+    },
+    {
+      "id": "early-intervention-aac",
+      "category": "communication",
+      "title": "孩子很少用口語，怎麼和語言治療師談 AAC？",
+      "ages": [
+        "2–5 歲"
+      ],
+      "time": 5,
+      "summary": "帶著孩子已經在用的聲音、動作或圖片，討論怎麼讓求助、拒絕和分享更容易被理解。",
+      "when": "孩子很少用口語，或家中很熟悉他的表達，到了早療或幼兒園卻常需要別人猜。",
+      "asdFocus": "AAC 是「擴大與替代溝通」，可用手勢、圖片、溝通板或語音輔具等方式支持表達。與語言治療師討論時，先把孩子已經會用的動作、聲音或詞語一起算進去。",
+      "steps": [
+        [
+          "記下孩子在三種時候怎麼表達",
+          "想一個求助、一個拒絕和一個想分享或繼續的情境。記下當時的動作、聲音、指向或詞語，還有誰能理解、誰容易猜錯。"
+        ],
+        [
+          "請治療師一起比較能用的方式",
+          "可以問「他在家會把打不開的盒子拿給我，在幼兒園能怎麼讓老師也知道他想求助？」再討論手勢、照片、溝通板或其他工具是否好拿、好辨認、方便使用家裡的語言。也可以問能否先試用再決定。"
+        ],
+        [
+          "約好大人怎麼接住表達",
+          "先挑一項孩子重要的需要，尤其是求助或拒絕。和治療師討論孩子怎麼發出訊息、家人和老師怎麼回應，以及什麼時候回看。孩子已經表達清楚時，就回應他傳達的意思。"
+        ]
+      ],
+      "related": "gevarter-preschool-multimodal-communication",
+      "situations": [
+        "communication",
+        "school"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "AAC",
+        "擴大與替代溝通",
+        "無口語",
+        "少口語",
+        "溝通板",
+        "語音輔具",
+        "語言治療"
+      ],
+      "sourceSection": "第 2.1 節及第 4.1、4.2、5 節，限樣本、不同表達方式、家長共同規劃及研究限制。",
+      "evidence": {
+        "summary": "五名學前兒童的研究中，孩子在玩耍時使用的表達方式各有不同。研究團隊和照顧者一起選擇可用的方式，家庭和治療人員帶領時的表現也可能有差異。",
+        "limit": "這項研究的樣本很小，對象來自特定家庭及服務環境。適合孩子的表達方式與輔助工具，可以和語言治療師一起試、一起看。"
+      },
+      "observe": "孩子在熟悉環境如何表示「不要」或「幫我」？當手邊拿不到工具、教室很吵或對方不熟悉時，哪一種方式仍能用？",
+      "example": "孩子口渴時會把空水杯遞給家長，進教室時水杯常放在書包裡。老師和家長把這個例子帶去和語言治療師談，想找一個孩子在教室也能順手表示「喝水」的方式。",
+      "adjust": "如果帶去幼兒園的工具一直留在書包裡，和老師及治療師確認哪些時間、哪些地方應該讓孩子拿得到，以及原本的手勢怎麼繼續用。",
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–5 歲為學前閱讀分組。來源研究納入約 2 歲半至未滿 5 歲的兒童。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "改寫研究對多元表達、共同規劃與限制的敘述。居家、在園提問及例子為原創。"
+    },
+    {
+      "id": "early-intervention-preschool-support",
+      "category": "school",
+      "title": "早療中的孩子要上幼兒園，怎麼接上學前特教？",
+      "ages": [
+        "2–5 歲"
+      ],
+      "time": 5,
+      "summary": "在入園前或入園後找到學前特教窗口，把孩子的溝通方式、環境需求和早療經驗帶進教育評估。",
+      "when": "孩子正在接受早療，家裡開始找幼兒園，或孩子已入園，你想了解能否申請園裡的特教支持。",
+      "asdFocus": "園裡需要知道自閉症孩子在團體活動中怎麼表達需要、什麼情況比較吃力，以及已有哪種支持能幫孩子參與。具體的生活觀察可以補足診斷或報告上的資訊。",
+      "steps": [
+        [
+          "找對入園前或在園中的窗口",
+          "尚未入園，可以查所在地教育局處或特教資源中心的當學年度「學前特教鑑定安置」，問受理窗口和申請日期。已在園就讀，可以先找教保服務人員或園方特教承辦，詢問觀察、申請與評估怎麼安排。"
+        ],
+        [
+          "把早療經驗帶進教育評估",
+          "學前特教鑑定會看孩子在園內學習與參與的需求。手邊的聯評報告、診斷或早療紀錄，可先問窗口要帶哪些。也準備一兩個例子，像是孩子怎麼表示需要安靜，或怎麼做能讓他更容易參加團體活動。"
+        ],
+        [
+          "和園方談入園後的支持",
+          "收到鑑定安置結果後，和園方確認誰會跟進、下一次何時討論。若孩子經鑑定具身心障礙特教資格，幼兒園應訂定個別化教育計畫（IEP），並邀請孩子和法定代理人或實際照顧者參與。可以把孩子常用的溝通方式和你最在意的支持帶進會議。"
+        ]
+      ],
+      "related": "taiwan-special-education-assessment",
+      "situations": [
+        "school",
+        "local-support",
+        "changes"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "學前特教",
+        "幼兒園",
+        "入園",
+        "鑑定安置",
+        "轉銜",
+        "IEP",
+        "個別化教育計畫"
+      ],
+      "sourceSection": "第 2、12、23、24 條多元評量、自閉症類別、鑑定及教育需求評估；第 26 條施行日。",
+      "evidence": {
+        "summary": "醫療團隊評估孩子的發展與療育需要，教育端的鑑定安置主要處理在園或在校所需的支持。兩邊的資料可以一起帶進討論。",
+        "limit": "本文法規核對日為 2026 年 11 月 24 日。各縣市受理方式、期限及文件請看當期公告。"
+      },
+      "observe": "找一個孩子在園裡常遇到的情境，例如排隊洗手或從自由遊戲換到團體活動，問教保人員什麼時候比較順、什麼支持有幫助。",
+      "example": "孩子在早療時看一張圖就知道要收玩具，在幼兒園卻常被突然響起的收拾音樂嚇到。家長把這個差異告訴教保人員，園方和家長一起討論能否提前用孩子熟悉的圖像提醒。",
+      "adjust": "接近入園期仍不確定申請進度，可以向承辦確認目前缺哪一步，也和園方先討論哪些日常安排可以試、由誰回覆。",
+      "additionalSources": [
+        {
+          "id": "taiwan-special-education-act",
+          "section": "第 3、6、19、20、26、31 條，供確認自閉症類別、鑑定安置、學前特教及孩子與照顧者參與。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "依《特殊教育法》第 26 條，身心障礙兒童的特殊教育自 2 歲開始。2–5 歲是本文的學前閱讀分組，申請條件請以縣市公告為準。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。"
+    },
+    {
+      "id": "early-intervention-first-grade-transition",
+      "category": "school",
+      "title": "快升小一，哪些支持要交接給新老師？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲"
+      ],
+      "time": 5,
+      "summary": "整理一頁孩子常用的溝通方式、容易吃力的情境和已經有效的支持，帶去談轉銜及入學後的分工。",
+      "when": "自閉症孩子即將從幼兒園升小一，或已開學，你希望新老師能接上原本有用的支持。",
+      "asdFocus": "孩子可能在原本的幼兒園已經有熟悉的求助手勢、安靜角落或轉換提醒。把做法寫到新老師接得上，也可以邀孩子用自己習慣的方式表示想保留什麼。",
+      "steps": [
+        [
+          "先確認誰召集轉銜會議",
+          "孩子已接受特教服務時，可以問目前的園所或安置單位「何時開轉銜會議？家長和新學校窗口怎麼參加？」若還在確認鑑定或安置，就向縣市特教窗口問當年度需要走的流程與時程。"
+        ],
+        [
+          "用三件事寫一頁交接",
+          "依序寫下「孩子怎麼表達」「在哪個情境比較吃力」「什麼支持已經有效」。例如孩子會指聽覺圖卡表示太吵，遇到廣播時可以先有預告。也標上孩子喜歡做的事，讓老師知道怎麼建立熟悉感。"
+        ],
+        [
+          "和新學校確認誰做、何時回看",
+          "在會議裡問第一週由誰帶孩子認識教室、求助時可以找誰、何時一起回看。若孩子經鑑定安置，請新學校把確認的需求和支持帶進個別化教育計畫（IEP）的討論。"
+        ]
+      ],
+      "related": "taiwan-special-education-school-transition",
+      "situations": [
+        "school",
+        "changes",
+        "communication"
+      ],
+      "keywords": [
+        "早療",
+        "早期療育",
+        "升小一",
+        "國小入學",
+        "入學轉銜",
+        "轉銜會議",
+        "鑑定安置",
+        "IEP",
+        "個別化教育計畫"
+      ],
+      "sourceSection": "第 2 至 4 條和第 6 條，限轉銜計畫、支持資料、進入國小時的會議參與與後續 IEP。",
+      "evidence": {
+        "summary": "《轉銜輔導及服務辦法》第 6 條規範特教轉銜時原安置場所或學校召集會議、邀請照顧者及擬安置學校，並由安置學校接收資料、把評估後的支持納入 IEP。",
+        "limit": "本文的交接一頁是整理日常需要的示例。各縣市當年度時程及鑑定安置細節請向當地教育主管機關確認。"
+      },
+      "observe": "孩子到陌生地方時，哪一個大人的做法最能幫忙？最近什麼提醒已經有效？有沒有一件事是孩子想讓新老師先知道的？",
+      "example": "孩子聽到突然的下課鐘會摀耳停在座位。家長請幼兒園把原本用的預告方式寫進交接，新老師和孩子一起約好想安靜時怎麼示意，一週後再看要不要調整。",
+      "adjust": "如果還沒有接到會議消息，先問目前園所或安置窗口誰負責聯絡。已到新學校的家庭也可以直接和導師及特教承辦約時間，分享當下最需要的一項支持。",
+      "additionalSources": [
+        {
+          "id": "taiwan-special-education-act",
+          "section": "第 3 條第 10 款確認自閉症類別，第 31 條提供 IEP 與照顧者參與的法源。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–5 歲與 6–8 歲為入學前後的適讀分組，本篇情境聚焦幼兒園升小一。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依指定轉銜條文與自閉症類別法源整理。家庭筆記與例子由星泊原創。"
     }
   ],
   "withdrawnArticles": [
