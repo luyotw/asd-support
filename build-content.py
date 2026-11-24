@@ -14,15 +14,27 @@ def main():
     catalog = json.loads((folder / "catalog.json").read_text(encoding="utf-8"))
     audit = json.loads((folder / "source-audit.json").read_text(encoding="utf-8"))
     approved = {item["id"]: item for item in audit["sources"]}
+    reuse_statuses = {
+        "adapt": "adaptation-permitted",
+        "noncommercial": "noncommercial-adaptation-permitted",
+    }
     for source_id, source in catalog["sources"].items():
         if source.get("scope") != "asd" or not source.get("scopeEvidence"):
             parser.error(f"{source_id} needs verified ASD-specific scope evidence.")
         reviewed = approved.get(source.get("auditId"), {})
-        if (reviewed.get("decision") != "adapt"
-                or source.get("reuseStatus") != "adaptation-permitted"
+        expected_reuse = reuse_statuses.get(reviewed.get("decision"))
+        if (expected_reuse is None
+                or source.get("reuseStatus") != expected_reuse
                 or not source.get("permissionEvidence")
                 or source.get("url") != reviewed.get("url")):
             parser.error(f"{source_id} needs a verified adaptation licence for this exact source.")
+        if reviewed.get("decision") == "noncommercial" and (
+                not reviewed.get("license")
+                or source.get("license") != reviewed["license"]
+                or not source.get("licenseName")
+                or not source.get("rights")
+                or not source.get("attribution")):
+            parser.error(f"{source_id} needs the audited noncommercial licence and attribution.")
         if (source.get("currencyStatus") != "usable"
                 or not source.get("reviewScope")
                 or not source.get("reviewChecked")):

@@ -476,6 +476,7 @@ function articlePage(article) {
             ${section ? `<p>${section}</p>` : ""}
             <small>${source.rights}</small>
             ${source.attribution ? `<small>${source.attribution}</small>` : ""}
+            ${source.reuseStatus === "noncommercial-adaptation-permitted" ? `<small><a href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName}</a></small>` : ""}
           </div>`;
         }).join("")}
       </details>

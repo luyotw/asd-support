@@ -1,6 +1,6 @@
 # 星泊｜來源盤點
 
-更新日期為 2026-11-24。現行 37 篇文章引用 29 筆具明確 ASD 依據與改作證據的來源。查核涵蓋各筆列明的原文與用途。
+更新日期為 2026-11-24。現行 48 篇文章引用 48 筆具明確 ASD 依據與改作證據的來源。查核涵蓋各筆列明的原文與用途。
 
 全部收集紀錄集中在[資料整理索引](RESEARCH-INDEX.md)；依需求配對來源、適齡與觀點差異見[題目整理與觀點對照](TOPIC-BRIEFS.md)。索引已逐筆給出使用結論；不採用項目僅保留稽核歷史，不供網站發布。
 
@@ -9,8 +9,16 @@
 - 原文或實際參考章節明確針對 ASD；機構名稱、政府資助或一般神經多樣性受眾本身不足以通過。
 - 每篇需說明自閉症孩子的實際支持需求，並可追溯到參考範圍。
 - ASD適用性和著作重用條件分別查核。找不到符合本專案公開繁中整理／改寫用途的明確授權，就當作不能用，不再保留為原文導引候選。只准私人使用、原樣重製或特定地區使用，也不等於准許本案改作。
-- 依來源限制署名、標示改寫並排除第三方素材。已知非商業授權另列，不能移除限制、混標成CC BY或自動加入一般成品。
+- 依來源限制署名、標示改寫並排除第三方素材。
 - 居家案例是編輯改寫，不代表原文已驗證該案例的效果。
+
+### 非商業授權與自由贊助
+
+2026-11-24 確認星泊以免費、非商業方式提供內容。允許公開非商業改作的來源可依查核範圍收錄，例如 CC BY-NC 4.0。逐筆記錄原文、作者、完整授權版本及連結，發布時標示改寫和非商業條件。授權含禁止改作（ND）或權利不明的材料保留查核或授權聯絡紀錄。若授權含相同方式分享（SA），改作也須按該條款分享。
+
+若日後開放自由贊助，閱讀仍向所有人免費開放，贊助與解鎖文章、付費會員及廣告回報分開。Creative Commons 按內容的實際使用目的與方式判斷非商業性。啟用贊助時按實際配置核對相關來源條款。[Creative Commons 非商業授權說明](https://creativecommons.org/faq/#does-my-use-violate-the-noncommercial-clause-of-the-licenses)
+
+資料產生器用 `noncommercial` 記錄限非商業改作的查核結果。文章資料須以 `noncommercial-adaptation-permitted` 標記，並保留對應授權與署名。
 
 ## 資料時效判定與複查
 
@@ -119,53 +127,90 @@
 | [少用口語的學前自閉症孩子如何多元溝通](https://www.mdpi.com/2076-328X/15/10/1425) | 第 2.1 節明列學前自閉症研究條件，第 4.1、4.2 節討論不同溝通方式、照顧者共同規劃及研究限制。 | 作者正文採 CC BY 4.0。此處為指定段落的繁中摘要及星泊原創生活例子。 第 2.1 節及第 4.1、4.2、5 節作者自有敘述，限多元表達、個別化與共同規劃。排除第三方量表、圖表、提示階層及療育操作。 |
 | [各教育階段身心障礙學生與幼兒轉銜輔導及服務辦法](https://edu.law.moe.gov.tw/LawContent.aspx?id=GL000431) | 本辦法依《特殊教育法》訂定，併讀該法第 3 條第 10 款的自閉症類別。本案限自閉症幼兒升小一適用之條文。 | 法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。 第 2 至 4 條及第 6 條，限轉銜計畫、需求紀錄、照顧者參與、入小學及安置學校後續支持。 |
 
+## 2026-11-24 特教、身障與目錄補查採用來源
+
+採用 15 筆新查核來源，以及 4 筆先前已記錄的非商業研究。逐筆對象、版本及授權證據收錄於 [source-audit.json](source-audit.json)。
+
+| ID | 來源 | 授權 | 實際使用範圍 |
+| --- | --- | --- | --- |
+| S29 | [自閉症兒少使用螢幕的數位公民研究](https://journals.sagepub.com/doi/10.1177/13623613231192870) | CC BY-NC 4.0 | 研究方法、Survey 2未達共識結果與研究限制；不改寫時數／診斷清單 |
+| S50 | [自閉症家長如何和自閉症孩子談診斷](https://pure-oai.bham.ac.uk/ws/portalfiles/portal/217346196/crane-et-al-2021-autistic-parents-views-and-experiences-of-talking-about-autism-with-their-autistic-children.pdf) | CC BY-NC 4.0 | PDF方法／表1與作者Results／Discussion的經驗綜整；只限非商業，不取逐字親子引文及調查題目。 |
+| S52 | [自閉症兒童遠距如廁支持初步研究](https://journals.sagepub.com/doi/10.1177/15394492231159903) | CC BY-NC 4.0 | Methods、作者Results、Future Directions and Limitations的研究背景；非商業限定，不取原方案教材、問卷、10–12週療程程序。 |
+| S60 | [臺灣自閉症青少年的診斷與校園經驗](https://journals.sagepub.com/doi/10.1177/13623613261444800) | CC BY-NC 4.0 | Methods、Results、Discussion 的作者綜整，限自我理解、診斷揭露、校園求助與研究限制，排除逐字訪談與附件。 |
+| S61 | [身心障礙者鑑定作業辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020020) | 著作權法第 9 條 | 第 4、5、7 至 10 條及相關附表自有條文，限功能、申請、暫判與重鑑。量表、分數自評及臨床操作另行查核。 |
+| S62 | [身心障礙者權益保障法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050046) | 著作權法第 9 條 | 第 5–7、14、15、50、51、58、71 條與自閉症兒少有關的制度正文。 |
+| S63 | [特殊教育法施行細則](https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009141) | 著作權法第 9 條 | 第 6 條正式條文及其所依據的特教法第 13 條，限班型、就讀及支持方式。 |
+| S64 | [新北市 115 年度身心障礙家庭照顧者支持服務計畫](https://www.sw.ntpc.gov.tw/uploaddowndoc?dis=download&file=download%2F202604011037370.pdf&filedisplay=115%E5%B9%B4%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99%E8%80%85%E5%AE%B6%E5%BA%AD%E7%85%A7%E9%A1%A7%E8%80%85%E6%94%AF%E6%8C%81%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB.pdf&flag=doc) | 著作權法第 9 條 | 僅整理機關正式年度計畫正文第陸、柒節的對象、服務及查找方式。 |
+| S65 | [監察院身心障礙者投保調查](https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/69893) | 著作權法第 9 條 | 僅取調查報告中與自閉症投保有關的實務差距背景，保留年代與案例性質。 |
+| S66 | [金管會保險業招攬及核保理賠辦法](https://law.fsc.gov.tw/LawContent.aspx?id=FL006828) | 著作權法第 9 條 | 第 7 條第 1 項第 11 款法令正文，搭配監察院案例與《保險法》第 64 條。 |
+| S67 | [自閉症學生的校園互動與揭露經驗回顧](https://link.springer.com/article/10.1007/s40489-026-00596-4) | CC BY 4.0 | Methods、Results 的 Disclosure of Autism Diagnosis、Teachers’ Scaffolding，以及討論的作者綜整。排除逐字引文、附表及第三方素材。 |
+| S68 | [自閉症孩子怎麼看校園壓力與安全感](https://pmc.ncbi.nlm.nih.gov/articles/PMC13087148/) | CC BY-NC 4.0 | Methods 的樣本、Results 的 Overwhelming Experiences、Unsafe People、Sanctuary 及 Discussion 限制。排除兒童引文、問卷及附圖。 |
+| S69 | [英國小學自閉症孩子的友誼經驗回顧](https://journals.sagepub.com/doi/10.1177/27546330241272250) | CC BY-NC 4.0 | Abstract、Methods、Results／Discussion 的作者綜整與限制。排除引文和量表。 |
+| S70 | [學前自閉症孩子的感官反應、不確定感與焦慮](https://centaur.reading.ac.uk/98478/1/13623613211016110.pdf) | CC BY-NC 4.0 | Abstract、Methods、Results、Discussion 限感官差異與不確定感的關聯及限制。排除測量題項與分數。 |
+| S71 | [自閉症評估過程中家長的經驗回顧](https://pmc.ncbi.nlm.nih.gov/articles/PMC11528925/) | CC BY-NC 4.0 | 以版權欄明列的 CC BY-NC 4.0 為準。只取作者對評估前、評估過程和評估後溝通的主題綜整及限制。 |
+| S72 | [學前自閉症孩子的語言治療服務調查](https://pmc.ncbi.nlm.nih.gov/articles/PMC9620702/) | CC BY-NC 4.0 | Methods、Results 與 Discussion 限服務內容、評估、家長協作與研究限制，排除測驗、專有方案用語及操作。 |
+| S73 | [自閉症青少年的性教育與性別多樣性建議](https://journals.sagepub.com/doi/abs/10.1177/13623613231188349) | CC BY-NC 4.0 | 教育建議中針對自閉症青少年的同意、個別需求與可及性。排除成人及醫療段落。 |
+| S74 | [自閉症青少年家庭重新尋求支持的經驗](https://pmc.ncbi.nlm.nih.gov/articles/PMC12531384/) | CC BY-NC 4.0 | Methods、Results／Discussion 作者對家長支持需求及限制的敘述，排除個人引文、危機處理及服務制度推論。 |
+| S75 | [學前自閉症家庭面對連帶污名的研究](https://www.mdpi.com/1660-4601/17/5/1799) | CC BY 4.0 | 第 2.1、4、5 節限樣本、活動參與關聯與研究限制，排除量表與資料表。 |
+
 Positive Partnerships 的[網站條款](https://www.positivepartnerships.com.au/terms-of-use)列出 CC BY 4.0 的署名格式及照片、第三方素材、標誌、外部影片等例外。文章保留各自的署名和改寫範圍。
 
 Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與專業經驗。文章不宣稱這些方法是效果已確立的療法。S30表3部分星號條目屬經驗建議，本案不搬用加重用品、治療觸碰或固定操作程序。
 
 ## 現行文章逐篇查核
 
-2026-11-19已核對正文所引段落、原創例子與年齡分組。年齡是本指南的閱讀情境分組，原來源未訂一致數字範圍，不能冒稱為原作者驗證的適齡。P01與P04的學齡資料已移除0–1／2–5標籤；當時六筆來源的日期、適用對象及改作證據寫入catalog.json。2026-11-20新增下表後四篇及四筆來源，重新核對實際上架段落與署名。2026-11-21新增九篇，四個原有題目經重新查核後改寫，沿用原網址讓同一篇的本機紀錄可繼續使用。2026-11-24新增表末七篇早療指南。
+2026-11-19已核對正文所引段落、原創例子與年齡分組。年齡是本指南的閱讀情境分組，原來源未訂一致數字範圍，不能冒稱為原作者驗證的適齡。P01與P04的學齡資料已移除0–1／2–5標籤；當時六筆來源的日期、適用對象及改作證據寫入catalog.json。2026-11-20新增下表後四篇及四筆來源，重新核對實際上架段落與署名。2026-11-21新增九篇，四個原有題目經重新查核後改寫，沿用原網址讓同一篇的本機紀錄可繼續使用。2026-11-24先新增七篇早療指南。其後新增 11 篇特教、身障及家庭決策指南，並逐篇核對原有 37 篇的適讀情境與 ASD 來源。有相符新來源的 22 篇補上作者觀點與適用限制。
 
 | 文章ID | 現在引用 | 本輪結果 |
 | --- | --- | --- |
 | next | P01 | 可保留：只用視覺支持作者主文；限學齡分組，排除第三方引文。 |
 | needs | P01 | 可保留：只用視覺支持作者主文；限學齡分組，排除第三方引文。 |
-| sound | S30 | 可保留：停止使用P03轉載表，改核S30第3節／表3；限定環境理解。 |
-| pause | P04 | 可保留：只用印刷頁48／122／124相關主文；限學齡分組。 |
+| sound | S30、S68 | 可保留：停止使用P03轉載表，改核S30第3節／表3；限定環境理解。 補入S68的指定範圍。 |
+| pause | P04、S68 | 可保留：只用印刷頁48／122／124相關主文；限學齡分組。 補入S68的指定範圍。 |
 | bedtime | P01 | 可保留：只用視覺支持作者主文；限學齡分組，排除第三方引文。 |
 | table | S30 | 可保留：停止使用P03轉載表，改核S30第3節／表3；限定環境理解。 |
-| school-day | P05 | 可保留：核對作者正文，案例為編輯原創。 |
-| plan-change | P02 | 可保留：核對作者正文，案例為編輯原創。 |
+| school-day | P05、S68 | 可保留：核對作者正文，案例為編輯原創。 補入S68的指定範圍。 |
+| plan-change | P02、S70 | 可保留：核對作者正文，案例為編輯原創。 補入S70的指定範圍。 |
 | wait-for-answer | P03 | 可保留：核對作者正文，案例為編輯原創。 |
-| lighting | S30 | 可保留：停止使用P03轉載表，改核S30第3節／表3；限定環境理解。 |
+| lighting | S30、S68 | 可保留：停止使用P03轉載表，改核S30第3節／表3；限定環境理解。 補入S68的指定範圍。 |
 | morning-exit | P01 | 可保留：只用視覺支持作者主文；限學齡分組，排除第三方引文。 |
 | ask-for-break | P01 | 可保留：只用視覺支持作者主文；限學齡分組，排除第三方引文。 |
 | clothing-texture | S30 | 可保留：停止使用P03轉載表，改核S30第3節／表3；限定環境理解。 |
-| early-pressure | P04 | 可保留：只用印刷頁48／122／124相關主文；限學齡分組。 |
+| early-pressure | P04、S68 | 可保留：只用印刷頁48／122／124相關主文；限學齡分組。 補入S68的指定範圍。 |
 | after-hard-moment | P04 | 可保留：只用印刷頁48／122／124相關主文；限學齡分組。 |
-| school-transition | P02 | 可保留：核對作者正文，案例為編輯原創。 |
-| school-adjustment | P05 | 可保留：核對作者正文，案例為編輯原創。 |
-| comfortable-friendships | S18 | 2026-11-20新增：兩頁自有主文的社交偏好／健康關係觀點；線上友誼不擴張為平台安全指引。 |
-| sensory-context-notes | S05 | 2026-11-20新增：單頁感官觀察架構；提問與記錄例子是編輯整理，不作診斷。 |
+| school-transition | P02、S68 | 可保留：核對作者正文，案例為編輯原創。 補入S68的指定範圍。 |
+| school-adjustment | P05、S67 | 可保留：核對作者正文，案例為編輯原創。 補入S67的指定範圍。 |
+| comfortable-friendships | S18、S69 | 2026-11-20新增：兩頁自有主文的社交偏好／健康關係觀點；線上友誼不擴張為平台安全指引。 補入S69的指定範圍。 |
+| sensory-context-notes | S05、S68 | 2026-11-20新增：單頁感官觀察架構；提問與記錄例子是編輯整理，不作診斷。 補入S68的指定範圍。 |
 | understanding-unmet-needs | S24 | 2026-11-20新增：Overview／需求辨識／證據限制；只做事後討論背景，不含危機處理或自傷議題。 |
 | reading-comprehension-context | S19 | 2026-11-20新增：13項研究回顧的背景與限制；親師提問為編輯整理，未上架訓練清單。 |
-| talk-about-autism | S42、S43 | 2026-11-21上架。並列青少年訪談與2015年醫師問卷。目錄收錄於青少年生活情境。 |
-| rest | S44 | 2026-11-21上架。限ASD兒少的親友支援經驗。重寫後沿用原網址。 |
-| choose-parent-support | S45、S47 | 2026-11-21上架。並列同儕經驗與特定專業方案研究。S47只用摘要。 |
-| toilet-support-visit | S46 | 2026-11-21上架。遠距研究背景與原創求助提問。 |
-| boys-puberty-privacy | S31 | 2026-11-21上架。五、六年級教師教材，聚焦身體用詞、變化與隱私。標籤「男」。 |
+| talk-about-autism | S42、S43、S50、S60 | 2026-11-21上架。並列青少年訪談與2015年醫師問卷。目錄收錄於青少年生活情境。 補入S50、S60的指定範圍。 |
+| rest | S44、S74 | 2026-11-21上架。限ASD兒少的親友支援經驗。重寫後沿用原網址。 補入S74的指定範圍。 |
+| choose-parent-support | S45、S47、S74 | 2026-11-21上架。並列同儕經驗與特定專業方案研究。S47只用摘要。 補入S74的指定範圍。 |
+| toilet-support-visit | S46、S52 | 2026-11-21上架。遠距研究背景與原創求助提問。 補入S52的指定範圍。 |
+| boys-puberty-privacy | S31、S73 | 2026-11-21上架。五、六年級教師教材，聚焦身體用詞、變化與隱私。標籤「男」。 補入S73的指定範圍。 |
 | first-period | S31、S37、S35 | 2026-11-21上架。教師教材與兩份研究的適用段落。標籤「女」，重寫後沿用原網址。 |
-| body-boundaries | S31 | 2026-11-21上架。使用教材關於同意與照顧協助的自有文字。重寫後沿用原網址。 |
-| screen-stop | S32、P02 | 2026-11-21上架。家長訪談與轉換提示。重寫後沿用原網址。 |
-| school-attendance-talk | S33、S38 | 2026-11-21上架。並列範疇回顧與青少年訪談，聚焦親師討論。 |
-| early-intervention-first-steps | S53 | 從評估到資源轉介，限院方服務流程，附原創家長提問。 |
-| early-intervention-assessment-report | S53 | 依結果解說服務安排，整理回診與後續求助問題。 |
+| body-boundaries | S31、S73 | 2026-11-21上架。使用教材關於同意與照顧協助的自有文字。重寫後沿用原網址。 補入S73的指定範圍。 |
+| screen-stop | S32、P02、S29 | 2026-11-21上架。家長訪談與轉換提示。重寫後沿用原網址。 補入S29的指定範圍。 |
+| school-attendance-talk | S33、S38、S68 | 2026-11-21上架。並列範疇回顧與青少年訪談，聚焦親師討論。 補入S68的指定範圍。 |
+| early-intervention-first-steps | S53、S71 | 從評估到資源轉介，限院方服務流程，附原創家長提問。 補入S71的指定範圍。 |
+| early-intervention-assessment-report | S53、S71 | 依結果解說服務安排，整理回診與後續求助問題。 補入S71的指定範圍。 |
 | early-intervention-subsidy | S56 | 臺南市自閉症家庭申請文件及費用查找示例，當地當期公告為準。 |
-| early-intervention-try-at-home | S57 | 呈現家長感受到的互動變化和時間困難，原創居家例子。 |
-| early-intervention-aac | S58 | 諮詢用的多元溝通例子，保留小樣本限制。 |
+| early-intervention-try-at-home | S57、S72 | 呈現家長感受到的互動變化和時間困難，原創居家例子。 補入S72的指定範圍。 |
+| early-intervention-aac | S58、S72 | 諮詢用的多元溝通例子，保留小樣本限制。 補入S72的指定範圍。 |
 | early-intervention-preschool-support | S54、S55 | 明列 ASD 教育鑑定、二歲起學前特教及 IEP。 |
 | early-intervention-first-grade-transition | S59、S55 | 自閉症孩子升小一時的轉銜會議、需求交接、IEP 及原創家長筆記。 |
+| special-ed-or-disability-certificate | S54、S61、S62 | 各地受理時程及應備文件看當期公告。教育支持、身障資格和醫療診斷各有判定程序。 |
+| grades-and-special-ed | S54、S68 | 兒童自陳研究用於呈現孩子經驗。是否符合特教資格，由鑑輔會依個別資料綜合研判。 |
+| special-ed-mainstream-class | S55、S63、S67 | 幼兒園及各學段提供的班型與人力會有差異。請園校依個案和所在地說明目前可用方案。 |
+| before-school-assessment-consent | S55、S68 | 班上能先試的安排依園校與孩子需要而定。正式特教服務與主管機關後續處理依規定辦理。 |
+| what-disability-assessment-checks | S61、S62 | 本文的提問無法直接換算等級。資格、程度及證明所載內容，依指定機構與主管機關的程序判定。 |
+| disability-assessment-under-six | S61、S62 | 兩項以上的內容請帶報告向團隊確認。早療、教育支持與福利服務的申請也各有自己的規定。 |
+| disability-certificate-available-services | S64、S62 | 取得證明後，各項方案仍依自己的年齡、地區與需求條件核定。新北計畫只作查找示例。 |
+| reassess-support-or-disability-certificate | S54、S62、S61 | 同一時間的特教、身障證明及各福利方案可能有不同期限，請各自核對書面結果。 |
+| disability-certificate-and-insurance | S66、S65、S64 | 目前查到的調查無法算出領證或不領證的核保差距。承保條件依個別情況、商品及公司評估。 |
+| disability-certificate-and-school-label | S55、S60、S67、S75 | 這些研究談的是自閉症身分與揭露經驗，沒有直接比較領證與未領證者。資料流向請向受理窗口依個案確認。 |
+| sharing-autism-information-at-school | S67、S60、S55 | 學齡研究較多，學前的孩子可以先用簡單選項及日常支持對話。公開後的影響因場域、同儕和老師做法而異。 |
 
 來源為可改寫不表示所有建議已被效果試驗驗證。下次出現新版、撤回、明確修正或使用範圍變更才重開相應查核。資料產生器會拒絕未列入核准範圍或沒有改作證據的來源。
 

@@ -7,7 +7,7 @@
 | S12 Amaze遊戲手冊 | 不能用作本專案繁中稿件 | [官方PDF](https://www.amaze.org.au/wp-content/uploads/2023/03/Amaze-Gaming-Beyond-The-Basics.pdf)末頁只明示完整重製並署名，未明示翻譯／節錄改寫；不再留成可用候選。 |
 | S13 Autism NZ家庭手冊 | 不能用 | [官方資源入口](https://autismnz.org.nz/resources/whanau-guide-to-autism/)與27頁PDF未取得適用改作許可，[條款](https://autismnz.org.nz/terms-and-conditions/)本輪仍未取得可讀全文；依規則直接不用。 |
 | S14 AAP醫師問答 | 不能用 | [條款](https://www.aap.org/en/pages/terms-of-use/)保留內容重用權並對AI處理另有限制；沒有取得許可。不拿年份較新或較舊替代使用權判定。 |
-| S29 ASD數位公民研究 | 只限非商業的指定研究背景 | [原頁](https://journals.sagepub.com/doi/10.1177/13623613231192870)明列CC BY-NC 4.0；商業用途不能用，不當成CC BY來源加入目前文章。 |
+| S29 ASD數位公民研究 | 只限非商業的指定研究背景 | [原頁](https://journals.sagepub.com/doi/10.1177/13623613231192870)明列CC BY-NC 4.0；依星泊非商業政策可供後續撰稿，保留 CC BY-NC 4.0 與本次的段落限制。 |
 
 ## 可以保留的研究紀錄
 

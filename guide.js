@@ -695,17 +695,17 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "name": "特殊教育學生及幼兒鑑定辦法",
       "publisher": "教育部",
       "version": "2026-04-01 修正，2026-08-01 施行",
-      "description": "說明自閉症類別的教育鑑定，以及蒐集個別資料、評估教育需求和提出安置與服務建議的方式。",
+      "description": "限第 2、12、23–26 條，多元評量、自閉症鑑定、教育需求評估、安置、重新評估與施行日期。",
       "rights": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
       "attribution": "教育部臺教學（四）字第 1152801201A 號令。星泊整理指定條文。",
       "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009187",
       "licenseName": "著作權法第 9 條",
       "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
-      "scopeEvidence": "第 12 條明定自閉症類別特教鑑定，併讀第 2、23、24 條的評量與教育需求程序。",
+      "scopeEvidence": "限第 2、12、23–26 條，多元評量、自閉症鑑定、教育需求評估、安置、重新評估與施行日期。",
       "auditId": "S54",
-      "reviewScope": "限第 2、12、23、24、26 條：多元評量、自閉症鑑定、教育需求評估、安置與服務建議及施行日期。",
+      "reviewScope": "限第 2、12、23–26 條，多元評量、自閉症鑑定、教育需求評估、安置、重新評估與施行日期。",
       "currencyEvidence": "主管機關頁面登載 2026-04-01 修正版，第 26 條載明該次修正 2026-08-01 施行。僅整理現行法令正文。",
-      "sourceAudience": "包含有特殊教育需求的自閉症幼兒與學生，本文限學前情境。",
+      "sourceAudience": "有特殊教育需求的自閉症幼兒、學生及照顧者，限適用的學前與學齡規定。",
       "checked": "2026-11-24",
       "scope": "asd",
       "scopeChecked": "2026-11-24",
@@ -718,17 +718,17 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "name": "特殊教育法",
       "publisher": "教育部主管法規查詢系統",
       "version": "2023-06-21 修正公布",
-      "description": "自閉症納入特殊教育法身心障礙類別，相關條文規範鑑定安置、學前特教及照顧者參與。",
+      "description": "限第 3 條第 10 款與第 6、10、11、13、19、20、26、30、31 條，自閉症類別、教育權益、鑑定安置、學前特教、教育支持、IEP 與照顧者參與。",
       "rights": "法令正文依臺灣《著作權法》第 9 條不受著作權保護。本文由星泊用白話整理。",
       "attribution": "《特殊教育法》，華總一義字第 11200052781 號令修正公布。星泊整理指定條文。",
       "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009136",
       "licenseName": "著作權法第 9 條",
       "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
-      "scopeEvidence": "第 3 條第 10 款明列自閉症。第 6、19、20、26、31 條的鑑定安置及教育支持包含符合適用條件的自閉症幼兒。",
+      "scopeEvidence": "限第 3 條第 10 款與第 6、10、11、13、19、20、26、30、31 條，自閉症類別、教育權益、鑑定安置、學前特教、教育支持、IEP 與照顧者參與。",
       "auditId": "S55",
-      "reviewScope": "限第 3 條第 10 款及第 6、19、20、26、31 條：自閉症類別、鑑定安置、學前特教的開始年齡、個別化教育計畫與照顧者參與。",
+      "reviewScope": "限第 3 條第 10 款與第 6、10、11、13、19、20、26、30、31 條，自閉症類別、教育權益、鑑定安置、學前特教、教育支持、IEP 與照顧者參與。",
       "currencyEvidence": "主管機關現行原文登載 2023-06-21 修正公布；第 26 條載明學前特教自 2 歲開始。縣市申請細節另依當期公告。",
-      "sourceAudience": "包含有特殊教育需求的自閉症孩子與照顧者，本案限學前特教、入學轉銜的適用類別及家長參與。",
+      "sourceAudience": "有特殊教育需求的自閉症幼兒、學生及照顧者，限適用的學前與學齡規定。",
       "checked": "2026-11-24",
       "scope": "asd",
       "scopeChecked": "2026-11-24",
@@ -832,6 +832,475 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "scopeChecked": "2026-11-24",
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "mayer-digital-citizenship": {
+      "name": "自閉症兒少使用螢幕的數位公民研究",
+      "originalTitle": "Digital citizenship of children and youth with autism: Developing guidelines and strategies for caregivers and clinicians to support healthy use of screens",
+      "publisher": "Autism",
+      "authors": "Yael Mayer、Mor Cohen-Eilig、Janice Chan、Natasha Kuzyk、Armansa Glodjo、Tal Jarus",
+      "version": "2023-08-24先行出版；2024-04期刊版",
+      "description": "研究透過專家多輪討論整理自閉症兒少使用螢幕的建議，也保留未達共識的題目。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Yael Mayer、Mor Cohen-Eilig、Janice Chan、Natasha Kuzyk、Armansa Glodjo、Tal Jarus，《Digital citizenship of children and youth with autism: Developing guidelines and strategies for caregivers and clinicians to support healthy use of screens》（2023-08-24先行出版；2024-04期刊版）。星泊整理指定段落。",
+      "url": "https://journals.sagepub.com/doi/10.1177/13623613231192870",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "研究透過專家多輪討論整理自閉症兒少使用螢幕的建議，也保留未達共識的題目。",
+      "auditId": "S29",
+      "reviewScope": "研究方法、Survey 2未達共識結果與研究限制；不改寫時數／診斷清單",
+      "currencyEvidence": "正式出版版明列 CC BY-NC 4.0。可整理研究過程與未達共識的題目，供非商業文章補充研究背景。",
+      "sourceAudience": "附錄3：2–18歲ASD；排除AAC與純溝通用途",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/13623613231192870",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "crane-autistic-parents-disclosure": {
+      "name": "自閉症家長如何和自閉症孩子談診斷",
+      "originalTitle": "Autistic parents’ views and experiences of talking about autism with their autistic children",
+      "publisher": "Autism",
+      "authors": "Laura Crane、Lok Man Lui、Jade Davies、Elizabeth Pellicano",
+      "version": "2021-01-04 線上出版，2021-05 卷期。調查於 2019-05 至 06 進行。",
+      "description": "英國 34 位自閉症家長說明和自閉症孩子談診斷、運用自身經驗及調整說法的做法。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Laura Crane、Lok Man Lui、Jade Davies、Elizabeth Pellicano，《Autistic parents’ views and experiences of talking about autism with their autistic children》（2021-01-04 線上出版，2021-05 卷期。調查於 2019-05 至 06 進行。）。星泊整理指定段落。",
+      "url": "https://pure-oai.bham.ac.uk/ws/portalfiles/portal/217346196/crane-et-al-2021-autistic-parents-views-and-experiences-of-talking-about-autism-with-their-autistic-children.pdf",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "英國 34 位自閉症家長說明和自閉症孩子談診斷、運用自身經驗及調整說法的做法。",
+      "auditId": "S50",
+      "reviewScope": "PDF方法／表1與作者Results／Discussion的經驗綜整；只限非商業，不取逐字親子引文及調查題目。",
+      "currencyEvidence": "小型機會抽樣，多數已告知孩子，偏向正面經驗與個別化對話；不能代表所有自閉症家長不需要專業協助或所有孩子都無負面感受。與醫師、青少年樣本的差異需保留。正式出版版明列 CC BY-NC 4.0，供非商業文章呈現家長觀點。",
+      "sourceAudience": "英國34位自閉症家長，孩子3–18歲；部分家長／孩子自我認同，未全部正式診斷；30名母親、2男性、2非二元家長",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8111227/",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "little-telehealth-toileting": {
+      "name": "自閉症兒童遠距如廁支持初步研究",
+      "originalTitle": "A Telehealth Delivered Toilet Training Intervention for Children with Autism",
+      "publisher": "OTJR: Occupation, Participation and Health",
+      "authors": "Lauren M. Little、Anna Wallisch、Winnie Dunn、Scott Tomchek",
+      "version": "2023-03-21線上；2023-07卷期",
+      "description": "以自閉症兒童及其家長為對象，探索結合遠距教練與家長自行閱讀材料的如廁支持。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Lauren M. Little、Anna Wallisch、Winnie Dunn、Scott Tomchek，《A Telehealth Delivered Toilet Training Intervention for Children with Autism》（2023-03-21線上；2023-07卷期）。星泊整理指定段落。",
+      "url": "https://journals.sagepub.com/doi/10.1177/15394492231159903",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "以自閉症兒童及其家長為對象，探索結合遠距教練與家長自行閱讀材料的如廁支持。",
+      "auditId": "S52",
+      "reviewScope": "Methods、作者Results、Future Directions and Limitations的研究背景；非商業限定，不取原方案教材、問卷、10–12週療程程序。",
+      "currencyEvidence": "無真正對照組的初步成效研究，不能確定觀察改善由方案造成。中止者的改變可能和出席、方案是否合適、已有進步等多種情況有關，不能責怪家長不配合。缺乏長期維持驗證。正式出版版明列 CC BY-NC 4.0，限研究背景。",
+      "sourceAudience": "34個ASD孩子家庭；摘要2–8歲，內文目的2.5–8歲，數字差異保留，不自行放寬；各孩子起始如廁能力不同",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/15394492231159903",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "liu-taiwan-youth-diagnosis": {
+      "name": "臺灣自閉症青少年的診斷與校園經驗",
+      "originalTitle": "“Autism Diagnosis as a Guide”: Taiwanese Adolescents’ Own Experiences of Receiving Autism Diagnoses",
+      "publisher": "Autism",
+      "authors": "Chun-Hao Liu、Wei-Cheng Lin、Louisa Lok Yee Man、Chih-Ju Wu、Romin W. Tafarodi、Lin Fang、Melanie Penner、Hsing-Chang Ni、Meng-Chuan Lai",
+      "version": "2026-05-19 正式線上出版",
+      "description": "臺灣八位自閉症青少年回顧理解診斷、選擇向他人說明、以及如何在學校尋求支持。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Chun-Hao Liu、Wei-Cheng Lin、Louisa Lok Yee Man、Chih-Ju Wu、Romin W. Tafarodi、Lin Fang、Melanie Penner、Hsing-Chang Ni、Meng-Chuan Lai，《“Autism Diagnosis as a Guide”: Taiwanese Adolescents’ Own Experiences of Receiving Autism Diagnoses》（2026-05-19 正式線上出版）。星泊整理指定段落。",
+      "url": "https://journals.sagepub.com/doi/10.1177/13623613261444800",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "臺灣八位自閉症青少年回顧理解診斷、選擇向他人說明、以及如何在學校尋求支持。",
+      "auditId": "S60",
+      "reviewScope": "Methods、Results、Discussion 的作者綜整，限自我理解、診斷揭露、校園求助與研究限制，排除逐字訪談與附件。",
+      "currencyEvidence": "臺灣兒童青少年精神科醫師主持的質性研究。可呈現青少年觀點，研究對象限能描述自身經驗者，不能推論領證與標籤之間的因果。",
+      "sourceAudience": "八位臺灣臨床診斷自閉症的青少年，受訪時 14–18 歲。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/abs/10.1177/13623613261444800",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-disability-assessment": {
+      "name": "身心障礙者鑑定作業辦法",
+      "originalTitle": "身心障礙者鑑定作業辦法",
+      "publisher": "衛生福利部",
+      "version": "2026-06-29 修正",
+      "description": "第 4、8 條及附表涵蓋心理社會與活動參與功能。附表一甲依法列自閉症相關評估，並與附表二甲、二乙併讀。第 9、10 條規範未滿六歲的暫判及情況改變時的申請。",
+      "rights": "依臺灣《著作權法》第 9 條整理指定的法令或政府公文自有正文。",
+      "attribution": "衛生福利部，《身心障礙者鑑定作業辦法》（2026-06-29 修正）。星泊整理指定段落。",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020020",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "第 4、8 條及附表涵蓋心理社會與活動參與功能。附表一甲依法列自閉症相關評估，並與附表二甲、二乙併讀。第 9、10 條規範未滿六歲的暫判及情況改變時的申請。",
+      "auditId": "S61",
+      "reviewScope": "第 4、5、7 至 10 條及相關附表自有條文，限功能、申請、暫判與重鑑。量表、分數自評及臨床操作另行查核。",
+      "currencyEvidence": "對照法律、鑑定向度與未滿六歲的正式條文。教材例子與判定由專業人員處理。",
+      "sourceAudience": "本案限自閉症兒少與照顧者的身心障礙鑑定情境。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-disability-rights-act": {
+      "name": "身心障礙者權益保障法",
+      "originalTitle": "身心障礙者權益保障法",
+      "publisher": "全國法規資料庫",
+      "version": "現行條文，2026-11-24 查閱",
+      "description": "第 5 至 7 條規範功能、鑑定、需求評估與證明，第 14、15 條規範效期與重新鑑定。本案與明列自閉症的鑑定作業辦法及地方服務計畫併讀。",
+      "rights": "依臺灣《著作權法》第 9 條整理指定的法令或政府公文自有正文。",
+      "attribution": "全國法規資料庫，《身心障礙者權益保障法》（現行條文，2026-11-24 查閱）。星泊整理指定段落。",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050046",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "第 5 至 7 條規範功能、鑑定、需求評估與證明，第 14、15 條規範效期與重新鑑定。本案與明列自閉症的鑑定作業辦法及地方服務計畫併讀。",
+      "auditId": "S62",
+      "reviewScope": "第 5–7、14、15、50、51、58、71 條與自閉症兒少有關的制度正文。",
+      "currencyEvidence": "條文涵蓋不同障礙與年齡，實際服務及財務條件由承辦按方案確認。",
+      "sourceAudience": "本案限依法完成鑑定或考慮申請的自閉症兒少家庭。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-special-education-class-types": {
+      "name": "特殊教育法施行細則",
+      "originalTitle": "特殊教育法施行細則",
+      "publisher": "教育部",
+      "version": "現行條文，2026-11-24 查閱",
+      "description": "第 6 條分別說明分散式資源班、巡迴輔導班、集中式特殊教育班。搭配《特殊教育法》第 3 條的自閉症類別。",
+      "rights": "依臺灣《著作權法》第 9 條整理指定的法令或政府公文自有正文。",
+      "attribution": "教育部，《特殊教育法施行細則》（現行條文，2026-11-24 查閱）。星泊整理指定段落。",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009141",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "第 6 條分別說明分散式資源班、巡迴輔導班、集中式特殊教育班。搭配《特殊教育法》第 3 條的自閉症類別。",
+      "auditId": "S63",
+      "reviewScope": "第 6 條正式條文及其所依據的特教法第 13 條，限班型、就讀及支持方式。",
+      "currencyEvidence": "不同學段與縣市實際提供哪些班型，請向園校查詢。",
+      "sourceAudience": "依法取得特教支持的自閉症幼兒及高級中等以下學生。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "new-taipei-autism-family-services": {
+      "name": "新北市 115 年度身心障礙家庭照顧者支持服務計畫",
+      "originalTitle": "新北市政府社會局115年度辦理身心障礙者家庭照顧者支持服務計畫",
+      "publisher": "新北市政府社會局",
+      "version": "115 年度，2026-11-24 查閱",
+      "description": "計畫「陸、服務對象」「柒、辦理地點、方式與服務內容」明列證明條件、優先服務的自閉症及心智障礙者、家庭可詢問的支持服務。",
+      "rights": "依臺灣《著作權法》第 9 條整理指定的法令或政府公文自有正文。",
+      "attribution": "新北市政府社會局，《新北市政府社會局115年度辦理身心障礙者家庭照顧者支持服務計畫》（115 年度，2026-11-24 查閱）。星泊整理指定段落。",
+      "url": "https://www.sw.ntpc.gov.tw/uploaddowndoc?dis=download&file=download%2F202604011037370.pdf&filedisplay=115%E5%B9%B4%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99%E8%80%85%E5%AE%B6%E5%BA%AD%E7%85%A7%E9%A1%A7%E8%80%85%E6%94%AF%E6%8C%81%E6%9C%8D%E5%8B%99%E8%A8%88%E7%95%AB.pdf&flag=doc",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "計畫「陸、服務對象」「柒、辦理地點、方式與服務內容」明列證明條件、優先服務的自閉症及心智障礙者、家庭可詢問的支持服務。",
+      "auditId": "S64",
+      "reviewScope": "僅整理機關正式年度計畫正文第陸、柒節的對象、服務及查找方式。",
+      "currencyEvidence": "新北 115 年計畫作為查找範例，下一年度、其他縣市及個別資格另查。",
+      "sourceAudience": "實際居住新北市且領證的家庭，按計畫規定查詢支持。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-ombudsman-autism-insurance": {
+      "name": "監察院身心障礙者投保調查",
+      "originalTitle": "監察院 109 財調 0052 身心障礙者投保案調查報告",
+      "publisher": "監察院",
+      "version": "2020-10-20 審議",
+      "description": "調查事實與附表記錄自閉症家庭口頭勸退、未收到書面理由和曾就診等情形。",
+      "rights": "依臺灣《著作權法》第 9 條整理指定的法令或政府公文自有正文。",
+      "attribution": "監察院，《監察院 109 財調 0052 身心障礙者投保案調查報告》（2020-10-20 審議）。星泊整理指定段落。",
+      "url": "https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/69893",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "調查事實與附表記錄自閉症家庭口頭勸退、未收到書面理由和曾就診等情形。",
+      "auditId": "S65",
+      "reviewScope": "僅取調查報告中與自閉症投保有關的實務差距背景，保留年代與案例性質。",
+      "currencyEvidence": "歷史調查報告不能估算今日拒保比例或推論持證的單獨效果。排除家庭個資、逐段陳述和其他障礙類別的推論。",
+      "sourceAudience": "調查包含自閉症兒少家庭投保陳述，本案限相關情境。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-insurance-underwriting": {
+      "name": "金管會保險業招攬及核保理賠辦法",
+      "originalTitle": "保險業招攬及核保理賠辦法",
+      "publisher": "金融監督管理委員會",
+      "version": "2026-04-21 修正",
+      "description": "第 7 條第 1 項第 11 款禁止僅因身心障礙身分給予不公平待遇。監察院 109 財調 0052 將相應規定適用於自閉症家庭投保個案。",
+      "rights": "依臺灣《著作權法》第 9 條整理指定的法令或政府公文自有正文。",
+      "attribution": "金融監督管理委員會，《保險業招攬及核保理賠辦法》（2026-04-21 修正）。星泊整理指定段落。",
+      "url": "https://law.fsc.gov.tw/LawContent.aspx?id=FL006828",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "第 7 條第 1 項第 11 款禁止僅因身心障礙身分給予不公平待遇。監察院 109 財調 0052 將相應規定適用於自閉症家庭投保個案。",
+      "auditId": "S66",
+      "reviewScope": "第 7 條第 1 項第 11 款法令正文，搭配監察院案例與《保險法》第 64 條。",
+      "currencyEvidence": "主管機關現行條文代表核保規範，實際條件按商品及個別申請判斷。",
+      "sourceAudience": "考慮新投保或加保的自閉症兒少家庭，本文限身障相關核保規定。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "ophir-school-disclosure": {
+      "name": "自閉症學生的校園互動與揭露經驗回顧",
+      "originalTitle": "Mixed-Neurotype Interactions in Educational Settings and Autistic Students’ Mental Health: A Systematic Review of Qualitative Findings",
+      "publisher": "Review Journal of Autism and Developmental Disorders",
+      "authors": "Shachar Ophir、Einat Keren、Nitsan Almog、Yonat Rum",
+      "version": "2026-11-12 正式出版",
+      "description": "118 篇來源的質性回顧含自閉症學生對分享診斷、同儕關係及教師支持的不同經驗。",
+      "rights": "指定作者正文依 CC BY 4.0 由星泊以繁中整理。",
+      "attribution": "Shachar Ophir、Einat Keren、Nitsan Almog、Yonat Rum，《Mixed-Neurotype Interactions in Educational Settings and Autistic Students’ Mental Health: A Systematic Review of Qualitative Findings》（2026-11-12 正式出版）。星泊整理指定段落。",
+      "url": "https://link.springer.com/article/10.1007/s40489-026-00596-4",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scopeEvidence": "118 篇來源的質性回顧含自閉症學生對分享診斷、同儕關係及教師支持的不同經驗。",
+      "auditId": "S67",
+      "reviewScope": "Methods、Results 的 Disclosure of Autism Diagnosis、Teachers’ Scaffolding，以及討論的作者綜整。排除逐字引文、附表及第三方素材。",
+      "currencyEvidence": "國際質性回顧，揭露只是其中一個主題。能描述正反經驗，無法估算揭露風險或證明影響。",
+      "sourceAudience": "校園中的自閉症學生、同儕及教師，診斷揭露素材偏小學至高中。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://link.springer.com/article/10.1007/s40489-026-00596-4",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "mullally-child-school-experience": {
+      "name": "自閉症孩子怎麼看校園壓力與安全感",
+      "originalTitle": "Growing-up autistic: Sharing autistic children’s experiences and insights",
+      "publisher": "Autism",
+      "authors": "Sinéad L Mullally、Alice E Wood、Cherice C Edwards、Sophie E Connolly、Hannah Constable、Stuart Watson、Jacqui Rodgers、Kieran Rose、Nic King",
+      "version": "2026-05 卷期",
+      "description": "研究描述自閉症孩子感受到的過度刺激、未被傾聽與哪些人或環境讓自己感到安心。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Sinéad L Mullally、Alice E Wood、Cherice C Edwards、Sophie E Connolly、Hannah Constable、Stuart Watson、Jacqui Rodgers、Kieran Rose、Nic King，《Growing-up autistic: Sharing autistic children’s experiences and insights》（2026-05 卷期）。星泊整理指定段落。",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13087148/",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "研究描述自閉症孩子感受到的過度刺激、未被傾聽與哪些人或環境讓自己感到安心。",
+      "auditId": "S68",
+      "reviewScope": "Methods 的樣本、Results 的 Overwhelming Experiences、Unsafe People、Sanctuary 及 Discussion 限制。排除兒童引文、問卷及附圖。",
+      "currencyEvidence": "單一隊列的自陳資料，部分校園經驗不能套用所有孩子。未測量哪種環境調整更有效。",
+      "sourceAudience": "136 名 8–14 歲自閉症孩子的自陳資料。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13087148/",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "fox-primary-friendships": {
+      "name": "英國小學自閉症孩子的友誼經驗回顧",
+      "originalTitle": "Experiences of friendships among autistic children in UK schools: A qualitative meta-synthesis",
+      "publisher": "Neurodiversity",
+      "authors": "Laura Fox、Rosina Williams、Kathryn Asbury",
+      "version": "2024-08-22 線上出版",
+      "description": "六篇質性研究綜整自閉症孩子在小學裡的友誼，包含共同興趣、陪伴及環境限制。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Laura Fox、Rosina Williams、Kathryn Asbury，《Experiences of friendships among autistic children in UK schools: A qualitative meta-synthesis》（2024-08-22 線上出版）。星泊整理指定段落。",
+      "url": "https://journals.sagepub.com/doi/10.1177/27546330241272250",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "六篇質性研究綜整自閉症孩子在小學裡的友誼，包含共同興趣、陪伴及環境限制。",
+      "auditId": "S69",
+      "reviewScope": "Abstract、Methods、Results／Discussion 的作者綜整與限制。排除引文和量表。",
+      "currencyEvidence": "研究限英國小學的質性資料，孩子的友誼需要與理想形式各不相同。",
+      "sourceAudience": "英國小學場景的自閉症兒童，資料含孩子與身邊成人的觀點。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/27546330241272250",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "maclennan-preschool-sensory-anxiety": {
+      "name": "學前自閉症孩子的感官反應、不確定感與焦慮",
+      "originalTitle": "The relationship between sensory reactivity, intolerance of uncertainty and anxiety subtypes in preschool-age autistic children",
+      "publisher": "Autism",
+      "authors": "Keren MacLennan、Timothy Rossow、Teresa Tavassoli",
+      "version": "2021-05 線上，2021-11 卷期",
+      "description": "研究分析學前自閉症孩子的感官敏感、面對不確定的困擾及焦慮之間的關聯。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Keren MacLennan、Timothy Rossow、Teresa Tavassoli，《The relationship between sensory reactivity, intolerance of uncertainty and anxiety subtypes in preschool-age autistic children》（2021-05 線上，2021-11 卷期）。星泊整理指定段落。",
+      "url": "https://centaur.reading.ac.uk/98478/1/13623613211016110.pdf",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "研究分析學前自閉症孩子的感官敏感、面對不確定的困擾及焦慮之間的關聯。",
+      "auditId": "S70",
+      "reviewScope": "Abstract、Methods、Results、Discussion 限感官差異與不確定感的關聯及限制。排除測量題項與分數。",
+      "currencyEvidence": "小型橫斷研究只能說明關聯，沒有提供診斷規則或證實某個做法的效果。",
+      "sourceAudience": "54 名 3–5 歲自閉症幼兒，以照顧者回報及觀察衡量。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://centaur.reading.ac.uk/98478/1/13623613211016110.pdf",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "oneill-asd-assessment-experiences": {
+      "name": "自閉症評估過程中家長的經驗回顧",
+      "originalTitle": "Identifying autistic children: Priorities for research arising from a systematic review of parents’ experiences of the assessment process",
+      "publisher": "Autism",
+      "authors": "Sinead O’Neill、Grainne M O’Donnell",
+      "version": "2024-04-24 線上出版",
+      "description": "質性回顧整理家長在辨識、評估、得知結果及後續階段的需求，專業溝通是反覆出現的主題。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Sinead O’Neill、Grainne M O’Donnell，《Identifying autistic children: Priorities for research arising from a systematic review of parents’ experiences of the assessment process》（2024-04-24 線上出版）。星泊整理指定段落。",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11528925/",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "質性回顧整理家長在辨識、評估、得知結果及後續階段的需求，專業溝通是反覆出現的主題。",
+      "auditId": "S71",
+      "reviewScope": "以版權欄明列的 CC BY-NC 4.0 為準。只取作者對評估前、評估過程和評估後溝通的主題綜整及限制。",
+      "currencyEvidence": "各研究的制度不同，不能當成臺灣聯評程序的證據。",
+      "sourceAudience": "不同地區經歷自閉症診斷評估的家長。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11528925/",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "binns-preschool-slp": {
+      "name": "學前自閉症孩子的語言治療服務調查",
+      "originalTitle": "Current practices, supports, and challenges in speech-language pathology service provision for autistic preschoolers",
+      "publisher": "Autism & Developmental Language Impairments",
+      "authors": "Amanda V Binns、Barbara Jane Cunningham、Allison Andres、Janis Oram Cardy",
+      "version": "2022 正式出版",
+      "description": "調查顯示不同治療師的評估項目、親職參與方式與跨專業合作存在差異。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Amanda V Binns、Barbara Jane Cunningham、Allison Andres、Janis Oram Cardy，《Current practices, supports, and challenges in speech-language pathology service provision for autistic preschoolers》（2022 正式出版）。星泊整理指定段落。",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9620702/",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "調查顯示不同治療師的評估項目、親職參與方式與跨專業合作存在差異。",
+      "auditId": "S72",
+      "reviewScope": "Methods、Results 與 Discussion 限服務內容、評估、家長協作與研究限制，排除測驗、專有方案用語及操作。",
+      "currencyEvidence": "專業人員自陳的地區調查，沒有比較服務效果，制度不能套用臺灣。",
+      "sourceAudience": "加拿大安大略省 258 位語言治療師及相關服務人員回報學前自閉症服務。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9620702/",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "dewinter-autistic-sexuality-education": {
+      "name": "自閉症青少年的性教育與性別多樣性建議",
+      "originalTitle": "Short report: Recommendations for education, clinical practice, research, and policy on promoting well-being in autistic youth and adults through a positive focus on sexuality and gender diversity",
+      "publisher": "Autism",
+      "authors": "Jeroen Dewinter、Morénike Giwa Onaiwu、Maria L Massolo、Reid Caplan、Els Van Beneden、Nikki Brörmann、Eileen T Crehan、Lisa A Croen、Susan Faja、Dena L Gassner、Laura Graham Holmes、Cat Hughes、Morrigan Hunter、Monique Huysamen、Paola Jelonche、Meng-Chuan Lai、Ilse Noens、Heta Pukki、Mark A Stokes、John F Strang、Anna IR van der Miesen",
+      "version": "2024 卷期",
+      "description": "由自閉症當事人、研究人員及專業人士合作，提出優先教授可及性、同意、自主與支持的建議。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Jeroen Dewinter、Morénike Giwa Onaiwu、Maria L Massolo、Reid Caplan、Els Van Beneden、Nikki Brörmann、Eileen T Crehan、Lisa A Croen、Susan Faja、Dena L Gassner、Laura Graham Holmes、Cat Hughes、Morrigan Hunter、Monique Huysamen、Paola Jelonche、Meng-Chuan Lai、Ilse Noens、Heta Pukki、Mark A Stokes、John F Strang、Anna IR van der Miesen，《Short report: Recommendations for education, clinical practice, research, and policy on promoting well-being in autistic youth and adults through a positive focus on sexuality and gender diversity》（2024 卷期）。星泊整理指定段落。",
+      "url": "https://journals.sagepub.com/doi/abs/10.1177/13623613231188349",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "由自閉症當事人、研究人員及專業人士合作，提出優先教授可及性、同意、自主與支持的建議。",
+      "auditId": "S73",
+      "reviewScope": "教育建議中針對自閉症青少年的同意、個別需求與可及性。排除成人及醫療段落。",
+      "currencyEvidence": "合作工作小組的建議，並未試驗特定教材效果。",
+      "sourceAudience": "自閉症青少年及成人，本文限青少年教育應用。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://journals.sagepub.com/doi/abs/10.1177/13623613231188349",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "mukherjee-autistic-teen-family-support": {
+      "name": "自閉症青少年家庭重新尋求支持的經驗",
+      "originalTitle": "‘Adolescence kicked in . . . and you need help again’: A qualitative study of the experiences of parents of autistic teenagers with mental health difficulties or behaviours that challenge",
+      "publisher": "Autism",
+      "authors": "Suzanne Mukherjee、Bryony Beresford",
+      "version": "2025-09-01 線上出版",
+      "description": "訪談家長描述進入青春期後，家庭需要不同的資訊、支持與分工。",
+      "rights": "指定作者正文依 CC BY-NC 4.0 由星泊以繁中整理。本整理限非商業分享。",
+      "attribution": "Suzanne Mukherjee、Bryony Beresford，《‘Adolescence kicked in . . . and you need help again’: A qualitative study of the experiences of parents of autistic teenagers with mental health difficulties or behaviours that challenge》（2025-09-01 線上出版）。星泊整理指定段落。",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531384/",
+      "licenseName": "CC BY-NC 4.0",
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "scopeEvidence": "訪談家長描述進入青春期後，家庭需要不同的資訊、支持與分工。",
+      "auditId": "S74",
+      "reviewScope": "Methods、Results／Discussion 作者對家長支持需求及限制的敘述，排除個人引文、危機處理及服務制度推論。",
+      "currencyEvidence": "小型質性研究呈現家長視角，保留青少年自身觀點尚不足的限制。",
+      "sourceAudience": "英國有自閉症青少年且有心理健康或行為支持需要的家長。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "noncommercial-adaptation-permitted",
+      "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531384/",
+      "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "ng-affiliate-stigma-family": {
+      "name": "學前自閉症家庭面對連帶污名的研究",
+      "originalTitle": "The Relationship between Affiliate Stigma in Parents of Children with Autism Spectrum Disorder and Their Children’s Activity Participation",
+      "publisher": "International Journal of Environmental Research and Public Health",
+      "authors": "Carmen K. M. Ng、Stephen H. F. Lam、Sally T. K. Tsang、Cheong M. C. Yuen、Chi-Wen Chien",
+      "version": "2020 正式出版",
+      "description": "研究以自閉症幼兒為對象，探討家長的連帶污名與孩子在家、幼兒園和社區活動參與的關聯。",
+      "rights": "指定作者正文依 CC BY 4.0 由星泊以繁中整理。",
+      "attribution": "Carmen K. M. Ng、Stephen H. F. Lam、Sally T. K. Tsang、Cheong M. C. Yuen、Chi-Wen Chien，《The Relationship between Affiliate Stigma in Parents of Children with Autism Spectrum Disorder and Their Children’s Activity Participation》（2020 正式出版）。星泊整理指定段落。",
+      "url": "https://www.mdpi.com/1660-4601/17/5/1799",
+      "licenseName": "CC BY 4.0",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "scopeEvidence": "研究以自閉症幼兒為對象，探討家長的連帶污名與孩子在家、幼兒園和社區活動參與的關聯。",
+      "auditId": "S75",
+      "reviewScope": "第 2.1、4、5 節限樣本、活動參與關聯與研究限制，排除量表與資料表。",
+      "currencyEvidence": "便利樣本，調查無法區分因果，也未比較申請證明前後。",
+      "sourceAudience": "香港 63 位家長，孩子 2–6 歲。",
+      "checked": "2026-11-24",
+      "scope": "asd",
+      "scopeChecked": "2026-11-24",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.mdpi.com/1660-4601/17/5/1799",
       "reviewChecked": "2026-11-24",
       "currencyStatus": "usable"
     }
@@ -955,8 +1424,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合對聲音有感官不適的自閉症孩子；以孩子對聲音與位置的回饋調整環境及休息安排。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "在一項請孩子自己描述感官經驗的研究中，聲音是最常被提到的感官壓力。可以請孩子說是哪種聲音、什麼時候最難受，以及他想在哪裡休息。",
+        "limit": "這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
+      },
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "第一個主題中作者對聽覺與擁擠情境的綜整。"
+        }
+      ]
     },
     {
       "id": "pause",
@@ -997,8 +1476,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合因感官環境或情境要求而感到負荷過大的自閉症孩子；先減少負荷，再依孩子接受的方式陪伴。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "有些受訪孩子很在意何處能安靜休息，以及在那裡能不能被理解。約定暫停方式時，可以一起決定去哪裡、怎麼回來、需不需要有人陪。",
+        "limit": "這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
+      },
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "作者對安全空間、可信任的成人和自主調節的整理。"
+        }
+      ]
     },
     {
       "id": "bedtime",
@@ -1121,8 +1610,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合為自閉症孩子討論家校支持；共同記錄孩子的溝通、感官與日常參與需求，並納入孩子自己的表達。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "孩子可能覺得某位老師能幫忙，也可能在別的時段擔心不被理解。畫出校園日常時，可以讓孩子標出覺得安心的地方和遇到困難時願意找的人。",
+        "limit": "這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
+      },
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "作者彙整的校園負荷、同儕及成人互動當事人經驗。"
+        }
+      ]
     },
     {
       "id": "plan-change",
@@ -1164,8 +1663,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合在預期改變時需要額外準備的自閉症孩子；先確認孩子在意的變動，再提供可理解、能回看的提示。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "一項 3–5 歲自閉症孩子的研究觀察到部分感官反應與焦慮、不確定感的關聯。遇到行程變動，可以同時問孩子哪一部分不清楚，以及新環境有什麼讓身體不舒服。",
+        "limit": "這是學前樣本的單次觀察研究。無法推定先後因果，也不代表每個怕臨時改行程的孩子都有相同原因。"
+      },
+      "additionalSources": [
+        {
+          "id": "maclennan-preschool-sensory-anxiety",
+          "section": "方法、相關結果、作者討論及因果限制。"
+        }
+      ]
     },
     {
       "id": "wait-for-answer",
@@ -1248,8 +1757,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合對光線感到不適的自閉症孩子；用孩子對亮度、位置與反光的回饋決定要調整什麼。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "受訪孩子提到光和聲音可能同時造成負荷。若孩子在特定位置坐不住，可以一次只問或調整一個因素，記下他的感受。",
+        "limit": "這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
+      },
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "第一個主題中作者對視聽刺激與日常環境的綜整。"
+        }
+      ]
     },
     {
       "id": "morning-exit",
@@ -1416,8 +1935,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合為自閉症孩子辨認個別壓力訊號；結合當時的感官環境、活動與溝通需求觀察，避免只憑單一動作下結論。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "有受訪孩子描述在學校努力藏起不舒服，回家才需要更長時間休息。老師看到的外在行為與孩子承受的壓力，可能有時間差。",
+        "limit": "這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
+      },
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "第二個主題中作者對掩飾特質與累積壓力的綜整。"
+        }
+      ]
     },
     {
       "id": "after-hard-moment",
@@ -1500,8 +2029,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合面對換老師、教室或學校的自閉症孩子；依孩子的感官、溝通與可預期性需求安排準備。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "有孩子把熟悉、反應可預期的成人視為安全來源。換教室或班級時，可以先確認新舊場域各有誰知道孩子的求助方式。",
+        "limit": "這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
+      },
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "作者彙整的安全感、可尋求支持的成人與環境。"
+        }
+      ]
     },
     {
       "id": "school-adjustment",
@@ -1542,14 +2081,24 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "asdFocus": "適合為自閉症孩子規劃個別學校支持；用可觀察的溝通、感官或參與需求，與老師討論調整及回看方式。",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-19",
-      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "依來源指定主文核對；案例、觀察問題與年齡分組為編輯整理，不是原文驗證過的療程。",
+      "evidence": {
+        "summary": "大型質性回顧發現，自閉症學生談到校園支持時，在意老師是否理解他們，以及調整會怎麼被同學看待。可以和孩子一起確認，哪種做法既能使用，也讓他感到自在。",
+        "limit": "質性回顧的用途是整理學生感受，各地學校情境不同。"
+      },
+      "additionalSources": [
+        {
+          "id": "ophir-school-disclosure",
+          "section": "回顧中學生對同儕、師生關係及調整的不同經驗。"
+        }
+      ]
     },
     {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-20",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
       "id": "comfortable-friendships",
       "category": "communication",
@@ -1592,18 +2141,24 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "第1–2頁自有主文，聚焦舒服的互動、共同活動、尊重獨處偏好與健康關係。下列生活安排及問題為編輯整理。",
       "evidence": {
-        "summary": "Positive Partnerships提醒，部分自閉症孩子喜歡聊天或文字互動，部分喜歡共同活動；也有人偏好獨處。支持應尊重個人的選擇。",
-        "limit": "這份家長資料介紹友誼支持觀點，沒有比較各方法的效果。提到線上友誼不代表任何平台、遊戲或陌生人互動都適合孩子。"
+        "summary": "Positive Partnerships提醒，部分自閉症孩子喜歡聊天或文字互動，部分喜歡共同活動；也有人偏好獨處。支持應尊重個人的選擇。 英國小學質性研究回顧發現，共同興趣與一起玩，對部分自閉症孩子是開始交朋友的契機。可以問孩子喜歡跟誰一起做什麼，以及想維持怎樣的相處頻率。",
+        "limit": "這份家長資料介紹友誼支持觀點，沒有比較各方法的效果。提到線上友誼不代表任何平台、遊戲或陌生人互動都適合孩子。 該回顧限英國小學。用來理解孩子的偏好，無法推定相同做法在青少年或其他校制有同樣結果。"
       },
       "observe": "留意孩子是否主動想再聯絡、能表達不同意見，以及互動後需要多少休息。朋友數量不適合作為這篇記錄的唯一目標。",
       "example": "原創例子：孩子不想去熱鬧的生日會，卻願意和同學傳自己畫的公車路線。家長先聽孩子說喜歡這種交流的原因，再和孩子討論是否想安排一次一起畫圖的活動。",
-      "adjust": "若孩子不想參加，先記下是對活動、地點、對象還是時間有顧慮，讓孩子選擇是否再試。若互動讓孩子感到被貶低或不被尊重，和孩子討論需要什麼協助。"
+      "adjust": "若孩子不想參加，先記下是對活動、地點、對象還是時間有顧慮，讓孩子選擇是否再試。若互動讓孩子感到被貶低或不被尊重，和孩子討論需要什麼協助。",
+      "additionalSources": [
+        {
+          "id": "fox-primary-friendships",
+          "section": "小學情境下，作者綜整的共同興趣、遊戲與對友誼的理解。"
+        }
+      ]
     },
     {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-20",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
       "id": "sensory-context-notes",
       "category": "sensory",
@@ -1646,12 +2201,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "Sensory Tool單頁的觀察／可能策略欄位。觀察與猜測的寫法、時間地點及居家例子由編輯另行整理；不重製原表圖樣。",
       "evidence": {
-        "summary": "Positive Partnerships的Sensory Tool把不同感官的觀察和可能策略分欄，提供與支持者討論的架構。",
-        "limit": "空白工具本身沒有驗證特定調整的效果。這裡的筆記用於整理經驗，不能據此判定感官診斷或推算療程。"
+        "summary": "Positive Partnerships的Sensory Tool把不同感官的觀察和可能策略分欄，提供與支持者討論的架構。 有些受訪孩子描述多種刺激同時出現時的負荷，也有人說擁擠與疲累會讓外出更難。記錄時可另外留一欄給孩子補充當天的身體感受。",
+        "limit": "空白工具本身沒有驗證特定調整的效果。這裡的筆記用於整理經驗，不能據此判定感官診斷或推算療程。 這是英國 8–14 歲自閉症孩子的自述，適用於理解當事人經驗。"
       },
       "observe": "同一情境裡，孩子的表達、周圍條件及調整後反應是否不同？尚未確認的項目可以直接寫「不知道」，保留孩子自己的說法。",
       "example": "原創例子：週六在公廁，烘手機啟動後孩子捂住耳朵走向門口。家長記下當時設備很多台同時運轉，孩子說「太大聲」，離開後願意改用紙巾。這一筆只描述當次經驗。",
-      "adjust": "孩子不想重談時，先保存大人的觀察並標明尚未向孩子確認。不要為了補齊筆記，刻意重現讓孩子不舒服的刺激；需要進一步釐清時，把紀錄帶給熟悉孩子的專業人員。"
+      "adjust": "孩子不想重談時，先保存大人的觀察並標明尚未向孩子確認。不要為了補齊筆記，刻意重現讓孩子不舒服的刺激；需要進一步釐清時，把紀錄帶給熟悉孩子的專業人員。",
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "第一個主題中作者彙整的感官負荷與不同場域。"
+        }
+      ]
     },
     {
       "status": "trial",
@@ -1802,9 +2363,9 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "訪談研究的結果與限制，聚焦較早知道診斷、自我理解與支持。",
       "evidence": {
-        "summary": "Vanaken 等訪談 18 位比利時自閉症青少年。多數回顧時偏好較早知道診斷，以便理解自己及獲得合適的支持。也有人對時機感受不同，或擔心別人知道後會改變對待自己的方式。",
-        "limit": "兩份研究分別是青少年訪談與醫師問卷。前者的招募條件限制了代表性，後者反映 2015 年日本醫療情境。這些結果適合用來準備對話，孩子需要的支持可以在對話過程中持續提供。",
-        "contrast": "Sato 等記錄日本醫師的觀點。受訪醫師在考量告知時機時，常重視家庭對診斷的理解、醫師和家庭的關係，以及是否有足夠時間解釋。"
+        "summary": "Vanaken 等訪談 18 位比利時自閉症青少年。多數回顧時偏好較早知道診斷，以便理解自己及獲得合適的支持。也有人對時機感受不同，或擔心別人知道後會改變對待自己的方式。 英國有些自閉症家長從自己的經驗進入親子對話。臺灣受訪青少年也有人用診斷理解自己，並依對象與情況選擇如何分享。",
+        "limit": "兩份研究分別是青少年訪談與醫師問卷。前者的招募條件限制了代表性，後者反映 2015 年日本醫療情境。這些結果適合用來準備對話，孩子需要的支持可以在對話過程中持續提供。 英國問卷採機會抽樣，部分參與者為自我認同。臺灣研究訪談八位 14–18 歲青少年。",
+        "contrast": "Sato 等記錄日本醫師的觀點。受訪醫師在考量告知時機時，常重視家庭對診斷的理解、醫師和家庭的關係，以及是否有足夠時間解釋。 家長看到的是親子談話如何進行。青少年的擔心則可能在談話後才出現，例如擔心同學有不同看法。"
       },
       "observe": "孩子最在意名稱、生活上能怎麼得到幫助，還是誰會知道？隔一段時間留意，孩子有沒有帶著新的問題回來。",
       "example": "孩子第一次聽到自閉症時，只想知道能不能在午休借安靜的座位。家長就和他先談這項支持，約好由誰開口，評估報告留待孩子想看時再一起翻。",
@@ -1812,12 +2373,20 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "這篇以青少年談自身診斷的情境編入 13–17 歲。訪談者當時 16–18 歲，回顧自己過去的經驗。目錄年齡是閱讀情境，告知時機仍要看孩子的問題與溝通方式。",
-      "reviewChecked": "2026-11-21",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
       "additionalSources": [
         {
           "id": "sato-diagnosis",
           "section": "以 2015 年問卷及研究限制呈現醫師的告知考量。"
+        },
+        {
+          "id": "crane-autistic-parents-disclosure",
+          "section": "方法與表 1、作者綜整的家長觀點和研究限制。"
+        },
+        {
+          "id": "liu-taiwan-youth-diagnosis",
+          "section": "臺灣青少年訪談中的自我理解、校園求助及揭露取捨。"
         }
       ]
     },
@@ -1863,8 +2432,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "使用回顧中可辨識為自閉症兒少情境的支援與家庭互動主題。",
       "evidence": {
-        "summary": "Li 等的回顧收錄家庭從親友得到接送、照顧分擔與情緒支持的經驗，也記載親友誤解孩子或家長時，原本想幫忙的互動可能變成負擔。",
-        "limit": "回顧中的觀點多由家長或祖父母提供。孩子對這次交接的感受，仍要用孩子能表達的方式直接了解。"
+        "summary": "Li 等的回顧收錄家庭從親友得到接送、照顧分擔與情緒支持的經驗，也記載親友誤解孩子或家長時，原本想幫忙的互動可能變成負擔。 部分家長描述，孩子長大後需求會變，但服務資訊和自己能分配的時間未必跟著變。可以在學期、接送或作息轉變時，重新問家人哪一段能分擔。",
+        "limit": "回顧中的觀點多由家長或祖父母提供。孩子對這次交接的感受，仍要用孩子能表達的方式直接了解。 該訪談限英國自閉症青少年的家長觀點，服務與各地制度不同。"
       },
       "observe": "你得到的休息、孩子對安排的感受，以及親友實際能做的範圍，哪一項需要調整？",
       "example": "阿姨想在週六帶孩子出門。孩子選擇留在熟悉的家，和阿姨畫圖。家長交代孩子怎麼說想休息，並約好午餐前回家接手。",
@@ -1872,8 +2441,14 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "這篇用目錄的 2–17 歲涵蓋幼兒到青少年的家庭分工情境。引用限於可辨識的自閉症兒少經驗，分工依孩子和照顧者的實際需要安排。",
-      "reviewChecked": "2026-11-21",
-      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "mukherjee-autistic-teen-family-support",
+          "section": "英國自閉症青少年家長對持續及重新尋求支持的訪談。"
+        }
+      ]
     },
     {
       "id": "choose-parent-support",
@@ -1918,8 +2493,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "質性回顧的作者綜整與限制，聚焦家長同儕支持。",
       "evidence": {
-        "summary": "Gao 與 Drani 的回顧發現，家長從同儕得到理解和經驗交流，也有人遇到負面回饋或彼此說法不一致。",
-        "limit": "前者描述家長的生活經驗，後者評估一項特定方案。試驗摘要的主要分析採可用資料，有缺漏，參與者來自英國特定招募地區。選擇團體時，以帶領方式、參與條件和自己的需要來判斷。",
+        "summary": "Gao 與 Drani 的回顧發現，家長從同儕得到理解和經驗交流，也有人遇到負面回饋或彼此說法不一致。 有自閉症青少年的家長描述，孩子長大後想再找懂這個階段的支持。詢問團體時，可以確認是否有家庭正在面對相近的學段或生活轉變。",
+        "limit": "前者描述家長的生活經驗，後者評估一項特定方案。試驗摘要的主要分析採可用資料，有缺漏，參與者來自英國特定招募地區。選擇團體時，以帶領方式、參與條件和自己的需要來判斷。 英國質性訪談可呈現家長經驗，沒有比較不同團體的效果。",
         "contrast": "Leadbitter 等的英國試驗摘要報告，一項為近期確診孩子照顧者設計的專業線上團體方案，在 52 週評估時，照顧者的心理健康量表結果優於對照組。"
       },
       "observe": "團體是否尊重你和孩子的做法與資料？遇到不同觀點時，是否能討論適用的情境？",
@@ -1928,12 +2503,16 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "這篇以 2–17 歲孩子的照顧者為目錄受眾。支持團體的參與條件由各團體訂定，研究也各有自己的納入年齡。",
-      "reviewChecked": "2026-11-21",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
       "additionalSources": [
         {
           "id": "reach-asd-summary",
           "section": "僅用機構所收錄的作者摘要，介紹特定方案的研究設計、主要結果和限制。"
+        },
+        {
+          "id": "mukherjee-autistic-teen-family-support",
+          "section": "作者整理的支持管道、不同時期的需求及經驗。"
         }
       ]
     },
@@ -1980,8 +2559,9 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "使用作者對遠距生活技能支持的研究背景及成果分領域的限制。記錄問題是編輯示範。",
       "evidence": {
-        "summary": "Clarke 等回顧了包含如廁在內的遠距生活技能支持研究。有些研究把多種生活技能合併計算，讓個別如廁成果難以判讀。",
-        "limit": "可把這篇當作準備諮詢的提問單。具體如廁訓練、身體不適和支持方式，宜按孩子的情況與專業人員討論。"
+        "summary": "Clarke 等回顧了包含如廁在內的遠距生活技能支持研究。有些研究把多種生活技能合併計算，讓個別如廁成果難以判讀。 Little 等的初步研究讓家庭接觸遠距專業支持與教材。有回饋的家庭對遠距教練的可接受性高，實際使用教材的情況並不一致。",
+        "limit": "可把這篇當作準備諮詢的提問單。具體如廁訓練、身體不適和支持方式，宜按孩子的情況與專業人員討論。 研究沒有對照組，參與及完成情形有差異，未確定長期效果。",
+        "contrast": "喜歡與專業人員一起檢視生活安排，和願意自行使用教材，是兩件可分別詢問的事。"
       },
       "observe": "孩子在哪些地方、哪些步驟比較自在？把跨場合的差異、孩子能自己完成的步驟，以及最常需要協助的地方一起記下。",
       "example": "孩子在家能進廁所，在學校一靠近烘手機就轉身。家長把兩種環境及孩子捂耳的反應寫下，和老師、專業人員一起釐清聲音、房間位置與溝通方式。",
@@ -1989,8 +2569,14 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "本篇的記錄例子以 2–12 歲生活情境整理。回顧涵蓋的年齡與技能各異，請依孩子目前的如廁方式與支持需求使用。",
-      "reviewChecked": "2026-11-21",
-      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "little-telehealth-toileting",
+          "section": "方法、作者結果與討論，限遠距求助形式及限制。"
+        }
+      ]
     },
     {
       "id": "boys-puberty-privacy",
@@ -2033,8 +2619,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "第 3–5、9、15–17、22 頁自有教育文字，聚焦用詞、青春期身體變化與隱私。",
       "evidence": {
-        "summary": "澳洲 Student Wellbeing Hub 的自閉症學生教材建議使用清楚的身體詞彙，並配合學生的發展階段和溝通方式談隱私。",
-        "limit": "教材供教師規劃課堂，可作家庭對話的起點。孩子實際在意哪些身體變化、希望誰幫忙，仍需一起確認。"
+        "summary": "澳洲 Student Wellbeing Hub 的自閉症學生教材建議使用清楚的身體詞彙，並配合學生的發展階段和溝通方式談隱私。 專家和自閉症當事人的討論提醒，性教育包含私密感受、同意與求助。談隱私時，也可以由孩子挑選他想問問題的方式與願意信任的大人。",
+        "limit": "教材供教師規劃課堂，可作家庭對話的起點。孩子實際在意哪些身體變化、希望誰幫忙，仍需一起確認。 來源談自閉症青少年的通用性教育。這裡只補充隱私及自主，男孩青春期的身體準備依個別發展。"
       },
       "observe": "孩子比較願意用什麼詞、用說還是用寫？突然出現身體變化時，他知道自己可以在哪裡求助嗎？",
       "example": "孩子用訊息問「身體有時突然有變化怎麼辦」。家長先在孩子選的地方回答，和他約好在學校可以用同一句求助話，讓老師知道需要私下談。",
@@ -2042,10 +2628,16 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "9–12 歲是目錄的年齡分組。教材面向澳洲五、六年級，實際以孩子目前的身體變化、理解方式與生活情境為準。",
-      "reviewChecked": "2026-11-21",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
       "genderTags": [
         "男"
+      ],
+      "additionalSources": [
+        {
+          "id": "dewinter-autistic-sexuality-education",
+          "section": "作者共同討論的隱私、自主與性教育需求。"
+        }
       ]
     },
     {
@@ -2157,8 +2749,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "第 15–17、20 頁自有正文，聚焦私人界線、照顧協助與身體接觸的同意。",
       "evidence": {
-        "summary": "澳洲自閉症學生教師教材用牽手等例子談雙方的同意，也把需要照顧協助或有立即危險的情況另外說明。",
-        "limit": "家庭練習可以從熟悉的小事開始。孩子需要求助時，讓他知道哪位信任的大人能聽他說，並尊重他想用什麼方式表達。"
+        "summary": "澳洲自閉症學生教師教材用牽手等例子談雙方的同意，也把需要照顧協助或有立即危險的情況另外說明。 自閉症與性教育的專家與當事人討論建議，把同意和自主教成可練習的生活選擇。可以讓孩子同時練習說出自己要停，以及聽到對方說停後怎麼做。",
+        "limit": "家庭練習可以從熟悉的小事開始。孩子需要求助時，讓他知道哪位信任的大人能聽他說，並尊重他想用什麼方式表達。 這是專家和自閉症當事人參與的討論報告，並未比較教材或課程成效。"
       },
       "observe": "孩子會不會只在練習時說「不要」？下一次有親友在場時，大人有沒有真的接受他的選擇？",
       "example": "外婆問「可以抱你嗎？」孩子把手放在身後。家長先請大家留一點距離，再讓孩子從揮手、擊掌或不接觸三種方式自己選。",
@@ -2166,8 +2758,14 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "9–12 歲是目錄的年齡分組。教材面向澳洲五、六年級，實際以孩子目前的身體變化、理解方式與生活情境為準。",
-      "reviewChecked": "2026-11-21",
-      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。"
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
+      "additionalSources": [
+        {
+          "id": "dewinter-autistic-sexuality-education",
+          "section": "作者共同討論的自主、同意及按需要調整性教育。"
+        }
+      ]
     },
     {
       "id": "screen-stop",
@@ -2211,9 +2809,9 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "開普敦家長訪談的內容管理、收尾準備與研究限制。",
       "evidence": {
-        "summary": "Ebrahim 等訪談七位家長，家長描述過事先提醒結束、管理可以看的內容等不同做法。",
-        "limit": "訪談提供家庭經驗，轉換手冊則提供按孩子反應調整提示的做法。可用這些資訊選擇收尾方式，研究沒有比較所有方式的成效。",
-        "contrast": "Positive Partnerships 的轉換資料提醒，倒數或計時提示是否合適，要看孩子是更安心還是更焦慮。"
+        "summary": "Ebrahim 等訪談七位家長，家長描述過事先提醒結束、管理可以看的內容等不同做法。 Mayer 等邀請專家整理自閉症兒少使用螢幕的建議，部分做法在多輪調查後仍未達共識。",
+        "limit": "訪談提供家庭經驗，轉換手冊則提供按孩子反應調整提示的做法。可用這些資訊選擇收尾方式，研究沒有比較所有方式的成效。 專家是否達成共識，無法用來判定某一種收尾方式的效果。",
+        "contrast": "Positive Partnerships 的轉換資料提醒，倒數或計時提示是否合適，要看孩子是更安心還是更焦慮。 家長訪談描述家庭實際如何使用螢幕。專家調查對把螢幕當獎勵等安排出現分歧，兩者能回答的問題不同。"
       },
       "observe": "孩子卡在提醒看不懂、想先存好進度，還是停下後不知道接下來做什麼？記下哪一種提示讓孩子更容易跟你確認。",
       "example": "晚餐前孩子在平板上畫圖。家長先說「這張圖存好就到餐桌」，給孩子自己按下儲存的機會，再指一下餐桌的圖卡。",
@@ -2221,12 +2819,16 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "訪談中的孩子實際為 2 歲 10 個月至 7 歲 11 個月。目錄以 2–5 和 6–8 歲兩個年齡帶標示，請依孩子理解提示的方式選用例子。",
-      "reviewChecked": "2026-11-21",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
       "additionalSources": [
         {
           "id": "pp-transitions",
           "section": "採用個別化提示與倒數視孩子反應調整的轉換建議。"
+        },
+        {
+          "id": "mayer-digital-citizenship",
+          "section": "方法、第二輪專家調查的未達共識事項及局限。"
         }
       ]
     },
@@ -2274,8 +2876,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "小學與中學缺席研究的種類、環境情境及限制，供親師討論背景。",
       "evidence": {
-        "summary": "Nordin 等的範疇回顧把多種上學缺席情境分開整理，並指出各研究的定義與介入差異大，適合用來理解有哪些問題要再釐清。",
-        "limit": "範疇回顧沒有評讀各研究品質。訪談呈現特定地區和受訪者的經驗，未包含原排除學校的教職員。回到孩子目前的安全、壓力和支持需求，與學校共議下一步。",
+        "summary": "Nordin 等的範疇回顧把多種上學缺席情境分開整理，並指出各研究的定義與介入差異大，適合用來理解有哪些問題要再釐清。 請孩子描述自己的日常時，有人提到聲音和擁擠，也有人著重於成人是否相信自己真的不舒服。這些可成為家長和學校對話的不同線索。",
+        "limit": "範疇回顧沒有評讀各研究品質。訪談呈現特定地區和受訪者的經驗，未包含原排除學校的教職員。回到孩子目前的安全、壓力和支持需求，與學校共議下一步。 這份孩子自述補充校園感受，沒有評估它們是否造成缺席，也沒有比較改善缺席的做法。",
         "contrast": "Gray 等的訪談補上部分英格蘭青少年感受到的感官、人際與課業壓力，以及家長和支持者注意到的環境與支援問題。"
       },
       "observe": "不同時間和場合有什麼差異？孩子和老師對同一個安排的感受是否一致？除了有沒有到校，也可以看孩子能否安心進入活動或求助。",
@@ -2284,12 +2886,16 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "範疇回顧涵蓋小學與中學，目錄以 6–17 歲整理親師情境。青少年訪談的例子限於表列 13–17 歲受訪者的背景。",
-      "reviewChecked": "2026-11-21",
+      "reviewChecked": "2026-11-24",
       "reviewScope": "研究或教材觀點依核准段落整理。行動建議、提問與例子是本指南的生活情境示範。",
       "additionalSources": [
         {
           "id": "gray-attendance",
           "section": "訪談樣本、校園情境和研究限制。青少年年齡依表 1 採 13–17 歲，正文敘述的年齡範圍與表列不一致。"
+        },
+        {
+          "id": "mullally-child-school-experience",
+          "section": "孩子描寫壓力、擁擠、受理解與安全感的作者主題整理。"
         }
       ]
     },
@@ -2335,8 +2941,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "院方聯評簡介及服務流程，限多專業評估、結果解說、後續療育與資源轉介。",
       "evidence": {
-        "summary": "高雄市立聯合醫院的說明呈現一個院方例子。團隊按孩子狀況安排評估，再說明結果與後續方向。",
-        "limit": "實際掛號、轉介與候評方式請向準備就診的院所確認。本文的觀察問題和示例由星泊整理。"
+        "summary": "高雄市立聯合醫院的說明呈現一個院方例子。團隊按孩子狀況安排評估，再說明結果與後續方向。 家長經驗回顧指出，評估時除了日期和文件，家長也需要知道流程在做什麼。第一次聯絡時，可以問清楚等候期間由誰說明下一步及可取得哪些支持。",
+        "limit": "實際掛號、轉介與候評方式請向準備就診的院所確認。本文的觀察問題和示例由星泊整理。 研究整理不同國家家庭的經驗，臺灣的受理方式與候診期仍應向實際窗口確認。"
       },
       "observe": "孩子想請你幫忙時會做什麼？在熟悉、安靜或有準備時間的情況下，表達方式有沒有變化？這些對照可以和醫師一起看。",
       "example": "家長發現孩子在托育處需要幫忙時常拉著老師走，在家卻會直接把打不開的盒子拿給大人。家長把兩個情境記在手機上，回診時請醫師一起了解差異。",
@@ -2345,7 +2951,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageBasis": "editorial-context",
       "ageNote": "學前早療查找情境的參考分組。院方未訂數字適齡，實際服務對象與安排請向院方確認。",
       "reviewChecked": "2026-11-24",
-      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。"
+      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。",
+      "additionalSources": [
+        {
+          "id": "oneill-asd-assessment-experiences",
+          "section": "結果中評估流程、等待與專業溝通的家長觀點。"
+        }
+      ]
     },
     {
       "id": "early-intervention-assessment-report",
@@ -2390,8 +3002,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "院方聯評簡介及服務流程第 3–5 點，作為評估後回診解說與後續安排的服務背景。會前問題與例子由星泊整理。",
       "evidence": {
-        "summary": "院方聯評流程包括依個別需要安排評估、由不同專業討論，以及回診說明結果與後續資源。",
-        "limit": "每個孩子的報告內容、診斷與療育建議都由原評估團隊說明。本文提供的是準備對話的提問。"
+        "summary": "院方聯評流程包括依個別需要安排評估、由不同專業討論，以及回診說明結果與後續資源。 家長經驗回顧顯示，理解評估和知道後續可以找誰，都是家長在意的事。帶回報告前可以試著用自己的話說出下一步，請專業人員確認是否理解一致。",
+        "limit": "每個孩子的報告內容、診斷與療育建議都由原評估團隊說明。本文提供的是準備對話的提問。 這是各地家庭的經驗統整，不能據此推算在地服務或候診時間。"
       },
       "observe": "先挑一個想改善的日常情境。記下孩子怎麼表達、誰聽得懂，以及大人改變做法後有什麼不同。",
       "example": "家長看完報告仍不知道怎麼幫孩子在托育處求助。回診時，家長描述孩子在家常用動作示意，和團隊討論能不能先讓所有大人都認得同一個求助手勢。",
@@ -2400,7 +3012,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageBasis": "editorial-context",
       "ageNote": "學前早療查找情境的參考分組。院方未訂數字適齡，實際服務對象與安排請向院方確認。",
       "reviewChecked": "2026-11-24",
-      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。"
+      "reviewScope": "依核准範圍整理 ASD 家長面對的流程。提問、觀察重點與生活例子是星泊的編輯示例。",
+      "additionalSources": [
+        {
+          "id": "oneill-asd-assessment-experiences",
+          "section": "結果中診斷回饋、書面資訊及後續支持需求。"
+        }
+      ]
     },
     {
       "id": "early-intervention-subsidy",
@@ -2497,8 +3115,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "第 2.3 節樣本及第 3.1、3.2 節作者對時間安排、個別化及遊戲互動經驗的綜整。",
       "evidence": {
-        "summary": "丹麥訪談中的部分家長覺得，把活動放進家庭日常後更能享受親子互動。同一項研究中，家長也提到時間難找，甚至有人仍覺得有些做法很難持續。",
-        "limit": "這些是 10 個已參與 PACT 的家庭所回報的經驗。你的居家做法可依孩子、家庭和治療師共同討論的目標調整。"
+        "summary": "丹麥訪談中的部分家長覺得，把活動放進家庭日常後更能享受親子互動。同一項研究中，家長也提到時間難找，甚至有人仍覺得有些做法很難持續。 安大略省的服務調查記錄了臨床工作者使用多種形式、安排不同程度的照顧者參與。家長可以告訴治療師哪一段日常已有餘裕，並問能否一起試過再帶回家。",
+        "limit": "這些是 10 個已參與 PACT 的家庭所回報的經驗。你的居家做法可依孩子、家庭和治療師共同討論的目標調整。 調查是臨床工作者的自陳，未用同一套方式比較孩子的結果。"
       },
       "observe": "孩子什麼時候發起互動？你做了什麼，他是接著玩、改了玩法，還是想停？記兩三句就夠了。",
       "example": "治療師和家長約好，孩子玩車時先看他怎麼邀人一起玩。一次孩子把車推給家長，他們就輪流玩了一下。另一次孩子把車收走，家長就停下來，下次把這兩個情況都帶去談。",
@@ -2507,7 +3125,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageBasis": "editorial-context",
       "ageNote": "2–5 歲為本文採用的居家遊戲情境分組。",
       "reviewChecked": "2026-11-24",
-      "reviewScope": "以質性訪談整理家長經驗及實作困難。提問與例子為原創，未重製 PACT 課程或訪談內容。"
+      "reviewScope": "以質性訪談整理家長經驗及實作困難。提問與例子為原創，未重製 PACT 課程或訪談內容。",
+      "additionalSources": [
+        {
+          "id": "binns-preschool-slp",
+          "section": "方法、服務形式與照顧者參與方式的調查結果。"
+        }
+      ]
     },
     {
       "id": "early-intervention-aac",
@@ -2552,8 +3176,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "sourceSection": "第 2.1 節及第 4.1、4.2、5 節，限樣本、不同表達方式、家長共同規劃及研究限制。",
       "evidence": {
-        "summary": "五名學前兒童的研究中，孩子在玩耍時使用的表達方式各有不同。研究團隊和照顧者一起選擇可用的方式，家庭和治療人員帶領時的表現也可能有差異。",
-        "limit": "這項研究的樣本很小，對象來自特定家庭及服務環境。適合孩子的表達方式與輔助工具，可以和語言治療師一起試、一起看。"
+        "summary": "五名學前兒童的研究中，孩子在玩耍時使用的表達方式各有不同。研究團隊和照顧者一起選擇可用的方式，家庭和治療人員帶領時的表現也可能有差異。 學前自閉症語言服務調查顯示，臨床工作者的服務安排和介入做法多樣。看見其他家庭用某種工具時，可先拿自己的生活場景去問團隊，例如孩子在兩個家中要如何都能表達拒絕。",
+        "limit": "這項研究的樣本很小，對象來自特定家庭及服務環境。適合孩子的表達方式與輔助工具，可以和語言治療師一起試、一起看。 服務調查無法判斷哪種溝通工具更適合某一位孩子。"
       },
       "observe": "孩子在熟悉環境如何表示「不要」或「幫我」？當手邊拿不到工具、教室很吵或對方不熟悉時，哪一種方式仍能用？",
       "example": "孩子口渴時會把空水杯遞給家長，進教室時水杯常放在書包裡。老師和家長把這個例子帶去和語言治療師談，想找一個孩子在教室也能順手表示「喝水」的方式。",
@@ -2562,7 +3186,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageBasis": "editorial-context",
       "ageNote": "2–5 歲為學前閱讀分組。來源研究納入約 2 歲半至未滿 5 歲的兒童。",
       "reviewChecked": "2026-11-24",
-      "reviewScope": "改寫研究對多元表達、共同規劃與限制的敘述。居家、在園提問及例子為原創。"
+      "reviewScope": "改寫研究對多元表達、共同規劃與限制的敘述。居家、在園提問及例子為原創。",
+      "additionalSources": [
+        {
+          "id": "binns-preschool-slp",
+          "section": "作者調查的學前服務、功能性溝通目標與提供方式。"
+        }
+      ]
     },
     {
       "id": "early-intervention-preschool-support",
@@ -2688,6 +3318,720 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageNote": "2–5 歲與 6–8 歲為入學前後的適讀分組，本篇情境聚焦幼兒園升小一。",
       "reviewChecked": "2026-11-24",
       "reviewScope": "依指定轉銜條文與自閉症類別法源整理。家庭筆記與例子由星泊原創。"
+    },
+    {
+      "id": "special-ed-or-disability-certificate",
+      "category": "caregiver",
+      "title": "孩子確診自閉症，特教鑑定和身障證明要先辦哪一個？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "先看孩子在哪裡需要支持，再找教育端或社政端。兩種評估各有目的，家長可以按需要分別詢問。",
+      "when": "拿到自閉症診斷，手邊已有報告，老師或親友提到特教鑑定與身心障礙證明，你想知道從哪一步開始。",
+      "asdFocus": "同一個孩子可能在教室需要有圖像提示的活動安排，也可能在家外出時需要支持。把這兩件事分開說，窗口比較容易釐清可以提供的協助。",
+      "steps": [
+        [
+          "把目前最急的一件事寫下來",
+          "在班上跟不上活動、難以求助或團體環境負荷高，可以先與園校談教育支持。若需要家庭照顧者支持、輔具或其他福利，先向公所或社會局處問哪項方案最符合需求。"
+        ],
+        [
+          "分別確認受理窗口和資料",
+          "特教可從園校承辦或所在地教育局處問自閉症類別的申請、時程與可用證明。身障鑑定可從戶籍地縣市內的公所開始，查詢鑑定機構與帶件方式。"
+        ],
+        [
+          "兩線都有需求就各自問進度",
+          "自閉症診斷與身障證明可供教育鑑定參考。若尚無身障證明，先請園校確認可受理的資料與期程。同一份報告是否可用，由各窗口依當期規定確認。"
+        ]
+      ],
+      "related": "taiwan-special-education-assessment",
+      "situations": [
+        "local-support",
+        "school"
+      ],
+      "keywords": [
+        "身障證明",
+        "身障手冊",
+        "特教鑑定",
+        "特殊生",
+        "雙軌",
+        "自閉症診斷",
+        "申請"
+      ],
+      "sourceSection": "第 2、12、23、24 條，限自閉症教育鑑定、個別需求及佐證資料。",
+      "evidence": {
+        "summary": "臺灣的教育鑑定採多元評量，重點在教育需求。身障鑑定及福利需求評估依另一套法規辦理，包含生活參與及福利支持。",
+        "limit": "各地受理時程及應備文件看當期公告。教育支持、身障資格和醫療診斷各有判定程序。"
+      },
+      "observe": "用兩欄記下「園校裡最想改善的事」和「家庭生活最需要的協助」。各欄挑一個實際例子。",
+      "example": "幼兒在班上不太能向教保員說需要休息，家庭也需要更多照顧者支持。家長先問園方如何啟動學前鑑定，再向公所確認是否有可用服務及證明條件。",
+      "adjust": "若兩個窗口都請你找另一邊，問清楚需要的是哪一份文件，以及等候期間是否能先約談或送其他佐證。",
+      "additionalSources": [
+        {
+          "id": "taiwan-disability-assessment",
+          "section": "第 4、5、7–9 條，供確認身障鑑定與公所窗口。"
+        },
+        {
+          "id": "taiwan-disability-rights-act",
+          "section": "第 5–7 條，限鑑定、需求評估及核發。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲涵蓋從學前到高中階段的家庭決策。法定學前特教自 2 歲開始。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "grades-and-special-ed",
+      "category": "school",
+      "title": "孩子成績不差，但在學校很吃力，要做特教鑑定嗎？",
+      "ages": [
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "把老師看到的課業表現和孩子經歷的負荷一起帶進討論，確認目前做法能不能支持孩子參與。",
+      "when": "孩子考試成績不錯，卻常提到上課以外的時間很累、無法求助，或回家後需要很久才能恢復。",
+      "asdFocus": "自閉症孩子有可能答得出課本的問題，同時在吵雜環境、分組輪流或突然變動時需要額外支持。課堂、小組、下課與回家看到的情況可以不同。",
+      "steps": [
+        [
+          "先選一個容易漏看的情境",
+          "問孩子哪一段最辛苦。可以請他指課表、畫下教室或用自己的方式說。把噪音、臨時分組、沒聽懂指示、找不到求助對象等具體情境寫下來。"
+        ],
+        [
+          "請老師一起比對並先約一個調整",
+          "跟老師核對什麼時候比較順。可以試事前告知分組方式或約定求助訊號，寫下誰會回應、何時一起看。"
+        ],
+        [
+          "問鑑定可以多釐清什麼",
+          "若現有安排仍接不住孩子，請特教承辦說明如何蒐集資料、孩子的意見怎麼進評估，以及鑑定後可能討論什麼支持。"
+        ]
+      ],
+      "related": "taiwan-special-education-assessment",
+      "situations": [
+        "school",
+        "sensory",
+        "feelings"
+      ],
+      "keywords": [
+        "特教鑑定",
+        "成績",
+        "學校適應",
+        "下課",
+        "求助",
+        "感官負荷",
+        "掩飾壓力"
+      ],
+      "sourceSection": "第 2、12、24 條，限自閉症類別及包含溝通、感官、社會行為與學習的教育需求。",
+      "evidence": {
+        "summary": "鑑定辦法要求綜合多項教育需要。孩子的課業表現可以是其中一項資料，其他生活適應與參與情境也值得討論。",
+        "limit": "兒童自陳研究用於呈現孩子經驗。是否符合特教資格，由鑑輔會依個別資料綜合研判。"
+      },
+      "observe": "比對孩子在環境較安靜、有人預告、可以自己求助時，負荷是否不同。",
+      "example": "孩子作業都能完成，但午休後常說分組和廣播讓他很累。老師先約一個求助訊號，並在開會時帶上孩子對兩個場景的描述。",
+      "adjust": "如果孩子每次只說「還好」，可以請他指出最沒力氣的一節，或讓他挑願意談的一位大人。",
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "Results 的校園負荷與安全感，保留 8–14 歲自陳限制。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "6–17 歲是學齡閱讀分組。自陳研究樣本 8–14 歲。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "special-ed-mainstream-class",
+      "category": "school",
+      "title": "通過特教鑑定後，可以留在普通班嗎？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "可以。從孩子平常在哪裡上課、什麼時間接受支持、誰負責跟進，了解安置方案會怎麼影響一天的生活。",
+      "when": "孩子要入園或升學，你想知道通過特教鑑定後會怎麼上課，是否能留在熟悉的班級。",
+      "asdFocus": "有些自閉症孩子在普通班能參與多數課程，在下課、換教室或分組時才需要特別安排。也有孩子較適合在支持更集中的環境學習，再依需要參與普通班的部分課程。",
+      "steps": [
+        [
+          "請園校把一天的安排說清楚",
+          "分散式資源班是在普通班就讀、部分時間接受資源班支持。巡迴輔導由教師在原場域提供一定時間的服務。集中式特教班主要在特教班學習，也可依課程設計參與普通班部分課程。"
+        ],
+        [
+          "問每項支持如何落實",
+          "拿孩子一個常遇到的困難問，例如自然課換教室時誰會先預告。也問日常支持由誰提供、頻率、請假或換老師時如何接續。"
+        ],
+        [
+          "把共識和回看日期放進 IEP",
+          "參加個別化教育計畫討論時，把孩子自己的偏好與看得見的支持一起寫下來，再約何時確認安排是否合適。"
+        ]
+      ],
+      "related": "taiwan-special-education-act",
+      "situations": [
+        "school"
+      ],
+      "keywords": [
+        "特教鑑定",
+        "普通班",
+        "資源班",
+        "巡迴輔導",
+        "集中式特教班",
+        "安置",
+        "IEP"
+      ],
+      "sourceSection": "第 3、10、13、30、31 條，限自閉症類別、融合、班型、普通班支持及 IEP。",
+      "evidence": {
+        "summary": "班型是教學和人力安排。普通班也可依個別需要接受特教服務，鑑輔會的安置與支持建議應綜合教育需求。",
+        "limit": "幼兒園及各學段提供的班型與人力會有差異。請園校依個案和所在地說明目前可用方案。"
+      },
+      "observe": "在完整作息裡畫出孩子自在與容易吃力的時段，再比對各種安排能接住哪一段。",
+      "example": "孩子喜歡在普通班上自然課，遇到大型集會卻容易被聲音淹沒。家長和團隊討論保留自然課參與，再訂好集會座位和可休息的安排。",
+      "adjust": "若會議只說「資源班」但未說明上課方式，可以請對方把課表、支持時間和負責的人說具體。",
+      "additionalSources": [
+        {
+          "id": "taiwan-special-education-class-types",
+          "section": "第 6 條說明三種班型與普通班課程。"
+        },
+        {
+          "id": "ophir-school-disclosure",
+          "section": "教師支持主題提供校園參與經驗，班型定義依臺灣法規。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲涵蓋園校安置的閱讀情境，班型細節依實際學段。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "before-school-assessment-consent",
+      "category": "school",
+      "title": "學校建議鑑定，我還在考慮，可以先談什麼？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "先請老師說明具體觀察、現在可試的支持，以及鑑定能多回答哪些問題，再和孩子一起整理意見。",
+      "when": "園校提出特教鑑定，你還沒有想好，擔心一簽名就失去選擇，也想先知道老師看到什麼。",
+      "asdFocus": "家長、老師和自閉症孩子可能描述出不一樣的難處。有人只看到上課能坐到下課，孩子在意的卻是聽不懂何時能離開、擔心求助會被同學注意。",
+      "steps": [
+        [
+          "問老師在哪個場景看到困難",
+          "請老師講一個例子、說明已經試過的方法，以及孩子怎麼回應。也帶一個在別處做得比較順的例子。"
+        ],
+        [
+          "約一個現在能做的支持",
+          "問能否先約求助訊號、提前說明活動變動，或換較少干擾的位置。確認誰負責和何時回看，也問哪些正式服務需等鑑定或另外提出申請。"
+        ],
+        [
+          "問清同意書與暫緩的下一步",
+          "請園校說明鑑定的目的、資料範圍和當期時程，也讓未成年學生表達意見。若家長不同意程序，幼兒園及高級中等以下學校依法應通報主管機關，可請承辦說明後續。"
+        ]
+      ],
+      "related": "taiwan-special-education-act",
+      "situations": [
+        "school",
+        "communication"
+      ],
+      "keywords": [
+        "鑑定同意",
+        "特教鑑定",
+        "家長同意",
+        "現在能做什麼",
+        "親師溝通",
+        "孩子意見"
+      ],
+      "sourceSection": "第 10、11、20、31 條，限支持、學生意見、同意與通報。",
+      "evidence": {
+        "summary": "《特殊教育法》第 20 條要求取得照顧端同意並徵詢未成年學生意見，也規範不同意時的通報程序。",
+        "limit": "班上能先試的安排依園校與孩子需要而定。正式特教服務與主管機關後續處理依規定辦理。"
+      },
+      "observe": "問孩子想先解決哪個情境、希望哪位老師幫忙，以及用說、寫或指圖哪種方式較舒服。",
+      "example": "老師說孩子上體育課常離開隊伍。家長先問是否有哨音和規則突然變動，再和老師、孩子約好先有提示、離開隊伍時有安全的等候位置。",
+      "adjust": "若覺得被催著決定，先請承辦把送件期限、若暫緩會怎樣，以及可先做的事寫清楚。",
+      "additionalSources": [
+        {
+          "id": "mullally-child-school-experience",
+          "section": "同時呈現孩子報告的過度刺激與不被理解的不同情境。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲是幼兒園至高中閱讀分組。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "what-disability-assessment-checks",
+      "category": "caregiver",
+      "title": "有自閉症診斷，身障鑑定還會看什麼？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "鑑定要了解孩子在日常生活能做什麼、靠哪些支持才能做到，以及不同場域有什麼差異。",
+      "when": "孩子確診後，你準備詢問證明，想知道診斷以外需要帶什麼、會談到哪些生活情境。",
+      "asdFocus": "孩子可能在熟識的人旁邊能用文字求助，在陌生地方卻需要大人幫忙理解問題。把平常用的圖卡、步驟提醒或陪同一起說明。",
+      "steps": [
+        [
+          "問公所及鑑定機構各需要什麼",
+          "先確認哪個機構和科別可受理，以及現有診斷、聯評或其他紀錄哪些要帶。若已有近期資料，可問院方能否參考以減少重複評估。"
+        ],
+        [
+          "用活動情境描述支持程度",
+          "分別想一個孩子通常能自己做、有人提醒可完成、需要較多協助的例子。可選自理、往返熟悉地方或在外求助，補上事情在哪些環境變難。"
+        ],
+        [
+          "區分鑑定和福利需求評估",
+          "醫療鑑定處理功能及活動參與的判定，地方政府另用需求評估了解家庭需要的支持。離開前確認後續由誰聯絡。"
+        ]
+      ],
+      "related": "taiwan-disability-assessment",
+      "situations": [
+        "local-support"
+      ],
+      "keywords": [
+        "身障鑑定",
+        "身心障礙證明",
+        "自閉症診斷",
+        "功能評估",
+        "日常參與",
+        "病歷",
+        "診斷證明"
+      ],
+      "sourceSection": "第 4、7、8 條及相關附表，限身體功能、活動參與及環境因素的鑑定程序。",
+      "evidence": {
+        "summary": "鑑定辦法列有身體系統構造或功能，以及活動參與與環境因素。家長的日常描述能讓鑑定團隊看到孩子在不同地方需要哪些支持。",
+        "limit": "本文的提問無法直接換算等級。資格、程度及證明所載內容，依指定機構與主管機關的程序判定。"
+      },
+      "observe": "觀察孩子做一件事時，中間需要誰提醒或陪同。把有效支持和孩子擅長的部分也記下來。",
+      "example": "孩子知道回家的路，但路線臨時更改時會停在原地等大人。家長把兩種情況和能用的求助方式記下來，讓團隊理解差異。",
+      "adjust": "原本的報告只寫診斷時，可以再帶一頁日常觀察，並先問機構是否需要補其他正式資料。",
+      "additionalSources": [
+        {
+          "id": "taiwan-disability-rights-act",
+          "section": "第 5–7 條，區分法定鑑定、需求評估與核發。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲是本文例子的閱讀分組，實際鑑定依年齡和個別狀況。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "disability-assessment-under-six",
+      "category": "caregiver",
+      "title": "孩子還沒滿六歲，可以先評估身障證明嗎？",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲"
+      ],
+      "time": 5,
+      "summary": "可以先詢問。未滿六歲有一般鑑定程序，符合特定條件時另有暫判規定。",
+      "when": "孩子還沒上小學，已拿到聯評報告或收到自閉症相關的醫療建議，家長想知道是否一定要等滿六歲。",
+      "asdFocus": "如果已有聯評報告，可以先把報告記載的領域和孩子現在需要哪些協助整理好，再由鑑定團隊說明適用程序。",
+      "steps": [
+        [
+          "帶現有資料向公所和鑑定院所詢問",
+          "確認該找的鑑定科別、要領哪些表單和近期紀錄能否參考，並提到孩子目前年齡。"
+        ],
+        [
+          "請醫院說明是否涉及暫判",
+          "依第 9 條，未滿六歲且無法以附表二甲判定類別和程度時，若早療發展評估記載兩項以上發展遲緩並已取得報告，鑑定機構得暫判為輕度。這是該條其中一種情形。"
+        ],
+        [
+          "看清證明上實際到期日",
+          "依該條暫判者，效期最長到滿六歲後第九十日。若核發了證明，先確認上面的日期，再問社會局處何時辦重鑑與等待期間如何銜接服務。"
+        ]
+      ],
+      "related": "taiwan-disability-assessment",
+      "situations": [
+        "local-support"
+      ],
+      "keywords": [
+        "未滿六歲",
+        "身障證明",
+        "身障手冊",
+        "暫判",
+        "發展遲緩",
+        "聯評",
+        "效期"
+      ],
+      "sourceSection": "第 5、7–9 條，尤其第 9 條未滿六歲、無法依附表二甲判定時的暫判條件。",
+      "evidence": {
+        "summary": "第 9 條處理附表二甲無法判定時的特定幼兒情境，是否適用由鑑定機構判斷。",
+        "limit": "兩項以上的內容請帶報告向團隊確認。早療、教育支持與福利服務的申請也各有自己的規定。"
+      },
+      "observe": "在聯評報告上找出已評估的領域、評估日、建議的支持及追蹤安排。",
+      "example": "孩子快五歲，目前有聯評報告。家長問院方哪些內容可供這次鑑定參考，再記下年滿六歲前要完成的聯絡事項。",
+      "adjust": "若窗口拿不準如何處理，可以請他說明目前適用哪項鑑定程序，以及下次向誰確認。",
+      "additionalSources": [
+        {
+          "id": "taiwan-disability-rights-act",
+          "section": "第 14、15 條供理解效期、重鑑及過渡安排。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "0–5 歲涵蓋未滿六歲的閱讀情境，完整適用條件按第 9 條。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "disability-certificate-available-services",
+      "category": "caregiver",
+      "title": "要不要辦身障證明？先查我們用得到哪些服務",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "從家庭現在最需要的支持出發。先問證明能開哪些申請入口，再核對各方案的條件、等待時間和使用方式。",
+      "when": "身邊的人建議幫孩子申請證明，但你想先知道對你們的生活會有什麼實際幫助。",
+      "asdFocus": "有些家庭最需要懂孩子表達與感官需求的照顧人手，有些想更容易帶孩子外出或有機會取得合適的溝通工具。從眼前最困難的一件事開始查。",
+      "steps": [
+        [
+          "把想解決的事說到能查方案",
+          "例如照顧者需要有人暫時接手、孩子外出需要交通支持，或治療師建議先評估一種溝通輔具。問所在地社會局處有哪個服務對得上。"
+        ],
+        [
+          "逐項問證明是不是申請條件",
+          "有些方案需要身心障礙證明，有些可走早療或其他入口。再問孩子年齡、戶籍或居住地、功能需求、補助是否互斥、有無名額，以及輔具是否要先核定。"
+        ],
+        [
+          "比較兩個最用得到的方案",
+          "記下頻率、申請窗口、等待時間和家庭要配合的事。已有個管師或社工時，可以請他協助確認申請順序與可替代的支持。"
+        ]
+      ],
+      "related": "new-taipei-autism-family-services",
+      "situations": [
+        "local-support",
+        "caregiver"
+      ],
+      "keywords": [
+        "身障證明",
+        "身障手冊",
+        "喘息",
+        "照顧者",
+        "社會局",
+        "輔具",
+        "福利",
+        "交通"
+      ],
+      "sourceSection": "第陸、柒節，限明列自閉症的家庭照顧者支持服務示例。",
+      "evidence": {
+        "summary": "新北市 115 年度計畫就是一個例子。它針對符合居住與領證條件的家庭提供照顧者支持，並明列自閉症及心智障礙者相關服務安排。",
+        "limit": "取得證明後，各項方案仍依自己的年齡、地區與需求條件核定。新北計畫只作查找示例。"
+      },
+      "observe": "想清楚一週哪一段特別難排，或目前什麼出門、上課、表達方式需要支援。",
+      "example": "家長先問社會局有沒有適合孩子年齡的照顧者服務，也問若還在等鑑定，能不能先請早療個管了解家庭需要。",
+      "adjust": "如果先查到的方案額滿，請承辦列出可替代的在地服務及下一次可確認的時間。",
+      "additionalSources": [
+        {
+          "id": "taiwan-disability-rights-act",
+          "section": "第 7、50、51、58、71 條，限需求評估、家庭支持、交通與輔具等制度入口。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "0–17 歲是家庭查找資源的閱讀分組。服務資格依當地方案。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "reassess-support-or-disability-certificate",
+      "category": "caregiver",
+      "title": "孩子的需求變了，特教支持或身障證明可以重評嗎？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "可以向各自的窗口問。先確認你想調整的是在校支持、證明效期，還是福利服務的內容。",
+      "when": "孩子升學、換到新環境，或原先支持已不合用。你想知道什麼時候能重評，需要帶哪些變化。",
+      "asdFocus": "孩子可能學會以文字求助，但新學校的大組環境讓他更需要安靜空間。具體變化能幫園校和社政分別判斷接下來該調整哪一項。",
+      "steps": [
+        [
+          "先把需要調整的事分開記",
+          "在校支持先找園校特教承辦，以現有 IEP 和近期例子談調整。若安置或教育需求已改變，依程序向園校或主管機關提出重評。"
+        ],
+        [
+          "有身障證明就確認有效日與窗口",
+          "有效期證明原則上可依規定於屆滿前九十日內向戶籍地主管機關申請重新鑑定及需求評估。若障礙情況改變，向承辦確認重鑑和所需資料。"
+        ],
+        [
+          "問清等待期間如何銜接",
+          "請園校說明哪些既有支持先怎麼做。若原身障證明可能在等候期間到期，詢問主管機關是否適用暫續權益的註記及須完成的程序。"
+        ]
+      ],
+      "related": "taiwan-special-education-assessment",
+      "situations": [
+        "local-support",
+        "school",
+        "changes"
+      ],
+      "keywords": [
+        "特教重新評估",
+        "身障重鑑",
+        "證明效期",
+        "轉銜",
+        "需求改變",
+        "鑑輔會",
+        "IEP"
+      ],
+      "sourceSection": "第 23、25 條，限特教重新評估的申請與佐證。",
+      "evidence": {
+        "summary": "特教重新評估原則上在跨教育階段進行，也可因個別需求改變等原因申請。身障證明另有到期、重鑑與註記規定。",
+        "limit": "同一時間的特教、身障證明及各福利方案可能有不同期限，請各自核對書面結果。"
+      },
+      "observe": "拿出上次 IEP、手上的證明或相關文件，圈出支持項目、聯絡窗口及日期。",
+      "example": "升國中後，孩子的學習表現穩定，但更換教室的次數變多。家庭先和學校調整路線支持，另按證明上的日期向公所問重鑑。",
+      "adjust": "若兩邊同時補件，可各自記下缺件、已送資料與下一次聯絡時間。",
+      "additionalSources": [
+        {
+          "id": "taiwan-disability-rights-act",
+          "section": "第 14、15 條，限有效期、重鑑與等待期間的註記安排。"
+        },
+        {
+          "id": "taiwan-disability-assessment",
+          "section": "第 10 條，限因障礙情況改變而提出的申請。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲是學前至高中轉銜情境，身障重鑑以證明及個別情況為準。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "disability-certificate-and-insurance",
+      "category": "caregiver",
+      "title": "幫自閉症孩子辦了身障證明，以後還能買保險嗎？",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "如果孩子現在有需要，別只因擔心未來買不到商業保險，就放棄評估身障資格。是否領證和新保單如何核保，可以各自確認。",
+      "when": "孩子已有自閉症診斷或評估紀錄，家長在考慮申請身障證明，又想了解現在或未來的商業保險。",
+      "asdFocus": "即使還沒有身障證明，落在要保書詢問範圍內的就醫、評估或診斷仍應據實說明。身障證明則可作為某些公共照顧及福利服務的申請資格，商業保險按保單約定提供給付。",
+      "steps": [
+        [
+          "先把孩子眼前會用到的支持問清楚",
+          "向公所或社會局處問家庭照顧者支持、輔具、交通等適用項目，確認哪些需要證明、哪些另有資格條件，並記下申請時間。 也可以先看<a href=\"#article/disability-certificate-available-services\">身障證明可以查哪些服務</a>。"
+        ],
+        [
+          "再分清手上保單與新申請",
+          "有既有保單，先依原條款向保險公司核對保障。要新投保、加保或變更時，問是否需要重新核保。按要保書詢問的事項和期間據實回答，並留存表單及正式回覆。"
+        ],
+        [
+          "遇到勸退或未承保就問正式流程",
+          "確認業務員只是口頭說明，還是公司已正式核保。可請協助送件並索取書面未承保理由。若對公平性有疑問，先向保險公司申訴，再依程序向金融消費評議中心申請評議。"
+        ]
+      ],
+      "related": "taiwan-insurance-underwriting",
+      "situations": [
+        "local-support"
+      ],
+      "keywords": [
+        "身心障礙證明",
+        "身障手冊",
+        "商業保險",
+        "核保",
+        "拒保",
+        "健康告知",
+        "新投保",
+        "加保",
+        "保單"
+      ],
+      "sourceSection": "第 7 條第 1 項第 11 款。訂約的健康告知另參考 <a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&amp;flno=64\" target=\"_blank\" rel=\"noopener noreferrer\">《保險法》第 64 條</a>。 要保書把領證和健康問項分開，見<a href=\"https://law.fsc.gov.tw/LawContent.aspx?id=FL006767\" target=\"_blank\" rel=\"noopener noreferrer\">金管會《人身保險要保書示範內容及注意事項》第二、四點</a>。",
+      "evidence": {
+        "summary": "金管會規定，保險業須據風險評估，不能僅因身心障礙身分給予不公平待遇。要保書可以分別詢問是否領證以及健康情況。2020 年監察院記錄過自閉症家庭未領證，仍因就醫或診斷被口頭勸退，也記錄過業務員聽到已領證就勸退的案例。未領證不保證核保較寬。",
+        "limit": "目前查到的調查無法算出領證或不領證的核保差距。承保條件依個別情況、商品及公司評估。",
+        "contrast": "星泊建議先看孩子當下會用到的支持。以新北市 115 年度計畫為例，符合條件的家庭可申請照顧個案管理、照顧知能課程或家長支持活動。商業保單則依契約提供約定的給付。可以分開問兩邊各能提供什麼。"
+      },
+      "observe": "把紙分成兩欄，左邊寫孩子現在缺的服務，右邊寫你想確認的是既有保障還是新投保。每欄各記清楚要問的一個窗口。",
+      "example": "孩子已有評估紀錄，家庭考慮申請證明，並想替既有醫療保單加保。家長向社會局問照顧資源，再向保險公司要書面問題與正式答覆，兩件事各自處理。",
+      "adjust": "若只收到口頭回覆，可以保留日期和往來訊息，改直接向保險公司客服確認送件、核保或申訴窗口。",
+      "additionalSources": [
+        {
+          "id": "taiwan-ombudsman-autism-insurance",
+          "section": "2020 年調查中自閉症投保案例及實務差距。申訴程序另見 <a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>。 正式未承保的書面理由，見<a href=\"https://law.lia-roc.org.tw/Law/Article?lawno=4&amp;lsid=FL006807\" target=\"_blank\" rel=\"noopener noreferrer\">壽險公會公布的《保險業承保身心障礙者處理原則》第四點</a>。"
+        },
+        {
+          "id": "new-taipei-autism-family-services",
+          "section": "新北市明列自閉症的家庭照顧者支持方案，僅作公共服務示例。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "0–17 歲是照顧者閱讀分組，個別商品的投保年齡按保單規定。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "disability-certificate-and-school-label",
+      "category": "school",
+      "title": "怕孩子被貼標籤，辦身障證明或特教鑑定前可以先問什麼？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "可以同時在意孩子能得到的支持和隱私。先問資料的用途、交給誰，以及孩子怎麼參與。",
+      "when": "你想為孩子爭取資源，也擔心診斷名詞被到處轉述，或影響老師、同儕怎麼看孩子。",
+      "asdFocus": "申請身障證明、學校進行特教鑑定，以及向老師或同學說明診斷，有各自的用途。孩子可能願意讓負責支持的老師知道，但想自己決定怎麼向同儕開口。",
+      "steps": [
+        [
+          "請窗口說清楚這份資料用在哪裡",
+          "先問診斷證明或鑑定資料的蒐集目的、哪些角色會查看、是否需要整份、如何保管及升學時怎麼交接，請對方說明適用規定。"
+        ],
+        [
+          "跟孩子談希望哪些人知道",
+          "依孩子年齡用話語、圖卡、文字或選項問他希望誰知道、什麼情況想先談，以及想先請誰幫忙。也問學校如何尊重孩子在會議裡的意見。"
+        ],
+        [
+          "把需要被理解的事轉成具體支持",
+          "一起寫下孩子擅長的事、什麼情境需要調整、老師可以怎麼做。請學校說明遇到取笑或不當公開時，由誰處理、家長何時會被通知。"
+        ]
+      ],
+      "related": "taiwan-special-education-act",
+      "situations": [
+        "school",
+        "communication"
+      ],
+      "keywords": [
+        "貼標籤",
+        "身障證明",
+        "特教鑑定",
+        "校園",
+        "保密",
+        "個資",
+        "孩子意見",
+        "轉銜"
+      ],
+      "sourceSection": "第 10、11、20、31 條。處理健康資料亦參考 <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=I0050021\" target=\"_blank\" rel=\"noopener noreferrer\">《個人資料保護法》第 6、8 條</a>。",
+      "evidence": {
+        "summary": "臺灣青少年訪談中，有人用診斷理解自己、爭取校園支持。國際回顧也整理出學生顧慮偏見，或經歷未經同意揭露後互動變差。",
+        "limit": "這些研究談的是自閉症身分與揭露經驗，沒有直接比較領證與未領證者。資料流向請向受理窗口依個案確認。",
+        "contrast": "家庭的污名顧慮、孩子如何看待自己的診斷，以及學校有沒有保護隱私，是三種不同的經驗。先把各自的顧慮聽清楚，再談怎麼支持孩子。"
+      },
+      "observe": "把擔心寫成可確認的問題，例如「科任老師需要知道什麼？」或「如果在班上說，會先跟孩子談嗎？」",
+      "example": "家長準備送件時問，園所可否先讓班級老師知道孩子需要圖卡及安靜休息，完整報告則依鑑定和支持的實際用途由承辦處理。",
+      "adjust": "對資料使用有疑慮時，可先請園校提供申請文件的個資說明，並請特教承辦解釋轉銜和班級溝通的安排。",
+      "additionalSources": [
+        {
+          "id": "liu-taiwan-youth-diagnosis",
+          "section": "作者綜整臺灣青少年如何看待診斷與向學校求助。"
+        },
+        {
+          "id": "ophir-school-disclosure",
+          "section": "診斷揭露子主題包含正面與負面經驗。"
+        },
+        {
+          "id": "ng-affiliate-stigma-family",
+          "section": "學前家庭連帶污名的關聯研究，不能用來估計申請證明的影響。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲可按年齡調整對話。臺灣訪談樣本為 14–18 歲。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+    },
+    {
+      "id": "sharing-autism-information-at-school",
+      "category": "school",
+      "title": "想讓老師懂自閉症孩子的需要，哪些事要說、哪些可以保留？",
+      "ages": [
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 5,
+      "summary": "從眼前需要調整的情境開始。和孩子一起決定對老師、同儕分別要分享哪些資訊。",
+      "when": "孩子要開始新學期、換老師，或已經在班上遇到誤會。你想讓老師理解孩子，又想保留隱私。",
+      "asdFocus": "孩子可能希望學校知道他需要安靜位置和預告，但暫時只想讓導師知道診斷。這些選擇可以隨支持需求和孩子的想法調整。",
+      "steps": [
+        [
+          "對負責支持的老師先把需要說具體",
+          "帶一個孩子在班上吃力的情境、一種孩子常用的表達，以及一項有幫助的做法。也請老師說明，若要申請正式服務，承辦需要什麼資料。"
+        ],
+        [
+          "與同儕分享前先和孩子討論",
+          "先問孩子希望達到什麼目的、想讓哪些人知道、要自己說或請誰協助。若孩子還沒準備好，能先用不指名的方式讓全班了解尊重差異和不同的支持。"
+        ],
+        [
+          "和老師約定日後怎麼回看",
+          "一起說清楚這次只對誰分享。如遇同儕誤解或詢問，先確定由誰處理。過一段時間再問孩子覺得哪些安排放心、哪些要改。"
+        ]
+      ],
+      "related": "ophir-school-disclosure",
+      "situations": [
+        "school",
+        "communication",
+        "changes"
+      ],
+      "keywords": [
+        "告訴老師",
+        "自閉症揭露",
+        "學校",
+        "同儕",
+        "貼標籤",
+        "隱私",
+        "孩子同意",
+        "親師合作"
+      ],
+      "sourceSection": "Results 的 Disclosure of Autism Diagnosis，限作者對教師與學生觀點的綜整。",
+      "evidence": {
+        "summary": "回顧中的部分學生認為分享診斷能減少誤解、爭取支持。有些學生則因擔心排擠而選擇保留，研究也記錄了未經同意揭露的不佳經驗。",
+        "limit": "學齡研究較多，學前的孩子可以先用簡單選項及日常支持對話。公開後的影響因場域、同儕和老師做法而異。"
+      },
+      "observe": "觀察孩子願意向哪些大人求助、遇到被追問有什麼反應、怎麼表示想停下來。",
+      "example": "新班上有同學問孩子為什麼戴耳罩。孩子願意讓導師解釋每個人需要的環境不同，還不想談自己的診斷。家長和老師先依這個範圍回應。",
+      "adjust": "如果孩子暫時不想回答，可以先約一個簡單回應，並請老師在孩子需要時協助結束對話。",
+      "additionalSources": [
+        {
+          "id": "liu-taiwan-youth-diagnosis",
+          "section": "臺灣青少年的自我理解與向教育端求助。"
+        },
+        {
+          "id": "taiwan-special-education-act",
+          "section": "第 11、31 條的學生意見及 IEP 參與。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "2–17 歲為親師溝通閱讀分組，向同儕分享的研究以學齡情境為主。",
+      "reviewChecked": "2026-11-24",
+      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
     }
   ],
   "withdrawnArticles": [
