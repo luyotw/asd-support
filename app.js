@@ -177,9 +177,9 @@ function go(page) {
 }
 
 function brand() {
-  return `<a class="brand" href="${currentState().profile ? "#home" : "#"}" aria-label="同行日常首頁">
+  return `<a class="brand" href="${currentState().profile ? "#home" : "#"}" aria-label="星泊首頁">
     <span class="brand-mark">${icon("leaf")}</span>
-    <span><strong>同行日常</strong><small>ASD 育兒支持手冊</small></span>
+    <span><strong>星泊</strong><small>ASD 育兒支持手冊</small></span>
   </a>`;
 }
 
@@ -518,7 +518,7 @@ function settings() {
         <p>${demoState ? "目前正在使用示範資料，操作只保留在這次預覽。" : storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
         <button class="button secondary danger-text" data-action="${demoState ? "leave-demo" : "ask-reset"}">${demoState ? "離開示範" : "清除本機資料"}</button></section>
       <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
-        <p>同行日常是 ASD 育兒支持手冊的互動原型。</p>
+        <p>星泊是 ASD 育兒支持手冊的互動原型。</p>
         <a class="text-button" href="#sources">資料來源與使用方式 ${icon("arrow")}</a></section>
     </div>`);
 }
@@ -576,7 +576,7 @@ function render(focus = false) {
   }
   if (page === "sources") app.innerHTML = sourcesPage();
   const heading = app.querySelector("h1");
-  document.title = heading ? `${heading.textContent} · 同行日常` : "同行日常 · ASD 育兒支持手冊";
+  document.title = heading ? `${heading.textContent} · 星泊` : "星泊 · ASD 育兒支持手冊";
   if (focus) {
     window.scrollTo(0, 0);
     app.querySelector("main").focus({ preventScroll: true });

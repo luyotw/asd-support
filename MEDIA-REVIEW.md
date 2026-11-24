@@ -13,7 +13,7 @@
 
 Mayer等的S29以20位臨床人員、10位照顧者進行Delphi共識程序，非效果試驗；附錄3明列2–18歲並排除AAC與純溝通用途。第二輪的螢幕誘因條目未達門檻而移除，不能寫成已證明獎勵無效或有害。已核範圍是原文頁1016、附錄2頁1024及附錄3頁1025的上述研究紀錄。
 
-本段由同行日常繁中摘要，原作者Yael Mayer、Mor Cohen-Eilig、Janice Chan、Natasha Kuzyk、Armansa Glodjo與Tal Jarus；2023先行出版／2024期刊版，doi:10.1177/13623613231192870，依[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)僅作非商業紀錄。原套指引的時數、風險清單與操作建議未列本輪核准範圍。
+本段由星泊繁中摘要，原作者Yael Mayer、Mor Cohen-Eilig、Janice Chan、Natasha Kuzyk、Armansa Glodjo與Tal Jarus；2023先行出版／2024期刊版，doi:10.1177/13623613231192870，依[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)僅作非商業紀錄。原套指引的時數、風險清單與操作建議未列本輪核准範圍。
 
 [2025後續研究的作者機構紀錄](https://cris.haifa.ac.il/en/publications/enhancing-digital-citizenship-of-children-and-youth-with-autism-e/)只取得摘要與書目，未取得可用全文及改作許可，因此不用作本案來源，也不再列待確認。
 
