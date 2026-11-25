@@ -538,7 +538,6 @@ function resourceOverview(article) {
 
 function articlePage(article) {
   const category = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
-  const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
   const dismissed = state.dismissed.includes(article.id);
   const references = [{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])];
   const otherSources = references.slice(2);
@@ -549,7 +548,7 @@ function articlePage(article) {
   return shell(section, `<div class="article-page">
     <a class="text-button back-link" href="#${origin}">${icon("back")} ${originLabel}</a>
     <header class="article-heading">
-      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
+      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
       <h1>${article.title}</h1>
       ${article.updatedAt && (!article.resource || article.updatedAt !== article.reviewChecked) ? `<p class="article-updated">最後更新日期 <time datetime="${article.updatedAt}">${articleDate.format(new Date(article.updatedAt))}</time></p>` : ""}
       <p>${article.summary}</p>
