@@ -2447,7 +2447,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "sourceSection": "Overview、需求辨識及Nature of the evidence。只整理理解需要的背景；記錄提綱與例子由編輯撰寫，不涵蓋危機處理或自傷評估。",
       "sections": [
         {
-          "heading": "觀念",
+          "heading": "孩子當時可能遇到了什麼？",
           "list": {
             "items": [
               "<strong>同樣的動作，可能有不同的原因。</strong> 排隊時推人，可能跟隊伍太擠、剛被碰到或周圍太吵有關。光看推人這個動作，很難知道孩子當時遇到了什麼。",
@@ -2461,7 +2461,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           ]
         },
         {
-          "heading": "做法",
+          "heading": "事情過後，可以怎麼做？",
           "paragraphs": [
             "等大家都安全後，再回顧經過。若仍有立即受傷風險，先尋求現場協助或緊急醫療協助。"
           ],
