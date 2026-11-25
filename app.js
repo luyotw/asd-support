@@ -67,7 +67,7 @@ let draft = emptyProfile();
 let libraryFilter = "all";
 let libraryQuery = "";
 let searchQuery = "";
-let recommendationIndex = 0;
+let recommendationRound = null;
 let noticeTimer;
 let storageAvailable = true;
 try {
@@ -354,24 +354,36 @@ function articleCard(article, origin) {
 }
 
 function matchingSituations(article, profile) {
-  return profile.situations.filter(id => article.situations.includes(id));
+  const situations = article.resource?.interests || article.situations;
+  return profile.situations.filter(id => situations.includes(id));
 }
 
-function rankedArticles(profile) {
-  const { dismissed } = currentState();
-  const score = article => matchingSituations(article, profile).length * 10 + (article.ages.includes(profile.age) ? 1 : 0);
-  return guideArticles.filter(article => !dismissed.includes(article.id)).sort((left, right) => score(right) - score(left));
+function shuffled(items) {
+  const order = [...items];
+  for (let end = order.length - 1; end > 0; end -= 1) {
+    const index = Math.floor(Math.random() * (end + 1));
+    [order[end], order[index]] = [order[index], order[end]];
+  }
+  return order;
 }
 
-function recommendedResources(profile) {
+function recommendationOrder(profile) {
   const { dismissed } = currentState();
-  return resourceArticles
-    .filter(article => !dismissed.includes(article.id) && (!profile.age || article.ages.includes(profile.age)))
-    .map(article => ({ article, matches: article.resource.interests.filter(interest => profile.situations.includes(interest)).length }))
-    .filter(entry => entry.matches)
-    .sort((left, right) => right.matches - left.matches || left.article.ages.length - right.article.ages.length)
-    .slice(0, 2)
-    .map(entry => entry.article);
+  const guides = shuffled(guideArticles.filter(article => !dismissed.includes(article.id)));
+  const priority = article => (matchingSituations(article, profile).length ? 2 : 0) + (article.ages.includes(profile.age) ? 1 : 0);
+  guides.sort((left, right) => priority(right) - priority(left));
+  const resources = shuffled(resourceArticles.filter(article =>
+    !dismissed.includes(article.id) && (!profile.age || article.ages.includes(profile.age)) && matchingSituations(article, profile).length
+  ));
+
+  // Give relevant resources a place near the start even when there are many guides.
+  const [first, second] = Math.random() < 0.5 ? [guides, resources] : [resources, guides];
+  const order = [];
+  for (let index = 0; index < Math.max(first.length, second.length); index += 1) {
+    if (first[index]) order.push(first[index]);
+    if (second[index]) order.push(second[index]);
+  }
+  return order;
 }
 
 function recommendationReason(article, profile) {
@@ -382,14 +394,14 @@ function recommendationReason(article, profile) {
 }
 
 function recommendationCard(article, hasMore) {
-  const group = categoryById[article.category];
+  const group = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
   return `<article class="feature-card">
     <div class="feature-copy">
-      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${group.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
+      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${article.resource ? "資源專區 · " : ""}${group.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
       <h3 id="featured-article-title">${article.title}</h3>
       <p>${article.summary}</p>
       <div class="feature-actions">
-        <a class="button primary" href="#article/${article.id}" data-origin="home">看看做法 ${icon("arrow")}</a>
+        <a class="button primary" href="#article/${article.id}" data-origin="home">${article.resource ? "查看資源" : "看看做法"} ${icon("arrow")}</a>
         ${hasMore ? '<button class="button secondary" data-action="next-recommendation" aria-describedby="featured-article-title">下一則</button>' : ""}
       </div>
     </div>
@@ -402,11 +414,11 @@ function home() {
   if (!profile) return shell("home", `<div class="page-heading"><h1>我的首頁</h1><p>選幾個你想先了解的照顧情境，首頁就會顯示相關主題。</p></div>
     <div class="empty">${icon("leaf")}<h2>從一個生活情境開始</h2><button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button><a class="button plain" href="#library">瀏覽育兒指南</a></div>`);
 
-  const ranked = rankedArticles(profile);
-  recommendationIndex %= ranked.length || 1;
-  const featured = ranked[recommendationIndex];
-  const more = ranked.filter(article => article !== featured);
-  const resources = recommendedResources(profile);
+  recommendationRound ??= { order: recommendationOrder(profile), index: 0 };
+  const { order, index } = recommendationRound;
+  const featured = order[index];
+  const more = order.filter(article => !article.resource && article !== featured);
+  const resources = order.filter(article => article.resource && article !== featured).slice(0, 2);
   return shell("home", `<section class="home-heading">
     <div><p class="kicker">${icon("sun")} ${demoState ? "示範首頁" : "我的育兒手冊"}</p>
       <h1>今天，從一件小事開始。</h1>
@@ -418,7 +430,7 @@ function home() {
       <h2 id="feature-title">為你推薦</h2>
       ${featured ? `<span>${recommendationReason(featured, profile)}</span>` : ""}
     </div>
-    ${featured ? recommendationCard(featured, more.length > 0) : `<div class="empty">${icon("book")}<p>目前沒有可推薦的文章。</p><a class="button primary" href="#library" data-action="open-library">瀏覽育兒指南 ${icon("arrow")}</a></div>`}
+    ${featured ? recommendationCard(featured, order.length > 1) : `<div class="empty">${icon("book")}<p>目前沒有可推薦的文章。</p><a class="button primary" href="#library" data-action="open-library">瀏覽育兒指南 ${icon("arrow")}</a></div>`}
   </section>
   ${resources.length ? `<section class="more-section" aria-labelledby="related-resources-title">
     <div class="section-heading"><h2 id="related-resources-title">相關資源</h2><a class="text-button" href="#resources">查看資源專區 ${icon("arrow")}</a></div>
@@ -671,8 +683,8 @@ function sourcesPage() {
 
 function render(focus = false) {
   if (location.hash === "#demo" && !demoState) {
-    recommendationIndex = 0;
-    demoState = { ...emptyState(), notes: new Map(), profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory"] } };
+    recommendationRound = null;
+    demoState = { ...emptyState(), notes: new Map(), profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory", "benefit-lookup"] } };
   }
 
   const page = route();
@@ -839,11 +851,20 @@ document.addEventListener("click", event => {
       }
       break;
     }
-    case "next-recommendation":
-      recommendationIndex += 1;
+    case "next-recommendation": {
+      const round = recommendationRound;
+      round.index += 1;
+      if (round.index === round.order.length) {
+        const order = recommendationOrder(currentState().profile);
+        if (order.length > 1 && order[0] === round.order.at(-1)) {
+          [order[0], order[1]] = [order[1], order[0]];
+        }
+        recommendationRound = { order, index: 0 };
+      }
       render();
-      app.querySelector('[data-action="next-recommendation"]').focus({ preventScroll: true });
+      app.querySelector('[data-action="next-recommendation"]')?.focus({ preventScroll: true });
       break;
+    }
     case "back-to-top": {
       const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       app.querySelector("main").focus({ preventScroll: true });
@@ -856,6 +877,7 @@ document.addEventListener("click", event => {
       const restore = active.dismissed.includes(id);
       active.dismissed = restore ? active.dismissed.filter(articleId => articleId !== id) : [...active.dismissed, id];
       saveState();
+      recommendationRound = null;
       control.textContent = restore ? "不再顯示於推薦" : "恢復推薦";
       notify(restore ? "已恢復推薦" : "已從首頁推薦移除");
       break;
@@ -866,7 +888,7 @@ document.addEventListener("click", event => {
       break;
     case "finish":
     case "save-edit":
-      recommendationIndex = 0;
+      recommendationRound = null;
       currentState().profile = structuredClone(draft);
       saveState();
       go("home");
@@ -896,7 +918,7 @@ document.addEventListener("click", event => {
       break;
     case "leave-demo":
       demoState = null;
-      recommendationIndex = 0;
+      recommendationRound = null;
       go(state.profile ? "home" : "welcome");
       break;
     case "ask-reset":
@@ -912,7 +934,7 @@ document.addEventListener("click", event => {
         storageAvailable = false;
       }
       state = emptyState();
-      recommendationIndex = 0;
+      recommendationRound = null;
       draft = emptyProfile();
       libraryFilter = "all";
       libraryQuery = "";

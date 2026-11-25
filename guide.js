@@ -3750,7 +3750,9 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
         "group": "assessment",
         "interests": [
           "special-education",
-          "disability-certificate"
+          "disability-certificate",
+          "school",
+          "local-support"
         ],
         "audience": "想了解孩子的在校支持或身障福利資格的家庭",
         "contact": "園校特教承辦、所在地教育局處或戶籍地公所",
@@ -4248,7 +4250,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "resource": {
         "group": "benefits",
         "interests": [
-          "benefit-lookup"
+          "benefit-lookup",
+          "caregiver"
         ],
         "audience": "已持證或想了解持證資源的家庭",
         "contact": "戶籍地公所或社會局處，個別福利依文中窗口查詢",
@@ -4472,7 +4475,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
         "group": "assessment",
         "interests": [
           "special-education",
-          "disability-certificate"
+          "disability-certificate",
+          "school"
         ],
         "audience": "孩子的在校支持或持證需求有變動的家庭",
         "contact": "園校特教承辦或戶籍地公所",
