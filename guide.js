@@ -1327,6 +1327,30 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-25",
       "currencyStatus": "usable"
+    },
+    "taiwan-nhrc-behavior-support": {
+      "name": "嚴重情緒行為支持體系專案報告",
+      "originalTitle": "如何解決嚴重情緒行為心智障礙者支持體系問題專案報告",
+      "publisher": "國家人權委員會",
+      "version": "2024-08-23 上版",
+      "checked": "2026-11-25",
+      "description": "臺灣的政策報告，說明包含自閉症者在內的人，可能因表達困難而讓感受或需要難以被理解。",
+      "rights": "依國家人權委員會政府網站資料開放宣告，註明出處可改作。本文僅整理機關自有文字。",
+      "attribution": "國家人權委員會（2024），《如何解決嚴重情緒行為心智障礙者支持體系問題專案報告》，由星泊整理。",
+      "url": "https://nhrc.cy.gov.tw/News_Content.aspx?n=7459&s=7073",
+      "licenseName": "國家人權委員會政府網站資料開放宣告",
+      "license": "https://nhrc.cy.gov.tw/cp.aspx?n=9740",
+      "scope": "asd",
+      "scopeEvidence": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。",
+      "scopeChecked": "2026-11-25",
+      "auditId": "S77",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://nhrc.cy.gov.tw/cp.aspx?n=9740",
+      "reviewChecked": "2026-11-25",
+      "reviewScope": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。",
+      "currencyStatus": "usable",
+      "currencyEvidence": "比對官方專案頁、報告正文及網站開放宣告。限用委員會自有敘述作溝通支持背景，排除個案、流行率、危機處理、第三方引文及現行服務資格。",
+      "sourceAudience": "報告涵蓋自閉症、智能障礙及多重障礙者，未限定兒童年齡。本文限涉及自閉症者的溝通與需求背景。"
     }
   },
   "articles": [
@@ -2394,8 +2418,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "年齡依本指南的生活情境整理；原始資料沒有訂定數字適齡，請一併看孩子的理解方式與支持需要。",
-      "reviewChecked": "2026-11-20",
-      "reviewScope": "依已核准自有文字整理；做法、問題及例子為編輯提供的討論起點，沒有宣稱其效果已經驗證。",
+      "reviewChecked": "2026-11-25",
+      "reviewScope": "整理 AIFS 的需求辨識與研究限制，補充臺灣國家人權委員會對溝通困難的說明。事後記錄提綱及例子由編輯撰寫。",
       "id": "understanding-unmet-needs",
       "category": "feelings",
       "title": "孩子推人或丟東西後，怎麼整理情境",
@@ -2438,7 +2462,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           "heading": "補上孩子自己的說法",
           "paragraphs": [
             "在孩子願意、能夠表達時，了解他當時想要什麼或想避開什麼。說話、手勢或指圖都能留下線索，也可以暫時不回答。",
+            "也可以記下當時孩子怎麼試著表達、大人怎麼回應。如果這一段沒看到，就先留待和當時在場的人確認。",
             "原創例子：孩子在排隊時推了同學。事後家長把老師目擊的前後經過記下來，孩子用圖指出後方太擠。家長把「擁擠可能有關」留成討論線索，和老師約好再了解不同排隊情況。"
+          ],
+          "evidence": [
+            "臺灣國家人權委員會的專案報告提到，對有溝通困難的自閉症者，照顧者有時難以知道對方的感受或需要。這份政策報告未評估本文的事後記錄方法。"
           ]
         },
         {
@@ -2451,6 +2479,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "after-hard-moment"
+      ],
+      "updatedAt": "2026-11-25",
+      "additionalSources": [
+        {
+          "id": "taiwan-nhrc-behavior-support",
+          "section": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。該報告聚焦支持服務，未評估本文的事後記錄方法。"
+        }
       ]
     },
     {

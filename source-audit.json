@@ -1715,6 +1715,83 @@
       ],
       "readScope": "第 2–4、6、9–10、13、16–17 條與正式附表的第 94–100 項溝通輔具，限自閉症對象、補助條件、評估與請領程序。",
       "evidenceType": "法令正文與法定附表"
+    },
+    {
+      "id": "S77",
+      "title": "如何解決嚴重情緒行為心智障礙者支持體系問題專案報告",
+      "url": "https://nhrc.cy.gov.tw/News_Content.aspx?n=7459&s=7073",
+      "checked": "2026-11-25",
+      "researchRound": "2026-11-25",
+      "decision": "adapt",
+      "scope": "asd",
+      "permission": "政府資料開放授權條款第 1 版，限國家人權委員會自有正文，註明出處。",
+      "permissionEvidence": "https://nhrc.cy.gov.tw/cp.aspx?n=9740",
+      "license": "https://nhrc.cy.gov.tw/cp.aspx?n=9740",
+      "audience": "報告涵蓋自閉症、智能障礙及多重障礙者，未限定兒童年齡。本文限涉及自閉症者的溝通與需求背景。",
+      "date": "2024-08-23 上版",
+      "currency": "可用（限核准範圍）",
+      "sections": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。",
+      "reason": "比對官方專案頁、報告正文及網站開放宣告。限用委員會自有敘述作溝通支持背景，排除個案、流行率、危機處理、第三方引文及現行服務資格。",
+      "topics": [
+        "T08"
+      ],
+      "readScope": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。",
+      "evidenceType": "政策專案報告"
+    },
+    {
+      "id": "S78",
+      "title": "自閉症類孩童以家庭為中心之團體治療策略與處遇",
+      "url": "https://www.tyh.com.tw/early/pdf/earlay_1110624.pdf",
+      "checked": "2026-11-25",
+      "researchRound": "2026-11-25",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "未找到明確允許公開改作的授權。",
+      "audience": "自閉症孩童團體治療與家庭支持實務。",
+      "date": "2022-06-26 講義",
+      "sections": "團體治療策略三、五，含同學靠近後發生推擠的情境。",
+      "reason": "東元綜合醫院刊登、黃宜珊臨床心理師講義。查原檔與院方網站，未取得改作許可。",
+      "topics": [
+        "T08"
+      ],
+      "evidenceType": "臨床心理師研習講義"
+    },
+    {
+      "id": "S79",
+      "title": "面對自閉症類群兒童 令人頭疼的行為表現",
+      "url": "https://www.femh.org.tw/magazine/viewmag.aspx?ID=11029",
+      "checked": "2026-11-25",
+      "researchRound": "2026-11-25",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "未找到明確允許公開改作的授權。",
+      "audience": "自閉症兒童的家長及照顧者。",
+      "date": "2023 年 4 月院訊",
+      "sections": "觀察重複行為發生前後的情境，以及感官不適、焦慮或挫折等可能原因。",
+      "reason": "亞東紀念醫院黃思賓臨床心理師撰寫。原文未聲明適用的改作條款。",
+      "topics": [
+        "T08"
+      ],
+      "evidenceType": "臨床心理師衛教文章"
+    },
+    {
+      "id": "S80",
+      "title": "懂了孩子，家就不累！嘉基辦自閉症家長團體 陪伴「星星的孩子」全家穩健前行",
+      "url": "https://www.cych.org.tw/news_detail.aspx?ID=4725",
+      "checked": "2026-11-25",
+      "researchRound": "2026-11-25",
+      "decision": "exclude",
+      "scope": "asd",
+      "permission": "頁尾聲明允許超連結至原站，未提供改作許可。",
+      "permissionEvidence": "https://www.cych.org.tw/news_detail.aspx?ID=4725",
+      "audience": "自閉症幼兒家長。",
+      "date": "2026-07-01 發布",
+      "sections": "家長團體報導中提到的作息變動、預告和視覺提示。",
+      "reason": "院方活動報導，留存原地查閱與授權紀錄。",
+      "topics": [
+        "T08"
+      ],
+      "evidenceType": "院方早療家長團體報導"
     }
   ],
   "lastResearchRound": "2026-11-25"
