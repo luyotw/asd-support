@@ -4144,7 +4144,7 @@
           "heading": "搭車、愛心卡與場館門票",
           "paragraphs": [
             "持身障證明搭乘國內大眾運輸可享半價，例如臺鐵、高鐵或客運，這項優待沒有戶籍限制。經需求評估認定需要陪伴者，可有一名必要陪伴者享同樣優惠。搭車時帶著孩子的證明供查驗。<a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050046&amp;flno=58\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 58 條</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050052\" target=\"_blank\" rel=\"noopener noreferrer\">大眾運輸優待辦法</a>",
-            "<strong>愛心卡。</strong>孩子領證後，可向戶籍地公所或縣市社會局處詢問地方社福卡。各地卡名、點數、適用路線及應備文件依當地公告。以臺北市為例，設籍並實際居住臺北市的持證孩子，可向市內任一區公所申請。自 2026 年 7 月起，符合資格的愛心卡每月有 600 點，每點可折抵 1 元，可用於指定公車、捷運等。<a href=\"https://dosw.gov.taipei/cp.aspx?n=98EA840859DF5D7F\" target=\"_blank\" rel=\"noopener noreferrer\">臺北市愛心卡申辦與使用說明</a>",
+            "<strong>愛心卡。</strong>孩子領證後，可向戶籍地公所或縣市社會局處詢問地方社福卡。各地卡名、點數、適用路線及應備文件依當地公告。以臺北市為例，設籍並實際居住臺北市的持證孩子，可向市內任一區公所申請。自 2026 年 7 月起，符合資格的愛心卡每月有 600 點，每點可折抵 1 元，可用於指定公車、捷運等。<a href=\"https://dosw.gov.taipei/cp.aspx?n=98EA840859DF5D7F\" target=\"_blank\" rel=\"noopener noreferrer\">臺北市愛心卡申辦與使用說明</a> · <a href=\"#article/county-disability-transit-cards\">查全臺 22 縣市愛心卡額度</a>",
             "<strong>愛心陪伴卡。</strong>查看孩子證明背面的「必要陪伴者優惠措施」欄位。若有「國內大眾運輸工具」註記，可向公所詢問能否一併申辦。陪同孩子乘車時，限一名必要陪伴者依運具規定使用。孩子還在免票年齡時，可先向營運單位確認陪伴者如何刷卡或購票。",
             "<strong>場館門票。</strong>依身障權益保障法，收費的公營或公設民營風景區、康樂場所及文教設施可免費，民營場所依該條適用範圍半價。經需求評估認定的一名必要陪伴者也可享同樣優待。購票時依營運單位查驗方式出示證明。<a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050046&amp;flno=59\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 59 條</a>"
           ]
@@ -4180,7 +4180,123 @@
         }
       ],
       "relatedArticles": [
-        "disability-certificate-and-insurance"
+        "disability-certificate-and-insurance",
+        "county-disability-transit-cards"
+      ]
+    },
+    {
+      "id": "county-disability-transit-cards",
+      "category": "caregiver",
+      "title": "自閉症孩子的愛心卡有多少點？全臺 22 縣市額度",
+      "ages": [
+        "0–1 歲",
+        "2–5 歲",
+        "6–8 歲",
+        "9–12 歲",
+        "13–17 歲"
+      ],
+      "time": 6,
+      "summary": "查孩子戶籍地的愛心卡、博愛卡或關懷卡。這篇整理 22 縣市的每月點數、指定運具免費或按趟補助，以及官方查詢入口。",
+      "related": "taiwan-disability-rights-act",
+      "situations": [
+        "local-support"
+      ],
+      "keywords": [
+        "愛心卡",
+        "愛心陪伴卡",
+        "博愛卡",
+        "關懷卡",
+        "長青幸福卡",
+        "社福卡",
+        "交通補助",
+        "交通點數",
+        "縣市額度",
+        "臺北",
+        "臺中",
+        "臺南",
+        "臺東",
+        "台北",
+        "台中",
+        "台南",
+        "台東"
+      ],
+      "sourceSection": "第 58 條適用於符合資格的持證自閉症兒少及一名必要陪伴者。地方額度與使用範圍由各縣市訂定，各列附承辦機關公告或官方查詢入口。",
+      "additionalSources": [
+        {
+          "id": "taiwan-disability-assessment",
+          "section": "以鑑定作業辦法及明列自閉症的附表核對適用對象。地方票卡以有效身心障礙證明及個別資格為準。"
+        }
+      ],
+      "status": "trial",
+      "ageBasis": "editorial-context",
+      "ageNote": "0–17 歲為家長閱讀分組。實際辦卡、免票年齡及陪伴方式依各地資格和運具規定。",
+      "reviewChecked": "2026-11-25",
+      "reviewScope": "依據自閉症兒少鑑定法源與持證者第 58 條優待，核對 22 縣市針對持證者的有效額度及交通限制。只摘記個別政府措施的事實及連結。",
+      "sections": [
+        {
+          "heading": "先查孩子戶籍地",
+          "paragraphs": [
+            "自閉症孩子領到身障證明後，可依戶籍地規定辦理愛心卡。下列以 2026 年 11 月 25 日已生效的條件為準。點數通常用於指定運具或服務，請一併查路線、起訖站和單趟扣抵上限。",
+            "全國的身障乘車半價依身障證明適用。地方愛心卡還可能提供點數、指定路線免費或特定運具補助。<a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050046&amp;flno=58\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 58 條</a>"
+          ]
+        },
+        {
+          "heading": "北部",
+          "paragraphs": [
+            "<strong>基隆市｜市區公車免費，搭乘次數不限</strong><br>當地稱為關懷卡。持卡刷乘行駛基隆市區路線的公車，依規定展期。 <a href=\"https://www.klcg.gov.tw/tw/klcg1/4143-280928.html\" target=\"_blank\" rel=\"noopener noreferrer\">基隆市關懷卡申請</a>",
+            "<strong>臺北市｜每月 600 點</strong><br>愛心悠遊卡（一）可折抵指定公車、捷運、臺鐵和敬老愛心計程車等。須設籍且實際住在臺北市。 <a href=\"https://dosw.gov.taipei/cp.aspx?n=98EA840859DF5D7F\" target=\"_blank\" rel=\"noopener noreferrer\">臺北市愛心卡申辦</a> · <a href=\"https://laws.gov.taipei/law/LawSearch/LawArticleContent/FL038239\" target=\"_blank\" rel=\"noopener noreferrer\">臺北市補助辦法</a>",
+            "<strong>新北市｜每月 600 點</strong><br>愛心悠遊卡自 2026 年 7 月調為 600 點。可折抵指定公車、捷運、臺鐵和特約計程車等。 <a href=\"https://lkk.ntpc.gov.tw/new/home.jsp?id=aa967983e02a861f\" target=\"_blank\" rel=\"noopener noreferrer\">新北市愛心卡申辦</a>",
+            "<strong>桃園市｜每月 800 點，復興區 1,000 點</strong><br>看孩子的戶籍。實體愛心卡可折抵指定公車、機場捷運、臺鐵和特約計程車等。 <a href=\"https://typass.tycg.gov.tw/citizen-card-intro/view?id=03\" target=\"_blank\" rel=\"noopener noreferrer\">桃園市愛心卡申辦</a>",
+            "<strong>新竹市｜每月 1,200 點</strong><br>自 2026 年 10 月起調為 1,200 點。可折抵指定公車、國道客運、臺鐵和特約計程車等。 <a href=\"https://dg-srv.hccg.gov.tw/serviceNotice.do?id=18&amp;rule=guest\" target=\"_blank\" rel=\"noopener noreferrer\">新竹市愛心卡申辦</a>",
+            "<strong>新竹縣｜每月 1,000 點</strong><br>自 2026 年 10 月起調為 1,000 點。可折抵指定客運、臺鐵和特約計程車等。原申辦頁若仍顯示 500 點，以縣府調整公告為準。 <a href=\"https://www.hsinchu.gov.tw/News_Content.aspx?n=153&amp;s=311026&amp;sms=8603\" target=\"_blank\" rel=\"noopener noreferrer\">新竹縣點數調整</a> · <a href=\"https://longcare.hsinchu.gov.tw/News_Content.aspx?n=3651&amp;s=311777\" target=\"_blank\" rel=\"noopener noreferrer\">新竹縣愛心卡申辦</a>",
+            "<strong>宜蘭縣｜指定縣內公車免費</strong><br>以社會福利智慧卡的愛心卡乘車。跨縣市使用時，依運具的身障票價和刷卡規則辦理。 <a href=\"https://yilan.e-land.gov.tw/News_Content.aspx?n=18705&amp;s=372390&amp;sms=16134\" target=\"_blank\" rel=\"noopener noreferrer\">宜蘭縣愛心卡申辦</a> · <a href=\"https://sntroot.e-land.gov.tw/News_Content.aspx?n=10124&amp;s=130386\" target=\"_blank\" rel=\"noopener noreferrer\">宜蘭縣免費乘車要點</a>"
+          ]
+        },
+        {
+          "heading": "中部",
+          "paragraphs": [
+            "<strong>苗栗縣｜每月 700 點</strong><br>敬老愛心卡可折抵簽約客運、臺鐵和特約計程車等，部分用途有各自的上限。 <a href=\"https://www.miaoli.gov.tw/News_Content2.aspx?n=295&amp;s=404900\" target=\"_blank\" rel=\"noopener noreferrer\">苗栗縣敬老愛心卡</a>",
+            "<strong>臺中市｜每月 1,000 點，原住民方案 1,500 點</strong><br>可折抵指定公車、客運、捷運、臺鐵和特約計程車等。原住民兒少的核發資格可向區公所確認。 <a href=\"https://www.society.taichung.gov.tw/461740/post\" target=\"_blank\" rel=\"noopener noreferrer\">臺中市身障愛心卡</a>",
+            "<strong>彰化縣｜每月 1,000 點</strong><br>身障者可申辦長青幸福卡的愛心卡。可折抵簽約客運、臺鐵和特約計程車等。 <a href=\"https://www.chcg.gov.tw/DTO/social/07other/other01_con.aspx?cate_id=7174&amp;data_id=25908&amp;topsn=715\" target=\"_blank\" rel=\"noopener noreferrer\">彰化縣長青幸福卡</a>",
+            "<strong>南投縣｜每月 1,000 點</strong><br>敬老愛心卡可折抵簽約客運、臺鐵和特約計程車等。 <a href=\"https://welfare.nantou.gov.tw/1486/1009\" target=\"_blank\" rel=\"noopener noreferrer\">南投縣敬老愛心卡</a> · <a href=\"https://www.nantou.gov.tw/big5/news_print.php?cid=75&amp;dptid=376480000&amp;id=168923\" target=\"_blank\" rel=\"noopener noreferrer\">南投縣現行額度</a>",
+            "<strong>雲林縣｜簽約縣內客運免費，搭乘次數不限</strong><br>敬老愛心卡按符合條件的車資補助，沒有每月固定點數上限。 <a href=\"https://www.mlvillage.gov.tw/df_ufiles/040/%E9%99%84%E4%BB%B6%E4%B8%89_%E9%9B%B2%E6%9E%97%E7%B8%A3%E6%95%AC%E8%80%81%E6%84%9B%E5%BF%83%E5%8D%A1%E5%AE%A3%E5%82%B3DM.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">雲林縣愛心卡申辦與搭乘說明</a>"
+          ]
+        },
+        {
+          "heading": "南部",
+          "paragraphs": [
+            "<strong>嘉義市｜每月 1,200 點</strong><br>愛心乘車卡可折抵指定公車及臺鐵等，自 2026 年 8 月起也可折抵特約計程車車資。 <a href=\"https://www.cna.com.tw/postwrite/chi/433542\" target=\"_blank\" rel=\"noopener noreferrer\">嘉義市政府額度與申辦公告</a> · <a href=\"https://www.cna.com.tw/postwrite/Chi/441656\" target=\"_blank\" rel=\"noopener noreferrer\">嘉義市政府計程車優惠公告</a>",
+            "<strong>嘉義縣｜每月 1,000 點，阿里山鄉及大埔鄉 1,200 點</strong><br>愛心卡可折抵指定公車、客運、幸福巴士或臺鐵等，依路線和車站規定使用。 <a href=\"https://mydata.nat.gov.tw/service/counter/CLI.1tVzkUMako\" target=\"_blank\" rel=\"noopener noreferrer\">嘉義縣愛心卡申辦</a> · <a href=\"https://www.cna.com.tw/postwrite/chi/347023\" target=\"_blank\" rel=\"noopener noreferrer\">嘉義縣政府額度公告</a>",
+            "<strong>臺南市｜指定市內公車免費，搭乘次數不限</strong><br>持市民卡愛心卡刷卡。2026 年公車公告所列的 111 路及雙層巴士除外。 <a href=\"https://traffic.tainan.gov.tw/PTO/Announcement/trafficcontrolannouncement?PageType=1&amp;id=2d90c844-2215-42e9-94ad-0dfebcf46c7a&amp;pageIndex=11\" target=\"_blank\" rel=\"noopener noreferrer\">臺南市愛心卡乘車優惠</a> · <a href=\"https://sab.tainan.gov.tw/cp.aspx?Create=1&amp;n=21427\" target=\"_blank\" rel=\"noopener noreferrer\">臺南市愛心卡申辦</a>",
+            "<strong>高雄市｜博愛卡每月 900 點</strong><br>可折抵指定公車、渡輪、捷運、臺鐵和特約計程車等。市府另列的每月 600 點是敬老卡額度。 <a href=\"https://older.kcg.gov.tw/cp.aspx?n=DD8A8F620A1794BE\" target=\"_blank\" rel=\"noopener noreferrer\">高雄市博愛卡申辦與優惠</a>",
+            "<strong>屏東縣｜博愛卡每月 1,000 點</strong><br>可折抵指定公車、臺鐵、計程車和部分往返小琉球的交通船。舊卡若仍是 500 點，可到公所過卡更新。 <a href=\"https://www.pthg.gov.tw/planjdp/cp.aspx?n=1EDF47490238B419\" target=\"_blank\" rel=\"noopener noreferrer\">屏東縣博愛卡申辦</a>"
+          ]
+        },
+        {
+          "heading": "東部",
+          "paragraphs": [
+            "<strong>花蓮縣｜臺鐵每月最高 1,000 元，特約計程車每月最高 1,500 點</strong><br>兩種運具各有額度。臺鐵補助縣境內路段。特約計程車每趟補助車資七成。指定客運的花蓮縣內路段另可免費搭乘。 <a href=\"https://sa.hl.gov.tw/Detail_sp/4257cd2ac3d64f259b7b27c1b6d93de5\" target=\"_blank\" rel=\"noopener noreferrer\">花蓮縣愛心卡及車資補助</a>",
+            "<strong>臺東縣｜博愛卡每月 1,500 點</strong><br>以臺東卡的博愛卡乘車，可用於指定縣內公車、愛心計程車及符合條件的臺鐵車種，依各運具的扣點限制辦理。 <a href=\"https://www.taitungcity.gov.tw/article/%E3%80%90%E8%80%81%E4%BA%BA%E3%80%81%E8%BA%AB%E9%9A%9C%E7%A6%8F%E5%88%A9%E3%80%91%E5%8F%B0%E6%9D%B1%E5%8D%A1(%E6%95%AC%E8%80%81%E5%8D%A1%E3%80%81%E5%8D%9A%E6%84%9B%E5%8D%A1%E5%8F%8A%E9%99%AA%E4%BC%B4%E5%8D%A1)\" target=\"_blank\" rel=\"noopener noreferrer\">臺東縣博愛卡申辦</a>"
+          ]
+        },
+        {
+          "heading": "離島",
+          "paragraphs": [
+            "<strong>澎湖縣｜愛心卡乘車優惠，官方未列固定月額</strong><br>澎湖 iPASS 愛心卡適用公告所列運具的優待。設籍澎湖的孩子另可查縣民 TPASS 公車或車船方案，由縣府補助月票。 <a href=\"https://www.penghu.gov.tw/society/home.jsp?act=view&amp;dataserno=201606080001&amp;id=247\" target=\"_blank\" rel=\"noopener noreferrer\">澎湖縣愛心卡申辦</a> · <a href=\"https://penghu.tpass.tw/notice-citizen\" target=\"_blank\" rel=\"noopener noreferrer\">澎湖縣民 TPASS</a>",
+            "<strong>金門縣｜縣民卡可搭指定縣內公車免費，官方未列固定月額</strong><br>愛心卡屬實體縣民卡。與必要陪伴者一起使用優惠時，依縣府說明使用兩張實體卡刷卡。 <a href=\"https://www.kinmen.gov.tw/kmcard/cp.aspx?n=461C44FEA65C6DC8\" target=\"_blank\" rel=\"noopener noreferrer\">金門縣愛心卡申辦</a> · <a href=\"https://www.kinmen.gov.tw/kmcard/cp.aspx?n=9302AD93AAD536B4\" target=\"_blank\" rel=\"noopener noreferrer\">金門縣民卡使用問答</a> · <a href=\"https://kmtd.kinmen.gov.tw/News_Content.aspx?Create=1&amp;n=CE79EFB4EF1F256C&amp;s=0688CF796622D509&amp;sms=A2C62D68901B977C\" target=\"_blank\" rel=\"noopener noreferrer\">金門縣民搭車優惠</a>",
+            "<strong>連江縣｜縣民卡搭縣內公車免費，官方未列固定月額</strong><br>愛心卡是連江縣民卡的一種。搭船時查該航線的票價及縣民海運補助規則。 <a href=\"https://www.matsu.gov.tw/chhtml/content/371050000A0001MC/6073\" target=\"_blank\" rel=\"noopener noreferrer\">連江縣縣民卡申辦</a> · <a href=\"https://www.thb.gov.tw/News_Content_Table.aspx?n=10738&amp;s=212598\" target=\"_blank\" rel=\"noopener noreferrer\">公路局縣民乘車說明</a>"
+          ]
+        },
+        {
+          "heading": "要陪孩子一起搭車，先確認什麼？",
+          "paragraphs": [
+            "如果孩子常需要大人陪同搭車去學校、早療或回診，先看身障證明背面的「必要陪伴者優惠措施」是否有「國內大眾運輸工具」註記，再問公所如何一併申辦陪伴卡。陪伴卡通常要和孩子的卡搭配使用。孩子屬免票年齡時，可先問營運單位怎麼刷卡或購票。",
+            "申辦前先向各縣市窗口確認，未領身分證的孩子可準備哪種身分文件，以及由監護人代辦需要哪些證件。"
+          ]
+        }
+      ],
+      "relatedArticles": [
+        "disability-certificate-available-services"
       ]
     },
     {
