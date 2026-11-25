@@ -17,7 +17,6 @@ const iconPaths = {
   chevron: '<path d="m9 6 6 6-6 6"/>',
   external: '<path d="M13 5h6v6m0-6-8 8m7 0v6H5V6h6"/>',
   lock: '<rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/>',
-  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
   repeat: '<path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/>',
   message: '<path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l1.4-3.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 11h8m-8 4h5"/>',
   sparkles: '<path d="M12 2c0 6-2 8-8 8 6 0 8 2 8 8 0-6 2-8 8-8-6 0-8-2-8-8Zm7 13v6m-3-3h6M4 3v4M2 5h4"/>',
@@ -336,7 +335,7 @@ function articleCard(article, origin) {
     ${origin.startsWith("resources") ? "" : `<div class="card-top">${categoryIcon(category)}<span>${origin === "search" ? `${section} · ` : ""}${category.label}</span>${origin === "saved" ? bookmarkButton(article) : ""}</div>`}
     <h3><a href="#article/${article.id}" data-origin="${origin}">${article.title}</a></h3>
     <p>${article.summary}</p>
-    <div class="card-meta"><div class="card-details">${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div><a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
+    <div class="card-meta"><div class="card-details">${articleAge(article)}${articleTags(article)}</div><a href="#article/${article.id}" data-origin="${origin}" aria-label="閱讀〈${article.title}〉">${icon("arrow")}</a></div>
   </article>`;
 }
 
@@ -384,7 +383,7 @@ function recommendationCard(article, hasMore) {
   const group = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
   return `<article class="feature-card">
     <div class="feature-copy">
-      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${article.resource ? "資源專區 · " : ""}${group.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
+      <div class="feature-label"><span class="pill ${group.color}">${icon(group.icon)} ${article.resource ? "資源專區 · " : ""}${group.label}</span>${articleAge(article)}${articleTags(article)}</div>
       <h3 id="featured-article-title">${article.title}</h3>
       <p>${article.summary}</p>
       <div class="feature-actions">
@@ -548,7 +547,7 @@ function articlePage(article) {
   return shell(section, `<div class="article-page">
     <a class="text-button back-link" href="#${origin}">${icon("back")} ${originLabel}</a>
     <header class="article-heading">
-      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span></div>
+      <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}</div>
       <h1>${article.title}</h1>
       ${article.updatedAt && (!article.resource || article.updatedAt !== article.reviewChecked) ? `<p class="article-updated">最後更新日期 <time datetime="${article.updatedAt}">${articleDate.format(new Date(article.updatedAt))}</time></p>` : ""}
       <p>${article.summary}</p>
