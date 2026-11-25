@@ -1,5 +1,5 @@
 // Generated from catalog.json by build-content.py.
-const { categories, situations, sources, articles, withdrawnArticles } = {
+const { categories, resourceGroups, situations, sources, articles, withdrawnArticles } = {
   "version": 1,
   "categories": [
     {
@@ -46,10 +46,10 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
     },
     {
       "id": "caregiver",
-      "label": "照顧者支持與找資源",
+      "label": "照顧者支持",
       "icon": "hands",
       "color": "mint",
-      "description": "照顧分工、評估與在地服務"
+      "description": "照顧分工、家長支持與早療對話"
     }
   ],
   "situations": [
@@ -122,6 +122,46 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "prompt": "我想了解附近有哪些兒童發展服務",
       "icon": "book",
       "color": "blue"
+    },
+    {
+      "id": "early-intervention",
+      "label": "想了解早療",
+      "prompt": "我想了解早療或早療補助",
+      "icon": "hands",
+      "color": "mint",
+      "resourceInterest": true
+    },
+    {
+      "id": "special-education",
+      "label": "想了解特教鑑定",
+      "prompt": "我想了解特教鑑定或重評",
+      "icon": "book",
+      "color": "blue",
+      "resourceInterest": true
+    },
+    {
+      "id": "disability-certificate",
+      "label": "想了解身障證明",
+      "prompt": "我想了解身障證明怎麼評估或申請",
+      "icon": "check",
+      "color": "blue",
+      "resourceInterest": true
+    },
+    {
+      "id": "benefit-lookup",
+      "label": "想查福利與優惠",
+      "prompt": "我想查身障福利或愛心卡",
+      "icon": "hands",
+      "color": "mint",
+      "resourceInterest": true
+    },
+    {
+      "id": "insurance-lookup",
+      "label": "想了解領證與投保",
+      "prompt": "我想了解領證和投保各自會有哪些影響",
+      "icon": "lock",
+      "color": "sand",
+      "resourceInterest": true
     }
   ],
   "sources": {
@@ -3171,7 +3211,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "summary": "分清發展篩檢、聯合評估、自閉症診斷和資源轉介，先找到可以一起釐清疑問的窗口。",
       "related": "kaohsiung-asd-development-assessment",
       "situations": [
-        "local-support"
+        "local-support",
+        "early-intervention"
       ],
       "keywords": [
         "早療",
@@ -3237,7 +3278,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "related": "kaohsiung-asd-development-assessment",
       "situations": [
         "local-support",
-        "communication"
+        "communication",
+        "early-intervention"
       ],
       "keywords": [
         "早療",
@@ -3287,7 +3329,8 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         }
       ],
       "relatedArticles": [
-        "early-intervention-try-at-home"
+        "early-intervention-try-at-home",
+        "early-intervention-subsidy"
       ]
     },
     {
@@ -3349,8 +3392,21 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         }
       ],
       "relatedArticles": [
-        "early-intervention-first-steps"
-      ]
+        "early-intervention-first-steps",
+        "early-intervention-assessment-report"
+      ],
+      "resource": {
+        "group": "benefits",
+        "interests": [
+          "early-intervention",
+          "local-support"
+        ],
+        "audience": "想查學前早療費用或交通補助的家庭",
+        "contact": "孩子戶籍地的社會局處或公告受理窗口",
+        "officialSources": [
+          "tainan-early-intervention-subsidy"
+        ]
+      }
     },
     {
       "id": "early-intervention-try-at-home",
@@ -3689,7 +3745,20 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "what-disability-assessment-checks"
-      ]
+      ],
+      "resource": {
+        "group": "assessment",
+        "interests": [
+          "special-education",
+          "disability-certificate"
+        ],
+        "audience": "想了解孩子的在校支持或身障福利資格的家庭",
+        "contact": "園校特教承辦、所在地教育局處或戶籍地公所",
+        "officialSources": [
+          "taiwan-special-education-assessment",
+          "taiwan-disability-assessment"
+        ]
+      }
     },
     {
       "id": "grades-and-special-ed",
@@ -3962,7 +4031,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "disability-certificate-available-services"
-      ]
+      ],
+      "resource": {
+        "group": "assessment",
+        "interests": [
+          "disability-certificate"
+        ],
+        "audience": "準備了解孩子身障鑑定項目的家庭",
+        "contact": "戶籍地公所或指定鑑定醫療機構",
+        "officialSources": [
+          "taiwan-disability-assessment"
+        ]
+      }
     },
     {
       "id": "disability-assessment-under-six",
@@ -4029,7 +4109,18 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "disability-certificate-available-services"
-      ]
+      ],
+      "resource": {
+        "group": "assessment",
+        "interests": [
+          "disability-certificate"
+        ],
+        "audience": "想了解未滿六歲孩子身障鑑定程序的家庭",
+        "contact": "戶籍地公所或指定鑑定醫療機構",
+        "officialSources": [
+          "taiwan-disability-assessment"
+        ]
+      }
     },
     {
       "id": "disability-certificate-available-services",
@@ -4153,7 +4244,19 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "relatedArticles": [
         "disability-certificate-and-insurance",
         "county-disability-transit-cards"
-      ]
+      ],
+      "resource": {
+        "group": "benefits",
+        "interests": [
+          "benefit-lookup"
+        ],
+        "audience": "已持證或想了解持證資源的家庭",
+        "contact": "戶籍地公所或社會局處，個別福利依文中窗口查詢",
+        "officialSources": [
+          "taiwan-disability-rights-act",
+          "taiwan-assistive-device-subsidies"
+        ]
+      }
     },
     {
       "id": "county-disability-transit-cards",
@@ -4277,7 +4380,19 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "disability-certificate-available-services"
-      ]
+      ],
+      "resource": {
+        "group": "benefits",
+        "interests": [
+          "benefit-lookup"
+        ],
+        "audience": "想查愛心卡、博愛卡或陪伴卡的家庭",
+        "contact": "孩子戶籍地的公所或社會局處",
+        "officialSources": [
+          "taiwan-disability-rights-act"
+        ],
+        "countyJump": true
+      }
     },
     {
       "id": "reassess-support-or-disability-certificate",
@@ -4352,7 +4467,20 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "disability-certificate-available-services"
-      ]
+      ],
+      "resource": {
+        "group": "assessment",
+        "interests": [
+          "special-education",
+          "disability-certificate"
+        ],
+        "audience": "孩子的在校支持或持證需求有變動的家庭",
+        "contact": "園校特教承辦或戶籍地公所",
+        "officialSources": [
+          "taiwan-special-education-assessment",
+          "taiwan-disability-rights-act"
+        ]
+      }
     },
     {
       "id": "disability-certificate-and-insurance",
@@ -4454,7 +4582,19 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       ],
       "relatedArticles": [
         "what-disability-assessment-checks"
-      ]
+      ],
+      "resource": {
+        "group": "insurance",
+        "interests": [
+          "insurance-lookup"
+        ],
+        "audience": "正在考慮替自閉症孩子領證或投保的家庭",
+        "contact": "保險公司客服、戶籍地公所或社會局處",
+        "officialSources": [
+          "taiwan-insurance-underwriting",
+          "taiwan-ombudsman-autism-insurance"
+        ]
+      }
     },
     {
       "id": "disability-certificate-and-school-label",
@@ -4636,6 +4776,26 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
     {
       "id": "gender-expression",
       "title": "有人說「男生不能穿這個」，怎麼和孩子聊"
+    }
+  ],
+  "resourceGroups": [
+    {
+      "id": "assessment",
+      "label": "評估與申請",
+      "icon": "check",
+      "color": "blue"
+    },
+    {
+      "id": "benefits",
+      "label": "補助與生活優惠",
+      "icon": "hands",
+      "color": "mint"
+    },
+    {
+      "id": "insurance",
+      "label": "領證與投保",
+      "icon": "lock",
+      "color": "sand"
     }
   ]
 };

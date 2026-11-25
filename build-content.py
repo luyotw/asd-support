@@ -40,6 +40,10 @@ def main():
                 or not source.get("reviewChecked")):
             parser.error(f"{source_id} needs a completed review for the cited scope.")
     article_ids = {article["id"] for article in catalog["articles"]}
+    situation_ids = {situation["id"] for situation in catalog["situations"]}
+    resource_group_ids = {group["id"] for group in catalog["resourceGroups"]}
+    if len(resource_group_ids) != len(catalog["resourceGroups"]):
+        parser.error("Resource groups need distinct IDs.")
     for article in catalog["articles"]:
         if not article.get("ages"):
             parser.error(f"{article['id']} must have at least one age group in catalog.json.")
@@ -67,10 +71,22 @@ def main():
             if source_id not in catalog["sources"] or source_id in cited or not reference.get("section"):
                 parser.error(f"{article['id']} needs a distinct approved source and citation scope for each additional reference.")
             cited.add(source_id)
+        resource = article.get("resource")
+        if resource is not None:
+            if resource.get("group") not in resource_group_ids:
+                parser.error(f"{article['id']} needs a known resource group.")
+            interests = resource.get("interests", [])
+            if not interests or not set(interests) <= situation_ids:
+                parser.error(f"{article['id']} needs known resource interests.")
+            official = resource.get("officialSources", [])
+            if not official or not set(official) <= cited:
+                parser.error(f"{article['id']} needs official links drawn from its cited sources.")
+            if not all(resource.get(field) for field in ("audience", "contact")) or not article.get("reviewChecked"):
+                parser.error(f"{article['id']} needs a resource audience, contact and review date.")
     path = folder / "guide.js"
     content = (
         "// Generated from catalog.json by build-content.py.\n"
-        "const { categories, situations, sources, articles, withdrawnArticles } = "
+        "const { categories, resourceGroups, situations, sources, articles, withdrawnArticles } = "
         + json.dumps(catalog, ensure_ascii=False, indent=2)
         + ";\n"
     )
