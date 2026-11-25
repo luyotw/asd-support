@@ -481,14 +481,14 @@ function articlePage(article) {
         }).join("")}
       </details>
     </section>
-    <section class="article-section"><h2>什麼時候用</h2><p>${article.when}</p><p>${article.asdFocus}</p>${article.ageNote ? `<p class="muted">${article.ageNote.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>` : ""}</section>
-    <section class="article-section"><h2>${article.status === "official" ? "可以怎麼查找" : "可以怎麼開始"}</h2>
+    <section class="article-section"><h2>${article.contextHeading || "什麼時候用"}</h2><p>${article.when}</p><p>${article.asdFocus}</p>${article.ageNote ? `<p class="muted">${article.ageNote.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>` : ""}</section>
+    <section class="article-section"><h2>${article.stepsHeading || (article.status === "official" ? "可以怎麼查找" : "可以怎麼開始")}</h2>
       <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
     </section>
     ${article.evidence ? `<section class="article-section"><h2>${article.evidence.heading || (article.evidence.contrast ? "不同來源怎麼說" : "這份資料的範圍")}</h2><p>${article.evidence.summary}</p>${article.evidence.contrast ? `<p>${article.evidence.contrast}</p>` : ""}<p>${article.evidence.limit}</p></section>` : ""}
     ${article.observe ? `<section class="article-section"><h2>${article.observeHeading || "可以觀察什麼"}</h2><p>${article.observe}</p></section>` : ""}
     ${article.example ? `<section class="article-section"><h2>生活中的例子</h2><p>${article.example}</p></section>` : ""}
-    ${article.adjust ? `<section class="article-section"><h2>如果這次行不通</h2><p>${article.adjust}</p></section>` : ""}
+    ${article.adjust ? `<section class="article-section"><h2>${article.adjustHeading || "如果這次行不通"}</h2><p>${article.adjust}</p></section>` : ""}
     ${notesSection(article.id)}
     <footer class="article-actions">
       ${bookmarkButton(article, true)}

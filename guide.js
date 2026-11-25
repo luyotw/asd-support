@@ -3827,7 +3827,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
     {
       "id": "disability-certificate-and-insurance",
       "category": "caregiver",
-      "title": "幫自閉症孩子辦了身障證明，以後還能買保險嗎？",
+      "title": "擔心買不到保險，要因此放棄申請身障證明嗎？",
       "ages": [
         "0–1 歲",
         "2–5 歲",
@@ -3836,21 +3836,21 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "13–17 歲"
       ],
       "time": 5,
-      "summary": "領了身障證明，仍可申請商業保險。是否承保及承保條件，依商品和個案評估。現有資料無法比較自閉症兒少領證與未領證的承保率。",
-      "when": "孩子已有自閉症診斷或評估紀錄，家長在考慮申請身障證明，又想了解現在或未來的商業保險。",
-      "asdFocus": "要保書可分別詢問是否領有身障證明和健康情況。即使未領證，落在書面詢問範圍內的就醫、評估或診斷仍應據實說明。身障證明可作為部分公共服務的申請資格，商業保險依保單約定給付。",
+      "summary": "暫不申請身障證明，不能保證比較好投保。對已有自閉症診斷或就醫紀錄的孩子，要保書問到的事項仍要據實回答。如果孩子現在需要的服務以領證為條件，延後申請也會延後取得那些支持的機會。",
+      "when": "這個問題有兩個時間點：孩子現在可能就需要照顧支持，未來申請的保單則要等到正式核保才知道結果。若還沒查過孩子用得到的服務，單憑「以後可能買不到保險」這個顧慮，無法判斷放棄申請是否對孩子有利。",
+      "asdFocus": "身障證明可作為公共服務的申請資格。照顧者支持團體、社工個案管理等服務，提供的是照顧與資源連結。商業保險依保單約定給付。兩邊可以同時查，等候保險答覆時也能先了解身障服務的資格和申請時程。",
       "steps": [
         [
-          "身障證明可申請哪些服務",
-          "以新北市 115 年度計畫為例，符合條件的家庭可申請照顧個案管理、照顧知能課程或家長支持活動。各地服務和資格可向公所或社會局處查詢。<a href=\"#article/disability-certificate-available-services\">查看身障證明相關服務</a>。"
+          "孩子現在需要的服務，是否要求身障證明？",
+          "以新北市 115 年度家庭照顧者支持計畫為例，服務對象包含實際住在新北市、已領證的自閉症者家庭。計畫提供家庭關懷、支持團體及依需求安排的社工個案管理。如果家裡正缺這類協助，可以向公所或社會局處詢問當地有什麼方案、是否要領證、等候期間有沒有其他服務。<a href=\"#article/disability-certificate-available-services\">查看身障證明相關服務</a>。"
         ],
         [
-          "既有保單與新申請的差別",
-          "既有保單的保障看原契約條款。新投保、加保或變更是否需要核保，可向保險公司確認。健康告知以要保書上的書面問題及所列期間為準。"
+          "還沒領證，保險公司可能問哪些事？",
+          "金管會的要保書範本把領證狀況和健康告知分開。若評估、診斷或就醫紀錄落在要保書書面詢問的事項及期間內，即使尚未領證，仍應據實說明。可以向保險公司索取商品的要保書，確認實際問了什麼。"
         ],
         [
-          "聽到「不能保」時，怎麼確認下一步？",
-          "<strong>只問過業務員，還沒交申請資料</strong><br>如果仍想申請，可以直接問保險公司客服：「我想正式申請這個商品，請問可以透過哪個管道送件？」<br><br><strong>已把申請資料交給業務員</strong><br>若只收到口頭回覆，可以請保險公司查是否收到申請、是否已有核保結果。身心障礙者的申請若經正式核保後未承保，保險公司應以書面通知理由。"
+          "你在意的是手上的保單，還是之後想買的保單？",
+          "既有保單的保障範圍可查原契約條款。若是想新投保、加保或變更保障，可以問保險公司是否需要重新核保。領證後仍可提出投保申請，結果依商品與個案評估。"
         ]
       ],
       "related": "taiwan-insurance-underwriting",
@@ -3866,26 +3866,30 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "健康告知",
         "新投保",
         "加保",
-        "保單"
+        "保單",
+        "身障資格",
+        "先不辦",
+        "放棄",
+        "買不到保險"
       ],
-      "sourceSection": "第 7 條第 1 項第 11 款。訂約的健康告知另參考 <a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&amp;flno=64\" target=\"_blank\" rel=\"noopener noreferrer\">《保險法》第 64 條</a>。 要保書把領證和健康問項分開，見<a href=\"https://law.fsc.gov.tw/LawContent.aspx?id=FL006767\" target=\"_blank\" rel=\"noopener noreferrer\">金管會《人身保險要保書示範內容及注意事項》第二、四點</a>。 拒絕受理或協助送件的申訴管道，見<a href=\"https://www.ey.gov.tw/Page/88F151FFCE5C741E/296bf31e-f0ef-4eed-8d0e-67a399eee315\" target=\"_blank\" rel=\"noopener noreferrer\">金管會的身心障礙者投保權益說明</a>。",
+      "sourceSection": "第 7 條第 1 項第 11 款。訂約的健康告知另參考 <a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0390002&amp;flno=64\" target=\"_blank\" rel=\"noopener noreferrer\">《保險法》第 64 條</a>。 要保書把領證和健康問項分開，見<a href=\"https://law.fsc.gov.tw/LawContent.aspx?id=FL006767\" target=\"_blank\" rel=\"noopener noreferrer\">金管會《人身保險要保書示範內容及注意事項》第二、四點</a>。 拒絕受理或協助送件的申訴管道，見<a href=\"https://www.ey.gov.tw/Page/88F151FFCE5C741E/296bf31e-f0ef-4eed-8d0e-67a399eee315\" target=\"_blank\" rel=\"noopener noreferrer\">金管會的身心障礙者投保權益說明</a>。 投保諮詢窗口參考<a href=\"https://www.lia-roc.org.tw/list_article?article_content=513\" target=\"_blank\" rel=\"noopener noreferrer\">壽險公會金融友善服務問答第 8 題</a>。",
       "evidence": {
-        "heading": "核保規定與實務案例",
-        "summary": "<strong>金管會規定</strong>　保險業須依風險評估，不能僅因身心障礙身分給予不公平待遇。",
-        "contrast": "<strong>監察院調查</strong>　2020 年的調查記錄過未領證的自閉症家庭因就醫或診斷被口頭勸退，也記錄過業務員得知孩子已領證後勸退的案例。",
-        "limit": "這些個案無法用來比較領證與未領證孩子的承保率。"
+        "heading": "有沒有資料顯示不領證比較好投保？",
+        "summary": "<strong>目前缺少直接比較。</strong>監察院 2020 年的調查記錄過自閉症孩子未領證，家長仍因孩子的就醫紀錄或診斷被口頭勸退。也有家長在業務員得知孩子已領證後被勸退。",
+        "contrast": "<strong>金管會規定。</strong>保險公司須依風險評估，不能僅因身心障礙身分給予不公平待遇。",
+        "limit": "監察院的案例能說明家長遇過的情況，無法用來比較領證與未領證自閉症兒少的承保率，也無法估計領證會如何影響同一位孩子的核保結果。"
       },
-      "observe": "<strong>問社會局或公所</strong><br>「孩子目前需要○○。申請這項服務要有身障證明嗎？還有哪些條件？」<br><br><strong>問保險公司</strong><br>「我想替孩子現有的保單加保○○。需要重新核保嗎？可以先給我要保書的書面問項嗎？」",
-      "example": "例如，孩子已有自閉症評估紀錄，家庭同時在查照顧者支持和醫療險加保。服務資格由社會局或公所確認，加保條件則由保險公司依商品與個案說明。",
-      "adjust": "若業務員拒絕受理或協助送件，可向保險公司申訴，並提供接洽日期、商品名稱及往來紀錄。若對申訴結果不服，或保險公司逾期未處理，可依規定向<a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>申請評議。",
+      "observe": "<strong>問社會局或公所</strong><br>「我們現在需要照顧者支持。哪一項服務需要先領證？等鑑定期間還能申請哪些協助？」<br><br><strong>問保險公司</strong><br>「我想替孩子加保○○。請問要重新核保嗎？可以先給我要保書的書面問項嗎？」",
+      "example": "一個已有自閉症評估紀錄的孩子，家長想申請家庭照顧者支持，也想替孩子加保醫療險。若當地方案要求領證，暫不申請證明就暫時不能以持證者身分使用該方案。加保時，只要要保書問到範圍內的就醫或評估紀錄，家長仍須據實回答。這兩件事可以同時向各自的窗口確認。",
+      "adjust": "<strong>還沒交申請資料。</strong>若業務員不協助送件，而家長仍想申請，可向保險公司客服確認這項商品是否有其他受理窗口。<br><br><strong>已把資料交給業務員。</strong>若只收到口頭回覆，可向保險公司查是否收到申請、是否已有核保結果。身心障礙者的案件經正式核保而未承保時，保險公司應書面通知理由。<br><br>若業務員拒絕受理或協助送件，可向保險公司申訴。對申訴結果不服，或公司逾期未處理，可依規定向<a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>申請評議。",
       "additionalSources": [
         {
           "id": "taiwan-ombudsman-autism-insurance",
-          "section": "2020 年調查中自閉症投保案例及實務差距。申訴程序另見 <a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>。 正式未承保的書面理由，見<a href=\"https://law.lia-roc.org.tw/Law/Article?lawno=4&amp;lsid=FL006807\" target=\"_blank\" rel=\"noopener noreferrer\">壽險公會公布的《保險業承保身心障礙者處理原則》第四點</a>。"
+          "section": "2020 年調查報告第 55、62 頁的自閉症投保案例及其個案性質。申訴程序另見 <a href=\"https://www.foi.org.tw/Article.aspx?Arti=358&amp;Lang=1&amp;lv=3\" target=\"_blank\" rel=\"noopener noreferrer\">金融消費評議中心</a>。 正式未承保的書面理由，見<a href=\"https://law.lia-roc.org.tw/Law/Article?lawno=4&amp;lsid=FL006807\" target=\"_blank\" rel=\"noopener noreferrer\">壽險公會公布的《保險業承保身心障礙者處理原則》第四點</a>。"
         },
         {
           "id": "new-taipei-autism-family-services",
-          "section": "新北市明列自閉症的家庭照顧者支持方案，僅作公共服務示例。"
+          "section": "115 年度計畫第陸、柒節，限居住、領證條件及明列自閉症的照顧者支持服務。"
         }
       ],
       "status": "trial",
@@ -3893,7 +3897,10 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageNote": "0–17 歲是照顧者閱讀分組，個別商品的投保年齡按保單規定。",
       "reviewChecked": "2026-11-24",
       "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。",
-      "observeHeading": "打電話可以怎麼問"
+      "observeHeading": "查服務和保單時可以怎麼問",
+      "contextHeading": "暫不申請，會影響什麼？",
+      "stepsHeading": "決定前可以查清楚的三件事",
+      "adjustHeading": "已聽到「不能保」時，可向誰確認？"
     },
     {
       "id": "disability-certificate-and-school-label",
