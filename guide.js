@@ -3901,7 +3901,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "steps": [
         [
           "孩子現在需要的服務，是否要求身障證明？",
-          "照顧者支持只是其中一項。身障證明也和健保基本部分負擔、交通票價和溝通輔具補助有關。地方照顧服務可問公所或社會局處，輔具補助可先問戶籍地輔具中心。<a href=\"#article/disability-certificate-available-services\">查看身障證明相關服務</a>。"
+          "照顧者支持只是其中一項。身障證明也和健保基本部分負擔、交通票價和溝通輔具補助有關。地方照顧服務可問公所或社會局處，輔具補助可先問戶籍地輔具中心。"
         ],
         [
           "還沒領證，保險公司可能問哪些事？",
@@ -3967,7 +3967,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "observeHeading": "查服務和保單時可以怎麼問",
       "contextHeading": "暫不申請，會影響什麼？",
       "stepsHeading": "決定前可以查清楚的三件事",
-      "adjustHeading": "已聽到「不能保」時，可向誰確認？"
+      "adjustHeading": "已聽到「不能保」時，可向誰確認？",
+      "summaryLink": {
+        "articleId": "disability-certificate-available-services",
+        "label": "查看身障福利清單"
+      }
     },
     {
       "id": "disability-certificate-and-school-label",

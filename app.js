@@ -454,6 +454,7 @@ function articlePage(article) {
       <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
       <h1>${article.title}</h1>
       <p>${article.summary}</p>
+      ${article.summaryLink ? `<a class="button secondary article-summary-link" href="#article/${article.summaryLink.articleId}">${article.summaryLink.label}</a>` : ""}
     </header>
     <section class="source-panel" aria-labelledby="article-sources-title">
       <h2 id="article-sources-title">${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
