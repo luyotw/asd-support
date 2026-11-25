@@ -4073,7 +4073,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "13–17 歲"
       ],
       "time": 7,
-      "summary": "健保門診基本部分負擔 50 元、國內大眾運輸半價、符合條件可申請溝通輔具或臨時照顧。這篇列出可用項目、資格和辦理窗口。",
+      "summary": "健保門診基本部分負擔 50 元、國內大眾運輸半價與地方愛心卡、符合條件可申請溝通輔具或臨時照顧。這篇列出可用項目、資格和辦理窗口。",
       "related": "taiwan-disability-rights-act",
       "situations": [
         "local-support",
@@ -4097,9 +4097,13 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "溝通輔具",
         "AAC",
         "臨時照顧",
-        "學雜費"
+        "學雜費",
+        "愛心卡",
+        "愛心陪伴卡",
+        "交通點數",
+        "博愛卡"
       ],
-      "sourceSection": "第 7、29、50、51、56、58、59、71 條，限自閉症家庭適用的需求評估、就學、照顧、停車、交通、場館和輔具。",
+      "sourceSection": "第 7、29、50、51、56、58、59、71 條，限自閉症家庭適用的需求評估、就學、照顧、停車、交通、場館和輔具。 愛心卡地方示例另查<a href=\"https://laws.gov.taipei/law/LawSearch/LawArticleContent/FL038239\" target=\"_blank\" rel=\"noopener noreferrer\">《臺北市敬老悠遊卡及愛心悠遊卡補助辦法》第 2–6 條</a>及<a href=\"https://dosw.gov.taipei/cp.aspx?n=98EA840859DF5D7F\" target=\"_blank\" rel=\"noopener noreferrer\">臺北市政府社會局申辦與使用說明</a>，限持證者及必要陪伴者的資格、窗口及乘車優惠。",
       "additionalSources": [
         {
           "id": "taiwan-assistive-device-subsidies",
@@ -4114,7 +4118,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "ageBasis": "editorial-context",
       "ageNote": "0–17 歲為兒少照顧者閱讀分組。各項福利按實際年齡與資格核定。",
       "reviewChecked": "2026-11-25",
-      "reviewScope": "核對明列自閉症的地方計畫和輔具附表，並查依法領證的 ASD 兒少適用之中央法規及主管機關公告。限已查項目、期間、資格及窗口。",
+      "reviewScope": "核對明列自閉症的地方計畫和輔具附表，並查依法領證的 ASD 兒少適用之中央法規及主管機關公告。限已查項目、期間、資格及窗口。地方愛心卡以臺北市自治規則及社會局公告為例。",
       "sections": [
         {
           "heading": "家庭照顧者支持與臨時照顧",
@@ -4138,9 +4142,12 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
           ]
         },
         {
-          "heading": "搭車與場館門票",
+          "heading": "搭車、愛心卡與場館門票",
           "paragraphs": [
-            "憑證明搭乘國內大眾運輸可享半價，例如臺鐵、高鐵或客運。經需求評估認定需要陪伴者，可有一名必要陪伴者享同樣優惠，搭車時可查看證明背面的優惠註記。依身障權益保障法，收費的公營或公設民營風景區、康樂場所及文教設施可免費，民營場所依該條適用範圍半價。購票時依營運單位查驗方式出示證明。<a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050046\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 58、59 條</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050052\" target=\"_blank\" rel=\"noopener noreferrer\">大眾運輸優待辦法</a>"
+            "持身障證明搭乘國內大眾運輸可享半價，例如臺鐵、高鐵或客運，這項優待沒有戶籍限制。經需求評估認定需要陪伴者，可有一名必要陪伴者享同樣優惠。搭車時帶著孩子的證明供查驗。<a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050046&amp;flno=58\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 58 條</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050052\" target=\"_blank\" rel=\"noopener noreferrer\">大眾運輸優待辦法</a>",
+            "<strong>愛心卡。</strong>孩子領證後，可向戶籍地公所或縣市社會局處詢問地方社福卡。各地卡名、點數、適用路線及應備文件依當地公告。以臺北市為例，設籍並實際居住臺北市的持證孩子，可向市內任一區公所申請。自 2026 年 7 月起，符合資格的愛心卡每月有 600 點，每點可折抵 1 元，可用於指定公車、捷運等。<a href=\"https://dosw.gov.taipei/cp.aspx?n=98EA840859DF5D7F\" target=\"_blank\" rel=\"noopener noreferrer\">臺北市愛心卡申辦與使用說明</a>",
+            "<strong>愛心陪伴卡。</strong>查看孩子證明背面的「必要陪伴者優惠措施」欄位。若有「國內大眾運輸工具」註記，可向公所詢問能否一併申辦。陪同孩子乘車時，限一名必要陪伴者依運具規定使用。孩子還在免票年齡時，可先向營運單位確認陪伴者如何刷卡或購票。",
+            "<strong>場館門票。</strong>依身障權益保障法，收費的公營或公設民營風景區、康樂場所及文教設施可免費，民營場所依該條適用範圍半價。經需求評估認定的一名必要陪伴者也可享同樣優待。購票時依營運單位查驗方式出示證明。<a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050046&amp;flno=59\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 59 條</a>"
           ]
         },
         {
@@ -4168,7 +4175,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
             "照顧與早療等需求可以分別查詢適用的資源。學前孩子有早療需求時，可先向早療聯評或通報轉介窗口問現有資料能申請哪些服務。<a href=\"#article/early-intervention-first-steps\">查看早療評估與轉介</a>。"
           ],
           "evidence": [
-            "2026 年 11 月 25 日查核臺灣現行規定。新北市計畫和補助金額為地方示例。家庭照顧服務、輔具及部分減免需個別申請或評估。",
+            "2026 年 11 月 25 日查核臺灣現行規定。新北市照顧服務及生活補助、臺北市愛心卡為地方示例。家庭照顧服務、輔具及部分減免需個別申請或評估。",
             "孩子是否符合各項資格，由承辦依有效的證明、需求評估、年齡、戶籍或居住地、家戶條件和當期公告核對。"
           ]
         }

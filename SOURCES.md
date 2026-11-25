@@ -210,7 +210,7 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 | before-school-assessment-consent | S55、S68 | 班上能先試的安排依園校與孩子需要而定。正式特教服務與主管機關後續處理依規定辦理。 |
 | what-disability-assessment-checks | S61、S62 | 本文的提問無法直接換算等級。資格、程度及證明所載內容，依指定機構與主管機關的程序判定。 |
 | disability-assessment-under-six | S61、S62 | 兩項以上的內容請帶報告向團隊確認。早療、教育支持與福利服務的申請也各有自己的規定。 |
-| disability-certificate-available-services | S64、S62、S76 | 查核持證者適用福利，列出法源和辦理窗口。照顧服務和生活補助以新北地方資料作示例。 |
+| disability-certificate-available-services | S64、S62、S76 | 查核持證者適用福利，列出法源和辦理窗口。照顧服務和生活補助以新北為例。愛心卡以臺北市 2026 年 7 月生效的自治規則與社會局申辦說明為例。 |
 | reassess-support-or-disability-certificate | S54、S62、S61 | 同一時間的特教、身障證明及各福利方案可能有不同期限，請各自核對書面結果。 |
 | disability-certificate-and-insurance | S66、S65、S64、S62、S76 | 目前查到的調查無法算出領證或不領證的核保差距。承保條件依個別情況、商品及公司評估。 |
 | disability-certificate-and-school-label | S55、S60、S67、S75 | 這些研究談的是自閉症身分與揭露經驗，沒有直接比較領證與未領證者。資料流向請向受理窗口依個案確認。 |
