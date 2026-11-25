@@ -482,7 +482,8 @@ function refreshLibrary() {
     const category = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
     const tags = article.situations.map(id => situationById[id]);
     const articleText = article.sections.flatMap(section => [
-      section.heading, ...(section.paragraphs || []), ...(section.list?.items || []), ...(section.evidence || []),
+      section.heading, ...(section.paragraphs || []), ...(section.list?.items || []),
+      ...(section.taiwanEvidence || []), ...(section.evidence || []),
       ...(section.sourceNotes || []).map(note => `${sources[note.id].authors || sources[note.id].publisher} ${note.text}`),
     ]);
     const content = normalize([article.title, article.summary, category.label, article.resource?.audience, article.resource?.contact,
@@ -512,6 +513,20 @@ function articleSourceLinks(references) {
       <small class="source-authors">${source.authors || source.publisher}</small>
     </a></li>`;
   }).join("")}</ul>`;
+}
+
+function articleEvidence(section) {
+  const notes = section.sourceNotes || [];
+  const renderNote = note => `<p class="article-source-note">${note.text}
+    <a href="${sources[note.id].url}" target="_blank" rel="noopener noreferrer">查看原文<span class="sr-only">（${sources[note.id].name}）</span> ${icon("external")}</a>
+  </p>`;
+  const paragraphs = [
+    ...(section.taiwanEvidence || []).map(text => `<p>${text}</p>`),
+    ...notes.filter(note => sources[note.id].taiwanSource).map(renderNote),
+    ...(section.evidence || []).map(text => `<p>${text}</p>`),
+    ...notes.filter(note => !sources[note.id].taiwanSource).map(renderNote),
+  ];
+  return paragraphs.length ? `<div class="article-evidence">${paragraphs.join("")}</div>` : "";
 }
 
 const backToTopButton = `<button class="button secondary back-to-top" type="button" data-action="back-to-top" hidden>${icon("up")} 回到頂端</button>`;
@@ -592,12 +607,7 @@ function articlePage(article) {
           ${section.list?.items?.length ? `<${listTag} class="article-list">
             ${section.list.items.map(item => `<li>${item}</li>`).join("")}
           </${listTag}>` : ""}
-          ${section.evidence?.length || section.sourceNotes?.length ? `<div class="article-evidence">
-            ${(section.evidence || []).map(paragraph => `<p>${paragraph}</p>`).join("")}
-            ${(section.sourceNotes || []).map(note => `<p class="article-source-note">${note.text}
-              <a href="${sources[note.id].url}" target="_blank" rel="noopener noreferrer">查看原文<span class="sr-only">（${sources[note.id].name}）</span> ${icon("external")}</a>
-            </p>`).join("")}
-          </div>` : ""}
+          ${articleEvidence(section)}
         </section>`;
       }).join("")}
     </div>

@@ -29,6 +29,7 @@ def main():
                     or source.get("url") != reviewed.get("url")
                     or not (source.get("url") or "").startswith("https://")
                     or reviewed.get("scope") != "asd"
+                    or not isinstance(reviewed.get("taiwanSource"), bool)
                     or not reviewed.get("readScope")
                     or not reviewed.get("reason")
                     or not source.get("attribution")
@@ -37,6 +38,7 @@ def main():
                     or source.get("license")
                     or source.get("licenseName")):
                 parser.error(f"{source_id} needs an audited, attributed overview of the original source.")
+            source["taiwanSource"] = reviewed["taiwanSource"]
             note_sources.add(source_id)
         expected_reuse = reuse_statuses.get(decision)
         if decision != "source-note" and (
