@@ -193,9 +193,9 @@ img { display: block; max-width: 100%; }
 .article-part p + p .county-entry { padding-top: 12px; border-top: 1px solid var(--soft-line); }
 .county-name { color: var(--ink); font-size: 1.03rem; }
 .county-budget { display: inline-block; margin-inline-start: .6em; color: var(--muted); font-size: .88rem; }
-.county-benefit { display: grid; grid-template-columns: 2.3em minmax(0, 1fr); gap: .45em; margin-top: .3em; }
+.county-benefit { display: grid; grid-template-columns: 3.1em minmax(0, 1fr); gap: .45em; margin-top: .3em; }
 .county-benefit > strong { color: var(--green); }
-.county-links { display: block; margin-top: .35em; padding-inline-start: 2.75em; font-size: .85em; }
+.county-links { display: block; margin-top: .35em; padding-inline-start: 4.18em; font-size: .85em; }
 .article-related { padding-inline: 3px; }
 .article-related ul { margin: 0; padding: 0; list-style: none; }
 .article-related li + li { border-top: 1px solid var(--line); }
