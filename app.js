@@ -62,7 +62,6 @@ const emptyProfile = () => ({ age: "", gender: "", situations: [] });
 const emptyState = () => ({ version: storageVersion, profile: null, saved: [], dismissed: [] });
 
 let state = loadState();
-let demoState = null;
 let draft = emptyProfile();
 let libraryFilter = "all";
 let libraryQuery = "";
@@ -103,12 +102,7 @@ function loadState() {
   }
 }
 
-function currentState() {
-  return demoState || state;
-}
-
 function saveState() {
-  if (demoState) return;
   try {
     localStorage.setItem(key, JSON.stringify(state));
   } catch {
@@ -124,7 +118,6 @@ function notify(message) {
 }
 
 function readNotes(articleId) {
-  if (demoState) return demoState.notes.get(articleId) || [];
   try {
     const notes = JSON.parse(localStorage.getItem(notesPrefix + articleId));
     return Array.isArray(notes) ? notes.filter(note => note && typeof note.text === "string" &&
@@ -135,10 +128,6 @@ function readNotes(articleId) {
 }
 
 function writeNotes(articleId, notes) {
-  if (demoState) {
-    demoState.notes.set(articleId, notes);
-    return true;
-  }
   try {
     if (notes.length) localStorage.setItem(notesPrefix + articleId, JSON.stringify(notes));
     else localStorage.removeItem(notesPrefix + articleId);
@@ -153,7 +142,7 @@ function notesSection(articleId) {
   const notes = readNotes(articleId);
   return `<section class="article-section notes-section" aria-labelledby="notes-title">
     <h2 id="notes-title" tabindex="-1">我的筆記</h2>
-    <p>${demoState ? "示範筆記保留在這次預覽。" : "筆記只存在這個瀏覽器。"}</p>
+    <p>筆記只存在這個瀏覽器。</p>
     <form class="note-form" data-article="${articleId}">
       <label for="note-text" class="sr-only">筆記內容</label>
       <textarea id="note-text" name="note" rows="4" maxlength="2000" required placeholder="當時發生什麼？你試了什麼？孩子怎麼回應？"></textarea>
@@ -177,7 +166,7 @@ function route() {
   if (page.startsWith("article/") && (Object.hasOwn(articleById, page.slice(8)) || Object.hasOwn(withdrawnById, page.slice(8)))) return page;
   if (page.startsWith("resources/") && Object.hasOwn(resourceGroupById, page.slice(10))) return page;
   if (["library", "resources", "search", "saved", "settings", "edit", "sources", "setup/1", "setup/2", "setup/3"].includes(page)) return page;
-  if (page === "home" || page === "demo") return "home";
+  if (page === "home") return "home";
   return state.profile ? "home" : "welcome";
 }
 
@@ -191,7 +180,7 @@ function go(page) {
 }
 
 function brand() {
-  return `<a class="brand" href="${currentState().profile ? "#home" : "#"}" aria-label="星泊首頁">
+  return `<a class="brand" href="${state.profile ? "#home" : "#"}" aria-label="星泊首頁">
     <span class="brand-mark">${icon("brand")}</span>
     <span><strong>星泊</strong><small>ASD 育兒支持手冊</small></span>
   </a>`;
@@ -217,7 +206,6 @@ function shell(active, content) {
         <div class="mobile-brand">${brand()}</div>
         <span class="breadcrumb">${active === "search" ? "搜尋星泊" : active === "home" ? "我的育兒手冊" : navItems.find(item => item[0] === active)?.[2] || "我的育兒手冊"}</span>
         <div class="top-actions">
-          ${demoState ? '<button class="text-button" data-action="leave-demo">離開示範</button>' : ""}
           <a class="icon-button top-search" href="#search" aria-label="搜尋星泊" data-action="start-search">${icon("search")}</a>
           <a class="avatar" href="#settings" aria-label="我的設定">${icon("user")}</a>
         </div>
@@ -238,8 +226,7 @@ function welcome() {
         <p class="intro">從出門準備、溝通到睡前，挑出你想先處理的生活情境，找到適合一起試試的小步驟。</p>
         <div class="welcome-actions">
           <button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button>
-          <a class="button secondary" href="#demo">看看示範首頁</a>
-          <a class="button plain" href="#resources">查資源</a>
+          <a class="button secondary" href="#resources">查資源</a>
         </div>
         <p class="privacy-line">${icon("lock")} ${storageAvailable ? "免登入，資料儲存在這個瀏覽器。" : "免登入，目前瀏覽器只會暫時保留資料。"} </p>
       </div>
@@ -318,7 +305,7 @@ function onboarding(step) {
 }
 
 function bookmarkButton(article, expanded = false) {
-  const saved = currentState().saved.includes(article.id);
+  const saved = state.saved.includes(article.id);
   return `<button class="${expanded ? "button secondary" : "icon-button"} save-button ${saved ? "is-saved" : ""}" data-save="${article.id}" ${expanded ? "data-expanded" : ""} aria-pressed="${saved}" aria-label="${saved ? "取消收藏" : "收藏"}〈${article.title}〉">
     ${icon("bookmark")}${expanded ? (saved ? " 已收藏" : " 收藏這篇") : ""}
   </button>`;
@@ -368,7 +355,7 @@ function shuffled(items) {
 }
 
 function recommendationOrder(profile) {
-  const { dismissed } = currentState();
+  const { dismissed } = state;
   const guides = shuffled(guideArticles.filter(article => !dismissed.includes(article.id)));
   const priority = article => (matchingSituations(article, profile).length ? 2 : 0) + (article.ages.includes(profile.age) ? 1 : 0);
   guides.sort((left, right) => priority(right) - priority(left));
@@ -410,7 +397,7 @@ function recommendationCard(article, hasMore) {
 }
 
 function home() {
-  const profile = currentState().profile;
+  const profile = state.profile;
   if (!profile) return shell("home", `<div class="page-heading"><h1>我的首頁</h1><p>選幾個你想先了解的照顧情境，首頁就會顯示相關主題。</p></div>
     <div class="empty">${icon("leaf")}<h2>從一個生活情境開始</h2><button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button><a class="button plain" href="#library">瀏覽育兒指南</a></div>`);
 
@@ -420,7 +407,7 @@ function home() {
   const more = order.filter(article => !article.resource && article !== featured);
   const resources = order.filter(article => article.resource && article !== featured).slice(0, 2);
   return shell("home", `<section class="home-heading">
-    <div><p class="kicker">${icon("sun")} ${demoState ? "示範首頁" : "我的育兒手冊"}</p>
+    <div><p class="kicker">${icon("sun")} 我的育兒手冊</p>
       <h1>今天，從一件小事開始。</h1>
       <p>挑一個你和孩子常遇到的情境，找到可以一起試的做法。</p></div>
     <a class="button secondary" href="#edit" data-action="edit">${icon("sliders")} 調整偏好</a>
@@ -552,7 +539,7 @@ function resourceOverview(article) {
 function articlePage(article) {
   const category = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
   const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
-  const dismissed = currentState().dismissed.includes(article.id);
+  const dismissed = state.dismissed.includes(article.id);
   const references = [{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])];
   const otherSources = references.slice(2);
   const relatedArticles = article.relatedArticles || [];
@@ -621,8 +608,8 @@ function articlePage(article) {
 }
 
 function savedPage() {
-  const items = currentState().saved.map(id => articleById[id]).filter(Boolean);
-  const personalRecords = withdrawnArticles.filter(article => currentState().saved.includes(article.id) || readNotes(article.id).length);
+  const items = state.saved.map(id => articleById[id]).filter(Boolean);
+  const personalRecords = withdrawnArticles.filter(article => state.saved.includes(article.id) || readNotes(article.id).length);
   return shell("saved", `<div class="page-heading"><h1>我的收藏</h1><p>收藏的育兒指南和資源都在這裡。</p></div>
     ${items.length ? `<div class="card-grid">${items.map(article => articleCard(article, "saved")).join("")}</div>`
     : `<div class="empty">${icon("bookmark")}<h2>目前沒有已收錄文章的收藏</h2><p>在文章裡點「收藏這篇」，就會出現在這裡。</p><a class="button primary" href="#library">去逛育兒指南 ${icon("arrow")}</a></div>`}
@@ -639,15 +626,15 @@ function withdrawnArticlePage(article) {
 }
 
 function settings() {
-  const profile = currentState().profile;
+  const profile = state.profile;
   return shell("settings", `<div class="page-heading"><h1>我的設定</h1><p>管理孩子的基本資料、照顧情境和本機資料。</p></div>
     <div class="settings-list">
       <section class="settings-card"><div class="section-heading"><h2>孩子資料與照顧偏好</h2>
         ${profile ? '<a class="button secondary" href="#edit" data-action="edit">編輯偏好</a>' : '<button class="button primary" data-action="start">開始設定</button>'}</div>
         ${profile ? profileSummary(profile) : '<p>完成簡單設定，首頁就會依情境推薦內容。</p>'}</section>
       <section class="settings-card"><h2>${icon("lock")} 這個瀏覽器的資料</h2>
-        <p>${demoState ? "目前正在使用示範資料，操作只保留在這次預覽。" : storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
-        <button class="button secondary danger-text" data-action="${demoState ? "leave-demo" : "ask-reset"}">${demoState ? "離開示範" : "清除本機資料"}</button></section>
+        <p>${storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
+        <button class="button secondary danger-text" data-action="ask-reset">清除本機資料</button></section>
       <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
         <p>星泊是 ASD 育兒支持手冊的互動原型。</p>
         <a class="text-button" href="#sources">資料來源與使用方式 ${icon("arrow")}</a></section>
@@ -682,9 +669,8 @@ function sourcesPage() {
 }
 
 function render(focus = false) {
-  if (location.hash === "#demo" && !demoState) {
-    recommendationRound = null;
-    demoState = { ...emptyState(), notes: new Map(), profile: { age: "6–8 歲", gender: "", situations: ["transitions", "communication", "sensory", "benefit-lookup"] } };
+  if (location.hash === "#demo") {
+    history.replaceState(null, "", state.profile ? "#home" : location.href.split("#")[0]);
   }
 
   const page = route();
@@ -709,7 +695,7 @@ function render(focus = false) {
   if (page === "saved") app.innerHTML = savedPage();
   if (page === "settings") app.innerHTML = settings();
   if (page === "edit") {
-    draft = structuredClone(currentState().profile || emptyProfile());
+    draft = structuredClone(state.profile || emptyProfile());
     app.innerHTML = edit();
   }
   if (page === "sources") app.innerHTML = sourcesPage();
@@ -803,9 +789,8 @@ document.addEventListener("click", event => {
 
   const article = articleById[control.dataset.save];
   if (article) {
-    const active = currentState();
-    const wasSaved = active.saved.includes(article.id);
-    active.saved = wasSaved ? active.saved.filter(id => id !== article.id) : [...active.saved, article.id];
+    const wasSaved = state.saved.includes(article.id);
+    state.saved = wasSaved ? state.saved.filter(id => id !== article.id) : [...state.saved, article.id];
     saveState();
     if (route() === "saved" && wasSaved) {
       const buttons = [...app.querySelectorAll("[data-save]")];
@@ -855,7 +840,7 @@ document.addEventListener("click", event => {
       const round = recommendationRound;
       round.index += 1;
       if (round.index === round.order.length) {
-        const order = recommendationOrder(currentState().profile);
+        const order = recommendationOrder(state.profile);
         if (order.length > 1 && order[0] === round.order.at(-1)) {
           [order[0], order[1]] = [order[1], order[0]];
         }
@@ -873,9 +858,8 @@ document.addEventListener("click", event => {
     }
     case "toggle-recommendation": {
       const id = control.dataset.article;
-      const active = currentState();
-      const restore = active.dismissed.includes(id);
-      active.dismissed = restore ? active.dismissed.filter(articleId => articleId !== id) : [...active.dismissed, id];
+      const restore = state.dismissed.includes(id);
+      state.dismissed = restore ? state.dismissed.filter(articleId => articleId !== id) : [...state.dismissed, id];
       saveState();
       recommendationRound = null;
       control.textContent = restore ? "不再顯示於推薦" : "恢復推薦";
@@ -883,13 +867,13 @@ document.addEventListener("click", event => {
       break;
     }
     case "start":
-      draft = structuredClone(currentState().profile || emptyProfile());
+      draft = structuredClone(state.profile || emptyProfile());
       go("setup/1");
       break;
     case "finish":
     case "save-edit":
       recommendationRound = null;
-      currentState().profile = structuredClone(draft);
+      state.profile = structuredClone(draft);
       saveState();
       go("home");
       if (control.dataset.action === "save-edit") notify("偏好已更新");
@@ -915,11 +899,6 @@ document.addEventListener("click", event => {
       } else {
         window.addEventListener("hashchange", () => app.querySelector("#search-box")?.focus(), { once: true });
       }
-      break;
-    case "leave-demo":
-      demoState = null;
-      recommendationRound = null;
-      go(state.profile ? "home" : "welcome");
       break;
     case "ask-reset":
       resetDialog.showModal();
