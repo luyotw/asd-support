@@ -483,6 +483,7 @@ function refreshLibrary() {
     const tags = article.situations.map(id => situationById[id]);
     const articleText = article.sections.flatMap(section => [
       section.heading, ...(section.paragraphs || []), ...(section.list?.items || []), ...(section.evidence || []),
+      ...(section.sourceNotes || []).map(note => `${sources[note.id].authors || sources[note.id].publisher} ${note.text}`),
     ]);
     const content = normalize([article.title, article.summary, category.label, article.resource?.audience, article.resource?.contact,
       ...(article.keywords || []), ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]),
@@ -538,7 +539,12 @@ function resourceOverview(article) {
 function articlePage(article) {
   const category = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
   const dismissed = state.dismissed.includes(article.id);
-  const references = [{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])];
+  const sourceNotes = article.sections.flatMap(section => section.sourceNotes || []);
+  const references = [
+    { id: article.related, section: article.sourceSection },
+    ...(article.additionalSources || []),
+    ...sourceNotes,
+  ];
   const otherSources = references.slice(2);
   const relatedArticles = article.relatedArticles || [];
   const origin = history.state?.articleOrigin || (article.resource ? "resources" : "library");
@@ -586,8 +592,11 @@ function articlePage(article) {
           ${section.list?.items?.length ? `<${listTag} class="article-list">
             ${section.list.items.map(item => `<li>${item}</li>`).join("")}
           </${listTag}>` : ""}
-          ${section.evidence?.length ? `<div class="article-evidence">
-            ${section.evidence.map(paragraph => `<p>${paragraph}</p>`).join("")}
+          ${section.evidence?.length || section.sourceNotes?.length ? `<div class="article-evidence">
+            ${(section.evidence || []).map(paragraph => `<p>${paragraph}</p>`).join("")}
+            ${(section.sourceNotes || []).map(note => `<p class="article-source-note">${note.text}
+              <a href="${sources[note.id].url}" target="_blank" rel="noopener noreferrer">查看原文<span class="sr-only">（${sources[note.id].name}）</span> ${icon("external")}</a>
+            </p>`).join("")}
           </div>` : ""}
         </section>`;
       }).join("")}
@@ -658,7 +667,7 @@ function sourcesPage() {
       <p>${source.description}</p>
       <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">閱讀原文 ${icon("external")}</a>
       <details class="source-details">
-        <summary>授權資訊</summary>
+        <summary>${source.reuseStatus === "attributed-summary" ? "引用說明與署名" : "授權資訊"}</summary>
         <p>${source.rights}</p>
         ${source.attribution ? `<p>${source.attribution}</p>` : ""}
         ${source.licenseName === "CC BY 4.0" ? `<small class="source-license-url">${source.license}</small>` : source.license ? `<a class="text-button" href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName} ${icon("external")}</a>` : ""}

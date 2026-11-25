@@ -1,11 +1,12 @@
 {
-  "checked": "2026-11-25",
-  "purpose": "免費非商業網站與 App 的繁體中文整理及改寫。各來源按查核的授權及段落使用，排除及待取得授權者保留研究紀錄。",
+  "checked": "2026-11-26",
+  "purpose": "免費非商業網站與 App。按查核的使用方式，採有適用授權的整理，或獨立概述原作者的觀點與事實並連結原文。",
   "decisions": {
     "adapt": "可改寫指定範圍",
     "noncommercial": "可非商業改寫指定範圍",
     "exclude": "本專案不能用",
-    "scope-excluded": "ASD範圍排除"
+    "scope-excluded": "ASD範圍排除",
+    "source-note": "署名概述與原文連結"
   },
   "sources": [
     {
@@ -517,18 +518,34 @@
     },
     {
       "id": "A01",
-      "title": "NAS診斷說明與揭露",
+      "title": "Talking about and disclosing your autism diagnosis",
       "url": "https://www.autism.org.uk/advice-and-guidance/diagnosis/after-diagnosis/talking-about-and-disclosing-your-autism-diagnosis",
-      "checked": "2026-11-19",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "保留權利；重製需許可，未取得改作授權，不能用",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
       "permissionEvidence": "https://www.autism.org.uk/legal-information/terms-and-conditions",
-      "audience": "原資料對象，未能核實數字範圍",
-      "date": "未取得可核對的發布／審閱日",
-      "currency": "不進行建議時效核准：已因使用權或內容條件排除",
-      "sections": "不作文章改寫來源",
-      "reason": "依本輪規則排除，不保留待確認候選。"
+      "audience": "自閉症兒少及家庭。涉及向他人告知的內容限較大兒少與照顧者。",
+      "date": "網站現行版",
+      "currency": "可用（限已查範圍及資料年代）",
+      "sections": "When should I tell people I am autistic，限依兒少意願分別決定告知對象和時機。 When and how should I talk to my child about their diagnosis，限依孩子理解分次談。",
+      "reason": "只用家庭溝通原則，排除英國法令、當事人原話和泛化揭露成效。",
+      "authors": "National Autistic Society",
+      "researchRound": "2026-11-26-attributed-sources",
+      "readScope": "When should I tell people I am autistic，限依兒少意願分別決定告知對象和時機。 When and how should I talk to my child about their diagnosis，限依孩子理解分次談。",
+      "articles": [
+        "sharing-autism-information-at-school",
+        "talk-about-autism"
+      ],
+      "taiwanSource": false,
+      "priorDecision": {
+        "checked": "2026-11-19",
+        "decision": "exclude",
+        "url": "https://www.autism.org.uk/advice-and-guidance/diagnosis/after-diagnosis/talking-about-and-disclosing-your-autism-diagnosis",
+        "permission": "保留權利；重製需許可，未取得改作授權，不能用",
+        "permissionEvidence": "https://www.autism.org.uk/legal-information/terms-and-conditions",
+        "reason": "依本輪規則排除，不保留待確認候選。"
+      }
     },
     {
       "id": "B04",
@@ -1760,38 +1777,69 @@
       "id": "S79",
       "title": "面對自閉症類群兒童 令人頭疼的行為表現",
       "url": "https://www.femh.org.tw/magazine/viewmag.aspx?ID=11029",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "未找到明確允許公開改作的授權。",
-      "audience": "自閉症兒童的家長及照顧者。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "audience": "自閉症兒童，未訂數字適齡。",
       "date": "2023 年 4 月院訊",
-      "sections": "觀察重複行為發生前後的情境，以及感官不適、焦慮或挫折等可能原因。",
-      "reason": "亞東紀念醫院黃思賓臨床心理師撰寫。原文未聲明適用的改作條款。",
+      "sections": "自閉症孩子最常見的行為出現原因分析及評估行為所對應的場合。",
+      "reason": "限觀察重複行為與不適情境。排除按固定功能診斷、行為矯正流程與治療效益。",
       "topics": [
         "T08"
       ],
-      "evidenceType": "臨床心理師衛教文章"
+      "evidenceType": "臨床心理師衛教文章",
+      "authors": "黃思賓臨床心理師",
+      "readScope": "自閉症孩子最常見的行為出現原因分析及評估行為所對應的場合。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "sensory-context-notes",
+        "understanding-unmet-needs"
+      ],
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://www.femh.org.tw/magazine/viewmag.aspx?ID=11029",
+        "permission": "未找到明確允許公開改作的授權。",
+        "reason": "亞東紀念醫院黃思賓臨床心理師撰寫。原文未聲明適用的改作條款。"
+      }
     },
     {
       "id": "S80",
       "title": "懂了孩子，家就不累！嘉基辦自閉症家長團體 陪伴「星星的孩子」全家穩健前行",
       "url": "https://www.cych.org.tw/news_detail.aspx?ID=4725",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "頁尾聲明允許超連結至原站，未提供改作許可。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
       "permissionEvidence": "https://www.cych.org.tw/news_detail.aspx?ID=4725",
-      "audience": "自閉症幼兒家長。",
-      "date": "2026-07-01 發布",
-      "sections": "家長團體報導中提到的作息變動、預告和視覺提示。",
-      "reason": "院方活動報導，留存原地查閱與授權紀錄。",
+      "audience": "自閉症幼兒家庭與照顧者。",
+      "date": "院方活動報導",
+      "sections": "活動安排、生活常規變動時的事前預告、視覺提示，以及家長同儕交流段。",
+      "reason": "限活動做法與開催事實，不使用宣傳稿中對成效的推論；未列為現行招生。",
       "topics": [
         "T08"
       ],
-      "evidenceType": "院方早療家長團體報導"
+      "evidenceType": "院方早療家長團體報導",
+      "authors": "嘉義基督教醫院",
+      "readScope": "活動安排、生活常規變動時的事前預告、視覺提示，以及家長同儕交流段。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "plan-change",
+        "choose-parent-support"
+      ],
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://www.cych.org.tw/news_detail.aspx?ID=4725",
+        "permission": "頁尾聲明允許超連結至原站，未提供改作許可。",
+        "permissionEvidence": "https://www.cych.org.tw/news_detail.aspx?ID=4725",
+        "reason": "院方活動報導，留存原地查閱與授權紀錄。"
+      }
     },
     {
       "id": "S81",
@@ -1890,22 +1938,36 @@
     },
     {
       "id": "S86",
-      "title": "臺北融合教育現場教學手冊（下三）自閉症",
-      "url": "https://www.doe.gov.taipei/News_Content.aspx?n=09EB907447DBD66F&sms=69B4E6B26379EE4E&s=5570670F92527D2F",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25-Taiwan-30",
-      "decision": "exclude",
+      "title": "臺北融合教育現場教學手冊（下冊）第三章：自閉症學生的認識與輔導",
+      "url": "https://www.doe.gov.taipei/News_Content.aspx?n=09EB907447DBD66F&s=5570670F92527D2F&sms=69B4E6B26379EE4E",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "未核得本案使用範圍的公開改作授權。",
-      "reason": "市府教育局保留受保護內容的權利，網站條款未允許公開改作教材。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "reason": "保留特教實務背景。排除舊鑑定資訊、教案逐句改寫、公開說明個案及原書例文。",
       "articles": [
         "next",
-        "plan-change",
         "morning-exit",
-        "ask-for-break",
-        "school-transition"
+        "early-pressure",
+        "after-hard-moment"
       ],
-      "permissionEvidence": "https://www.doe.gov.taipei/cp.aspx?n=5F63454AD39A48F8&s=3151412F5E785EB4"
+      "permissionEvidence": "https://www.doe.gov.taipei/cp.aspx?n=5F63454AD39A48F8&s=3151412F5E785EB4",
+      "authors": "臺北市政府教育局、臺北市國中特殊教育輔導小組",
+      "date": "2023 年網站刊載",
+      "audience": "國中校園的自閉症學生，限手冊所列教育場景。",
+      "readScope": "PDF 第 16–18 頁的環境及作息安排，以及第 25–26 頁的事後回顧案例。 第 30–33 頁國中案例，限學生在不同時間點的反應。",
+      "sections": "PDF 第 16–18 頁的環境及作息安排，以及第 25–26 頁的事後回顧案例。 第 30–33 頁國中案例，限學生在不同時間點的反應。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://www.doe.gov.taipei/News_Content.aspx?n=09EB907447DBD66F&sms=69B4E6B26379EE4E&s=5570670F92527D2F",
+        "permission": "未核得本案使用範圍的公開改作授權。",
+        "permissionEvidence": "https://www.doe.gov.taipei/cp.aspx?n=5F63454AD39A48F8&s=3151412F5E785EB4",
+        "reason": "市府教育局保留受保護內容的權利，網站條款未允許公開改作教材。"
+      }
     },
     {
       "id": "S87",
@@ -1925,15 +1987,29 @@
       "id": "S88",
       "title": "家庭本位之正向行為支持方案對自閉症幼童拒食行為之介入成效",
       "url": "https://toaj.stpi.niar.org.tw/index/journal/volume/article/4b1141f98902756501891b07d3472750",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25-Taiwan-30",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "未核得本案使用範圍的公開改作授權。",
-      "reason": "公開摘要記錄一名幼兒在晚餐情境的家庭介入。研究平台開放閱讀，未見此文可改作條款。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "reason": "單一個案。限研究做了什麼，未移用介入程序，也不將成效推到其他孩子。",
       "articles": [
         "table"
-      ]
+      ],
+      "authors": "朱思穎",
+      "date": "2012 年",
+      "audience": "一名有拒食情形的自閉症幼童。",
+      "readScope": "原作者公開摘要，限共同選擇家庭用餐情境。",
+      "sections": "原作者公開摘要，限共同選擇家庭用餐情境。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://toaj.stpi.niar.org.tw/index/journal/volume/article/4b1141f98902756501891b07d3472750",
+        "permission": "未核得本案使用範圍的公開改作授權。",
+        "reason": "公開摘要記錄一名幼兒在晚餐情境的家庭介入。研究平台開放閱讀，未見此文可改作條款。"
+      }
     },
     {
       "id": "S89",
@@ -1969,18 +2045,33 @@
       "id": "S91",
       "title": "自閉症類性別平等教育教材",
       "url": "https://www.gender.edu.tw/web/index.php/m5/m5_05_07_01?sid=68",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25-Taiwan-30",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "未核得本案使用範圍的公開改作授權。",
-      "reason": "國教署出版教材包含國小的身體界線及國中青春期與經期。官方原檔刊載頁允許連結，但要求內容完整，未明准改寫。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "reason": "原站允許直連並要求保留原檔完整。只交代獨立教學概念與年齡，不取原課程、圖片、台詞或對身體的刻板描述。",
       "articles": [
         "boys-puberty-privacy",
         "first-period",
         "body-boundaries"
       ],
-      "permissionEvidence": "https://www.gender.edu.tw/web/index.php/m5/m5_05_07_01?sid=68"
+      "permissionEvidence": "https://www.gender.edu.tw/web/index.php/m5/m5_05_07_01?sid=68",
+      "authors": "教育部國民及學前教育署",
+      "date": "2015 年 6 月",
+      "audience": "學前至高中職，實際概述依各單元年齡。",
+      "readScope": "原 PDF 的編輯說明；學前擁抱同意、國小拒絕不當接觸、國中青春期與經期用品單元。",
+      "sections": "原 PDF 的編輯說明；學前擁抱同意、國小拒絕不當接觸、國中青春期與經期用品單元。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://www.gender.edu.tw/web/index.php/m5/m5_05_07_01?sid=68",
+        "permission": "未核得本案使用範圍的公開改作授權。",
+        "permissionEvidence": "https://www.gender.edu.tw/web/index.php/m5/m5_05_07_01?sid=68",
+        "reason": "國教署出版教材包含國小的身體界線及國中青春期與經期。官方原檔刊載頁允許連結，但要求內容完整，未明准改寫。"
+      }
     },
     {
       "id": "S92",
@@ -2014,15 +2105,29 @@
       "id": "S94",
       "title": "以作息本位介入提供以家庭為中心服務於自閉症兒童家庭之個案分享",
       "url": "https://www.tacdei.org.tw/post?special_column_classify_sn=41&special_column_sn=1242",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25-Taiwan-30",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "未核得本案使用範圍的公開改作授權。",
-      "reason": "屏東基督教醫院復健科團隊發表的五歲個案，談依家庭作息與家長共同實作。大會公開摘要未標對第三方的改作許可。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "reason": "個案依自身家庭需求設計。不重述療程或推論人人適用。",
       "articles": [
         "early-intervention-try-at-home"
-      ]
+      ],
+      "authors": "黃佳惠、徐敏、孔緹縈、林廷彥、莊博雅",
+      "date": "第十九屆早療大會公開摘要",
+      "audience": "一名 5 歲自閉症兒童及其家庭。",
+      "readScope": "研究參與者與方法，限團隊和家長共訂家庭目標及運用原有作息。",
+      "sections": "研究參與者與方法，限團隊和家長共訂家庭目標及運用原有作息。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://www.tacdei.org.tw/post?special_column_classify_sn=41&special_column_sn=1242",
+        "permission": "未核得本案使用範圍的公開改作授權。",
+        "reason": "屏東基督教醫院復健科團隊發表的五歲個案，談依家庭作息與家長共同實作。大會公開摘要未標對第三方的改作許可。"
+      }
     },
     {
       "id": "S95",
@@ -2099,17 +2204,568 @@
       "id": "S100",
       "title": "比較學齡前自閉症兒童與正常兒童視聽覺理解及識字能力發展之研究",
       "url": "https://bse.spe.ntnu.edu.tw/BSE/upload/journal/prog/CFF_0OI_8C0_23991022.pdf",
-      "checked": "2026-11-25",
-      "researchRound": "2026-11-25-Taiwan-30",
-      "decision": "exclude",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "decision": "source-note",
       "scope": "asd",
-      "permission": "未核得本案使用範圍的公開改作授權。",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
       "permissionEvidence": "https://bse.spe.ntnu.edu.tw/BSE/contents/contents.jsp?item=C3162BE1-A884-43D1-AB1F-52425F11FBCE",
-      "audience": "4–6 歲學前兒童。",
-      "reason": "臺師大研究有 4–6 歲自閉症樣本，分看識字與聽覺理解。原刊可下載，未查得此文公開改作許可。適用年齡以學前為主。",
+      "audience": "4–6 歲，35 名自閉症兒童及同齡對照組。",
+      "reason": "限舊研究的樣本差異，未引用量表、診斷精確率或對學齡兒童外推。",
       "articles": [
         "reading-comprehension-context"
-      ]
+      ],
+      "authors": "林初穗、張淑慧、劉文英、吳佑佑、蔡育秀、郭邦彥、顏詩尹",
+      "date": "2006 年",
+      "readScope": "第 203 頁摘要與結果，限辨認字詞與聽懂句子是不同能力。",
+      "sections": "第 203 頁摘要與結果，限辨認字詞與聽懂句子是不同能力。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "taiwanSource": true,
+      "priorDecision": {
+        "checked": "2026-11-25",
+        "decision": "exclude",
+        "url": "https://bse.spe.ntnu.edu.tw/BSE/upload/journal/prog/CFF_0OI_8C0_23991022.pdf",
+        "permission": "未核得本案使用範圍的公開改作授權。",
+        "permissionEvidence": "https://bse.spe.ntnu.edu.tw/BSE/contents/contents.jsp?item=C3162BE1-A884-43D1-AB1F-52425F11FBCE",
+        "reason": "臺師大研究有 4–6 歲自閉症樣本，分看識字與聽覺理解。原刊可下載，未查得此文公開改作許可。適用年齡以學前為主。"
+      }
+    },
+    {
+      "id": "S101",
+      "title": "自閉症類群障礙",
+      "url": "https://www.changgung.hospital/featured-1.aspx?bid=5&id=2022071913572083890",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "長庚紀念醫院",
+      "date": "院方衛教，頁面未標正文發布日",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "自閉症疑慮或確診的兒少，限該院臨床評估說明。",
+      "readScope": "「診斷評估」與前段所說的個別支持需求。",
+      "sections": "「診斷評估」與前段所說的個別支持需求。",
+      "reason": "限這家院所的評估範例，不把特定工具當必要流程或通用診斷門檻。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "early-intervention-assessment-report",
+        "disability-assessment-under-six"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S102",
+      "title": "輔助溝通系統　助自閉兒表達需求",
+      "url": "https://aac.diyi.org.tw/aac_popular_science/knowledge/knowledge_017",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "王俊凱（特殊教育教師）",
+      "date": "2018-06-01",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "自閉症幼兒及學前教師，正文包含一名未滿四歲幼兒個案。",
+      "readScope": "「落實在自然情境」，限依實際活動選溝通內容。",
+      "sections": "「落實在自然情境」，限依實際活動選溝通內容。",
+      "reason": "平台註明刊載出處與作者。只概述選擇溝通內容的原則，不複述介入、操作或材料。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "needs"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S103",
+      "title": "以家庭為中心的輔助溝通系統介入自閉症孩童主動溝通及情緒行為之成效",
+      "url": "https://www.tacdei.org.tw/posts?special_column_classify_sn=41&special_column_sn=2179",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "林昀潔（童綜合醫院語言治療組）",
+      "date": "第二十五屆早療大會公開摘要",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "一名 4 歲 5 個月自閉症女童，有少量口語。",
+      "readScope": "方法中的家庭與幼兒園情境、家長一起規劃溝通目標。",
+      "sections": "方法中的家庭與幼兒園情境、家長一起規劃溝通目標。",
+      "reason": "只取已公布的個案方法事實，排除訓練步驟、兒童逐字內容、成效推論。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "early-intervention-aac"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S104",
+      "title": "Meltdowns – a guide for all audiences",
+      "url": "https://www.autism.org.uk/advice-and-guidance/behaviour/meltdowns/all-audiences",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "National Autistic Society",
+      "date": "網站現行版",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "自閉症兒童、青少年與成人。本文只採與對應年齡和情境有關的段落。",
+      "readScope": "What to do 與 Anticipating a meltdown，限給恢復時間、降低刺激以及個人化壓力訊號。",
+      "sections": "What to do 與 Anticipating a meltdown，限給恢復時間、降低刺激以及個人化壓力訊號。",
+      "reason": "限支持背景，不擷取原文清單或把單一訊號當成診斷。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "early-pressure"
+      ],
+      "taiwanSource": false
+    },
+    {
+      "id": "S105",
+      "title": "Associations between sensory processing difficulties and dysregulation/deficient self-regulation in preschool children with autism spectrum disorder",
+      "url": "https://researchoutput.ncku.edu.tw/zh/publications/associations-between-sensory-processing-difficulties-and-dysregul-2/",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "Yao Lee、Yi-Shan Sung、Shan-Chu Yang、Ling-Yi Lin",
+      "date": "2026-07-08",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "80 名臺灣自閉症學前兒童，摘要所列實際樣本為 36–73 個月。",
+      "readScope": "作者公開摘要的樣本、分析與橫斷結果。",
+      "sections": "作者公開摘要的樣本、分析與橫斷結果。",
+      "reason": "只概述摘要支持的關聯。沒有分析單一聲音或光源的效果。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "sound"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S106",
+      "title": "Helping Children With Autism Get the Most Out of Digital Media",
+      "url": "https://parents.prod.pbskids.org/parents/thrive/helping-children-with-autism-get-the-most-out-of-digital-media",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "Jenny Radesky（發展行為兒科醫師）",
+      "date": "2019-04-04",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "自閉症兒童及家長，未訂數字適齡。",
+      "readScope": "Empower your child to transition from media use，限減少自動接播。",
+      "sections": "Empower your child to transition from media use，限減少自動接播。",
+      "reason": "核對是 ASD 專文，限仍適用的播放功能觀點，不寫成效果研究或螢幕時數規範。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "screen-stop"
+      ],
+      "taiwanSource": false
+    },
+    {
+      "id": "S107",
+      "title": "How Taiwanese parents of children with autism spectrum disorder experience the process of obtaining a diagnosis: A descriptive phenomenological analysis",
+      "url": "https://eric.ed.gov/?id=EJ1178774",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "Kuo-Yu Chao、Hsueh-Ling Chang、Wei-Chih Chin、Hsin-Mei Li、Sue-Hsien Chen",
+      "date": "2018 年（2017 年線上出版）",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "臺灣自閉症孩子的家長。",
+      "readScope": "作者公開摘要，限家長在診斷前有不確定感，診斷期間尋求進一步意見的訪談主題。",
+      "sections": "作者公開摘要，限家長在診斷前有不確定感，診斷期間尋求進一步意見的訪談主題。",
+      "reason": "質性經驗，未推論所有家庭的歷程或建議一定徵求第二意見。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "early-intervention-first-steps"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S108",
+      "title": "Exploring Coping Strategies of Parents of Children With Autism Spectrum Disorder in Taiwan: A Qualitative Study",
+      "url": "https://doi.org/10.1097/jnr.0000000000000553",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "Wei-Chih Chin、Hsueh-Ling Chang、Kuo-Yu Chao",
+      "date": "2023 年",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "14 位自閉症孩子的臺灣家長。",
+      "readScope": "作者公開摘要與 Results 的 Support 子題，限取得支持的經驗。",
+      "sections": "作者公開摘要與 Results 的 Support 子題，限取得支持的經驗。",
+      "reason": "限質性結果及家長描述，不推論支持改善成效。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "rest"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S109",
+      "title": "快樂東東上學去－高功能自閉症兒童幼小銜接與學校適應之個案研究",
+      "url": "https://www.tacdei.org.tw/post?special_column_classify_sn=46&special_column_sn=389",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "曾馨瑩、梁碧明",
+      "date": "第九屆早療大會公開摘要",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "一名自閉症兒童從幼兒園到小學的歷程。",
+      "readScope": "公開摘要的第（二）、（五）項，限家長陪熟悉校園，以及兩階段教師交接的建議。",
+      "sections": "公開摘要的第（二）、（五）項，限家長陪熟悉校園，以及兩階段教師交接的建議。",
+      "reason": "案例歷史較早，限仍可理解的場景，不援用當年的制度或安置標準。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "school-transition",
+        "early-intervention-first-grade-transition"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S110",
+      "title": "國小普通班自閉症學生學校適應與學校支持之研究－以中部地區為例",
+      "url": "https://lawdata.com.tw/tw/detail.aspx?no=184481",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "張喜凰、林惠芬",
+      "date": "2011 年",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "臺灣中部國小普通班自閉症學童的家長與導師。",
+      "readScope": "原作者公開摘要，限教師與家長對支持的回答，以及導師支持與學校適應的關聯。",
+      "sections": "原作者公開摘要，限教師與家長對支持的回答，以及導師支持與學校適應的關聯。",
+      "reason": "限問卷關聯與不同回應，排除原始題目、因果和當前制度推論。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "school-day",
+        "school-adjustment"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S111",
+      "title": "跟隨兒童的引導–談自閉症兒童的社交溝通",
+      "url": "https://www.slh.org.tw/upload/files/%E7%AC%AC91%E6%9C%9F-%E8%B7%9F%E9%9A%A8%E5%85%92%E7%AB%A5%E7%9A%84%E5%BC%95%E5%B0%8E%E2%80%93%E8%AB%87%E8%87%AA%E9%96%89%E7%97%87%E5%85%92%E7%AB%A5%E7%9A%84%E7%A4%BE%E4%BA%A4%E6%BA%9D%E9%80%9A.pdf",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "連儀（語言治療師）",
+      "date": "第 91 期",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "自閉症兒童，文章以一名 5 歲孩子舉例。",
+      "readScope": "觀察孩子的興趣、溝通方式及情緒調節兩節；平板案例只取收走時的情境。",
+      "sections": "觀察孩子的興趣、溝通方式及情緒調節兩節；平板案例只取收走時的情境。",
+      "reason": "臺灣學會刊登，文內作者當時服務於上海。排除機制推論、療效敘述及作者的專屬比喻。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "pause",
+        "lighting",
+        "screen-stop",
+        "wait-for-answer"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S112",
+      "title": "Study: 82756",
+      "url": "https://ies.ed.gov/ncee/wwc/Study/82756",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "What Works Clearinghouse（美國教育部教育科學研究所）",
+      "date": "官方研究評讀摘要",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "一名 17 歲自閉症學生，合併智能障礙、情緒行為支持需要及有限口語。",
+      "readScope": "參與者與介入的官方概要，限用卡片向老師提出休息。",
+      "sections": "參與者與介入的官方概要，限用卡片向老師提出休息。",
+      "reason": "只保留可表達休息的例子。排除行為訓練程序、任務要求及對其他孩子的效果外推。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "ask-for-break"
+      ],
+      "taiwanSource": false
+    },
+    {
+      "id": "S113",
+      "title": "我的孩子真的是自閉症嗎？該如何幫助自閉症孩子？",
+      "url": "https://www.ibalance-clinic.com.tw/page-2720",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "品恆復健科診所",
+      "date": "診所衛教，原頁未標正文日期",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "自閉症兒童及家長。",
+      "readScope": "「職能參與」下的生活自理段，限衣物觸感與如廁情境的例子。",
+      "sections": "「職能參與」下的生活自理段，限衣物觸感與如廁情境的例子。",
+      "reason": "只取生活例子，排除診斷、自閉症分類、療效及診所宣傳。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "clothing-texture",
+        "toilet-support-visit"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S115",
+      "title": "總質詢關注新北敬老愛心卡 侯友宜：7月起分階段擴大使用範圍",
+      "url": "https://www.ntpc.gov.tw/ch/home.jsp?dataserno=202606010068&id=28",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "新北市政府",
+      "date": "2026-06-01 市政新聞",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "新北市敬老卡及愛心卡持卡人，其中依法領有身心障礙證明的自閉症兒少可依地方資格申辦。",
+      "readScope": "市政新聞對 116 年分階段規劃，併讀社會局 116 年度施政計畫第 7 項，限明確包含愛心卡的擴大用途規劃。",
+      "sections": "市政新聞對 116 年分階段規劃，併讀社會局 116 年度施政計畫第 7 項，限明確包含愛心卡的擴大用途規劃。",
+      "reason": "屬未來用途規劃。本次未認定新用途已開通，也不更改 22 縣市現行額度。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "county-disability-transit-cards"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S116",
+      "title": "特殊教育學生及幼兒鑑定辦法說明手冊",
+      "url": "https://special.moe.gov.tw/api/file/download?filePath=c59116c8277d4f6881d518bcba144601.pdf",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "教育部",
+      "date": "教育部全國特殊教育資訊網刊載",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "學前至高中自閉症學生，限手冊教育需求及學校觀察的部分。",
+      "readScope": "自閉症學生鑑定章的發現、篩選與鑑定說明，以及課業和社會適應的觀察方向。",
+      "sections": "自閉症學生鑑定章的發現、篩選與鑑定說明，以及課業和社會適應的觀察方向。",
+      "reason": "手冊部分內容早於現行法規。只談教育觀察與需求，排除時限、診斷分類、法律資格和測驗題。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "special-ed-or-disability-certificate",
+        "grades-and-special-ed",
+        "before-school-assessment-consent",
+        "reassess-support-or-disability-certificate"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S117",
+      "title": "轉銜相關單位通訊錄",
+      "url": "https://www.eirrc.gov.taipei/cp.aspx?n=50CEEA1FBBB2401C",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "臺北市政府社會局早療通報轉介中心",
+      "date": "市府網站現行頁面",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "臺北市早療家庭、涉及公私立幼兒園巡迴輔導的自閉症幼兒。",
+      "readScope": "業務單位表教育局、特教資源中心列，含幼兒鑑定安置和自閉症巡迴支持。",
+      "sections": "業務單位表教育局、特教資源中心列，含幼兒鑑定安置和自閉症巡迴支持。",
+      "reason": "限臺北市查找實例，不把不同縣市幼兒園可取得的支持視為相同。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "early-intervention-preschool-support"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S118",
+      "title": "教育部主管之高級中等以下學校身心障礙學生就讀普通班之教學原則及輔導辦法",
+      "url": "https://edu.law.moe.gov.tw/LawContent.aspx?id=GL000518",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "教育部",
+      "date": "現行條文",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "教育部主管的高級中等以下學校身心障礙學生，包含《特殊教育法》第 3 條第 10 款的自閉症類別。",
+      "readScope": "第 1、2、4 條。限教育部主管學校、普通班團隊與 IEP；自閉症適用範圍與《特殊教育法》第 3 條第 10 款併讀。",
+      "sections": "第 1、2、4 條。限教育部主管學校、普通班團隊與 IEP；自閉症適用範圍與《特殊教育法》第 3 條第 10 款併讀。",
+      "reason": "依現行條文查核並標主管範圍。未引用地方不同辦法、幼兒園編制或人力承諾。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "special-ed-mainstream-class"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S119",
+      "title": "臺中市太平區東汴國民小學拒絕自閉症學生入學案",
+      "url": "https://www.cy.gov.tw/CyBsBoxContent.aspx?n=133&s=17174",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "王幼玲（調查委員）",
+      "date": "2020-06-11 公開調查案",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "一名自閉症國小學生的校園事件。",
+      "readScope": "案由及糾正結論，限以特教資源不足拒絕入學及未妥善協助的調查事實。",
+      "sections": "案由及糾正結論，限以特教資源不足拒絕入學及未妥善協助的調查事實。",
+      "reason": "不加個案身分資訊，不以此案估算領證造成標籤的風險，也不使用舊法編號取代現行條文。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "disability-certificate-and-school-label"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S120",
+      "title": "新北市政府社會局115-116年度補助辦理身心障礙者臨時及短期照顧服務實施計畫",
+      "url": "https://www.sw.ntpc.gov.tw/uploaddowndoc?dis=download&file=download%2F202603061022100.pdf&filedisplay=%28%E5%85%AC%E5%91%8A%29-%E8%BA%AB%E5%BF%83%E9%9A%9C%E7%A4%99%E8%80%85%E8%87%A8%E6%99%82%E5%8F%8A%E7%9F%AD%E6%9C%9F%E7%85%A7%E9%A1%A7%E6%9C%8D%E5%8B%99%E5%AF%A6%E6%96%BD%E8%A8%88%E7%95%AB.pdf&flag=doc",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "新北市政府社會局",
+      "date": "2026–2027 年計畫",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "新北市符合該計畫服務對象規定的持證者，文件明列部分自閉症情況。",
+      "readScope": "服務對象、需求評估及申辦段落，限一類自閉症及計畫適用條件。",
+      "sections": "服務對象、需求評估及申辦段落，限一類自閉症及計畫適用條件。",
+      "reason": "只作新北案例，完整資格由社會局依個案和當期計畫核定。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "disability-certificate-available-services"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S121",
+      "title": "保險業承保身心障礙者處理原則",
+      "url": "https://liaroc.org.tw/list_article?article_content=514",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "中華民國人壽保險商業同業公會",
+      "date": "2022-07-05 金管會同意修正版本",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "投保的身心障礙者，與監察院自閉症案例及本文核保法規併讀。",
+      "readScope": "承保評估段落，限不得單據身障身分、須綜合個別狀況與險種條件。",
+      "sections": "承保評估段落，限不得單據身障身分、須綜合個別狀況與險種條件。",
+      "reason": "核對現行公布處及金管會函文。限處理原則，不推算自閉症核保結果或替商品提供承保承諾。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "disability-certificate-and-insurance"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S122",
+      "title": "身心障礙鑑定服務專區",
+      "url": "https://www.kmuh.gov.tw/cp.aspx?n=BFDC5E0EECF8B723",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "高雄市立聯合醫院",
+      "date": "院方現行網站資料",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "到該院鑑定的申請者。本篇限與自閉症身障鑑定法規相符的流程角色。",
+      "readScope": "新制身心障礙鑑定流程步驟二、三；併讀法定鑑定作業辦法的自閉症適用範圍。",
+      "sections": "新制身心障礙鑑定流程步驟二、三；併讀法定鑑定作業辦法的自閉症適用範圍。",
+      "reason": "院所分工實例。排除等待天數及其他障礙項目的文件，未滿六歲暫判仍依現行第 9 條。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "what-disability-assessment-checks"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S123",
+      "title": "發展遲緩兒童療育補助（早療交通費或療育費）",
+      "url": "https://www.sw.ntpc.gov.tw/home.jsp?act=be4f48068b2b0031&dataserno=490876a2ea5230f5ed8daaf4598cc80c&fromsection=inarticle&id=af6b347895e3de2c&sectioninfo=5092295",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "新北市政府社會局",
+      "date": "市府現行網站資料",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "符合新北早期療育補助條件的兒童，涵蓋持有效身心障礙證明或符合文件條件的自閉症幼兒。",
+      "readScope": "申請條件中的有效身心障礙證明及發展聯評文件；併讀本文原 ASD 來源，限在地文件的比較。",
+      "sections": "申請條件中的有效身心障礙證明及發展聯評文件；併讀本文原 ASD 來源，限在地文件的比較。",
+      "reason": "限核對文件項目，未新增一般化的資格、金額或審查結果。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "early-intervention-subsidy"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S114",
+      "title": "Understanding the characteristics of friendship quality, activity participation, and emotional well-being in Taiwanese adolescents with autism spectrum disorder",
+      "url": "https://researchoutput.ncku.edu.tw/zh/publications/understanding-the-characteristics-of-friendship-quality-activity-/",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "authors": "Yu-Chien Chang、Chih-Hsuan Chen、Pai-Chuan Huang、Ling-Yi Lin",
+      "date": "2019 年（2018 年線上出版）",
+      "checked": "2026-11-26",
+      "researchRound": "2026-11-26-attributed-sources",
+      "audience": "臺灣 10–19 歲的 101 位自閉症青少年與 101 位同齡對照。",
+      "readScope": "成大收錄的原作者摘要，限受訪者自評的友誼品質、學校參與與孤單感的關聯。",
+      "sections": "成大收錄的原作者摘要，限受訪者自評的友誼品質、學校參與與孤單感的關聯。",
+      "reason": "觀察問卷僅提供關聯。不推論交朋友可改善情緒，也不推論想獨處就一定孤單。",
+      "currency": "可用（限已查範圍及資料年代）",
+      "articles": [
+        "comfortable-friendships"
+      ],
+      "taiwanSource": true
+    },
+    {
+      "id": "S124",
+      "title": "Autism and sleep disturbance",
+      "url": "https://www.autism.org.uk/learn/knowledge-hub/professional-practice/sleep-disturbance",
+      "checked": "2026-11-26",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "permissionEvidence": "https://www.autism.org.uk/legal-information/terms-and-conditions",
+      "audience": "自閉症兒童及家庭。",
+      "date": "網站現行版",
+      "currency": "可用（限已查範圍及資料年代）",
+      "sections": "Case study，限一名 7 歲自閉症孩子的睡前安排。",
+      "reason": "限具體案例中的選擇與作息，排除療效推論。",
+      "authors": "Alyson O’Brien",
+      "researchRound": "2026-11-26-attributed-sources",
+      "readScope": "Case study，限一名 7 歲自閉症孩子的睡前安排。",
+      "articles": [
+        "bedtime"
+      ],
+      "taiwanSource": false
+    },
+    {
+      "id": "S125",
+      "title": "What can I do if my child won’t go to school?",
+      "url": "https://www.autism.org.uk/advice-and-guidance/education/attendance-problems/parents",
+      "checked": "2026-11-26",
+      "decision": "source-note",
+      "scope": "asd",
+      "permission": "限獨立表述已公開觀點、研究事實或案例並署名連結原文。未將本項判定作為改作授權。",
+      "permissionEvidence": "https://www.autism.org.uk/legal-information/terms-and-conditions",
+      "audience": "自閉症學齡兒童與青少年及照顧者。",
+      "date": "網站現行版",
+      "currency": "可用（限已查範圍及資料年代）",
+      "sections": "Strategies you could try at home，限請孩子指出校內最不安的活動或地點。",
+      "reason": "限定位最困難的情境，不援用英國校務流程。",
+      "authors": "National Autistic Society",
+      "researchRound": "2026-11-26-attributed-sources",
+      "readScope": "Strategies you could try at home，限請孩子指出校內最不安的活動或地點。",
+      "articles": [
+        "school-attendance-talk"
+      ],
+      "taiwanSource": false
     }
   ],
   "lastResearchRound": "2026-11-25"

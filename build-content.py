@@ -18,12 +18,29 @@ def main():
         "adapt": "adaptation-permitted",
         "noncommercial": "noncommercial-adaptation-permitted",
     }
+    note_sources = set()
     for source_id, source in catalog["sources"].items():
         if source.get("scope") != "asd" or not source.get("scopeEvidence"):
             parser.error(f"{source_id} needs verified ASD-specific scope evidence.")
         reviewed = approved.get(source.get("auditId"), {})
-        expected_reuse = reuse_statuses.get(reviewed.get("decision"))
-        if (expected_reuse is None
+        decision = reviewed.get("decision")
+        if decision == "source-note":
+            if (source.get("reuseStatus") != "attributed-summary"
+                    or source.get("url") != reviewed.get("url")
+                    or not (source.get("url") or "").startswith("https://")
+                    or reviewed.get("scope") != "asd"
+                    or not reviewed.get("readScope")
+                    or not reviewed.get("reason")
+                    or not source.get("attribution")
+                    or not (source.get("authors") or source.get("publisher"))
+                    or not source.get("rights")
+                    or source.get("license")
+                    or source.get("licenseName")):
+                parser.error(f"{source_id} needs an audited, attributed overview of the original source.")
+            note_sources.add(source_id)
+        expected_reuse = reuse_statuses.get(decision)
+        if decision != "source-note" and (
+                expected_reuse is None
                 or source.get("reuseStatus") != expected_reuse
                 or not source.get("permissionEvidence")
                 or source.get("url") != reviewed.get("url")):
@@ -44,12 +61,14 @@ def main():
     resource_group_ids = {group["id"] for group in catalog["resourceGroups"]}
     if len(resource_group_ids) != len(catalog["resourceGroups"]):
         parser.error("Resource groups need distinct IDs.")
+    used_note_sources = set()
     for article in catalog["articles"]:
         if not article.get("ages"):
             parser.error(f"{article['id']} must have at least one age group in catalog.json.")
         if not article.get("ageBasis") or not article.get("ageNote"):
             parser.error(f"{article['id']} needs an explicit basis for its age labels.")
-        if article.get("related") not in catalog["sources"] or not article.get("reviewScope"):
+        if (article.get("related") not in catalog["sources"]
+                or article["related"] in note_sources or not article.get("reviewScope")):
             parser.error(f"{article['id']} needs an ASD-specific source and support focus.")
         if not article.get("sections") or any(
             not section.get("heading")
@@ -68,9 +87,21 @@ def main():
         cited = {article["related"]}
         for reference in article.get("additionalSources", []):
             source_id = reference.get("id")
-            if source_id not in catalog["sources"] or source_id in cited or not reference.get("section"):
+            if (source_id not in catalog["sources"] or source_id in note_sources
+                    or source_id in cited or not reference.get("section")):
                 parser.error(f"{article['id']} needs a distinct approved source and citation scope for each additional reference.")
             cited.add(source_id)
+        article_note_sources = set()
+        for section in article["sections"]:
+            for note in section.get("sourceNotes", []):
+                source_id = note.get("id")
+                summary = note.get("text")
+                if (source_id not in note_sources or source_id in article_note_sources
+                        or not isinstance(summary, str) or not summary.strip()
+                        or "<" in summary or ">" in summary or not note.get("section")):
+                    parser.error(f"{article['id']} needs distinct audited notes with plain text and a reference scope.")
+                article_note_sources.add(source_id)
+        used_note_sources.update(article_note_sources)
         resource = article.get("resource")
         if resource is not None:
             if resource.get("group") not in resource_group_ids:
@@ -83,6 +114,8 @@ def main():
                 parser.error(f"{article['id']} needs official links drawn from its cited sources.")
             if not all(resource.get(field) for field in ("audience", "contact")) or not article.get("reviewChecked"):
                 parser.error(f"{article['id']} needs a resource audience, contact and review date.")
+    if note_sources != used_note_sources:
+        parser.error("Published overview sources need a note in at least one article.")
     path = folder / "guide.js"
     content = (
         "// Generated from catalog.json by build-content.py.\n"
