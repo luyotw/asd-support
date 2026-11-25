@@ -11,6 +11,7 @@ const iconPaths = {
   bookmark: '<path d="M6 5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16l-6-4-6 4z"/>',
   user: '<circle cx="12" cy="8" r="3.5"/><path d="M5 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2"/>',
   arrow: '<path d="M4 12h15m-6-6 6 6-6 6"/>',
+  up: '<path d="M12 20V5m-6 6 6-6 6 6"/>',
   back: '<path d="M20 12H5m6-6-6 6 6 6"/>',
   chevron: '<path d="m9 6 6 6-6 6"/>',
   external: '<path d="M13 5h6v6m0-6-8 8m7 0v6H5V6h6"/>',
@@ -453,6 +454,13 @@ function articleSourceLinks(references) {
   }).join("")}</ul>`;
 }
 
+const backToTopButton = `<button class="button secondary back-to-top" type="button" data-action="back-to-top" hidden>${icon("up")} 回到頂端</button>`;
+
+function updateBackToTop() {
+  const button = app.querySelector(".back-to-top");
+  if (button) button.hidden = window.scrollY < 240;
+}
+
 function articlePage(article) {
   const category = categoryById[article.category];
   const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
@@ -508,6 +516,7 @@ function articlePage(article) {
       ${bookmarkButton(article, true)}
       <button class="button secondary" data-action="toggle-recommendation" data-article="${article.id}">${dismissed ? "恢復推薦" : "不再顯示於推薦"}</button>
     </footer>
+    ${backToTopButton}
   </div>`);
 }
 
@@ -525,6 +534,7 @@ function withdrawnArticlePage(article) {
     <a class="text-button back-link" href="#saved">${icon("back")} 回個人紀錄</a>
     <header class="article-heading"><h1>${article.title}</h1><p>這篇內容已暫停收錄，因為目前缺少針對 ASD 的資料依據。你先前的筆記仍可在下方查看和編輯。</p></header>
     ${notesSection(article.id)}
+    ${backToTopButton}
   </div>`);
 }
 
@@ -602,6 +612,7 @@ function render(focus = false) {
     window.scrollTo(0, 0);
     app.querySelector("main").focus({ preventScroll: true });
   }
+  updateBackToTop();
 }
 
 document.addEventListener("change", event => {
@@ -717,6 +728,12 @@ document.addEventListener("click", event => {
       render();
       app.querySelector('[data-action="next-recommendation"]').focus({ preventScroll: true });
       break;
+    case "back-to-top": {
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      app.querySelector("main").focus({ preventScroll: true });
+      window.scrollTo({ top: 0, behavior: reducedMotion ? "instant" : "smooth" });
+      break;
+    }
     case "toggle-recommendation": {
       const id = control.dataset.article;
       const active = currentState();
@@ -785,5 +802,6 @@ document.addEventListener("click", event => {
   }
 });
 
+window.addEventListener("scroll", updateBackToTop, { passive: true });
 window.addEventListener("hashchange", () => render(true));
 render();
