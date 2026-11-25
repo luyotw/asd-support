@@ -189,7 +189,13 @@ img { display: block; max-width: 100%; }
 .article-part h2 { font-size: 1.2rem; margin-bottom: 6px; }
 .article-part p + p { margin-top: 9px; }
 .article-part a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
-.article-evidence { color: var(--muted); font-size: .9rem; }
+.article-evidence {
+  margin-block-start: 14px;
+  padding-inline-start: 14px;
+  border-inline-start: 3px solid var(--green);
+  color: var(--muted);
+  font-size: .9rem;
+}
 .county-entry { display: block; }
 .article-part p + p .county-entry { padding-top: 12px; border-top: 1px solid var(--soft-line); }
 .county-name { color: var(--ink); font-size: 1.03rem; }

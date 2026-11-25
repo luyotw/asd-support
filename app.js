@@ -506,7 +506,9 @@ function articlePage(article) {
       ${article.sections.map(section => `<section class="article-part">
         <h2>${section.heading}</h2>
         ${section.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join("")}
-        ${(section.evidence || []).map(paragraph => `<p class="article-evidence">${paragraph}</p>`).join("")}
+        ${section.evidence?.length ? `<div class="article-evidence">
+          ${section.evidence.map(paragraph => `<p>${paragraph}</p>`).join("")}
+        </div>` : ""}
       </section>`).join("")}
     </div>
     ${relatedArticles.length ? `<section class="article-section article-related" aria-labelledby="article-related-title">
