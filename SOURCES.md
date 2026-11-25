@@ -1,6 +1,6 @@
 # 星泊｜來源盤點
 
-更新日期為 2026-11-24。現行 48 篇文章引用 48 筆具明確 ASD 依據與改作證據的來源。查核涵蓋各筆列明的原文與用途。
+更新日期為 2026-11-25。現行 48 篇文章引用 49 筆具明確 ASD 依據與改作證據的來源。查核涵蓋各筆列明的原文與用途。
 
 全部收集紀錄集中在[資料整理索引](RESEARCH-INDEX.md)；依需求配對來源、適齡與觀點差異見[題目整理與觀點對照](TOPIC-BRIEFS.md)。索引已逐筆給出使用結論；不採用項目僅保留稽核歷史，不供網站發布。
 
@@ -155,6 +155,8 @@
 | S74 | [自閉症青少年家庭重新尋求支持的經驗](https://pmc.ncbi.nlm.nih.gov/articles/PMC12531384/) | CC BY-NC 4.0 | Methods、Results／Discussion 作者對家長支持需求及限制的敘述，排除個人引文、危機處理及服務制度推論。 |
 | S75 | [學前自閉症家庭面對連帶污名的研究](https://www.mdpi.com/1660-4601/17/5/1799) | CC BY 4.0 | 第 2.1、4、5 節限樣本、活動參與關聯與研究限制，排除量表與資料表。 |
 
+2026-11-25 補入 [S76 輔具補助辦法與正式附表](https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=D0050060)。附表明列自閉症適用的溝通輔具類別，整理限已核對的補助資格、評估及購買程序。
+
 Positive Partnerships 的[網站條款](https://www.positivepartnerships.com.au/terms-of-use)列出 CC BY 4.0 的署名格式及照片、第三方素材、標誌、外部影片等例外。文章保留各自的署名和改寫範圍。
 
 Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與專業經驗。文章不宣稱這些方法是效果已確立的療法。S30表3部分星號條目屬經驗建議，本案不搬用加重用品、治療觸碰或固定操作程序。
@@ -208,9 +210,9 @@ Rhythmic Relating原文屬Hypothesis and Theory類型；S30亦含研究整合與
 | before-school-assessment-consent | S55、S68 | 班上能先試的安排依園校與孩子需要而定。正式特教服務與主管機關後續處理依規定辦理。 |
 | what-disability-assessment-checks | S61、S62 | 本文的提問無法直接換算等級。資格、程度及證明所載內容，依指定機構與主管機關的程序判定。 |
 | disability-assessment-under-six | S61、S62 | 兩項以上的內容請帶報告向團隊確認。早療、教育支持與福利服務的申請也各有自己的規定。 |
-| disability-certificate-available-services | S64、S62 | 取得證明後，各項方案仍依自己的年齡、地區與需求條件核定。新北計畫只作查找示例。 |
+| disability-certificate-available-services | S64、S62、S76 | 查核持證者適用福利，列出法源和辦理窗口。照顧服務和生活補助以新北地方資料作示例。 |
 | reassess-support-or-disability-certificate | S54、S62、S61 | 同一時間的特教、身障證明及各福利方案可能有不同期限，請各自核對書面結果。 |
-| disability-certificate-and-insurance | S66、S65、S64 | 目前查到的調查無法算出領證或不領證的核保差距。承保條件依個別情況、商品及公司評估。 |
+| disability-certificate-and-insurance | S66、S65、S64、S62、S76 | 目前查到的調查無法算出領證或不領證的核保差距。承保條件依個別情況、商品及公司評估。 |
 | disability-certificate-and-school-label | S55、S60、S67、S75 | 這些研究談的是自閉症身分與揭露經驗，沒有直接比較領證與未領證者。資料流向請向受理窗口依個案確認。 |
 | sharing-autism-information-at-school | S67、S60、S55 | 學齡研究較多，學前的孩子可以先用簡單選項及日常支持對話。公開後的影響因場域、同儕和老師做法而異。 |
 

@@ -972,15 +972,15 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "scopeEvidence": "第 5 至 7 條規範功能、鑑定、需求評估與證明，第 14、15 條規範效期與重新鑑定。本案與明列自閉症的鑑定作業辦法及地方服務計畫併讀。",
       "auditId": "S62",
-      "reviewScope": "第 5–7、14、15、50、51、58、71 條與自閉症兒少有關的制度正文。",
+      "reviewScope": "第 5–7、14、15、29、50、51、56、58、59、71 條，限自閉症兒少適用的鑑定、就學費用、福利服務、停車、交通與場所優待及輔具制度。",
       "currencyEvidence": "條文涵蓋不同障礙與年齡，實際服務及財務條件由承辦按方案確認。",
       "sourceAudience": "本案限依法完成鑑定或考慮申請的自閉症兒少家庭。",
-      "checked": "2026-11-24",
+      "checked": "2026-11-25",
       "scope": "asd",
-      "scopeChecked": "2026-11-24",
+      "scopeChecked": "2026-11-25",
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
-      "reviewChecked": "2026-11-24",
+      "reviewChecked": "2026-11-25",
       "currencyStatus": "usable"
     },
     "taiwan-special-education-class-types": {
@@ -1302,6 +1302,30 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.mdpi.com/1660-4601/17/5/1799",
       "reviewChecked": "2026-11-24",
+      "currencyStatus": "usable"
+    },
+    "taiwan-assistive-device-subsidies": {
+      "name": "身障輔具補助辦法與溝通輔具基準",
+      "originalTitle": "身心障礙者輔具費用補助辦法",
+      "publisher": "衛生福利部",
+      "version": "2022-10-20 修正，2023-01-01 施行",
+      "description": "附表第 94–100 項溝通輔具明列自閉症，並依溝通輔具評估及各項條件審查。",
+      "rights": "依臺灣《著作權法》第 9 條整理法令及正式附表正文。",
+      "attribution": "衛生福利部，《身心障礙者輔具費用補助辦法》及第四條附表。星泊整理指定範圍。",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=D0050060",
+      "licenseName": "著作權法第 9 條",
+      "license": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "scopeEvidence": "附表第 94–100 項溝通輔具明列自閉症，並依溝通輔具評估及各項條件審查。",
+      "auditId": "S76",
+      "reviewScope": "第 2–4、6、9–10、13、16–17 條與正式附表的第 94–100 項溝通輔具，限自閉症對象、補助條件、評估與請領程序。",
+      "currencyEvidence": "核對全國法規資料庫現行正文及該版本附表。各款裝置條件、評估與補助額度由戶籍地主管機關確認。",
+      "sourceAudience": "領有身心障礙證明且需要評估溝通輔具的自閉症兒少及照顧者。",
+      "checked": "2026-11-25",
+      "scope": "asd",
+      "scopeChecked": "2026-11-25",
+      "reuseStatus": "adaptation-permitted",
+      "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
+      "reviewChecked": "2026-11-25",
       "currencyStatus": "usable"
     }
   },
@@ -3696,7 +3720,7 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
     {
       "id": "disability-certificate-available-services",
       "category": "caregiver",
-      "title": "要不要辦身障證明？先查我們用得到哪些服務",
+      "title": "自閉症孩子領了身障證明，可以用哪些福利？",
       "ages": [
         "0–1 歲",
         "2–5 歲",
@@ -3704,22 +3728,38 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "9–12 歲",
         "13–17 歲"
       ],
-      "time": 5,
-      "summary": "從家庭現在最需要的支持出發。先問證明能開哪些申請入口，再核對各方案的條件、等待時間和使用方式。",
-      "when": "身邊的人建議幫孩子申請證明，但你想先知道對你們的生活會有什麼實際幫助。",
-      "asdFocus": "有些家庭最需要懂孩子表達與感官需求的照顧人手，有些想更容易帶孩子外出或有機會取得合適的溝通工具。從眼前最困難的一件事開始查。",
+      "time": 7,
+      "summary": "健保門診基本部分負擔 50 元、國內大眾運輸半價、符合條件可申請溝通輔具或臨時照顧。這篇列出可用項目、資格和辦理窗口。",
+      "when": "交通票價和健保門診基本部分負擔可依身分適用。生活補助、輔具與臨時照顧則還要看家戶條件、輔具評估或地方服務資格。",
+      "asdFocus": "如果孩子需要用圖卡或語音溝通器表達需求，輔具補助基準有明列自閉症的項目。家庭需要照顧人手時，可以分別查臨時及短期照顧、社工個案管理和家長支持團體。",
       "steps": [
         [
-          "把想解決的事說到能查方案",
-          "例如照顧者需要有人暫時接手、孩子外出需要交通支持，或治療師建議先評估一種溝通輔具。問所在地社會局處有哪個服務對得上。"
+          "家庭照顧者支持與臨時照顧",
+          "新北市 115 年度照顧者支持計畫明列自閉症，對象包含實際住在新北且已領證者的家庭，提供關懷訪視、視需求安排的社工個案管理及支持團體。地方另有臨時及短期照顧，可由服務員到家或在據點短時間接手。服務依需求評估與地方資格辦理，已使用長照喘息或同時段照顧服務的情況有使用限制。向公所或社會局處詢問。<a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050186\" target=\"_blank\" rel=\"noopener noreferrer\">家庭照顧者服務辦法第 8–9 條</a>"
         ],
         [
-          "逐項問證明是不是申請條件",
-          "有些方案需要身心障礙證明，有些可走早療或其他入口。再問孩子年齡、戶籍或居住地、功能需求、補助是否互斥、有無名額，以及輔具是否要先核定。"
+          "溝通輔具補助",
+          "合適的圖卡或設備、語音溝通器等可能有補助。補助基準明列自閉症，但仍要符合各品項的溝通需求、評估及居住條件。例如附表第 94 項圖卡或設備的最高補助基準為 5,000 元，第 95 項低階語音溝通器為 7,000 元。一般戶原則按該項上限的五成計算，實際金額依核定。向戶籍地輔具中心或公所確認品項並送件，收到核定後再購買。<a href=\"https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000326887&amp;lan=C\" target=\"_blank\" rel=\"noopener noreferrer\">輔具補助基準表</a>"
         ],
         [
-          "比較兩個最用得到的方案",
-          "記下頻率、申請窗口、等待時間和家庭要配合的事。已有個管師或社工時，可以請他協助確認申請順序與可替代的支持。"
+          "健保門診部分負擔與每月健保費",
+          "持證者在健保特約院所看門診，基本部分負擔按診所層級收 50 元。掛號費、藥品部分負擔或自費項目各按規定。孩子本人的健保自付保費依障礙程度補助，輕度四分之一、中度二分之一、重度及極重度全額。保費減免可查投保單位帳單或問健保署。<a href=\"https://www.nhi.gov.tw/ch/cp-5163-9803c-2737-1.html\" target=\"_blank\" rel=\"noopener noreferrer\">健保署門診費用說明</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050090\" target=\"_blank\" rel=\"noopener noreferrer\">自付保費補助辦法</a>"
+        ],
+        [
+          "搭車與場館門票",
+          "憑證明搭乘國內大眾運輸可享半價，例如臺鐵、高鐵或客運。經需求評估認定需要陪伴者，可有一名必要陪伴者享同樣優惠，搭車時可查看證明背面的優惠註記。依身障權益保障法，收費的公營或公設民營風景區、康樂場所及文教設施可免費，民營場所依該條適用範圍半價。購票時依營運單位查驗方式出示證明。<a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050046\" target=\"_blank\" rel=\"noopener noreferrer\">身障權益保障法第 58、59 條</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050052\" target=\"_blank\" rel=\"noopener noreferrer\">大眾運輸優待辦法</a>"
+        ],
+        [
+          "身心障礙者生活補助",
+          "持證後還要審查家戶收入、財產、居住及其他補助或安置情形。以新北市 115 年度公告為例，基本補助每月 4,049、5,437 或 9,485 元，依障礙程度與家戶資格而定。另有 115 年 1 月至 116 年 1 月的弱勢生活補助加發措施，多項加發資格從優擇一。可向戶籍地公所查孩子符合哪一級。<a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050189\" target=\"_blank\" rel=\"noopener noreferrer\">生活補助費發給辦法</a> · <a href=\"https://welfare.ntpc.gov.tw/viewService/show/22180?actionName=list2&amp;fromOpa=1\" target=\"_blank\" rel=\"noopener noreferrer\">新北市金額與資格</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050216\" target=\"_blank\" rel=\"noopener noreferrer\">期間加發辦法</a>"
+        ],
+        [
+          "綜所稅與接送車輛牌照稅",
+          "孩子領證且由家長列報扶養，115 年度綜所稅的身心障礙特別扣除額為每人 22.7 萬元，於 116 年 5 月申報，金額從所得中扣除。供孩子使用的家用車也可向車籍地稅捐機關查牌照稅減免，每位身障者限一輛，依車主關係、戶籍或車籍地址等條件審核，自用小客車的免稅額以 11,230 元為上限。專用停車位識別證另依行動不便需求評估核發。<a href=\"https://www.dot.gov.tw/singlehtml/ch26?cntId=cf5db69f558d42409aa56c70838e8802\" target=\"_blank\" rel=\"noopener noreferrer\">財政部 115 年度扣除額</a> · <a href=\"https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&amp;flno=17\" target=\"_blank\" rel=\"noopener noreferrer\">所得稅法第 17 條</a> · <a href=\"https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/local/vehicle-license-tax/a3Y10l\" target=\"_blank\" rel=\"noopener noreferrer\">財政部牌照稅申辦說明</a>"
+        ],
+        [
+          "就學費用減免",
+          "符合學籍及家庭年所得不超過 220 萬元等條件，持證學生可辦理就學費用減免。按障礙程度，輕度四成、中度七成、重度及極重度全額，實際可減免項目依學制及既有補助確認。僅持特教鑑定證明、尚未領身障證明的學生，也有準用輕度減免的規定。向學校註冊或承辦單位詢問。<a href=\"https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0080043\" target=\"_blank\" rel=\"noopener noreferrer\">就學費用減免辦法第 2–4、6、11 條</a>"
         ]
       ],
       "related": "new-taipei-autism-family-services",
@@ -3735,27 +3775,46 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         "社會局",
         "輔具",
         "福利",
-        "交通"
+        "交通",
+        "健保費",
+        "就醫",
+        "生活補助",
+        "所得稅",
+        "牌照稅",
+        "交通半價",
+        "溝通輔具",
+        "AAC",
+        "臨時照顧",
+        "學雜費"
       ],
       "sourceSection": "第陸、柒節，限明列自閉症的家庭照顧者支持服務示例。",
       "evidence": {
-        "summary": "新北市 115 年度計畫就是一個例子。它針對符合居住與領證條件的家庭提供照顧者支持，並明列自閉症及心智障礙者相關服務安排。",
-        "limit": "取得證明後，各項方案仍依自己的年齡、地區與需求條件核定。新北計畫只作查找示例。"
+        "heading": "查詢日期與適用範圍",
+        "summary": "2026 年 11 月 25 日查核臺灣現行規定。新北市計畫和補助金額為地方示例。家庭照顧服務、輔具及部分減免需個別申請或評估。",
+        "limit": "孩子是否符合各項資格，由承辦依有效的證明、需求評估、年齡、戶籍或居住地、家戶條件和當期公告核對。"
       },
-      "observe": "想清楚一週哪一段特別難排，或目前什麼出門、上課、表達方式需要支援。",
-      "example": "家長先問社會局有沒有適合孩子年齡的照顧者服務，也問若還在等鑑定，能不能先請早療個管了解家庭需要。",
-      "adjust": "如果先查到的方案額滿，請承辦列出可替代的在地服務及下一次可確認的時間。",
+      "observe": "先記下孩子年齡、戶籍與實際住哪裡、證明是否已核發及有效期、最需要的服務。問承辦哪些條件可先確認、還在等鑑定時有哪些資源，以及是否要先核准才能購買或使用。",
+      "example": "孩子平常用圖片表達需求，家長想了解能否補助一種溝通器。可以把孩子在哪些場合很難表達、目前用哪些方式記下來，向戶籍地輔具中心確認評估、申請及購買順序。",
+      "adjust": "照顧與早療等需求可以分別查詢適用的資源。學前孩子有早療需求時，可先向早療聯評或通報轉介窗口問現有資料能申請哪些服務。<a href=\"#article/early-intervention-first-steps\">查看早療評估與轉介</a>。",
       "additionalSources": [
         {
           "id": "taiwan-disability-rights-act",
-          "section": "第 7、50、51、58、71 條，限需求評估、家庭支持、交通與輔具等制度入口。"
+          "section": "第 7、29、50、51、56、58、59、71 條，限自閉症家庭適用的需求評估、就學、照顧、停車、交通、場館和輔具。"
+        },
+        {
+          "id": "taiwan-assistive-device-subsidies",
+          "section": "第 2–4、6、9–10、13、16–17 條與正式附表的第 94–100 項溝通輔具，限自閉症對象、補助條件、評估與請領程序。"
         }
       ],
       "status": "trial",
       "ageBasis": "editorial-context",
-      "ageNote": "0–17 歲是家庭查找資源的閱讀分組。服務資格依當地方案。",
-      "reviewChecked": "2026-11-24",
-      "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。"
+      "ageNote": "0–17 歲為兒少照顧者閱讀分組。各項福利按實際年齡與資格核定。",
+      "reviewChecked": "2026-11-25",
+      "reviewScope": "核對明列自閉症的地方計畫和輔具附表，並查依法領證的 ASD 兒少適用之中央法規及主管機關公告。限已查項目、期間、資格及窗口。",
+      "contextHeading": "哪些福利可以用，哪些還要申請？",
+      "stepsHeading": "具體福利與申請窗口",
+      "observeHeading": "詢問時可以帶哪些資料？",
+      "adjustHeading": "正在等鑑定或證明時"
     },
     {
       "id": "reassess-support-or-disability-certificate",
@@ -3838,11 +3897,11 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
       "time": 5,
       "summary": "暫不申請身障證明，不能保證比較好投保。對已有自閉症診斷或就醫紀錄的孩子，要保書問到的事項仍要據實回答。如果孩子現在需要的服務以領證為條件，延後申請也會延後取得那些支持的機會。",
       "when": "這個問題有兩個時間點：孩子現在可能就需要照顧支持，未來申請的保單則要等到正式核保才知道結果。若還沒查過孩子用得到的服務，單憑「以後可能買不到保險」這個顧慮，無法判斷放棄申請是否對孩子有利。",
-      "asdFocus": "身障證明可作為公共服務的申請資格。照顧者支持團體、社工個案管理等服務，提供的是照顧與資源連結。商業保險依保單約定給付。兩邊可以同時查，等候保險答覆時也能先了解身障服務的資格和申請時程。",
+      "asdFocus": "身障證明可連結日常的資源，例如國內大眾運輸優惠，或符合評估條件時申請溝通輔具及地方照顧支持。商業保險依保單約定給付。等候保險答覆時，也能先查孩子用得到的身障福利、資格與申請時程。",
       "steps": [
         [
           "孩子現在需要的服務，是否要求身障證明？",
-          "以新北市 115 年度家庭照顧者支持計畫為例，服務對象包含實際住在新北市、已領證的自閉症者家庭。計畫提供家庭關懷、支持團體及依需求安排的社工個案管理。如果家裡正缺這類協助，可以向公所或社會局處詢問當地有什麼方案、是否要領證、等候期間有沒有其他服務。<a href=\"#article/disability-certificate-available-services\">查看身障證明相關服務</a>。"
+          "照顧者支持只是其中一項。身障證明也和健保基本部分負擔、交通票價和溝通輔具補助有關。地方照顧服務可問公所或社會局處，輔具補助可先問戶籍地輔具中心。<a href=\"#article/disability-certificate-available-services\">查看身障證明相關服務</a>。"
         ],
         [
           "還沒領證，保險公司可能問哪些事？",
@@ -3890,12 +3949,20 @@ const { categories, situations, sources, articles, withdrawnArticles } = {
         {
           "id": "new-taipei-autism-family-services",
           "section": "115 年度計畫第陸、柒節，限居住、領證條件及明列自閉症的照顧者支持服務。"
+        },
+        {
+          "id": "taiwan-disability-rights-act",
+          "section": "第 50、51、58、71 條，限照顧支持、交通及輔具。健保門診基本部分負擔另見<a href=\"https://www.nhi.gov.tw/ch/cp-5163-9803c-2737-1.html\" target=\"_blank\" rel=\"noopener noreferrer\">健保署門診費用說明</a>。"
+        },
+        {
+          "id": "taiwan-assistive-device-subsidies",
+          "section": "第 4、6 條與附表面對面溝通項目，限補助資格。"
         }
       ],
       "status": "trial",
       "ageBasis": "editorial-context",
       "ageNote": "0–17 歲是照顧者閱讀分組，個別商品的投保年齡按保單規定。",
-      "reviewChecked": "2026-11-24",
+      "reviewChecked": "2026-11-25",
       "reviewScope": "指定的 ASD 研究或適用法規，搭配原創家長提問與情境示例。",
       "observeHeading": "查服務和保單時可以怎麼問",
       "contextHeading": "暫不申請，會影響什麼？",

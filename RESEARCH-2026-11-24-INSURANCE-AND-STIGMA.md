@@ -52,3 +52,17 @@
 
 - 《特殊教育法》第 10、11、20、31 條可作融合與不歧視、學生表達意見、鑑定同意及 IEP 參與的基礎。《個人資料保護法》第 6、8 條可作醫療資料蒐集與告知的背景。具體資料的使用者、保存或移交方式，寫成家長向園校確認的問題。[特殊教育法](https://edu.law.moe.gov.tw/LawContent.aspx?id=FL009136) · [個人資料保護法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=I0050021)
 - 呈現兩種實務考量。和負責支持的教師提早溝通，可能有助於準備環境。向同儕說明則涉及孩子意願、內容和範圍，開放授權研究也記錄過未經同意揭露後的負面經驗。研究談的是揭露診斷與校園互動，沒有直接比較領證和未領證孩子的標籤經驗。[Ophir 等的校園研究回顧](https://link.springer.com/article/10.1007/s40489-026-00596-4)
+
+## 身障證明福利查核
+
+2026-11-25 核對法規、主管機關公告及地方申辦。通用福利只整理依法領證的自閉症兒少適用範圍，與 S61、S64 的 ASD 對象併讀。法令、政府正式公文自有正文依《著作權法》第 9 條使用，其他網頁只核對公示的條件及數額，正文以原創摘要表達。
+
+| 查核項目 | 核對範圍與限制 |
+| --- | --- |
+| [照顧者服務辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050186) | 第 8、9、9-1 條的服務型態、重複使用限制及例外。地方示例採 S64 新北市 115 年度計畫。 |
+| [輔具補助辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?PCode=D0050060)、[法定附表](https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000326887&lan=C) | S76。面對面溝通類別適用資格明列自閉症，部分輔具需指定方式評估。先核准後購買。 |
+| [健保署門診規定](https://www.nhi.gov.tw/ch/cp-5163-9803c-2737-1.html)、[社會保險保費補助辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050090) | 門診基本部分負擔與自付健保保費各自計算。第 4、5、7 條的保費比例和轉檔減免。 |
+| [身障權益保障法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050046)、[交通優待辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050052) | 第 58、59 條的運輸、場所、必要陪伴者，以及交通範圍與證明查驗。 |
+| [生活補助辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050189)、[新北申辦](https://welfare.ntpc.gov.tw/viewService/show/22180?actionName=list2&fromOpa=1)、[期間加發辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0050216) | 區分地方公布的基本給付與 115 年 1 月至 116 年 1 月的暫時加發。主管機關規劃中的全面調增金額未作為現行給付。 |
+| [所得稅第 17 條](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0340003&flno=17)、[財政部年度公告](https://www.dot.gov.tw/singlehtml/ch26?cntId=cf5db69f558d42409aa56c70838e8802)、[牌照稅申辦](https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-q-and-a/local/vehicle-license-tax/a3Y10l) | 115 年度綜所稅為 116 年 5 月申報，扣除額按年度。車輛減免依車主、使用及地址等條件審核。 |
+| [就學費用減免辦法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0080043) | 第 2–4、6、11 條，保留家庭所得、學制、申請以及持特教鑑定證明可準用輕度減免。 |
