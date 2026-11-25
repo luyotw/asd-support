@@ -425,7 +425,8 @@ function refreshLibrary() {
   const matches = articles.filter(article => {
     const category = categoryById[article.category];
     const tags = article.situations.map(id => situationById[id]);
-    const content = [article.title, article.summary, article.when, category.label, ...(article.keywords || []), ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]), ...article.steps.flat(), article.observe, article.example, article.adjust].join(" ").toLowerCase();
+    const articleText = article.sections.flatMap(section => [section.heading, ...section.paragraphs, ...(section.evidence || [])]);
+    const content = [article.title, article.summary, category.label, ...(article.keywords || []), ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]), ...articleText].join(" ").replace(/<[^>]*>/g, " ").toLowerCase();
     const matchesFilter = libraryFilter === "all" || libraryFilter === article.category;
     return matchesFilter && terms.every(term => {
       if (term === "男" || term === "女") return article.genderTags?.includes(term);
@@ -442,11 +443,23 @@ function refreshLibrary() {
   if (search.value !== searchQuery) search.value = searchQuery;
 }
 
+function articleSourceLinks(references) {
+  return `<ul class="article-source-links">${references.map(({ id }) => {
+    const source = sources[id];
+    return `<li><a class="article-source-link" href="${source.url}" target="_blank" rel="noopener noreferrer">
+      <span>${source.name} ${icon("external")}</span>
+      <small class="source-authors">${source.authors || source.publisher}</small>
+    </a></li>`;
+  }).join("")}</ul>`;
+}
+
 function articlePage(article) {
   const category = categoryById[article.category];
   const status = { official: "", trial: "試讀內容", demo: "原型示範" }[article.status];
   const dismissed = currentState().dismissed.includes(article.id);
   const references = [{ id: article.related, section: article.sourceSection }, ...(article.additionalSources || [])];
+  const otherSources = references.slice(2);
+  const relatedArticles = article.relatedArticles || [];
   const originLabel = { home: "回首頁", library: "回資源目錄", saved: "回收藏" }[articleOrigin];
   return shell(articleOrigin, `<div class="article-page">
     <a class="text-button back-link" href="#${articleOrigin}">${icon("back")} ${originLabel}</a>
@@ -457,16 +470,12 @@ function articlePage(article) {
       ${article.summaryLink ? `<a class="button secondary article-summary-link" href="#article/${article.summaryLink.articleId}">${article.summaryLink.label}</a>` : ""}
     </header>
     <section class="source-panel" aria-labelledby="article-sources-title">
-      <h2 id="article-sources-title">${article.status === "demo" ? "延伸閱讀" : "資料來源"}</h2>
-      <ul class="article-source-links">
-        ${references.map(({ id }) => {
-          const source = sources[id];
-          return `<li>
-            <a class="text-button" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ${icon("external")}</a>
-            <small class="source-authors">${source.authors || source.publisher}</small>
-          </li>`;
-        }).join("")}
-      </ul>
+      <h2 id="article-sources-title">${article.status === "demo" ? "延伸閱讀" : "資料來源"} <span class="source-count">共 ${references.length} 筆</span></h2>
+      ${articleSourceLinks(references.slice(0, 2))}
+      ${otherSources.length ? `<details class="source-details source-more">
+        <summary>查看其餘 ${otherSources.length} 筆來源</summary>
+        ${articleSourceLinks(otherSources)}
+      </details>` : ""}
       <details class="source-details">
         <summary>引用說明與署名</summary>
         ${article.status === "demo" ? "<p>文中的做法是用於測試閱讀流程的原創情境示範。</p>" : ""}
@@ -480,16 +489,20 @@ function articlePage(article) {
             ${source.reuseStatus === "noncommercial-adaptation-permitted" ? `<small><a href="${source.license}" target="_blank" rel="noopener noreferrer">${source.licenseName}</a></small>` : ""}
           </div>`;
         }).join("")}
+        <p class="article-age-note">${article.ageNote.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>
       </details>
     </section>
-    <section class="article-section"><h2>${article.contextHeading || "什麼時候用"}</h2><p>${article.when}</p><p>${article.asdFocus}</p>${article.ageNote ? `<p class="muted">${article.ageNote.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>` : ""}</section>
-    <section class="article-section"><h2>${article.stepsHeading || (article.status === "official" ? "可以怎麼查找" : "可以怎麼開始")}</h2>
-      <ol class="article-steps">${article.steps.map(([title, description]) => `<li><div><strong>${title}</strong><p>${description}</p></div></li>`).join("")}</ol>
-    </section>
-    ${article.evidence ? `<section class="article-section"><h2>${article.evidence.heading || (article.evidence.contrast ? "不同來源怎麼說" : "這份資料的範圍")}</h2><p>${article.evidence.summary}</p>${article.evidence.contrast ? `<p>${article.evidence.contrast}</p>` : ""}<p>${article.evidence.limit}</p></section>` : ""}
-    ${article.observe ? `<section class="article-section"><h2>${article.observeHeading || "可以觀察什麼"}</h2><p>${article.observe}</p></section>` : ""}
-    ${article.example ? `<section class="article-section"><h2>生活中的例子</h2><p>${article.example}</p></section>` : ""}
-    ${article.adjust ? `<section class="article-section"><h2>${article.adjustHeading || "如果這次行不通"}</h2><p>${article.adjust}</p></section>` : ""}
+    <div class="article-body">
+      ${article.sections.map(section => `<section class="article-part">
+        <h2>${section.heading}</h2>
+        ${section.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join("")}
+        ${(section.evidence || []).map(paragraph => `<p class="article-evidence">${paragraph}</p>`).join("")}
+      </section>`).join("")}
+    </div>
+    ${relatedArticles.length ? `<section class="article-section article-related" aria-labelledby="article-related-title">
+      <h2 id="article-related-title">相關文章</h2>
+      <ul>${relatedArticles.map(id => `<li><a class="text-button" href="#article/${id}">${articleById[id].title} ${icon("arrow")}</a></li>`).join("")}</ul>
+    </section>` : ""}
     ${notesSection(article.id)}
     <footer class="article-actions">
       ${bookmarkButton(article, true)}

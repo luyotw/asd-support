@@ -39,13 +39,27 @@ def main():
                 or not source.get("reviewScope")
                 or not source.get("reviewChecked")):
             parser.error(f"{source_id} needs a completed review for the cited scope.")
+    article_ids = {article["id"] for article in catalog["articles"]}
     for article in catalog["articles"]:
         if not article.get("ages"):
             parser.error(f"{article['id']} must have at least one age group in catalog.json.")
         if not article.get("ageBasis") or not article.get("ageNote"):
             parser.error(f"{article['id']} needs an explicit basis for its age labels.")
-        if article.get("related") not in catalog["sources"] or not article.get("asdFocus"):
+        if article.get("related") not in catalog["sources"] or not article.get("reviewScope"):
             parser.error(f"{article['id']} needs an ASD-specific source and support focus.")
+        if not article.get("sections") or any(
+            not section.get("heading") or not section.get("paragraphs")
+            for section in article["sections"]
+        ):
+            parser.error(f"{article['id']} needs headed, nonempty article sections.")
+        related = article.get("relatedArticles", [])
+        summary_link = article.get("summaryLink")
+        if summary_link:
+            if not summary_link.get("label"):
+                parser.error(f"{article['id']} needs a label for its summary link.")
+            related = [*related, summary_link.get("articleId")]
+        if not set(related) <= article_ids - {article["id"]} or len(set(related)) != len(related):
+            parser.error(f"{article['id']} needs distinct related article links.")
         cited = {article["related"]}
         for reference in article.get("additionalSources", []):
             source_id = reference.get("id")
