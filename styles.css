@@ -157,6 +157,7 @@ img { display: block; max-width: 100%; }
 .article-heading { padding: clamp(20px,5vw,43px); border-radius: 20px; background: #ebefe2; }
 .article-heading h1 { margin: 10px 0 9px; }
 .article-heading p { color: var(--muted); max-width: 42ch; }
+.article-updated { margin-bottom: 8px; font-size: .88rem; }
 .article-summary-link { margin-top: 14px; }
 .article-actions { display: flex; flex-wrap: wrap; gap: 7px; }
 .back-to-top {

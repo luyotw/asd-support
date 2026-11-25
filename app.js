@@ -40,6 +40,7 @@ const resetDialog = document.querySelector("#reset-dialog");
 const key = "asd-guide-mockup-v1";
 const notesPrefix = `${key}-notes/`;
 const noteDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "medium", timeStyle: "short" });
+const articleDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "long", timeZone: "UTC" });
 const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
 const genders = ["女孩", "男孩", "其他", "不透露"];
@@ -474,6 +475,7 @@ function articlePage(article) {
     <header class="article-heading">
       <div class="feature-label"><span class="pill ${category.color}">${icon(category.icon)} ${category.label}</span>${articleAge(article)}${articleTags(article)}<span class="reading-time">${icon("clock")} ${article.time} 分鐘</span>${status ? `<span class="demo-label">${status}</span>` : ""}</div>
       <h1>${article.title}</h1>
+      ${article.updatedAt ? `<p class="article-updated">最後更新日期 <time datetime="${article.updatedAt}">${articleDate.format(new Date(article.updatedAt))}</time></p>` : ""}
       <p>${article.summary}</p>
       ${article.summaryLink ? `<a class="button secondary article-summary-link" href="#article/${article.summaryLink.articleId}">${article.summaryLink.label}</a>` : ""}
     </header>
