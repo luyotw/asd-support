@@ -188,6 +188,9 @@ img { display: block; max-width: 100%; }
 .article-part { padding: 20px 0; border-bottom: 1px solid var(--line); }
 .article-part h2 { font-size: 1.2rem; margin-bottom: 6px; }
 .article-part p + p { margin-top: 9px; }
+.article-list { margin: 8px 0 0; padding-inline-start: 1.5em; }
+.article-list li + li { margin-top: 9px; }
+.article-list li::marker { color: var(--green); font-weight: 700; }
 .article-part a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .article-evidence {
   margin-block-start: 14px;

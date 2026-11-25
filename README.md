@@ -68,7 +68,7 @@ ASD適用性與改作授權分別查核。找不到適用於公開繁中整理�
 
 目前共有49篇附ASD出處的試讀文章。[來源盤點](SOURCES.md#現行文章逐篇查核)列出逐篇查核結果；可用判定僅限實際引用範圍。
 
-[共用內容 JSON](catalog.json) 是文章、目錄分類、情境與來源的資料檔。文章使用固定 ID，供網站、App 和收藏引用。各篇內文依 `sections` 的順序呈現。每段含小標 `heading` 與正文 `paragraphs`，可在同段加入 `evidence` 交代來源差異及限制。文章末尾用 `relatedArticles` 連到其他已發布文章。來源區預先顯示前兩筆，完整引用、署名與參考年齡的依據可展開查看。修改 JSON 後，在 `mockup` 目錄更新瀏覽器用的資料副本。
+[共用內容 JSON](catalog.json) 是文章、目錄分類、情境與來源的資料檔。文章使用固定 ID，供網站、App 和收藏引用。各篇內文依 `sections` 的順序呈現。每段含小標 `heading`，正文可用 `paragraphs` 或 `list.items`，也可並用。設定 `list.ordered` 為 `true` 會顯示編號。可在同段加入 `evidence` 交代來源差異及限制。文章末尾用 `relatedArticles` 連到其他已發布文章。來源區預先顯示前兩筆，完整引用、署名與參考年齡的依據可展開查看。修改 JSON 後，在 `mockup` 目錄更新瀏覽器用的資料副本。
 
 ```bash
 python3 build-content.py

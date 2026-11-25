@@ -48,7 +48,8 @@ def main():
         if article.get("related") not in catalog["sources"] or not article.get("reviewScope"):
             parser.error(f"{article['id']} needs an ASD-specific source and support focus.")
         if not article.get("sections") or any(
-            not section.get("heading") or not section.get("paragraphs")
+            not section.get("heading")
+            or not (section.get("paragraphs") or section.get("list", {}).get("items"))
             for section in article["sections"]
         ):
             parser.error(f"{article['id']} needs headed, nonempty article sections.")

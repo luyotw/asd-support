@@ -427,7 +427,9 @@ function refreshLibrary() {
   const matches = articles.filter(article => {
     const category = categoryById[article.category];
     const tags = article.situations.map(id => situationById[id]);
-    const articleText = article.sections.flatMap(section => [section.heading, ...section.paragraphs, ...(section.evidence || [])]);
+    const articleText = article.sections.flatMap(section => [
+      section.heading, ...(section.paragraphs || []), ...(section.list?.items || []), ...(section.evidence || []),
+    ]);
     const content = [article.title, article.summary, category.label, ...(article.keywords || []), ...(article.genderTags || []), ...tags.flatMap(tag => [tag.label, tag.prompt]), ...articleText].join(" ").replace(/<[^>]*>/g, " ").toLowerCase();
     const matchesFilter = libraryFilter === "all" || libraryFilter === article.category;
     return matchesFilter && terms.every(term => {
@@ -503,13 +505,19 @@ function articlePage(article) {
       </details>
     </section>
     <div class="article-body">
-      ${article.sections.map(section => `<section class="article-part">
-        <h2>${section.heading}</h2>
-        ${section.paragraphs.map(paragraph => `<p>${paragraph}</p>`).join("")}
-        ${section.evidence?.length ? `<div class="article-evidence">
-          ${section.evidence.map(paragraph => `<p>${paragraph}</p>`).join("")}
-        </div>` : ""}
-      </section>`).join("")}
+      ${article.sections.map(section => {
+        const listTag = section.list?.ordered ? "ol" : "ul";
+        return `<section class="article-part">
+          <h2>${section.heading}</h2>
+          ${(section.paragraphs || []).map(paragraph => `<p>${paragraph}</p>`).join("")}
+          ${section.list?.items?.length ? `<${listTag} class="article-list">
+            ${section.list.items.map(item => `<li>${item}</li>`).join("")}
+          </${listTag}>` : ""}
+          ${section.evidence?.length ? `<div class="article-evidence">
+            ${section.evidence.map(paragraph => `<p>${paragraph}</p>`).join("")}
+          </div>` : ""}
+        </section>`;
+      }).join("")}
     </div>
     ${relatedArticles.length ? `<section class="article-section article-related" aria-labelledby="article-related-title">
       <h2 id="article-related-title">相關文章</h2>
