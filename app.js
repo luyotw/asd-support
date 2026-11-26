@@ -140,6 +140,44 @@ function writeNotes(articleId, notes) {
   }
 }
 
+function exportNotes() {
+  let noteKeys;
+  try {
+    noteKeys = Object.keys(localStorage).filter(storageKey => storageKey.startsWith(notesPrefix));
+  } catch {
+    notify("目前無法讀取這個瀏覽器的筆記");
+    return;
+  }
+
+  const groups = [];
+  for (const storageKey of noteKeys) {
+    const articleId = storageKey.slice(notesPrefix.length);
+    const notes = readNotes(articleId);
+    if (!notes.length) continue;
+    notes.sort((first, second) => Date.parse(first.createdAt) - Date.parse(second.createdAt));
+    const title = articleById[articleId]?.title ?? withdrawnById[articleId]?.title ?? `已下架文章（${articleId}）`;
+    groups.push({ title, notes });
+  }
+  if (!groups.length) {
+    notify("這個瀏覽器還沒有可匯出的筆記");
+    return;
+  }
+
+  groups.sort((first, second) => first.title.localeCompare(second.title, "zh-TW"));
+  const text = groups.map(({ title, notes }) =>
+    [`【${title}】`, ...notes.map(note => `${noteDate.format(new Date(note.createdAt))}\n${note.text}`)].join("\n\n")
+  ).join("\n\n\n");
+  const file = new Blob(["\uFEFF", text, "\n"], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(file);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "星泊筆記.txt";
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 30000);
+}
+
 function notesSection(articleId) {
   const notes = readNotes(articleId);
   return `<section class="article-section notes-section" aria-labelledby="notes-title">
@@ -664,8 +702,11 @@ function settings() {
         ${profile ? profileSummary(profile) : '<p>完成簡單設定，首頁就會依情境推薦內容。</p>'}</section>
       <section class="settings-card"><h2>${icon("lock")} 這個瀏覽器的資料</h2>
         <p>${storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
-        <button class="button secondary danger-text" data-action="ask-reset">清除本機資料</button>
-        <a class="button plain" href="#privacy">隱私權說明 ${icon("arrow")}</a></section>
+        <div class="settings-data-actions">
+          <button type="button" class="button secondary" data-action="export-notes">匯出筆記（.txt）</button>
+          <button class="button secondary danger-text" data-action="ask-reset">清除本機資料</button>
+          <a class="button plain" href="#privacy">隱私權說明 ${icon("arrow")}</a>
+        </div></section>
       <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
         <p>星泊是給自閉症（ASD）孩子照顧者的${handbookTitle}互動原型。</p>
         <a class="text-button" href="#sources">資料來源與使用方式 ${icon("arrow")}</a></section>
@@ -718,6 +759,7 @@ function privacyPage() {
       </section>
       <section class="settings-card"><h2>怎麼修改或清除資料</h2>
         <p>到「我的設定」可修改偏好，文章內可編輯或刪除筆記。要一次清除孩子資料、偏好、收藏、不再推薦的文章和筆記，可在「我的設定」選「清除本機資料」，也可以從瀏覽器設定清除本站的資料。</p>
+        <p>「匯出筆記」會在這個瀏覽器產生文字檔。下載的檔案由你自行保管與刪除。</p>
         <a class="text-button" href="#settings">前往我的設定 ${icon("arrow")}</a>
       </section>
       <section class="settings-card"><h2>網站託管與外部連結</h2>
@@ -964,6 +1006,9 @@ document.addEventListener("click", event => {
       } else {
         window.addEventListener("hashchange", () => app.querySelector("#search-box")?.focus(), { once: true });
       }
+      break;
+    case "export-notes":
+      exportNotes();
       break;
     case "ask-reset":
       resetDialog.showModal();
