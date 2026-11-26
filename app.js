@@ -44,8 +44,10 @@ const articleDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "long", timeZo
 const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
 const genders = ["女孩", "男孩", "其他", "不透露"];
+const handbookTitle = "家庭支持手冊";
+const guideTitle = "成長指南";
 const navItems = [
-  ["home", "home", "首頁"], ["library", "book", "育兒指南", "育兒"],
+  ["home", "home", "首頁"], ["library", "book", guideTitle, "指南"],
   ["resources", "folder", "資源專區", "資源"], ["saved", "bookmark", "收藏"],
   ["settings", "user", "我的設定", "設定"],
 ];
@@ -181,7 +183,7 @@ function go(page) {
 function brand() {
   return `<a class="brand" href="${state.profile ? "#home" : "#"}" aria-label="星泊首頁">
     <span class="brand-mark">${icon("brand")}</span>
-    <span><strong>星泊</strong><small>ASD 育兒支持手冊</small></span>
+    <span><strong>星泊</strong><small>${handbookTitle}</small></span>
   </a>`;
 }
 
@@ -203,7 +205,7 @@ function shell(active, content) {
     <div class="body">
       <header class="topbar">
         <div class="mobile-brand">${brand()}</div>
-        <span class="breadcrumb">${active === "search" ? "搜尋星泊" : active === "home" ? "我的育兒手冊" : navItems.find(item => item[0] === active)?.[2] || "我的育兒手冊"}</span>
+        <span class="breadcrumb">${active === "search" ? "搜尋星泊" : active === "home" ? `我的${handbookTitle}` : navItems.find(item => item[0] === active)?.[2] || `我的${handbookTitle}`}</span>
         <div class="top-actions">
           <a class="icon-button top-search" href="#search" aria-label="搜尋星泊" data-action="start-search">${icon("search")}</a>
           <a class="avatar" href="#settings" aria-label="我的設定">${icon("user")}</a>
@@ -217,7 +219,7 @@ function shell(active, content) {
 
 function welcome() {
   return `<div class="onboarding">
-    <header class="onboarding-top">${brand()}<a class="button plain" href="#library" data-action="open-library">育兒指南 ${icon("arrow")}</a></header>
+    <header class="onboarding-top">${brand()}<a class="button plain" href="#library" data-action="open-library">${guideTitle} ${icon("arrow")}</a></header>
     <main id="main" tabindex="-1" class="welcome">
       <div class="welcome-copy">
         <p class="kicker"><span></span> 給自閉症（ASD）孩子的照顧者</p>
@@ -284,7 +286,7 @@ function onboarding(step) {
   ];
   const steps = ["孩子資料", "照顧情境", "確認設定"];
   return `<div class="onboarding">
-    <header class="onboarding-top">${brand()}<a class="button plain" href="#library" data-action="open-library">育兒指南 ${icon("arrow")}</a></header>
+    <header class="onboarding-top">${brand()}<a class="button plain" href="#library" data-action="open-library">${guideTitle} ${icon("arrow")}</a></header>
     <main id="main" tabindex="-1" class="setup">
       <ol class="progress" aria-label="設定進度">${steps.map((label, index) =>
         `<li ${step === index + 1 ? 'aria-current="step"' : ""} class="${step >= index + 1 ? "reached" : ""}"><span>${step > index + 1 ? icon("check") : index + 1}</span>${label}</li>`
@@ -330,7 +332,7 @@ function articleTags(article) {
 
 function articleCard(article, origin) {
   const category = article.resource ? resourceGroupById[article.resource.group] : categoryById[article.category];
-  const section = article.resource ? "資源專區" : "育兒指南";
+  const section = article.resource ? "資源專區" : guideTitle;
   return `<article class="resource-card">
     ${origin.startsWith("resources") ? "" : `<div class="card-top">${categoryIcon(category)}<span>${origin === "search" ? `${section} · ` : ""}${category.label}</span>${origin === "saved" ? bookmarkButton(article) : ""}</div>`}
     <h3><a href="#article/${article.id}" data-origin="${origin}">${article.title}</a></h3>
@@ -398,7 +400,7 @@ function recommendationCard(article, hasMore) {
 function home() {
   const profile = state.profile;
   if (!profile) return shell("home", `<div class="page-heading"><h1>我的首頁</h1><p>選幾個你想先了解的照顧情境，首頁就會顯示相關主題。</p></div>
-    <div class="empty">${icon("leaf")}<h2>從一個生活情境開始</h2><button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button><a class="button plain" href="#library">瀏覽育兒指南</a></div>`);
+    <div class="empty">${icon("leaf")}<h2>從一個生活情境開始</h2><button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button><a class="button plain" href="#library">瀏覽${guideTitle}</a></div>`);
 
   recommendationRound ??= { order: recommendationOrder(profile), index: 0 };
   const { order, index } = recommendationRound;
@@ -406,7 +408,7 @@ function home() {
   const more = order.filter(article => !article.resource && article !== featured);
   const resources = order.filter(article => article.resource && article !== featured).slice(0, 2);
   return shell("home", `<section class="home-heading">
-    <div><p class="kicker">${icon("sun")} 我的育兒手冊</p>
+    <div><p class="kicker">${icon("sun")} 我的${handbookTitle}</p>
       <h1>今天，從一件小事開始。</h1>
       <p>挑一個你和孩子常遇到的情境，找到可以一起試的做法。</p></div>
     <a class="button secondary" href="#edit" data-action="edit">${icon("sliders")} 調整偏好</a>
@@ -416,18 +418,18 @@ function home() {
       <h2 id="feature-title">為你推薦</h2>
       ${featured ? `<span>${recommendationReason(featured, profile)}</span>` : ""}
     </div>
-    ${featured ? recommendationCard(featured, order.length > 1) : `<div class="empty">${icon("book")}<p>目前沒有可推薦的文章。</p><a class="button primary" href="#library" data-action="open-library">瀏覽育兒指南 ${icon("arrow")}</a></div>`}
+    ${featured ? recommendationCard(featured, order.length > 1) : `<div class="empty">${icon("book")}<p>目前沒有可推薦的文章。</p><a class="button primary" href="#library" data-action="open-library">瀏覽${guideTitle} ${icon("arrow")}</a></div>`}
   </section>
   ${resources.length ? `<section class="more-section" aria-labelledby="related-resources-title">
     <div class="section-heading"><h2 id="related-resources-title">相關資源</h2><a class="text-button" href="#resources">查看資源專區 ${icon("arrow")}</a></div>
     <div class="card-grid resource-picks">${resources.map(article => articleCard(article, "home")).join("")}</div>
   </section>` : ""}
   ${more.length ? `<section class="more-section" aria-labelledby="more-title">
-    <div class="section-heading"><h2 id="more-title">也可以看看</h2><a class="text-button" href="#library" data-action="open-library">瀏覽育兒指南 ${icon("arrow")}</a></div>
+    <div class="section-heading"><h2 id="more-title">也可以看看</h2><a class="text-button" href="#library" data-action="open-library">瀏覽${guideTitle} ${icon("arrow")}</a></div>
     <div class="card-grid">${more.slice(0, 3).map(article => articleCard(article, "home")).join("")}</div>
   </section>` : ""}
   <section class="browse-section" aria-labelledby="browse-title">
-    <div class="section-heading"><h2 id="browse-title">依分類找育兒指南</h2></div>
+    <div class="section-heading"><h2 id="browse-title">依分類找${guideTitle}</h2></div>
     <div class="category-grid">${visibleCategories.map(category => `<a href="#library" data-category="${category.id}">${categoryIcon(category)}<span><strong>${category.label}</strong><small>${category.description}</small></span>${icon("chevron")}</a>`).join("")}</div>
   </section>`);
 }
@@ -437,9 +439,9 @@ function filterButton(id, label) {
 }
 
 function library() {
-  return shell("library", `<div class="page-heading"><h1>育兒指南</h1><p>依分類瀏覽，或搜尋你遇到的生活情境。</p></div>
+  return shell("library", `<div class="page-heading"><h1>${guideTitle}</h1><p>依分類瀏覽，或搜尋你遇到的生活情境。</p></div>
     <div class="filter-area">
-      ${searchBox("搜尋育兒指南", "搜尋收玩具、聲音、親師溝通⋯⋯")}
+      ${searchBox(`搜尋${guideTitle}`, "搜尋收玩具、聲音、親師溝通⋯⋯")}
       <div class="filter-chips" role="group" aria-label="依分類篩選">${filterButton("all", "全部指南")}${visibleCategories.map(category => filterButton(category.id, category.label)).join("")}</div>
     </div>
     <p id="result-count" class="result-count" aria-live="polite"></p>
@@ -452,7 +454,7 @@ function searchBox(label, hint) {
 }
 
 function searchPage() {
-  return shell("search", `<div class="page-heading"><h1>搜尋星泊</h1><p>一起搜尋育兒指南和資源專區。</p></div>
+  return shell("search", `<div class="page-heading"><h1>搜尋星泊</h1><p>一起搜尋${guideTitle}和資源專區。</p></div>
     <div class="filter-area">${searchBox("搜尋星泊", "搜尋收玩具、早療補助、愛心卡⋯⋯")}</div>
     <p id="result-count" class="result-count" aria-live="polite"></p><div id="results"></div>`);
 }
@@ -574,7 +576,7 @@ function articlePage(article) {
   const relatedArticles = article.relatedArticles || [];
   const origin = history.state?.articleOrigin || (article.resource ? "resources" : "library");
   const section = origin.split("/")[0];
-  const originLabel = { home: "回首頁", library: "回育兒指南", resources: "回資源專區", saved: "回收藏", search: "回搜尋" }[section];
+  const originLabel = { home: "回首頁", library: `回${guideTitle}`, resources: "回資源專區", saved: "回收藏", search: "回搜尋" }[section];
   return shell(section, `<div class="article-page">
     <a class="text-button back-link" href="#${origin}">${icon("back")} ${originLabel}</a>
     <header class="article-heading">
@@ -637,9 +639,9 @@ function articlePage(article) {
 function savedPage() {
   const items = state.saved.map(id => articleById[id]).filter(Boolean);
   const personalRecords = withdrawnArticles.filter(article => state.saved.includes(article.id) || readNotes(article.id).length);
-  return shell("saved", `<div class="page-heading"><h1>我的收藏</h1><p>收藏的育兒指南和資源都在這裡。</p></div>
+  return shell("saved", `<div class="page-heading"><h1>我的收藏</h1><p>收藏的${guideTitle}和資源都在這裡。</p></div>
     ${items.length ? `<div class="card-grid">${items.map(article => articleCard(article, "saved")).join("")}</div>`
-    : `<div class="empty">${icon("bookmark")}<h2>目前沒有已收錄文章的收藏</h2><p>在文章裡點「收藏這篇」，就會出現在這裡。</p><a class="button primary" href="#library">去逛育兒指南 ${icon("arrow")}</a></div>`}
+    : `<div class="empty">${icon("bookmark")}<h2>目前沒有已收錄文章的收藏</h2><p>在文章裡點「收藏這篇」，就會出現在這裡。</p><a class="button primary" href="#library">去逛${guideTitle} ${icon("arrow")}</a></div>`}
     ${personalRecords.length ? `<section class="article-section"><h2>已暫停收錄的個人紀錄</h2><p>原文內容已下架，你的收藏紀錄與筆記仍保留在這個瀏覽器。</p><ul>${personalRecords.map(article => `<li><a href="#article/${article.id}">${article.title} · 查看筆記</a></li>`).join("")}</ul></section>` : ""}`);
 }
 
@@ -663,7 +665,7 @@ function settings() {
         <p>${storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
         <button class="button secondary danger-text" data-action="ask-reset">清除本機資料</button></section>
       <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
-        <p>星泊是 ASD 育兒支持手冊的互動原型。</p>
+        <p>星泊是給自閉症（ASD）孩子照顧者的${handbookTitle}互動原型。</p>
         <a class="text-button" href="#sources">資料來源與使用方式 ${icon("arrow")}</a></section>
     </div>`);
 }
@@ -679,7 +681,7 @@ function edit() {
 }
 
 function sourcesPage() {
-  return shell("library", `<div class="page-heading"><a class="text-button back-link" href="#library">${icon("back")} 育兒指南</a>
+  return shell("library", `<div class="page-heading"><a class="text-button back-link" href="#library">${icon("back")} ${guideTitle}</a>
     <h1>資料來源</h1><p>查找原文、出處與使用條件。示範情境在文章內另行標示。</p></div>
     <div class="settings-list">${Object.values(sources).map(source => `<article class="settings-card">
       <h2>${source.name}</h2>
@@ -727,7 +729,7 @@ function render(focus = false) {
   }
   if (page === "sources") app.innerHTML = sourcesPage();
   const heading = app.querySelector("h1");
-  document.title = heading ? `${heading.textContent} · 星泊` : "星泊 · ASD 育兒支持手冊";
+  document.title = page !== "welcome" && heading ? `${heading.textContent} · 星泊` : `星泊 · ${handbookTitle}`;
   if (focus) {
     window.scrollTo(0, 0);
     app.querySelector("main").focus({ preventScroll: true });
