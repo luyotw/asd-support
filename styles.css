@@ -306,7 +306,7 @@ dialog { inset: 0; width: min(calc(100% - 36px), 440px); padding: 23px; border: 
 dialog::backdrop { background: #18261c65; }
 dialog p { margin: 8px 0 17px; color: var(--muted); }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; }
-.notice { position: fixed; z-index: 10; left: 50%; bottom: 20px; transform: translate(-50%, 7px); opacity: 0; pointer-events: none; color: #fff; background: var(--green); box-shadow: 0 6px 18px #1e33252a; border-radius: 10px; padding: 10px 15px; transition: opacity .14s, transform .14s; }
+.notice { position: fixed; z-index: 10; left: 50%; bottom: 20px; transform: translate(-50%, 7px); opacity: 0; pointer-events: none; color: #fff; background: var(--green); background: color-mix(in srgb, var(--green) 92%, transparent); box-shadow: 0 6px 18px #1e33252a; border-radius: 10px; padding: 10px 15px; transition: opacity .14s, transform .14s; }
 .notice.is-visible { opacity: 1; transform: translate(-50%, 0); }
 
 @media (max-width: 1120px) {
