@@ -239,7 +239,7 @@ function applyNoteTemplate(button) {
   field.value = value;
   button.setAttribute("aria-pressed", "true");
   field.focus();
-  const firstAnswer = prefix.length + prompts[0].length + 1;
+  const firstAnswer = prefix.length + prompts[0].length;
   field.setSelectionRange(firstAnswer, firstAnswer);
   notify(prefix ? "已加在原有文字後方" : `已帶入「${label}」`);
 }
