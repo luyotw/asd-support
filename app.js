@@ -40,6 +40,21 @@ const resetDialog = document.querySelector("#reset-dialog");
 const key = "asd-guide-mockup-v1";
 const notesPrefix = `${key}-notes/`;
 const noteDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "medium", timeStyle: "short" });
+const noteTemplates = {
+  observations: {
+    label: "情境觀察",
+    prompts: ["什麼時候、在哪裡：", "前後發生了什麼：", "孩子怎麼表達或反應：", "後來什麼有幫助："],
+  },
+  try: {
+    label: "試了什麼",
+    prompts: ["這次想調整什麼：", "我試了哪個做法：", "孩子的反應是什麼：", "下次想保留或調整什麼："],
+  },
+  discussion: {
+    label: "跟老師或治療師討論",
+    prompts: ["想討論的情境是什麼：", "我觀察到什麼：", "我最想問哪一個問題：", "約好回去試什麼、何時再回看："],
+  },
+};
+const noteTemplateDrafts = new WeakMap();
 const articleDate = new Intl.DateTimeFormat("zh-TW", { dateStyle: "long", timeZone: "UTC" });
 const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
@@ -184,16 +199,49 @@ function notesSection(articleId) {
     <h2 id="notes-title" tabindex="-1">我的筆記</h2>
     <p>筆記只存在這個瀏覽器。</p>
     <form class="note-form" data-article="${articleId}">
-      <label for="note-text" class="sr-only">筆記內容</label>
-      <textarea id="note-text" name="note" rows="4" maxlength="2000" required placeholder="當時發生什麼？你試了什麼？孩子怎麼回應？"></textarea>
+      <fieldset class="note-template-picker">
+        <legend>帶入模板</legend>
+        <div class="note-template-options">${Object.entries(noteTemplates).map(([id, template]) =>
+          `<button type="button" class="button secondary" data-action="apply-note-template" data-note-template="${id}" aria-pressed="false">${template.label}</button>`
+        ).join("")}</div>
+      </fieldset>
+      <label for="note-text">筆記內容</label>
+      <textarea id="note-text" name="note" rows="8" maxlength="2000" required placeholder="記下當時的情境、試過的做法和孩子的反應"></textarea>
       <div class="note-actions"><button type="submit" class="button primary">儲存筆記</button><button type="button" class="button secondary" data-action="cancel-note" hidden>取消編輯</button></div>
     </form>
-    ${notes.length ? `<ol class="note-list">${notes.map(note => `<li data-note-id="${note.id}">
+    ${notes.length ? `<h3 class="note-list-title">這篇的筆記</h3><ol class="note-list">${notes.map(note => `<li data-note-id="${note.id}">
       <time datetime="${new Date(note.createdAt).toISOString()}">${noteDate.format(new Date(note.createdAt))}</time>
       <p>${note.text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>
       <div class="note-actions"><button class="text-button" data-action="edit-note">編輯</button><button class="text-button" data-action="delete-note">刪除</button></div>
     </li>`).join("")}</ol>` : "<p class=\"notes-empty\">這篇還沒有筆記。</p>"}
   </section>`;
+}
+
+function clearNoteTemplate(form) {
+  noteTemplateDrafts.delete(form);
+  form.querySelector('[data-note-template][aria-pressed="true"]')?.setAttribute("aria-pressed", "false");
+}
+
+function applyNoteTemplate(button) {
+  const form = button.form;
+  const field = form.elements.note;
+  const { label, prompts } = noteTemplates[button.dataset.noteTemplate];
+  const lastApplied = noteTemplateDrafts.get(form);
+  const previous = field.value === lastApplied?.value ? lastApplied.previous : field.value;
+  const prefix = previous.trim() ? previous + (previous.endsWith("\n") ? "\n" : "\n\n") : "";
+  const value = `${prefix}${prompts.join("\n\n")}\n\n`;
+  if (value.length > field.maxLength) {
+    notify("筆記空間不足，請縮短內容後再帶入模板");
+    return;
+  }
+  clearNoteTemplate(form);
+  noteTemplateDrafts.set(form, { previous, value });
+  field.value = value;
+  button.setAttribute("aria-pressed", "true");
+  field.focus();
+  const firstAnswer = prefix.length + prompts[0].length + 1;
+  field.setSelectionRange(firstAnswer, firstAnswer);
+  notify(prefix ? "已加在原有文字後方" : `已帶入「${label}」`);
 }
 
 function refreshNotes(articleId) {
@@ -824,9 +872,11 @@ document.addEventListener("change", event => {
 });
 
 document.addEventListener("input", event => {
-  if (event.target.id !== "search-box") return;
-  if (route() === "search") searchQuery = event.target.value;
-  else libraryQuery = event.target.value;
+  const field = event.target;
+  if (field.id === "note-text" && !field.value) clearNoteTemplate(field.form);
+  if (field.id !== "search-box") return;
+  if (route() === "search") searchQuery = field.value;
+  else libraryQuery = field.value;
   refreshLibrary();
 });
 
@@ -862,7 +912,7 @@ document.addEventListener("submit", event => {
     [{ id: crypto.randomUUID(), createdAt: new Date().toISOString(), text }, ...notes];
   if (writeNotes(articleId, updated)) {
     refreshNotes(articleId);
-    notify("筆記已儲存");
+    notify(editing ? "筆記已更新" : "已新增筆記");
   }
 });
 
@@ -914,11 +964,15 @@ document.addEventListener("click", event => {
   }
 
   switch (control.dataset.action) {
+    case "apply-note-template":
+      applyNoteTemplate(control);
+      break;
     case "edit-note": {
       const form = app.querySelector(".note-form");
       const id = control.closest("[data-note-id]").dataset.noteId;
       const note = readNotes(form.dataset.article).find(entry => entry.id === id);
       if (!note) break;
+      clearNoteTemplate(form);
       form.dataset.noteId = id;
       form.elements.note.value = note.text;
       form.querySelector('[data-action="cancel-note"]').hidden = false;
@@ -928,6 +982,7 @@ document.addEventListener("click", event => {
     case "cancel-note": {
       const form = control.closest("form");
       delete form.dataset.noteId;
+      clearNoteTemplate(form);
       form.reset();
       control.hidden = true;
       form.elements.note.focus();

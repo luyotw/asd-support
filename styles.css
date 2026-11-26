@@ -188,12 +188,18 @@ a.filter-chip { display: inline-flex; align-items: center; }
 .article-section p, .source-panel p { color: var(--muted); }
 .notes-section { padding: clamp(15px, 4vw, 24px); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; }
 .note-form { margin-top: 12px; }
+.note-template-picker { border: 0; margin: 0 0 12px; padding: 0; min-inline-size: 0; }
+.note-template-picker legend, .note-form label { padding: 0; font-weight: 650; }
+.note-template-options { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 5px; }
+.note-template-options .button[aria-pressed="true"] { background: var(--selected); border-color: var(--green); }
+.note-form label { display: block; margin-bottom: 4px; }
 .note-form textarea { display: block; width: 100%; min-height: 92px; padding: 11px; resize: vertical; font: inherit; font-size: 16px; color: inherit; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
 .note-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 8px; }
 .note-actions [hidden] { display: none; }
-.note-list { list-style: none; padding: 0; margin: 14px 0 0; }
+.note-list-title { margin-top: 17px; font-size: 1rem; }
+.note-list { list-style: none; padding: 0; margin: 6px 0 0; }
 .note-list li { border-top: 1px solid var(--line); padding: 12px 0 0; }
-.note-list time { font-size: .8rem; color: var(--muted); }
+.note-list time { font-size: .8rem; font-weight: 700; color: var(--muted); }
 .note-list li p { color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; }
 .notes-empty { margin-top: 12px; }
 .article-body { padding-inline: 3px; }
