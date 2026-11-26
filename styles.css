@@ -259,6 +259,7 @@ a.filter-chip { display: inline-flex; align-items: center; }
 .welcome-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 27px 0 14px; }
 .privacy-line { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: .81rem; font-weight: 600; }
 .privacy-line .icon { width: 16px; height: 16px; }
+.privacy-line a { color: var(--green); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .setup { max-width: 764px; margin: 36px auto 65px; }
 .setup-card { padding: clamp(19px,4vw,40px); border: 1px solid var(--line); border-radius: 22px; background: var(--surface); }
 .setup-card h1 { font-size: clamp(1.85rem,3.6vw,2.8rem); margin-bottom: 9px; }

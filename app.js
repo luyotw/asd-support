@@ -167,7 +167,7 @@ function route() {
   const page = location.hash.slice(1);
   if (page.startsWith("article/") && (Object.hasOwn(articleById, page.slice(8)) || Object.hasOwn(withdrawnById, page.slice(8)))) return page;
   if (page.startsWith("resources/") && Object.hasOwn(resourceGroupById, page.slice(10))) return page;
-  if (["library", "resources", "search", "saved", "settings", "edit", "sources", "setup/1", "setup/2", "setup/3"].includes(page)) return page;
+  if (["library", "resources", "search", "saved", "settings", "edit", "sources", "privacy", "setup/1", "setup/2", "setup/3"].includes(page)) return page;
   if (page === "home") return "home";
   return state.profile ? "home" : "welcome";
 }
@@ -230,7 +230,7 @@ function welcome() {
           <button class="button primary" data-action="start">開始設定 ${icon("arrow")}</button>
           <a class="button secondary" href="#resources">查資源</a>
         </div>
-        <p class="privacy-line">${icon("lock")} ${storageAvailable ? "免登入，資料儲存在這個瀏覽器。" : "免登入，目前瀏覽器只會暫時保留資料。"} </p>
+        <p class="privacy-line">${icon("lock")} <span>${storageAvailable ? "免登入，資料儲存在這個瀏覽器。" : "免登入，目前瀏覽器只會暫時保留資料。"} <a href="#privacy" data-origin="welcome">隱私權說明</a></span></p>
       </div>
       <div class="welcome-visual">${photo("welcome-photo")}</div>
     </main>
@@ -301,7 +301,7 @@ function onboarding(step) {
           ${step === 3 ? `<button class="button primary" data-action="finish">看看我的首頁 ${icon("arrow")}</button>` : `<a class="button primary" href="#setup/${step + 1}">下一步 ${icon("arrow")}</a>`}
         </div>
       </section>
-      <p class="privacy-line">${icon("lock")} ${storageAvailable ? "偏好只儲存在這個瀏覽器。" : "目前瀏覽器無法儲存偏好，關閉頁面後會清空。"} </p>
+      <p class="privacy-line">${icon("lock")} <span>${storageAvailable ? "偏好只儲存在這個瀏覽器。" : "目前瀏覽器無法儲存偏好，關閉頁面後會清空。"} <a href="#privacy" data-origin="setup/${step}">隱私權說明</a></span></p>
     </main>
   </div>`;
 }
@@ -664,7 +664,8 @@ function settings() {
         ${profile ? profileSummary(profile) : '<p>完成簡單設定，首頁就會依情境推薦內容。</p>'}</section>
       <section class="settings-card"><h2>${icon("lock")} 這個瀏覽器的資料</h2>
         <p>${storageAvailable ? "孩子資料、偏好、收藏和筆記儲存在這個瀏覽器。" : "這個瀏覽器目前無法儲存資料。"}</p>
-        <button class="button secondary danger-text" data-action="ask-reset">清除本機資料</button></section>
+        <button class="button secondary danger-text" data-action="ask-reset">清除本機資料</button>
+        <a class="button plain" href="#privacy">隱私權說明 ${icon("arrow")}</a></section>
       <section class="settings-card"><h2>${icon("book")} 關於手冊</h2>
         <p>星泊是給自閉症（ASD）孩子照顧者的${handbookTitle}互動原型。</p>
         <a class="text-button" href="#sources">資料來源與使用方式 ${icon("arrow")}</a></section>
@@ -698,6 +699,39 @@ function sourcesPage() {
     </article>`).join("")}</div>`);
 }
 
+function privacyPage() {
+  const origin = history.state?.privacyOrigin;
+  const fromSetup = /^setup\/[123]$/.test(origin);
+  const backHref = fromSetup ? `#${origin}` : origin === "welcome" ? "#" : "#settings";
+  const backLabel = fromSetup ? "回到首次設定" : origin === "welcome" ? "回到開始畫面" : "回到我的設定";
+  return shell("settings", `<div class="article-page">
+    <a class="text-button back-link" href="${backHref}">${icon("back")} ${backLabel}</a>
+    <header class="page-heading">
+      <h1>隱私權說明</h1>
+      <p>星泊免登入。你填的資料和筆記由這個瀏覽器保存，推薦和搜尋也在瀏覽器內完成。</p>
+      <p class="article-updated">最後更新日期 <time datetime="2026-11-26">2026 年 11 月 26 日</time></p>
+    </header>
+    <div class="settings-list">
+      <section class="settings-card"><h2>這個瀏覽器會保存什麼</h2>
+        <p>孩子的年齡區間、性別、照顧情境和想查的資源都可以略過。首頁依年齡區間和勾選的情境、資源安排推薦，性別供你在設定中查看。收藏、不再推薦的文章，以及筆記內容和建立時間，也會留在這個瀏覽器。</p>
+        <p>這些資料只留在本機，通常會保留到你刪除或瀏覽器清除為止。共用同一個瀏覽器設定檔的人可能看得到已存的資料。</p>
+      </section>
+      <section class="settings-card"><h2>怎麼修改或清除資料</h2>
+        <p>到「我的設定」可修改偏好，文章內可編輯或刪除筆記。要一次清除孩子資料、偏好、收藏、不再推薦的文章和筆記，可在「我的設定」選「清除本機資料」，也可以從瀏覽器設定清除本站的資料。</p>
+        <a class="text-button" href="#settings">前往我的設定 ${icon("arrow")}</a>
+      </section>
+      <section class="settings-card"><h2>網站託管與外部連結</h2>
+        <p>星泊使用 GitHub Pages 提供網頁。GitHub 會基於安全目的記錄並保存訪客的 IP 位址。點開文章的原文等外部連結後，瀏覽資訊由你造訪的網站依其隱私政策處理。</p>
+        <a class="text-button" href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" target="_blank" rel="noopener noreferrer">GitHub Pages 資料蒐集說明 ${icon("external")}</a>
+      </section>
+      <section class="settings-card"><h2>有疑問時</h2>
+        <p>歡迎回報網站的隱私或使用問題。GitHub 專案的回報內容會公開，請勿貼上孩子的資料或筆記。</p>
+        <a class="text-button" href="https://github.com/luyotw/asd-support/issues" target="_blank" rel="noopener noreferrer">星泊的問題回報區 ${icon("external")}</a>
+      </section>
+    </div>
+  </div>`);
+}
+
 function render(focus = false) {
   if (location.hash === "#demo") {
     history.replaceState(null, "", state.profile ? "#home" : location.href.split("#")[0]);
@@ -724,6 +758,7 @@ function render(focus = false) {
   }
   if (page === "saved") app.innerHTML = savedPage();
   if (page === "settings") app.innerHTML = settings();
+  if (page === "privacy") app.innerHTML = privacyPage();
   if (page === "edit") {
     draft = structuredClone(state.profile || emptyProfile());
     app.innerHTML = edit();
@@ -801,7 +836,7 @@ document.addEventListener("click", event => {
   if (control.dataset.origin && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {
     event.preventDefault();
     const href = control.getAttribute("href");
-    const entry = { articleOrigin: control.dataset.origin };
+    const entry = href === "#privacy" ? { privacyOrigin: control.dataset.origin } : { articleOrigin: control.dataset.origin };
     if (href === location.hash) history.replaceState(entry, "", href);
     else history.pushState(entry, "", href);
     render(true);
