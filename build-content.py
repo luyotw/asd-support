@@ -96,6 +96,15 @@ def main():
             cited.add(source_id)
         article_note_sources = set()
         for section in article["sections"]:
+            for paragraph in [*section.get("taiwanEvidence", []), *section.get("evidence", [])]:
+                if (not isinstance(paragraph, dict) or not isinstance(paragraph.get("text"), str)
+                        or not paragraph["text"].strip()):
+                    parser.error(f"{article['id']} needs text for each evidence paragraph.")
+                source_ids = paragraph.get("sourceIds")
+                if (not isinstance(source_ids, list) or not source_ids
+                        or any(not isinstance(id, str) or id not in cited for id in source_ids)
+                        or len(set(source_ids)) != len(source_ids)):
+                    parser.error(f"{article['id']} needs distinct article source IDs for each evidence paragraph.")
             for note in section.get("sourceNotes", []):
                 source_id = note.get("id")
                 summary = note.get("text")

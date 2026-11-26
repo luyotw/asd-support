@@ -483,7 +483,8 @@ function refreshLibrary() {
     const tags = article.situations.map(id => situationById[id]);
     const articleText = article.sections.flatMap(section => [
       section.heading, ...(section.paragraphs || []), ...(section.list?.items || []),
-      ...(section.taiwanEvidence || []), ...(section.evidence || []),
+      ...(section.taiwanEvidence || []).map(paragraph => paragraph.text),
+      ...(section.evidence || []).map(paragraph => paragraph.text),
       ...(section.sourceNotes || []).map(note => `${sources[note.id].authors || sources[note.id].publisher} ${note.text}`),
     ]);
     const content = normalize([article.title, article.summary, category.label, article.resource?.audience, article.resource?.contact,
@@ -515,18 +516,27 @@ function articleSourceLinks(references) {
   }).join("")}</ul>`;
 }
 
+function inlineSourceLinks(sourceIds) {
+  const multiple = sourceIds.length > 1;
+  const links = sourceIds.map(id => {
+    const { name, url } = sources[id];
+    const label = multiple ? name : `查看原文<span class="sr-only">（${name}）</span>`;
+    return `<a class="article-evidence-source" href="${url}" target="_blank" rel="noopener noreferrer">${label} ${icon("external")}</a>`;
+  }).join(" · ");
+  return multiple ? `查看原文 ${links}` : links;
+}
+
 function articleEvidence(section) {
-  const notes = section.sourceNotes || [];
-  const renderNote = note => `<p class="article-source-note">${note.text}
-    <a href="${sources[note.id].url}" target="_blank" rel="noopener noreferrer">查看原文<span class="sr-only">（${sources[note.id].name}）</span> ${icon("external")}</a>
-  </p>`;
+  const notes = (section.sourceNotes || []).map(({ id, text }) => ({ id, text, sourceIds: [id] }));
   const paragraphs = [
-    ...(section.taiwanEvidence || []).map(text => `<p>${text}</p>`),
-    ...notes.filter(note => sources[note.id].taiwanSource).map(renderNote),
-    ...(section.evidence || []).map(text => `<p>${text}</p>`),
-    ...notes.filter(note => !sources[note.id].taiwanSource).map(renderNote),
+    ...(section.taiwanEvidence || []),
+    ...notes.filter(note => sources[note.id].taiwanSource),
+    ...(section.evidence || []),
+    ...notes.filter(note => !sources[note.id].taiwanSource),
   ];
-  return paragraphs.length ? `<div class="article-evidence">${paragraphs.join("")}</div>` : "";
+  return paragraphs.length ? `<div class="article-evidence">
+    ${paragraphs.map(({ id, text, sourceIds }) => `<p${id ? ' class="article-source-note"' : ""}>${text} <span class="article-evidence-references">${inlineSourceLinks(sourceIds)}</span></p>`).join("")}
+  </div>` : "";
 }
 
 const backToTopButton = `<button class="button secondary back-to-top" type="button" data-action="back-to-top" hidden>${icon("up")} 回到頂端</button>`;
