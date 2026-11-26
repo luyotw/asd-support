@@ -45,6 +45,7 @@ const storageVersion = 2;
 const ages = ["0–1 歲", "2–5 歲", "6–8 歲", "9–12 歲", "13–17 歲"];
 const genders = ["女孩", "男孩", "其他", "不透露"];
 const handbookTitle = "家庭支持手冊";
+const brandSubtitle = `ASD ${handbookTitle}`;
 const guideTitle = "成長指南";
 const navItems = [
   ["home", "home", "首頁"], ["library", "book", guideTitle, "指南"],
@@ -183,7 +184,7 @@ function go(page) {
 function brand() {
   return `<a class="brand" href="${state.profile ? "#home" : "#"}" aria-label="星泊首頁">
     <span class="brand-mark">${icon("brand")}</span>
-    <span><strong>星泊</strong><small>${handbookTitle}</small></span>
+    <span><strong>星泊</strong><small>${brandSubtitle}</small></span>
   </a>`;
 }
 
@@ -729,7 +730,7 @@ function render(focus = false) {
   }
   if (page === "sources") app.innerHTML = sourcesPage();
   const heading = app.querySelector("h1");
-  document.title = page !== "welcome" && heading ? `${heading.textContent} · 星泊` : `星泊 · ${handbookTitle}`;
+  document.title = page !== "welcome" && heading ? `${heading.textContent} · 星泊` : `星泊 · ${brandSubtitle}`;
   if (focus) {
     window.scrollTo(0, 0);
     app.querySelector("main").focus({ preventScroll: true });
