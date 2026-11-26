@@ -29,7 +29,6 @@ def main():
                     or source.get("url") != reviewed.get("url")
                     or not (source.get("url") or "").startswith("https://")
                     or reviewed.get("scope") != "asd"
-                    or not isinstance(reviewed.get("taiwanSource"), bool)
                     or not reviewed.get("readScope")
                     or not reviewed.get("reason")
                     or not source.get("attribution")
@@ -38,7 +37,6 @@ def main():
                     or source.get("license")
                     or source.get("licenseName")):
                 parser.error(f"{source_id} needs an audited, attributed overview of the original source.")
-            source["taiwanSource"] = reviewed["taiwanSource"]
             note_sources.add(source_id)
         expected_reuse = reuse_statuses.get(decision)
         if decision != "source-note" and (
@@ -58,6 +56,9 @@ def main():
                 or not source.get("reviewScope")
                 or not source.get("reviewChecked")):
             parser.error(f"{source_id} needs a completed review for the cited scope.")
+        if not isinstance(reviewed.get("taiwanSource"), bool):
+            parser.error(f"{source_id} needs its Taiwan source status recorded in the audit.")
+        source["taiwanSource"] = reviewed["taiwanSource"]
     article_ids = {article["id"] for article in catalog["articles"]}
     situation_ids = {situation["id"] for situation in catalog["situations"]}
     resource_group_ids = {group["id"] for group in catalog["resourceGroups"]}

@@ -187,7 +187,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "第1–2頁作者主文；不取Wong引文／照片／標誌",
       "currencyStatus": "usable",
       "currencyEvidence": "原檔與現有主文逐項比對；以2025工作手冊的視覺／溝通及個別化原則交叉核對。",
-      "sourceAudience": "學齡ASD孩子；未訂數字適齡"
+      "sourceAudience": "學齡ASD孩子；未訂數字適齡",
+      "taiwanSource": false
     },
     "pp-transitions": {
       "name": "為活動轉換與變動做準備",
@@ -211,7 +212,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "第1–2頁作者主文，排除Hayley Moss引文",
       "currencyStatus": "usable",
       "currencyEvidence": "已核官方現行轉換入口與原檔；保留「倒數須有安定作用」條件。",
-      "sourceAudience": "ASD兒童／年輕人，含學前與學校轉銜；未訂數字適齡"
+      "sourceAudience": "ASD兒童／年輕人，含學前與學校轉銜；未訂數字適齡",
+      "taiwanSource": false
     },
     "rr": {
       "name": "互動節奏與感官環境",
@@ -236,7 +238,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "作者正文的簡單語句與等待回應段；不沿用經許可轉載的表3／4",
       "currencyStatus": "usable",
       "currencyEvidence": "以2026同研究脈絡文章4.3節交叉核對；只作溝通支持背景，不當療效證明。",
-      "sourceAudience": "年幼ASD孩子、不同溝通方式及額外學習需要者；未訂數字"
+      "sourceAudience": "年幼ASD孩子、不同溝通方式及額外學習需要者；未訂數字",
+      "taiwanSource": false
     },
     "pp-workbook": {
       "name": "家長與照顧者工作手冊",
@@ -260,7 +263,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "印刷頁48、122、124作者主文；排除照片、第三方引文、神經機制及固定練習頻率說法",
       "currencyStatus": "usable",
       "currencyEvidence": "已取得158頁現行檔；逐項核對情緒、負荷與共同調節段，再以AIFS 2025的個別需求原則交叉核對。",
-      "sourceAudience": "ASD學齡學生及家長；未訂數字適齡"
+      "sourceAudience": "ASD學齡學生及家長；未訂數字適齡",
+      "taiwanSource": false
     },
     "pp-planning": {
       "name": "親師共同規劃工具",
@@ -284,7 +288,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "單頁作者規劃欄位；排除標誌",
       "currencyStatus": "usable",
       "currencyEvidence": "已核官方現行規劃入口與欄位，僅用觀察、影響、調整及孩子參與；不含服務資格。",
-      "sourceAudience": "ASD學生／支持團隊；未訂數字適齡"
+      "sourceAudience": "ASD學生／支持團隊；未訂數字適齡",
+      "taiwanSource": false
     },
     "rr-sensory": {
       "name": "感官環境與個別支持",
@@ -309,7 +314,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "第3節及表3（期刊頁8）的作者環境文字；不含第三方圖、療程、加重用品與觸碰操作",
       "currencyStatus": "usable",
       "currencyEvidence": "已查正式出版版及CC BY 4.0；只用環境理解與個別化背景，居家例子為編輯原創，非療法成效宣告。",
-      "sourceAudience": "ASD兒童的專業治療情境；未訂數字適齡"
+      "sourceAudience": "ASD兒童的專業治療情境；未訂數字適齡",
+      "taiwanSource": false
     },
     "pp-friendships": {
       "name": "舒服的友誼",
@@ -333,7 +339,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "兩頁作者主文；不取照片、標誌及另行署名素材",
       "currencyStatus": "usable",
       "currencyEvidence": "已補讀第二頁及CC標記，與現行2025工作手冊印刷頁40比對尊重社交偏好的原則。",
-      "sourceAudience": "ASD兒童／年輕人；未訂數字適齡"
+      "sourceAudience": "ASD兒童／年輕人；未訂數字適齡",
+      "taiwanSource": false
     },
     "pp-sensory-tool": {
       "name": "感官情境記錄",
@@ -357,7 +364,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "單頁Sensory Tool的自有欄位文字及入口ASD段；不含圖片、投影片與外連素材",
       "currencyStatus": "usable",
       "currencyEvidence": "已讀工具全頁及現行入口；可作感官觀察架構，不據此宣稱任何特定策略有效。",
-      "sourceAudience": "ASD學齡學生；未訂數字適齡"
+      "sourceAudience": "ASD學齡學生；未訂數字適齡",
+      "taiwanSource": false
     },
     "qld-reading": {
       "name": "ASD閱讀理解研究線索",
@@ -381,7 +389,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "單頁研究線索與限制的自有文字，不重製圖示／標誌",
       "currencyStatus": "usable",
       "currencyEvidence": "現行官方讀寫入口仍連此單張；只可描述其研究背景及限制，不作最新療效排名或通用訓練處方。",
-      "sourceAudience": "ASD學生，依閱讀／語言能力；未訂數字適齡"
+      "sourceAudience": "ASD學生，依閱讀／語言能力；未訂數字適齡",
+      "taiwanSource": false
     },
     "aifs-needs": {
       "name": "理解行為背後的需要",
@@ -406,7 +415,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Overview、需求辨識及Nature of the evidence；不複製照片／他方素材或危機處理程序",
       "currencyStatus": "usable",
       "currencyEvidence": "已核官方頁與PDF授權頁，限需求理解及觀察背景；支持做法多來自實務經驗，不當效果試驗。",
-      "sourceAudience": "主要供專業人員；本文ASD範圍為幼兒至青春期初期，未訂數字；服務背景至18歲非操作適齡"
+      "sourceAudience": "主要供專業人員；本文ASD範圍為幼兒至青春期初期，未訂數字；服務背景至18歲非操作適齡",
+      "taiwanSource": false
     },
     "esa-puberty": {
       "name": "自閉症學生的青春期教材",
@@ -430,7 +440,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "PDF頁3–5、9、15–17、20–22的指定自有文字：明確詞彙／AAC、青春期變化、身體界線／同意及個別感官需要。排除外連教材、圖片、影片、澳洲法律／服務及12小時用品穿戴說法。",
       "currencyStatus": "usable",
       "currencyEvidence": "已讀29頁可抽取文字，視覺確認末頁明列CC BY 4.0。可供身體成長題目之教育背景；不是介入成效研究。原2020教材的具體用品建議不直接沿用。",
-      "sourceAudience": "ASD學生的主流學校教師；澳洲五、六年級，不是五、六歲；未訂數字適齡"
+      "sourceAudience": "ASD學生的主流學校教師；澳洲五、六年級，不是五、六歲；未訂數字適齡",
+      "taiwanSource": false
     },
     "ebrahim-screen": {
       "name": "自閉症孩子的螢幕使用與家長經驗",
@@ -455,7 +466,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Methods／Table 1、Results Theme 3、Discussion及Limitations中的作者研究敘述；只用內容管理、收尾準備及家長感受背景，不取逐字訪談、圖表或外引療效。",
       "currencyStatus": "usable",
       "currencyEvidence": "已讀方法、結果及限制；質性訪談不是策略效果試驗，不能推出統一螢幕時數、獎勵措施有效或3C造成ASD。保留家長同時感受到效益與困難的觀點。",
-      "sourceAudience": "南非開普敦7位ASD孩子家長（6母1父）；納入8歲以下，實際孩子2歲10月–7歲11月"
+      "sourceAudience": "南非開普敦7位ASD孩子家長（6母1父）；納入8歲以下，實際孩子2歲10月–7歲11月",
+      "taiwanSource": false
     },
     "nordin-attendance": {
       "name": "自閉症兒少上學缺席研究回顧",
@@ -480,7 +492,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Method、Results的作者綜整與Discussion／Limitations；只作上學困難種類、學校情境與證據缺口背景，排除他方量表／操作療程。",
       "currencyStatus": "usable",
       "currencyEvidence": "46篇報告、42項獨立研究。作者明示目的非實務決策、未作研究品質評讀；定義與介入異質，不能把範疇回顧當返校處方或因果排名。",
-      "sourceAudience": "自閉症小學／中學學生；納入研究年齡各異，不設單一數字適齡；混合樣本僅收ASD可分開資料"
+      "sourceAudience": "自閉症小學／中學學生；納入研究年齡各異，不設單一數字適齡；混合樣本僅收ASD可分開資料",
+      "taiwanSource": false
     },
     "skommer-periods": {
       "name": "自閉症者的經期經驗與支持",
@@ -505,7 +518,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Methods、Results、Discussion與Limitations中作者對經期經驗差異、感官及支持缺口的綜整；只用初經／青少年相關背景，不含更年期推論、激素／藥物或醫療診斷程序。",
       "currencyStatus": "usable",
       "currencyEvidence": "45項研究，樣本與方法差異大；可呈現經驗不一致及感官需要，不把成人或更年期資料套到孩子，也不將風險描述寫成每位ASD孩子必然遭遇。",
-      "sourceAudience": "有月經／初經經驗的自閉症者，跨青少年與成人至更年期；非單一兒少年齡；含正式診斷與自我認同樣本"
+      "sourceAudience": "有月經／初經經驗的自閉症者，跨青少年與成人至更年期；非單一兒少年齡；含正式診斷與自我認同樣本",
+      "taiwanSource": false
     },
     "ellis-periods": {
       "name": "自閉症者、家長與專業人員的經期觀點",
@@ -530,7 +544,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "作者接受稿PDF第3頁摘要中12份來源、不同角色優先需要及人口資料限制的自有綜整；僅此段，不放行整篇或最終出版排版。",
       "currencyStatus": "usable",
       "currencyEvidence": "取得Cardiff接受稿摘要／前言並核對Swansea同題作者接受稿權利保留聲明。12份來源（8學術、4灰色）；家長／專業與當事人關注重點不同。只核摘要指定範圍，未聲稱完成全文或新版差異核對。",
-      "sourceAudience": "自閉症有月經經驗者及家長／支持者；跨年齡，原摘要指人口資料不足，未訂數字適齡"
+      "sourceAudience": "自閉症有月經經驗者及家長／支持者；跨年齡，原摘要指人口資料不足，未訂數字適齡",
+      "taiwanSource": false
     },
     "gray-attendance": {
       "name": "自閉症學生與支持者的上學困難經驗",
@@ -555,7 +570,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "第3–4頁Method／Table 1對象說明、第5–11頁作者Results主題解釋與第12–13頁限制；排除逐字訪談、量表題目及英國法律／行政資訊。",
       "currencyStatus": "usable",
       "currencyEvidence": "39名受訪者：12學生、10家長、8現任教師、9地方專業人員。可呈現學生／家庭與學校情境；未訪原排除學校教職員，不能宣稱呈現所有學校立場或證明調整的成效。原文年齡不一致如實保留，引用以表1實際13–17歲為界。",
-      "sourceAudience": "英格蘭單一地方政府兩個替代教育機構；12名青少年（10男2女），表1為13–17歲，正文稱13–16歲有不一致；11名臨床診斷，1名未正式診斷但達SCQ門檻"
+      "sourceAudience": "英格蘭單一地方政府兩個替代教育機構；12名青少年（10男2女），表1為13–17歲，正文稱13–16歲有不一致；11名臨床診斷，1名未正式診斷但達SCQ門檻",
+      "taiwanSource": false
     },
     "vanaken-diagnosis": {
       "name": "自閉症青少年回看診斷與告知時機",
@@ -580,7 +596,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Methods、作者Results三主題、Discussion及Strengths and limitations；不取逐字訪談、個資或量表題目。",
       "currencyStatus": "usable",
       "currencyEvidence": "可整理青少年如何理解標籤、自我認同及告知時機的看法。訪談為回顧經驗，不證明某個固定告知年齡最佳；18歲與未成年者分開，沒有把16–18歲觀點當幼兒處方。",
-      "sourceAudience": "比利時18名16–18歲自閉症青少年；排除IQ低於60或正式語言障礙者，不能代表所有溝通／認知需要"
+      "sourceAudience": "比利時18名16–18歲自閉症青少年；排除IQ低於60或正式語言障礙者，不能代表所有溝通／認知需要",
+      "taiwanSource": false
     },
     "sato-diagnosis": {
       "name": "日本醫師如何考量診斷告知",
@@ -605,7 +622,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Methods、Results、Discussion與Limitations中醫師重視準備程度的歷史研究敘述；不重製問卷或作當前臨床標準。",
       "currencyStatus": "usable",
       "currencyEvidence": "463位醫師符合納入；部分分析另有排除，不能混用分母。可呈現當時醫師重視家庭理解與關係的觀點；低回收率、回憶偏差及資料年代限制已記。不能把家長準備度當孩子得知診斷的強制門檻，也不稱2026日本現況。",
-      "sourceAudience": "日本診治18歲以下ASD患者的醫師；主要分析無智能障礙患者的初期告知，非孩子自己回報"
+      "sourceAudience": "日本診治18歲以下ASD患者的醫師；主要分析無智能障礙患者的初期告知，非孩子自己回報",
+      "taiwanSource": false
     },
     "li-family": {
       "name": "自閉症家庭的親友支援經驗",
@@ -630,7 +648,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "方法與作者自有主題綜整：情緒／實際支援、無幫助的支援及家庭互動；僅明確ASD兒少情境，不取逐字引文、量表或混合障礙未分開的結果。",
       "currencyStatus": "usable",
       "currencyEvidence": "42篇（40質性、2混合方法），多由家長／祖父母發聲，自閉症當事人觀點不足。可談支援的好壞與界線，不能宣稱親戚越介入越好、所有文化家庭相同或介入效果已驗證。",
-      "sourceAudience": "自閉症者及其家長／親友，跨兒童成人；42研究中27篇限18歲以下、11混齡、1成人、3未標年齡；部分原研究有其他障礙混合樣本"
+      "sourceAudience": "自閉症者及其家長／親友，跨兒童成人；42研究中27篇限18歲以下、11混齡、1成人、3未標年齡；部分原研究有其他障礙混合樣本",
+      "taiwanSource": false
     },
     "gao-peer-support": {
       "name": "自閉症孩子家長的支持經驗",
@@ -655,7 +674,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Methods、作者Results與Limitations對支援、污名、同儕支持品質的綜整；不取第三方逐字引文、量表及服務制度。",
       "currencyStatus": "usable",
       "currencyEvidence": "18項英語質性研究；可記同儕支持有實際幫助也可能有負面回饋或不一致。不能把支持群組當一定有效的減壓治療，也不把社會／家庭壓力歸罪家長。",
-      "sourceAudience": "ASD孩子家長；各原研究年齡不同，未設定一致數字適齡；母親265名、父親57名，男性觀點較少"
+      "sourceAudience": "ASD孩子家長；各原研究年齡不同，未設定一致數字適齡；母親265名、父親57名，男性觀點較少",
+      "taiwanSource": false
     },
     "clarke-daily-living": {
       "name": "自閉症兒少的遠距生活技能支持",
@@ -680,7 +700,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Method、ASD可辨識的作者Results與Discussion限制：遠距提供生活技能支持、專業教練及研究品質背景；不複製療程、量表或如廁／飲食／睡眠操作。",
       "currencyStatus": "usable",
       "currencyEvidence": "17項中2強、12適當、3弱，9項先導／可行性；多領域研究常未分開報告成果，與面對面比較結果也不一致。可補如廁／生活技能求助研究背景，不能直接當在家照做的訓練清單或宣稱遠距等同實體。",
-      "sourceAudience": "17項研究共536人，ASD511人；實際年齡16個月至19歲，家長媒介ASD395人16個月至14歲；混合樣本結果未分ASD者不取"
+      "sourceAudience": "17項研究共536人，ASD511人；實際年齡16個月至19歲，家長媒介ASD395人16個月至14歲；混合樣本結果未分ASD者不取",
+      "taiwanSource": false
     },
     "reach-asd-summary": {
       "name": "確診後照顧者支持方案的研究摘要",
@@ -705,7 +726,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "僅核KCL所收錄的作者完整摘要：研究目的、對照、樣本、主要結果及限制；不放行正文、治療課程、手冊或量表。",
       "currencyStatus": "usable",
       "currencyEvidence": "379位照顧者隨機分派，摘要主要可用資料分析319人；可描述此特定團體方案的研究背景，不能把數字當任何線上群組都有效。原站PDF未取得，不聲稱通讀全文；與S39成本效益論文為不同作品，S39仍不用。",
-      "sourceAudience": "英國近期12個月內確診ASD孩子的家長／主要照顧者；摘要納入孩子2–15歲，結果描述實際2–16歲；照顧者多為女性及白人英國人"
+      "sourceAudience": "英國近期12個月內確診ASD孩子的家長／主要照顧者；摘要納入孩子2–15歲，結果描述實際2–16歲；照顧者多為女性及白人英國人",
+      "taiwanSource": false
     },
     "kaohsiung-asd-development-assessment": {
       "name": "兒童發展聯合評估服務與流程",
@@ -729,7 +751,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.kmuh.gov.tw/cp.aspx?n=968CEA1212042C2C",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-special-education-assessment": {
       "name": "特殊教育學生及幼兒鑑定辦法",
@@ -752,7 +775,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-special-education-act": {
       "name": "特殊教育法",
@@ -775,7 +799,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "tainan-early-intervention-subsidy": {
       "name": "臺南市早療費用補助與申請問答",
@@ -799,7 +824,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://sab.tainan.gov.tw/cp.aspx?n=21801&s=7586",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "conrad-pact-family-experience": {
       "name": "家長把自閉症溝通療育帶進日常的經驗",
@@ -824,7 +850,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.mdpi.com/2227-9067/11/7/838",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "gevarter-preschool-multimodal-communication": {
       "name": "少用口語的學前自閉症孩子如何多元溝通",
@@ -849,7 +876,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.mdpi.com/2076-328X/15/10/1425",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "taiwan-special-education-school-transition": {
       "name": "各教育階段身心障礙學生與幼兒轉銜輔導及服務辦法",
@@ -873,7 +901,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "mayer-digital-citizenship": {
       "name": "自閉症兒少使用螢幕的數位公民研究",
@@ -898,7 +927,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/13623613231192870",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "crane-autistic-parents-disclosure": {
       "name": "自閉症家長如何和自閉症孩子談診斷",
@@ -923,7 +953,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8111227/",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "little-telehealth-toileting": {
       "name": "自閉症兒童遠距如廁支持初步研究",
@@ -948,7 +979,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/15394492231159903",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "liu-taiwan-youth-diagnosis": {
       "name": "臺灣自閉症青少年的診斷與校園經驗",
@@ -973,7 +1005,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://journals.sagepub.com/doi/abs/10.1177/13623613261444800",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-disability-assessment": {
       "name": "身心障礙者鑑定作業辦法",
@@ -997,7 +1030,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-disability-rights-act": {
       "name": "身心障礙者權益保障法",
@@ -1021,7 +1055,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-25",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-special-education-class-types": {
       "name": "特殊教育法施行細則",
@@ -1045,7 +1080,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "new-taipei-autism-family-services": {
       "name": "新北市 115 年度身心障礙家庭照顧者支持服務計畫",
@@ -1069,7 +1105,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-ombudsman-autism-insurance": {
       "name": "監察院身心障礙者投保調查",
@@ -1093,7 +1130,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-insurance-underwriting": {
       "name": "金管會保險業招攬及核保理賠辦法",
@@ -1117,7 +1155,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "ophir-school-disclosure": {
       "name": "自閉症學生的校園互動與揭露經驗回顧",
@@ -1142,7 +1181,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://link.springer.com/article/10.1007/s40489-026-00596-4",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "mullally-child-school-experience": {
       "name": "自閉症孩子怎麼看校園壓力與安全感",
@@ -1167,7 +1207,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13087148/",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "fox-primary-friendships": {
       "name": "英國小學自閉症孩子的友誼經驗回顧",
@@ -1192,7 +1233,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://journals.sagepub.com/doi/10.1177/27546330241272250",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "maclennan-preschool-sensory-anxiety": {
       "name": "學前自閉症孩子的感官反應、不確定感與焦慮",
@@ -1217,7 +1259,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://centaur.reading.ac.uk/98478/1/13623613211016110.pdf",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "oneill-asd-assessment-experiences": {
       "name": "自閉症評估過程中家長的經驗回顧",
@@ -1242,7 +1285,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11528925/",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "binns-preschool-slp": {
       "name": "學前自閉症孩子的語言治療服務調查",
@@ -1267,7 +1311,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9620702/",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "dewinter-autistic-sexuality-education": {
       "name": "自閉症青少年的性教育與性別多樣性建議",
@@ -1292,7 +1337,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://journals.sagepub.com/doi/abs/10.1177/13623613231188349",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "mukherjee-autistic-teen-family-support": {
       "name": "自閉症青少年家庭重新尋求支持的經驗",
@@ -1317,7 +1363,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "noncommercial-adaptation-permitted",
       "permissionEvidence": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531384/",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "ng-affiliate-stigma-family": {
       "name": "學前自閉症家庭面對連帶污名的研究",
@@ -1342,7 +1389,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.mdpi.com/1660-4601/17/5/1799",
       "reviewChecked": "2026-11-24",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": false
     },
     "taiwan-assistive-device-subsidies": {
       "name": "身障輔具補助辦法與溝通輔具基準",
@@ -1366,7 +1414,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reuseStatus": "adaptation-permitted",
       "permissionEvidence": "https://www.tipo.gov.tw/tw/copyright/694-17733.html",
       "reviewChecked": "2026-11-25",
-      "currencyStatus": "usable"
+      "currencyStatus": "usable",
+      "taiwanSource": true
     },
     "taiwan-nhrc-behavior-support": {
       "name": "嚴重情緒行為支持體系專案報告",
@@ -1390,7 +1439,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。",
       "currencyStatus": "usable",
       "currencyEvidence": "比對官方專案頁、報告正文及網站開放宣告。限用委員會自有敘述作溝通支持背景，排除個案、流行率、危機處理、第三方引文及現行服務資格。",
-      "sourceAudience": "報告涵蓋自閉症、智能障礙及多重障礙者，未限定兒童年齡。本文限涉及自閉症者的溝通與需求背景。"
+      "sourceAudience": "報告涵蓋自閉症、智能障礙及多重障礙者，未限定兒童年齡。本文限涉及自閉症者的溝通與需求背景。",
+      "taiwanSource": true
     },
     "vghtpe-autism-home-routines": {
       "name": "在日常作息中陪自閉症孩子練習溝通",
@@ -1415,7 +1465,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "院方自有衛教文字，限「溝通能力」中用簡短語句配合當下衣食及遊戲動作的段落，以及「給媽媽的話」中照顧者分工的一句。排除診斷、病因、盛行率、訓練順序、治療效果及附列資料。",
       "currencyStatus": "usable",
       "currencyEvidence": "以 2024 年 Conrad 等的家長訪談與既有照顧研究交叉核對，採日常溝通與家庭分工兩項，保留衛教性質。頁內部分舊說法已過時，使用範圍限定到具體段落。",
-      "sourceAudience": "自閉症兒童及家人，核准段落未設定數字適齡。"
+      "sourceAudience": "自閉症兒童及家人，核准段落未設定數字適齡。",
+      "taiwanSource": true
     },
     "vghtpe-autism-visual-support": {
       "name": "用圖片或文字讓自閉症孩子看懂活動步驟",
@@ -1440,7 +1491,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "限第三節第 3 項依個人狀況協助表達，第四節第 2、3 項的拆解日常活動及圖片／文字提示，以及第二節第 2 項的聲音與光線敏感背景。",
       "currencyStatus": "usable",
       "currencyEvidence": "核對院方護理部平台、開放宣告與該頁署名。限用院方自有文字，排除診斷、成因、藥物、隔離內容及測驗，且不宣稱提示有特定療效。",
-      "sourceAudience": "自閉症者的家庭照顧衛教，取兒少日常活動支持做法，原文未訂數字適齡。"
+      "sourceAudience": "自閉症者的家庭照顧衛教，取兒少日常活動支持做法，原文未訂數字適齡。",
+      "taiwanSource": true
     },
     "liao-taiwan-caregiver-coaching": {
       "name": "臺灣學齡自閉症孩子的家長溝通支持研究",
@@ -1465,7 +1517,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "方法章 Participants、Dependent Variables 與討論限制。限家庭情境、溝通媒介及研究限制，排除訓練手冊、操作流程及第三方素材。",
       "currencyStatus": "usable",
       "currencyEvidence": "原刊註明特刊撤回後本研究保留於原一般期。小樣本個案實驗，未比較哪種溝通媒介最合適，也未確認長期結果。",
-      "sourceAudience": "三名 8、9、10 歲的臺灣自閉症孩子與家長；兒童有輕中度至中度溝通困難。"
+      "sourceAudience": "三名 8、9、10 歲的臺灣自閉症孩子與家長；兒童有輕中度至中度溝通困難。",
+      "taiwanSource": true
     },
     "lu-taiwan-seventh-grade-peer-support": {
       "name": "臺灣自閉症國一生的友誼與校園支持研究",
@@ -1490,7 +1543,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "方法、結果與討論，限 2011 年資料的國一樣本、友誼品質、同儕協助、課室氣氛與被排斥的關聯。排除測量題項、圖表及其他族群的推論。",
       "currencyStatus": "usable",
       "currencyEvidence": "資料來自 2011 年臺灣特教長期追蹤資料庫；在地關聯研究可供背景，無法判定因果、介入效果或個別學生缺席原因。",
-      "sourceAudience": "臺灣 184 名就讀普通班的自閉症國一學生，約 12–13 歲。"
+      "sourceAudience": "臺灣 184 名就讀普通班的自閉症國一學生，約 12–13 歲。",
+      "taiwanSource": true
     },
     "wuang-taiwan-school-sensory": {
       "name": "臺灣自閉症學童的感官與生活參與研究",
@@ -1515,7 +1569,8 @@ const { categories, resourceGroups, situations, sources, articles, withdrawnArti
       "reviewScope": "Methods 的樣本、Results 的感官知覺與活動參與關聯、Discussion 的實務及研究限制。排除量表、表格、療程及第三方引文。",
       "currencyStatus": "usable",
       "currencyEvidence": "臺灣職能治療團隊的橫斷研究。引用指定感官與參與資料，適用於學齡觀察背景，不用來判定個別孩子的感官原因或特定環境調整效果。正式 PDF 首頁版權欄明列 CC BY-NC 3.0。",
-      "sourceAudience": "117 名臺灣自閉症學童，正文方法章及摘要寫實際樣本 5–13 歲。"
+      "sourceAudience": "117 名臺灣自閉症學童，正文方法章及摘要寫實際樣本 5–13 歲。",
+      "taiwanSource": true
     },
     "taipei-autism-classroom-handbook": {
       "name": "臺北融合教育現場教學手冊的自閉症章",

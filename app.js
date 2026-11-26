@@ -559,7 +559,7 @@ function articlePage(article) {
     { id: article.related, section: article.sourceSection },
     ...(article.additionalSources || []),
     ...sourceNotes,
-  ];
+  ].sort((first, second) => Number(sources[second.id].taiwanSource) - Number(sources[first.id].taiwanSource));
   const otherSources = references.slice(2);
   const relatedArticles = article.relatedArticles || [];
   const origin = history.state?.articleOrigin || (article.resource ? "resources" : "library");

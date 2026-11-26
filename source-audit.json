@@ -23,7 +23,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "第1–2頁作者主文；不取Wong引文／照片／標誌",
       "reason": "原檔與現有主文逐項比對；以2025工作手冊的視覺／溝通及個別化原則交叉核對。",
-      "sha256": "668750699990fe017235864a0e8d83dafa0eb9bb3dec17497a7329d0c7c9563b"
+      "sha256": "668750699990fe017235864a0e8d83dafa0eb9bb3dec17497a7329d0c7c9563b",
+      "taiwanSource": false
     },
     {
       "id": "P02",
@@ -39,7 +40,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "第1–2頁作者主文，排除Hayley Moss引文",
       "reason": "已核官方現行轉換入口與原檔；保留「倒數須有安定作用」條件。",
-      "sha256": "f23447b14415f699c24b0bd665016a9b48ecd15f82cdd7d526ee66cc6019b420"
+      "sha256": "f23447b14415f699c24b0bd665016a9b48ecd15f82cdd7d526ee66cc6019b420",
+      "taiwanSource": false
     },
     {
       "id": "P03",
@@ -54,7 +56,8 @@
       "date": "2024-09-18出版",
       "currency": "可用（限已核範圍）",
       "sections": "作者正文的簡單語句與等待回應段；不沿用經許可轉載的表3／4",
-      "reason": "以2026同研究脈絡文章4.3節交叉核對；只作溝通支持背景，不當療效證明。"
+      "reason": "以2026同研究脈絡文章4.3節交叉核對；只作溝通支持背景，不當療效證明。",
+      "taiwanSource": false
     },
     {
       "id": "P04",
@@ -70,7 +73,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "印刷頁48、122、124作者主文；排除照片、第三方引文、神經機制及固定練習頻率說法",
       "reason": "已取得158頁現行檔；逐項核對情緒、負荷與共同調節段，再以AIFS 2025的個別需求原則交叉核對。",
-      "sha256": "b0d9e4b3f349917bf5a613cd6ff08c4de81f2872f518840afa27170db65fcf52"
+      "sha256": "b0d9e4b3f349917bf5a613cd6ff08c4de81f2872f518840afa27170db65fcf52",
+      "taiwanSource": false
     },
     {
       "id": "P05",
@@ -86,7 +90,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "單頁作者規劃欄位；排除標誌",
       "reason": "已核官方現行規劃入口與欄位，僅用觀察、影響、調整及孩子參與；不含服務資格。",
-      "sha256": "39258837b390f7be0e2037ff10e71c50badf69449932a8949dfa9fe5c2473229"
+      "sha256": "39258837b390f7be0e2037ff10e71c50badf69449932a8949dfa9fe5c2473229",
+      "taiwanSource": false
     },
     {
       "id": "S05",
@@ -101,7 +106,8 @@
       "date": "工具未標發布日；現行入口含July 2025投影片",
       "currency": "可用（限已核範圍）",
       "sections": "單頁Sensory Tool的自有欄位文字及入口ASD段；不含圖片、投影片與外連素材",
-      "reason": "已讀工具全頁及現行入口；可作感官觀察架構，不據此宣稱任何特定策略有效。"
+      "reason": "已讀工具全頁及現行入口；可作感官觀察架構，不據此宣稱任何特定策略有效。",
+      "taiwanSource": false
     },
     {
       "id": "S07",
@@ -254,7 +260,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "兩頁作者主文；不取照片、標誌及另行署名素材",
       "reason": "已補讀第二頁及CC標記，與現行2025工作手冊印刷頁40比對尊重社交偏好的原則。",
-      "sha256": "bf9f62aaabcfe1bd3a5922ba8b29d7d2c3c42204721af12be5f938c01f87cc66"
+      "sha256": "bf9f62aaabcfe1bd3a5922ba8b29d7d2c3c42204721af12be5f938c01f87cc66",
+      "taiwanSource": false
     },
     {
       "id": "S19",
@@ -270,7 +277,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "單頁研究線索與限制的自有文字，不重製圖示／標誌",
       "reason": "現行官方讀寫入口仍連此單張；只可描述其研究背景及限制，不作最新療效排名或通用訓練處方。",
-      "sha256": "f6850ec1e62d5e8704d5426529d56a0858789528d770499e0256328c84fd99b2"
+      "sha256": "f6850ec1e62d5e8704d5426529d56a0858789528d770499e0256328c84fd99b2",
+      "taiwanSource": false
     },
     {
       "id": "S20",
@@ -345,7 +353,8 @@
       "date": "2025-12-10發布；PDF標December 2025",
       "currency": "可用（限已核範圍）",
       "sections": "Overview、需求辨識及Nature of the evidence；不複製照片／他方素材或危機處理程序",
-      "reason": "已核官方頁與PDF授權頁，限需求理解及觀察背景；支持做法多來自實務經驗，不當效果試驗。"
+      "reason": "已核官方頁與PDF授權頁，限需求理解及觀察背景；支持做法多來自實務經驗，不當效果試驗。",
+      "taiwanSource": false
     },
     {
       "id": "S25",
@@ -424,7 +433,8 @@
       "license": "https://creativecommons.org/licenses/by-nc/4.0/",
       "topics": [
         "T02"
-      ]
+      ],
+      "taiwanSource": false
     },
     {
       "id": "E01",
@@ -696,7 +706,8 @@
       "currency": "可用（限已核範圍）",
       "sections": "第3節及表3（期刊頁8）的作者環境文字；不含第三方圖、療程、加重用品與觸碰操作",
       "reason": "已查正式出版版及CC BY 4.0；只用環境理解與個別化背景，居家例子為編輯原創，非療法成效宣告。",
-      "sha256": "9bdad6a4a46203f6729f687d059e6da09f52d1214a8dd099ffa3045757eeeef0"
+      "sha256": "9bdad6a4a46203f6729f687d059e6da09f52d1214a8dd099ffa3045757eeeef0",
+      "taiwanSource": false
     },
     {
       "id": "S31",
@@ -723,7 +734,8 @@
       ],
       "permissionSection": "PDF第29頁",
       "readScope": "全檔文字；限核准教育段落，不整本放行",
-      "sha256": "350ce1647333c6c7440399c36e9c5d82989442cf7a1567694ca475f76236714f"
+      "sha256": "350ce1647333c6c7440399c36e9c5d82989442cf7a1567694ca475f76236714f",
+      "taiwanSource": false
     },
     {
       "id": "S32",
@@ -744,7 +756,8 @@
       ],
       "evidenceType": "質性描述研究",
       "readScope": "方法、樣本表、研究主題、討論、限制及版權段",
-      "permissionSection": "Copyright段連至CC BY 4.0"
+      "permissionSection": "Copyright段連至CC BY 4.0",
+      "taiwanSource": false
     },
     {
       "id": "S33",
@@ -765,7 +778,8 @@
       ],
       "evidenceType": "範疇回顧",
       "readScope": "方法、研究數量、學校情境綜整、討論與限制、權利段",
-      "permissionSection": "Rights and permissions"
+      "permissionSection": "Rights and permissions",
+      "taiwanSource": false
     },
     {
       "id": "S34",
@@ -810,7 +824,8 @@
       "audienceNote": "經期索引以實際是否有月經及支持需求為準；「女」標籤不排除跨性別／非二元有同樣需要者。",
       "evidenceType": "範疇回顧",
       "readScope": "方法、45項研究綜整、討論及限制、版權段",
-      "permissionSection": "Copyright段CC BY"
+      "permissionSection": "Copyright段CC BY",
+      "taiwanSource": false
     },
     {
       "id": "S36",
@@ -857,7 +872,8 @@
       "evidenceType": "質性系統性回顧之接受稿摘要",
       "readScope": "Cardiff作者接受稿摘要／前言；Swansea權利聲明與出版社日期／卷期。其餘正文未放行。",
       "permissionSection": "Swansea入口Accepted Manuscript／CC-BY rights retention",
-      "rightsVersion": "作者接受稿；最終出版版本不在本次授權判定範圍"
+      "rightsVersion": "作者接受稿；最終出版版本不在本次授權判定範圍",
+      "taiwanSource": false
     },
     {
       "id": "S38",
@@ -879,7 +895,8 @@
       "evidenceType": "多方質性訪談",
       "readScope": "樣本、方法、作者主題、限制及版權頁；未將逐字引文或問卷改寫為工具",
       "permissionSection": "PDF第1頁CC BY 4.0",
-      "sha256": "b918ab76da89d69893ad097216f1a7d347670adbbd7a88d462486edb0450832a"
+      "sha256": "b918ab76da89d69893ad097216f1a7d347670adbbd7a88d462486edb0450832a",
+      "taiwanSource": false
     },
     {
       "id": "S39",
@@ -958,7 +975,8 @@
         "T16"
       ],
       "readScope": "已讀方法、樣本表、作者主題說明、討論、限制與Copyright",
-      "evidenceType": "青少年質性訪談"
+      "evidenceType": "青少年質性訪談",
+      "taiwanSource": false
     },
     {
       "id": "S43",
@@ -979,7 +997,8 @@
         "T16"
       ],
       "readScope": "方法、樣本流程、告知結果、討論、限制與Rights and permissions",
-      "evidenceType": "歷史醫師橫斷問卷"
+      "evidenceType": "歷史醫師橫斷問卷",
+      "taiwanSource": false
     },
     {
       "id": "S44",
@@ -1000,7 +1019,8 @@
         "T15"
       ],
       "readScope": "方法、樣本構成、作者三主題、限制與Rights and permissions",
-      "evidenceType": "質性系統性回顧／統合"
+      "evidenceType": "質性系統性回顧／統合",
+      "taiwanSource": false
     },
     {
       "id": "S45",
@@ -1021,7 +1041,8 @@
         "T15"
       ],
       "readScope": "摘要、方法、研究篩選、主題、討論、限制及權利段",
-      "evidenceType": "質性系統性回顧"
+      "evidenceType": "質性系統性回顧",
+      "taiwanSource": false
     },
     {
       "id": "S46",
@@ -1045,7 +1066,8 @@
         "T15"
       ],
       "readScope": "方法、參與者及研究設計、作者結果綜整、討論／限制、權利段",
-      "evidenceType": "系統性回顧"
+      "evidenceType": "系統性回顧",
+      "taiwanSource": false
     },
     {
       "id": "S47",
@@ -1070,7 +1092,8 @@
       "permissionSection": "KCL書目note明列原論文CC BY 4.0",
       "relatedAuditIds": [
         "S39"
-      ]
+      ],
+      "taiwanSource": false
     },
     {
       "id": "S48",
@@ -1133,7 +1156,8 @@
       ],
       "readScope": "原機構封面權利、原論文摘要、方法、樣本表、作者結果與討論",
       "evidenceType": "家長問卷與開放題分析",
-      "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "taiwanSource": false
     },
     {
       "id": "S51",
@@ -1175,7 +1199,8 @@
       ],
       "readScope": "摘要、研究目的、方法、作者結果、討論與限制、權利段",
       "evidenceType": "無對照前後初步研究",
-      "license": "https://creativecommons.org/licenses/by-nc/4.0/"
+      "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "taiwanSource": false
     },
     {
       "id": "S53",
@@ -1197,7 +1222,8 @@
         "T18"
       ],
       "readScope": "限院方聯評簡介、依個別狀況安排跨專業評估、結果說明及後續轉介。本次使用的流程明列自閉症相關就診。",
-      "evidenceType": "公立醫院服務說明"
+      "evidenceType": "公立醫院服務說明",
+      "taiwanSource": true
     },
     {
       "id": "S54",
@@ -1222,7 +1248,8 @@
         "T31"
       ],
       "readScope": "限第 2、12、23–26 條，多元評量、自閉症鑑定、教育需求評估、安置、重新評估與施行日期。",
-      "evidenceType": "政府法令正文"
+      "evidenceType": "政府法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S55",
@@ -1248,7 +1275,8 @@
         "T34"
       ],
       "readScope": "限第 3 條第 10 款與第 6、10、11、13、19、20、26、30、31 條，自閉症類別、教育權益、鑑定安置、學前特教、教育支持、IEP 與照顧者參與。",
-      "evidenceType": "政府法令正文"
+      "evidenceType": "政府法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S56",
@@ -1269,7 +1297,8 @@
         "T20"
       ],
       "readScope": "公告第五至八項及附錄區公所問答第一節第 9 題、第三節第 1 題，限資格、文件、療育單位、交通與療育費的查找。排除表單、補助金額及療育項目推薦。",
-      "evidenceType": "地方政府服務說明"
+      "evidenceType": "地方政府服務說明",
+      "taiwanSource": true
     },
     {
       "id": "S57",
@@ -1290,7 +1319,8 @@
         "T21"
       ],
       "readScope": "第 2.3 節的樣本、第 3.1 和 3.2 節的作者主題綜整及討論限制。排除訪談引文、圖表、量表、頻率與療程操作。",
-      "evidenceType": "質性訪談"
+      "evidenceType": "質性訪談",
+      "taiwanSource": false
     },
     {
       "id": "S58",
@@ -1311,7 +1341,8 @@
         "T22"
       ],
       "readScope": "第 2.1 節及第 4.1、4.2、5 節作者自有敘述，限多元表達、個別化與共同規劃。排除第三方量表、圖表、提示階層及療育操作。",
-      "evidenceType": "小樣本單一個案實驗"
+      "evidenceType": "小樣本單一個案實驗",
+      "taiwanSource": false
     },
     {
       "id": "S59",
@@ -1332,7 +1363,8 @@
         "T23"
       ],
       "readScope": "第 2 至 4 條及第 6 條，限轉銜計畫、需求紀錄、照顧者參與、入小學及安置學校後續支持。",
-      "evidenceType": "政府法令正文"
+      "evidenceType": "政府法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S60",
@@ -1356,7 +1388,8 @@
         "T34"
       ],
       "readScope": "樣本、訪談方法、作者主題整理、討論與權利段。",
-      "evidenceType": "小樣本質性訪談"
+      "evidenceType": "小樣本質性訪談",
+      "taiwanSource": true
     },
     {
       "id": "S61",
@@ -1381,7 +1414,8 @@
         "T31"
       ],
       "readScope": "第 4、5、7 至 10 條及相關附表自有條文，限功能、申請、暫判與重鑑。量表、分數自評及臨床操作另行查核。",
-      "evidenceType": "法令正文"
+      "evidenceType": "法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S62",
@@ -1408,7 +1442,8 @@
         "T32"
       ],
       "readScope": "第 5–7、14、15、29、50、51、56、58、59、71 條，限自閉症兒少適用的鑑定、就學費用、福利服務、停車、交通與場所優待及輔具制度。",
-      "evidenceType": "法令正文"
+      "evidenceType": "法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S63",
@@ -1430,7 +1465,8 @@
         "T26"
       ],
       "readScope": "第 6 條正式條文及其所依據的特教法第 13 條，限班型、就讀及支持方式。",
-      "evidenceType": "法令正文"
+      "evidenceType": "法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S64",
@@ -1453,7 +1489,8 @@
         "T32"
       ],
       "readScope": "僅整理機關正式年度計畫正文第陸、柒節的對象、服務及查找方式。",
-      "evidenceType": "政府公文"
+      "evidenceType": "政府公文",
+      "taiwanSource": true
     },
     {
       "id": "S65",
@@ -1475,7 +1512,8 @@
         "T32"
       ],
       "readScope": "僅取調查報告中與自閉症投保有關的實務差距背景，保留年代與案例性質。",
-      "evidenceType": "政府公文"
+      "evidenceType": "政府公文",
+      "taiwanSource": true
     },
     {
       "id": "S66",
@@ -1497,7 +1535,8 @@
         "T32"
       ],
       "readScope": "第 7 條第 1 項第 11 款法令正文，搭配監察院案例與《保險法》第 64 條。",
-      "evidenceType": "法令正文"
+      "evidenceType": "法令正文",
+      "taiwanSource": true
     },
     {
       "id": "S67",
@@ -1522,7 +1561,8 @@
         "T34"
       ],
       "readScope": "Methods、Results 的 Disclosure of Autism Diagnosis、Teachers’ Scaffolding，以及討論的作者綜整。排除逐字引文、附表及第三方素材。",
-      "evidenceType": "質性系統性回顧"
+      "evidenceType": "質性系統性回顧",
+      "taiwanSource": false
     },
     {
       "id": "S68",
@@ -1551,7 +1591,8 @@
         "T34"
       ],
       "readScope": "Methods 的樣本、Results 的 Overwhelming Experiences、Unsafe People、Sanctuary 及 Discussion 限制。排除兒童引文、問卷及附圖。",
-      "evidenceType": "兒童自陳混合方法分析"
+      "evidenceType": "兒童自陳混合方法分析",
+      "taiwanSource": false
     },
     {
       "id": "S69",
@@ -1573,7 +1614,8 @@
         "T06"
       ],
       "readScope": "Abstract、Methods、Results／Discussion 的作者綜整與限制。排除引文和量表。",
-      "evidenceType": "質性系統性回顧"
+      "evidenceType": "質性系統性回顧",
+      "taiwanSource": false
     },
     {
       "id": "S70",
@@ -1595,7 +1637,8 @@
         "T01"
       ],
       "readScope": "Abstract、Methods、Results、Discussion 限感官差異與不確定感的關聯及限制。排除測量題項與分數。",
-      "evidenceType": "橫斷關聯研究"
+      "evidenceType": "橫斷關聯研究",
+      "taiwanSource": false
     },
     {
       "id": "S71",
@@ -1618,7 +1661,8 @@
         "T18"
       ],
       "readScope": "以版權欄明列的 CC BY-NC 4.0 為準。只取作者對評估前、評估過程和評估後溝通的主題綜整及限制。",
-      "evidenceType": "質性系統性回顧"
+      "evidenceType": "質性系統性回顧",
+      "taiwanSource": false
     },
     {
       "id": "S72",
@@ -1641,7 +1685,8 @@
         "T22"
       ],
       "readScope": "Methods、Results 與 Discussion 限服務內容、評估、家長協作與研究限制，排除測驗、專有方案用語及操作。",
-      "evidenceType": "專業人員問卷"
+      "evidenceType": "專業人員問卷",
+      "taiwanSource": false
     },
     {
       "id": "S73",
@@ -1664,7 +1709,8 @@
         "T14"
       ],
       "readScope": "教育建議中針對自閉症青少年的同意、個別需求與可及性。排除成人及醫療段落。",
-      "evidenceType": "專業與當事人共同建議"
+      "evidenceType": "專業與當事人共同建議",
+      "taiwanSource": false
     },
     {
       "id": "S74",
@@ -1686,7 +1732,8 @@
         "T15"
       ],
       "readScope": "Methods、Results／Discussion 作者對家長支持需求及限制的敘述，排除個人引文、危機處理及服務制度推論。",
-      "evidenceType": "家長質性訪談"
+      "evidenceType": "家長質性訪談",
+      "taiwanSource": false
     },
     {
       "id": "S75",
@@ -1708,7 +1755,8 @@
         "T33"
       ],
       "readScope": "第 2.1、4、5 節限樣本、活動參與關聯與研究限制，排除量表與資料表。",
-      "evidenceType": "家長問卷關聯研究"
+      "evidenceType": "家長問卷關聯研究",
+      "taiwanSource": false
     },
     {
       "id": "S76",
@@ -1731,7 +1779,8 @@
         "T32"
       ],
       "readScope": "第 2–4、6、9–10、13、16–17 條與正式附表的第 94–100 項溝通輔具，限自閉症對象、補助條件、評估與請領程序。",
-      "evidenceType": "法令正文與法定附表"
+      "evidenceType": "法令正文與法定附表",
+      "taiwanSource": true
     },
     {
       "id": "S77",
@@ -1753,7 +1802,8 @@
         "T08"
       ],
       "readScope": "專案報告第 5–6 頁「嚴重情緒行為心智障礙者」中，自閉症者表達感受或需求時可能遇到的溝通困難。",
-      "evidenceType": "政策專案報告"
+      "evidenceType": "政策專案報告",
+      "taiwanSource": true
     },
     {
       "id": "S78",
@@ -1858,7 +1908,8 @@
       "sections": "院方自有衛教文字，限「溝通能力」中用簡短語句配合當下衣食及遊戲動作的段落，以及「給媽媽的話」中照顧者分工的一句。排除診斷、病因、盛行率、訓練順序、治療效果及附列資料。",
       "reason": "以 2024 年 Conrad 等的家長訪談與既有照顧研究交叉核對，採日常溝通與家庭分工兩項，保留衛教性質。頁內部分舊說法已過時，使用範圍限定到具體段落。",
       "readScope": "院方自有衛教文字，限「溝通能力」中用簡短語句配合當下衣食及遊戲動作的段落，以及「給媽媽的話」中照顧者分工的一句。排除診斷、病因、盛行率、訓練順序、治療效果及附列資料。",
-      "evidenceType": "醫院自有衛教"
+      "evidenceType": "醫院自有衛教",
+      "taiwanSource": true
     },
     {
       "id": "S82",
@@ -1877,7 +1928,8 @@
       "sections": "限第三節第 3 項依個人狀況協助表達，第四節第 2、3 項的拆解日常活動及圖片／文字提示，以及第二節第 2 項的聲音與光線敏感背景。",
       "reason": "核對院方護理部平台、開放宣告與該頁署名。限用院方自有文字，排除診斷、成因、藥物、隔離內容及測驗，且不宣稱提示有特定療效。",
       "readScope": "限第三節第 3 項依個人狀況協助表達，第四節第 2、3 項的拆解日常活動及圖片／文字提示，以及第二節第 2 項的聲音與光線敏感背景。",
-      "evidenceType": "醫院自有衛教"
+      "evidenceType": "醫院自有衛教",
+      "taiwanSource": true
     },
     {
       "id": "S83",
@@ -1896,7 +1948,8 @@
       "sections": "方法章 Participants、Dependent Variables 與討論限制。限家庭情境、溝通媒介及研究限制，排除訓練手冊、操作流程及第三方素材。",
       "reason": "原刊註明特刊撤回後本研究保留於原一般期。小樣本個案實驗，未比較哪種溝通媒介最合適，也未確認長期結果。",
       "readScope": "方法章 Participants、Dependent Variables 與討論限制。限家庭情境、溝通媒介及研究限制，排除訓練手冊、操作流程及第三方素材。",
-      "evidenceType": "初步單一個案實驗"
+      "evidenceType": "初步單一個案實驗",
+      "taiwanSource": true
     },
     {
       "id": "S84",
@@ -1915,7 +1968,8 @@
       "sections": "方法、結果與討論，限 2011 年資料的國一樣本、友誼品質、同儕協助、課室氣氛與被排斥的關聯。排除測量題項、圖表及其他族群的推論。",
       "reason": "資料來自 2011 年臺灣特教長期追蹤資料庫；在地關聯研究可供背景，無法判定因果、介入效果或個別學生缺席原因。",
       "readScope": "方法、結果與討論，限 2011 年資料的國一樣本、友誼品質、同儕協助、課室氣氛與被排斥的關聯。排除測量題項、圖表及其他族群的推論。",
-      "evidenceType": "臺灣資料庫觀察研究"
+      "evidenceType": "臺灣資料庫觀察研究",
+      "taiwanSource": true
     },
     {
       "id": "S85",
@@ -1934,7 +1988,8 @@
       "sections": "Methods 的樣本、Results 的感官知覺與活動參與關聯、Discussion 的實務及研究限制。排除量表、表格、療程及第三方引文。",
       "reason": "臺灣職能治療團隊的橫斷研究。引用指定感官與參與資料，適用於學齡觀察背景，不用來判定個別孩子的感官原因或特定環境調整效果。正式 PDF 首頁版權欄明列 CC BY-NC 3.0。",
       "readScope": "Methods 的樣本、Results 的感官知覺與活動參與關聯、Discussion 的實務及研究限制。排除量表、表格、療程及第三方引文。",
-      "evidenceType": "臺灣橫斷研究"
+      "evidenceType": "臺灣橫斷研究",
+      "taiwanSource": true
     },
     {
       "id": "S86",
